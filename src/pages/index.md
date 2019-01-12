@@ -1,7 +1,5 @@
 ---
-templateKey: 'about-page'
-path: /
+templateKey: about-page
 title: PyOhio 2019
 ---
-
-General info here
+PyOhio 2019 will be July 27-28 at The Ohio Union in Columbus, OH.
