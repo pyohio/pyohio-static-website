@@ -1,6 +1,6 @@
 ---
 templateKey: 'general-page'
-path: /keep-in-touch
+path: /news/keep-in-touch
 title: Keep in Touch
 ---
 
