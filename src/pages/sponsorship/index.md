@@ -36,7 +36,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * A thank you for directly supporting kids learning Python programming
 * All benefits of Platinum Sponsorship
 
-### T-Shirt - $3000 (limit 1) FULL
+### T-Shirt - $3000 ~~(limit 1)~~ FULL
 
 * Your logo will appear conference t-shirts
 * All benefits of Platinum Sponsorship
@@ -44,6 +44,11 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 ### Swag Bag - $3000 (limit 1)
 
 * Your logo will appear conference swag bags
+* All benefits of Platinum Sponsorship
+
+### Lanyard - $3000 (limit 1)
+
+* Your logo alternated with PyOhio 2019 logo on all attendee lanyards
 * All benefits of Platinum Sponsorship
 
 ### Platinum - $2000 (limit 4)
@@ -89,8 +94,8 @@ _For individuals only_
 
 ### Custom Sponsorship Options
 
-Interested in sponsoring a specific item (like refreshments, badges, lanyards, etc.) or looking for a benefit that's not listed? Contact us at info@pyohio.org to discuss custom sponsorship options!
+Interested in sponsoring a specific item (like refreshments, badges, etc.) or looking for a benefit that's not listed? Contact us at info@pyohio.org to discuss custom sponsorship options!
 
 ## Ready to Sponsor?
 
-If you're ready to sponsor, please either create an account and apply via the dashboard or email info@pyohio.org.
+If you're ready to sponsor, please email info@pyohio.org.
