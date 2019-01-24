@@ -28,7 +28,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * Exclusive mention including company description and short custom statement during opening and closing remarks
 * Your logo on the cover of the conference program
 * Full-page advertisement in conference program
-* Your click-through logo on footer of all pages of the PyOhio 2018 website
+* Your click-through logo on footer of all pages of the PyOhio 2019 website
 * All benefits of Platinum Sponsorship
 
 ### Young Coders Class Sponsor - $3000 (limit 2)
@@ -36,7 +36,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * A thank you for directly supporting kids learning Python programming
 * All benefits of Platinum Sponsorship
 
-### T-Shirt - $3000 (limit 1) FULL
+### T-Shirt - $3000 ~~(limit 1)~~ FULL
 
 * Your logo will appear conference t-shirts
 * All benefits of Platinum Sponsorship
@@ -46,11 +46,16 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * Your logo will appear conference swag bags
 * All benefits of Platinum Sponsorship
 
+### Lanyard - $3000 (limit 1)
+
+* Your logo alternated with PyOhio 2019 logo on all attendee lanyards
+* All benefits of Platinum Sponsorship
+
 ### Platinum - $2000 (limit 4)
 
 * Your logo on session videos to be available indefinitely on the Python Video Archive. (Python conference session videos total over 50,000 downloads per month.)
 * Full-page advertisement in the conference program
-* Logo displayed with click-through on PyOhio 2018 website
+* Logo displayed with click-through on PyOhio 2019 website
 * Job listing with description and link on our jobs page
 * Table in conference common area
 * Ability to display banners in common area and primary lecture hall
@@ -85,12 +90,12 @@ _For individuals only_
 
 * Available to organizations aligned with the regional Python community
 * Mention in non-profit section of conference program
-* Logo displayed with click-through on PyOhio 2018 website
+* Logo displayed with click-through on PyOhio 2019 website
 
 ### Custom Sponsorship Options
 
-Interested in sponsoring a specific item (like refreshments, badges, lanyards, etc.) or looking for a benefit that's not listed? Contact us at info@pyohio.org to discuss custom sponsorship options!
+Interested in sponsoring a specific item (like refreshments, badges, etc.) or looking for a benefit that's not listed? Contact us at info@pyohio.org to discuss custom sponsorship options!
 
 ## Ready to Sponsor?
 
-If you're ready to sponsor, please either create an account and apply via the dashboard or email info@pyohio.org.
+If you're ready to sponsor, please email info@pyohio.org.
