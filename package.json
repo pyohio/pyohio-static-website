@@ -39,7 +39,7 @@
     "start": "npm run develop",
     "clean": "rimraf .cache public",
     "build": "npm run clean && gatsby build --prefix-paths",
-    "build-prod": "cp -r ./archive/20* ./static && npm run build",
+    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2019 && cp -v -r ./archive/20* ./public && cp -v ./netlify-static/* ./public/",
     "develop": "npm run clean && gatsby develop --prefix-paths ",
     "serve": "gatsby serve --prefix-paths",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
