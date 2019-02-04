@@ -84,7 +84,7 @@ _For individuals only_
 
 * Limited edition PyOhio Supporter sticker
 * Optional name listing on sponsors page as a supporter
-* See Individual Sponsors for details
+* Available once registration opens
 
 ### Non-Profit - FREE
 
