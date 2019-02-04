@@ -1,14 +1,11 @@
 ---
-templateKey: general-page
-title: Keep in Touch
-date: 2019-01-28T23:01:29.354Z
-description: >-
-  Subscribe to our mailing list (about 1-2 emails per month) for PyOhio
-  announcements including CFP dates, registration details, events, volunteer
-  opportunities and more.
-tags:
-  - news
+templateKey: 'general-page'
+path: /contact/keep-in-touch
+title: Join the PyOhio Mailing List
 ---
+
+Subscribe to our mailing list for occasional (1-2 emails per month) updates about PyOhio:
+
 <!-- Begin Mailchimp Signup Form -->
 
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
