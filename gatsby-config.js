@@ -3,6 +3,7 @@ module.exports = {
     title: 'PyOhio 2019',
     description: 'PyOhio 2019 Website powered by Gatsby.js and Netlify CMS',
   },
+  pathPrefix: `/2019`,
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

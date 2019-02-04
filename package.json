@@ -38,10 +38,10 @@
   "scripts": {
     "start": "npm run develop",
     "clean": "rimraf .cache public",
-    "build": "npm run clean && gatsby build",
+    "build": "npm run clean && gatsby build --prefix-paths",
     "build-prod": "cp -r ./archive/20* ./static && npm run build",
-    "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
+    "develop": "npm run clean && gatsby develop --prefix-paths ",
+    "serve": "gatsby serve --prefix-paths",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
