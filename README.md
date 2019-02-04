@@ -1,3 +1,9 @@
+# PyOhio Static Website
+
+*Powered by Gatsby.js and Netlify CMS*
+
+---
+
 # Gatsby + Netlify CMS Starter
 
 **Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
