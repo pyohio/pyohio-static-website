@@ -9,14 +9,14 @@ PyOhio 2019 is July 27-28, 2019 <br>at The Ohio Union in Columbus, OH.
 #### Important Info (*Coming Soon!*)
 
 - Code of Conduct
-- Events Overview
-- Schedule (TBA)
 - Directions & Travel Info
-- Join us on Slack
-- Registration (TBA)
+- Events Overview
+- Schedule
+- Registration Info
 
-#### Follow us for updates
+#### Keep In Touch
 
-- [Subscribe to our mailing list](/news/keep-in-touch)
+- [Subscribe to our mailing list for updates](/news/keep-in-touch)
+- [Join us on Slack](https://slack.pyohio.org/)
 - [Follow us on Twitter](https://twitter.com/pyohio)
 - [Follow us on Facebook](https://facebook.com/pyohio)
