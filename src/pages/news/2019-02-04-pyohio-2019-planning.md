@@ -4,7 +4,7 @@ title: Kicking off PyOhio 2019 Planning
 date: 2019-02-04T00:00:00.000Z
 description: Planning for PyOhio 2019 is under way!
 tags:
-  - website
+  - ''
 ---
 * Sponsorship spots are open now! Please see the [Sponsorship Prospectus](/sponsorship) for details
 * Key dates:
