@@ -1,3 +1,11 @@
+# Redirect domain aliases to primary domain
+https://new.pyohio.org/* https://www.pyohio.org/:splat 301!
+https://pyohio.org/* https://www.pyohio.org/:splat 301!
+https://2019.pyohio.org/* https://www.pyohio.org/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
+
 /               /2019                   302
 /prospectus     /2019/sponsorship       302
 
