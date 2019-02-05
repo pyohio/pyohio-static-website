@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'PyOhio 2019',
-    description: 'PyOhio 2019 Website powered by Gatsby.js and Netlify CMS',
+    description: 'PyOhio is a FREE annual Python conference. July 27-28, 2019 in Columbus, OH.',
   },
   pathPrefix: `/2019`,
   plugins: [
