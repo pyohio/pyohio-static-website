@@ -2,7 +2,7 @@
 templateKey: general-page
 title: PyOhio 2019 Sponsorship Prospectus
 ---
-_Support PyOhio and reach hundreds of Python users_
+_Support PyOhio and reach hundreds of Python users in person and thousands online!_
 
 ## About PyOhio
 
@@ -53,7 +53,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 
 ### Platinum - $2000 (limit 4)
 
-* Your logo on session videos to be available indefinitely on the Python Video Archive. (Python conference session videos total over 50,000 downloads per month.)
+* Your logo on session videos to be available indefinitely on the Python Video Archive. (PyOhio videos have hundreds of thousands of views!)
 * Full-page advertisement in the conference program
 * Logo displayed with click-through on PyOhio 2019 website
 * Job listing with description and link on our jobs page
