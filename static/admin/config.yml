@@ -1,4 +1,4 @@
-iibackend:
+backend:
   name: github
   repo: pyohio/pyohio-static-website
   branch: master
