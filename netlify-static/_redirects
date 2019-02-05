@@ -1,4 +1,21 @@
-/               /2019
+/               /2019                   302
+/prospectus     /2019/sponsorship       302
 
-/redirect-test http://www.example.com
+
+# 2019 versions don't exist yet:
+/attend                 /2019           302
+/cfp                    /2019           302
+/coc                    /2019           302
+/code-of-conduct        /2019           302
+/directions             /2019           302
+/events                 /2019           302
+/hotel                  /2019           302
+/register               /2019           302
+/schedule               /2019           302
+/sprints                /2019           302
+/volunteer              /2019           302
+
+# OhPyOh
+/ohpyo   https://mail.python.org/pipermail/centraloh/2008-March/000082.html               
+/opyoh   https://mail.python.org/pipermail/centraloh/2008-March/000082.html
 
