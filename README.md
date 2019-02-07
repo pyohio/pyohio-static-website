@@ -1,5 +1,7 @@
 # PyOhio Static Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/85a2eace-1a24-47a3-b6c6-739c9ca43cba/deploy-status)](https://app.netlify.com/sites/pyohio/deploys)
+
 *Powered by Gatsby.js and Netlify CMS*
 
 ---
