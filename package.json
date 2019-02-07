@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
+  "name": "pyohio-static-website",
+  "description": "PyOhio website powered by Gatsby.js and Netlify CMS",
+  "version": "0.1.0",
+  "author": "PyOhio",
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.0.66",
@@ -40,7 +40,7 @@
     "start": "npm run develop",
     "clean": "rimraf .cache public",
     "build": "npm run clean && gatsby build --prefix-paths",
-    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2019 && cp -v -r ./archive/20* ./public && cp -v ./netlify-static/* ./public/",
+    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2019 && cp -r ./archive/20* ./public && cp -v ./netlify-static/* ./public/",
     "develop": "npm run clean && gatsby develop --prefix-paths ",
     "serve": "gatsby serve --prefix-paths",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
