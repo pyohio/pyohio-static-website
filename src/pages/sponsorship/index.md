@@ -48,7 +48,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 
 ### Lanyard - $3000 (limit 1)
 
-* Your logo alternated with PyOhio 2019 logo on all attendee lanyards
+* Your logo on all attendee lanyards
 * All benefits of Platinum Sponsorship
 
 ### Platinum - $2000 (limit 4)
@@ -92,9 +92,17 @@ _For individuals only_
 * Mention in non-profit section of conference program
 * Logo displayed with click-through on PyOhio 2019 website
 
+### Add-On Options
+
+Add specific sponsored items to any sponsorship level:
+
+* Coffee
+* Snacks
+* Badges
+
 ### Custom Sponsorship Options
 
-Interested in sponsoring a specific item (like refreshments, badges, etc.) or looking for a benefit that's not listed? Contact us at info@pyohio.org to discuss custom sponsorship options!
+Interested in sponsoring a specific item or looking for a benefit that's not listed? Contact us at info@pyohio.org to discuss custom sponsorship options!
 
 ## Ready to Sponsor?
 
