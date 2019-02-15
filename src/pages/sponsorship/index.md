@@ -12,7 +12,7 @@ PyOhio is a weekend multi-track conference for users of and people interested in
 
 PyOhio attendees include a variety of working professionals, students, academics, and others who are so passionate about continuous learning and Python programming that they'll take a weekend of their own time to immerse themselves in Python programming content. Sponsoring PyOhio lets lets the attendees know that your organization shares these values.
 
-* Approximately 500 attendees expected
+* Approximately 500-550 attendees expected
 * Many attendees use Python professionally currently
 * Others use other languages but wish to learn more about Python
 * Many attendees come from Ohio and surrounding states
