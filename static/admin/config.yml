@@ -68,14 +68,17 @@ collections:
         searchFields: ["name"]
         valueField: "name"
         displayFields: ["name", "amount"]
-  - name: "sponsor-levels"
-    label: "Sponsor Levels"
-    file: "src/data/sponsor-levels.yml"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - label: "Levels"
-        name: "levels"
-        widget: "list"
+  - name: "data"
+    label: "Data"
+    files:
+      - name: "sponsor-levels"
+        label: "Sponsor Levels"
+        file: "src/data/sponsor-levels.yml"
         fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Amount, name: amount, widget: number}
+          - {label: Title, name: title, widget: string}
+          - label: "Levels"
+            name: "levels"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Amount, name: amount, widget: number}
