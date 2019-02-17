@@ -1,2 +1,4 @@
 title: Sponsor Levels
-levels: []
+levels:
+  - name: Premier
+    amount: 5000
