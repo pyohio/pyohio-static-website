@@ -1,23 +1,44 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { kebabCase } from 'lodash'
+import Helmet from 'react-helmet'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const GeneralPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+export const SponsorTemplate = ({
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  helmet,
+}) => {
+  const PostContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
+    <section className="section">
+      {helmet || ''}
+      <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                {title}
-              </h1>
-              <PageContent className="content" content={content} />
-            </div>
+            <h1 className="title is-size-3 has-text-weight-bold is-bold-light">
+              {title}
+            </h1>
+            <p>{description}</p>
+            <PostContent content={content} />
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map(tag => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
@@ -25,38 +46,56 @@ export const GeneralPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-GeneralPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
+SponsorTemplate.propTypes = {
+  content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  helmet: PropTypes.object,
 }
 
-const GeneralPage = ({ data }) => {
+const Sponsor = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <GeneralPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
+      <SponsorTemplate
         content={post.html}
+        contentComponent={HTMLContent}
+        description={post.frontmatter.description}
+        helmet={
+          <Helmet
+            titleTemplate="%s | News"
+          >
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta name="description" content={`${post.frontmatter.description}`} />
+          </Helmet>
+        }
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
       />
     </Layout>
   )
 }
 
-GeneralPage.propTypes = {
-  data: PropTypes.object.isRequired,
+Sponsor.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.object,
+  }),
 }
 
-export default GeneralPage
+export default Sponsor
 
-export const generalPageQuery = graphql`
-  query GeneralPage($id: String!) {
+export const pageQuery = graphql`
+  query SponsorByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      id
       html
       frontmatter {
+        date(formatString: "MMMM DD, YYYY")
         title
+        description
+        tags
       }
     }
   }

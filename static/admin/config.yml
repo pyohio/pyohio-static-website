@@ -75,6 +75,7 @@ collections:
       - name: "sponsor-levels"
         label: "Sponsor Levels"
         file: "src/data/sponsor-levels.yml"
+        create: true
         fields:
           - {label: Title, name: title, widget: string}
           - label: "Levels"

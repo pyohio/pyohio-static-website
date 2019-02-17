@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
-export default class IndexPage extends React.Component {
+export default class SponsorsPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: sponsors } = data.allMarkdownRemark
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">PyOhio Sponsors</h1>
+              <h1 className="has-text-weight-bold is-size-2">PyOhio 2019 Sponsors</h1>
             </div>
             {posts
               .map(({ node: post }) => (
@@ -24,7 +24,7 @@ export default class IndexPage extends React.Component {
                 >
                   <p>
                     <Link className="has-text-primary" to={post.fields.slug}>
-                      {sponsors.frontmatter.name}
+                      {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
                     <small>{post.frontmatter.date}</small>
@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
   }
 }
 
-IndexPage.propTypes = {
+SponsorsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -55,7 +55,7 @@ IndexPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query SponsorsQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "sponsor" } }}

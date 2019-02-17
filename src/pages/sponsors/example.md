@@ -1,8 +1,9 @@
 ---
-templateKey: general-page
-name: Example
-url: example.com
-description: This is an example
-level: Premier
+templateKey: sponsor
+title: Example
+date: 2019-02-04T00:00:00.000Z
+description: A sponsor
+tags:
+  - ''
 ---
-
+Example is an example sponsor
