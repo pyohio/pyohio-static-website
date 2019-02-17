@@ -2,6 +2,6 @@
 name: Example
 url: example.com
 description: This is an example
-level: Gold
+level: Premier
 ---
 

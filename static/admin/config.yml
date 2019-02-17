@@ -55,7 +55,7 @@ collections:
     label: "Sponsors"
     folder: "src/pages/sponsors"
     create: true
-    slug: "{{level}}-{{name}}"
+    slug: "{{name}}"
     identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
