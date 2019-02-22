@@ -53,34 +53,33 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"}
   - name: "sponsors"
     label: "Sponsors"
-    folder: "src/pages/sponsors"
+    folder: "data/sponsors"
     create: true
     slug: "{{name}}"
     identifier_field: name
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "general-page"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "URL", name: "url", widget: ""}
       - {label: "Description", name: "description", widget: "text"}
-      - label: "Sponsor Level"
-        name: "level"
-        widget: "relation"
-        collection: "sponsor-levels"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name", "amount"]
-  - name: "data"
-    label: "Data"
-    files:
-      - name: "sponsor-levels"
-        label: "Sponsor Levels"
-        file: "src/data/sponsor-levels.yml"
-        create: true
-        fields:
-          - {label: Title, name: title, widget: string}
-          - label: "Levels"
-            name: "levels"
-            widget: "list"
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Amount, name: amount, widget: number}
+      # - label: "Sponsor Level"
+      #   name: "level"
+      #   widget: "relation"
+      #   collection: "sponsor-levels"
+      #   searchFields: ["name"]
+      #   valueField: "name"
+      #   displayFields: ["name", "amount"]
+  # - name: "data"
+  #   label: "Data"
+  #   files:
+  #     - name: "sponsor-levels"
+  #       label: "Sponsor Levels"
+  #       file: "src/data/sponsor-levels.yml"
+  #       create: true
+  #       fields:
+  #         - {label: Title, name: title, widget: string}
+  #         - label: "Levels"
+  #           name: "levels"
+  #           widget: "list"
+  #           fields:
+  #             - {label: Name, name: name, widget: string}
+  #             - {label: Amount, name: amount, widget: number}
