@@ -36,7 +36,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * A thank you for directly supporting kids learning Python programming
 * All benefits of Platinum Sponsorship
 
-### T-Shirt - $3000 ~~(limit 1)~~ FULL
+### T-Shirt - $3000 (limit 1)
 
 * Your logo will appear conference t-shirts
 * All benefits of Platinum Sponsorship
