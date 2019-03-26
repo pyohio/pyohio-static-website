@@ -59,12 +59,13 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-yaml`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-custom-api',
       options: {
-        path: `${__dirname}/src/data/`,
-      },
+        url: 'https://cfp.pyohio.org/2019/sponsors/sponsors-by-level.json',
+        rootKey: 'SponsorLevels',
+        imageKeys: ['web_logo']
+      }
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',

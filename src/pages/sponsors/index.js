@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
 export default class SponsorsPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: sponsors } = data.allSponsorsYaml 
+    const { edges: sponsorLevels } = data.allSponsorLevels
 
     return (
       <Layout>
@@ -15,15 +14,22 @@ export default class SponsorsPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">PyOhio 2019 Sponsors</h1>
             </div>
-            {sponsors
-              .map(({ node: sponsor }) => (
+            {sponsorLevels.filter(level => level.node.sponsors)
+              .map(({ node: level }) => (
                 <div
                   className="content"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
-                  key={sponsor.id}
+                  key={level.id}
                 >
-                <h2><a href={sponsor.url}>{sponsor.name}</a></h2>
-                <p>{sponsor.description}</p>
+                <h2>{level.name}</h2>
+                {level.sponsors.map((sponsor, index) => (
+                  <div>
+                    <h3>{sponsor.name}</h3>
+                    <img src={sponsor.web_logo.local.publicURL} alt={sponsor.web_logo.description} width="360"/>
+                    <p>{sponsor.url}</p>
+                    {sponsor.twitter && <p>@{sponsor.twitter}</p>}
+                    <p>{sponsor.description}</p>
+                  </div>
+                ))}
                 </div>
               ))}
           </div>
@@ -33,28 +39,28 @@ export default class SponsorsPage extends React.Component {
   }
 }
 
-SponsorsPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
-
 export const pageQuery = graphql`
   query SponsorsQuery {
-    allSponsorsYaml(
-      sort: { order:ASC, fields: [name] },
-      filter: { active: {eq: true} }
+    allSponsorLevels(
+      sort: {fields:order}
+      filter: {order: {lt: 100}}
     ) {
-      edges {
-        node {
-          id,
-          name,
-          url,
-          description
-        }
-      }
-    }
+     edges {
+       node {
+         sponsors {
+           name
+           description
+           url
+           twitter
+           web_logo {
+            description
+            local{
+              publicURL
+            }
+          }
+         }
+       }
+     }
+   } 
   }
 `
