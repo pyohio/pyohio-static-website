@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, withPrefix } from 'gatsby'
+import Img from "gatsby-image"
 import Layout from '../../components/Layout'
 
 export default class SponsorsPage extends React.Component {
@@ -24,7 +25,7 @@ export default class SponsorsPage extends React.Component {
                 {level.sponsors.map((sponsor, index) => (
                   <div>
                     <h3>{sponsor.name}</h3>
-                    <img src={sponsor.web_logo.local.publicURL} alt={sponsor.web_logo.description} width="360"/>
+                    <Img fixed={sponsor.web_logo.local.childImageSharp.fixed}  alt={sponsor.web_logo.description}/>
                     <p>{sponsor.url}</p>
                     {sponsor.twitter && <p>@{sponsor.twitter}</p>}
                     <p>{sponsor.description}</p>
@@ -47,19 +48,36 @@ export const pageQuery = graphql`
     ) {
      edges {
        node {
-         sponsors {
-           name
-           description
-           url
-           twitter
-           web_logo {
-            description
-            local{
-              publicURL
+        id
+        name
+        cost
+        order
+        sponsors {
+          id
+          name
+          description
+          url
+          twitter
+          web_logo {
+            local {
+              childImageSharp {
+                fixed(width:360) {
+                  base64
+                  tracedSVG
+                  aspectRatio
+                  width
+                  height
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  originalName
+                }
+              }
             }
           }
-         }
-       }
+        }
+      }   
      }
    } 
   }
