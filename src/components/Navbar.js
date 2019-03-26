@@ -30,7 +30,7 @@ const Navbar = class extends React.Component {
           <img src={logo} alt="PyOhio 2019"  />
         </Link>
         {/* Hamburger menu */}
-        <button className={this.state.burgerExpanded ? "navbar-burger burger is-active" : "navbar-burger burger"} data-target="navMenu" onClick={this.handleClick} aria-label="hamburger menu" aria-haspopup="true" aria-expanded={this.state.burgerExpanded ? true : false}>
+        <button className={this.state.burgerExpanded ? "navbar-burger burger is-active" : "navbar-burger burger"} data-target="navMenu" onClick={this.handleClick} aria-label="hamburger menu" aria-expanded={this.state.burgerExpanded ? true : false}>
           <span></span>
           <span></span>
           <span></span>
