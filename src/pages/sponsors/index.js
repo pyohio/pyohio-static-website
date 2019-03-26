@@ -61,7 +61,7 @@ export const pageQuery = graphql`
           web_logo {
             local {
               childImageSharp {
-                fixed(width:360) {
+                fixed(width:250) {
                   ...GatsbyImageSharpFixed_noBase64
                 }
               }
