@@ -62,16 +62,7 @@ export const pageQuery = graphql`
             local {
               childImageSharp {
                 fixed(width:360) {
-                  base64
-                  tracedSVG
-                  aspectRatio
-                  width
-                  height
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  originalName
+                  ...GatsbyImageSharpFixed_noBase64
                 }
               }
             }
