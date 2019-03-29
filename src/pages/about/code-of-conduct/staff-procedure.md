@@ -1,7 +1,7 @@
 ---
 templateKey: 'general-page'
 path: /about/code-of-conduct/staff-procedure
-title: PyOhio Code of Conduct
+title: Code of Conduct Staff Procedure
 ---
 
 *This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)".*
