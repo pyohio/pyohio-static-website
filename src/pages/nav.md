@@ -31,6 +31,6 @@ Navigation Tree
       * [Prospectus](/sponsors/prospectus)
       * [Individual Sponsors](/sponsors/individual)
   * Speak
-      * [Speak at PyOhio](/speak)
       * [Call for Proposals](/speak/cfp)
       * [Talk Selection Process](/speak/selection)
+      * [Review Proposals](/speak/review-proposals)
