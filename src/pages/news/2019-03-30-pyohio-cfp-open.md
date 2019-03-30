@@ -1,10 +1,9 @@
 ---
-templateKey: blog-post
+templateKey: news-post
 title: PyOhio CFP Open!
 date: 2019-03-30T14:15:44.953Z
 description: The PyOhio CFP is open now through May 10!
 tags:
-  - cfp
 ---
 More details about the CFP can be found here: [PyOhio Call For Proposals](/speak/cfp/)
 
