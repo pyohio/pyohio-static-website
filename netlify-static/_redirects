@@ -6,22 +6,24 @@ https://2019.pyohio.org/* https://www.pyohio.org/:splat 301!
 # Optional: Redirect default Netlify subdomain to primary domain
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
-/               /2019                   302
-/prospectus     /2019/sponsorship       302
+/                       /2019                           302
+/prospectus             /2019/sponsors/prospectus       302
+/code-of-conduct        /2019/about/code-of-conduct     302
+/2019/sponsorship       /2019/sponsors/prospectus
+/2019/contact/keep-in-touch /2019/news/keep-in-touch
 
+/coc                    /2019/about/code-of-conduct     302
 
 # 2019 versions don't exist yet:
-/attend                 /2019           302
-/cfp                    /2019           302
-/coc                    /2019           302
-/code-of-conduct        /2018/code-of-conduct           302
-/directions             /2019           302
-/events                 /2019           302
-/hotel                  /2019           302
-/register               /2019           302
-/schedule               /2019           302
-/sprints                /2019           302
-/volunteer              /2019           302
+/attend                 /2019/attend                    302
+/cfp                    /2019/speak/cfp                 302
+/directions             /2019/attend/travel             302
+/events                 /2019/events                    302
+/hotel                  /2019/attend/hotel              302
+/register               /2019/attend/register           302
+/schedule               /2019/events/schedule           302
+/sprints                /2019/events/sprints            302
+/volunteer              /2019/attend/volunteer          302
 
 # OhPyOh
 /ohpyo   https://mail.python.org/pipermail/centraloh/2008-March/000082.html               
