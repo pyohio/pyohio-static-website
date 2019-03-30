@@ -6,7 +6,7 @@ title: Code of Conduct Reporting Procedure
 
 *This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)".*
 
-1\. Keep in mind that all conference staff and incident responders will wear badges clearly displaying "STAFF". The staff and incident responders will also be prepared to handle the incident. All of our staff are informed of the [code of conduct policy](/code-of-conduct) and guide for handling harassment at the conference. *There will be a mandatory staff meeting onsite at the conference when this will be reiterated.*
+1\. Keep in mind that all conference staff and incident responders will wear badges and lanyards clearly displaying "STAFF". The staff and incident responders will also be prepared to handle the incident. All of our staff are informed of the [code of conduct policy](/about/code-of-conduct) and guide for handling harassment at the conference. *There will be a mandatory staff meeting onsite at the conference when this will be reiterated.*
 
 2\. Report the harassment incident (preferably in writing) to a conference staff member. All reports are confidential. Please do not disclose public information about the incident until the staff have had sufficient time in which to address the situation. This is as much for your safety and protection as it is the other attendees.
 

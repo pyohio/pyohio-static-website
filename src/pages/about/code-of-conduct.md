@@ -53,7 +53,7 @@ Or find individual responders in person:
 - Brian Costlow
 - Jess Unrein
 
-Or find a PyOhio staff member with a red STAFF badge and lanyard.
+Or find a PyOhio staff member with a STAFF badge and lanyard.
 
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
