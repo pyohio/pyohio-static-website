@@ -22,7 +22,7 @@ Navigation Tree
   * Attend 
       * [Register](/attend/register)
       * [Volunteer](/attend/volunteer)
-      * [Travel & Directions](/attend/travel)
+      * [Travel & Directions](/attend/travel-directions)
       * [Hotels](/attend/hotels)
       * [Venue](/attend/venue)
       * [Food](/attend/food)
