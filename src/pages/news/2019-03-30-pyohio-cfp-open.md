@@ -13,6 +13,6 @@ When you're ready to submit a proposal:
 * Update your speaker profile
 * Submit talk/tutorial proposal
 
-For more information on how we select talks see our [selection process](/speak/selection-process).
+For more information on how we select talks see our [selection process](/speak/selection).
 
 We also need help reviewing proposals! If you'd like to help see our [sign-up instructions](/speak/review-proposals).
