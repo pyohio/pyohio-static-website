@@ -34,8 +34,8 @@ Subscribe to our mailing list for occasional (1-2 emails per month) updates abou
 </div>
 <div class="mc-field-group input-group">
     <strong>Email Format </strong>
-    <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"><label for="mce-EMAILTYPE-0">html</label></li>
-<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"><label for="mce-EMAILTYPE-1">text</label></li>
+    <ul><li><input type="radio" value="html" name="EMAILTYPE" id="mce-EMAILTYPE-0"> <label for="mce-EMAILTYPE-0">html</label></li>
+<li><input type="radio" value="text" name="EMAILTYPE" id="mce-EMAILTYPE-1"> <label for="mce-EMAILTYPE-1">text</label></li>
 </ul>
 </div>
 <p><a href="https://us3.campaign-archive.com/home/?u=8c9245b985e483ce2777296fb&id=ebb557184f" title="View previous campaigns">View previous campaigns.</a></p>
