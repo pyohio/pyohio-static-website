@@ -11,7 +11,7 @@ description: Planning for PyOhio 2019 is under way!
   * Registration and t-shirt sales will open in late April
   * Volunteer sign-ups will open in April
 * Keep in touch:
-  * [Subscribe to our mailing list](/about/keep-in-touch) for major announcements
+  * [Subscribe to our mailing list](/news/keep-in-touch) for major announcements
   * [Follow us on Twitter](https://www.twitter.com/pyohio) 
   * [Join us on Slack](https://slack.pyohio.org/) for conversation
   * [Contact us via email](mailto:info@pyohio.org) if you have any questions or would like to sponsor
