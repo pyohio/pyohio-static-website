@@ -68,7 +68,7 @@ started! We will have light refreshments at the break*
 **12:45pm-4:45pm** Open Space sessions are for discussing topics of interest
 to the PyOhio community. Sign up for a spot outside the rooms.
 
-## Lightning Talks
+### Lightning Talks
 
 **5:00pm-6:00pm** Lightning talks. 5-minute talks on topics of interest to the 
 PyOhio community. Sign up for a slot on the board near registration.
