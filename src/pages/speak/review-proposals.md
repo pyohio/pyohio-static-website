@@ -8,7 +8,7 @@ interests of the community.</p>
 <p>To accomplish this we are using a two-phased review process and would like
 <em>your</em> feedback during phase one. Reviewers of all backgrounds and experience
 levels are welcome!
-<a href="/speak/selection">Selection process details</a>.</p> 
+<a href="/2019/speak/selection">Selection process details</a>.</p> 
 <p><strong>To sign up as a reviewer:</strong></p>
 <ol>
 <li>
