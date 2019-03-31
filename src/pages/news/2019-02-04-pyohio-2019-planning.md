@@ -4,7 +4,7 @@ title: Kicking off PyOhio 2019 Planning
 date: 2019-02-04T00:00:00.000Z
 description: Planning for PyOhio 2019 is under way!
 ---
-* Sponsorship spots are open now! Please see the [Sponsorship Prospectus](/sponsorship) for details
+* Sponsorship spots are open now! Please see the [Sponsorship Prospectus](/sponsors/prospectus) for details
 * Key dates:
   * The conference will be July 27-28 at The Ohio Union in Columbus, OH
   * The CFP for talks and tutorials will open in late March or early April
