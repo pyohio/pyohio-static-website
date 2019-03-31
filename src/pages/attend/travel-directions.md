@@ -5,7 +5,7 @@ title: Travel & Directions
 
 PyOhio is held at <a href="https://ohiounion.osu.edu/">The Ohio Union</a>, the
 student union for The Ohio State University. The conference space is on
-<a href="https://ohiounion.osu.edu/visit_the_union/building_map#thirdfloor">the
+<a href="https://ohiounion.osu.edu/whats_inside/building_maps">the
 third floor</a>.
 
 <h2>By Air</h2>
