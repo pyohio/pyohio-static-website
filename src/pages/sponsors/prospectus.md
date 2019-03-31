@@ -18,7 +18,7 @@ PyOhio attendees include a variety of working professionals, students, academics
 * Many attendees come from Ohio and surrounding states
 * Others travel from across the country or even internationally
 
-Attendees will receive positive exposure to your organization including the benefits listed below
+Attendees will receive positive exposure to your organization including the benefits listed below.
 Your sponsorship dollars will cover the cost of the conference including venue rental, video production, refreshments, badges, webhosting, etc. With your sponsorship support covering our costs we are able to offer free admission to our attendees.
 
 ## Sponsorship Packages
@@ -66,7 +66,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 ### Gold - $1000
 
 * Half-page advertisement in conference program
-* Logo displayed with click-through on PyOhio 2018 website
+* Logo displayed with click-through on PyOhio 2019 website
 * Job listing with description and link on our jobs page
 * 2x t-shirts and parking passes
 * Mention in emails to attendees and on social media
