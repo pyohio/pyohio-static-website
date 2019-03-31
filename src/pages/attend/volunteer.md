@@ -5,7 +5,7 @@ title: Volunteer!
 
 Sign up to be on the volunteer list here: [Volunteer Sign-ups](https://goo.gl/muSVjG)
 
-Be sure to also [subscribe to our mailing list](/2019/about/keep-in-touch) for updates.
+Be sure to also [subscribe to our mailing list](/news/keep-in-touch) for updates.
 
 On-site Volunteer Roles
 ----------------------
@@ -34,7 +34,7 @@ Stand ready to step into any of the above roles as necessary. Laugh.
 Other Ways to Help
 ------------------
 
-* Sign-up to [review talk proposals](/2019/speak/review-proposals).
+* Sign-up to [review talk proposals](/speak/review-proposals).
 * Spread the word!
   * Retweet [@PyOhio](https://twitter.com/pyohio)
   * Follow us on [Facebook](https://www.facebook.com/pyohio) and RSVP to the event.
