@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'PyOhio 2019',
     description: 'PyOhio is a FREE annual Python conference. July 27-28, 2019 in Columbus, OH.',
+    siteUrl: 'https://www.pyohio.org'
   },
   pathPrefix: `/2019`,
   plugins: [
@@ -66,6 +67,15 @@ module.exports = {
         rootKey: 'SponsorLevels',
         imageKeys: ['web_logo']
       }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-social-cards`,
+          // ...
+        ],
+      },
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
