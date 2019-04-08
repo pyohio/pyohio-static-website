@@ -14,6 +14,8 @@ Log into our Slack team (<a href="https://slack.pyohio.org/">invitation here</a>
 
 If you would like to be matched with a mentor to help with your proposal(s), [request a mentor here](https://forms.gle/4tUxujRfhiyTbsf8A).
 
+If you are an experienced speaker and would like to volunteer to mentor, [apply to be a mentor here](https://forms.gle/4nZ7WV27GxLBECNM8).
+
 ## Background
 
 PyOhio 2019, the annual Python programming conference for Ohio and the surrounding region, will take place Saturday & Sunday July 27th-28th, 2019 at The Ohio Union in Columbus, Ohio.
