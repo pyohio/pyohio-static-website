@@ -20,10 +20,10 @@ const NavDropdown = class extends React.Component {
 
     render() {
         return (
-            <div className="navbar-item has-dropdown is-hoverable">
+            <div className="navbar-item has-dropdown">
                 <NavButton name={this.props.buttonName}/>
                 <div className="navbar-dropdown">
-                    {this.props.links.map((link) => 
+                    {this.props.links.map((link) =>
                         <Link className="navbar-item" to={link.url} key={link.url}>
                             {link.name}
                         </Link>

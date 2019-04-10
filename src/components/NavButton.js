@@ -10,7 +10,13 @@ const NavButton = class extends React.Component {
         this.setExpanded = this.setExpanded.bind(this);
     }
 
-    setExpanded() {
+    setExpanded(event) {
+        if (event && event.key) {
+            if (event.key !== 'Enter' || event.key !== ' ') {
+                return;
+            }
+        }
+
         this.setState(state => ({
             expanded: !state.expanded
         }));
@@ -19,8 +25,7 @@ const NavButton = class extends React.Component {
     render() {
         return (
             <button className="navbar-link" type="button"
-                onClick={this.setExpanded} onMouseEnter={this.setExpanded}
-                onMouseLeave={this.setExpanded}
+                onClick={this.setExpanded} onKeyUp={this.setExpanded}
                 aria-expanded={this.state.expanded ? true : false}>
                 {this.props.name}
             </button>
