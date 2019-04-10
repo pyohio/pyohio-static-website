@@ -18,7 +18,10 @@ const NavButton = class extends React.Component {
 
     render() {
         return (
-            <button className="navbar-link" type="button" onHover={this.setExpanded} onFocus={this.setExpanded} aria-expanded={this.state.expanded ? true : false}>
+            <button className="navbar-link" type="button"
+                onClick={this.setExpanded} onMouseEnter={this.setExpanded}
+                onMouseLeave={this.setExpanded}
+                aria-expanded={this.state.expanded ? true : false}>
                 {this.props.name}
             </button>
         )
