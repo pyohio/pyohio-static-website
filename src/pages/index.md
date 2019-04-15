@@ -3,7 +3,7 @@ templateKey: home-page
 title: PyOhio 2019
 ---
 
-![PyOhio 2019 Logo](/img/pyohio-2019-transparent-300x225.png)
+![PyOhio 2019 Logo](/2019/img/pyohio-2019-transparent-300x225.png)
 
 ### The FREE Annual Python Conference in Ohio
 
