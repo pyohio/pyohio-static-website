@@ -43,7 +43,7 @@ PyOhio 2019 is July 27-28, 2019 <br>at The Ohio Union in Columbus, OH.
     }
   },
   "image": [
-    "https://www.pyohio.org/2019/img/og-image.png"
+    "https://www.pyohio.org/2019/img/pyohio-2019-og.png"
    ],
   "description": "The FREE Python community conference in Columbus, OH, July 27-28, 2019.",
   "endDate": "2019-07-28T17:00-05:00",
