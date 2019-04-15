@@ -22,15 +22,25 @@ export default class SponsorsPage extends React.Component {
                   key={level.id}
                 >
                 <h2>{level.name}</h2>
-                {level.sponsors.map((sponsor, index) => (
-                  <div>
-                    <h3>{sponsor.name}</h3>
-                    <Img fixed={sponsor.web_logo.local.childImageSharp.fixed}  alt={sponsor.web_logo.description}/>
-                    <p>{sponsor.url}</p>
-                    {sponsor.twitter && <p>@{sponsor.twitter}</p>}
-                    <p>{sponsor.description}</p>
-                  </div>
-                ))}
+                <div className="sponsor-level-container">
+                  {level.sponsors.map((sponsor, index) => (
+                    <div className="card" key={index}>
+                      <div className="card-image">
+                        <Img fixed={sponsor.web_logo.local.childImageSharp.fixed}  alt={sponsor.web_logo.description}/>
+                      </div>
+                      <div className="card-header">
+                        <h3 className="card-header-title">{sponsor.name}</h3>
+                      </div>
+                      <div className="card-content">
+                        <p>{sponsor.description}</p>
+                      </div>
+                      <div className="card-footer">
+                        <a href={sponsor.url} className="card-footer-item" aria-label={`Website for ${sponsor.name}`}>Website</a>
+                        {sponsor.twitter && <a href="https://twitter.com/{sponsor.twitter}" className="card-footer-item" aria-label={`@${sponsor.twitter} on Twitter`}>@{sponsor.twitter}</a>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
                 </div>
               ))}
           </div>
