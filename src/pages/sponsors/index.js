@@ -36,7 +36,7 @@ export default class SponsorsPage extends React.Component {
                       </div>
                       <div className="card-footer">
                         <a href={sponsor.url} className="card-footer-item" aria-label={`Website for ${sponsor.name}`}>Website</a>
-                        {sponsor.twitter && <a href="https://twitter.com/{sponsor.twitter}" className="card-footer-item" aria-label={`@${sponsor.twitter} on Twitter`}>@{sponsor.twitter}</a>}
+                        {sponsor.twitter && <a href={`https://twitter.com/${sponsor.twitter}`} className="card-footer-item" aria-label={`@${sponsor.twitter} on Twitter`}>@{sponsor.twitter}</a>}
                       </div>
                     </div>
                   ))}
