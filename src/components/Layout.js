@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
 
@@ -45,6 +46,7 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <div>{children}</div>
+        {/* <Footer /> */}
       </div>
     )}
   />
