@@ -6,7 +6,7 @@ const Footer = () => (
     <StaticQuery
         query={graphql`
             query sponsorsQuery {
-                allSponsorLevels(filter: {name: {eq: "Non-Profit"}}) {
+                allSponsorLevels(filter: {name: {eq: "Premier"}}) {
                     edges {
                         node {
                             name
