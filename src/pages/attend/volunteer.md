@@ -3,9 +3,9 @@ templateKey: general-page
 title: Volunteer!
 ---
 
-Sign up to be on the volunteer list here: [Volunteer Sign-ups](https://goo.gl/muSVjG)
+Volunteer sign-up coming soon!
 
-Be sure to also [subscribe to our mailing list](/news/keep-in-touch) for updates.
+For now be sure to [subscribe to our mailing list](/news/keep-in-touch) for updates.
 
 On-site Volunteer Roles
 ----------------------
