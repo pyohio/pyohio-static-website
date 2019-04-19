@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "PyOhio",
   "dependencies": {
-    "bulma": "^0.7.0",
+    "bulma": "^0.7.4",
     "gatsby": "^2.0.66",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-google-analytics": "^2.0.13",
