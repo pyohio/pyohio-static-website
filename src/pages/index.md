@@ -9,17 +9,16 @@ title: PyOhio 2019
 
 PyOhio 2019 is July 27-28, 2019 <br>at The Ohio Union in Columbus, OH.
 
-<a href="http://add.eventable.com/events/5cb486bda9aa77001a31d0b3/5cb486bf41527a001bc7badf/" class="eventable-link" target="_blank" data-key="5cb486bda9aa77001a31d0b3" data-event="5cb486bf41527a001bc7badf" data-style="3">Add to Calendar</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://plugins.eventable.com/eventable.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'eventable-script');</script>
+<a href="https://ti.to/pyohio/pyohio-2019" class="button is-link is-large">REGISTER NOW!</a>
 
 #### Important Info
 
 * [Code of Conduct](/about/code-of-conduct)
 * [Call for Proposals](/speak/cfp)
+* [Registration](/attend/register)
 * [Directions & Travel Info](/attend/travel-directions)
 * [Events Overview](/events)
 * Schedule (TBD)
-* Registration Info (TBD)
 
 #### Keep In Touch
 

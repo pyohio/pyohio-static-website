@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import NavDropdown from '../components/NavDropdown'
 import github from '../img/github-icon.svg'
 import logo from '../img/pyohio-logo-small.png'
 
@@ -8,7 +9,7 @@ const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      burgerExpanded: false
+      burgerExpanded: false,
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -38,16 +39,42 @@ const Navbar = class extends React.Component {
       </div>
       <div id="navMenu" className={this.state.burgerExpanded ? "navbar-menu is-active" : "navbar-menu"}>
       <div className="navbar-start has-text-centered">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/news">
-          News
-        </Link>
-        <Link className="navbar-item" to="/sponsors/prospectus">
-          Sponsorship
-        </Link>
-       </div>
+        <NavDropdown buttonName={'About'} links={[
+          {name: 'About PyOhio', url: '/about'},
+          {name: 'Code of Conduct', url: '/about/code-of-conduct'},
+          {name: 'Organizing Team', url: '/about/team'}
+          ]}/>
+        <NavDropdown buttonName={'News'} links={[
+          {name: 'PyOhio News', url: '/news'},
+          {name: 'Keep in Touch', url: '/news/keep-in-touch'}
+        ]}/>
+        <NavDropdown buttonName={'Events'} links={[
+          {name: 'PyOhio Events', url: '/events'},
+          {name: 'Talks', url: '/events/talks'},
+          {name: 'Tutorials', url: '/events/tutorials'},
+          {name: 'Reception & Sprints', url: '/events/reception-sprints'},
+          {name: 'Young Coders', url: '/events/young-coders'},
+          {name: 'Lightning Talks', url: '/events/lightning-talks'}
+        ]}/>
+        <NavDropdown buttonName={'Attend'} links={[
+          {name: 'Register', url: '/attend/register'},
+          {name: 'Volunteer', url: '/attend/volunteer'},
+          {name: 'Travel & Directions', url: '/attend/travel-directions'},
+          {name: 'Hotels', url: '/attend/hotels'},
+          {name: 'Venue', url: '/attend/venue'},
+          {name: 'Food', url: '/attend/food'}
+        ]}/>
+        <NavDropdown buttonName={'Sponsors'} links={[
+          {name: 'Our Sponsors', url: '/sponsors'},
+          {name: 'Prospectus', url: '/sponsors/prospectus'},
+          {name: 'Individual Sponsors', url: '/sponsors/individual'}
+        ]}/>
+        <NavDropdown buttonName={'Speak'} links={[
+          {name: 'Call for Proposals', url: '/speak/cfp'},
+          {name: 'Talk Selection Process', url: '/speak/selection'},
+          {name: 'Review Proposals', url: '/speak/review-proposals'}
+        ]}/>
+      </div>
       <div className="navbar-end has-text-centered">
         <a
           className="navbar-item"

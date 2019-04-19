@@ -106,4 +106,4 @@ Interested in sponsoring a specific item or looking for a benefit that's not lis
 
 ## Ready to Sponsor?
 
-If you're ready to sponsor, please email info@pyohio.org.
+If you're ready to sponsor, please [apply via our CFP site](https://cfp.pyohio.org/2019/sponsors/apply/) or email info@pyohio.org.
