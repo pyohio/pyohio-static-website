@@ -3,29 +3,6 @@ templateKey: home-page
 title: PyOhio 2019
 ---
 
-![PyOhio 2019 Logo](/2019/img/pyohio-2019-transparent-300x225.png)
-
-### The FREE Annual Python Conference in Ohio
-
-PyOhio 2019 is July 27-28, 2019 <br>at The Ohio Union in Columbus, OH.
-
-<a href="https://ti.to/pyohio/pyohio-2019" class="button is-link is-large">REGISTER NOW!</a>
-
-#### Important Info
-
-* [Code of Conduct](/about/code-of-conduct)
-* [Call for Proposals](/speak/cfp)
-* [Registration](/attend/register)
-* [Directions & Travel Info](/attend/travel-directions)
-* [Events Overview](/events)
-* Schedule (TBD)
-
-#### Keep In Touch
-
-* [Subscribe to our mailing list for updates](/news/keep-in-touch)
-* [Join us on Slack](https://slack.pyohio.org/)
-* [Follow us on Twitter](https://twitter.com/pyohio)
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
