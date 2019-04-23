@@ -46,6 +46,9 @@ const Footer = () => (
                 <p>and our other sponsors.</p>
                 </div>
             }
+            <a href="https://www.netlify.com">
+              <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg"/>
+            </a>
           </div>
         </footer>
       )

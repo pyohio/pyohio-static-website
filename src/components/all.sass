@@ -4,10 +4,36 @@
 // Kalidi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
+$pyohio-red: #d91e43 // eyedropper hax
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
+
+ul
+  list-style: initial
+  margin: auto 1rem
+
+.hero
+    &.is-primary
+      background-color: $pyohio-red
+      .subtitle
+        // fix the rgba dipping contrast below 4.5:1
+        color: #fff
+    .vertical-center
+      flex-flow: column nowrap
+      justify-content: center
+    .hero-body
+      padding-bottom: 5rem !important
+    .hero-foot
+      flex-flow: row wrap
+      justify-content: space-evenly
+      padding-bottom: 3rem
+      > *
+        margin: 0.5rem 1rem
+
+.has-background-primary
+  background-color: $pyohio-red !important
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -78,6 +104,10 @@ $body-color: #333
   display: flex
   justify-content: center
   align-items: center
+
+.center-image
+  display: block
+  margin: 0 auto
 
 .margin-top-0
   margin-top: 0 !important
