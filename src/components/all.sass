@@ -14,22 +14,26 @@ ul
   list-style: initial
   margin: auto 1rem
 
-.hero.is-primary
-    background-color: $pyohio-red
-    .subtitle
-      // fix the rgba dipping contrast below 4.5:1
-      color: #fff
+.hero
+    &.is-primary
+      background-color: $pyohio-red
+      .subtitle
+        // fix the rgba dipping contrast below 4.5:1
+        color: #fff
     .vertical-center
       flex-flow: column nowrap
       justify-content: center
     .hero-body
-      padding-bottom: 5rem
+      padding-bottom: 5rem !important
     .hero-foot
       flex-flow: row wrap
       justify-content: space-evenly
       padding-bottom: 3rem
       > *
         margin: 0.5rem 1rem
+
+.has-background-primary
+  background-color: $pyohio-red !important
 
 .navbar .navbar-menu
   box-shadow:none !important

@@ -13,9 +13,9 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
     <div>
       <div className="hero is-medium is-primary">
         <div className="hero-body">
-          <div className="columns">
+          <div className="columns is-centered">
             <div className="column is-one-third">
-              <img src={logo} alt="PyOhio 2019 Logo"/>
+              <img className="center-image" src={logo} alt="PyOhio 2019 Logo"/>
             </div>
             <div className="column is-flex vertical-center">
               <div className="content">
@@ -33,8 +33,8 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
           </div>
         </div>
         <div className="hero-foot is-flex">
-          <a href="https://ti.to/pyohio/pyohio-2019" className="button is-link is-large">Register to attend</a>
-          <Link to="/speak/cfp" className="button is-link is-large">
+          <a href="https://ti.to/pyohio/pyohio-2019" className="button is-link is-large has-background-white-bis has-text-black">Register to attend</a>
+          <Link to="/speak/cfp" className="button is-link is-large has-background-white-bis has-text-black">
             Call for Proposals
           </Link>
         </div>
