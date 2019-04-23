@@ -43,7 +43,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="section">
+              {/* <div className="section">
                 <div className="columns is-centered">
                   <div className="column">
                     <Link className="has-text-centered is-block" to="/events/talks">
@@ -64,7 +64,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="section">
                 <div className="columns is-centered">
                   <div className="column is-narrow-tablet">
