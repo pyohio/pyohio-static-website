@@ -14,7 +14,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
       <div className="hero is-medium is-primary">
         <div className="hero-body">
           <div className="columns is-centered">
-            <div className="column is-one-third">
+            <div className="column is-half">
               <img className="center-image" src={logo} alt="PyOhio 2019 Logo"/>
             </div>
             <div className="column is-flex vertical-center">
