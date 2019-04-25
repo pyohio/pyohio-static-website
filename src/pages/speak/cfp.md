@@ -4,7 +4,7 @@ title: Call For Proposals
 ---
 
 
-## *Proposals accepted until 23:59:59ET on 2019-05-10*
+## *Proposals accepted until 23:59:59ET on 2019-05-12*
 
 Ready to submit a talk? Create a speaker profile and submit proposal(s) via our CFP site: [cfp.pyohio.org](https://cfp.pyohio.org/2019/dashboard/).
 
