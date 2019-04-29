@@ -88,9 +88,12 @@ _For individuals only_
 
 ### Non-Profit - FREE
 
-* Available to organizations aligned with the regional Python community
 * Mention in non-profit section of conference program
 * Logo displayed with click-through on PyOhio 2019 website
+* Available to organizations:
+  * Aligned with the regional Python community
+  * That promote the use of Python in and around Ohio
+  * Which are unable to afford a paid sponsorship level
 
 ### Add-On Options
 
