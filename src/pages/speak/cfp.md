@@ -16,6 +16,13 @@ If you would like to be matched with a mentor to help with your proposal(s), [re
 
 If you are an experienced speaker and would like to volunteer to mentor, [apply to be a mentor here](https://forms.gle/4nZ7WV27GxLBECNM8).
 
+## Session Formats
+
+* **Talks:** 30-minute presentations (with some select talks given an expanded 45-min time)
+* **Tutorials:** 120-minute hands-on workshops
+
+Note: We do not include time for Q&A however some speakers may choose to take questions during their session. Speakers can let the Session Chair know and they will make an announcement before the session if that is the case.
+
 ## Background
 
 PyOhio 2019, the annual Python programming conference for Ohio and the surrounding region, will take place Saturday & Sunday July 27th-28th, 2019 at The Ohio Union in Columbus, Ohio.
