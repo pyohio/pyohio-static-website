@@ -12,7 +12,7 @@ PyOhio is a weekend multi-track conference for users of and people interested in
 
 PyOhio attendees include a variety of working professionals, students, academics, and others who are so passionate about continuous learning and Python programming that they'll take a weekend of their own time to immerse themselves in Python programming content. Sponsoring PyOhio lets lets the attendees know that your organization shares these values.
 
-* Approximately 500-550 attendees expected
+* Approximately 500-550 attendees
 * Many attendees use Python professionally currently
 * Others use other languages but wish to learn more about Python
 * Many attendees come from Ohio and surrounding states
@@ -34,11 +34,6 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 ### Young Coders Class Sponsor - $3000 (limit 2)
 
 * A thank you for directly supporting kids learning Python programming
-* All benefits of Platinum Sponsorship
-
-### T-Shirt - $3000 (limit 1)
-
-* Your logo will appear conference t-shirts
 * All benefits of Platinum Sponsorship
 
 ### Swag Bag - $3000 (limit 1)
@@ -77,6 +72,13 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * Quarter-page advertisement in conference program
 * 1x t-shirts and parking passes
 * Literature in attendee handouts
+
+
+### Speaker Diversity Grant - $2000-$5000+
+
+* Allow us to provide hotel accommodations to speakers from underrepresented groups
+* Special recognition during conference open and closing announcements and in program
+* All benefits of Gold sponsorship
 
 ### Individual - $50+
 
