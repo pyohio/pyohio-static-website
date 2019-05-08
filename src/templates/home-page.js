@@ -5,6 +5,9 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SponsorShowcase from '../components/SponsorShowcase'
 import logo from '../../static/img/pyohio-2019-transparent-300x225.png'
+import talks from '../../static/img/pyohio-talks-2.jpg'
+import tutorials from '../../static/img/pyohio-tutorials-3.jpg'
+import sprints from '../../static/img/pyohio-sprints-1.jpg'
 
 export const HomePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -46,20 +49,20 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
               {/* <div className="section">
                 <div className="columns is-centered">
                   <div className="column">
-                    <Link className="has-text-centered is-block" to="/events/talks">
-                      <img className="center-image" src="https://placebear.com/500/500.jpg" alt=""/>
+                    <Link className="has-text-centered splash-link" to="/events/talks">
+                      <img className="center-image splash-image" src={talks} alt=""/>
                       <p className="has-text-weight-bold">Talks</p>
                     </Link>
                   </div>
                   <div className="column">
-                    <Link className="has-text-centered is-block" to="/events/tutorials">
-                      <img className="center-image" src="https://placebear.com/500/500.jpg" alt=""/>
+                    <Link className="has-text-centered splash-link" to="/events/tutorials">
+                      <img className="center-image splash-image" src={tutorials} alt=""/>
                       <p className="has-text-weight-bold">Tutorials</p>
                     </Link>
                   </div>
                   <div className="column">
-                    <Link className="has-text-centered is-block" to="/events/reception-sprints">
-                      <img className="center-image" src="https://placebear.com/500/500.jpg" alt=""/>
+                    <Link className="has-text-centered splash-link" to="/events/reception-sprints">
+                      <img className="center-image splash-image" src={sprints} alt=""/>
                       <p className="has-text-weight-bold">Sprints</p>
                     </Link>
                   </div>
