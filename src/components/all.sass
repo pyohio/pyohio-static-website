@@ -71,12 +71,23 @@ ul
   .card
     margin: 1rem
     max-width: 25rem
+    min-width: 400px
     width: auto
 
     // bad but the gatsby wrapper doesn't play nice
-    .card-image *
-      display: block !important
-      margin: 0 auto
+    .card-image
+      align-items: center
+      display: flex
+      flex-flow: column
+      height: 250px
+      justify-content: center
+      margin: auto
+      width: 250px
+      *
+        // display: block !important
+        margin: 0 auto
+        max-height: 250px
+        max-width: 250px
 
     .card-header
       justify-content: center
@@ -133,3 +144,9 @@ ul
 
       .card-footer
         flex-flow: row wrap
+
+
+@media screen and (max-width: 500px)
+  .sponsor-level-container
+    .card
+      min-width: 0
