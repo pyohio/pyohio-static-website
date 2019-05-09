@@ -51,7 +51,7 @@ export default () => (
                         level.sponsors.map((sponsor, index) => (
                           <div className="sponsor" key={index}>
                               <a href={sponsor.url}>
-                                  <Img fixed={sponsor.web_logo.local.childImageSharp.fixed}  alt={sponsor.web_logo.description}/>
+                                  <Img fixed={sponsor.web_logo.local.childImageSharp.fixed}  alt={sponsor.web_logo.description ? sponsor.web_logo.description : sponsor.name}/>
                               </a>
                           </div>
                         ))
