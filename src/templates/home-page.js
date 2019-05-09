@@ -5,9 +5,9 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SponsorShowcase from '../components/SponsorShowcase'
 import logo from '../../static/img/pyohio-2019-transparent-300x225.png'
-import talks from '../../static/img/pyohio-talks-2.jpg'
-import tutorials from '../../static/img/pyohio-tutorials-3.jpg'
-import sprints from '../../static/img/pyohio-sprints-1.jpg'
+// import talks from '../../static/img/pyohio-talks-2.jpg'
+// import tutorials from '../../static/img/pyohio-tutorials-3.jpg'
+// import sprints from '../../static/img/pyohio-sprints-1.jpg'
 
 export const HomePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
