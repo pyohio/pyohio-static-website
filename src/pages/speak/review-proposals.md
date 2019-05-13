@@ -12,7 +12,7 @@ levels are welcome!
 <p><strong>To sign up as a reviewer:</strong></p>
 <ol>
 <li>
-<p>Sign in to your account on this site (note that you will need to register a new account for 2019.)</p>
+<p>Sign in to your account (or create a new one) on our <a href="https://cfp.pyohio.org/">CFP site</a>.</p>
 </li>
 <li>
 <p>Go to the <a href="https://cfp.pyohio.org/2019/dashboard/">CFP site dashboard page</a>.</p>
