@@ -37,8 +37,8 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
         </div>
         <div className="hero-foot is-flex">
           <a href="https://ti.to/pyohio/pyohio-2019" className="button is-link is-large has-background-white-bis has-text-black">Register to attend</a>
-          <Link to="/speak/cfp" className="button is-link is-large has-background-white-bis has-text-black">
-            Call for Proposals
+          <Link to="/speak/review-proposals" className="button is-link is-large has-background-white-bis has-text-black">
+            Review Proposals
           </Link>
         </div>
       </div>
