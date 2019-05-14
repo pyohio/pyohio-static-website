@@ -15,7 +15,7 @@ const Footer = () => (
               web_logo {
                 local {
                   childImageSharp{
-                    resize(height: 50) {
+                    resize(height: 100) {
                       src
                       tracedSVG
                       width
