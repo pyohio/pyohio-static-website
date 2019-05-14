@@ -23,7 +23,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 
 ## Sponsorship Packages
 
-### Premier Sponsor - $5000 (limit 1)
+### Premier Sponsor - ~~$5000 (limit 1)~~ FULL
 
 * Exclusive mention including company description and short custom statement during opening and closing remarks
 * Your logo on the cover of the conference program
@@ -31,7 +31,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * Your click-through logo on footer of all pages of the PyOhio 2019 website
 * All benefits of Platinum Sponsorship
 
-### Young Coders Class Sponsor - $3000 (limit 2)
+### Young Coders Class Sponsor - $3000 (limit 1)
 
 * A thank you for directly supporting kids learning Python programming
 * All benefits of Platinum Sponsorship
@@ -46,7 +46,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * Your logo on all attendee lanyards
 * All benefits of Platinum Sponsorship
 
-### Platinum - $2000 (limit 4)
+### Platinum - $2000 (2 of 4 filled)
 
 * Your logo on session videos to be available indefinitely on the Python Video Archive. (PyOhio videos have hundreds of thousands of views!)
 * Full-page advertisement in the conference program
