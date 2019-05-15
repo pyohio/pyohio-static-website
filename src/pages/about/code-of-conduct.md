@@ -43,9 +43,9 @@ If you are being harassed, notice that someone else is being harassed, or have a
 
 You can email the incident response team at [conduct@pyohio.org](mailto:conduct@pyohio.org). You may also contact conference staff and ask to be put in touch with conference chair [Dave Forgac](mailto:dforgac@pyohio.org).
 
-If the matter is especially urgent, please call our Code of Conduct and safety representatives via phone or text:
+During the conference, if the matter is especially urgent please call our Code of Conduct and safety representatives via phone or text:
 
-- PyOhio CoC Hotline: +1-614-524-4050
+- PyOhio CoC Hotline: +1-614-524-4050 (this number will be active July 25-Aug 1)
 
 Or find individual responders in person:
 
