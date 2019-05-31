@@ -85,8 +85,8 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 _For individuals only_
 
 * Limited edition PyOhio Supporter sticker
-* Optional name listing on sponsors page as a supporter
-* Available once registration opens
+* Optional name listing on sponsors page and in printed program as an individual supporter
+* Available via our registration site: [Sponsor Now!](https://ti.to/pyohio/pyohio-2019)
 
 ### Non-Profit - FREE
 
