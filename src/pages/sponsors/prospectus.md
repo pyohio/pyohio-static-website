@@ -74,7 +74,7 @@ Your sponsorship dollars will cover the cost of the conference including venue r
 * Literature in attendee handouts
 
 
-### Speaker Diversity Grant - $2000-$5000+
+### Speaker Opportunity Grant - $2000-$5000+
 
 * Allow us to provide hotel accommodations to speakers from underrepresented groups
 * Special recognition during conference open and closing announcements and in program
