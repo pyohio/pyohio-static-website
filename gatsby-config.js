@@ -69,14 +69,36 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-source-custom-api',
       options: {
-        plugins: [
-          `gatsby-remark-social-cards`,
-          // ...
-        ],
-      },
+        url: 'https://cfp.pyohio.org/2019/schedule/talks/list/json/',
+        rootKey: 'Talks'
+      }
     },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'https://cfp.pyohio.org/2019/schedule/tutorials/list/json/',
+        rootKey: 'Tutorials'
+      }
+    },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'https://cfp.pyohio.org/2019/schedule/speakers/list/json/',
+        rootKey: 'Speakers',
+        imageKeys: ['photo']
+      }
+    },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       `gatsby-remark-social-cards`,
+    //       // ...
+    //     ],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
