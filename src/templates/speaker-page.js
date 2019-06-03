@@ -32,9 +32,7 @@ export const SpeakerPageTemplate = ({
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                 Speaker: {speakerName}
               </h1>
-              <div className="speaker-image-wrapper is-clearfix">
-                <Img fixed={photoSrc}  alt={speakerName}/>
-              </div>
+              <Img fixed={photoSrc}  alt={speakerName} className="speaker-image-wrapper is-clearfix"/>
               <PageContent className="content" content={speakerBio} />
               <h2 className="is-size-3">Presenting:</h2>
               {presentationList}
