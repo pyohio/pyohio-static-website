@@ -28,13 +28,15 @@ export const SpeakerPageTemplate = ({
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
+            <div className="section speaker-bio">
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              Speaker: {speakerName}
+                Speaker: {speakerName}
               </h1>
-              <div><Img fixed={photoSrc}  alt={speakerName}/></div>
+              <div className="speaker-image-wrapper is-clearfix">
+                <Img fixed={photoSrc}  alt={speakerName}/>
+              </div>
               <PageContent className="content" content={speakerBio} />
-              <h2 className="is-size-3">Presenting</h2>
+              <h2 className="is-size-3">Presenting:</h2>
               {presentationList}
             </div>
           </div>

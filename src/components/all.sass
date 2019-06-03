@@ -107,6 +107,16 @@ ul
   .sponsor
     margin: 1rem
 
+.speaker-bio
+  h1
+    text-align: center
+
+  .speaker-image-wrapper
+    text-align: center
+
+    img
+      clip-path: circle(50%)
+
 // Helper Classes
 .full-width-image-container
   width: 100vw
@@ -155,3 +165,16 @@ ul
   .sponsor-level-container
     .card
       min-width: 0
+
+@media screen and (min-width: 500px)
+  .speaker-bio
+    h1
+      text-align: initial
+
+    .speaker-image-wrapper
+      display: inline-block
+      float: left
+      margin-right: 1rem
+      shape-margin: .5rem
+      shape-outside: circle(50%)
+      text-align: initial
