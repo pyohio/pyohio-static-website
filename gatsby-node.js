@@ -43,9 +43,40 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
-
   })
-  return Promise.all([pages]);
+
+  const programPages = graphql(`
+  {
+    allSpeakers {
+      edges {
+        node {
+          id
+          speaker_id
+        }
+      }
+    }
+  }
+  `).then(result => {
+    if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()))
+      return Promise.reject(result.errors)
+    }
+
+    const speakers = result.data.allSpeakers.edges
+    speakers.forEach(edge => {
+      const id = edge.node.id
+      createPage({
+        path: `/speakers/${edge.node.speaker_id}`,
+        component: path.resolve("./src/templates/speaker-page.js"),
+        // additional data can be passed via context
+        context: {
+          id,
+        },
+      })
+    })
+  })
+
+  return Promise.all([pages, programPages]);
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
