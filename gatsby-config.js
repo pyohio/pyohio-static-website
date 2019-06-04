@@ -72,14 +72,16 @@ module.exports = {
       resolve: 'gatsby-source-custom-api',
       options: {
         url: 'https://cfp.pyohio.org/2019/schedule/talks/list/json/',
-        rootKey: 'Talks'
+        rootKey: 'Talks',
+        imageKeys: ['photo']
       }
     },
     {
       resolve: 'gatsby-source-custom-api',
       options: {
         url: 'https://cfp.pyohio.org/2019/schedule/tutorials/list/json/',
-        rootKey: 'Tutorials'
+        rootKey: 'Tutorials',
+        imageKeys: ['photo']
       }
     },
     {
