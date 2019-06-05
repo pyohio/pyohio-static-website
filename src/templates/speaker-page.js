@@ -67,6 +67,9 @@ const SpeakerPage = ({ data }) => {
   if (speaker.photo){
     photoSrc = speaker.photo.local.childImageSharp.fixed 
   }
+  const pageTitle = `PyOhio 2019 Speaker: ${speaker.name}`
+  const presentationNames = speaker.presentations.map(p => p.title).join(", ")
+  const pageDescription = `${speaker.name} presenting: ${presentationNames}`
 
   return (
     <Layout>
@@ -80,8 +83,11 @@ const SpeakerPage = ({ data }) => {
         twitter={speaker.twitter}
         helmet={
           <Helmet>
-            <title>{`PyOhio 2019 Speaker: ${speaker.name}`}</title>
-            <meta name="description" content={`PyOhio 2019 speaker: ${speaker.name}`} />
+            <title>{pageTitle}</title>
+            <meta name="description" content={pageDescription} />
+            <meta name="twitter:description" content={pageDescription} />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
           </Helmet>
         }
       />

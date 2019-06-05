@@ -76,7 +76,7 @@ const PresentationPage = ({ data }) => {
   }
 
   const speakersString = presentation.speakers.map(speaker => speaker.name).join(", ")
-  const pageTitle = `PyOhio 2019 - ${presentation.title}`
+  const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
   const pageDescription = `${presentation.kind}: ${presentation.title} by ${speakersString}`
   return (
     <Layout>
@@ -88,9 +88,9 @@ const PresentationPage = ({ data }) => {
           <Helmet>
             <title>{pageTitle}</title>
             <meta name="description" content={pageDescription} />
-            <meta property="og:title" content={pageTitle} />
-            <meta name="twitter:title" content={pageTitle} />
             <meta name="twitter:description" content={pageDescription} />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
           </Helmet>
         }
         kind={presentation.kind}
