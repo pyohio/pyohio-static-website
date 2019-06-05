@@ -55,6 +55,22 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
+    allTalks {
+      edges {
+        node {
+          id
+          presentation_id
+        }
+      }
+    }
+    allTutorials {
+      edges {
+        node {
+          id
+          presentation_id
+        }
+      }
+    }
   }
   `).then(result => {
     if (result.errors) {
@@ -68,12 +84,26 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: `/speakers/${edge.node.speaker_id}`,
         component: path.resolve("./src/templates/speaker-page.js"),
-        // additional data can be passed via context
         context: {
           id,
-        },
+        }
       })
     })
+
+    const talks = result.data.allTalks.edges
+    const tutorials = result.data.allTutorials.edges
+    const allPresentations = talks.concat(tutorials)
+    allPresentations.forEach(edge => {
+      const id = edge.node.id
+      createPage({
+        path: `/presentations/${edge.node.presentation_id}`,
+        component: path.resolve("./src/templates/presentation-page.js"),
+        context: {
+          id,
+        }
+      })
+    })
+
   })
 
   return Promise.all([pages, programPages]);

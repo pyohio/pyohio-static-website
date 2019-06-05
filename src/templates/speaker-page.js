@@ -96,7 +96,7 @@ export const speakerPageQuery = graphql`
       photo {
         local {
           childImageSharp {
-            fixed(width:250){
+            fixed(width:250, height:250, cropFocus:ATTENTION){
               ...GatsbyImageSharpFixed
             }
           }
