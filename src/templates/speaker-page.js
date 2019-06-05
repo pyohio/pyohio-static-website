@@ -13,6 +13,7 @@ export const SpeakerPageTemplate = ({
   speakerName,
   speakerBio,
   helmet,
+  twitter
 }) => {
   const PageContent = contentComponent || Content
 
@@ -30,7 +31,11 @@ export const SpeakerPageTemplate = ({
           <div className="column is-10 is-offset-1">
             <div className="section speaker-bio">
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                Speaker: {speakerName}
+                <span>Speaker: {speakerName} </span>
+                <span className="twitter-link">
+                  {(twitter) &&
+                  <a href={`https://twitter.com/${twitter}`}>@{twitter}</a>}
+                </span>
               </h1>
               <Img fixed={photoSrc}  alt={speakerName} className="speaker-image-wrapper is-clearfix"/>
               <PageContent className="content" content={speakerBio} />
@@ -52,6 +57,7 @@ SpeakerPageTemplate.propTypes = {
   speakerName: PropTypes.string.isRequired,
   speakerBio: PropTypes.string,
   title: PropTypes.string,
+  twitter: PropTypes.string,
 }
 
 const SpeakerPage = ({ data }) => {
@@ -71,6 +77,7 @@ const SpeakerPage = ({ data }) => {
         speakerName={speaker.name}
         speakerBio={speaker.biography_html}
         title={`Speaker: ${speaker.name}`}
+        twitter={speaker.twitter}
         helmet={
           <Helmet>
             <title>{`PyOhio 2019 Speaker: ${speaker.name}`}</title>
@@ -107,6 +114,7 @@ export const speakerPageQuery = graphql`
         title
         presentation_id
       }
+      twitter
     }
   }
 `
