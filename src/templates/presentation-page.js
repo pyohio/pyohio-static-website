@@ -129,7 +129,7 @@ export const PresentationPageQuery = graphql`
         photo {
           local {
             childImageSharp {
-              fixed(width:250, height:250, cropFocus:ATTENTION){
+              fixed(width:250, height:250, cropFocus:CENTER){
                 ...GatsbyImageSharpFixed
               }
             }
@@ -152,7 +152,7 @@ export const PresentationPageQuery = graphql`
         photo {
           local {
             childImageSharp {
-              fixed(width:250, height:250, cropFocus:ATTENTION){
+              fixed(width:250, height:250, cropFocus:CENTER){
                 ...GatsbyImageSharpFixed
               }
             }
