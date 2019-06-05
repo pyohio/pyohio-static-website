@@ -75,15 +75,9 @@ const PresentationPage = ({ data }) => {
     presentation = tutorial
   }
 
-  const speakersString = 'speakers go here'
-  //presentation.schedule.room = "room TBD"
-  //presentation.schedule.start = "time TBD"
-
-//   presentation.speakers = [
-//     {"name": "Speaker 1",
-//   "speaker_id": 123
-// }
-//   ]
+  const speakersString = presentation.speakers.map(speaker => speaker.name).join(", ")
+  const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
+  const pageDescription = `${presentation.kind}: ${presentation.title} by ${speakersString}`
   return (
     <Layout>
       <PresentationPageTemplate
@@ -92,8 +86,11 @@ const PresentationPage = ({ data }) => {
         description={presentation.description_html}
         helmet={
           <Helmet>
-            <title>{`PyOhio 2019 - ${presentation.title}`}</title>
-            <meta name="description" content={`PyOhio 2019 ${presentation.kind}: ${presentation.title} by ${speakersString}`} />
+            <title>{pageTitle}</title>
+            <meta name="description" content={pageDescription} />
+            <meta name="twitter:description" content={pageDescription} />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
           </Helmet>
         }
         kind={presentation.kind}

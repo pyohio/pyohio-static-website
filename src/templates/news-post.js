@@ -42,6 +42,7 @@ NewsPostTemplate.propTypes = {
 
 const NewsPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const pageTitle = `PyOhio 2019 News: ${post.frontmatter.title}`
 
   return (
     <Layout>
@@ -53,8 +54,10 @@ const NewsPost = ({ data }) => {
           <Helmet
             titleTemplate="%s | News"
           >
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{pageTitle}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
           </Helmet>
         }
         title={post.frontmatter.title}
