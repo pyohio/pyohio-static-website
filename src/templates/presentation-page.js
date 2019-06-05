@@ -20,15 +20,14 @@ export const PresentationPageTemplate = ({
   const PageContent = contentComponent || Content
 
   const speakerList = speakers.map((item, key) =>
-  <div class="tile">
+  <article className="tile is-child speaker-bio">
     <Link to={`/speakers/${item.speaker_id}`}>
-      <Img fixed={item.photo.local.childImageSharp.fixed}  alt={item.name} />
+      <Img fixed={item.photo.local.childImageSharp.fixed}  alt={item.name} className="speaker-image-wrapper is-clearfix"/>
     </Link>
-
-    <Link to={`/speakers/${item.speaker_id}`}>
+    <p className="subtitle"><Link to={`/speakers/${item.speaker_id}`}>
       {item.name}
-    </Link>
-  </div>
+    </Link></p>
+  </article>
   )
   return (
     <section className="section section--gradient">
@@ -43,8 +42,8 @@ export const PresentationPageTemplate = ({
               <div><em>{kind} - {startTime} in {room}</em></div>
               <PageContent className="content presentation-description" content={description} />
               <PageContent className="content presentation-abstract" content={abstract} />
-              <h2 className="is-size-3">Presented by:</h2>
-              <div class="tile is-ancestor">
+              <h2 className="is-size-4">Presented by:</h2>
+              <div className="tile is-ancestor">
                 {speakerList}
               </div>
             </div>
@@ -130,7 +129,7 @@ export const PresentationPageQuery = graphql`
         photo {
           local {
             childImageSharp {
-              fixed(width:250){
+              fixed(width:250, height:250, cropFocus:ATTENTION){
                 ...GatsbyImageSharpFixed
               }
             }
@@ -153,7 +152,7 @@ export const PresentationPageQuery = graphql`
         photo {
           local {
             childImageSharp {
-              fixed(width:250){
+              fixed(width:250, height:250, cropFocus:ATTENTION){
                 ...GatsbyImageSharpFixed
               }
             }
