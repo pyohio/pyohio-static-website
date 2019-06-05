@@ -36,7 +36,6 @@ const TemplateWrapper = ({ children }) => (
 
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/2019/" />
           <meta property="og:image" content={`${data.site.siteMetadata.siteUrl}${data.site.pathPrefix}/img/pyohio-2019-og.jpg`}/>
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content={`${data.site.siteMetadata.siteUrl}${data.site.pathPrefix}/img/pyohio-2019-og.jpg`}/>

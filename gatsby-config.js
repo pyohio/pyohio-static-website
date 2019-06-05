@@ -92,15 +92,15 @@ module.exports = {
         imageKeys: ['photo']
       }
     },
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       `gatsby-remark-social-cards`,
-    //       // ...
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-social-cards`,
+          // ...
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
