@@ -44,7 +44,7 @@ export const pageQuery = graphql`
           photo {
             local {
               childImageSharp {
-                fixed(width: 150, height: 150) {
+                fixed(width: 150, height: 150, cropFocus: CENTER) {
                   ...GatsbyImageSharpFixed
                 }
               }
