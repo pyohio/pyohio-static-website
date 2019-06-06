@@ -7,10 +7,8 @@ export default class SponsorsPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: talkList } = data.allTalks
-    function description(html) {
-      return {__html: html}
-    }
     const pageTitle = "PyOhio 2019 Talks"
+
     return (
       <Layout>
         <Helmet>
@@ -35,7 +33,7 @@ export default class SponsorsPage extends React.Component {
                      </Link>
                     </p>
                     <p className="subtitle">{talk.speakers.map(s => s.name).join(", ")}</p>
-                    <p className="content" dangerouslySetInnerHTML={description(talk.description_html)}/>
+                    <div dangerouslySetInnerHTML={{__html: talk.description_html}}/>
                   </div>
                 </div>
               ))}
