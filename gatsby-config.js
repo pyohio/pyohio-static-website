@@ -92,6 +92,13 @@ module.exports = {
         imageKeys: ['photo']
       }
     },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'http://static-cfp.pyohio.org/data/individual-sponsors.json',
+        rootKey: 'IndividualSponsors'
+      }
+    },
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
