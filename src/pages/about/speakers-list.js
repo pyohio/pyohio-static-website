@@ -22,11 +22,13 @@ export default class SponsorsPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
             </div>
-            {speakerList.map(({ node: speaker }) => (
-                <Link to={`/speakers/${speaker.speaker_id}`} title={speaker.name}>
-                <Img fixed={speaker.photo.local.childImageSharp.fixed} />
-                </Link>
-              ))}
+            <div className="speakers-list is-flex">
+              {speakerList.map(({ node: speaker }) => (
+                  <Link to={`/speakers/${speaker.speaker_id}`} title={speaker.name}>
+                    <Img className="speaker-image-wrapper" fixed={speaker.photo.local.childImageSharp.fixed} />
+                  </Link>
+                ))}
+            </div>
           </div>
         </section>
       </Layout>

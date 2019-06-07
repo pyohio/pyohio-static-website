@@ -121,6 +121,21 @@ ul
     img
       clip-path: circle(50%)
 
+.speakers-list
+  align-items: center
+  flex-flow: row wrap
+  justify-content: space-evenly
+
+  a
+    display: block
+    margin: .5rem
+
+    .speaker-image-wrapper
+      border: 2px solid $pyohio-red
+
+      img
+        clip-path: circle(50%)
+
 // talk page fixes
 article.speaker-bio
   align-items: center
@@ -193,6 +208,5 @@ article.speaker-bio
   font-size: initial
 
 @supports(clip-path: circle(50%))
-  .speaker-bio
-    .speaker-image-wrapper
-      border-radius: 50%
+  .speaker-image-wrapper
+    border-radius: 50%
