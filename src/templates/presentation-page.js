@@ -20,8 +20,8 @@ export const PresentationPageTemplate = ({
   const PageContent = contentComponent || Content
 
   const speakerList = speakers.map((item, key) =>
-  <article className="tile is-child speaker-bio">
-    <Link to={`/speakers/${item.speaker_id}`}>
+  <article className="tile is-child speaker-bio is-flex">
+    <Link className="is-clearfix is-block" to={`/speakers/${item.speaker_id}`}>
       <Img fixed={item.photo.local.childImageSharp.fixed}  alt={item.name} className="speaker-image-wrapper is-clearfix"/>
     </Link>
     <p className="subtitle"><Link to={`/speakers/${item.speaker_id}`}>
@@ -44,7 +44,9 @@ export const PresentationPageTemplate = ({
               <PageContent className="content presentation-abstract" content={abstract} />
               <h2 className="is-size-4">Presented by:</h2>
               <div className="tile is-ancestor">
-                {speakerList}
+                <div className="tile is-parent">
+                  {speakerList}
+                </div>
               </div>
             </div>
           </div>

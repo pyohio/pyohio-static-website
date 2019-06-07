@@ -112,6 +112,7 @@ ul
     text-align: center
 
   .speaker-image-wrapper
+    border: 2px solid $pyohio-red
     display: block !important
     margin: 1rem auto
     min-height: 250px
@@ -119,6 +120,12 @@ ul
 
     img
       clip-path: circle(50%)
+
+// talk page fixes
+article.speaker-bio
+  align-items: center
+  flex-flow: column wrap
+  justify-content: center
 
 // Helper Classes
 .full-width-image-container
@@ -184,3 +191,8 @@ ul
 
 .twitter-link
   font-size: initial
+
+@supports(clip-path: circle(50%))
+  .speaker-bio
+    .speaker-image-wrapper
+      border-radius: 50%
