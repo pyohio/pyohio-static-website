@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import Img from "gatsby-image"
 import Layout from '../../components/Layout'
 
@@ -7,10 +8,19 @@ export default class SponsorsPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: sponsorLevels } = data.allSponsorLevels
-
+    const pageTitle = "PyOhio 2019 Sponsors"
+    const pageDescription = "PyOhio is FREE to attend thanks to the support of our sponsors."
     return (
       <Layout>
         <section className="section">
+        <Helmet>
+            <title>{pageTitle}</title>
+            <meta name="description" content={pageDescription} />
+            <meta name="twitter:description" content={pageDescription} />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
+          </Helmet>
+
           <div className="container">
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">PyOhio 2019 Sponsors</h1>
