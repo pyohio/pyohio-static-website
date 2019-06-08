@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -19,8 +19,7 @@ export const SpeakerPageTemplate = ({
 
   const presentationList = presentations.map((item, key) =>
   <p>
-    {/* {item.kind}: <Link to="{`/events/{item.presentation_id}`}">{item.title}</Link> */}
-    <strong>{item.kind}:</strong> {item.title}
+    <strong>{item.kind}:</strong> <Link to={`/presentations/${item.presentation_id}`}>{item.title}</Link>
   </p>
   )
   return (
