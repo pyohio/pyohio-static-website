@@ -123,19 +123,23 @@ ul
       clip-path: circle(50%)
 
 .speakers-list
-  align-items: center
+  align-items: baseline
   flex-flow: row wrap
   justify-content: space-evenly
 
   a
     display: block
     margin: .5rem
+    max-width: 150px
 
     .speaker-image-wrapper
-      border: 2px solid $pyohio-red
+      border: 1px solid $pyohio-red
 
       img
         clip-path: circle(50%)
+
+    p
+      text-align: center
 
 // talk page fixes
 article.speaker-bio

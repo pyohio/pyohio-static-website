@@ -25,7 +25,10 @@ export default class SponsorsPage extends React.Component {
             <div className="speakers-list is-flex">
               {speakerList.map(({ node: speaker }) => (
                   <Link to={`/speakers/${speaker.speaker_id}`}>
-                    <Img className="speaker-image-wrapper" fixed={speaker.photo.local.childImageSharp.fixed} alt={speaker.name}/>
+                    <Img className="speaker-image-wrapper" fixed={speaker.photo.local.childImageSharp.fixed}/>
+                    <p>
+                      {speaker.name}
+                    </p>
                   </Link>
                 ))}
             </div>
