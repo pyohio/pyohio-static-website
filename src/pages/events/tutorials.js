@@ -23,9 +23,9 @@ export default class SponsorsPage extends React.Component {
               <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
             </div>
 
-            <article class="message">
-              <div class="message-body">
-                <strong>Please note:</strong> All tutorials have limited capacity
+            <article class="message is-primary">
+              <div className="message-body">
+                <strong>PLEASE NOTE:</strong> All tutorials have limited capacity
                 and require pre-registration. Registration will open in early July.
                 Be sure to <Link to="/news/keep-in-touch">subscribe to our mailing
                 list</Link> for updates.
