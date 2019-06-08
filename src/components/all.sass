@@ -112,13 +112,40 @@ ul
     text-align: center
 
   .speaker-image-wrapper
+    border: 2px solid $pyohio-red
     display: block !important
     margin: 1rem auto
     min-height: 250px
+    min-width: 250px
     text-align: center
 
     img
       clip-path: circle(50%)
+
+.speakers-list
+  align-items: baseline
+  flex-flow: row wrap
+  justify-content: space-evenly
+
+  a
+    display: block
+    margin: .5rem
+    max-width: 150px
+
+    .speaker-image-wrapper
+      border: 1px solid $pyohio-red
+
+      img
+        clip-path: circle(50%)
+
+    p
+      text-align: center
+
+// talk page fixes
+article.speaker-bio
+  align-items: center
+  flex-flow: column wrap
+  justify-content: center
 
 // Helper Classes
 .full-width-image-container
@@ -184,3 +211,7 @@ ul
 
 .twitter-link
   font-size: initial
+
+@supports(clip-path: circle(50%))
+  .speaker-image-wrapper
+    border-radius: 50%
