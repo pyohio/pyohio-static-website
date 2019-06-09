@@ -34,7 +34,7 @@ export default class SponsorsPage extends React.Component {
                 <h2>{level.name}</h2>
                 <div className="sponsor-level-container">
                   {level.sponsors.map((sponsor, index) => (
-                    <div className="card" key={index}>
+                    <div className={`card card-${level.name.toLowerCase()}`} key={index}>
                       <div className="card-image">
                         <Img fixed={sponsor.web_logo.local.childImageSharp.fixed}  alt={sponsor.web_logo.description}/>
                       </div>

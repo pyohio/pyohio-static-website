@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const Footer = () => (
@@ -12,6 +12,7 @@ const Footer = () => (
           name
             sponsors {
               name
+              url
               web_logo {
                 local {
                   childImageSharp{
@@ -40,10 +41,11 @@ const Footer = () => (
             {data.allSponsorLevels.edges[0].node.sponsors != null &&
                 <div>
                 <p>PyOhio is made possible by our premier sponsor:</p>
+                <a href={data.allSponsorLevels.edges[0].node.sponsors[0].url}>
                 <Img fixed={data.allSponsorLevels.edges[0].node.sponsors[0].web_logo.local.childImageSharp.resize}
                 alt={data.allSponsorLevels.edges[0].node.sponsors[0].name}
-                />
-                <p>and our other sponsors.</p>
+                /></a>
+                <p>and our other <Link to="/sponsors">2019 sponsors</Link>.</p>
                 </div>
             }
             <a href="https://www.netlify.com">
