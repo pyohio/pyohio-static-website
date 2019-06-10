@@ -3,7 +3,7 @@ templateKey: general-page
 title: PyOhio Events Overview
 ---
 
-***Note: These planned events and times are tentative until announced via our [mailing list](/news/keep-in-touch).***
+_**Note:** These planned events and times are tentative until announced via our [mailing list](/news/keep-in-touch)._
 
 ## Friday, July 26, 2019
 

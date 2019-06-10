@@ -42,7 +42,8 @@ const Navbar = class extends React.Component {
         <NavDropdown buttonName={'About'} links={[
           {name: 'About PyOhio', url: '/about'},
           {name: 'Code of Conduct', url: '/about/code-of-conduct'},
-          {name: 'Organizing Team', url: '/about/team'}
+          {name: 'Organizing Team', url: '/about/team'},
+          {name: 'Speakers', url: '/about/speakers'}
           ]}/>
         <NavDropdown buttonName={'News'} links={[
           {name: 'PyOhio News', url: '/news'},
