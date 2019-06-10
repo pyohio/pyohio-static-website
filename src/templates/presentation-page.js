@@ -12,6 +12,7 @@ export const PresentationPageTemplate = ({
   description,
   helmet,
   kind,
+  prerequisites,
   room,
   speakers,
   startTime,
@@ -42,6 +43,12 @@ export const PresentationPageTemplate = ({
               <div><em>{kind} - {startTime} in {room}</em></div>
               <PageContent className="content presentation-description" content={description} />
               <PageContent className="content presentation-abstract" content={abstract} />
+              {prerequisites &&
+              <div>
+                <h2 className="is-size-4">Prerequisites & Setup Instructions:</h2>
+                <PageContent className="content presentation-prerequisites" content={prerequisites} />
+                </div>
+              }
               <h2 className="is-size-4">Presented by:</h2>
               <div className="tile is-ancestor">
                 <div className="tile is-parent">
@@ -62,6 +69,7 @@ PresentationPageTemplate.propTypes = {
   description: PropTypes.string,
   helmet: PropTypes.object,
   kind: PropTypes.string,
+  prerequisites: PropTypes.string,
   room: PropTypes.string,
   speakers: PropTypes.object,
   startTime: PropTypes.string,
@@ -96,6 +104,7 @@ const PresentationPage = ({ data }) => {
           </Helmet>
         }
         kind={presentation.kind}
+        prerequisites={presentation.prerequisite_setup_html}
         room={presentation.schedule.room}
         speakers={presentation.speakers}
         startTime={presentation.schedule.start}
@@ -141,6 +150,7 @@ export const PresentationPageQuery = graphql`
       description_html
       abstract_html
       kind
+      prerequisite_setup_html
       schedule {
         room
         start
