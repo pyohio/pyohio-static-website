@@ -51,7 +51,7 @@ export default class SponsorsPage extends React.Component {
           <li>Donating doesn't automatically include registration. Be sure to also select a registration if you plan on attending PyOhio</li>
           </ul>
 
-          <p>If your company would like to sponxsor PyOhio, please see the <Link to="/sponsors/prospectus">Sponsors Prospectus</Link>.</p>
+          <p>If your company would like to sponsor PyOhio, please see the <Link to="/sponsors/prospectus">Sponsors Prospectus</Link>.</p>
 
           <p>If you'd like to support PyOhio in some other way please email <a href="mailto:info@pyohio.org">info@pyohio.org</a>.</p>
           </div></div>
