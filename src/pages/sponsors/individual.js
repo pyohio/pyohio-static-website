@@ -18,15 +18,13 @@ export default class SponsorsPage extends React.Component {
         </Helmet>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
-            </div>
+            <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
             <p><em>Thank you to our individual sponsors!</em></p>
+            <div class="supporter-list">
               {sponsorList.map(({ node: sponsor }) => (
-                <div className="">
-                  <p className="is-size-4">{sponsor.name}</p>
-                </div>
+                  <p className="supporter-name">{sponsor.name}</p>
               ))}
+            </div>
           </div>
         </section>
         <section>
