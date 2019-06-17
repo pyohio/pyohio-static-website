@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import strftime from 'strftime'
 
 export const PresentationPageTemplate = ({ 
   abstract,
@@ -15,6 +16,7 @@ export const PresentationPageTemplate = ({
   prerequisites,
   room,
   speakers,
+  startDate,
   startTime,
   title,
 }) => {
@@ -40,7 +42,7 @@ export const PresentationPageTemplate = ({
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                 {title}
               </h1>
-              <div><em>{kind} - {startTime} in {room}</em></div>
+              <div><em>{kind} - {startDate} at {startTime} in {room}</em></div>
               <PageContent className="content presentation-description" content={description} />
               <PageContent className="content presentation-abstract" content={abstract} />
               {prerequisites &&
@@ -72,6 +74,7 @@ PresentationPageTemplate.propTypes = {
   prerequisites: PropTypes.string,
   room: PropTypes.string,
   speakers: PropTypes.object,
+  startDate: PropTypes.string,
   startTime: PropTypes.string,
   title: PropTypes.string,
 }
@@ -85,6 +88,13 @@ const PresentationPage = ({ data }) => {
     presentation = tutorial
   }
 
+  let startDate = "date TBD"
+  let startTime = "time TBD"
+  const startDatetime = new Date(presentation.schedule.start)
+  if ( !isNaN(startDatetime) ) {
+    startDate = strftime("%a %B %d", startDatetime)
+    startTime = strftime("%H:%M%P", startDatetime)
+  }
   const speakersString = presentation.speakers.map(speaker => speaker.name).join(", ")
   const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
   const pageDescription = `${presentation.kind}: ${presentation.title} by ${speakersString}`
@@ -107,7 +117,8 @@ const PresentationPage = ({ data }) => {
         prerequisites={presentation.prerequisite_setup_html}
         room={presentation.schedule.room}
         speakers={presentation.speakers}
-        startTime={presentation.schedule.start}
+        startDate={startDate}
+        startTime={startTime}
         title={presentation.title}
       />
     </Layout>
