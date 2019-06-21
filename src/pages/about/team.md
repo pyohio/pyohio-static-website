@@ -13,8 +13,10 @@ PyOhio 2019 is organized by the following volunteers:
 * Dave Forgac
 * Eric Floehr
 * Gary Johnson
+* Jack Moore
 * Jason M. Green
 * Jerry Kingzett
 * Jess Unrein
 * Kat Passen
 * Mike Pirnat
+* Tom Casavant

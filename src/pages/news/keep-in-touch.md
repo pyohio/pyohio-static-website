@@ -1,10 +1,10 @@
 ---
 templateKey: 'general-page'
 path: /contact/keep-in-touch
-title: Join the PyOhio Mailing List
+title: Subscribe to the PyOhio Newsletter
 ---
 
-Subscribe to our mailing list for occasional (1-2 emails per month) updates about PyOhio:
+Subscribe for occasional (1-2 emails per month) updates about PyOhio:
 
 <!-- Begin Mailchimp Signup Form -->
 
