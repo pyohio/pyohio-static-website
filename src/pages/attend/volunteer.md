@@ -10,26 +10,36 @@ For now be sure to [subscribe to our mailing list](/news/keep-in-touch) for upda
 On-site Volunteer Roles
 ----------------------
 
+*No experience necessary! We'll provide brief training before your volunteer shifts.*
+
 ### Registration
-Greet attendees. Dispense badges and swag bags. Smile.
+
+Greet and check attendees in. Dispense badges and bags.
 
 ### Session Chair
-Offer speaker water. Introduce speaker. Show provided time-remaining cards. Remind speaker to repeat questions. Grin.
+
+Help speakers be successful: Make sure they're set up before the talk. Offer water. Introduce speakers. Show provided 
+time-remaining cards. Usher attendees away from speaker area so the next speaker can set up.
 
 ### Teaching Assistant
-Assist the teacher and students of the Young Coders class. Beam.
+
+Assist the teacher and students of the Young Coders class.
 
 ### T-Shirts
-Dispense shirts. Accept donations. Smirk.
+
+Dispense shirts and accept donations.
 
 ### Video Assistant
-Assist the Videographer. Aim and focus. Twinkle.
+
+Assist the videographer during talk recordings.
 
 ### Signage
-Update all room signs (at doors) after each talk. Simper.
+
+Update all room signs (at doors) after each session.
 
 ### Backup
-Stand ready to step into any of the above roles as necessary. Laugh.
+
+Stand ready to step into any of the above roles as necessary.
 
 Other Ways to Help
 ------------------
