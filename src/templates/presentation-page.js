@@ -92,8 +92,8 @@ const PresentationPage = ({ data }) => {
   let startTime = "time TBD"
   const startDatetime = new Date(presentation.schedule.start)
   if ( !isNaN(startDatetime) ) {
-    startDate = strftime("%a %B %d", startDatetime)
-    startTime = strftime("%H:%M%P", startDatetime)
+    startDate = strftime("%a, %B %d", startDatetime)
+    startTime = strftime("%-I:%M%P", startDatetime)
   }
   const speakersString = presentation.speakers.map(speaker => speaker.name).join(", ")
   const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
