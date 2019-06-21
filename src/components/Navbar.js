@@ -43,12 +43,13 @@ const Navbar = class extends React.Component {
           {name: 'About PyOhio', url: '/about'},
           {name: 'Code of Conduct', url: '/about/code-of-conduct'},
           {name: 'Organizing Team', url: '/about/team'},
-          {name: 'Speakers', url: '/about/speakers'}
+          {name: 'Speakers', url: '/about/speakers'},
+          {name: 'Newsletter', url: '/news/keep-in-touch'}
           ]}/>
-        <NavDropdown buttonName={'News'} links={[
+        {/* <NavDropdown buttonName={'News'} links={[
           {name: 'PyOhio News', url: '/news'},
-          {name: 'Keep in Touch', url: '/news/keep-in-touch'}
-        ]}/>
+          
+        ]}/> */}
         <NavDropdown buttonName={'Events'} links={[
           {name: 'PyOhio Events', url: '/events'},
           {name: 'Talks', url: '/events/talks'},
@@ -70,11 +71,11 @@ const Navbar = class extends React.Component {
           {name: 'Prospectus', url: '/sponsors/prospectus'},
           {name: 'Individual Sponsors', url: '/sponsors/individual'}
         ]}/>
-        <NavDropdown buttonName={'Speak'} links={[
+        {/* <NavDropdown buttonName={'Speak'} links={[
           {name: 'Call for Proposals', url: '/speak/cfp'},
           {name: 'Talk Selection Process', url: '/speak/selection'},
           {name: 'Review Proposals', url: '/speak/review-proposals'}
-        ]}/>
+        ]}/> */}
       </div>
       <div className="navbar-end has-text-centered">
         <a
