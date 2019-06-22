@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 import Layout from '../../components/Layout'
 
-export default class SpeakersPage extends React.Component {
+export default class OrganizersPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: speakerList } = data.allSpeakers
-    const pageTitle = "PyOhio 2019 Speakers"
+    const { edges: organizers } = data.allOrganizers
+    const pageTitle = "PyOhio 2019 Organizing Team"
 
     return (
       <Layout>
@@ -22,17 +22,17 @@ export default class SpeakersPage extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
             </div>
-            <div className="speakers-list is-flex">
-              {speakerList.map(({ node: speaker }) => (
-                  <Link to={`/speakers/${speaker.speaker_id}`}>
-                    <Img className="speaker-image-wrapper" fixed={speaker.photo.local.childImageSharp.fixed}/>
-                    <p>
-                      {speaker.name}
-                    </p>
-                  </Link>
-                ))}
+            {organizers.map(({ node: organizer }) => (
+              <div className="card organizer-bio">
+                <Img className="organizer-image-wrapper" fixed={organizer.photo.local.childImageSharp.fixed}/>
+                <p className="title">
+                  {organizer.name}
+                </p>
+                <p className="subtitle">{organizer.organizer_roles.join(", ")}</p>
+                <div dangerouslySetInnerHTML={{__html: organizer.biography_html}}/>
+              </div>
+              ))}
             </div>
-          </div>
         </section>
       </Layout>
     )
@@ -40,11 +40,11 @@ export default class SpeakersPage extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query SpeakersListQuery {
-    allSpeakers(sort: {fields: name, order: DESC}) {
+  query OrganizersListQuery {
+    allOrganizers {
       edges {
         node {
-          id
+          biography_html
           name
           photo {
             local {
@@ -55,7 +55,9 @@ export const pageQuery = graphql`
               }
             }
           }
+          organizer_roles
           speaker_id
+          twitter
         }
       }
     }

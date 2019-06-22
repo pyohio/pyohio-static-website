@@ -95,6 +95,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
+        url: 'https://cfp.pyohio.org/2019/schedule/organizers/list/json/',
+        rootKey: 'Organizers',
+        imageKeys: ['photo']
+      }
+    },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
         url: 'http://static-cfp.pyohio.org/data/individual-sponsors.json',
         rootKey: 'IndividualSponsors'
       }
