@@ -111,6 +111,23 @@ ul
   .sponsor
     margin: 1rem
 
+// individual sponsors
+.supporter-list
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-flow: row wrap
+  flex-flow: row wrap
+  justify-content: center
+
+.supporter-name
+  text-align: center
+  margin: .5rem
+  background-color: $pyohio-red
+  padding: .5rem 1rem
+  border-radius: 3px
+  color: #fff
+  font-size: 1.5rem
+
 .speaker-bio
   h1
     text-align: center
@@ -145,7 +162,17 @@ ul
     p
       text-align: center
 
-.card-schedule-item
+// talk page fixes
+article.speaker-bio
+  align-items: center
+  flex-flow: column wrap
+  justify-content: center
+
+.twitter-link
+  font-size: initial
+
+// schedule
+.schedule-item
   .time-wrapper
     margin-right: .75rem !important
     min-width: 8ch
@@ -157,12 +184,6 @@ ul
     border-left: 2px solid $pyohio-red
     border-radius: 5px
     padding-left: 10px
-
-// talk page fixes
-article.speaker-bio
-  align-items: center
-  flex-flow: column wrap
-  justify-content: center
 
 // Helper Classes
 .full-width-image-container
@@ -226,25 +247,6 @@ article.speaker-bio
       shape-outside: circle(50%)
       text-align: initial
 
-.twitter-link
-  font-size: initial
-
 @supports(clip-path: circle(50%))
   .speaker-image-wrapper
     border-radius: 50%
-
-.supporter-list
-  display: -webkit-flex
-  display: flex
-  -webkit-flex-flow: row wrap
-  flex-flow: row wrap
-  justify-content: center
-
-.supporter-name
-  text-align: center
-  margin: .5rem
-  background-color: $pyohio-red
-  padding: .5rem 1rem
-  border-radius: 3px
-  color: #fff
-  font-size: 1.5rem
