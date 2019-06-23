@@ -76,7 +76,7 @@ export const pageQuery = graphql`
   query SlotsQuery {
     allSlots(
       filter: { kind: { ne: "nothing" } }
-      sort: { fields: [start, room] }
+      sort: { fields: [start, room_order] }
     ) {
       edges {
         node {
