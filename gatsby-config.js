@@ -103,6 +103,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
+        url: 'https://cfp.pyohio.org/2019/schedule/slots/list/json/',
+        rootKey: 'Slots'
+      }
+    },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
         url: 'http://static-cfp.pyohio.org/data/individual-sponsors.json',
         rootKey: 'IndividualSponsors'
       }
