@@ -172,7 +172,20 @@ article.speaker-bio
   font-size: initial
 
 // schedule
+.table-of-contents
+  padding: 1rem
+
+.time-block
+  flex-flow: wrap
+  justify-content: flex-start
+  margin-bottom: 2rem
+  margin-left: 1rem
+  margin-right: 1rem
+
 .schedule-item
+  flex-grow: 1
+  margin: 1rem
+
   .time-wrapper
     margin-right: .75rem !important
     min-width: 8ch
@@ -184,6 +197,11 @@ article.speaker-bio
     border-left: 2px solid $pyohio-red
     border-radius: 5px
     padding-left: 10px
+
+// hideous, but it gets the job done
+.day:last-of-type .section:last-of-type .time-block:last-of-type
+  margin-bottom: initial
+
 
 // Helper Classes
 .full-width-image-container

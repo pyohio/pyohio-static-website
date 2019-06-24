@@ -21,10 +21,6 @@ export default class ScheduleSlot extends React.Component {
       return formatDatetime(timeString, "%-I:%M%P")
     }
 
-    // function formatDate(timeString) {
-    //   return formatDatetime(timeString, "%A, %B %d")
-    // }
-
     return (
       <div className="card schedule-item">
         <div className="card-content is-flex">
@@ -40,10 +36,9 @@ export default class ScheduleSlot extends React.Component {
             </p>
           </div>
           <div className="schedule-item-wrapper">
-            <h3 className="title">{this.slot.title}</h3>
-            <p className="subtitle">{this.slot.speaker_name}</p>
+            <h3 className="is-size-3">{this.slot.title}</h3>
+            <p className="is-size-4">{this.slot.speaker_name}</p>
             <p>{ this.slot.kind === 'break' || this.slot.title.includes('Registration') ? '' : `Room: ${this.slot.room}`}</p>
-            {/* <p>Kind: {this.slot.kind}</p> */}
             <div
                 dangerouslySetInnerHTML={{ __html: this.slot.description_html }}
             />
