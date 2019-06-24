@@ -39,9 +39,6 @@ export default class ScheduleSlot extends React.Component {
             <h3 className="is-size-3">{this.slot.title}</h3>
             <p className="is-size-4">{this.slot.speaker_name}</p>
             <p>{ this.slot.kind === 'break' || this.slot.title.includes('Registration') ? '' : `Room: ${this.slot.room}`}</p>
-            <div
-                dangerouslySetInnerHTML={{ __html: this.slot.description_html }}
-            />
             <p>
                 {this.slot.presentation_id && (
                 <Link
