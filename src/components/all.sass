@@ -111,6 +111,23 @@ ul
   .sponsor
     margin: 1rem
 
+// individual sponsors
+.supporter-list
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-flow: row wrap
+  flex-flow: row wrap
+  justify-content: center
+
+.supporter-name
+  text-align: center
+  margin: .5rem
+  background-color: $pyohio-red
+  padding: .5rem 1rem
+  border-radius: 3px
+  color: #fff
+  font-size: 1.5rem
+
 .speaker-bio
   h1
     text-align: center
@@ -150,6 +167,41 @@ article.speaker-bio
   align-items: center
   flex-flow: column wrap
   justify-content: center
+
+.twitter-link
+  font-size: initial
+
+// schedule
+.table-of-contents
+  padding: 1rem
+
+.time-block
+  flex-flow: wrap
+  justify-content: flex-start
+  margin-bottom: 2rem
+  margin-left: 1rem
+  margin-right: 1rem
+
+.schedule-item
+  flex-grow: 1
+  margin: 1rem
+
+  .time-wrapper
+    margin-right: .75rem !important
+    min-width: 8ch
+
+    p:first-child time
+      font-weight: bold
+
+  .schedule-item-wrapper
+    border-left: 2px solid $pyohio-red
+    border-radius: 5px
+    padding-left: 10px
+
+// hideous, but it gets the job done
+.day:last-of-type .section:last-of-type .time-block:last-of-type
+  margin-bottom: initial
+
 
 // Helper Classes
 .full-width-image-container
@@ -213,26 +265,6 @@ article.speaker-bio
       shape-outside: circle(50%)
       text-align: initial
 
-.twitter-link
-  font-size: initial
-
 @supports(clip-path: circle(50%))
   .speaker-image-wrapper
     border-radius: 50%
-
-.supporter-list
-  display: -webkit-flex
-  display: flex
-  -webkit-flex-flow: row wrap
-  flex-flow: row wrap
-  justify-content: center
-
-.supporter-name
-  text-align: center
-  margin: .5rem
-  background-color:  $pyohio-red
-  padding: .5rem 1rem
-  border-radius: 3px
-  color: #fff
-  font-size: 1.5rem
-

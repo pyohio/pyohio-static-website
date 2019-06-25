@@ -1,5 +1,5 @@
 ---
-templateKey: general-page
+templateKey: schedule-page
 title: PyOhio 2019 Schedule
 ---
 
