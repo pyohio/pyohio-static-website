@@ -7,6 +7,10 @@ _**Note:** These planned events and times are tentative until announced via our 
 
 ## Friday, July 26, 2019
 
+### Pre-PyOhio MicroPython Hackfest
+
+**10:00am-8:00pm** Python hardware hackfest hosted by Carl Karsten of Next Day Video. [Details & RSVP](/events/hackfest)
+
 ### Sprints & Reception
 
 **6:00pm-11:00pm** Join us for sprints and an attendee reception. No experience
