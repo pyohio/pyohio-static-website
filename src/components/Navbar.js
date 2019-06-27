@@ -55,7 +55,7 @@ const Navbar = class extends React.Component {
           {name: 'Talks', url: '/events/talks'},
           {name: 'Tutorials', url: '/events/tutorials'},
           {name: 'Reception & Sprints', url: '/events/reception-sprints'},
-          {name: 'MicroPython Hackfest', url: '/events/hackfest'},
+          {name: 'MicroPython on FPGAs Hackfest', url: '/events/hackfest'},
           {name: 'Young Coders', url: '/events/young-coders'},
           {name: 'Lightning Talks', url: '/events/lightning-talks'}
         ]}/>

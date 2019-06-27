@@ -1,6 +1,6 @@
 ---
 templateKey: general-page
-title: Pre-PyOhio MicroPython Hackfest
+title: Pre-PyOhio FuPy (MicroPython on FPGAs) Hackfest
 ---
  
 On Friday, July 26 Carl Karsten of Next Day Video will be hosting a hackfest in Columbus open to all PyOhio attendees. Please read the details and RSVP instructions below.
