@@ -175,15 +175,25 @@ article.speaker-bio
   padding: .05rem
 
 .time-block
-  flex-flow: wrap
+  flex-flow: row
   justify-content: flex-start
   margin-bottom: 2rem
   margin-left: 1rem
   margin-right: 1rem
 
+  .time-block-label
+    min-width: 16ch
+
+  .time-block-slots
+    flex-flow: wrap
+    border-left: 2px solid $pyohio-red
+    border-radius: 5px
+    padding-left: 5px
+
 .schedule-item
   flex-grow: 1
-  margin: 1rem
+  margin: .5rem
+  min-width: 16em
   max-width: 16em
   
   .time-wrapper
@@ -194,11 +204,6 @@ article.speaker-bio
       font-weight: bold
 
   .schedule-item-wrapper
-    border-left: 2px solid $pyohio-red
-    border-radius: 5px
-    padding-left: 5px
-
-    
 
 // hideous, but it gets the job done
 .day:last-of-type .section:last-of-type .time-block:last-of-type
