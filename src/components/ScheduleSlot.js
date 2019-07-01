@@ -24,7 +24,7 @@ export default class ScheduleSlot extends React.Component {
     return (
       <div className="card schedule-item">
         <div className="card-content is-flex">
-          <div className="time-wrapper">
+          {/* <div className="time-wrapper">
             <p>
               <time>{formatTime(this.slot.start)}</time>
             </p>
@@ -34,10 +34,10 @@ export default class ScheduleSlot extends React.Component {
             <p>
               <time>{formatTime(this.slot.end)}</time>
             </p>
-          </div>
+          </div> */}
           <div className="schedule-item-wrapper">
-            <h3 className="is-size-3">{this.slot.title}</h3>
-            <p className="is-size-4">{this.slot.speaker_name}</p>
+            <h3 className="schedule-title">{this.slot.title}</h3>
+            <p className="schedule-speaker">{this.slot.speaker_name}</p>
             <p>{ this.slot.kind === 'break' || this.slot.title.includes('Registration') ? '' : `Room: ${this.slot.room}`}</p>
             <p>
                 {this.slot.presentation_id && (

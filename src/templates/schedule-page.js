@@ -72,6 +72,7 @@ export default class SlottedSchedule extends React.Component {
                 <div className="section" key={section}>
                   {Object.entries(_.groupBy(slots, "start")).map(([start, slots]) => (
                     <div className="time-block is-flex" key={start}>
+                      <p>Time to Time</p>
                       {slots.map((slot) => (
                         <ScheduleSlot slot={slot} key={slot.id}/>
                       ))}
