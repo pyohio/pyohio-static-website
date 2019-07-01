@@ -184,8 +184,6 @@ article.speaker-bio
     margin-right: .75rem !important
     padding-top: .5em
     min-width: 7ch
-    position: sticky
-    top: 1em
 
     p:first-child time
       font-weight: bold
@@ -195,6 +193,12 @@ article.speaker-bio
     border-left: 2px solid $pyohio-red
     border-radius: 5px
     padding-left: 5px
+
+@media screen and (max-width: 700px)
+  .time-block
+    .time-wrapper
+      position: sticky
+      top: 1em
 
 .schedule-item
   flex-grow: 1
