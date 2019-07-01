@@ -24,17 +24,6 @@ export default class ScheduleSlot extends React.Component {
     return (
       <div className="card schedule-item">
         <div className="card-content is-flex">
-          {/* <div className="time-wrapper">
-            <p>
-              <time>{formatTime(this.slot.start)}</time>
-            </p>
-            <p>
-              to
-            </p>
-            <p>
-              <time>{formatTime(this.slot.end)}</time>
-            </p>
-          </div> */}
           <div className="schedule-item-wrapper">
             <h3 className="schedule-title">{this.slot.title}</h3>
             <p className="schedule-speaker">{this.slot.speaker_name}</p>

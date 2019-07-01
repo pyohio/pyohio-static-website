@@ -178,11 +178,15 @@ article.speaker-bio
   flex-flow: row
   justify-content: flex-start
   margin-bottom: 2rem
-  margin-left: 1rem
-  margin-right: 1rem
 
-  .time-block-label
-    min-width: 16ch
+  .time-wrapper
+    margin-right: .75rem !important
+    padding-top: .5em
+    min-width: 7ch
+    vertical-align: middle
+
+    p:first-child time
+      font-weight: bold
 
   .time-block-slots
     flex-flow: wrap
@@ -193,16 +197,9 @@ article.speaker-bio
 .schedule-item
   flex-grow: 1
   margin: .5rem
-  min-width: 16em
-  max-width: 16em
+  min-width: 15em
+  max-width: 15em
   
-  .time-wrapper
-    margin-right: .75rem !important
-    min-width: 8ch
-
-    p:first-child time
-      font-weight: bold
-
   .schedule-item-wrapper
 
 // hideous, but it gets the job done
@@ -210,11 +207,11 @@ article.speaker-bio
   margin-bottom: initial
 
 .schedule-title
-  font-size: 1em
+  font-size: 1.2rem
   font-weight: bold
 
 .schedule-speaker
-  font-size: 1em
+  font-size: 1.2rem
 
 
 // Helper Classes

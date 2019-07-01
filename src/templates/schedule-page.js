@@ -18,6 +18,7 @@ export default class SlottedSchedule extends React.Component {
       return dateOnly
     }
     slots.map(slot => slot.day = dateFromTimestamp(slot.start) )
+    slots.map(slot => slot.span = `${slot.start}-${slot.end}`)
     const daySlots = _.groupBy(slots, "day")
 
     // TODO: refactor this! Move to a utility (component?) file and use from there
@@ -32,6 +33,9 @@ export default class SlottedSchedule extends React.Component {
 
     function formatDate(timeString) {
       return formatDatetime(timeString, "%A, %B %d")
+    }
+    function formatTime(timeString) {
+      return formatDatetime(timeString, "%-I:%M%P")
     }
 
     function stringToID(timeString) {
@@ -70,10 +74,16 @@ export default class SlottedSchedule extends React.Component {
                 <h2 className="is-size-2">{formatDate(date)}</h2>
                 {Object.entries(_.groupBy(slots, "section")).sort().reverse().map(([section, slots]) => (
                 <div className="section" key={section}>
-                  {Object.entries(_.groupBy(slots, "start")).map(([start, slots]) => (
-                    <div className="time-block is-flex" key={start}>
-                      <div className="time-block-label">
-                      <p>Time to Time</p>
+                  {Object.entries(_.groupBy(slots, "span")).map(([span, slots]) => (
+                    <div className="time-block is-flex" key={span}>
+                      <div className="time-wrapper">
+                      <p>
+                        <time>{formatTime(slots[0].start)}</time>
+                      </p>
+                      <p>to</p>
+                      <p>
+                        <time>{formatTime(slots[0].end)}</time>
+                      </p>
                       </div>
                       <div className="time-block-slots is-flex">
                       {slots.map((slot) => (
