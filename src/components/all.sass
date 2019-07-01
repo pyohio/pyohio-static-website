@@ -172,34 +172,54 @@ article.speaker-bio
 
 // schedule
 .table-of-contents
-  padding: 1rem
+  padding: .05rem
 
 .time-block
-  flex-flow: wrap
+  flex-flow: row
   justify-content: flex-start
+  align-items: flex-start
   margin-bottom: 2rem
-  margin-left: 1rem
-  margin-right: 1rem
-
-.schedule-item
-  flex-grow: 1
-  margin: 1rem
 
   .time-wrapper
     margin-right: .75rem !important
-    min-width: 8ch
+    padding-top: .5em
+    min-width: 7ch
 
     p:first-child time
       font-weight: bold
 
-  .schedule-item-wrapper
+  .time-block-slots
+    flex-flow: wrap
     border-left: 2px solid $pyohio-red
     border-radius: 5px
-    padding-left: 10px
+    padding-left: 5px
+
+@media screen and (max-width: 1080px)
+  .time-block
+    .time-wrapper
+      position: sticky
+      top: 1em
+
+.schedule-item
+  flex-grow: 1
+  margin: .5rem
+  min-width: 16em
+
+.schedule-talk
+  max-width: 16em
+
+.schedule-non-talk
 
 // hideous, but it gets the job done
 .day:last-of-type .section:last-of-type .time-block:last-of-type
   margin-bottom: initial
+
+.schedule-title
+  font-size: 1.2rem
+  font-weight: bold
+
+.schedule-speaker
+  font-size: 1.2rem
 
 
 // Helper Classes
