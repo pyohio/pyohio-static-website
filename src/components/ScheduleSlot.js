@@ -22,7 +22,7 @@ export default class ScheduleSlot extends React.Component {
     }
 
     return (
-      <div className="card schedule-item">
+      <div className={`card schedule-item ${this.slot.kind === 'talk' ? 'schedule-talk' : 'schedule-non-talk'}`}>
         <div className="card-content is-flex">
           <div className="schedule-item-wrapper">
             <h3 className="schedule-title">{this.slot.title}</h3>
