@@ -51,7 +51,8 @@ const Navbar = class extends React.Component {
           
         ]}/> */}
         <NavDropdown buttonName={'Events'} links={[
-          {name: 'PyOhio Events', url: '/events'},
+          {name: 'Events Overview', url: '/events'},
+          {name: 'Full Schedule', url: '/events/schedule'},
           {name: 'Talks', url: '/events/talks'},
           {name: 'Tutorials', url: '/events/tutorials'},
           {name: 'Reception & Sprints', url: '/events/reception-sprints'},

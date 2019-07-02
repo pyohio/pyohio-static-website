@@ -3,11 +3,11 @@ templateKey: general-page
 title: PyOhio Events Overview
 ---
 
-_**Note:** These planned events and times are tentative until announced via our [mailing list](/news/keep-in-touch)._
+_Make sure to subscribe to our [newsletter](/news/keep-in-touch) for  updates!_
 
 ## Friday, July 26, 2019
 
-### Pre-PyOhio MicroPython Hackfest
+### Pre-PyOhio FuPy (MicroPython on FPGAs) Hackfest
 
 **10:00am-8:00pm** Python hardware hackfest hosted by Carl Karsten of Next Day Video. [Details & RSVP](/events/hackfest)
 
@@ -20,25 +20,20 @@ necessary and coding is completely optional. [Details](/events/reception-sprints
 
 ### Registration
 
-**8:00am** Registration and sign-in opens. [Directions](/attend/travel-directions)
+**8:00am** Registration and sign-in opens. Registration desk is on the 3rd floor outside the Round Room. [Directions](/attend/travel-directions)
 
 ### Welcome & Keynote
 
-**9:00am** Welcome information and our Saturday keynote (TBD)
+**9:00am** Welcome and Saturday keynote
 
 ### Talks & Tutorials
 
-**10:30am-5:00pm** Talks & Tutorials. Schedule TBD.
-
-### Open Spaces
-
-**10:30am-5:00pm** Open Space sessions are for discussing topics of interest
-to the PyOhio community. Sign up for a spot outside the rooms.
+**10:30am-5:00pm** Talks & Tutorials. [Full schedule](/events/schedule)
 
 ### Lunch
 
 **12:30pm-2:00pm** Find lunch on your own. There are many options within
-walking distance of the venue. [Some ideas](http://bit.ly/2NwRCoJ) 
+walking distance of the venue. 
 
 ### Lightning Talks
 
@@ -52,20 +47,20 @@ necessary and coding is completely optional. [Details](/events/reception-sprints
 
 ## Sunday, July 28, 2019
 
-*Tip: There's no lunch break on Sunday so grab a bite to eat before we get
-started! We will have light refreshments at the break*
+_**Tip:** There's no lunch break on Sunday so grab a bite to eat before we get
+started! We will have light refreshments at the break_
 
 ### Registration
 
-**11:00am** Registration and sign-in opens. [Directions](/attend/travel-directions)
+**11:00am** Registration and sign-in opens. Registration desk is on the 3rd floor outside the Round Room. [Directions](/attend/travel-directions)
 
 ### Welcome & Keynote
 
-**11:30am** Welcome back and our Sunday keynote (TBD)
+**11:30am** Welcome back and Sunday keynote
 
 ### Talks & Tutorials
 
-**12:45pm-4:45pm** Talks & Tutorials. Schedule TBD.
+**12:45pm-4:45pm** Talks & Tutorials. [Full schedule](/events/schedule)
 
 ### Open Spaces
 
@@ -76,5 +71,3 @@ to the PyOhio community. Sign up for a spot outside the rooms.
 
 **5:00pm-6:00pm** Lightning talks. 5-minute talks on topics of interest to the 
 PyOhio community. Sign up for a slot on the board near registration.
-
-
