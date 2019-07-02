@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import strftime from 'strftime'
+import moment from 'moment'
 
 export const PresentationPageTemplate = ({ 
   abstract,
@@ -90,10 +90,10 @@ const PresentationPage = ({ data }) => {
 
   let startDate = "date TBD"
   let startTime = "time TBD"
-  const startDatetime = new Date(presentation.schedule.start)
-  if ( !isNaN(startDatetime) ) {
-    startDate = strftime("%a, %B %d", startDatetime)
-    startTime = strftime("%-I:%M%P", startDatetime)
+  const startMoment = moment(presentation.schedule.start)
+  if ( !isNaN(startMoment) ) {
+    startDate = startMoment.format('dddd, MMMM DD')
+    startTime = startMoment.format('h:mma')
   }
   const speakersString = presentation.speakers.map(speaker => speaker.name).join(", ")
   const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
