@@ -33,7 +33,7 @@ export default class ScheduleSlot extends React.Component {
                 <Link
                     to={`/presentations/${this.slot.presentation_id}`}
                 >
-                    {this.slot.kind === 'talk' ? 'Presentation' : 'Tutorial'} details
+                    {this.slot.kind.charAt(0).toUpperCase() + this.slot.kind.slice(1)} details
                 </Link>
                 )}
             </p>
