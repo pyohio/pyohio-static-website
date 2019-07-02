@@ -18,6 +18,7 @@ export const SpeakerPageTemplate = ({
   helmet,
   twitter,
   mastodon,
+  mastodonUrl,
   website
 }) => {
   const PageContent = contentComponent || Content
@@ -51,7 +52,7 @@ export const SpeakerPageTemplate = ({
                   }
                   {(mastodon) &&
                     <li>
-                      <a href={mastodon}>
+                      <a href={mastodonUrl}>
                         <span className="icon" role="presentation">
                           <FontAwesomeIcon icon={faMastodon}/>&nbsp;
                         </span>
@@ -86,12 +87,15 @@ export const SpeakerPageTemplate = ({
 SpeakerPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   helmet: PropTypes.object,
+  mastodon: PropTypes.string,
+  mastodonUrl: PropTypes.string,
   photoSrc: PropTypes.string,
   presentations: PropTypes.array,
   speakerName: PropTypes.string.isRequired,
   speakerBio: PropTypes.string,
   title: PropTypes.string,
   twitter: PropTypes.string,
+  website: PropTypes.string,
 }
 
 const SpeakerPage = ({ data }) => {
@@ -105,6 +109,11 @@ const SpeakerPage = ({ data }) => {
   const presentationNames = speaker.presentations.map(p => p.title).join(", ")
   const pageDescription = `${speaker.name} presenting: ${presentationNames}`
 
+  function mastodonUrl ( username ) {
+    const parts = username.split('@').reverse()
+    return `https://${parts[0]}/@${parts[1]}`
+  }
+
   return (
     <Layout>
       <SpeakerPageTemplate
@@ -116,6 +125,7 @@ const SpeakerPage = ({ data }) => {
         title={`Speaker: ${speaker.name}`}
         twitter={speaker.twitter}
         mastodon={speaker.mastodon}
+        mastodonUrl={mastodonUrl(speaker.mastodon)}
         website={speaker.website}
         helmet={
           <Helmet>
