@@ -170,6 +170,16 @@ article.speaker-bio
 .twitter-link
   font-size: initial
 
+.social-icons
+  margin-bottom: .5rem
+
+  ul
+    list-style: none
+    margin: 0
+
+    li
+      margin: .25rem
+
 // schedule
 .table-of-contents
   padding: .05rem
@@ -193,6 +203,7 @@ article.speaker-bio
     border-left: 2px solid $pyohio-red
     border-radius: 5px
     padding-left: 5px
+    width: 100%
 
 @media screen and (max-width: 1080px)
   .time-block
@@ -203,12 +214,7 @@ article.speaker-bio
 .schedule-item
   flex-grow: 1
   margin: .5rem
-  min-width: 16em
-
-.schedule-talk
-  max-width: 16em
-
-.schedule-non-talk
+  max-width: 16rem
 
 // hideous, but it gets the job done
 .day:last-of-type .section:last-of-type .time-block:last-of-type
@@ -220,7 +226,6 @@ article.speaker-bio
 
 .schedule-speaker
   font-size: 1.2rem
-
 
 // Helper Classes
 .full-width-image-container

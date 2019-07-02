@@ -3,17 +3,22 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faMastodon } from '@fortawesome/free-brands-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const SpeakerPageTemplate = ({ 
+export const SpeakerPageTemplate = ({
   contentComponent,
   photoSrc,
   presentations,
   speakerName,
   speakerBio,
   helmet,
-  twitter
+  twitter,
+  mastodon,
+  website
 }) => {
   const PageContent = contentComponent || Content
 
@@ -30,12 +35,42 @@ export const SpeakerPageTemplate = ({
           <div className="column is-10 is-offset-1">
             <div className="section speaker-bio">
               <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                <span>Speaker: {speakerName} </span>
-                <span className="twitter-link">
-                  {(twitter) &&
-                  <a href={`https://twitter.com/${twitter}`}>@{twitter}</a>}
-                </span>
+                Speaker: {speakerName}
               </h1>
+              <div className="social-icons">
+                <ul>
+                  {(twitter) &&
+                    <li>
+                      <a href={`https://twitter.com/${twitter}`}>
+                        <span className="icon" role="presentation">
+                          <FontAwesomeIcon icon={faTwitter}/>&nbsp;
+                        </span>
+                        @{twitter}
+                        </a>
+                    </li>
+                  }
+                  {(mastodon) &&
+                    <li>
+                      <a href={mastodon}>
+                        <span className="icon" role="presentation">
+                          <FontAwesomeIcon icon={faMastodon}/>&nbsp;
+                        </span>
+                        {mastodon}
+                      </a>
+                    </li>
+                  }
+                  {(website) &&
+                  <li>
+                    <a href={website}>
+                      <span className="icon" role="presentation">
+                        <FontAwesomeIcon icon={faCode}/>&nbsp;
+                      </span>
+                      {website}
+                    </a>
+                  </li>
+                  }
+                </ul>
+              </div>
               <Img fixed={photoSrc}  alt={speakerName} className="speaker-image-wrapper is-clearfix"/>
               <PageContent className="content" content={speakerBio} />
               <h2 className="is-size-3">Presenting:</h2>
@@ -80,6 +115,8 @@ const SpeakerPage = ({ data }) => {
         speakerBio={speaker.biography_html}
         title={`Speaker: ${speaker.name}`}
         twitter={speaker.twitter}
+        mastodon={speaker.mastodon}
+        website={speaker.website}
         helmet={
           <Helmet>
             <title>{pageTitle}</title>
@@ -120,6 +157,8 @@ export const speakerPageQuery = graphql`
         presentation_id
       }
       twitter
+      mastodon
+      website
     }
   }
 `
