@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import Layout from "../components/Layout"
 import ScheduleSlot from "../components/ScheduleSlot"
 import _ from 'lodash'
-import strftime from 'strftime'
+import moment from 'moment'
 
 export default class SlottedSchedule extends React.Component {
   render() {
@@ -21,30 +21,15 @@ export default class SlottedSchedule extends React.Component {
     slots.map(slot => slot.span = `${slot.start}-${slot.end}`)
     const daySlots = _.groupBy(slots, "day")
 
-    // TODO: refactor this! Move to a utility (component?) file and use from there
-    function formatDatetime(timeString, format) {
-      let formatted = ""
-      const datetime = new Date(timeString)
-      if (!isNaN(datetime)) {
-        formatted = strftime(format, datetime)
-      }
-      return formatted
-    }
-
     function formatDate(timeString) {
-      return formatDatetime(timeString, "%A, %B %d")
+      return moment(timeString).format('dddd, MMMM DD')
     }
     function formatTime(timeString) {
-      return formatDatetime(timeString, "%-I:%M%P")
+      return moment(timeString).format('h:mma')
     }
 
     function stringToID(timeString) {
-      let formatted = ""
-      const datetime = new Date(timeString)
-      if (!isNaN(datetime)) {
-        formatted = strftime('%s', datetime)
-      }
-      return formatted
+      return moment(timeString).format('X')
     }
 
     return (
