@@ -22,6 +22,9 @@ export default class ScheduleSlot extends React.Component {
                     {this.slot.kind.charAt(0).toUpperCase() + this.slot.kind.slice(1)} details
                 </Link>
                 )}
+                { this.slot.kind === 'tutorial' && (
+                  <p><em><Link to='/attend/register'>Requires pre-registration</Link></em></p>
+                )}
             </p>
           </div>
         </div>
