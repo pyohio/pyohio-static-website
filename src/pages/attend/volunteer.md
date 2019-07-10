@@ -3,9 +3,9 @@ templateKey: general-page
 title: Volunteer!
 ---
 
-Volunteer sign-up coming soon!
+Sign up to be a volunteer here: https://forms.gle/6Tx2HGW3gRMzB1P99
 
-For now be sure to [subscribe to our mailing list](/news/keep-in-touch) for updates.
+Be sure to [subscribe to our mailing list](/news/keep-in-touch) for updates.
 
 On-site Volunteer Roles
 ----------------------
@@ -44,7 +44,7 @@ Stand ready to step into any of the above roles as necessary.
 Other Ways to Help
 ------------------
 
-* Sign-up to [review talk proposals](/speak/review-proposals).
+* ~~Sign-up to [review talk proposals](/speak/review-proposals).~~
 * Spread the word!
   * Retweet [@PyOhio](https://twitter.com/pyohio)
   * Follow us on [Facebook](https://www.facebook.com/pyohio) and RSVP to the event.
