@@ -3,6 +3,8 @@ templateKey: general-page
 title: Young Coders
 ---
 
+<a href="https://ti.to/pyohio/pyohio-2019-young-coders" class="button is-link is-large">REGISTER HERE!</a>
+
 We will have one Young Coders class this year. Only 10 seats available, registration opens in July. Details will be announced via [our mailing list](/news/keep-in-touch).
 
 
