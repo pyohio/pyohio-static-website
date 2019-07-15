@@ -35,3 +35,5 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /opyoh   https://mail.python.org/pipermail/centraloh/2008-March/000082.html
 /opyo    https://mail.python.org/pipermail/centraloh/2008-March/000082.html
 
+# Off-site
+/video https://www.youtube.com/channel/UCYqdrfvhGxNW3vXebypqXoQ 302
