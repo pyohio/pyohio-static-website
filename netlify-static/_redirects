@@ -27,6 +27,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /sprints                /2019/events/reception-sprints  302
 /volunteer              /2019/attend/volunteer          302
 /hackfest               /2019/events/hackfest           302
+/osu-open-source        /2019/about/open-source-club    302
 
 /account/login          https://cfp.pyohio.org/
 
