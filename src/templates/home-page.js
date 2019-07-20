@@ -5,9 +5,9 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import SponsorShowcase from '../components/SponsorShowcase'
 import logo from '../../static/img/pyohio-2019-transparent-300x225.png'
-// import talks from '../../static/img/pyohio-talks-2.jpg'
-// import tutorials from '../../static/img/pyohio-tutorials-3.jpg'
-// import sprints from '../../static/img/pyohio-sprints-1.jpg'
+import talks from '../../static/img/pyohio-talks-2.jpg'
+import tutorials from '../../static/img/pyohio-tutorials-4.jpg'
+import sprints from '../../static/img/pyohio-sprints-4.jpg'
 
 export const HomePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -46,7 +46,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              {/* <div className="section">
+              <div className="section">
                 <div className="columns is-centered">
                   <div className="column">
                     <Link className="has-text-centered splash-link" to="/events/talks">
@@ -67,7 +67,7 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
                     </Link>
                   </div>
                 </div>
-              </div> */}
+              </div>
               <div className="section">
                 <div className="columns is-centered">
                   <div className="column is-narrow-tablet">
@@ -88,7 +88,11 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
                           Events Overview
                         </Link>
                       </li>
-                      <li>Schedule (TBD)</li>
+                      <li>
+                        <Link to="/events/schedule">
+                          Full Schedule
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                   <div className="column is-narrow-tablet">
