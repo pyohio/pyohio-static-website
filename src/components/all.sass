@@ -4,6 +4,7 @@
 // Kalidi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
+//$pyohio-red: #d91e43 // eyedropper hax
 $pyohio-red: #bb0000
 
 $primary: $kaldi-red
@@ -188,7 +189,7 @@ article.speaker-bio
   flex-flow: row
   justify-content: flex-start
   align-items: flex-start
-  margin-bottom: 2rem
+  margin-bottom: 1rem
 
   .time-wrapper
     margin-right: .75rem !important
@@ -222,8 +223,10 @@ article.speaker-bio
   max-width: 33rem
 
 // hideous, but it gets the job done
-.day:last-of-type .section:last-of-type .time-block:last-of-type
+.day:last-of-type .section:last-of-type
   margin-bottom: initial
+.time-block:last-of-type
+  margin-bottom: 0
 
 .schedule-title
   font-size: 1.2rem
@@ -254,7 +257,7 @@ article.speaker-bio
   margin-top: 0 !important
 
 .section
-  padding: 0.5rem
+ padding: 0.5rem
 
 .splash-link
   align-items: center

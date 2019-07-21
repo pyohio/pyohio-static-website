@@ -13,18 +13,21 @@ export default class ScheduleSlot extends React.Component {
           <div className="schedule-item-wrapper">
             <h3 className="schedule-title">{this.slot.title}</h3>
             <p className="schedule-speaker">{this.slot.speaker_name}</p>
-            <p>{ this.slot.kind === 'break' || this.slot.title.includes('Registration') ? '' : `Room: ${this.slot.room}`}</p>
+            <p>{ this.slot.kind === 'break' || this.slot.title.includes('Registration') ? '' : `Location: ${this.slot.room}`}</p>
+            { ['break', 'off-site'].includes(this.slot.kind) && (
+                <div dangerouslySetInnerHTML={{__html:this.slot.description_html}}/>
+            )}
             <p>
-                {this.slot.presentation_id && (
-                <Link
-                    to={`/presentations/${this.slot.presentation_id}`}
-                >
-                    {this.slot.kind.charAt(0).toUpperCase() + this.slot.kind.slice(1)} details
-                </Link>
-                )}
-                { this.slot.kind === 'tutorial' && (
-                  <p><em><Link to='/attend/register'>Requires pre-registration</Link></em></p>
-                )}
+              {this.slot.presentation_id && (
+              <Link
+                  to={`/presentations/${this.slot.presentation_id}`}
+              >
+                  {this.slot.kind.charAt(0).toUpperCase() + this.slot.kind.slice(1)} details
+              </Link>
+              )}
+              { this.slot.kind === 'tutorial' && (
+                <p><em><Link to='/attend/register'>Requires pre-registration</Link></em></p>
+              )}
             </p>
           </div>
         </div>

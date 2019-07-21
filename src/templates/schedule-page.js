@@ -57,8 +57,9 @@ export default class SlottedSchedule extends React.Component {
             {Object.entries(daySlots).map(([date, slots]) => (
               <div className="day" id={stringToID(date)} tabIndex="-1" key={stringToID(date)}>
                 <h2 className="is-size-2">{formatDate(date)}</h2>
-                {Object.entries(_.groupBy(slots, "section")).sort().reverse().map(([section, slots]) => (
+                {Object.entries(_.groupBy(slots, "section_name")).sort().map(([section, slots]) => (
                 <div className="section" key={section}>
+                  <h3 className="is-size-3">{slots[0].section_name}</h3>
                   {Object.entries(_.groupBy(slots, "span")).map(([span, slots]) => (
                     <div className="time-block is-flex" key={span}>
                       <div className="time-wrapper">
@@ -106,6 +107,7 @@ export const pageQuery = graphql`
           room
           rooms
           section
+          section_name
           speaker_name
           speakers {
             name
