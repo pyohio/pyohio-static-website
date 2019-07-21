@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../../components/Layout'
+import TutorialRegistrationMessage from '../../components/TutorialRegistrationMessage'
 
 export default class SponsorsPage extends React.Component {
   render() {
@@ -23,14 +24,7 @@ export default class SponsorsPage extends React.Component {
               <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
             </div>
 
-            <article class="message is-primary">
-              <div className="message-body">
-                <strong>PLEASE NOTE:</strong> All tutorials have limited capacity
-                and require pre-registration. Registration will open in early July.
-                Be sure to <Link to="/news/keep-in-touch">subscribe to our mailing
-                list</Link> for updates.
-              </div>
-            </article>
+            <TutorialRegistrationMessage/>
 
             {talkList.map(({ node: talk }) => (
                 <div

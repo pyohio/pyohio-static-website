@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import moment from 'moment'
+import TutorialRegistrationMessage from '../components/TutorialRegistrationMessage'
 
 export const PresentationPageTemplate = ({ 
   abstract,
@@ -45,6 +46,9 @@ export const PresentationPageTemplate = ({
               <div><em>{kind} - {startDate} at {startTime} in {room}</em></div>
               <PageContent className="content presentation-description" content={description} />
               <PageContent className="content presentation-abstract" content={abstract} />
+              {kind==="120-minute Tutorial" &&
+                <TutorialRegistrationMessage/>
+              }
               {prerequisites &&
               <div>
                 <h2 className="is-size-4">Prerequisites & Setup Instructions:</h2>
