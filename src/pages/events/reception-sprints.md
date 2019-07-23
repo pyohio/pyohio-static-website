@@ -37,6 +37,7 @@ Free valet parking will be provided to PyOhio attendees!
 Important notes:
 
 * Use the valet located at 711 N High St under the Lincoln Social sign, next door to Forno Kitchen & Bar
+* Mention that you are there for "The event at Accenture Forge"
 * Cars must be retrieved from valet before 1am
 * This event is being held on the 9th floor only. Please follow signs and host instructions.
 * Uber / Lyft (at your own cost) are good alternate options
