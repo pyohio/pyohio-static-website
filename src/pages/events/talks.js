@@ -48,7 +48,7 @@ export const pageQuery = graphql`
   query TalksListQuery {
     allTalks(
       sort: {fields: [title]},
-      filter: {kind: {ne: "Keynote"}}
+      filter: {kind: {nin: ["Keynote", "Plenary"]}}
       ) {
       edges {
         node {
