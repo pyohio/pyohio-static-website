@@ -29,9 +29,9 @@ Assist the teacher and students of the Young Coders class.
 
 Dispense shirts and accept donations.
 
-### Video Assistant
+### Videography
 
-Assist the videographer during talk recordings.
+PyOhio records all the talks and tutorials so they can be posted online. Help make that happen!
 
 ### Signage
 
