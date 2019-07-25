@@ -12,12 +12,14 @@ export const PresentationPageTemplate = ({
   abstract,
   contentComponent,
   description,
+  feedback_url,
   helmet,
   kind,
   prerequisites,
   room,
   speakers,
   startDate,
+  startMoment,
   startTime,
   title,
 }) => {
@@ -46,6 +48,11 @@ export const PresentationPageTemplate = ({
               <div><em>{kind} - {startDate} at {startTime} in {room}</em></div>
               <PageContent className="content presentation-description" content={description} />
               <PageContent className="content presentation-abstract" content={abstract} />
+              {moment().isAfter(startMoment) && (
+                <div className="content presentation-feedback">
+                  <a href={feedback_url} className="button is-link">Rate this session!</a>
+                </div>
+              )}
               {kind==="120-minute Tutorial" &&
                 <TutorialRegistrationMessage/>
               }
@@ -55,6 +62,7 @@ export const PresentationPageTemplate = ({
                 <PageContent className="content presentation-prerequisites" content={prerequisites} />
                 </div>
               }
+
               <h2 className="is-size-4">Presented by:</h2>
               <div className="tile is-ancestor">
                 <div className="tile is-parent">
@@ -73,12 +81,14 @@ PresentationPageTemplate.propTypes = {
   abstract: PropTypes.string,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
+  feedback_url: PropTypes.string,
   helmet: PropTypes.object,
   kind: PropTypes.string,
   prerequisites: PropTypes.string,
   room: PropTypes.string,
   speakers: PropTypes.object,
   startDate: PropTypes.string,
+  startMoment: PropTypes.string,
   startTime: PropTypes.string,
   title: PropTypes.string,
 }
@@ -108,6 +118,7 @@ const PresentationPage = ({ data }) => {
         abstract={presentation.abstract_html}
         contentComponent={HTMLContent}
         description={presentation.description_html}
+        feedback_url={presentation.feedback_url}
         helmet={
           <Helmet>
             <title>{pageTitle}</title>
@@ -122,6 +133,7 @@ const PresentationPage = ({ data }) => {
         room={presentation.schedule.room}
         speakers={presentation.speakers}
         startDate={startDate}
+        startMoment={startMoment}
         startTime={startTime}
         title={presentation.title}
       />
@@ -141,6 +153,7 @@ export const PresentationPageQuery = graphql`
       title
       description_html
       abstract_html
+      feedback_url
       kind
       schedule {
         room
@@ -164,6 +177,7 @@ export const PresentationPageQuery = graphql`
       title
       description_html
       abstract_html
+      feedback_url
       kind
       prerequisite_setup_html
       schedule {
