@@ -12,7 +12,9 @@ export default class ScheduleSlot extends React.Component {
         <div className="card-content is-flex">
           <div className="schedule-item-wrapper">
             <h3 className="schedule-title">{this.slot.title}</h3>
-            <p className="schedule-speaker">{this.slot.speaker_name}</p>
+            {this.slot.kind != 'plenary' && (
+              <p className="schedule-speaker">{this.slot.speaker_name}</p>
+            )}
             <p>{ this.slot.kind === 'break' || this.slot.title.includes('Registration') ? '' : `Location: ${this.slot.room}`}</p>
             { ['break', 'off-site'].includes(this.slot.kind) && (
                 <div dangerouslySetInnerHTML={{__html:this.slot.description_html}}/>
