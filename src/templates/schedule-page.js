@@ -44,8 +44,15 @@ export default class SlottedSchedule extends React.Component {
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">{pageTitle}</h1>
             </div>
+            <div className="calendar-links">
+            <p>
+              <a className="button" href="https://calendar.google.com/calendar/ical/pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com/public/basic.ics">iCal</a>
+              <a className="button" href="https://calendar.google.com/calendar?cid=cHlvaGlvLm9yZ19nNmVkMjNpOTVqdDh2OGNpdTRnM2MyNDI3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Calendar (with Google account)</a>
+              <a className="button" href="https://calendar.google.com/calendar/embed?src=pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com&ctz=America%2FNew_York">Web Calendar</a>
+            </p> 
+            </div>
             <div className="table-of-contents">
-              {/* I know ahead of time what these IDs will be,
+             {/* I know ahead of time what these IDs will be,
                   which doesn't really excuse this not being
                   programmatic but #effort */}
               <ul>
@@ -54,6 +61,7 @@ export default class SlottedSchedule extends React.Component {
                 <li><a href="#1564286400">Sunday, July 28</a></li>
               </ul>
             </div>
+
             {Object.entries(daySlots).map(([date, slots]) => (
               <div className="day" id={stringToID(date)} tabIndex="-1" key={stringToID(date)}>
                 <h2 className="is-size-2">{formatDate(date)}</h2>
