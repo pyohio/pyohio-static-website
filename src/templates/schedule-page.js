@@ -46,9 +46,9 @@ export default class SlottedSchedule extends React.Component {
             </div>
             <div className="calendar-links">
             <p>
-              <a className="button" href="https://calendar.google.com/calendar/ical/pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com/public/basic.ics">iCal</a>
-              <a className="button" href="https://calendar.google.com/calendar?cid=cHlvaGlvLm9yZ19nNmVkMjNpOTVqdDh2OGNpdTRnM2MyNDI3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Calendar (with Google account)</a>
-              <a className="button" href="https://calendar.google.com/calendar/embed?src=pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com&ctz=America%2FNew_York">Web Calendar</a>
+              <a className="button is-link" href="https://calendar.google.com/calendar/ical/pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com/public/basic.ics">iCal</a>
+              <a className="button is-link" href="https://calendar.google.com/calendar?cid=cHlvaGlvLm9yZ19nNmVkMjNpOTVqdDh2OGNpdTRnM2MyNDI3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">Google Calendar</a>
+              <a className="button is-link" href="https://calendar.google.com/calendar/embed?src=pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com&ctz=America%2FNew_York">Web Calendar</a>
             </p> 
             </div>
             <div className="table-of-contents">
