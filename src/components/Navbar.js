@@ -78,6 +78,10 @@ const Navbar = class extends React.Component {
           {name: 'Talk Selection Process', url: '/speak/selection'},
           {name: 'Review Proposals', url: '/speak/review-proposals'}
         ]}/> */}
+        <Link className="navbar-item" to="/jobs">
+          Job Listings
+        </Link>
+
       </div>
       <div className="navbar-end has-text-centered">
         <a
