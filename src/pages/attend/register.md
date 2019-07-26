@@ -3,8 +3,8 @@ templateKey: general-page
 title: Registration & T-Shirts
 ---
 
-<a href="https://ti.to/pyohio/pyohio-2019" class="button is-link is-large">REGISTER HERE!</a>
-
+<!-- <a href="https://ti.to/pyohio/pyohio-2019" class="button is-link is-large">REGISTER HERE!</a> -->
+*Pre-registration has closed but you can still register on-site!*
 
 ## Conference Registration
 

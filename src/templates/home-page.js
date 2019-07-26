@@ -35,12 +35,12 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
             </div>
           </div>
         </div>
-        <div className="hero-foot is-flex">
+        {/* <div className="hero-foot is-flex">
           <a href="https://ti.to/pyohio/pyohio-2019" className="button is-link is-large has-background-white-bis has-text-black">Register to attend</a>
           <Link to="/sponsors/prospectus/" className="button is-link is-large has-background-white-bis has-text-black">
             Sponsor PyOhio
           </Link>
-        </div>
+        </div> */}
       </div>
       <section className="section section--gradient">
         <div className="container">
