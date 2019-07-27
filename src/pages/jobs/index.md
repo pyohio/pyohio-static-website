@@ -93,8 +93,7 @@ You can learn more about Nimbis, open positions and apply online at
     </p>
   </header>
   <div class="card-content">
-    <p>The perfect role for the programming analyst. If you love pandas and datasets but dream of an object oriented world you are just the kind of geek we are looking for.</p>
-    <p><a href="http://hrbrg.co/C43DJM">Apply here!</a></p>
+    <p><a href="http://hrbrg.co/374bs4">Senior Backend Python Engineer - Chicago, IL</a></p>
   </div>
 </div>
 
