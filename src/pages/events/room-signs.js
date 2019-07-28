@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import {  graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../../components/Layout'
 import moment from 'moment'
@@ -16,7 +16,6 @@ export default class SponsorsPage extends React.Component {
     function formatTime(timeString) {
       return moment(timeString).format('h:mma')
     }
-
 
     return (
       <Layout>
@@ -51,7 +50,7 @@ export default class SponsorsPage extends React.Component {
 export const pageQuery = graphql`
   query TalksSignsQuery {
     allTalks(
-      sort: {fields: [schedule___start, schedule___room]},
+      sort: {order: ASC, fields: start_time},
       filter: {kind: {nin: ["Keynote", "Plenary"]}}
       ) {
       edges {
