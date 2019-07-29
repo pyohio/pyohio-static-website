@@ -13,15 +13,22 @@ const NavDropdown = class extends React.Component {
     }
 
     setExpanded(event) {
-        if (event && event.key) {
-            if (event.key !== 'Enter' || event.key !== ' ') {
+        if (event) {
+            if (event.key && (event.key !== 'Enter' && event.key !== ' ')) {
                 return;
+            }
+
+            // Prevent expanding/collapsing from being reversed
+            if (event.dispatchConfig && event.dispatchConfig.phasedRegistrationNames) {
+                let action = event.dispatchConfig.phasedRegistrationNames.bubbled;
+                if (action === 'onMouseOver' && this.state.expanded
+                    || action === 'onMouseOut' && !this.state.expanded)
+                    return;
             }
         }
 
-        this.setState(state => ({
-            expanded: !state.expanded
-        }));
+        // Open/close dropdowns
+        this.props.handleDropdownClick(this);
     }
 
     render() {
@@ -29,7 +36,9 @@ const NavDropdown = class extends React.Component {
             <div className={this.state.expanded ? "navbar-item has-dropdown is-active" : "navbar-item has-dropdown"}>
                 <NavButton name={this.props.buttonName} onClick={this.setExpanded}
                     onKeyUp={this.setExpanded}
-                    ariaExpanded={this.state.expanded ? true : false}
+                    onMouseOver={this.setExpanded}
+                    onMouseOut={this.setExpanded}
+                    ariaExpanded={this.state.expanded}
                     />
                 <div className="navbar-dropdown">
                     {this.props.links.map((link) =>
@@ -41,6 +50,6 @@ const NavDropdown = class extends React.Component {
             </div>
         )
     }
-}
+};
 
-export default NavDropdown
+export default NavDropdown;

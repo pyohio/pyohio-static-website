@@ -10,17 +10,40 @@ const Navbar = class extends React.Component {
     super(props);
     this.state = {
       burgerExpanded: false,
+      expandedDropdown: null
     };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleBurgerClick = this.handleBurgerClick.bind(this);
+    this.handleDropdownClick = this.handleDropdownClick.bind(this);
   }
 
-  handleClick() {
+  handleBurgerClick() {
     this.setState(state => ({
       burgerExpanded: !state.burgerExpanded
     }));
   }
- 
+
+  handleDropdownClick(dropdown) {
+    this.setState(state => {
+      let newExpandedDropdown = null;
+      // Close currently expanded dropdown (if one open)
+      if (state.expandedDropdown) {
+        state.expandedDropdown.setState({
+          expanded: false
+        });
+      }
+      // Open new dropdown if it is not the one just closed
+      if (state.expandedDropdown !== dropdown) {
+        dropdown.setState({
+          expanded: true
+        });
+        // Set new dropdown that's expanded
+        newExpandedDropdown = dropdown;
+      }
+      return {expandedDropdown: newExpandedDropdown};
+    });
+  }
+
  render() {
    return (
   
@@ -31,15 +54,22 @@ const Navbar = class extends React.Component {
           <img src={logo} alt="PyOhio 2019"  />
         </Link>
         {/* Hamburger menu */}
-        <button className={this.state.burgerExpanded ? "navbar-burger burger is-active" : "navbar-burger burger"} data-target="navMenu" onClick={this.handleClick} aria-label="hamburger menu" aria-expanded={this.state.burgerExpanded ? true : false}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <button className={this.state.burgerExpanded ? "navbar-burger burger is-active" : "navbar-burger burger"}
+                data-target="navMenu"
+                onClick={this.handleBurgerClick}
+                aria-label="hamburger menu"
+                aria-expanded={this.state.burgerExpanded}>
+          <span/>
+          <span/>
+          <span/>
         </button>
       </div>
       <div id="navMenu" className={this.state.burgerExpanded ? "navbar-menu is-active" : "navbar-menu"}>
       <div className="navbar-start has-text-centered">
-        <NavDropdown buttonName={'About'} links={[
+        <NavDropdown
+          buttonName={'About'}
+          handleDropdownClick={this.handleDropdownClick}
+          links={[
           {name: 'About PyOhio', url: '/about'},
           {name: 'Code of Conduct', url: '/about/code-of-conduct'},
           {name: 'Organizing Team', url: '/about/team'},
@@ -50,7 +80,10 @@ const Navbar = class extends React.Component {
           {name: 'PyOhio News', url: '/news'},
           
         ]}/> */}
-        <NavDropdown buttonName={'Events'} links={[
+        <NavDropdown
+          buttonName={'Events'}
+          handleDropdownClick={this.handleDropdownClick}
+          links={[
           {name: 'Events Overview', url: '/events'},
           {name: 'Full Schedule', url: '/events/schedule'},
           {name: 'Talks', url: '/events/talks'},
@@ -60,7 +93,10 @@ const Navbar = class extends React.Component {
           {name: 'Young Coders', url: '/events/young-coders'},
           {name: 'Lightning Talks', url: '/events/lightning-talks'}
         ]}/>
-        <NavDropdown buttonName={'Attend'} links={[
+        <NavDropdown
+          buttonName={'Attend'}
+          handleDropdownClick={this.handleDropdownClick}
+          links={[
           {name: 'Register', url: '/attend/register'},
           {name: 'Volunteer', url: '/attend/volunteer'},
           {name: 'Travel & Directions', url: '/attend/travel-directions'},
@@ -68,7 +104,10 @@ const Navbar = class extends React.Component {
           {name: 'Venue', url: '/attend/venue'},
           {name: 'Food', url: '/attend/food'}
         ]}/>
-        <NavDropdown buttonName={'Sponsors'} links={[
+        <NavDropdown
+          buttonName={'Sponsors'}
+          handleDropdownClick={this.handleDropdownClick}
+          links={[
           {name: 'Our Sponsors', url: '/sponsors'},
           {name: 'Prospectus', url: '/sponsors/prospectus'},
           {name: 'Individual Sponsors', url: '/sponsors/individual'}
@@ -99,6 +138,6 @@ const Navbar = class extends React.Component {
     </div>
   </nav>
   )}
-}
+};
 
-export default Navbar
+export default Navbar;
