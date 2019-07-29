@@ -33,11 +33,11 @@ const NavDropdown = class extends React.Component {
 
     render() {
         return (
-            <div className={this.state.expanded ? "navbar-item has-dropdown is-active" : "navbar-item has-dropdown"}>
+            <div className={this.state.expanded ? "navbar-item has-dropdown is-active" : "navbar-item has-dropdown"}
+                 onMouseOver={this.setExpanded}
+                 onMouseOut={this.setExpanded}>
                 <NavButton name={this.props.buttonName} onClick={this.setExpanded}
                     onKeyUp={this.setExpanded}
-                    onMouseOver={this.setExpanded}
-                    onMouseOut={this.setExpanded}
                     ariaExpanded={this.state.expanded}
                     />
                 <div className="navbar-dropdown">
