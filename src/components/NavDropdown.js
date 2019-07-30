@@ -37,9 +37,7 @@ const NavDropdown = class extends React.Component {
                  onMouseOver={this.setExpanded}
                  onMouseOut={this.setExpanded}>
                 <NavButton name={this.props.buttonName} onClick={this.setExpanded}
-                    onKeyUp={this.setExpanded}
-                    ariaExpanded={this.state.expanded}
-                    />
+                           ariaExpanded={this.state.expanded}/>
                 <div className="navbar-dropdown">
                     {this.props.links.map((link) =>
                         <Link className="navbar-item" to={link.url} key={link.url}>
