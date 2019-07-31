@@ -111,6 +111,7 @@ export const pageQuery = graphql`
           end
           duration
           description_html
+          feedback_url
           presentation_id
           room
           rooms

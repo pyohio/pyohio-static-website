@@ -27,6 +27,11 @@ export default class ScheduleSlot extends React.Component {
                   {this.slot.kind.charAt(0).toUpperCase() + this.slot.kind.slice(1)} details
               </Link>
               )}
+              { this.slot.feedback_url && (
+              <div className="">
+                <a href={`${this.slot.feedback_url}`} className="button is-link">Rate this session</a>
+              </div>
+              )}
               { this.slot.kind === 'tutorial' && (
                 <p><em><Link to='/attend/register'>Requires pre-registration</Link></em></p>
               )}
