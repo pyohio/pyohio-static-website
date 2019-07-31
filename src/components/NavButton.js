@@ -1,9 +1,6 @@
 import React from 'react'
 
 const NavButton = class extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

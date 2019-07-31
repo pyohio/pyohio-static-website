@@ -21,8 +21,8 @@ const NavDropdown = class extends React.Component {
             // Prevent expanding/collapsing from being reversed
             if (event.dispatchConfig && event.dispatchConfig.phasedRegistrationNames) {
                 let action = event.dispatchConfig.phasedRegistrationNames.bubbled;
-                if (action === 'onMouseOver' && this.state.expanded
-                    || action === 'onMouseOut' && !this.state.expanded)
+                if ((action === 'onMouseOver' && this.state.expanded)
+                    || (action === 'onMouseOut' && !this.state.expanded))
                     return;
             }
         }
