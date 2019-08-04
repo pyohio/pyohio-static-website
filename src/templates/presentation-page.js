@@ -52,7 +52,7 @@ export const PresentationPageTemplate = ({
               {youtubeID && 
               <div className="presentation-video">
                 <h2 className="is-size-4">Video</h2>
-                <iframe width="560" height="315" src={`https://www.youtube-nocookie.com/embed/${youtubeID}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="Presentation Video" width="560" height="315" src={`https://www.youtube-nocookie.com/embed/${youtubeID}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               }
               {moment().isAfter(startMoment) && (
