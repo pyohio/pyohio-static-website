@@ -142,18 +142,15 @@ const PresentationPage = ({ data }) => {
             <meta name="twitter:description" content={pageDescription} />
             <meta name="twitter:title" content={pageTitle} />
             <meta property="og:title" content={pageTitle} />
-            {youtubeID &&
-              <meta property="og:image" content={`https://img.youtube.com/vi/${youtubeID}/0.jpg`} />
-            }
-            {youtubeID &&
-              <meta property="twitter:image" content={`https://img.youtube.com/vi/${youtubeID}/0.jpg`} />
-            }
-            {youtubeID &&
-              <meta property="twitter:player" content={`https://www.youtube-nocookie.com/embed/${youtubeID}`} />
-            }
-            {youtubeID &&
-              <meta property="twitter:card" content="player" />
-            }
+            {youtubeID && ([
+                <meta property="og:image" content={`https://img.youtube.com/vi/${youtubeID}/0.jpg`} />,
+                <meta property="twitter:card" content="player" />,
+                <meta property="twitter:image" content={`https://img.youtube.com/vi/${youtubeID}/0.jpg`} />,
+                <meta property="twitter:player" content={`https://www.youtube-nocookie.com/embed/${youtubeID}`} />,
+                <meta property="twitter:player:height" content="315" />,
+                <meta property="twitter:player:width" content="560" />,
+            ]
+            )}
           </Helmet>
         }
         kind={presentation.kind}
