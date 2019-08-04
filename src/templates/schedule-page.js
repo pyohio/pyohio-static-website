@@ -51,12 +51,14 @@ export default class SlottedSchedule extends React.Component {
               <a className="button is-link" href="https://calendar.google.com/calendar/embed?src=pyohio.org_g6ed23i95jt8v8ciu4g3c24278%40group.calendar.google.com&ctz=America%2FNew_York">Web Calendar</a>
             </p> 
             </div> */}
-            <div>
-              <p>Please help us imporove PyOhio by providing feedback on the event here:</p>
-              <p><a className="button is-link" href="https://pyohio.typeform.com/to/mQhosx">Rate & Review PyOhio 2019</a></p>
-              <p>And please rate the sessions that you attended using the links on the schedule below.</p>
-              <p><em>Ratings will be open through Aug 5, 2019.</em></p>
-            </div>
+            {moment().isBefore("2019-08-06") && (
+              <div>
+                <p>Please help us imporove PyOhio by providing feedback on the event here:</p>
+                <p><a className="button is-link" href="https://pyohio.typeform.com/to/mQhosx">Rate & Review PyOhio 2019</a></p>
+                <p>And please rate the sessions that you attended using the links on the schedule below.</p>
+                <p><em>Ratings will be open through Aug 5, 2019.</em></p>
+              </div>
+            )}
             <div className="table-of-contents">
              {/* I know ahead of time what these IDs will be,
                   which doesn't really excuse this not being

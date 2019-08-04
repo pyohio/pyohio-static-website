@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import moment from "moment"
 
 export default class ScheduleSlot extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export default class ScheduleSlot extends React.Component {
                   {this.slot.kind.charAt(0).toUpperCase() + this.slot.kind.slice(1)} details
               </Link>
               )}
-              { this.slot.feedback_url && (
+              { this.slot.feedback_url && moment().isBefore("2019-08-06") && (
               <div className="">
                 <a href={`${this.slot.feedback_url}`} className="button is-link">Rate this session</a>
               </div>

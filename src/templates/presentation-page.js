@@ -57,7 +57,7 @@ export const PresentationPageTemplate = ({
                 </div>
               </div>
               }
-              {moment().isAfter(startMoment) && (
+              {moment().isBetween(startMoment, "2019-08-06") && (
                 <div className="content presentation-feedback">
                   <a href={feedback_url} className="button is-link">Rate this session!</a>
                 </div>
