@@ -52,7 +52,9 @@ export const PresentationPageTemplate = ({
               {youtubeID && 
               <div className="presentation-video">
                 <h2 className="is-size-4">Video</h2>
-                <iframe title="Presentation Video" width="560" height="315" src={`https://www.youtube-nocookie.com/embed/${youtubeID}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className="video-frame">
+                  <iframe title="Presentation Video" src={`https://www.youtube-nocookie.com/embed/${youtubeID}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
               }
               {moment().isAfter(startMoment) && (
@@ -122,7 +124,7 @@ const PresentationPage = ({ data }) => {
   const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
   const pageDescription = `${presentation.kind}: ${presentation.title} by ${speakersString}`
   let youtubeID = null
-  if (presentation.youtube_url.includes("youtu")) {
+  if (presentation.youtube_url && presentation.youtube_url.includes("youtu")) {
     youtubeID = presentation.youtube_url.replace("http://youtu.be/", "")
   }
 
