@@ -22,6 +22,7 @@ export const PresentationPageTemplate = ({
   startMoment,
   startTime,
   title,
+  youtubeID,
 }) => {
   const PageContent = contentComponent || Content
 
@@ -48,6 +49,12 @@ export const PresentationPageTemplate = ({
               <div><em>{kind} - {startDate} at {startTime} in {room}</em></div>
               <PageContent className="content presentation-description" content={description} />
               <PageContent className="content presentation-abstract" content={abstract} />
+              {youtubeID && 
+              <div className="presentation-video">
+                <h2 className="is-size-4">Video</h2>
+                <iframe width="560" height="315" src={`https://www.youtube-nocookie.com/embed/${youtubeID}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              }
               {moment().isAfter(startMoment) && (
                 <div className="content presentation-feedback">
                   <a href={feedback_url} className="button is-link">Rate this session!</a>
@@ -58,10 +65,11 @@ export const PresentationPageTemplate = ({
               }
               {prerequisites &&
               <div>
-                <h2 className="is-size-4">Prerequisites & Setup Instructions:</h2>
+                <h2 className="is-size-4">Prerequisites & Setup Instructions</h2>
                 <PageContent className="content presentation-prerequisites" content={prerequisites} />
                 </div>
               }
+
 
               <h2 className="is-size-4">Presented by:</h2>
               <div className="tile is-ancestor">
@@ -91,6 +99,7 @@ PresentationPageTemplate.propTypes = {
   startMoment: PropTypes.string,
   startTime: PropTypes.string,
   title: PropTypes.string,
+  youtubeID: PropTypes.string,
 }
 
 const PresentationPage = ({ data }) => {
@@ -112,6 +121,11 @@ const PresentationPage = ({ data }) => {
   const speakersString = presentation.speakers.map(speaker => speaker.name).join(", ")
   const pageTitle = `PyOhio 2019 Presentation: ${presentation.title}`
   const pageDescription = `${presentation.kind}: ${presentation.title} by ${speakersString}`
+  let youtubeID = null
+  if (presentation.youtube_url.includes("youtu")) {
+    youtubeID = presentation.youtube_url.replace("http://youtu.be/", "")
+  }
+
   return (
     <Layout>
       <PresentationPageTemplate
@@ -126,6 +140,18 @@ const PresentationPage = ({ data }) => {
             <meta name="twitter:description" content={pageDescription} />
             <meta name="twitter:title" content={pageTitle} />
             <meta property="og:title" content={pageTitle} />
+            {youtubeID &&
+              <meta property="og:image" content={`https://img.youtube.com/vi/${youtubeID}/0.jpg`} />
+            }
+            {youtubeID &&
+              <meta property="twitter:image" content={`https://img.youtube.com/vi/${youtubeID}/0.jpg`} />
+            }
+            {youtubeID &&
+              <meta property="twitter:player" content={`https://www.youtube-nocookie.com/embed/${youtubeID}`} />
+            }
+            {youtubeID &&
+              <meta property="twitter:card" content="player" />
+            }
           </Helmet>
         }
         kind={presentation.kind}
@@ -136,6 +162,7 @@ const PresentationPage = ({ data }) => {
         startMoment={startMoment}
         startTime={startTime}
         title={presentation.title}
+        youtubeID={youtubeID}
       />
     </Layout>
   )
@@ -172,6 +199,7 @@ export const PresentationPageQuery = graphql`
           }
         }
       }
+      youtube_url
     }
     tutorials(id: {eq: $id}) {
       title
@@ -197,6 +225,7 @@ export const PresentationPageQuery = graphql`
           }
         }
       }
+      youtube_url
     }
   }
 `
