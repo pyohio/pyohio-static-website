@@ -3,9 +3,13 @@ templateKey: general-page
 title: Young Coders
 ---
 
-<a href="https://ti.to/pyohio/pyohio-2019-young-coders" class="button is-link is-large">REGISTER HERE!</a>
+<a href="https://ti.to/pyohio/pyohio-2019-young-coders-september" class="button is-link is-large">REGISTER FOR MAKEUP CLASS!</a>
 
-We will have one Young Coders class this year. Only 10 seats available, registration opens in July. Details will be announced via [our mailing list](/news/keep-in-touch).
+<p>The Young Coders makeup class is scheduled for September 9th, 2019 at the <a href="https://goo.gl/maps/gE1DByu3Ka9dW8Hp6">Franklinton Branch</a> of the Columbus Library.</p>
+
+<p>Check-in starts at 8:30 AM</p>
+<p>Class is from 9:00 AM to 3:00 PM.</p>
+<p>A pizza lunch and snacks of fruit and cookies will be provided. Students are also welcome to bring their own lunch if they don't want pizza.</p>
 
 
 <p>It's the same class as taught at PyCon! Details: <a href="https://us.pycon.org/2017/events/letslearnpython/">https://us.pycon.org/2017/events/letslearnpython/</a></p>
