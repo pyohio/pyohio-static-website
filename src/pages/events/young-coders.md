@@ -5,7 +5,7 @@ title: Young Coders
 
 <a href="https://ti.to/pyohio/pyohio-2019-young-coders-september" class="button is-link is-large">REGISTER FOR MAKEUP CLASS!</a>
 
-<p>The Young Coders makeup class is scheduled for September 9th, 2019 at the <a href="https://goo.gl/maps/gE1DByu3Ka9dW8Hp6">Franklinton Branch</a> of the Columbus Library.</p>
+<p>The Young Coders makeup class is scheduled for September 7th, 2019 at the <a href="https://goo.gl/maps/gE1DByu3Ka9dW8Hp6">Franklinton Branch</a> of the Columbus Library.</p>
 
 <p>Check-in starts at 8:30 AM</p>
 <p>Class is from 9:00 AM to 3:00 PM.</p>
