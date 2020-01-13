@@ -6,7 +6,7 @@ https://2019.pyohio.org/* https://www.pyohio.org/:splat 301!
 # Optional: Redirect default Netlify subdomain to primary domain
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
-/                       /2019                           302
+/                       /2020                           302
 /sponsors/prospectus/   /2019/sponsors/prospectus       302      
 /2019/sponsorship       /2019/sponsors/prospectus
 /2019/contact/keep-in-touch /2019/news/keep-in-touch
