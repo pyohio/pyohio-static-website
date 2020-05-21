@@ -12,12 +12,13 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2019/contact/keep-in-touch /2019/news/keep-in-touch
 
 # Short URLs change year to year:
+/about                  /2020                           302
 /coc                    /2019/about/code-of-conduct     302
 /code-of-conduct        /2019/about/code-of-conduct     302
 /conduct                /2019/about/code-of-conduct     302
 /attend                 /2019/attend                    302
-/cfp                    /2019/speak/cfp                 302
-/call-for-proposals     /2019/speak/cfp                 302
+/cfp                    https://pretalx.com/pyohio-2020/cfp 302
+/call-for-proposals     https://pretalx.com/pyohio-2020/cfp 302
 /directions             /2019/attend/travel             302
 /events                 /2019/events                    302
 /hotel                  /2019/attend/hotel              302
@@ -37,4 +38,4 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /opyo    https://mail.python.org/pipermail/centraloh/2008-March/000082.html
 
 # Off-site
-/video https://www.youtube.com/channel/UCYqdrfvhGxNW3vXebypqXoQ 302
+/video https://www.youtube.com/c/PyOhio 302
