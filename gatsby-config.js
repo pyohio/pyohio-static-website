@@ -63,7 +63,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cfp.pyohio.org/2019/sponsors/sponsors-by-level.json',
+        url: 'https://static.pyohio.org/2019/sponsors-by-level.json',
         rootKey: 'SponsorLevels',
         imageKeys: ['web_logo']
       }
@@ -71,7 +71,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cfp.pyohio.org/2019/schedule/talks/list/json/',
+        url: 'https://static.pyohio.org/2019/talks-list.json',
         rootKey: 'Talks',
         imageKeys: ['photo']
       }
@@ -79,7 +79,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cfp.pyohio.org/2019/schedule/tutorials/list/json/',
+        url: 'https://static.pyohio.org/2019/tutorials-list.json',
         rootKey: 'Tutorials',
         imageKeys: ['photo']
       }
@@ -87,7 +87,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cfp.pyohio.org/2019/schedule/speakers/list/json/',
+        url: 'https://static.pyohio.org/2019/speakers-list.json',
         rootKey: 'Speakers',
         imageKeys: ['photo']
       }
@@ -95,7 +95,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cfp.pyohio.org/2019/schedule/organizers/list/json/',
+        url: 'https://static.pyohio.org/2019/organizers-list.json',
         rootKey: 'Organizers',
         imageKeys: ['photo']
       }
@@ -103,14 +103,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cfp.pyohio.org/2019/schedule/slots/list/json/',
+        url: 'https://static.pyohio.org/2019/slots-list.json',
         rootKey: 'Slots'
       }
     },
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'http://static-cfp.pyohio.org/data/individual-sponsors.json',
+        url: 'https://static.pyohio.org/2019/individual-sponsors.json',
         rootKey: 'IndividualSponsors'
       }
     },
