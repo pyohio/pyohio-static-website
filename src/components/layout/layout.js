@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
     <Grommet theme={theme}>
       <Grid
         // embiggen footer when we add this year's sponsor
-        rows={[['min-content', '25%'], '1fr', ['min-content', '25%']]}
+        rows={[['min-content', '160px'], '1fr', ['min-content', '25%']]}
         columns={{ count: 'fit', size: '240px' }}
         gap="small"
       >
