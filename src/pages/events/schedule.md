@@ -1,8 +1,18 @@
 ---
-templateKey: schedule-page
-title: PyOhio 2019 Schedule
+templateKey: event-page
+title: Event Schedules
+pageKey: sch
 ---
 
-Schedule TBD
+## Table of Contents
 
-For now see the [Events Overview](/events)
+- [Talk Schedule](#talk-schedule)
+- [Tutorials Schedule](#tutorials-schedule)
+
+## Talk Schedule
+
+Coming about one month after CFP close
+
+## Tutorials Schedule
+
+Coming about one month after CFP close
