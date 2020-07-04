@@ -3,7 +3,7 @@ templateKey: general-page
 title: PyOhio 2020 - Save the Date!
 ---
 
-The 13th annual PyOhio will be *July 25-26, 2020* at The Ohio Union in Columbus, OH.
+The 13th annual PyOhio will be *July 25-26, 2020* ~~at The Ohio Union in Columbus, OH.~~ entirely online!
 
 Be sure to [subscribe to our newsletter](https://pyohio.us3.list-manage.com/subscribe?u=8c9245b985e483ce2777296fb&id=ebb557184f) and follow [@pyohio](https://twitter.com/PyOhio) on twitter for updates!
 

@@ -6,6 +6,7 @@ pageKey: sch
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Talk Schedule](#talk-schedule)
 - [Tutorials Schedule](#tutorials-schedule)
 

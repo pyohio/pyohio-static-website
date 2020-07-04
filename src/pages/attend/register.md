@@ -4,11 +4,6 @@ title: Register or Volunteer
 pageKey: reg
 ---
 
-## Table of Contents
-
-- [Register to Attend](#register-to-attend)
-- [Volunteering](#volunteering)
-
 ## Register to Attend
 
 <!-- Link to tito here -->
@@ -31,64 +26,5 @@ Tutorials are free to attend but they require pre-registration. Registration wil
 
 ### T-Shirts
 
-<!-- t-shirt presale link here? -->
+More info coming soon!
 
-- T-shirts are \$35?! -- Yes! We use optional t-shirts as a fundraiser in order to keep conference registration free.
-- Shirts come in two cuts:
-  - Next Level 3600 "Cotton Crew" [details and sizing chart](https://www.nextlevelapparel.com/mens-cotton-crew-7336.html)
-  - Next Level 1510 "Women's Ideal Tee" [details and sizing chart](https://www.nextlevelapparel.com/ideal-tee-6920.html)
-- See shirt design below
-- T-shirts **MUST BE PICKED UP IN PERSON AT PYOHIO**. We do not have the capacity to ship them. If someone other than you is picking up the shirt please enter their name when completing the t-shirt ticket info.
-
-<!-- <figure>
-<img src="https://placekitten.com/200/200" alt="PyOhio 2020 Shirt Design">
-<figcaption>This year's t-shirt design (by $name). $Color shirt with the logo themed after $theme.</figcaption>
-</figure> -->
-
-## Volunteering
-
-Sign up to be a volunteer here: https://forms.gle/6Tx2HGW3gRMzB1P99
-
-Be sure to [subscribe to our mailing list](/about/newsletter) for updates.
-
-### On-site Volunteer Roles
-
-_No experience necessary! We'll provide brief training before your volunteer shifts._
-
-#### Registration
-
-Greet and check attendees in. Dispense badges and bags.
-
-#### Session Chair
-
-Help speakers be successful: Make sure they're set up before the talk. Offer water. Introduce speakers. Show provided
-time-remaining cards. Usher attendees away from speaker area so the next speaker can set up.
-
-#### Teaching Assistant
-
-Assist the teacher and students of the Young Coders class.
-
-#### T-Shirts
-
-Dispense shirts and accept donations.
-
-#### Videography
-
-PyOhio records all the talks and tutorials so they can be posted online. Help make that happen!
-
-#### Signage
-
-Update all room signs (at doors) after each session.
-
-#### Backup
-
-Stand ready to step into any of the above roles as necessary.
-
-### Other Ways to Help
-
-- Sign-up to [review talk proposals](#).
-- Spread the word!
-  - Retweet [@PyOhio](https://twitter.com/pyohio)
-  - Follow us on [Facebook](https://www.facebook.com/pyohio) and RSVP to the event.
-  - Let people know about PyOhio at Meetups and user groups. Let us know if you do!
-- Make a donation to PyOhio via the registration site
