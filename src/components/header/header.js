@@ -1,14 +1,14 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { Link } from "gatsby";
-import { Header, Box, Anchor, Text } from "grommet";
-import { Github } from "grommet-icons";
-import Logo from "../image/logo";
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from 'gatsby';
+import { Header, Box, Anchor, Text } from 'grommet';
+import { Github } from 'grommet-icons';
+import Logo from '../image/logo';
 
 // this is to force grommet's styles on to gatsby's links
 const linkProps = {
-  color: "control",
-  weight: "bold"
+  color: 'control',
+  weight: 'bold',
 };
 
 const CustomHeader = ({ siteTitle, ...props }) => (
@@ -75,11 +75,11 @@ const CustomHeader = ({ siteTitle, ...props }) => (
 );
 
 CustomHeader.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 CustomHeader.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 export default CustomHeader;
