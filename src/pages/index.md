@@ -1,38 +1,11 @@
 ---
-templateKey: home-page
-title: PyOhio 2019
+templateKey: general-page
+title: PyOhio 2020 - Save the Date!
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "PyOhio 2019",
-  "startDate": "2019-07-27T10:00-05:00",
-  "location": {
-    "@type": "Place",
-    "name": "The Ohio Union",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1739 N. High St",
-      "addressLocality": "Columbus",
-      "postalCode": "43210",
-      "addressRegion": "OH",
-      "addressCountry": "US"
-    }
-  },
-  "image": [
-    "https://www.pyohio.org/2019/img/pyohio-2019-og.png"
-   ],
-  "description": "The FREE Python community conference in Columbus, OH, July 27-28, 2019.",
-  "endDate": "2019-07-28T17:00-05:00",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.pyohio.org/2019/",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2019-04-15T09:00-05:00"
-  }
-}
-</script>
+The 13th annual PyOhio will be *July 25-26, 2020* ~~at The Ohio Union in Columbus, OH.~~ entirely online!
+
+Be sure to [subscribe to our newsletter](https://pyohio.us3.list-manage.com/subscribe?u=8c9245b985e483ce2777296fb&id=ebb557184f) and follow [@pyohio](https://twitter.com/PyOhio) on twitter for updates!
+
+- [Add to Google Calendar](https://calendar.google.com/calendar/embed?src=pyohio.org_49vct65s5nnbtr6jlqhbdgm3ns%40group.calendar.google.com&ctz=America%2FNew_York)
+- [Add to iCal](https://calendar.google.com/calendar/ical/pyohio.org_49vct65s5nnbtr6jlqhbdgm3ns%40group.calendar.google.com/public/basic.ics)
