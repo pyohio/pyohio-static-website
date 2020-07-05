@@ -1,0 +1,21 @@
+code: 8MABR7
+description: Testing is vital for any type of software. Python has frameworks like
+  unittest and pytest for automating tests, too. But how can we write _good_ test
+  cases? One of the best patterns to follow is to write independent test cases using
+  the *Arrange-Act-Assert* pattern. It works for any kind of functional test. I'll
+  show how it's done so that you can write tests like a champ!
+slug: how-to-write-test-case
+speakers:
+- avatar: https://pretalx.com/media/avatars/andy_django_profile_zoom_small_AU0SaWL.jpg
+  biography: Andrew Knight, or "Pandy," is the “Automation Panda” - an engineer, consultant,
+    and international speaker who loves all things about software. His main passion
+    is software testing and automation. He has designed and built robust test automation
+    solutions for operating systems, service APIs, and Web apps with hundreds of tests
+    running continuously. He also coaches others in good development, testing, and
+    BDD practices. Andy currently works full-time as the lead software engineer in
+    test at PrecisionLender, a Q2 company. Read his tech blog at AutomationPanda.com,
+    and follow him on Twitter at @AutomationPanda.
+  code: 8WV93W
+  name: Pandy Knight
+title: How to Write a Test Case
+type: Lightning Talk

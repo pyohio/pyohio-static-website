@@ -1,0 +1,19 @@
+code: HHHNCT
+description: We all love Python, but not everyone is fortunate enough to use it at
+  their day job. Come and listen as I detail the journey I took to establish Python
+  as an onroad option at my company. Viewers will leave having learned from my experiences—both
+  successes and mistakes—and with a solid plan for implementing Python at their job.
+slug: theres-snake-in-birdhouse-building-python-culture-at-vrbo
+speakers:
+- avatar: null
+  biography: Mason is currently a Developer Advocate at DigitalOcean who specializes
+    in cloud infrastructure, distributed systems, and Python. Prior to his work at
+    DigitalOcean he was an SRE helping build and maintain a highly available hybrid
+    multicloud PaaS. He is an avid programmer, speaker, educator, and writer/blogger.
+    He is a maintainer of the DigitalOcean terraform provider and contributes to random
+    open source projects here and there. In his spare time he enjoys reading, camping,
+    kayaking, and exploring new places.
+  code: SN9SZQ
+  name: Mason Egger
+title: There’s a Snake in the Birdhouse! Building a Python Culture at Vrbo
+type: Thunder Talk

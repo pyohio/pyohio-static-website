@@ -1,0 +1,12 @@
+code: EEYZFF
+description: "This talk will go over the basics of image manipulation with Pillow.\r\n\r\nWe'll
+  go over\r\n- Loading Images\r\n- Resizing Images\r\n- Converting Image Formats\r\n-
+  Modifying Colors\r\n- Merging Images\r\n- Saving Images"
+slug: pillow-basics
+speakers:
+- avatar: null
+  biography: I'm a software engineer at Teespring.
+  code: J7TJER
+  name: Joe Aylor
+title: Pillow Basics
+type: Thunder Talk

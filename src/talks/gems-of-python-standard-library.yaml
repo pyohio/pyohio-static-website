@@ -1,0 +1,18 @@
+code: KRMHVC
+description: "You may know about a lot of the amazing standard libraries such as `collections`,
+  `json`, `sqlite3`, `argparse`, etc.\r\n\r\nBut what about the more unknown libraries,
+  such as `sched`, `struct`, `enum`, `bisect`, `heapq`, `decimal`, `statistics`, `pathlib`,
+  and many more!\r\n\r\nThis talk will go through, at a high level, the usage of some
+  of these libraries and how they can allow you to performs some tasks more computationally
+  efficient or hack together solutions faster without needing additionally third party
+  libraries."
+slug: gems-of-python-standard-library
+speakers:
+- avatar: null
+  biography: Currently a software engineer intern at Uber Advanced Technologies Group,
+    working on self driving cars. A member of the local Pittsburgh Python meetup group.
+    A student majoring in Computer Science and Statistics at the University of Pittsburgh.
+  code: FM3WYU
+  name: Alex Zharichenko
+title: The Gems of the Python Standard Library
+type: Thunder Talk

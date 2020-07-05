@@ -1,0 +1,20 @@
+code: HRHBYZ
+description: "MongoDB is webscale, right? It's a JSON database, it uses map-reduce,
+  it's eventually consistent. Oh, and it's insecure.\r\n\r\nLet me take 10 minutes
+  to clear up some things: MongoDB is an ACID-compliant database with transactions,
+  schemas & relationships. It includes a powerful aggregation query language. MongoDB
+  doesn't speak or store JSON, and nowadays it comes with pretty good security defaults
+  (we think).\r\n\r\nI'll cover all of this and more, so you know what you need to
+  if you're considering MongoDB for your next (or current) project."
+slug: everything-you-know-about-mongodb-is-wrong
+speakers:
+- avatar: https://pretalx.com/media/avatars/PhotoAvatarCircular_rRp7DQj.jpg
+  biography: "Mark Smith, usually known online as Judy2k, is a Developer Advocate
+    for MongoDB.\r\nHe specialises in Python and Rust and sometimes dabbles in Go.\r\nHe's
+    interested in systems architecture and scalability.\r\nWhen he's not sitting at
+    a computer, you'll probably find him snowboarding, designing things to 3D-print,
+    crocheting a hat or building mechanical keyboards."
+  code: HQSK8D
+  name: Mark Smith
+title: Everything You Know About MongoDB is Wrong!
+type: Thunder Talk

@@ -1,0 +1,21 @@
+code: CDBDFP
+description: "With an abundance of chat bot options on the market, it can be hard
+  to evaluate which platform is the best fit. Finding an option which has pre-built
+  domains and services, but also allows for customization, will help you decrease
+  the level of effort and time to implement while still providing complete control
+  over the resulting product. \r\n \r\nIn this talk, you will learn how Python NLP
+  can be used in conjunction with Azure Chat Bot services to quickly spin up a chat
+  bot that can be customized for your specific use case. Gaby Lio will review the
+  different options on the market, highlight the benefits of Azure Chat Bot, and finish
+  with an architectural overview and quick demo."
+slug: create-custom-chat-bot-with-python-and-azure-bot-service
+speakers:
+- avatar: https://pretalx.com/media/avatars/Gaby_4_KkqgDyg.jpg
+  biography: Gaby Lio is a Python enthusiast from Austin looking to share her knowledge
+    with the AI community. As a data scientist at Sense Corp, she has worked on a
+    range of machine learning projects across multiple industries. In her free time,
+    she loves exploring new trails or hikes around the greater Austin area.
+  code: 9EEJDD
+  name: Gabriella Lio
+title: Create a Custom Chat Bot With Python and Azure Bot Service
+type: Thunder Talk

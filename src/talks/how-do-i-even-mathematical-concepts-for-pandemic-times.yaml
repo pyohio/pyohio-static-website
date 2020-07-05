@@ -1,0 +1,25 @@
+code: CMAJRG
+description: "Times are *not* normal and this “not normal” is not evenly distributed.
+  Our ability to see, process, and work through crisis are all as unique as our individual
+  brains and experiences. \r\n\r\nIn this talk, I'll briefly describe how to break
+  problems down into mathematical concepts to ground decision making and understand
+  the world around us during a global, multifaceted pandemic.\r\n\r\nUsing concepts
+  from network science, nonlinear dynamics, and chaos, the audience should walk away
+  encouraged to explore more the frameworks that ground them, and give a better understanding
+  of the amazing scientifically-based work around the world."
+slug: how-do-i-even-mathematical-concepts-for-pandemic-times
+speakers:
+- avatar: https://pretalx.com/media/avatars/CSJ_5241_kD2j6D4.jpg
+  biography: Amanda Casari is an engineering manager on the Google Open Source team,
+    where she is leading  research and engineering to better understand open source
+    ecosystems.  She has worked in a breadth of cross-functional roles and engineering
+    disciplines for the last 18 years, including developer relations, data science,
+    complexity science, and robotics.  She creates projects and programs to make the
+    data world more responsible and approachable, recently co-authoring the O'Reilly
+    book, Feature Engineering for Machine Learning Principles and Techniques for Data
+    Scientists.  Amanda is endlessly fascinated by the difference between the systems
+    we aim to create and the ones that emerge.
+  code: FM883L
+  name: Amanda Casari
+title: 'How Do I Even: Mathematical Concepts for Pandemic Times'
+type: Thunder Talk

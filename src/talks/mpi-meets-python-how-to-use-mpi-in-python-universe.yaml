@@ -1,0 +1,34 @@
+code: 3DCY3C
+description: "The Message Passing Interface (MPI) is a programming paradigm used in
+  Parallel applications to allow for communication amongst processes. In order to
+  process large amounts of data and efficiently deal with complex operations, the
+  Message Passing Interface (MPI) provides primitives optimized specifically to handle
+  such cases. The increasing need for applying parallelism to applications with growing
+  complexity, is handled through the use of MPI to scale across machines and to efficiently
+  utilize all available resources.   \r\n\r\nIn this talk, we will detail various
+  MPI primitives and delve into their use cases that are applicable for modern-day
+  high performance computing needs. We will explore the MPI layer in the realm of
+  Python and define available means to utilize MPI with python."
+slug: mpi-meets-python-how-to-use-mpi-in-python-universe
+speakers:
+- avatar: https://pretalx.com/media/avatars/profile_ITzyHDp.jpeg
+  biography: I am a PhD student at The Ohio State University working on the MVAPICH2-GDR
+    project in Dr. Panda's Network-Based Computing Lab. Prior to attending OSU, I
+    completed a dual degree in Math and Computer Science at Wayne State University
+    in Detroit, MI.
+  code: AMFK8Z
+  name: Kawthar Shafie Khorassani
+- avatar: https://pretalx.com/media/avatars/IMG_6354_2_IRY1bmV.jpg
+  biography: "Arpan Jain} received his B.Tech. and M.Tech. degrees in Information\r\nTechnology
+    from ABV-IIITM, India. Currently, Arpan is working towards his Ph.D. \r\ndegree
+    in Computer Science and Engineering at The Ohio State University. His \r\ncurrent
+    research focus lies at the intersection of High-Performance Computing (HPC) \r\nlibraries
+    and Deep Learning (DL) frameworks. He is working on parallelization and distribution
+    strategies large-scale Deep Neural Network (DNN) training. He previously worked
+    on speech analysis, time series modeling, hyperparameter optimization, and object
+    recognition. He actively contributes to projects like HiDL (high-performance deep
+    learning) and MVAPICH2-GDR software."
+  code: Z9WPUF
+  name: Arpan Jain
+title: MPI Meets Python - How to Use MPI in the Python Universe
+type: Thunder Talk

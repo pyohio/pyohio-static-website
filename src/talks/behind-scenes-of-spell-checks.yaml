@@ -1,0 +1,17 @@
+code: 98LGMT
+description: Ever missed rectifying a spelling mistake in an important email but were
+  super relieved that it got auto-corrected? Let’s understand what happens under the
+  hood. This talk introduces the algorithm behind handling typos, the various Natural
+  Language Processing techniques available and how you can tweak them for your use-case!
+slug: behind-scenes-of-spell-checks
+speakers:
+- avatar: https://pretalx.com/media/avatars/Niharika_Krishnan_5jx8PL0.jpg
+  biography: Niharika Krishnan currently works as a Machine Learning Engineer in India
+    where she builds NLP based solutions for TCS - Walmart. She leads the PyLadies
+    Chennai chapter and has been a tech-speaker at PyCon India’19, PyCon Canada’19
+    & Google Women Techmakers conferences. She has a passion for AI and believes in
+    leveraging technology to help people lead better lives!
+  code: 73ZGDW
+  name: Niharika Krishnan
+title: Behind the Scenes of Spell Checks!
+type: Thunder Talk

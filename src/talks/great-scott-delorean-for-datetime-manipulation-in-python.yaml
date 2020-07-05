@@ -1,0 +1,21 @@
+code: 7WADA3
+description: "Working with dates and times in Python can lead to frustration, heartache,
+  and, ironically, lost time – but it doesn’t have to!  This brief demo introduces
+  Delorean, a library constructed to make datetime manipulation in Python easier.
+  \ Participants will discover how they can use Delorean \r\n- to do datetime arithmetic,
+  \r\n- to handle time zone shifts, \r\n- to convert datetimes into human language
+  like “3 days from now,” and\r\n- to generate equally spaced datetime intervals."
+slug: great-scott-delorean-for-datetime-manipulation-in-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/kim_close_small_a5UwPQR.png
+  biography: Kimberly Fessel is a Senior Data Scientist at Metis, the industry’s only
+    accredited, full-time, immersive data science bootcamp.  Prior to joining Metis
+    as an instructor, Kimberly worked in digital advertising at MRM//McCann where
+    she focused on helping clients understand their customers by leveraging unstructured
+    data with modern NLP techniques.  She holds a Ph.D. in applied mathematics from
+    Rensselaer Polytechnic Institute and completed a postdoctoral fellowship in math
+    biology at the Ohio State University.
+  code: QRWQZG
+  name: Kimberly Fessel
+title: Great Scott! Delorean for Datetime Manipulation in Python
+type: Lightning Talk

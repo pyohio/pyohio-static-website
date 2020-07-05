@@ -1,0 +1,19 @@
+code: JNMEAS
+description: Sick of feeling like those Big Data programmers must be way smarter than
+  you?  Good news, you can catch up in five minutes.  Spark is for big data but the
+  PySpark library makes using it no big deal.
+slug: big-data-no-big-deal-pyspark
+speakers:
+- avatar: https://pretalx.com/media/avatars/headshot2020_vAXVxz2.jpg
+  biography: "In 1999, Catherine was a washed-up chemical engineering grad student
+    when she was bitten by a radioactive database and was transformed into a software
+    person.  She fell in love with the Python community at PyCon 2004 and brought
+    that love back to Ohio by leading the volunteers for the first PyOhio.  Every
+    year she's thrilled to watch it thrive.\r\n\r\nToday she works on big data ETL
+    for Disney Streaming Services.  She and her wife live in the woods near Dayton,
+    and yes, they did get hit by the Memorial Day tornadoes.  As a ten-year veteran
+    of remote work, she welcomes you all to her world."
+  code: DNWR98
+  name: Catherine Devlin
+title: 'Big Data, No Big Deal: PySpark'
+type: Lightning Talk
