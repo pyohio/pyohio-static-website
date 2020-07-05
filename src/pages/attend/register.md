@@ -27,4 +27,3 @@ Tutorials are free to attend but they require pre-registration. Registration wil
 ### T-Shirts
 
 More info coming soon!
-

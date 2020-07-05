@@ -653,9 +653,23 @@ figure > img {
   width: auto; 
 }
 
+@media only screen and (max-width: 621px) {
+  /* flex nav breaks down a bit here */
+  .bad-nav {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .bad-nav {
     flex-direction: column;
     text-align: right;
+  }
+}
+
+@media only screen and (max-width: 327px) {
+  /* flex nav breaks down a bit here */
+  .bad-nav{
+    align-items: center;
   }
 }

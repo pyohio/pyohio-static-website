@@ -12,7 +12,13 @@ const linkProps = {
 };
 
 const CustomHeader = ({ siteTitle, ...props }) => (
-  <Header align="center" background="brand" justify="center" {...props}>
+  <Header
+    align="center"
+    background="brand"
+    justify="center"
+    overflow="visible"
+    {...props}
+  >
     {/* Wrapper to let us have the header background extend full width, even if we want to contain stuff to be smaller */}
     <Box
       pad="1rem"
@@ -20,7 +26,7 @@ const CustomHeader = ({ siteTitle, ...props }) => (
       align="center"
       justify="around"
       width="100%"
-      wrap="true"
+      wrap={true}
     >
       <Box>
         <Link to="/">
@@ -32,7 +38,7 @@ const CustomHeader = ({ siteTitle, ...props }) => (
         as="nav"
         flex={{ grow: 1 }}
         justify="end"
-        wrap="true"
+        wrap={true}
         className="bad-nav"
       >
         <Box pad="small">
