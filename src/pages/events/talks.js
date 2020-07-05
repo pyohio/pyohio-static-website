@@ -23,7 +23,6 @@ export default class SponsorsPage extends React.Component {
             <h2>
               <Link
                 to={`/events/talks/${talk.slug}`}
-                title="Presentation details"
               >
                 {talk.title}
               </Link>
