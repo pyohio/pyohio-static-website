@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'PyOhio 2020',
     description:
-      'PyOhio is a FREE annual Python conference. July 25-26, 2020 in Columbus, OH.',
+      'PyOhio is a FREE annual Python conference. July 25-26, 2020. Online this year!',
     siteUrl: 'https://www.pyohio.org',
     author: 'PyOhio',
   },
