@@ -10,7 +10,7 @@ pageKey: spk
 - [Talk/Tutorial Selection Process](#talktutorial-selection-process)
 - [Reviewing Proposals](#reviewing-proposals)
 
-## Call for Proposals - Open Soon!
+## Call for Proposals (now closed)
 
 PyOhio 2020, the annual Python programming conference for Ohio and the surrounding region, will take place Saturday & Sunday July 25th-26th, 2020 at The Ohio Union in Columbus, Ohio.
 
@@ -20,28 +20,6 @@ PyOhio invites all interested people to submit proposals for scheduled talks and
 
 Ready to submit a talk? Create a speaker profile and submit proposal(s) via our CFP site: [cfp.pyohio.org](https://cfp.pyohio.org/2020/dashboard/).
 
-### Session Formats
-
-- **Talks:** 30-minute presentations (with some select talks given an expanded 45-min time)
-- **Tutorials:** 120-minute hands-on workshops
-
-Note: We do not include time for Q&A however some speakers may choose to take questions during their session. Speakers can let the Session Chair know and they will make an announcement before the session if that is the case.
-
-### Who Should Submit a Proposal?
-
-You. Your friends. Your friends' friends. Anyone with any level of Python knowledge is a candidate for a great topic at this conference. As we get attendees of all kinds, we need speakers of all kinds. In all ways and manners, we try to assemble the most diverse conference we can, and we do that with your help.
-
-Whether you got started with Python last month or you've been around for 20 years, we think you've got something to share. The Python community is stronger than ever and we're still reaching new areas, new industries, and new users. Be a part of growing Python by helping us change the future.
-
-In particular, we welcome submissions from people that have never done a talk before! And if you want help preparing a talk, let us know! Volunteers are eager to help new people with talks.
-
-You may submit multiple proposals however we will typically only accept one proposal per speaker.
-
-### Financial Aid / Travel Assistance
-
-Unfortunately PyOhio is not able to offer financial aid or travel assistance at this time.
-
-We prioritize for PyOhio to be free to attend so as many people as possible can participate. By doing so we run with a very lean budget. Financial aid is a goal for the future but until we can secure funding for this we are unable to provide it.
 
 ### Speakers
 

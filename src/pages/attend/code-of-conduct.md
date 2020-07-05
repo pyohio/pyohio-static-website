@@ -6,7 +6,13 @@ pageKey: coc
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Event Code of Conduct](#event-code-of-conduct)
+  - [The Short Version](#the-short-version)
+  - [The Longer Version](#the-longer-version)
+  - [Contact Information](#contact-information)
+  - [Procedure for Handling Harassment](#procedure-for-handling-harassment)
+  - [License](#license)
 - [Attendee Reporting Procedure](#attendee-reporting-procedure)
 - [Staff Procedure](#staff-procedure)
 
@@ -55,10 +61,6 @@ During the conference, if the matter is especially urgent please call our Code o
 Or find individual responders in person:
 
 (list of responders goes here)
-
-Or find a PyOhio staff member with a STAFF badge and lanyard.
-
-Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
 ### Procedure for Handling Harassment
 
