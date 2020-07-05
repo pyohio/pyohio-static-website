@@ -8,8 +8,6 @@ title: About PyOhio
 - [Table of Contents](#table-of-contents)
 - [The Event](#the-event)
 - [OSU Open Source Club](#osu-open-source-club)
-  - [Who Are We?](#who-are-we)
-  - [Where to Find Us](#where-to-find-us)
 - [The PyOhio 2020 Organizing Team](#the-pyohio-2020-organizing-team)
 
 ## The Event
@@ -20,15 +18,11 @@ This year's event will consist of 5 and 10-minute talks and sprints.
 
 ## OSU Open Source Club
 
-### Who Are We?
+PyOhio is produced in partnership with the Ohio State University Open Source Club.
 
 The Open Source Club is on the forefront of technology and code, pushing the boundaries of tech that respect the users' individual freedoms
 
 Whether you need some help understanding a function, or just someone to bounce ideas off of, there are no better people to talk to than those who are involved in the Open Source Club.
-
-### Where to Find Us
-
-[Join the OSUOSC Mailing List](https://mailman.cse.ohio-state.edu/mailman/listinfo/opensource)
 
 ## The PyOhio 2020 Organizing Team
 
