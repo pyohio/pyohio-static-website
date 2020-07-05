@@ -16,7 +16,7 @@ title: About PyOhio
 
 PyOhio is a non-profit annual Python community conference usually held in Columbus, OH and online for 2020. It is free to attend and welcomes anyone with an interest in Python. Content ranges from beginner to advanced and is intended to be relevant to all types of Python users: students, software professionals, scientists, hobbyists, and anyone looking to learn more.
 
-This year's event will consist of 5 and 10-minute talks and sprints. 
+This year's event will consist of 5 and 10-minute talks and sprints.
 
 ## OSU Open Source Club
 
