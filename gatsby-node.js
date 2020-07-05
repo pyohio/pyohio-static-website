@@ -5,10 +5,11 @@
  */
 
 // You can delete this file if you're not using it
-const _ = require('lodash');
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const _ = require("lodash");
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
+const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const { result } = require("lodash");
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -29,15 +30,15 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()));
+      result.errors.forEach((e) => console.error(e.toString()));
       return Promise.reject(result.errors);
     }
 
     const posts = result.data.allMarkdownRemark.edges;
 
-    posts.forEach(edge => {
+    posts.forEach((edge) => {
       const id = edge.node.id;
       createPage({
         path: edge.node.fields.slug,
@@ -52,7 +53,37 @@ exports.createPages = ({ actions, graphql }) => {
     });
   });
 
-  return Promise.all([pages]);
+  const talkPages = graphql(`
+    {
+      allTalksYaml {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
+    }
+  `).then((result) => {
+    if (result.errors) {
+      result.errors.forEach((e) => console.error(e.toString()));
+      return Promise.reject(result.errors);
+    }
+    const talks = result.data.allTalksYaml.edges;
+
+    talks.forEach((edge) => {
+      const id = edge.node.id;
+      createPage({
+        path: `/events/talks/${edge.node.slug}`,
+        component: path.resolve("./src/templates/talk-page.js"),
+        context: {
+          id,
+        },
+      });
+    });
+  });
+
+  return Promise.all([pages, talkPages]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
