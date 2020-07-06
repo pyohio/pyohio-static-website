@@ -1,5 +1,5 @@
 code: KT3GS3
-description: "At the family summer camp, there is no internet, but great childcare.
+description: "md//At the family summer camp, there is no internet, but great childcare.
   I had time to write code, but no way to get packages from PyPI. I learned about
   DevPI, a flexible Python package repository, which scales down to one laptop in
   a summer camp, and up to a proxy for your thousand-person company.\r\n\r\nThe talk
@@ -7,9 +7,9 @@ description: "At the family summer camp, there is no internet, but great childca
 slug: devpi-tool-you-never-knew-you-needed
 speakers:
 - avatar: https://pretalx.com/media/avatars/headshot_cU4iyBE.jpg
-  biography: Moshe has been using open source since 1995, and Python since 1998. They
-    have contributed to the core CPython interpreter, and is a founding member of
-    the Twisted project.
+  biography: md//Moshe has been using open source since 1995, and Python since 1998.
+    They have contributed to the core CPython interpreter, and is a founding member
+    of the Twisted project.
   code: KYYQVJ
   name: Moshe Zadka
 title: DevPI -- The Tool You Never Knew You Needed

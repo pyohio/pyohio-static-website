@@ -1,11 +1,11 @@
 code: JNMEAS
-description: Sick of feeling like those Big Data programmers must be way smarter than
-  you?  Good news, you can catch up in five minutes.  Spark is for big data but the
-  PySpark library makes using it no big deal.
+description: md//Sick of feeling like those Big Data programmers must be way smarter
+  than you?  Good news, you can catch up in five minutes.  Spark is for big data but
+  the PySpark library makes using it no big deal.
 slug: big-data-no-big-deal-pyspark
 speakers:
 - avatar: https://pretalx.com/media/avatars/headshot2020_vAXVxz2.jpg
-  biography: "In 1999, Catherine was a washed-up chemical engineering grad student
+  biography: "md//In 1999, Catherine was a washed-up chemical engineering grad student
     when she was bitten by a radioactive database and was transformed into a software
     person.  She fell in love with the Python community at PyCon 2004 and brought
     that love back to Ohio by leading the volunteers for the first PyOhio.  Every

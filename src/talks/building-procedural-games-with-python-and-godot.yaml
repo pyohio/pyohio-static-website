@@ -1,14 +1,14 @@
 code: 7TLVVZ
-description: Learn how to use Python with the open-source Godot game engine - leverage
-  the power of Python's ecosystem to build procedural content and learn the basics
-  of Godot.
+description: md//Learn how to use Python with the open-source Godot game engine -
+  leverage the power of Python's ecosystem to build procedural content and learn the
+  basics of Godot.
 slug: building-procedural-games-with-python-and-godot
 speakers:
 - avatar: https://pretalx.com/media/avatars/1407641527001-super-moon-3_8RVXIWU.jpg
-  biography: Chris is a serial entrepreneur and builder, spending the early part of
-    his career in the venture-backed startup world. These days, he splits time between
-    freelance work and building a bootstrapped company, FarmBee, with his wife. On
-    nights and weekends, he likes to build games and game systems.
+  biography: md//Chris is a serial entrepreneur and builder, spending the early part
+    of his career in the venture-backed startup world. These days, he splits time
+    between freelance work and building a bootstrapped company, FarmBee, with his
+    wife. On nights and weekends, he likes to build games and game systems.
   code: FRKYB9
   name: Chris Ridenour
 title: Building Procedural Games with Python and Godot

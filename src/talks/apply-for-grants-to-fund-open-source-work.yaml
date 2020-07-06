@@ -1,6 +1,6 @@
 code: NKUCR9
-description: "When I tell people about grants they could get to help fund work on
-  open source software projects, sometimes they are surprised because they didn't
+description: "md//When I tell people about grants they could get to help fund work
+  on open source software projects, sometimes they are surprised because they didn't
   know such grants existed. I share:\r\n\r\n* sample foundations and funders (such
   as [Mozilla](https://www.mozilla.org/moss), the [Chan Zuckerberg Initiative](https://chanzuckerberg.com/eoss/),
   [NLNet](https://nlnet.nl/), and [Comcast](https://innovationfund.comcast.com/))
@@ -13,8 +13,8 @@ description: "When I tell people about grants they could get to help fund work o
 slug: apply-for-grants-to-fund-open-source-work
 speakers:
 - avatar: null
-  biography: Sumana Harihareswara is a project manager and programmer who led the
-    rollout of the new PyPI.org in 2018, led PyPI's security/accessibility/localization
+  biography: md//Sumana Harihareswara is a project manager and programmer who led
+    the rollout of the new PyPI.org in 2018, led PyPI's security/accessibility/localization
     improvements in 2019, helped the PSF communicate about the sunsetting of Python
     2, and has worked on Zulip, Mailman, MediaWiki, and several other open source
     projects. Currently she is managing improvements to pip's dependency resolver

@@ -1,14 +1,14 @@
 code: TYBWUM
-description: Reticulate is a package for R that allows you to run Python code inside
-  of R. Since both Python and R are very popular for common data science tasks, it
-  makes sense that you would want to use them together. In this talk, I'll demo how
-  to run a Python package inside of R.
+description: md//Reticulate is a package for R that allows you to run Python code
+  inside of R. Since both Python and R are very popular for common data science tasks,
+  it makes sense that you would want to use them together. In this talk, I'll demo
+  how to run a Python package inside of R.
 slug: how-to-run-your-favorite-python-package-in-r
 speakers:
 - avatar: null
-  biography: Jessica Garson is a Python programmer, educator, and artist. She currently
-    works at Twitter as a Developer Advocate. In her spare time, she is on a never-ending
-    quest for the perfect vegan snack.
+  biography: md//Jessica Garson is a Python programmer, educator, and artist. She
+    currently works at Twitter as a Developer Advocate. In her spare time, she is
+    on a never-ending quest for the perfect vegan snack.
   code: 9RQLNM
   name: Jessica Garson
 title: How to Run Your Favorite Python Package in R
