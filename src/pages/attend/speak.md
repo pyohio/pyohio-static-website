@@ -1,14 +1,115 @@
 ---
 templateKey: attend-page
-title: Speaking and Call for Proposals
+title: Speaking at PyOhio
 pageKey: spk
 ---
 
 ## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Video Recording Guidelines](#video-recording-guidelines)
+  - [How long should my video be?](#how-long-should-my-video-be)
+  - [What format should my video be?](#what-format-should-my-video-be)
+  - [When does my video have to be delivered by?](#when-does-my-video-have-to-be-delivered-by)
+  - [How should I deliver my video?](#how-should-i-deliver-my-video)
+  - [How should I record my presentation?](#how-should-i-record-my-presentation)
+    - [Recording with OBS Studio](#recording-with-obs-studio)
+    - [Recording with Screenshot.app](#recording-with-screenshotapp)
+    - [Recording with Keynote](#recording-with-keynote)
+    - [Recording with PowerPoint](#recording-with-powerpoint)
+    - [Other Tools](#other-tools)
+  - [Advice](#advice)
+    - [Practice First](#practice-first)
+    - [Have a Script](#have-a-script)
+    - [Maybe Record in Segments](#maybe-record-in-segments)
+    - [Live Coding? Beware Keyboard Sounds!](#live-coding-beware-keyboard-sounds)
+- [Call for Proposals (now closed)](#call-for-proposals-now-closed)
+  - [Speakers](#speakers)
+  - [Resources](#resources)
+  - [Submitting](#submitting)
+  - [How to Write Your Proposal](#how-to-write-your-proposal)
+  - [Questions?](#questions)
 
-- [Call for Proposals](call-for-proposals-open-soon)
-- [Talk/Tutorial Selection Process](#talktutorial-selection-process)
-- [Reviewing Proposals](#reviewing-proposals)
+## Video Recording Guidelines
+
+Congratulations again on having your talk accepted for PyOhio 2020! We're truly thankful to have you as part of this unusual year of our conference.
+
+This year, we are asking all speakers to deliver a prerecorded video of their talks. This doc will walk you through the essentials.
+
+### How long should my video be?
+
+For PyOhio 2020, we are doing a collection of short talks. To help keep the event on track and running smoothly for all of our remote attendees, we have tighter time requirements than in live events:
+
+* **Lightning Talks** should be between **4 - 5 minutes** in length.
+
+* **Thunder Talks** should be between **9 - 10 minutes** in length.
+
+Please, please, please do not go over the maximum time for your talk! If you go over time, we cannot guarantee that the entire talk will be presented on the stream.
+
+### What format should my video be?
+
+Please deliver your video as an **H264 MP4 at 1920x1080 resolution**.
+
+### When does my video have to be delivered by?
+
+We would like to receive all videos by **23:59:59 EST on Sunday, July 19**. This will give us enough time to pre-screen and process them.
+
+**If it looks like you will not be able to make that date, please contact us at program@pyohio.org** as soon as possible to let us know! This will help keep the program chair's panic level under control. :-)
+
+### How should I deliver my video?
+
+You have two choices for delivering your video:
+
+1. **Upload your video to the private Dropbox folder that will be created for you** (we'll contact everyone separately by email with the link to this folder);
+2. **Upload your video to your own cloud sharing service** and send a link to or share it with **program@pyohio.org**; we'll handle downloading it from there.
+
+### How should I record my presentation?
+
+There are lots of ways you might choose to record your presentation. Here are some suggestions that we hope will be useful. Ultimately, whatever path you choose will be fine as long as you can deliver a video in the right format.
+
+#### Recording with OBS Studio
+
+OBS Studio is a free, open-source tool used for capturing audio and video; it runs on Mac OS, Windows, and Linux: https://obsproject.com
+
+Here's a guide to capturing both your screen and webcam using OBS: https://www.youtube.com/watch?v=uL8BwstqiqE
+
+#### Recording with Screenshot.app
+
+Mac OS 10.15 can record videos of the screen with the Screenshot app. Here's a guide to recording your screen with a voiceover in Mac OS 10.15 / Catalina: https://www.youtube.com/watch?v=6nn86t9955Y
+
+#### Recording with Keynote
+
+Apple's Keynote can create videos with voiceover narration. Here's a guide to creating a video with voiceover narration using just Keynote: https://www.youtube.com/watch?v=C6e2ZtHnimA
+
+Here's a guide to creating a video with Keynote and combining it with a webcam recording in iMovie: https://www.youtube.com/watch?v=yRnANp2kS3c
+
+#### Recording with PowerPoint
+
+PowerPoint can also create videos of presentations, optionally including video from a webcam. Here's a guide to creating a video with PowerPoint: https://www.youtube.com/watch?v=pHXRuJEsN7M
+
+#### Other Tools
+
+Other tools you might choose include Elgato and Camtasia. If you have recommendations to share with other presenters, let us know and we'll update this list.
+
+### Advice
+
+This is going to be a new and different experience for many speakers. Thank you for your courage! Here are some thoughts we've had that might be helpful as you prepare your video.
+
+#### Practice First
+
+We **strongly recommend** that whatever path you take for recording, you should **practice recording before doing your presentation "for real"**. This way you can get comfortable with your choice of tools.
+
+#### Have a Script
+
+Have solid notes or a script that you can read from as you record your presentation. It can be a lot harder to be impromptu or to ad lib for a recording than it is to do so in a live room. Having a script of some kind will help prevent you from stumbling or freezing up (things your program chair is prone to do whenever doing voiceover work).
+
+#### Maybe Record in Segments
+
+Delivering your presentation to a computer can feel quite different from speaking to a roomful of live attendees. You may find it valuable to record your presentation in shorter segments and assemble them using your favorite video editor.
+
+#### Live Coding? Beware Keyboard Sounds!
+
+If you are live coding, using your computer’s built-in microphone may pick up the sound of typing, which can be distracting for your audience. We recommend using an external microphone or headset, or using an external keyboard. **Please review the audio of your recording before submitting it!**
+
 
 ## Call for Proposals (now closed)
 
@@ -68,48 +169,3 @@ Log into our [Slack team](https://slack.pyohio.org/) and ask in the `#cfp` chann
 If you would like to be matched with a mentor to help with your proposal(s), [request a mentor here](https://forms.gle/4tUxujRfhiyTbsf8A).
 
 If you are an experienced speaker and would like to volunteer to mentor, [apply to be a mentor here](https://forms.gle/4nZ7WV27GxLBECNM8).
-
-## Talk/Tutorial Selection Process
-
-PyOhio is using a two-phase review process for 2019. This is intended to allow attendees and others interested in PyOhio to have input in the talk selection decision while leaving the final program curation up to the [Program Committee](/about#the-pyohio-2020-organizing-team).
-
-### Phase One: Ranking of anonymized proposals
-
-During this phase, the reviewers will score each proposal solely on the title, description, and abstract contents. Other proposal fields will be hidden including any identifying information or notes about the speaker(s) proposing the talk.
-
-Anyone interested in helping provide input is invited to
-[become a reviewer](#), including anyone who has submitted a proposal. If you have submitted, you will be able to see all submissions except those on which you have been included as a presenter.
-
-### Phase Two: Identity-aware curation and selection
-
-The [Program Committee](/about#the-pyohio-2020-organizing-team) will use the scored proposals in conjunction with speaker profiles to rank and organize a program while ensuring diversity of speakers and topics.
-
-## Reviewing Proposals
-
-PyOhio is a community event and we want the talk selection to represent the interests of the community. To accomplish this we are using a two-phased review process and would like _your_ feedback during phase one. Reviewers of all backgrounds and experience levels are welcome!
-
-**To sign up as a reviewer:**
-
-1. Sign in to your account (or create a new one) on our [CFP site](https://cfp.pyohio.org/).
-2. Go to the [CFP site dashboard page](https://cfp.pyohio.org/2020/dashboard/).
-3. Scroll to the bottom and look for the Teams box.
-4. Click on the ["Proposal Reviewers"](https://cfp.pyohio.org/2020/teams/proposal-reviewers/) team and click Join.
-
-**Once you've joined the team:**
-
-1. Reload the Dashboard screen. You should see a new 'Reviews' section.
-2. Read through as many proposals as you can. Sort by total number of reviews and try to review the talks that have the least total reviews first.
-3. Use the speaker feedback tab if you want to ask questions, get clarification, or recommend changes to the proposal.
-
-**Scoring:**
-
-Scoring is used during the first round of the selection process to provide the selection committee input on which submissions have the greatest interest. Rate the proposal in its current form and please use the following guidelines for scoring:
-
-- `++`: Good proposal and I would argue for it to be accepted.
-- `+`: OK proposal, but I would not argue for it to be accepted.
-- `−`: Weak proposal, but I would not argue strongly against acceptance.
-- `−−`: Serious issues and I would argue to reject this proposal.
-
-If the submitter updates the proposal you will have the chance to update your score.
-
-**Note:** If you have submitted a proposal, you will not see it listed in reviewer mode. This is so you do not vote on your own proposal. You are encouraged to both propose and review session submissions if you wish.

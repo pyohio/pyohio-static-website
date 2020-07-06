@@ -19,22 +19,17 @@ export const AttendPageTemplate = ({
     {
       key: 'coc',
       href: '/attend/code-of-conduct',
-      text: 'View our Code of Conduct',
+      text: 'Code of Conduct',
     },
     {
       key: 'reg',
       href: '/attend/register',
-      text: 'Register to Attend',
+      text: 'Register to Participate',
     },
     {
       key: 'spk',
       href: '/attend/speak',
       text: 'Speaker Information',
-    },
-    {
-      key: 'ven',
-      href: '/attend/venue',
-      text: 'About the Venue and Location',
     },
   ];
 
