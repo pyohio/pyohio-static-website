@@ -1,5 +1,5 @@
 code: MGUYRT
-description: "On the first Sunday of November you may get “one more hour of sleep”
+description: "md//On the first Sunday of November you may get “one more hour of sleep”
   but as well may spend much more time debugging code dealing with the time zones,
   daylight saving time shifts and datetime stuff in general.\r\nWe'll look at a few
   pitfalls you may encounter when working with datetimes in Python. We'll dissect
@@ -12,7 +12,7 @@ description: "On the first Sunday of November you may get “one more hour of sl
 slug: day-has-only-24-1-hours
 speakers:
 - avatar: https://pretalx.com/media/avatars/msedivy_201802_360x360_K1hryFd.jpg
-  biography: 'Born in Czechoslovakia, studied in France, living in Germany. Languages
+  biography: 'md//Born in Czechoslovakia, studied in France, living in Germany. Languages
     enthusiast and hjkl juggler. Using Python to get you the lowest prices online.
     I like to discuss the human stuff in the IT: how humans write in their languages,
     how they measure time and fiddle with time zones, and how they can teach the computers

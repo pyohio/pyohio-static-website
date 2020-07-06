@@ -1,5 +1,5 @@
 code: HEXMKJ
-description: "In Python, **everything** is an object -- `int`s, `bool`s, `class`es,
+description: "md//In Python, **everything** is an object -- `int`s, `bool`s, `class`es,
   and, yes even `function`s. This has many benefits, but it also allows us to write
   un-Pythonic code that is hard to follow.\r\n\r\nThis talk will demonstrate HOWTO
   design Object-Oriented solutions using only functions, built-in data structures,
@@ -8,11 +8,11 @@ description: "In Python, **everything** is an object -- `int`s, `bool`s, `class`
 slug: object-oriented-python-with-functools-partial
 speakers:
 - avatar: null
-  biography: Aly Sivji is a Canadian expat living in Chicago. By day, he builds backend
-    systems at Numerator. By night, he is a co-organizer of the Chicago Python Users
-    Group (ChiPy). Aly is an active participant in the ChiPy Mentorship Program and
-    he loves helping intermediate developers become experts. Outside of Python, Aly
-    enjoys cycling, reading, and rewatching old TV shows.
+  biography: md//Aly Sivji is a Canadian expat living in Chicago. By day, he builds
+    backend systems at Numerator. By night, he is a co-organizer of the Chicago Python
+    Users Group (ChiPy). Aly is an active participant in the ChiPy Mentorship Program
+    and he loves helping intermediate developers become experts. Outside of Python,
+    Aly enjoys cycling, reading, and rewatching old TV shows.
   code: AJYLRJ
   name: Aly Sivji
 title: Object-Oriented Python with `functools.partial`

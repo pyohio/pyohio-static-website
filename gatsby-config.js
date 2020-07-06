@@ -23,7 +23,12 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    `gatsby-transformer-yaml`,
+    {
+      resolve: 'gatsby-transformer-yaml-plus',
+      options: {
+        enableRemark: true,
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

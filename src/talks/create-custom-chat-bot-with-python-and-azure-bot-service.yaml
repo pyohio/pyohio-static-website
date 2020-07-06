@@ -1,5 +1,5 @@
 code: CDBDFP
-description: "With an abundance of chat bot options on the market, it can be hard
+description: "md//With an abundance of chat bot options on the market, it can be hard
   to evaluate which platform is the best fit. Finding an option which has pre-built
   domains and services, but also allows for customization, will help you decrease
   the level of effort and time to implement while still providing complete control
@@ -11,10 +11,10 @@ description: "With an abundance of chat bot options on the market, it can be har
 slug: create-custom-chat-bot-with-python-and-azure-bot-service
 speakers:
 - avatar: https://pretalx.com/media/avatars/Gaby_4_KkqgDyg.jpg
-  biography: Gaby Lio is a Python enthusiast from Austin looking to share her knowledge
-    with the AI community. As a data scientist at Sense Corp, she has worked on a
-    range of machine learning projects across multiple industries. In her free time,
-    she loves exploring new trails or hikes around the greater Austin area.
+  biography: md//Gaby Lio is a Python enthusiast from Austin looking to share her
+    knowledge with the AI community. As a data scientist at Sense Corp, she has worked
+    on a range of machine learning projects across multiple industries. In her free
+    time, she loves exploring new trails or hikes around the greater Austin area.
   code: 9EEJDD
   name: Gabriella Lio
 title: Create a Custom Chat Bot With Python and Azure Bot Service
