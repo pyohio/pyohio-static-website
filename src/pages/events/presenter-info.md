@@ -1,4 +1,29 @@
-# PyOhio 2020 Presentation Video Details
+---
+templateKey: event-page
+title: Information for Presenters
+---
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Video Recording Guidelines](#video-recording-guidelines)
+- [How long should my video be?](#how-long-should-my-video-be)
+- [What format should my video be?](#what-format-should-my-video-be)
+- [When does my video have to be delivered by?](#when-does-my-video-have-to-be-delivered-by)
+- [How should I deliver my video?](#how-should-i-deliver-my-video)
+- [How should I record my presentation?](#how-should-i-record-my-presentation)
+  - [Recording with OBS Studio](#recording-with-obs-studio)
+  - [Recording with Screenshot.app](#recording-with-screenshotapp)
+  - [Recording with Keynote](#recording-with-keynote)
+  - [Recording with PowerPoint](#recording-with-powerpoint)
+  - [Other Tools](#other-tools)
+- [Advice](#advice)
+  - [Practice First](#practice-first)
+  - [Have a Script](#have-a-script)
+  - [Maybe Record in Segments](#maybe-record-in-segments)
+  - [Live Coding? Beware Keyboard Sounds!](#live-coding-beware-keyboard-sounds)
+
+## Video Recording Guidelines
 
 Congratulations again on having your talk accepted for PyOhio 2020! We're truly thankful to have you as part of this unusual year of our conference.
 
