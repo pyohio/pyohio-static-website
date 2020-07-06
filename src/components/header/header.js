@@ -64,7 +64,7 @@ const CustomHeader = ({ siteTitle, ...props }) => (
           </Text>
         </Box>
         <Box pad="small">
-          <Anchor href="https://github.com/pyohio/new-pyohio-website">
+          <Anchor href="https://github.com/pyohio/pyohio-static-website">
             <Text className="sr-only">View this site on GitHub</Text>
             <Github />
           </Anchor>
