@@ -51,7 +51,7 @@ Please deliver your video as an **H264 MP4 at 1920x1080 resolution**.
 
 ### When does my video have to be delivered by?
 
-We would like to receive all videos by **23:59:59 EST on Sunday, July 19**. This will give us enough time to pre-screen and process them.
+We would like to receive all videos by **23:59:59 EDT on Sunday, July 19**. This will give us enough time to pre-screen and process them.
 
 **If it looks like you will not be able to make that date, please contact us at program@pyohio.org** as soon as possible to let us know! This will help keep the program chair's panic level under control. :-)
 
