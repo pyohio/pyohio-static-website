@@ -1,6 +1,6 @@
 ---
 templateKey: general-page
-title: PyOhio 2020: Online Lightning and Thunder Talk Edition
+title: "PyOhio 2020: Online Lightning and Thunder Talk Edition"
 ---
 
 The 13th annual PyOhio will be _July 25-26, 2020_ entirely online, consisting of 5 and 10-minute talks, sprints, and discussion.
