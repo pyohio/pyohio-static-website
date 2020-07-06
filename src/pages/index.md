@@ -1,11 +1,13 @@
 ---
 templateKey: general-page
-title: "PyOhio 2020: Online Lightning and Thunder Talk Edition"
+title: "PyOhio 2020"
 ---
 
-The 13th annual PyOhio will be _July 25-26, 2020_ entirely online, consisting of 5 and 10-minute talks, sprints, and discussion.
+<h2>Online Lighting & Thunder Talk Edition</h2>
 
-More information on the schedule, registration, sprints, and t-shirt fundraiser coming soon.
+The 13th annual PyOhio will be _July 25-26, 2020_. The online event will consist of 5 and 10-minute talks, sprints, and discussion.
+
+More information on the schedule, free registration, sprints, and t-shirt fundraiser coming soon.
 
 Be sure to [subscribe to our newsletter](https://pyohio.us3.list-manage.com/subscribe?u=8c9245b985e483ce2777296fb&id=ebb557184f), follow [@pyohio](https://twitter.com/PyOhio) on twitter, and check here for updates!
 
