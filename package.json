@@ -1,5 +1,5 @@
 {
-  "name": "new-pyohio-website",
+  "name": "pyohio-static-website",
   "description": "PyOhio website powered by Gatsby.js and Netlify, 2020 edition",
   "version": "0.1.0",
   "author": "PyOhio",
@@ -54,9 +54,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pyohio/new-pyohio-website"
+    "url": "https://github.com/pyohio/pyohio-static-website"
   },
   "bugs": {
-    "url": "https://github.com/pyohio/new-pyohio-website/issues"
+    "url": "https://github.com/pyohio/pyohio-static-website/issues"
   }
 }
