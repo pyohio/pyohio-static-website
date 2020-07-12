@@ -1,6 +1,6 @@
 ---
 templateKey: attend-page
-title: Register or Volunteer
+title: Register
 pageKey: reg
 ---
 
