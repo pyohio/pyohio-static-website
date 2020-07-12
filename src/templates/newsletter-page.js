@@ -11,7 +11,7 @@ export const NewsletterPageTemplate = ({ title, seoTitle }) => {
     <Box>
       <SEO title={seoTitle || title} />
       <Heading>{title}</Heading>
-      <Newsletter />
+      <p><a href="https://pyohio.us3.list-manage.com/subscribe?u=8c9245b985e483ce2777296fb&id=ebb557184f">Subscribe here!</a></p>
     </Box>
   );
 };
