@@ -4,16 +4,16 @@ title: Register or Volunteer
 pageKey: reg
 ---
 
-## Register to Attend
+## Register to Participate
 
-*REGISTRATION OPENING SOON*
+[Register here!](https://ti.to/pyohio/pyohio-2020)
 
-<!-- Link to tito here -->
-
-Please register using the link above if you plan on attending PyOhio so we can print a badge for you ahead of time and so we can know how many people to expect.
-
-**Note:** If you find that you will not be able to attend PyOhio after you've registered, please cancel your registration via the "Change Details" link on the ticket email or send a message to [info@pyohio.org](mailto:info@pyohio.org).
+If you just want to watch the talks, they will be streaming live on the [PyOhio YouTube channel](https://www.youtube.com/c/PyOhio) without requiring registration. In order to participate in chat and sprints, please register using the link above. Information about our chat system will be sent to your registered email address the week before the event.
 
 ### T-Shirts
 
-More info coming soon!
+We typically use t-shirt sales as our primary fundraiser. Because the costs of running the virtual event this year are low and because we aren't able to host our Young Coders class, we've decided to use our fundraiser to support an organization that aligns with our mission: [Black Girls CODE](https://www.blackgirlscode.com/).
+
+[Order your t-shirts here!](https://www.customink.com/fundraising/pyohio-2020)
+
+[![PyOhio 2020 T-Shirts](pyohio-2020-shirts.png)](https://www.customink.com/fundraising/pyohio-2020)
