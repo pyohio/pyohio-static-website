@@ -5,6 +5,7 @@ module.exports = {
       'PyOhio is a FREE annual Python conference. July 25-26, 2020. Online this year!',
     siteUrl: 'https://www.pyohio.org',
     author: 'PyOhio',
+    image: '/pyohio-2020-social-image.jpg'
   },
   pathPrefix: '/2020',
   plugins: [
@@ -53,7 +54,8 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048,
+              maxWidth: 1024,
+              linkImagesToOriginal: false,
             },
           },
           {
