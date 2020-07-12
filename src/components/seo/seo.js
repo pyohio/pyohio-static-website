@@ -15,10 +15,13 @@ function SEO({ description, lang, meta, title }) {
     graphql`
       query {
         site {
+          pathPrefix
           siteMetadata {
             title
             description
             author
+            image
+            siteUrl
           }
         }
       }
@@ -53,7 +56,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -67,6 +70,14 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `image`,
+          content: `${site.siteMetadata.siteUrl}${site.pathPrefix}${site.siteMetadata.image}`,
+        },
+        {
+          name: `og:image`,
+          content: `${site.siteMetadata.siteUrl}${site.pathPrefix}${site.siteMetadata.image}`,
+        }
       ].concat(meta)}
     />
   );

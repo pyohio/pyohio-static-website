@@ -5,6 +5,7 @@ module.exports = {
       'PyOhio is a FREE annual Python conference. July 25-26, 2020. Online this year!',
     siteUrl: 'https://www.pyohio.org',
     author: 'PyOhio',
+    image: '/pyohio-2020-social-image.jpg'
   },
   pathPrefix: '/2020',
   plugins: [
