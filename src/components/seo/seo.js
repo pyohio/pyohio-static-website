@@ -15,7 +15,6 @@ function SEO({ description, lang, meta, title }) {
     graphql`
       query {
         site {
-          pathPrefix
           siteMetadata {
             title
             description
@@ -72,11 +71,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `image`,
-          content: `${site.siteMetadata.siteUrl}${site.pathPrefix}${site.siteMetadata.image}`,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
         },
         {
           name: `og:image`,
-          content: `${site.siteMetadata.siteUrl}${site.pathPrefix}${site.siteMetadata.image}`,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
         }
       ].concat(meta)}
     />
