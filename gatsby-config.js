@@ -33,7 +33,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/talks/`,
+        path: `./src/data/talks/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/sprints/`,
       },
     },
     `gatsby-transformer-sharp`,

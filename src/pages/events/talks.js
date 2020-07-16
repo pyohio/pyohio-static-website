@@ -7,7 +7,7 @@ export default class SponsorsPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: talkList } = data.allTalksYaml;
-    const pageTitle = "PyOhio 2020 Talks";
+    const pageTitle = "Talks";
 
     return (
       <Layout>

@@ -4,10 +4,16 @@ title: Event Schedules
 pageKey: sch
 ---
 
-## Talk Listing
+## Saturday, Jul 25
 
-[PyOhio 2020 Talks](/events/talks)
+* **9:00am-afternoon EDT** - [Talks](/events/talks) (schedule TBA)
+* **All day** - Discussion\*
+* **All day** - Sprints\*
 
-## Talk Schedule
+## Sunday, Jul 26
 
-Coming soon!
+* **All day** - Discussion\*
+* **All day** - Sprints\*
+* **9:00am-afternoon EDT** - Open Spaces (sign up form coming soon)
+
+\* Requires [registration](/attend/register)

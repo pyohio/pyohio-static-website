@@ -30,6 +30,10 @@ export const EventPageTemplate = ({
       href: '/events/talks',
       text: 'List of Talks',
     },
+    {
+      href: '/events/sprints',
+      text: 'List of Sprints',
+    },
   ];
 
   // this is to force grommet's styles on to gatsby's links

@@ -16,7 +16,7 @@ During the weekend, folks can collaborate on open source projects. We'll provide
 
 ### Sprint Listing
 
-A list of organized sprints will be linked from here as the event approaches.
+Projects will be added to the [List of Sprints](/events/sprints) as they're submitted.
 
 ### Want to help organize a sprint?
 

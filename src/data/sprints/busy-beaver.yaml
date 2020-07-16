@@ -1,0 +1,8 @@
+name: Busy Beaver
+description: "md//Slack bot to automate community engagement for tech-focused user groups. Spun out from the Chicago Python Slack workspace."
+objectives: "md//- getting folks introduced to the project\n- improving documentation (contribution docs and architecture docs)\n- improving front-end (need help with bootstrap and jinja templates)"
+organizers:
+- Aly Sivji
+project-url: https://github.com/busy-beaver-dev/busy-beaver
+getting-started-url: https://github.com/busy-beaver-dev/busy-beaver/blob/master/CONTRIBUTING.md
+when: ~1pm to ~10pm Saturday and Sunday
