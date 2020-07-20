@@ -39,3 +39,6 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Off-site
 /video https://www.youtube.com/c/PyOhio 302
+
+# Renamed Talks
+/2020/events/talks/brain-computer-interface-reading-human-brains-using-deep-learning-with-tensorflow-or-pytorch /2020/events/talks/brain-computer-interface-reading-human-brains-using-deep-learning

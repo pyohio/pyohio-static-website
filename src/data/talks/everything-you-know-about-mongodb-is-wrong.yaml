@@ -8,7 +8,7 @@ description: "md//MongoDB is webscale, right? It's a JSON database, it uses map-
   if you're considering MongoDB for your next (or current) project."
 slug: everything-you-know-about-mongodb-is-wrong
 speakers:
-- avatar: https://pretalx.com/media/avatars/PhotoAvatarCircular_rRp7DQj.jpg
+- avatar: null
   biography: "md//Mark Smith, usually known online as Judy2k, is a Developer Advocate
     for MongoDB.\r\nHe specialises in Python and Rust and sometimes dabbles in Go.\r\nHe's
     interested in systems architecture and scalability.\r\nWhen he's not sitting at

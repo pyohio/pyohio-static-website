@@ -6,7 +6,7 @@ description: "md//Idea : Using deep learning to train and build a model that cou
   used deep learning to read brain signals and translate them into human-readable
   language like English. Hence, Deep learning has given us all the hope to provide
   voiceless the voice."
-slug: brain-computer-interface-reading-human-brains-using-deep-learning-with-tensorflow-or-pytorch
+slug: brain-computer-interface-reading-human-brains-using-deep-learning
 speakers:
 - avatar: https://pretalx.com/media/avatars/pp_1QnN7Li.jpg
   biography: "md//Currently, I'm in my third year of under graduation, pursuing Bachelors
@@ -18,6 +18,5 @@ speakers:
     - https://github.com/HiteshKhandelwal901"
   code: FAZWYX
   name: Hitesh Khandelwal
-title: 'Brain-Computer-Interface: Reading Human Brains Using Deep Learning (with Tensorflow
-  or Pytorch)'
+title: 'Brain-Computer-Interface: Reading Human Brains Using Deep Learning'
 type: Lightning Talk
