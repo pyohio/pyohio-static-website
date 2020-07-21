@@ -50,17 +50,10 @@ If a participant engages in behavior that violates this code of conduct, the con
 
 ### Contact Information
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing badges that clearly identify them as staff.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact our community safety team:
 
-You can email the incident response team at [conduct@pyohio.org](mailto:conduct@pyohio.org). You may also contact conference staff and ask to be put in touch with conference chair [Conference Chair](mailto:fixme@pyohio.org).
-
-During the conference, if the matter is especially urgent please call our Code of Conduct and safety representatives via phone or text:
-
-- PyOhio CoC Hotline: +1-phone-number (this number will be active July 25-Aug 1)
-
-Or find individual responders in person:
-
-(list of responders goes here)
+- If on Discord, you may send an open message to the team by mentioning @Moderators in any channel. You may also send a direct message to any member of the @Moderators group (as indicated by the "Moderator" role on their user profile and group in the user listing.)
+- You can email the incident response team at [conduct@pyohio.org](mailto:conduct@pyohio.org).
 
 ### Procedure for Handling Harassment
 
@@ -75,7 +68,7 @@ This Code of Conduct was forked from the [PyCon US Code of Conduct](https://gith
 
 _This procedure has been adopted from the Ada Initiative's guide titled "[Conference anti-harassment/Responding to Reports](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports)"._
 
-1\. Keep in mind that all conference staff and incident responders will wear badges and lanyards clearly displaying "STAFF". The staff and incident responders will also be prepared to handle the incident. All of our staff are informed of the [code of conduct policy](#event-code-of-conduct) and guide for handling harassment at the conference. _There will be a mandatory staff meeting onsite at the conference when this will be reiterated._
+1\. All conference staff will be indicated in Discord as members of "Moderators" or "2020 Organizers". Moderators are prepared to handle incident reports. All of our staff are informed of the [code of conduct policy](#event-code-of-conduct) and guide for handling harassment at the conference.
 
 2\. Report the harassment incident (preferably in writing) to a conference staff member. All reports are confidential. Please do not disclose public information about the incident until the staff have had sufficient time in which to address the situation. This is as much for your safety and protection as it is the other attendees.
 
