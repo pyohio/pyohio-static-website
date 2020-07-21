@@ -5,7 +5,7 @@ description: "md//In Python, **everything** is an object -- `int`s, `bool`s, `cl
   design Object-Oriented solutions using only functions, built-in data structures,
   and the standard library.\r\n\r\nAfter this talk, attendees will have a better understanding
   of how Python classes `function` behind the scenes."
-slug: object-oriented-python-with-functools-partial
+slug: object-oriented-python-using-functools-partial
 speakers:
 - avatar: null
   biography: md//Aly Sivji is a Canadian expat living in Chicago. By day, he builds
@@ -15,5 +15,5 @@ speakers:
     Aly enjoys cycling, reading, and rewatching old TV shows.
   code: AJYLRJ
   name: Aly Sivji
-title: Object-Oriented Python with `functools.partial`
+title: Object-Oriented Python Using functools.partial
 type: Thunder Talk
