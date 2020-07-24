@@ -5,6 +5,11 @@ title: "PyOhio 2020"
 
 ![PyOhio 2020 Logo](pyohio-2020-square-transparent-400.png)
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jZjsr-w88qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EhhT_1BLIbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2>Online Lighting & Thunder Talk Edition</h2>
 
 The 13th annual PyOhio will be _July 25-26, 2020_. The online event will consist of 5 and 10-minute talks, sprints, and discussion.
