@@ -8,7 +8,7 @@ Make sure to subscribe to our [newsletter](/about/newsletter) for updates!
 
 ## Lightning & Thunder Talks
 
-Streaming 5 and 10-minute talks on various topics. [Talk list here](/events/talks), schedule coming soon!
+9:00am-2:30pm Saturday: Streaming 5 and 10-minute talks on various topics. [Full PyOhio Schedule](/events/schedule)
 
 ## Sprints
 
