@@ -637,6 +637,21 @@ figure > img {
   margin: 1rem auto;
 }
 
+/* from csstricks: https://css-tricks.com/fluid-width-video/ */
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* from webaim */
 .sr-only {
   height: 1px;
