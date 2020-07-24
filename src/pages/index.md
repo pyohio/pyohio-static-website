@@ -7,13 +7,18 @@ title: "PyOhio 2020"
 
 *Streaming Saturday, July 25 at 9:00am EDT*
 
+<!-- no gods no masters -->
+<div class="video-embed">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jZjsr-w88qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Lightning & Thunder Talks - Part 2
 
 *Streaming Saturday, July 25 at 12:00pm EDT*
 
+<div class="video-embed">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EhhT_1BLIbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <h2>Online Lighting & Thunder Talk Edition</h2>
 
