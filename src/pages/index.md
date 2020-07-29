@@ -3,6 +3,8 @@ templateKey: general-page
 title: "PyOhio 2020"
 ---
 
+*PyOhio 2020 is a wrap! You can watch the talks and subscribe to our newsletter for updates on future PyOhio events below.*
+
 ## Online Lighting & Thunder Talk Edition
 
 The 13th annual PyOhio will be July 25-26, 2020. The online event will consist of 5 and 10-minute talks, sprints, and discussion.
@@ -11,22 +13,16 @@ The 13th annual PyOhio will be July 25-26, 2020. The online event will consist o
 - [Registration & T-Shirts](/attend/register)
 - [PyOhio chat on Discord](https://chat.pyohio.org/)
 
-### Lightning & Thunder Talks - Part 1
+### PyOhio 2020 Lightning & Thunder Talks
 
-*Streaming Saturday, July 25 at 9:00am EDT*
+All the individual talks are available on the [PyOhio 2020 Playlist](https://www.youtube.com/playlist?list=PL2k6bbM_wgjtGSzPXzUzP3AfVO-o4imbB) of [our YouTube channel](http://youtube.com/c/PyOhio/) or watch them here:
 
-<!-- no gods no masters -->
-<div class="video-embed">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jZjsr-w88qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL2k6bbM_wgjtGSzPXzUzP3AfVO-o4imbB" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Lightning & Thunder Talks - Part 2
+Alternatively you can watch the full conference as it was streamed:
 
-*Streaming Saturday, July 25 at 12:00pm EDT*
-
-<div class="video-embed">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EhhT_1BLIbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+- [PyOhio 2020 - Lightning & Thunder Talks - Part 1](https://youtu.be/jZjsr-w88qU)
+- [PyOhio 2020 - Lightning & Thunder Talks - Part 2](https://youtu.be/EhhT_1BLIbc)
 
 ## PyOhio Updates
 
