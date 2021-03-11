@@ -6,19 +6,19 @@ https://2019.pyohio.org/* https://www.pyohio.org/:splat 301!
 # Optional: Redirect default Netlify subdomain to primary domain
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
-/                       /2020                           302
-/sponsors/prospectus/   /2020/sponsors/become           302      
-/2019/sponsorship       /2020/sponsors/become           302
+/                       /2021                           302
+/sponsors/prospectus/   /2021                           302      
+/2019/sponsorship       /2021                           302
 /2019/contact/keep-in-touch https://pyohio.us3.list-manage.com/subscribe?u=8c9245b985e483ce2777296fb&id=ebb557184f 302
 
 # Short URLs change year to year:
-/about                  /2020                           302
+/about                  /2021                           302
 /coc                    /2020/attend/code-of-conduct    302
 /code-of-conduct        /2020/attend/code-of-conduct    302
 /conduct                /2020/attend/code-of-conduct    302
 /attend                 /2019/attend                    302
-/cfp                    https://pretalx.com/pyohio-2020/cfp 302
-/call-for-proposals     https://pretalx.com/pyohio-2020/cfp 302
+/cfp                    https://pretalx.com/pyohio-2021/cfp 302
+/call-for-proposals     https://pretalx.com/pyohio-2021/cfp 302
 /directions             /2020/attend/                   302
 /events                 /2020/events/overview           302
 /hotel                  /2020/attend/register           302
