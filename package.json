@@ -41,7 +41,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2020 && cp -r ./archive/20* ./public && cp -rv ./netlify-static/* ./public/",
+    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2021-new && cp -r ./archive/20* ./public && cp -rv ./netlify-static/* ./public/",
     "build": "npx gatsby build --prefix-paths",
     "clean": "npx gatsby clean",
     "develop": "npx gatsby clean && npx gatsby develop",
