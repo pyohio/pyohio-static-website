@@ -8,29 +8,25 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 /                       /2021                           302
 /sponsors/prospectus/   /2021                           302      
-/2019/sponsorship       /2021                           302
-/2019/contact/keep-in-touch https://pyohio.us3.list-manage.com/subscribe?u=8c9245b985e483ce2777296fb&id=ebb557184f 302
 
 # Short URLs change year to year:
-/about                  /2021                           302
-/coc                    /2020/attend/code-of-conduct    302
-/code-of-conduct        /2020/attend/code-of-conduct    302
-/conduct                /2020/attend/code-of-conduct    302
-/attend                 /2019/attend                    302
-/cfp                    https://pretalx.com/pyohio-2021/cfp 302
-/call-for-proposals     https://pretalx.com/pyohio-2021/cfp 302
-/directions             /2020/attend/                   302
-/events                 /2020/events/overview           302
-/hotel                  /2020/attend/register           302
-/prospectus             /2020/sponsors/become           302
-/register               /2020/attend/register           302
-/schedule               /2020/events/schedule           302
-/sprints                /2020/events/sprints            302
-/volunteer              /2020/attend/volunteer          302
-/hackfest               /2020/events/overview           302
-/osu-open-source        /2020/about/open-source-club    302
-
-/account/login          https://cfp.pyohio.org/
+/about                  /2021/about                     302
+/coc                    /2021/about/code-of-conduct     302
+/code-of-conduct        /2021/about/code-of-conduct     302
+/conduct                /2021/about/code-of-conduct     302
+/attend                 /2021/attend                    302
+/cfp                    /2021/speaking/call-for-proposals 302
+/call-for-proposals     /2021/speaking/call-for-proposals 302
+/directions             /2021/attend/                   302
+/events                 /2021/program                   302
+/hotel                  /2021/attend/                   302
+/prospectus             /2021                           302
+/register               /2021/attend/register           302
+/schedule               /2021/program/schedule          302
+/sprints                /2021                           302
+/volunteer              /2021/attend/volunteer          302
+/hackfest               /2021/program                   302
+/osu-open-source        /2021/about                     302
 
 # OhPyOh
 /ohpyo   https://mail.python.org/pipermail/centraloh/2008-March/000082.html               
