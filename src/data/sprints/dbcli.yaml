@@ -1,9 +1,0 @@
-name: dbcli
-description: "md//A family of Python-based enhanced command-line interfaces to relational databases"
-objectives: "md//Get participants familiar with project & comfortable contributing"
-organizers:
-- Catherine Devlin
-project-url: https://github.com/dbcli
-getting-started-url: https://github.com/dbcli/pgcli/blob/master/DEVELOP.rst
-when: 11 AM - 8 PM both days, except when talks are running!
-discord-channel: "#dbcli"
