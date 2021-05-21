@@ -1,5 +1,5 @@
 [build]
   publish = "public"
-  command = "npm run build-prod"
+  command = "yarn build-prod"
 [build.environment]
   YARN_FLAGS = "--no-ignore-optional"
