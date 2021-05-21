@@ -7,7 +7,7 @@ https://2019.pyohio.org/* https://www.pyohio.org/:splat 301!
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 /                       /2021                           302
-/sponsors/prospectus/   /2021                           302      
+/sponsors/prospectus/   /2021                           302
 
 # Short URLs change year to year:
 /about                  /2021/about                     302
@@ -36,6 +36,10 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 # Off-site
 /video https://www.youtube.com/c/PyOhio 302
 
-# Renamed Talks
+# 2020 Renamed Talks
 /2020/events/talks/brain-computer-interface-reading-human-brains-using-deep-learning-with-tensorflow-or-pytorch /2020/events/talks/brain-computer-interface-reading-human-brains-using-deep-learning
 /2020/events/talks/object-oriented-python-with-functools-partial /2020/events/talks/object-oriented-python-using-functools-partial
+
+# 2021 Moved URLs
+/2021/present/speaker-info  /2021/speaking/speaker-info  
+
