@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: `PyOhio 2021`,
-    logo: `content/assets/pyohio-2021-logo-sticker.png`,
     description: `The free annual Python community conference based in Ohio. July 31, 2021.`,
     keywords: [`python`, `programming`],
     author: `PyOhio Organizers`,
