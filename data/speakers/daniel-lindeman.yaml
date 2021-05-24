@@ -6,5 +6,7 @@ biography: md//An educator-turned-developer, I got my start in the software indu
 code: 3E3PZR
 name: Daniel Lindeman
 slug: daniel-lindeman
-submissions:
+talk_codes:
 - WP87GC
+talk_slugs:
+- the-craziest-fn-thing-i-ve-ever-seen-and-it-lives-in-cpython

@@ -17,5 +17,7 @@ biography: "md//Jyotika Singh is the Director of Data Science at ICX Media, wher
 code: YEPTF3
 name: Jyotika Singh
 slug: jyotika-singh
-submissions:
+talk_codes:
 - QWTWPM
+talk_slugs:
+- classifying-spoken-location-names

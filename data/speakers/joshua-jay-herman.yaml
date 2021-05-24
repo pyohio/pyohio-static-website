@@ -8,5 +8,7 @@ biography: md//By day I am a Python Developer working on currency trading infras
 code: 38ZTYY
 name: Joshua Jay Herman
 slug: joshua-jay-herman
-submissions:
+talk_codes:
 - WUFDAV
+talk_slugs:
+- how-to-make-friends-and-influence-users-with-huggingface

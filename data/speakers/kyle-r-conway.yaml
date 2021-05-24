@@ -5,5 +5,7 @@ biography: md//Kyle R. Conway has a PhD in Fine Arts, an MA in Theater, and expe
 code: 8TXBCT
 name: Kyle R. Conway
 slug: kyle-r-conway
-submissions:
+talk_codes:
 - LM7UNC
+talk_slugs:
+- how-to-draw-a-circle-easy-beginner-tutorial

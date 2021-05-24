@@ -10,5 +10,7 @@ biography: md//Andrew Knight (aka Pandy) is the “Automation Panda” - an engi
 code: 8WV93W
 name: Pandy Knight
 slug: pandy-knight
-submissions:
+talk_codes:
 - S3FMPJ
+talk_slugs:
+- start-testing-in-5-minutes-flat

@@ -7,5 +7,7 @@ biography: md//Samira Soleimani is a Data Scientist at Sense Corp looking to bri
 code: 3AKEAB
 name: Samira Soleimani
 slug: samira-soleimani
-submissions:
+talk_codes:
 - TD3VWH
+talk_slugs:
+- multi-objective-optimization-for-covid-vaccine-management

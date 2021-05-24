@@ -7,5 +7,7 @@ biography: "md//JC is a programmer from Costa Rica, who's been working with Pyth
 code: YKSXMW
 name: JC Coto
 slug: jc-coto
-submissions:
+talk_codes:
 - X9CPAU
+talk_slugs:
+- easy-as-py-architecture-in-10-minutes

@@ -7,5 +7,7 @@ biography: "md//Sebastian is a Python consultant and trainer based in Poland. He
 code: 8D7B98
 name: Sebastian Witowski
 slug: sebastian-witowski
-submissions:
+talk_codes:
 - 7TDEME
+talk_slugs:
+- 9-jupyter-notebook-tricks-for-your-next-advent-of-code

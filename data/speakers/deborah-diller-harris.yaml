@@ -6,5 +6,7 @@ biography: "md//I have spoken at PyOhio and PyCon Canada on feature engineering 
 code: CAMM3Y
 name: Deborah Diller Harris
 slug: deborah-diller-harris
-submissions:
+talk_codes:
 - EMWDQ3
+talk_slugs:
+- combating-ptsd-with-machine-learning

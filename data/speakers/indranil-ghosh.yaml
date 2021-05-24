@@ -8,5 +8,7 @@ biography: "md//I am a first-year Ph.D. student in Applied Mathematics from the 
 code: WBC8WH
 name: Indranil Ghosh
 slug: indranil-ghosh
-submissions:
+talk_codes:
 - RVZZSV
+talk_slugs:
+- introduction-to-soccer-pass-network-analysis-with-python

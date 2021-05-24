@@ -4,5 +4,7 @@ biography: md//I am a software developer and Linux sys admin with a deep passion
 code: EARAKA
 name: Jürgen Gmach
 slug: jurgen-gmach
-submissions:
+talk_codes:
 - J7ZCQQ
+talk_slugs:
+- tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit

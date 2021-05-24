@@ -5,5 +5,7 @@ biography: md//Alex is a Software Engineering Intern at Aurora (autonomous drivi
 code: FM3WYU
 name: Alex Zharichenko
 slug: alex-zharichenko
-submissions:
+talk_codes:
 - C9SMFW
+talk_slugs:
+- redlining-your-cpu-for-fun-and-profit-threading-and-multiprocessing-in-python

@@ -11,5 +11,7 @@ biography: "md//Aakanksha is a senior year undergraduate student at SRM Universi
 code: Q9JYCC
 name: AAKANKSHA CHOUHAN
 slug: aakanksha-chouhan
-submissions:
+talk_codes:
 - N79ZE3
+talk_slugs:
+- moulding-data-for-ml

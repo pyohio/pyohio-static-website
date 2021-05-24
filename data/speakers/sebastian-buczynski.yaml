@@ -5,5 +5,7 @@ biography: md//A wholehearted Pythonista with almost a decade of professional ex
 code: 3MRVPV
 name: Sebastian Buczyński
 slug: sebastian-buczynski
-submissions:
+talk_codes:
 - 38DZFD
+talk_slugs:
+- how-to-improve-tests-thanks-to-1-line-of-code

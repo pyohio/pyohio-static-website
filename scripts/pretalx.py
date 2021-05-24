@@ -44,7 +44,7 @@ def get_event_data(ctx):
     results = get_all_json_results(sessions_url, headers)
 
     click.echo('Writing talk files...', err=True)
-    talk_codes = []
+    talks_by_code = {}
     for talk in results:
         speakers = [{
             "name": s["name"],
@@ -60,7 +60,7 @@ def get_event_data(ctx):
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
         }
-        talk_codes.append(talk["code"])
+        talks_by_code[talk["code"]] = data
         save_filename = Path(f"{DATA_DIR}/talks/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)
@@ -85,8 +85,9 @@ def get_event_data(ctx):
             "code": speaker["code"],
             "avatar": speaker["avatar"],
             "biography": f"md//{speaker['biography']}",
-            "submissions": [s for s in speaker["submissions"] if s in talk_codes],
+            "talk_codes": [s for s in speaker["submissions"] if s in talks_by_code],
         }
+        data["talk_slugs"] = [talks_by_code[code]["slug"] for code in data["talk_codes"]]
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)

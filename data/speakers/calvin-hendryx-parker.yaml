@@ -10,5 +10,7 @@ biography: md//Calvin Hendryx-Parker is the co-founder and CTO of Six Feet Up, a
 code: ME3WGG
 name: Calvin Hendryx-Parker
 slug: calvin-hendryx-parker
-submissions:
+talk_codes:
 - V9789A
+talk_slugs:
+- hacking-django-channels-for-fun-and-profit

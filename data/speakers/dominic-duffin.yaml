@@ -5,5 +5,7 @@ biography: "md//Co-founder of #ArtTechChat Twitter chat on tech, art and design.
 code: 9CQKBJ
 name: Dominic Duffin
 slug: dominic-duffin
-submissions:
+talk_codes:
 - QNJ78U
+talk_slugs:
+- generative-drawing-with-python-turtle-graphics

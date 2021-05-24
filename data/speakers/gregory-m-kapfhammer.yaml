@@ -10,5 +10,7 @@ biography: md//Gregory M. Kapfhammer is an Associate Professor of Computer Scien
 code: WUSBZJ
 name: Gregory M. Kapfhammer
 slug: gregory-m-kapfhammer
-submissions:
+talk_codes:
 - XELQP3
+talk_slugs:
+- type-annotations-in-python-terribly-intimidating-or-tremendously-informative

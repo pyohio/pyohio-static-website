@@ -7,5 +7,7 @@ biography: md//Heidi is a transformation advocate with LaunchDarkly. She delight
 code: 7VAXHE
 name: Heidi Waterhouse
 slug: heidi-waterhouse
-submissions:
+talk_codes:
 - UQC7LK
+talk_slugs:
+- kitchen-practical-and-coding-practices

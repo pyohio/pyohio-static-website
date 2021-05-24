@@ -10,5 +10,7 @@ biography: "md//Reshama is a statistician/data scientist with skills in Python, 
 code: XAAKT8
 name: Reshama Shaikh
 slug: reshama-shaikh
-submissions:
+talk_codes:
 - ZSEDLM
+talk_slugs:
+- enriching-data-visualizations-with-annotations-in-plotly
