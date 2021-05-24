@@ -1,0 +1,16 @@
+code: WVWETD
+description: md//A person's first experience with your project is critical. It doesn't
+  matter how smoothly things go afterwards, if they run into a roadblock towards the
+  beginning, it alters their perception moving forward. You must create a positive
+  experience for folks, or they may choose to move on to something else. The CircuitPython
+  project strives to create that initial positive experience. This talk will show
+  what that experience looks like, and then discuss what you can do to apply the same
+  concepts to your project. How will you shape the First Five Minutes?
+slug: the-first-five-minutes
+speakers:
+- avatar: https://pretalx.com/media/avatars/kattni_x8TVWkx.jpg
+  code: ETNDAN
+  name: Kattni
+  slug: kattni
+title: The First Five Minutes
+type: Thunder Talk

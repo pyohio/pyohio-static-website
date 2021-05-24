@@ -1,0 +1,13 @@
+code: HJNEUN
+description: md//When learning some new technology it usually seems to sink in better
+  if you use a practical example.  In this quick demo I show how I took video game
+  data and used it to learn how to use Python Pandas library in a Jupyter Notebook.
+  Modeling the StalkMarket prices of Turnips on someone's ACNH Island.
+slug: learn-jupyter-notebook-python-by-modeling-your-game-data
+speakers:
+- avatar: null
+  code: BPYL8N
+  name: Craig Lang
+  slug: craig-lang
+title: Learn Jupyter Notebook Python by Modeling Your Game Data
+type: Lightning Talk

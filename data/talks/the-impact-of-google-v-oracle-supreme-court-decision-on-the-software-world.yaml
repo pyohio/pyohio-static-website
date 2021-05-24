@@ -1,0 +1,17 @@
+code: 89ML7N
+description: "md//In this talk we will explore the recent decision by the United States\
+  \ Supreme Court regarding Java APIs from earlier this year. The decision has been\
+  \ issued in regards to the case of Google v. Oracle but will most likely have implication\
+  \ on the entire software industry.\r\n\r\nDuring the talk we will focus on the following\
+  \ 4 topics:\r\n\r\n* Introduction and history of the case the case (~2 minutes).\r\
+  \n\r\n* Arguments on  both sides (~2 minutes).\r\n\r\n* Summary of the decision\
+  \ (~2 minutes).\r\n\r\n* Thoughts on how this decision might impact the software\
+  \ world (~ 4 minutes)."
+slug: the-impact-of-google-v-oracle-supreme-court-decision-on-the-software-world
+speakers:
+- avatar: null
+  code: UWULBF
+  name: Ian
+  slug: ian
+title: The impact of Google v. Oracle Supreme Court Decision on the Software World
+type: Thunder Talk

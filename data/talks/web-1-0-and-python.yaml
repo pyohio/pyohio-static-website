@@ -1,0 +1,13 @@
+code: JNEUKJ
+description: 'md//The days of Web 1.0 were a simpler time: static pages, CGI scripts,
+  and deprecated HTML tags like `<blink>` and `<marqueee>`. This talk will take a
+  trip down memory lane and demonstrate how to use Python to design websites like
+  it''s 1999.'
+slug: web-1-0-and-python
+speakers:
+- avatar: null
+  code: AJYLRJ
+  name: Aly Sivji
+  slug: aly-sivji
+title: Web 1.0 and Python
+type: Thunder Talk

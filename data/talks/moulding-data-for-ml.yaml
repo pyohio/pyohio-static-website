@@ -1,0 +1,20 @@
+code: N79ZE3
+description: md//Data is the most crucial entity for any ML model to function. Raw
+  data isn't your best bet when it comes to using it for AI applications. Without
+  a doubt, many recent breakthroughs in Machine Learning owe as much to having better
+  data as they owe to having better models. A common experience among ML practitioners
+  these days is that "data munging" occupies more time and effort than modelling.
+  Despite these facts, data curation often does not get the limelight, be it Academia
+  or the Industry. This talk intends to highlight the importance of data in the Machine
+  Learning ecosystem. Curating the data to your needs is the first act of Machine
+  Learning" which helps identify valuable information from the extensive amount of
+  crude data available at your fingertips. Come learn how this data is moulded to
+  fit your ML model right.
+slug: moulding-data-for-ml
+speakers:
+- avatar: https://pretalx.com/media/avatars/DSC_8858_59XTcnr.JPG
+  code: Q9JYCC
+  name: AAKANKSHA CHOUHAN
+  slug: aakanksha-chouhan
+title: Moulding Data for ML
+type: Thunder Talk

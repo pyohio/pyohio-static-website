@@ -1,0 +1,13 @@
+code: PKVU8N
+description: md//Have you ever opened a file using the with keyword in Python? That
+  little keyword is one of the many fascinating parts of the Python programming language,
+  the Context Manager. This talk will cover all things Context Manager, from what
+  they are, how to build them, when to use them, and more.
+slug: the-enters-and-exits-of-context-managers
+speakers:
+- avatar: null
+  code: SN9SZQ
+  name: Mason Egger
+  slug: mason-egger
+title: The Enters and Exits of Context Managers
+type: Lightning Talk

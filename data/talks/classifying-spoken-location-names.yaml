@@ -1,0 +1,14 @@
+code: QWTWPM
+description: md//This talk will highlight a problem such as classification of speech
+  data where the expected spoken utterance is a location name, and how one can have
+  a machine learn differences between utterances. Speech feature extraction and building
+  a successful classification model will be discussed using open-source tools in Python,
+  along with practical examples to demonstrate usage.
+slug: classifying-spoken-location-names
+speakers:
+- avatar: null
+  code: YEPTF3
+  name: Jyotika Singh
+  slug: jyotika-singh
+title: Classifying spoken location names
+type: Thunder Talk

@@ -1,0 +1,24 @@
+code: 7TDEME
+description: "md//Every year thousands of developers try to solve the programming\
+  \ puzzles of the Advent of Code[^1] challenge. For many Pythonistas, their favorite\
+  \ tool to do that is the Jupyter notebook. As the problems get progressively more\
+  \ challenging, solving them step-by-step is an excellent approach. You read some\
+  \ data, play with it, solve the small-scale problem and then try to solve the whole\
+  \ challenge.\r\n\r\nApart from showing the output of each intermediate step, Jupyter\
+  \ notebooks offer plenty of useful features. Including:\r\n\r\n* Easy access to\
+  \ the documentation\r\n* Different debugging mechanisms\r\n* Lightweight storage\r\
+  \n* Shell commands\r\n* Pastebin support\r\n\r\nIn this lightning talk, I will show\
+  \ you how to use them when solving problems in Jupyter Notebooks.\r\n\r\n[^1]: If\
+  \ you never heard about the Advent of Code - it's a series of 25 code challenges.\
+  \ Each of them is released daily between the 1st and 25th of December. It's like\
+  \ the advent calendar (https://en.wikipedia.org/wiki/Advent_calendar), but instead\
+  \ of chocolate or a small gift, you get frustration if you can't solve a given problem.\
+  \ At least I do ;)"
+slug: 9-jupyter-notebook-tricks-for-your-next-advent-of-code
+speakers:
+- avatar: null
+  code: 8D7B98
+  name: Sebastian Witowski
+  slug: sebastian-witowski
+title: 9 Jupyter notebook tricks for your next Advent of Code
+type: Thunder Talk

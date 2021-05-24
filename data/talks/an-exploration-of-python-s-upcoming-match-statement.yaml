@@ -1,0 +1,18 @@
+code: X9PWR7
+description: "md//The match statement is a new feature of the Python language, defined\
+  \ in PEP-634 and will be standard in the upcoming Python 3.10 (due out in October\
+  \ 2021).\r\n\r\nAdding syntax for new language features introduces both new possibilities\
+  \ and sources for confusion. Let's stay ahead of the game by learning what to expect\
+  \ from the match statement by playing with the alpha version of Python (available\
+  \ now).\r\n\r\nThis talk will compare the match statement to similar constructs\
+  \ in other languages, demonstrate some typical use cases, briefly discuss Python's\
+  \ implementation, and propose some best practices when solving problems with the\
+  \ match statement."
+slug: an-exploration-of-python-s-upcoming-match-statement
+speakers:
+- avatar: null
+  code: PWN7XL
+  name: Andrew Kubera
+  slug: andrew-kubera
+title: An Exploration of Python's Upcoming Match Statement
+type: Thunder Talk

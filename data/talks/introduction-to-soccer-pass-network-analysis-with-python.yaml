@@ -1,0 +1,15 @@
+code: RVZZSV
+description: "md//This talk teaches four simple concepts to those who want to start\
+  \ working on football data analysis:\r\n\r\n1. How to access open event data from\
+  \ *statsbomb* API,\r\n2. How to draw a soccer pitch using *mplsoccer*,\r\n3. How\
+  \ to visualize a pass network map for a particular team in a particular game, and\r\
+  \n4. How to use the *NetworkX* module to analyze the pass network (eg. finding out-degree\
+  \ distribution of passes, clustering coefficient, centrality, etc.)"
+slug: introduction-to-soccer-pass-network-analysis-with-python
+speakers:
+- avatar: null
+  code: WBC8WH
+  name: Indranil Ghosh
+  slug: indranil-ghosh
+title: Introduction to Soccer Pass Network Analysis with Python
+type: Thunder Talk

@@ -1,0 +1,16 @@
+code: NUGCQJ
+description: "md//I maintain Hypothesis, a library to automatically generate inputs\
+  \ to your tests (like \"a list of integers\" or \"an object matching this database\
+  \ schema\") - so you don't have to think of all the edge-cases yourself.  But we\
+  \ can go further!  Hypothesis now ships with a \"Ghostwriter\" which can write tests\
+  \ for you, based on the function and argument names you choose (and docstrings and\
+  \ type annotations, if you use those).\r\n\r\nIf you're tired of testing but still\
+  \ don't want bugs, come see how we can take automation to a whole new level :-)"
+slug: i-wrote-code-to-write-your-tests
+speakers:
+- avatar: null
+  code: LFU8AS
+  name: Zac Hatfield-Dodds
+  slug: zac-hatfield-dodds
+title: I wrote code to write your tests!
+type: Thunder Talk
