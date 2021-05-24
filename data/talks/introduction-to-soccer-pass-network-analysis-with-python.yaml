@@ -7,7 +7,7 @@ description: "md//This talk teaches four simple concepts to those who want to st
   \ distribution of passes, clustering coefficient, centrality, etc.)"
 slug: introduction-to-soccer-pass-network-analysis-with-python
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/image_2_j3sm4Ip.jpg
   code: WBC8WH
   name: Indranil Ghosh
   slug: indranil-ghosh

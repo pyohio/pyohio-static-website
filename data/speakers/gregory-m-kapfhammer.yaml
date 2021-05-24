@@ -1,13 +1,12 @@
 avatar: https://pretalx.com/media/avatars/gregory-kapfhammer-biography-small_VGSaa80.jpg
-biography: "md//Gregory M. Kapfhammer is an Associate Professor of Computer Science\
-  \ at Allegheny\r\nCollege. Along with conducting research in the field of software\
-  \ engineering, he\r\nteaches classes in a variety of technical and scientific areas\
-  \ and enjoys\r\nprogramming in Python. In the Python community, Gregory has previously\
-  \ given\r\ntalks at PyGotham and PyOhio, presented posters at PyCon, and presented\
-  \ at\r\nPyCon's Education Summit. You can learn more about Gregory by visiting his\
-  \ web\r\nsite at https://www.gregorykapfhammer.com/, checking out several of his\
-  \ Python\r\nprojects at https://github.com/gkapfham, and viewing the slides of his\
-  \ previous\r\npresentations at https://speakerdeck.com/gkapfham."
+biography: md//Gregory M. Kapfhammer is an Associate Professor of Computer Science
+  at Allegheny College. Along with conducting research in the field of software engineering,
+  he teaches classes in a variety of technical and scientific areas and enjoys programming
+  in Python. In the Python community, Gregory has previously given talks at PyGotham
+  and PyOhio, presented posters at PyCon, and presented at PyCon's Education Summit.
+  You can learn more about Gregory by visiting his web site at https://www.gregorykapfhammer.com/,
+  checking out several of his Python projects at https://github.com/gkapfham, and
+  viewing the slides of his previous presentations at https://speakerdeck.com/gkapfham.
 code: WUSBZJ
 name: Gregory M. Kapfhammer
 slug: gregory-m-kapfhammer

@@ -7,7 +7,7 @@ description: "md//Imagine you created this awesome Python project.\r\n\r\nBut be
   \ also use the same linters... in the same version?"
 slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
   code: EARAKA
   name: Jürgen Gmach
   slug: jurgen-gmach

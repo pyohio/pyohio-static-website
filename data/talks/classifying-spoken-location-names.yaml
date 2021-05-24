@@ -6,9 +6,9 @@ description: md//This talk will highlight a problem such as classification of sp
   along with practical examples to demonstrate usage.
 slug: classifying-spoken-location-names
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/20210522_203934_jvdWfnX.jpg
   code: YEPTF3
   name: Jyotika Singh
   slug: jyotika-singh
-title: Classifying spoken location names
+title: Classifying Spoken Location Names
 type: Thunder Talk
