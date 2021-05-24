@@ -8,7 +8,7 @@ description: "md//I am enamored with dataclasses. I love them in Python, I love 
   \ understand of decorators and metaprogramming in Python!"
 slug: the-craziest-fn-thing-i-ve-ever-seen-and-it-lives-in-cpython
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/Team_Photos_2019_0011_Daniel_tvh0zWe.jpg
   code: 3E3PZR
   name: Daniel Lindeman
   slug: daniel-lindeman
