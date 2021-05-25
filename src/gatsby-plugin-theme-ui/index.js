@@ -45,7 +45,7 @@ const theme = merge(BaseTheme, {
         primary: pyohioColors.yellow,
         secondary: baseColors.orange[7],
         accent: baseColors.gray[8],
-        highlight: baseColors.orange[5],
+        highlight: pyohioColors.cyan,
         muted: pyohioColors.mutedPurple,
         header: {
           text: baseColors.gray[1],
