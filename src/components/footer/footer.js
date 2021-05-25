@@ -6,7 +6,7 @@ import { useFooterConfig } from "gatsby-theme-catalyst-footer/src/utils/use-foot
 import { StaticImage } from "gatsby-plugin-image"
 
 const SiteFooter = () => {
-  const { title, divider } = useSiteMetadata()
+  const { title } = useSiteMetadata()
   const { footerContentLocation, useFooterSocialLinks } = useFooterConfig()
   const { theme } = useThemeUI()
   const isLeft = footerContentLocation === "left"
