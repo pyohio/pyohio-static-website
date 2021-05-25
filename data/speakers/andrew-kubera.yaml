@@ -4,7 +4,7 @@ biography: md//Central Ohio Python User Group member who now lives in New York C
 code: PWN7XL
 name: Andrew Kubera
 slug: andrew-kubera
-talk_codes:
-- X9PWR7
-talk_slugs:
-- an-exploration-of-python-s-upcoming-match-statement
+talks:
+- code: X9PWR7
+  slug: an-exploration-of-python-s-upcoming-match-statement
+  title: An Exploration of Python's Upcoming Match Statement

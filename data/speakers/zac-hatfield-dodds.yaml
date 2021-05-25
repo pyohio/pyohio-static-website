@@ -8,7 +8,7 @@ biography: "md//Zac's modest goal is to help everyone write better code - mostly
 code: LFU8AS
 name: Zac Hatfield-Dodds
 slug: zac-hatfield-dodds
-talk_codes:
-- NUGCQJ
-talk_slugs:
-- i-wrote-code-to-write-your-tests
+talks:
+- code: NUGCQJ
+  slug: i-wrote-code-to-write-your-tests
+  title: I Wrote Code to Write Your Tests!

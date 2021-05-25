@@ -11,7 +11,7 @@ biography: md//[Kattni](https://kattni.com) is a maker, mentor, open source comm
 code: ETNDAN
 name: Kattni Rembor
 slug: kattni-rembor
-talk_codes:
-- WVWETD
-talk_slugs:
-- the-first-five-minutes
+talks:
+- code: WVWETD
+  slug: the-first-five-minutes
+  title: The First Five Minutes

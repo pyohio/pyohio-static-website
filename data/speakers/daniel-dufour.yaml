@@ -6,7 +6,8 @@ biography: md//Daniel Dufour is a full-stack developer based in Chattanooga, TN 
 code: 8NTC9F
 name: Daniel Dufour
 slug: daniel-dufour
-talk_codes:
-- SMHBXP
-talk_slugs:
-- load-django-settings-from-environmental-variables-with-one-magical-line-of-code
+talks:
+- code: SMHBXP
+  slug: load-django-settings-from-environmental-variables-with-one-magical-line-of-code
+  title: Load Django Settings from Environmental Variables with One Magical Line of
+    Code

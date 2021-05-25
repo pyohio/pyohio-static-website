@@ -4,7 +4,7 @@ biography: md//Mild mannered cloud engineer by day, Pythonista and open source p
 code: TPRJ7C
 name: Damien Calloway
 slug: damien-calloway
-talk_codes:
-- FMY7SS
-talk_slugs:
-- python-your-desktop-with-qtile
+talks:
+- code: FMY7SS
+  slug: python-your-desktop-with-qtile
+  title: Python Your Desktop with Qtile

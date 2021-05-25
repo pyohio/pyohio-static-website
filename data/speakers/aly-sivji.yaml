@@ -8,7 +8,7 @@ biography: md//Aly Sivji is a Canadian ex-pat living in Chicago. By day, he work
 code: AJYLRJ
 name: Aly Sivji
 slug: aly-sivji
-talk_codes:
-- JNEUKJ
-talk_slugs:
-- web-1-0-and-python
+talks:
+- code: JNEUKJ
+  slug: web-1-0-and-python
+  title: Web 1.0 and Python

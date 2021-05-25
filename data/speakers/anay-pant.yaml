@@ -7,7 +7,7 @@ biography: "md//I hav been attending PyCon since 2017. I have presented posters 
 code: ZSEY9M
 name: Anay Pant
 slug: anay-pant
-talk_codes:
-- HXD7YB
-talk_slugs:
-- creating-and-teaching-games-in-python-to-teach-artificial-intelligence-concepts
+talks:
+- code: HXD7YB
+  slug: creating-and-teaching-games-in-python-to-teach-artificial-intelligence-concepts
+  title: Creating and Teaching Games in Python to Teach Artificial Intelligence Concepts

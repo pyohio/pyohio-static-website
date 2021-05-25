@@ -9,7 +9,7 @@ biography: "md//[Kyle R. Conway](https://kylerconway.com/about-me/work-with-me/)
 code: 8TXBCT
 name: Kyle R. Conway
 slug: kyle-r-conway
-talk_codes:
-- LM7UNC
-talk_slugs:
-- how-to-draw-a-circle-easy-beginner-tutorial
+talks:
+- code: LM7UNC
+  slug: how-to-draw-a-circle-easy-beginner-tutorial
+  title: How to Draw a Circle!!! [EASY BEGINNER TUTORIAL]

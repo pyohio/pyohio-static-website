@@ -5,7 +5,7 @@ biography: md//Programmer, Author, Editor, Game Designer, Podcaster, Musician, a
 code: RHQGPQ
 name: Craig Maloney
 slug: craig-maloney
-talk_codes:
-- 3EBGBK
-talk_slugs:
-- debugging-with-vim-tmux-and-pudb
+talks:
+- code: 3EBGBK
+  slug: debugging-with-vim-tmux-and-pudb
+  title: Debugging with vim, tmux, and pudb

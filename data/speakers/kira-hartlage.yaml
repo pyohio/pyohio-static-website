@@ -9,7 +9,7 @@ biography: md//Mechanical design engineer turned embedded software engineer, I b
 code: YBUMZC
 name: Kira Hartlage
 slug: kira-hartlage
-talk_codes:
-- AGYQRP
-talk_slugs:
-- basics-of-hardware-with-a-pyruler
+talks:
+- code: AGYQRP
+  slug: basics-of-hardware-with-a-pyruler
+  title: Basics of Hardware with a PyRuler

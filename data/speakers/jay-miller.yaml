@@ -5,7 +5,7 @@ biography: md//Jay is a Developer Advocate at Elastic, based in San Diego, Ca. A
 code: PFEFTZ
 name: Jay Miller
 slug: jay-miller
-talk_codes:
-- CLG3NE
-talk_slugs:
-- getting-your-data-into-elasticsearch-let-me-count-the-ways
+talks:
+- code: CLG3NE
+  slug: getting-your-data-into-elasticsearch-let-me-count-the-ways
+  title: 'Getting Your Data into Elasticsearch: Let Me Count the Ways'

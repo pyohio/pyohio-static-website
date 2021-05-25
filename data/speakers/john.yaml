@@ -6,7 +6,7 @@ biography: md//John is currently a senior director of DevOps at Seqster. He has 
 code: A7XPM3
 name: John
 slug: john
-talk_codes:
-- NQHFRL
-talk_slugs:
-- build-your-infrastructure-with-cdk
+talks:
+- code: NQHFRL
+  slug: build-your-infrastructure-with-cdk
+  title: Build Your Infrastructure with CDK

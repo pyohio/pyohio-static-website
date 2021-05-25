@@ -10,7 +10,7 @@ biography: md//Shawna is a Senior Data Science consultant at CGI with a passion 
 code: W3LFDM
 name: Shawna Bankovich
 slug: shawna-bankovich
-talk_codes:
-- DQ8YGN
-talk_slugs:
-- avoiding-the-oops-with-mlops
+talks:
+- code: DQ8YGN
+  slug: avoiding-the-oops-with-mlops
+  title: Avoiding the Oops with MLOps

@@ -85,9 +85,19 @@ def get_event_data(ctx):
             "code": speaker["code"],
             "avatar": speaker["avatar"],
             "biography": f"md//{speaker['biography']}",
-            "talk_codes": [s for s in speaker["submissions"] if s in talks_by_code],
         }
-        data["talk_slugs"] = [talks_by_code[code]["slug"] for code in data["talk_codes"]]
+
+        talk_codes =  [s for s in speaker["submissions"] if s in talks_by_code]
+        speaker_talks = []
+        for talk_code in talk_codes:
+            talk = {
+                "code": talk_code,
+                "slug": talks_by_code[talk_code]["slug"],
+                "title": talks_by_code[talk_code]["title"],
+                }
+            speaker_talks.append(talk)
+        data["talks"] = speaker_talks
+        
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)

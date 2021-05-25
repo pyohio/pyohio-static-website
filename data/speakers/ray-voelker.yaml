@@ -4,7 +4,7 @@ biography: md//ILS Developer / System Administrator / Sandwich Aficionado at the
 code: W3XTHQ
 name: Ray Voelker
 slug: ray-voelker
-talk_codes:
-- VTNWPW
-talk_slugs:
-- i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data
+talks:
+- code: VTNWPW
+  slug: i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data
+  title: 'I ❤️ Datasette: An Open Source Multi-tool for Exploring and Publishing Data'

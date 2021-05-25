@@ -9,7 +9,7 @@ biography: "md//Ian has been developing software professionally for over 15 year
 code: UWULBF
 name: Ian
 slug: ian
-talk_codes:
-- 89ML7N
-talk_slugs:
-- the-impact-of-google-v-oracle-supreme-court-decision-on-the-software-world
+talks:
+- code: 89ML7N
+  slug: the-impact-of-google-v-oracle-supreme-court-decision-on-the-software-world
+  title: The Impact of Google v. Oracle Supreme Court Decision on the Software World

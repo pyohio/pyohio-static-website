@@ -8,7 +8,7 @@ biography: md//Mason is currently a Developer Advocate at DigitalOcean who speci
 code: SN9SZQ
 name: Mason Egger
 slug: mason-egger
-talk_codes:
-- PKVU8N
-talk_slugs:
-- the-enters-and-exits-of-context-managers
+talks:
+- code: PKVU8N
+  slug: the-enters-and-exits-of-context-managers
+  title: The Enters and Exits of Context Managers
