@@ -1,53 +1,93 @@
 code: LM7UNC
-description: "md//Proposal: https://kylerconway.com/2021/04/20/how-to-draw-a-circle-easy-beginner-tutorial/\r\
-  \n\r\nAbstract\r\nEveryone knows that writing code making art is easy! There are\
-  \ so many free resources available on the internet that becoming a programmer an\
-  \ artist has never been easier! In this talk I’ll demo several ways to make a todo\
-  \ list draw a circle! We’ll go through a variety of mediums to get you up-to-speed\
-  \ with new languages and frameworks mediums and methods in no time like:\r\n\r\n\
-  Types of paper and surfaces\r\nOverview of mediums (graphite, inks, acrylics, oils,\
-  \ and more!)\r\nPerformance Art (Dance, Theater, and Song!)\r\nDigital Applications\
-  \ with live demo circles including:\r\nInkscape\r\nGnu Image Manipulation Program\r\
-  \nBlender\r\np5.js\r\nKrita\r\nHTML & CSS\r\nand whatever came out between this\
-  \ blurb and the event!\r\nBy the end of this talk you’ll be more confident than\
-  \ ever (and not at all overwhelmed!) by the prospect of how easy it is to become\
-  \ a programmer an artist in 2021!\r\n\r\nTimeline\r\n(1-2 Minute mark): The first\
-  \ 1-2 minutes will be spent parodying the language/syntax/and visual style of several\
-  \ landing pages/blogs/paid courses etc. of non-free and free “learn to code” resources.\
-  \ This should be light and funny – the parody will be obvious – but we’re going\
-  \ to take this more seriously than mere parody (i.e. how hard can it be to draw\
-  \ a circle? We’ll take this seriously, though still in a playful/in-character way.)\r\
-  \n(3-7 Minute mark): The bulk of the presentation will literally be demonstrating\
-  \ a multitude of ways to “simply” draw a circle.\r\nI will actually have relevant\
-  \ asides about perfect circles (using a drafting compass) vs. sufficient circles\
-  \ (freehand strategies)\r\nWe’ll talk about these strategies in a variety of mediums\
-  \ (pen, paper, ink, etc.)\r\nWe’ll discuss the actual effect that different physical\
-  \ papers may have on the resulting shape (printer paper, canvas, etc.).\r\nI’ll\
-  \ live demo the creation of a “simple” circle in a variety of free-software tools\
-  \ including Inkscape, Gimp, Krita, and Blender (and more as in the abstract). I\
-  \ will note that I will not be showing how to install these applications on your\
-  \ machines.\r\nI’ll also discuss how to make these actually perfect circles created\
-  \ by software less perfect for artistic reasons (and show how to do that in each\
-  \ application).\r\n(8-9 Minute mark): I’ll conclude with the same platitudes about\
-  \ how drawing a circle is easy and how the learning resources available to you today\
-  \ pale in comparison to what I had when I was learning to draw a circle decades\
-  \ ago.\r\n(9-10 Minute mark): Break the fourth wall / drop character: I have a PhD\
-  \ in Fine Arts and I’m working on learning coding. I’ll close by noting that coding\
-  \ (like drawing a circle) can both be “easy” and “hopelessly confusing” based on\
-  \ previous knowledge and experience, and it’s important to regularly remind ourselves\
-  \ of this fact when working with, encouraging, and speaking to others. I hope this\
-  \ will help everyone consider this more strongly moving forward.\r\nIntended audience\r\
-  \nLearning to Code: If someone is learning to code (i.e. starting out) they’ve likely\
-  \ come across enough material to both understand and be painfully aware of the parody\
-  \ I’m doing and recognize the specific challenge can exist outside of the tech space\
-  \ too.\r\nActively Coding / Coding Mentors / Tech Bloggers, etc.: This group will,\
-  \ I hope, laugh at the title, laugh at the intro, and in the middle demo section\
-  \ realize that what they thought was easy (drawing a circle) has much more complexity\
-  \ too it then they thought, and have the parody hit home in a different way that\
-  \ changes their approach to new learners (and also themselves as tech is always\
-  \ changing).\r\nOthers: I think this is a balanced talk for everyone of all knowledge\
-  \ levels. At absolute worst, people will have a primer on how to draw a circle in\
-  \ a multitude of ways. That’s a pretty good worst outcome."
+description: '<p>Proposal: https://kylerconway.com/2021/04/20/how-to-draw-a-circle-easy-beginner-tutorial/</p>
+
+  <p>Abstract
+
+  Everyone knows that writing code making art is easy! There are so many free resources
+  available on the internet that becoming a programmer an artist has never been easier!
+  In this talk I’ll demo several ways to make a todo list draw a circle! We’ll go
+  through a variety of mediums to get you up-to-speed with new languages and frameworks
+  mediums and methods in no time like:</p>
+
+  <p>Types of paper and surfaces
+
+  Overview of mediums (graphite, inks, acrylics, oils, and more!)
+
+  Performance Art (Dance, Theater, and Song!)
+
+  Digital Applications with live demo circles including:
+
+  Inkscape
+
+  Gnu Image Manipulation Program
+
+  Blender
+
+  p5.js
+
+  Krita
+
+  HTML &amp; CSS
+
+  and whatever came out between this blurb and the event!
+
+  By the end of this talk you’ll be more confident than ever (and not at all overwhelmed!)
+  by the prospect of how easy it is to become a programmer an artist in 2021!</p>
+
+  <p>Timeline
+
+  (1-2 Minute mark): The first 1-2 minutes will be spent parodying the language/syntax/and
+  visual style of several landing pages/blogs/paid courses etc. of non-free and free
+  “learn to code” resources. This should be light and funny – the parody will be obvious
+  – but we’re going to take this more seriously than mere parody (i.e. how hard can
+  it be to draw a circle? We’ll take this seriously, though still in a playful/in-character
+  way.)
+
+  (3-7 Minute mark): The bulk of the presentation will literally be demonstrating
+  a multitude of ways to “simply” draw a circle.
+
+  I will actually have relevant asides about perfect circles (using a drafting compass)
+  vs. sufficient circles (freehand strategies)
+
+  We’ll talk about these strategies in a variety of mediums (pen, paper, ink, etc.)
+
+  We’ll discuss the actual effect that different physical papers may have on the resulting
+  shape (printer paper, canvas, etc.).
+
+  I’ll live demo the creation of a “simple” circle in a variety of free-software tools
+  including Inkscape, Gimp, Krita, and Blender (and more as in the abstract). I will
+  note that I will not be showing how to install these applications on your machines.
+
+  I’ll also discuss how to make these actually perfect circles created by software
+  less perfect for artistic reasons (and show how to do that in each application).
+
+  (8-9 Minute mark): I’ll conclude with the same platitudes about how drawing a circle
+  is easy and how the learning resources available to you today pale in comparison
+  to what I had when I was learning to draw a circle decades ago.
+
+  (9-10 Minute mark): Break the fourth wall / drop character: I have a PhD in Fine
+  Arts and I’m working on learning coding. I’ll close by noting that coding (like
+  drawing a circle) can both be “easy” and “hopelessly confusing” based on previous
+  knowledge and experience, and it’s important to regularly remind ourselves of this
+  fact when working with, encouraging, and speaking to others. I hope this will help
+  everyone consider this more strongly moving forward.
+
+  Intended audience
+
+  Learning to Code: If someone is learning to code (i.e. starting out) they’ve likely
+  come across enough material to both understand and be painfully aware of the parody
+  I’m doing and recognize the specific challenge can exist outside of the tech space
+  too.
+
+  Actively Coding / Coding Mentors / Tech Bloggers, etc.: This group will, I hope,
+  laugh at the title, laugh at the intro, and in the middle demo section realize that
+  what they thought was easy (drawing a circle) has much more complexity too it then
+  they thought, and have the parody hit home in a different way that changes their
+  approach to new learners (and also themselves as tech is always changing).
+
+  Others: I think this is a balanced talk for everyone of all knowledge levels. At
+  absolute worst, people will have a primer on how to draw a circle in a multitude
+  of ways. That’s a pretty good worst outcome.</p>'
 slug: how-to-draw-a-circle-easy-beginner-tutorial
 speakers:
 - avatar: https://pretalx.com/media/avatars/kyle-fav_fpRt0BA.png

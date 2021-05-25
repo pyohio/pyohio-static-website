@@ -1,8 +1,8 @@
 avatar: https://pretalx.com/media/avatars/daniel-dufour_np1IADE.jpeg
-biography: md//Daniel Dufour is a full-stack developer based in Chattanooga, TN where
+biography: <p>Daniel Dufour is a full-stack developer based in Chattanooga, TN where
   he runs GeoSurge, a small geospatial technology company.  He authored and maintains
   several Python libraries, including date-extractor, language-detector, simple-env,
-  prune and freq.
+  prune and freq.</p>
 code: 8NTC9F
 name: Daniel Dufour
 slug: daniel-dufour

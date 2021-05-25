@@ -1,8 +1,8 @@
 code: JNEUKJ
-description: 'md//The days of Web 1.0 were a simpler time: static pages, CGI scripts,
-  and deprecated HTML tags like `<blink>` and `<marqueee>`. This talk will take a
-  trip down memory lane and demonstrate how to use Python to design websites like
-  it''s 1999.'
+description: '<p>The days of Web 1.0 were a simpler time: static pages, CGI scripts,
+  and deprecated HTML tags like <code>&lt;blink&gt;</code> and <code>&lt;marqueee&gt;</code>.
+  This talk will take a trip down memory lane and demonstrate how to use Python to
+  design websites like it''s 1999.</p>'
 slug: web-1-0-and-python
 speakers:
 - avatar: null

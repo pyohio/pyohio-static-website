@@ -1,10 +1,16 @@
 code: J7ZCQQ
-description: "md//Imagine you created this awesome Python project.\r\n\r\nBut before\
-  \ you want to release it to the world, you want to make sure it follows the Python\
-  \ coding standards.\r\n\r\nYou have heard of Flake8, but you are unsure whether\
-  \ you should install it system-wide, run it in your IDE or in even in CI?\r\n\r\n\
-  How and where should you configure Flake8?\r\n\r\nHow do you make sure your colleagues\
-  \ also use the same linters... in the same version?"
+description: '<p>Imagine you created this awesome Python project.</p>
+
+  <p>But before you want to release it to the world, you want to make sure it follows
+  the Python coding standards.</p>
+
+  <p>You have heard of Flake8, but you are unsure whether you should install it system-wide,
+  run it in your IDE or in even in CI?</p>
+
+  <p>How and where should you configure Flake8?</p>
+
+  <p>How do you make sure your colleagues also use the same linters... in the same
+  version?</p>'
 slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
 speakers:
 - avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg

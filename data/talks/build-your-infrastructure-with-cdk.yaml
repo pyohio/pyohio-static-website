@@ -1,11 +1,11 @@
 code: NQHFRL
-description: md//If you have heard of or used infrastructure as code tools such as
+description: <p>If you have heard of or used infrastructure as code tools such as
   Terraform and AWS CloudFormation, you might know that these have their syntax and
   writing style that isn't as powerful as using an actual programming language. Pulumni
   used to be the leading contender in writing infrastructure as code via Python. Lately,
   CDK's (cloud development kit) have been finding more adoption. In this talk, I will
   briefly discuss how you can define your infrastructure using Python and enumerate
-  such an approach's benefits.
+  such an approach's benefits.</p>
 slug: build-your-infrastructure-with-cdk
 speakers:
 - avatar: null

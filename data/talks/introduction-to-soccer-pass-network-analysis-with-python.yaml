@@ -1,10 +1,20 @@
 code: RVZZSV
-description: "md//This talk teaches four simple concepts to those who want to start\
-  \ working on football data analysis:\r\n\r\n1. How to access open event data from\
-  \ *statsbomb* API,\r\n2. How to draw a soccer pitch using *mplsoccer*,\r\n3. How\
-  \ to visualize a pass network map for a particular team in a particular game, and\r\
-  \n4. How to use the *NetworkX* module to analyze the pass network (eg. finding out-degree\
-  \ distribution of passes, clustering coefficient, centrality, etc.)"
+description: '<p>This talk teaches four simple concepts to those who want to start
+  working on football data analysis:</p>
+
+  <ol>
+
+  <li>How to access open event data from <em>statsbomb</em> API,</li>
+
+  <li>How to draw a soccer pitch using <em>mplsoccer</em>,</li>
+
+  <li>How to visualize a pass network map for a particular team in a particular game,
+  and</li>
+
+  <li>How to use the <em>NetworkX</em> module to analyze the pass network (eg. finding
+  out-degree distribution of passes, clustering coefficient, centrality, etc.)</li>
+
+  </ol>'
 slug: introduction-to-soccer-pass-network-analysis-with-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/image_2_j3sm4Ip.jpg

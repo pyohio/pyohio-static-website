@@ -11,6 +11,7 @@ httpx = "^0.18.1"
 PyYAML = "^5.4.1"
 click = "^8.0.1"
 python-slugify = "^5.0.2"
+Markdown = "^3.3.4"
 
 [tool.poetry.dev-dependencies]
 

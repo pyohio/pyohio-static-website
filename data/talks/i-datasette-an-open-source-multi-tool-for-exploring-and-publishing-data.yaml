@@ -1,13 +1,19 @@
 code: VTNWPW
-description: "md//Datasette is described by its creator, Simon Willison, as \"a tool\
-  \ for exploring and publishing data\", and it provides an amazing data presentation,\
-  \ exploration, and retrieval platform that can rapidly be deployed to local, cloud\
-  \ or traditional web servers. In this Thunder Talk, I'll demonstrate a project where\
-  \ I deployed an instance of Datasette at the Cincinnati & Hamilton County Public\
-  \ Library to rapidly provide reports to domain experts who are focusing on item\
-  \ and bibliographic record data.\r\n\r\nDatasette Project\r\n-------------------\r\
-  \nhttps://datasette.io/  \r\n\r\nCincinnati & Hamilton County Public Library Collection-Analysis\r\
-  \n--------------------------------------------------------------------\r\n https://ilsweb.cincinnatilibrary.org/collection-analysis/"
+description: '<p>Datasette is described by its creator, Simon Willison, as "a tool
+  for exploring and publishing data", and it provides an amazing data presentation,
+  exploration, and retrieval platform that can rapidly be deployed to local, cloud
+  or traditional web servers. In this Thunder Talk, I''ll demonstrate a project where
+  I deployed an instance of Datasette at the Cincinnati &amp; Hamilton County Public
+  Library to rapidly provide reports to domain experts who are focusing on item and
+  bibliographic record data.</p>
+
+  <h2>Datasette Project</h2>
+
+  <p>https://datasette.io/  </p>
+
+  <h2>Cincinnati &amp; Hamilton County Public Library Collection-Analysis</h2>
+
+  <p>https://ilsweb.cincinnatilibrary.org/collection-analysis/</p>'
 slug: i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data
 speakers:
 - avatar: null

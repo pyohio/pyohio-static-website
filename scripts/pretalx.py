@@ -4,6 +4,7 @@ from pathlib import Path
 
 import click
 import httpx
+import markdown
 import yaml
 
 from slugify import slugify
@@ -56,7 +57,7 @@ def get_event_data(ctx):
             "code": talk["code"],
             "title": talk["title"],
             "slug": slugify(talk["title"]),
-            "description": f"md//{talk['description']}",
+            "description": markdown.markdown(talk['description']),
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
         }
@@ -84,7 +85,7 @@ def get_event_data(ctx):
             "slug": slugify(speaker["name"]),
             "code": speaker["code"],
             "avatar": speaker["avatar"],
-            "biography": f"md//{speaker['biography']}",
+            "biography": markdown.markdown(speaker['biography']),
         }
 
         talk_codes =  [s for s in speaker["submissions"] if s in talks_by_code]

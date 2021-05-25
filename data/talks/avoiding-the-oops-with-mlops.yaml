@@ -1,5 +1,5 @@
 code: DQ8YGN
-description: md//Machine Learning (ML) projects are gaining ground in industry, yet
+description: <p>Machine Learning (ML) projects are gaining ground in industry, yet
   87% never pass the experiment phase. So often we pour endless time and money building
   models to help us make predictions about the world, but even top performing models
   cannot deliver on their intended purpose if they are not able to efficiently run
@@ -9,7 +9,7 @@ description: md//Machine Learning (ML) projects are gaining ground in industry, 
   to apply traditional DevOps principles that have transformed the world of software
   delivery, like unification of system development and operations, to machine learning.
   This talk will cover the principles of MLOps and outline the path to making ML in
-  production a reality.
+  production a reality.</p>
 slug: avoiding-the-oops-with-mlops
 speakers:
 - avatar: https://pretalx.com/media/avatars/SMALL-ABBIEMAEPHOTOGRAPHY-DALLASITES101-2.3-BANKOVICH-99_BJXO57M.jpg

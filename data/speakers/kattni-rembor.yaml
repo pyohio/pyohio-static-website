@@ -1,13 +1,13 @@
 avatar: https://pretalx.com/media/avatars/kattni_x8TVWkx.jpg
-biography: md//[Kattni](https://kattni.com) is a maker, mentor, open source community
-  leader, technical writer, and embedded software developer. She is proud to be a
-  woman in tech. She began creating things at an early age in her dad’s extensive
+biography: <p><a href="https://kattni.com">Kattni</a> is a maker, mentor, open source
+  community leader, technical writer, and embedded software developer. She is proud
+  to be a woman in tech. She began creating things at an early age in her dad’s extensive
   workshop in the basement. Kattni’s journey into the world of open source, electronics,
   and programming began in July 2017, and her desk is still a mess of wires and circuit
-  boards. She is sponsored by Adafruit to work on [the CircuitPython project](https://circuitpython.org).
-  In the rest of her life, Kattni is a maker, creator, programmer, photographer, one-time
-  gardener, and loved partner. She is tolerated by a cat who continues to let her
-  live with it.
+  boards. She is sponsored by Adafruit to work on <a href="https://circuitpython.org">the
+  CircuitPython project</a>. In the rest of her life, Kattni is a maker, creator,
+  programmer, photographer, one-time gardener, and loved partner. She is tolerated
+  by a cat who continues to let her live with it.</p>
 code: ETNDAN
 name: Kattni Rembor
 slug: kattni-rembor

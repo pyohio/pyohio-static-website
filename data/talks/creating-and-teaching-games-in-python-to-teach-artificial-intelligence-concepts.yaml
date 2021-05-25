@@ -1,19 +1,26 @@
 code: HXD7YB
-description: "md//I am a High School Freshman who enjoys coding and robotics. For\
-  \ the past 3 years, I have taken Artificial Intelligence classes as a student. AI\
-  \ is a buzz word - It is an exciting yet daunting subject. My instructor made these\
-  \ classes fun and less daunting by using real world examples and games. I got so\
-  \ inspired, I started understanding and writing neural networks in Python in no\
-  \ time. Now, I am trying to create the same experience for my students.\r\n\r\n\
-  I am a volunteer teacher at https://www.corp.aiclub.world/ where I teach AI concepts\
-  \ to students in 6th - 12th grade. When I create a course, I think of how to include\
-  \ AI concepts in games. I write games utilizing libraries like turtle and pygame.\
-  \ I consult with my instructor and they help review my courses.\r\n\r\nI would like\
-  \ to share my approach , give the audiences a sneak peak at my curriculum and share\
-  \ some resources that I have created. \r\n\r\nHere are some examples of my curriculum:\r\
-  \n\r\nA Cheat Sheet I made for Students https://docs.google.com/document/d/1nTM4zhnyI6ZvvGffhJ6tJTJnfBGc_Hwn5Rc_3oTwOSM/edit?usp=sharing\r\
-  \n\r\nTicTacToe using AI https://docs.google.com/presentation/d/1aUIV6jAahnLCWUlGNwtWbg4ew6Q0afl3aSMgEVAaIkE/edit?usp=sharing\r\
-  \n\r\nStock Predictor using AI https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing"
+description: '<p>I am a High School Freshman who enjoys coding and robotics. For the
+  past 3 years, I have taken Artificial Intelligence classes as a student. AI is a
+  buzz word - It is an exciting yet daunting subject. My instructor made these classes
+  fun and less daunting by using real world examples and games. I got so inspired,
+  I started understanding and writing neural networks in Python in no time. Now, I
+  am trying to create the same experience for my students.</p>
+
+  <p>I am a volunteer teacher at https://www.corp.aiclub.world/ where I teach AI concepts
+  to students in 6th - 12th grade. When I create a course, I think of how to include
+  AI concepts in games. I write games utilizing libraries like turtle and pygame.
+  I consult with my instructor and they help review my courses.</p>
+
+  <p>I would like to share my approach , give the audiences a sneak peak at my curriculum
+  and share some resources that I have created. </p>
+
+  <p>Here are some examples of my curriculum:</p>
+
+  <p>A Cheat Sheet I made for Students https://docs.google.com/document/d/1nTM4zhnyI6ZvvGffhJ6tJTJnfBGc_Hwn5Rc_3oTwOSM/edit?usp=sharing</p>
+
+  <p>TicTacToe using AI https://docs.google.com/presentation/d/1aUIV6jAahnLCWUlGNwtWbg4ew6Q0afl3aSMgEVAaIkE/edit?usp=sharing</p>
+
+  <p>Stock Predictor using AI https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing</p>'
 slug: creating-and-teaching-games-in-python-to-teach-artificial-intelligence-concepts
 speakers:
 - avatar: null

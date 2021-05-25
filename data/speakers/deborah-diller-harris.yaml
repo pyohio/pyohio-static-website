@@ -1,8 +1,12 @@
 avatar: https://pretalx.com/media/avatars/October_2018_7Di1U6j.JPG
-biography: "md//I have spoken at PyOhio and PyCon Canada on feature engineering for\
-  \ machine learning models. \r\n\r\nI have a MS in Data Science and my area of expertise\
-  \ is Deep Learning and NLP applications. \r\n\r\nThis conference talk is a synopsis\
-  \ of my published academic paper’s results: https://github.com/deborahanneharris/legal-documents"
+biography: '<p>I have spoken at PyOhio and PyCon Canada on feature engineering for
+  machine learning models. </p>
+
+  <p>I have a MS in Data Science and my area of expertise is Deep Learning and NLP
+  applications. </p>
+
+  <p>This conference talk is a synopsis of my published academic paper’s results:
+  https://github.com/deborahanneharris/legal-documents</p>'
 code: CAMM3Y
 name: Deborah Diller Harris
 slug: deborah-diller-harris

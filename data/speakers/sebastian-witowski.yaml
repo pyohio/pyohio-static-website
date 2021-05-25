@@ -1,9 +1,11 @@
 avatar: https://www.gravatar.com/avatar/c906cc0246f80dbe5f158183922afd3e
-biography: "md//Sebastian is a Python consultant and trainer based in Poland. He started\
-  \ his journey with programming as a software developer at CERN, where he fell in\
-  \ love with Python (and teaching). Now he is helping companies untangle their complicated\
-  \ architecture and build all sorts of interesting Python projects.\r\n\r\nIn his\
-  \ spare time, he talks about Python, best practices in programming, and productivity."
+biography: '<p>Sebastian is a Python consultant and trainer based in Poland. He started
+  his journey with programming as a software developer at CERN, where he fell in love
+  with Python (and teaching). Now he is helping companies untangle their complicated
+  architecture and build all sorts of interesting Python projects.</p>
+
+  <p>In his spare time, he talks about Python, best practices in programming, and
+  productivity.</p>'
 code: 8D7B98
 name: Sebastian Witowski
 slug: sebastian-witowski

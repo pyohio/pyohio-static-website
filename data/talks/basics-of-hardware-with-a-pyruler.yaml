@@ -1,11 +1,11 @@
 code: AGYQRP
-description: md//Learn how hardware works without having to learn C. Explore basic
+description: <p>Learn how hardware works without having to learn C. Explore basic
   embedded hardware concepts with me as we use CircuitPython and a PyRuler. CircuitPython
   is a programming language that simplifies writing code for microcontrollers. The
   PyRuler is an engineering reference for sizes of various electronic components,
   but it's also a microcontroller board complete with LEDs, capactive touch buttons,
   and various inputs and outputs that let you get started designing your embedded
-  system with little to no hardware experience.
+  system with little to no hardware experience.</p>
 slug: basics-of-hardware-with-a-pyruler
 speakers:
 - avatar: https://pretalx.com/media/avatars/cropped_profile_kira_crhVz4t.JPG
