@@ -15,7 +15,7 @@ description: "<p>In the past several months, we have seen that effectively distr
   \ “PyGMO” to find the optimal point for vaccine distribution in a neighborhood.</p>"
 slug: multi-objective-optimization-for-covid-vaccine-management
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/samira_Z2WGzcQ.jpg
   code: 3AKEAB
   name: Samira Soleimani
   slug: samira-soleimani
