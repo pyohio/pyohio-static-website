@@ -87,7 +87,8 @@ def get_event_data(ctx):
             "avatar": speaker["avatar"],
             "biography": markdown.markdown(speaker['biography']),
         }
-
+        if speaker["avatar"] is None:
+            speaker["avatar"] = "https://www.pyohio.org/2019/static/3d5028a6ef291ad729cf7ef87e04816d/d092e/139.png"
         talk_codes =  [s for s in speaker["submissions"] if s in talks_by_code]
         speaker_talks = []
         for talk_code in talk_codes:

@@ -10,6 +10,7 @@
     "gatsby-plugin-google-analytics": "^3.5.0",
     "gatsby-plugin-manifest": "^3.5.0",
     "gatsby-plugin-netlify": "^3.5.0",
+    "gatsby-plugin-remote-images": "^3.0.0",
     "gatsby-remark-images": "^5.2.1",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-theme-catalyst-core": "^6.0.0-beta.9",
