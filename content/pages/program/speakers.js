@@ -4,7 +4,7 @@ import Layout from "gatsby-theme-catalyst-core/src/components/layout"
 import React from "react";
 import {Link, graphql} from "gatsby";
 import { jsx, Themed } from "theme-ui"
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default class TalksPage extends React.Component {
     render() {
@@ -25,11 +25,21 @@ export default class TalksPage extends React.Component {
                     pt: `20px`,
                 }}
             >
-                {speaker.avatar}
+
               <Themed.a
                 as={Link}
                 to={`/program/speakers/${speaker.slug}`}
               >
+                                  <Themed.img
+                    as={GatsbyImage}
+                    sx={{
+                        borderRadius: "25px",
+                        border: "5px solid",
+                        borderColor: "highlight"
+                    }}
+                    image={getImage(speaker.localImage.childImageSharp)}
+                />
+                <br />
                 {speaker.name}
               </Themed.a>
             </Themed.p>
@@ -47,7 +57,11 @@ export const pageQuery = graphql`
         node {
           name
           slug
-           
+          localImage {
+            childImageSharp {
+                gatsbyImageData(height: 200, width: 200,  transformOptions: {fit: CONTAIN})
+            }
+          }
           talks {
             title,
             slug
