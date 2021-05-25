@@ -133,10 +133,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-yaml-plus',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        enableRemark: true,
-      }
+        path: `./data/speakers/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
