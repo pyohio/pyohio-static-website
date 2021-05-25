@@ -133,6 +133,18 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-transformer-yaml-plus',
+      options: {
+        enableRemark: true,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./data/talks/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-112992906-1',
