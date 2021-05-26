@@ -37,7 +37,7 @@ export const speakerPageQuery = graphql`
           biography
           localImage {
             childImageSharp {
-                gatsbyImageData(height: 250, width: 250,  transformOptions: {fit: CONTAIN})
+                gatsbyImageData(height: 200, width: 200,  transformOptions: {fit: CONTAIN})
             }
           }
           talks {
