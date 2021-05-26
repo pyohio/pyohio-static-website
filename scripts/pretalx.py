@@ -102,7 +102,7 @@ def get_event_data(ctx):
         if data["avatar"] is None:
             data["avatar"] = PLACEHOLDER_AVATAR
         if data["avatar"].startswith("https://www.gravatar.com/avatar"):
-            data["avatar"] = f"{data['avatar']}?s=200"
+            data["avatar"] = f"{data['avatar']}?s=300"
         talk_codes = [s for s in speaker["submissions"] if s in talks_by_code]
         speaker_talks = []
         for talk_code in talk_codes:
