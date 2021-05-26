@@ -5,6 +5,7 @@ module.exports = {
     keywords: [`python`, `programming`],
     author: `PyOhio Organizers`,
     siteUrl: `https://www.pyohio.org`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
+
     menuLinks: [
       // {
       //   name: `Example`,

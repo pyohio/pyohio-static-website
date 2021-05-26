@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import Layout from "gatsby-theme-catalyst-core/src/components/layout"
+import { Layout, Seo } from "gatsby-theme-catalyst-core"
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { jsx, Message, Themed } from "theme-ui"
@@ -12,6 +12,7 @@ export default class TalksPage extends React.Component {
 
     return (
       <Layout>
+        <Seo title="PyOhio 2021 Talks" />
         <Themed.h1>Talks</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>Talk schedule TBD</Message>
 

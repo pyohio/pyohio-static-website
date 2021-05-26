@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import Layout from "gatsby-theme-catalyst-core/src/components/layout"
+import { Layout, Seo } from "gatsby-theme-catalyst-core"
 import { graphql, Link } from "gatsby"
 import { jsx, BaseStyles, Themed } from "theme-ui"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -17,6 +17,7 @@ export default function TalkPage({ data }) {
 
   return (
     <Layout>
+      <Seo title={`PyOhio 2021 Speaker: ${speaker.name}`} />
       <BaseStyles>
         <h1>{speaker.name}</h1>
         <Themed.img
