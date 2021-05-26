@@ -2,7 +2,7 @@
 
 import Layout from "gatsby-theme-catalyst-core/src/components/layout"
 import { graphql, Link } from "gatsby"
-import { jsx, Themed } from "theme-ui"
+import { jsx, BaseStyles, Themed } from "theme-ui"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function TalkPage({ data }) {
@@ -17,6 +17,7 @@ export default function TalkPage({ data }) {
 
   return (
     <Layout>
+    <BaseStyles>
       <h1>{speaker.name}</h1>
       <Themed.img
         as={GatsbyImage}
@@ -30,6 +31,7 @@ export default function TalkPage({ data }) {
       <div dangerouslySetInnerHTML={{ __html: speaker.biography }} />
       <h2>Presenting</h2>
       <p>{talks}</p>
+    </BaseStyles>
     </Layout>
   )
 }

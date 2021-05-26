@@ -2,7 +2,7 @@
 
 import Layout from "gatsby-theme-catalyst-core/src/components/layout"
 import { graphql, Link } from "gatsby"
-import { jsx, Themed } from "theme-ui"
+import { jsx, BaseStyles, Themed } from "theme-ui"
 
 export default function TalkPage({ data }) {
   const talk = data.talksYaml
@@ -16,6 +16,7 @@ export default function TalkPage({ data }) {
 
   return (
     <Layout>
+    <BaseStyles>
       <h1>{talk.title}</h1>
       <p>
         <em>{talk.type} (schedule TBD)</em>
@@ -23,6 +24,7 @@ export default function TalkPage({ data }) {
       <div dangerouslySetInnerHTML={{ __html: talk.description }} />
       <h2>Presented by</h2>
       <p>{speakers}</p>
+    </BaseStyles>
     </Layout>
   )
 }
