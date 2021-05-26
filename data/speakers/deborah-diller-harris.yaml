@@ -6,7 +6,7 @@ biography: '<p>I have spoken at PyOhio and PyCon Canada on feature engineering f
   applications. </p>
 
   <p>This conference talk is a synopsis of my published academic paper’s results:
-  https://github.com/deborahanneharris/legal-documents</p>'
+  <a href="https://github.com/deborahanneharris/legal-documents">https://github.com/deborahanneharris/legal-documents</a></p>'
 code: CAMM3Y
 name: Deborah Diller Harris
 slug: deborah-diller-harris

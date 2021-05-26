@@ -9,11 +9,11 @@ description: '<p>Datasette is described by its creator, Simon Willison, as "a to
 
   <h2>Datasette Project</h2>
 
-  <p>https://datasette.io/  </p>
+  <p><a href="https://datasette.io/">https://datasette.io/</a>  </p>
 
   <h2>Cincinnati &amp; Hamilton County Public Library Collection-Analysis</h2>
 
-  <p>https://ilsweb.cincinnatilibrary.org/collection-analysis/</p>'
+  <p><a href="https://ilsweb.cincinnatilibrary.org/collection-analysis/">https://ilsweb.cincinnatilibrary.org/collection-analysis/</a></p>'
 slug: i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data
 speakers:
 - avatar: null

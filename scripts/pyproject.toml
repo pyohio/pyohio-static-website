@@ -12,6 +12,7 @@ PyYAML = "^5.4.1"
 click = "^8.0.1"
 python-slugify = "^5.0.2"
 Markdown = "^3.3.4"
+py-gfm = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b1"

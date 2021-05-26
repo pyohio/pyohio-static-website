@@ -1,9 +1,10 @@
 code: 7TDEME
 description: '<p>Every year thousands of developers try to solve the programming puzzles
-  of the Advent of Code[^1] challenge. For many Pythonistas, their favorite tool to
-  do that is the Jupyter notebook. As the problems get progressively more challenging,
-  solving them step-by-step is an excellent approach. You read some data, play with
-  it, solve the small-scale problem and then try to solve the whole challenge.</p>
+  of the Advent of Code<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>
+  challenge. For many Pythonistas, their favorite tool to do that is the Jupyter notebook.
+  As the problems get progressively more challenging, solving them step-by-step is
+  an excellent approach. You read some data, play with it, solve the small-scale problem
+  and then try to solve the whole challenge.</p>
 
   <p>Apart from showing the output of each intermediate step, Jupyter notebooks offer
   plenty of useful features. Including:</p>
@@ -25,11 +26,26 @@ description: '<p>Every year thousands of developers try to solve the programming
   <p>In this lightning talk, I will show you how to use them when solving problems
   in Jupyter Notebooks.</p>
 
-  <p>[^1]: If you never heard about the Advent of Code - it''s a series of 25 code
-  challenges. Each of them is released daily between the 1st and 25th of December.
-  It''s like the advent calendar (https://en.wikipedia.org/wiki/Advent_calendar),
+  <div class="footnote">
+
+  <hr />
+
+  <ol>
+
+  <li id="fn:1">
+
+  <p>If you never heard about the Advent of Code - it''s a series of 25 code challenges.
+  Each of them is released daily between the 1st and 25th of December. It''s like
+  the advent calendar (<a href="https://en.wikipedia.org/wiki/Advent_calendar">https://en.wikipedia.org/wiki/Advent_calendar</a>),
   but instead of chocolate or a small gift, you get frustration if you can''t solve
-  a given problem. At least I do ;)</p>'
+  a given problem. At least I do ;)&#160;<a class="footnote-backref" href="#fnref:1"
+  title="Jump back to footnote 1 in the text">&#8617;</a></p>
+
+  </li>
+
+  </ol>
+
+  </div>'
 slug: 9-jupyter-notebook-tricks-for-your-next-advent-of-code
 speakers:
 - avatar: null

@@ -7,6 +7,7 @@ import httpx
 import markdown
 import yaml
 
+from mdx_gfm import GithubFlavoredMarkdownExtension
 from slugify import slugify
 
 try:
@@ -67,7 +68,7 @@ def get_event_data(ctx):
             "code": talk["code"],
             "title": talk["title"],
             "slug": slugify(talk["title"]),
-            "description": markdown.markdown(talk["description"]),
+            "description": markdown.markdown(talk["description"], extensions=[GithubFlavoredMarkdownExtension(), 'footnotes']),
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
         }
@@ -97,7 +98,7 @@ def get_event_data(ctx):
             "slug": slugify(speaker["name"]),
             "code": speaker["code"],
             "avatar": speaker["avatar"],
-            "biography": markdown.markdown(speaker["biography"]),
+            "biography": markdown.markdown(speaker["biography"], extensions=[GithubFlavoredMarkdownExtension(), 'footnotes']),
         }
         if data["avatar"] is None:
             data["avatar"] = PLACEHOLDER_AVATAR

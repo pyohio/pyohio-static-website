@@ -1,38 +1,8 @@
 code: 89ML7N
-description: '<p>In this talk we will explore the recent decision by the United States
+description: <p>In this talk we will explore the recent decision by the United States
   Supreme Court regarding Java APIs from earlier this year. The decision has been
-  issued in regards to the case of Google v. Oracle but will most likely have implication
+  issued in regards to the case of Google v. Oracle but will most likely have implications
   on the entire software industry.</p>
-
-  <p>During the talk we will focus on the following 4 topics:</p>
-
-  <ul>
-
-  <li>
-
-  <p>Introduction and history of the case the case (~2 minutes).</p>
-
-  </li>
-
-  <li>
-
-  <p>Arguments on  both sides (~2 minutes).</p>
-
-  </li>
-
-  <li>
-
-  <p>Summary of the decision (~2 minutes).</p>
-
-  </li>
-
-  <li>
-
-  <p>Thoughts on how this decision might impact the software world (~ 4 minutes).</p>
-
-  </li>
-
-  </ul>'
 slug: the-impact-of-google-v-oracle-supreme-court-decision-on-the-software-world
 speakers:
 - avatar: null

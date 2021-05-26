@@ -4,9 +4,9 @@ biography: <p>Gregory M. Kapfhammer is an Associate Professor of Computer Scienc
   he teaches classes in a variety of technical and scientific areas and enjoys programming
   in Python. In the Python community, Gregory has previously given talks at PyGotham
   and PyOhio, presented posters at PyCon, and presented at PyCon's Education Summit.
-  You can learn more about Gregory by visiting his web site at https://www.gregorykapfhammer.com/,
-  checking out several of his Python projects at https://github.com/gkapfham, and
-  viewing the slides of his previous presentations at https://speakerdeck.com/gkapfham.</p>
+  You can learn more about Gregory by visiting his web site at <a href="https://www.gregorykapfhammer.com/">https://www.gregorykapfhammer.com/</a>,
+  checking out several of his Python projects at <a href="https://github.com/gkapfham">https://github.com/gkapfham</a>,
+  and viewing the slides of his previous presentations at <a href="https://speakerdeck.com/gkapfham">https://speakerdeck.com/gkapfham</a>.</p>
 code: WUSBZJ
 name: Gregory M. Kapfhammer
 slug: gregory-m-kapfhammer

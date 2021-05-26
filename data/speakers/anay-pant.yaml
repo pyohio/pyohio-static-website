@@ -4,8 +4,8 @@ biography: '<p>I hav been attending PyCon since 2017. I have presented posters i
   time at PyOhio and I am excited, It is great fun and a nice way to meet other people
   interested in the same things as you are! </p>
 
-  <p>More about me at my GitHub page: https://anaypant.github.io/ and my robotics
-  team page: https://ninjabotsfll.wixsite.com/ninjabots</p>'
+  <p>More about me at my GitHub page: <a href="https://anaypant.github.io/">https://anaypant.github.io/</a>
+  and my robotics team page: <a href="https://ninjabotsfll.wixsite.com/ninjabots">https://ninjabotsfll.wixsite.com/ninjabots</a></p>'
 code: ZSEY9M
 name: Anay Pant
 slug: anay-pant

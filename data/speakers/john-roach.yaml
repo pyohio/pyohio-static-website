@@ -1,13 +1,11 @@
 avatar: https://www.gravatar.com/avatar/69194698588cdcab25cc58cb182fc745?s=300
-biography: '<p>John is currently a senior director of DevOps at Seqster. He has managed
+biography: <p>John is currently a senior director of DevOps at Seqster. He has managed
   production infrastructure in Google Cloud and AWS at scale. He loves working on
   a wide range of topics, but his favorites are software/system architecture, release
-  engineering, and DevOps. You can find more about him at https://johnroach.io/about/</p>
-
-  '
+  engineering, and DevOps. You can find more about him at <a href="https://johnroach.io/about/">https://johnroach.io/about/</a></p>
 code: A7XPM3
-name: John
-slug: john
+name: John Roach
+slug: john-roach
 talks:
 - code: NQHFRL
   slug: build-your-infrastructure-with-cdk
