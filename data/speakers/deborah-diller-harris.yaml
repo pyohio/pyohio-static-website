@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/October_2018_7Di1U6j.JPG
+biography: '<p>I have spoken at PyOhio and PyCon Canada on feature engineering for
+  machine learning models. </p>
+
+  <p>I have a MS in Data Science and my area of expertise is Deep Learning and NLP
+  applications. </p>
+
+  <p>This conference talk is a synopsis of my published academic paper’s results:
+  <a href="https://github.com/deborahanneharris/legal-documents">https://github.com/deborahanneharris/legal-documents</a></p>'
+code: CAMM3Y
+name: Deborah Diller Harris
+slug: deborah-diller-harris
+talks:
+- code: EMWDQ3
+  slug: combating-ptsd-with-machine-learning
+  title: Combating PTSD with Machine Learning

@@ -1,0 +1,12 @@
+code: QNJ78U
+description: <p>Using Python's built in Turtle module, and some random numbers, you
+  can create a generative drawing with a near-infinite number of variations in less
+  than fifty lines of code.</p>
+slug: generative-drawing-with-python-turtle-graphics
+speakers:
+- avatar: https://pretalx.com/media/avatars/DominicDuffin_Pi6MV8e.JPG
+  code: 9CQKBJ
+  name: Dominic Duffin
+  slug: dominic-duffin
+title: Generative Drawing with Python Turtle Graphics
+type: Lightning Talk

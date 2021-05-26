@@ -17,7 +17,7 @@ module.exports = {
         subMenu: [
           {
             name: `About PyOhio`,
-            link: `/about`
+            link: `/about`,
           },
           {
             name: `Code of Conduct`,
@@ -25,21 +25,21 @@ module.exports = {
           },
           {
             name: `Newsletter`,
-            link: `/about/newsletter`
+            link: `/about/newsletter`,
           },
         ],
       },
       {
-        name: `Attend`,
-        link: `/attend`,
+        name: `Participate`,
+        link: `/participate`,
         subMenu: [
           {
             name: `Virtual Attendance`,
-            link: `/attend`,
+            link: `/participate`,
           },
           {
             name: `Register`,
-            link: `/attend/register`,
+            link: `/participate/register`,
           },
         ],
       },
@@ -62,7 +62,7 @@ module.exports = {
         link: `/speaking`,
         subMenu: [
           {
-            name: `Speaker Information`,
+            name: `Information for Speakers`,
             link: `/speaking/speaker-info`,
           },
           {
@@ -133,14 +133,33 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        trackingId: 'UA-112992906-1',
+        path: `./data/speakers/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./data/talks/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: "SpeakersYaml",
+        imagePath: "avatar",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-112992906-1",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 }

@@ -35,9 +35,9 @@ const SiteBranding = () => {
           image={logo}
           sx={{
             // Styling for the logo using the breakpoint syntax from Theme-UI. Imagine something like [xs, sm, md, l, xl] for the breakpoint sizes. Play around with the logo sizes and your screen size to see the effects
-            height: ["50px", "60px", null, "70px", null],
-            width: ["80px", "90px", null, "150px", null],
+            width: ["80px", "100px", null, "120px", null],
             variant: "variants.siteLogo",
+            borderRadius: "8px",
           }}
           alt={title}
           imgStyle={{ objectFit: "contain" }}

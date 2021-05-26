@@ -6,7 +6,7 @@ import { useFooterConfig } from "gatsby-theme-catalyst-footer/src/utils/use-foot
 import { StaticImage } from "gatsby-plugin-image"
 
 const SiteFooter = () => {
-  const { title, divider } = useSiteMetadata()
+  const { title } = useSiteMetadata()
   const { footerContentLocation, useFooterSocialLinks } = useFooterConfig()
   const { theme } = useThemeUI()
   const isLeft = footerContentLocation === "left"
@@ -60,21 +60,29 @@ const SiteFooter = () => {
           </IconContext.Provider>
         </div>
         <div>
-        <StaticImage
-          src="../../../content/assets/pyohio-2021-lightning-snake-transparent.png"
-          sx={{
-            // Styling for the logo using the breakpoint syntax from Theme-UI. Imagine something like [xs, sm, md, l, xl] for the breakpoint sizes. Play around with the logo sizes and your screen size to see the effects
-            height: ["30px", "30px", null, "30px", null],
-            width: ["100px", "100px", null, "150px", null],
-            // variant: "variants.siteLogo",
-          }}
-          alt="PyOhio Snake"
-          imgStyle={{ objectFit: "contain" }}
-          placeholder="blurred"
-        />
+          <StaticImage
+            src="../../../content/assets/pyohio-2021-lightning-snake-transparent.png"
+            sx={{
+              // Styling for the logo using the breakpoint syntax from Theme-UI. Imagine something like [xs, sm, md, l, xl] for the breakpoint sizes. Play around with the logo sizes and your screen size to see the effects
+              height: ["30px", "30px", null, "30px", null],
+              width: ["100px", "100px", null, "150px", null],
+              // variant: "variants.siteLogo",
+            }}
+            alt="PyOhio Snake"
+            imgStyle={{ objectFit: "contain" }}
+            placeholder="blurred"
+          />
         </div>
         <Themed.p sx={{ m: 0 }}>
           © {new Date().getFullYear()} {title}
+        </Themed.p>
+        <Themed.p sx={{ mb: 0 }}>
+          <a href="https://www.netlify.com">
+            <img
+              src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+              alt="Deploys by Netlify"
+            />
+          </a>
         </Themed.p>
       </div>
     </footer>

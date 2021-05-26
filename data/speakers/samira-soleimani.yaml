@@ -1,0 +1,13 @@
+avatar: https://pretalx.com/media/avatars/samira_Z2WGzcQ.jpg
+biography: <p>Samira Soleimani is a Data Scientist at Sense Corp looking to bring
+  life to spatial and non-spatial raw data! She holds a Ph.D. in Geospatial Information
+  System and a master’s degree in computer science from Louisiana State University.
+  Before joining Sense Corp, she was working as Associate Data Scientist in Blue Cross
+  Blue Shield of Louisiana.</p>
+code: 3AKEAB
+name: Samira Soleimani
+slug: samira-soleimani
+talks:
+- code: TD3VWH
+  slug: multi-objective-optimization-for-covid-vaccine-management
+  title: Multi-objective Optimization for COVID Vaccine Management

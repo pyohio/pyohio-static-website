@@ -1,0 +1,21 @@
+code: J7ZCQQ
+description: '<p>Imagine you created this awesome Python project.</p>
+
+  <p>But before you want to release it to the world, you want to make sure it follows
+  the Python coding standards.</p>
+
+  <p>You have heard of Flake8, but you are unsure whether you should install it system-wide,
+  run it in your IDE or in even in CI?</p>
+
+  <p>How and where should you configure Flake8?</p>
+
+  <p>How do you make sure your colleagues also use the same linters... in the same
+  version?</p>'
+slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
+speakers:
+- avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
+  code: EARAKA
+  name: Jürgen Gmach
+  slug: jurgen-gmach
+title: 'Tool Confusion: Pythonic Code with flake8, tox and pre-commit'
+type: Lightning Talk

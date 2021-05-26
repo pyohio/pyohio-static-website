@@ -1,0 +1,17 @@
+code: WP87GC
+description: '<p>I am enamored with dataclasses. I love them in Python, I love them
+  in Kotlin. A while back I was looking for a Kotlin dataclass feature in Python,
+  and was disappointed to find it wasn''t there. I went digging into the CPython source
+  code to see if it could be added and found the craziest function I''d ever seen,
+  _create_fn, and it''s used everywhere in the dataclass implementation!</p>
+
+  <p>Join me as I shared what I found out about my dear dataclasses, and get a better
+  understand of decorators and metaprogramming in Python!</p>'
+slug: the-craziest-fn-thing-i-ve-ever-seen-and-it-lives-in-cpython
+speakers:
+- avatar: https://pretalx.com/media/avatars/Team_Photos_2019_0011_Daniel_tvh0zWe.jpg
+  code: 3E3PZR
+  name: Daniel Lindeman
+  slug: daniel-lindeman
+title: The Craziest fn Thing I've Ever Seen (and It Lives in CPython!!!)
+type: Lightning Talk

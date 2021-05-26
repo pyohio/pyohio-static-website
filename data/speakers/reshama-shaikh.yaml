@@ -1,0 +1,20 @@
+avatar: https://pretalx.com/media/avatars/B1E741FD-516B-44C6-AC9B-CBE650BC1DD3_jgsnNee.jpeg
+biography: '<p>Reshama is a statistician/data scientist with skills in Python, R and
+  SAS.  She has an M.S. in statistics and an M.B.A. with focus on business analytics,
+  strategy and technology. </p>
+
+  <p>She is the founder of <a href="https://dataumbrella.org">Data Umbrella</a>, an
+  inclusive community for underrepresented persons in data science. She is also an
+  organizer for the <a href="nyc.Pyladies.com">New York City chapter</a> of PyLadies.  </p>
+
+  <p>Learning plotly had been on her to-do list for a while. She finally learned it
+  during the Spring 2020 COVID lockdown while doing research for the pivotal paper
+  <a href="https://www.pnas.org/content/118/4/e2014564118">An Evidence Review of Face
+  Masks Against COVID-19</a>.</p>'
+code: XAAKT8
+name: Reshama Shaikh
+slug: reshama-shaikh
+talks:
+- code: ZSEDLM
+  slug: enriching-data-visualizations-with-annotations-in-plotly
+  title: Enriching Data Visualizations with Annotations in Plotly

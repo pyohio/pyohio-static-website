@@ -14,17 +14,17 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /coc                    /2021/about/code-of-conduct     302
 /code-of-conduct        /2021/about/code-of-conduct     302
 /conduct                /2021/about/code-of-conduct     302
-/attend                 /2021/attend                    302
+/attend                 /2021/participate               302
 /cfp                    /2021/speaking/call-for-proposals 302
 /call-for-proposals     /2021/speaking/call-for-proposals 302
-/directions             /2021/attend/                   302
+/directions             /2021/participate/              302
 /events                 /2021/program                   302
-/hotel                  /2021/attend/                   302
+/hotel                  /2021/participate/              302
 /prospectus             /2021                           302
-/register               /2021/attend/register           302
+/register               /2021/participate/register      302
 /schedule               /2021/program/schedule          302
 /sprints                /2021                           302
-/volunteer              /2021/attend/volunteer          302
+/volunteer              /2021/participate/volunteer     302
 /hackfest               /2021/program                   302
 /osu-open-source        /2021/about                     302
 
@@ -41,5 +41,6 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2020/events/talks/object-oriented-python-with-functools-partial /2020/events/talks/object-oriented-python-using-functools-partial
 
 # 2021 Moved URLs
+/2021/attend                /2021/participate
+/2021/attend/register       /2021/participate/register
 /2021/present/speaker-info  /2021/speaking/speaker-info  
-

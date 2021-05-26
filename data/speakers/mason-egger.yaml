@@ -1,0 +1,14 @@
+avatar: https://pretalx.com/media/avatars/attachment_6_Dicge7M.jpeg
+biography: <p>Mason is currently a Developer Advocate at DigitalOcean who specializes
+  in cloud infrastructure, distributed systems, and Python. Prior to his work at DigitalOcean
+  he was an SRE helping build and maintain a highly available hybrid multicloud PaaS.
+  He is an avid programmer, speaker, educator, and writer/blogger. He is an avid open
+  source enthusiast and conetn creator. In his spare time he enjoys reading, camping,
+  kayaking, and exploring new places.</p>
+code: SN9SZQ
+name: Mason Egger
+slug: mason-egger
+talks:
+- code: PKVU8N
+  slug: the-enters-and-exits-of-context-managers
+  title: The Enters and Exits of Context Managers

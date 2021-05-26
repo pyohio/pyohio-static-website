@@ -1,0 +1,17 @@
+code: ZSEDLM
+description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile Python
+  graphing library which lets us make interactive graphs.  In this talk, I will show
+  how to go from a typical static visualization to one enriched with annotations which
+  will convey to your audience a more complete interpretation of your visualization.
+  </p>
+
+  <p>Here are some sample <a href="https://reshamas.github.io/covid19-plots/">plotly
+  visualizations</a> I have made, and in this talk, I will share how to create them.</p>'
+slug: enriching-data-visualizations-with-annotations-in-plotly
+speakers:
+- avatar: https://pretalx.com/media/avatars/B1E741FD-516B-44C6-AC9B-CBE650BC1DD3_jgsnNee.jpeg
+  code: XAAKT8
+  name: Reshama Shaikh
+  slug: reshama-shaikh
+title: Enriching Data Visualizations with Annotations in Plotly
+type: Thunder Talk

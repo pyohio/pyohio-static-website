@@ -1,0 +1,12 @@
+code: CLG3NE
+description: <p>There are a few different ways for you to index your data into Elasticsearch.
+  This talk will cover how to make your data searchable via your web app or from a
+  data frame.</p>
+slug: getting-your-data-into-elasticsearch-let-me-count-the-ways
+speakers:
+- avatar: null
+  code: PFEFTZ
+  name: Jay Miller
+  slug: jay-miller
+title: 'Getting Your Data into Elasticsearch: Let Me Count the Ways'
+type: Thunder Talk

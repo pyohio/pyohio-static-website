@@ -1,0 +1,15 @@
+code: 38DZFD
+description: '<p>What takes only one line of code and can dramatically improve your
+  tests? The name! If you write in a more intentional way, you can get a test that
+  is better designed.</p>
+
+  <p>In 5 minutes I''ll show you a few simple rules of naming tests that you can start
+  using right away.</p>'
+slug: how-to-improve-tests-thanks-to-1-line-of-code
+speakers:
+- avatar: https://pretalx.com/media/avatars/2020-09-09_Webinterpret18058_TdVCRQx.png
+  code: 3MRVPV
+  name: Sebastian Buczyński
+  slug: sebastian-buczynski
+title: How to Improve Tests Thanks to 1 Line of Code?
+type: Lightning Talk

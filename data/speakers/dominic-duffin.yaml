@@ -1,0 +1,14 @@
+avatar: https://pretalx.com/media/avatars/DominicDuffin_Pi6MV8e.JPG
+biography: '<p>Co-founder of #ArtTechChat Twitter chat on tech, art and design.</p>
+
+  <p>Polyglot programmer.</p>
+
+  <p>Junior Full-Stack Developer by day. Student and Interintellect Salon host by
+  night.</p>'
+code: 9CQKBJ
+name: Dominic Duffin
+slug: dominic-duffin
+talks:
+- code: QNJ78U
+  slug: generative-drawing-with-python-turtle-graphics
+  title: Generative Drawing with Python Turtle Graphics

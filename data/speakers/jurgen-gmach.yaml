@@ -1,0 +1,10 @@
+avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
+biography: <p>I am a software developer and Linux sys admin with a deep passion for
+  Python and open-source in general.</p>
+code: EARAKA
+name: Jürgen Gmach
+slug: jurgen-gmach
+talks:
+- code: J7ZCQQ
+  slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
+  title: 'Tool Confusion: Pythonic Code with flake8, tox and pre-commit'

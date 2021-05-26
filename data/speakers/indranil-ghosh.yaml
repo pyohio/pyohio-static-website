@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/image_2_j3sm4Ip.jpg
+biography: '<p>I am a first-year Ph.D. student in Applied Mathematics from the School
+  of Fundamental Sciences, Massey University, NZ. My research is on dynamical systems
+  and robust chaos. I have a master''s in Physics from Jadavpur University. I am mostly
+  interested in dynamical systems, computational mathematics, optimization, quantum
+  computing, etc. I am much fascinated with open source and I write codes mostly in
+  Python and R, and sometimes Fortran. </p>
+
+  <p><a href="https://indrag49.github.io/">My website</a></p>'
+code: WBC8WH
+name: Indranil Ghosh
+slug: indranil-ghosh
+talks:
+- code: RVZZSV
+  slug: introduction-to-soccer-pass-network-analysis-with-python
+  title: Introduction to Soccer Pass Network Analysis with Python

@@ -1,0 +1,16 @@
+code: WUFDAV
+description: <p>This will be a tutorial based talk with a demo at the end on how to
+  use conversational language models and sentiment analysis models to make an interactive
+  chatbot. The models that we will use are Blenderbot from Facebook Research and Bert
+  from google research. We will also use Transformers from Huggingface which is an
+  easy to use packaging and API for the above systems and also go over using speech
+  recognition and text to speech to make interaction more fluid. At the end there
+  will be an interactive demo.</p>
+slug: how-to-make-friends-and-influence-users-with-huggingface
+speakers:
+- avatar: https://pretalx.com/media/avatars/IMG_6905_dyp36KU.jpeg
+  code: 38ZTYY
+  name: Joshua Jay Herman
+  slug: joshua-jay-herman
+title: How to Make Friends and Influence Users with Huggingface
+type: Thunder Talk

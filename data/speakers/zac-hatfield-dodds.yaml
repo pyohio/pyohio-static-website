@@ -1,0 +1,16 @@
+avatar: https://www.gravatar.com/avatar/4ce373d84959098957e6928191a737d5?s=300
+biography: '<p>Zac''s modest goal is to help everyone write better code -- mostly
+  via bug-finding tools.</p>
+
+  <p>He spends his time working on Hypothesis, Pytest, and other open-source projects;
+  along with <a href="https://hypofuzz.com">HypoFuzz</a> and his PhD at the Australian
+  National University. And if you can''t <a href="https://zhd.dev">get to him via
+  a computer</a>, Zac can probably be found with a good book, a pile of chocolate,
+  a long walk in the bush... or all three!</p>'
+code: LFU8AS
+name: Zac Hatfield-Dodds
+slug: zac-hatfield-dodds
+talks:
+- code: NUGCQJ
+  slug: i-wrote-code-to-write-your-tests
+  title: I Wrote Code to Write Your Tests!
