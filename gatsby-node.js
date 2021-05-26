@@ -32,23 +32,27 @@ exports.createPages = async ({ graphql, actions }) => {
         })
     })
 
-    // const speakersResult = await graphql(`
-    //     query {
-    //         allSpeakersYaml {
-    //             edges {
-    //                 node {
-    //                     id
-    //                     slug
-    //                 }
-    //             }
-    //         }
-    //     }
-    // `)
-    // speakersResult.data.allSpeakersYaml.edges.forEeach(({ node }) => {
-    //     createPage({
-    //         path: `/events/`
-    //     })
-    // }
+    const speakersResult = await graphql(`
+        query {
+            allSpeakersYaml {
+                edges {
+                    node {
+                        id
+                        slug
+                    }
+                }
+            }
+        }
+    `)
+    speakersResult.data.allSpeakersYaml.edges.forEach(({ node }) => {
+        createPage({
+            path: `/program/speakers/${node.slug}`,
+            component: path.resolve(`./src/templates/speaker-page.js`),
+            context: {
+                id: node.id,
+            }
+        })
+    })
 }
 
 // const path = require("path");

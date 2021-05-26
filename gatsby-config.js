@@ -62,7 +62,7 @@ module.exports = {
         link: `/speaking`,
         subMenu: [
           {
-            name: `Speaker Information`,
+            name: `Information for Speakers`,
             link: `/speaking/speaker-info`,
           },
           {

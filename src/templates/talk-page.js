@@ -9,8 +9,7 @@ export default function TalkPage({ data }) {
     const speakers = talk.speakers
         .map(s => <Themed.a as={Link} to={`/program/speakers/${s.slug}`}>{s.name}</Themed.a>)
         .reduce((prev, curr) => [prev, ', ', curr])
-    // const speakers = 'ffff'
-    
+
     return (
         <Layout>
             <h1>{talk.title}</h1>
