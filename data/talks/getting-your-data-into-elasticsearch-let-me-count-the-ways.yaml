@@ -1,5 +1,5 @@
 code: CLG3NE
-description: <p>There's a few different ways for you to index your data into Elasticsearch.
+description: <p>There are a few different ways for you to index your data into Elasticsearch.
   This talk will cover how to make your data searchable via your web app or from a
   data frame.</p>
 slug: getting-your-data-into-elasticsearch-let-me-count-the-ways

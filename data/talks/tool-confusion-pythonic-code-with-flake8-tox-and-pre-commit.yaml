@@ -17,5 +17,5 @@ speakers:
   code: EARAKA
   name: Jürgen Gmach
   slug: jurgen-gmach
-title: Tool Confusion - Pythonic Code with flake8, tox and pre-commit
+title: 'Tool Confusion: Pythonic Code with flake8, tox and pre-commit'
 type: Lightning Talk

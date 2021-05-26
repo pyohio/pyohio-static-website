@@ -1,10 +1,10 @@
 code: C9SMFW
-description: <p>Is your python scripts taking too long, and your CPU utilization too
+description: <p>Is your Python script taking too long, and your CPU utilization too
   low? Enter the concurrent execution standard libraries (<code>threading</code>,
   <code>multiprocessing</code>, <code>concurrent.futures</code>, etc.). Throughout
   the talk, we will look through various toy problems and learn how we can quickly
-  speed it up for IO bound and CPU bound processes using the python standard library.  So
-  you can get more done and raise that CPU usage to 100%.</p>
+  speed it up for IO bound and CPU bound processes using the Python standard library,
+  so you can get more done and raise that CPU usage to 100%.</p>
 slug: redlining-your-cpu-for-fun-and-profit-threading-and-multiprocessing-in-python
 speakers:
 - avatar: null

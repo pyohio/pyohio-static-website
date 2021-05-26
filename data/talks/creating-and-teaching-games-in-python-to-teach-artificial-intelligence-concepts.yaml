@@ -11,16 +11,23 @@ description: '<p>I am a High School Freshman who enjoys coding and robotics. For
   I think of how to include AI concepts in games. I write games utilizing libraries
   like turtle and pygame. I consult with my instructor and they help review my courses.</p>
 
-  <p>I would like to share my approach , give the audiences a sneak peak at my curriculum
+  <p>I would like to share my approach, give the audiences a sneak peak at my curriculum,
   and share some resources that I have created. </p>
 
   <p>Here are some examples of my curriculum:</p>
 
-  <p>A Cheat Sheet I made for Students <a href="https://docs.google.com/document/d/1nTM4zhnyI6ZvvGffhJ6tJTJnfBGc_Hwn5Rc_3oTwOSM/edit?usp=sharing">https://docs.google.com/document/d/1nTM4zhnyI6ZvvGffhJ6tJTJnfBGc_Hwn5Rc_3oTwOSM/edit?usp=sharing</a></p>
+  <ul>
 
-  <p>TicTacToe using AI <a href="https://docs.google.com/presentation/d/1aUIV6jAahnLCWUlGNwtWbg4ew6Q0afl3aSMgEVAaIkE/edit?usp=sharing">https://docs.google.com/presentation/d/1aUIV6jAahnLCWUlGNwtWbg4ew6Q0afl3aSMgEVAaIkE/edit?usp=sharing</a></p>
+  <li><a href="https://docs.google.com/document/d/1nTM4zhnyI6ZvvGffhJ6tJTJnfBGc_Hwn5Rc_3oTwOSM/edit?usp=sharing">A
+  Cheat Sheet I made for students</a></li>
 
-  <p>Stock Predictor using AI <a href="https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing">https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing</a></p>'
+  <li><a href="https://docs.google.com/presentation/d/1aUIV6jAahnLCWUlGNwtWbg4ew6Q0afl3aSMgEVAaIkE/edit?usp=sharing">TicTacToe
+  using AI</a></li>
+
+  <li><a href="https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing">Stock
+  Predictor using AI</a></li>
+
+  </ul>'
 slug: creating-and-teaching-games-in-python-to-teach-artificial-intelligence-concepts
 speakers:
 - avatar: null
