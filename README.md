@@ -17,4 +17,4 @@ Requirements:
 2. In a terminal, navigate to the top of this repository and run `yarn install`
 3. Run `yarn develop` to build the site and start the local server
 
-Prettier is set up as a command that can be run by itself. Please do that before making a PR. (hook coming eventually)
+Prettier is set up as a command that can be run by itself via `yarn prettier --write .`. Please do that before making a PR. (hook coming eventually)
