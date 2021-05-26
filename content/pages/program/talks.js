@@ -30,7 +30,7 @@ export default class TalksPage extends React.Component {
             >
               <Themed.a
                 as={Link}
-                to={`/events/talks/${talk.slug}`}
+                to={`/program/talks/${talk.slug}`}
                 sx={{color: "highlight"}}
               >
                 {talk.title}
