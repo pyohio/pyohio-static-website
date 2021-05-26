@@ -16,15 +16,15 @@ export default function TalkPage({ data }) {
 
   return (
     <Layout>
-    <BaseStyles>
-      <h1>{talk.title}</h1>
-      <p>
-        <em>{talk.type} (schedule TBD)</em>
-      </p>
-      <div dangerouslySetInnerHTML={{ __html: talk.description }} />
-      <h2>Presented by</h2>
-      <p>{speakers}</p>
-    </BaseStyles>
+      <BaseStyles>
+        <h1>{talk.title}</h1>
+        <p>
+          <em>{talk.type} (schedule TBD)</em>
+        </p>
+        <div dangerouslySetInnerHTML={{ __html: talk.description }} />
+        <h2>Presented by</h2>
+        <p>{speakers}</p>
+      </BaseStyles>
     </Layout>
   )
 }
