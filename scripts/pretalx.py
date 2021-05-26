@@ -16,6 +16,7 @@ except ImportError:
 
 PRETALX_EVENT_ID = "pyohio-2021"
 DATA_DIR = Path("./data")
+PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile-2021.png"
 
 @click.group()
 @click.pass_context
@@ -88,7 +89,7 @@ def get_event_data(ctx):
             "biography": markdown.markdown(speaker['biography']),
         }
         if data["avatar"] is None:
-            data["avatar"] = "https://www.pyohio.org/2019/static/3d5028a6ef291ad729cf7ef87e04816d/d092e/139.png"
+            data["avatar"] = PLACEHOLDER_AVATAR
         talk_codes =  [s for s in speaker["submissions"] if s in talks_by_code]
         speaker_talks = []
         for talk_code in talk_codes:
