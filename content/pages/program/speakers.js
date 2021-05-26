@@ -25,7 +25,7 @@ export default class TalksPage extends React.Component {
               key={speaker.id}
               sx={{
                 flex: "1 1 auto",
-                maxWidth: 200,
+                maxWidth: 160,
                 textAlign: "center",
                 px: 2,
               }}
@@ -63,8 +63,8 @@ export const pageQuery = graphql`
           localImage {
             childImageSharp {
               gatsbyImageData(
-                height: 200
-                width: 200
+                height: 150
+                width: 150
                 transformOptions: { fit: CONTAIN }
               )
             }

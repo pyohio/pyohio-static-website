@@ -44,8 +44,8 @@ export const speakerPageQuery = graphql`
       localImage {
         childImageSharp {
           gatsbyImageData(
-            height: 200
-            width: 200
+            height: 300
+            width: 300
             transformOptions: { fit: CONTAIN }
           )
         }
