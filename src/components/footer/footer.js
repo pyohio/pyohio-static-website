@@ -4,6 +4,7 @@ import { useSiteMetadata, SocialFooter } from "gatsby-theme-catalyst-core"
 import { IconContext } from "react-icons"
 import { useFooterConfig } from "gatsby-theme-catalyst-footer/src/utils/use-footer-config"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
 const SiteFooter = () => {
   const { title } = useSiteMetadata()
@@ -29,6 +30,16 @@ const SiteFooter = () => {
         variant: "variants.footer",
       }}
     >
+      <Helmet>
+        <meta
+          property="og:image"
+          content="https://www.pyohio.org/pyohio-2021-logo-og.jpg"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.pyohio.org/pyohio-2021-logo-og.jpg"
+        />
+      </Helmet>
       <div
         sx={{
           display: "grid",

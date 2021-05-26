@@ -17,21 +17,21 @@ export default function TalkPage({ data }) {
 
   return (
     <Layout>
-    <BaseStyles>
-      <h1>{speaker.name}</h1>
-      <Themed.img
-        as={GatsbyImage}
-        sx={{
-          borderRadius: "35px",
-          border: "7px solid",
-          borderColor: "highlight",
-        }}
-        image={getImage(speaker.localImage.childImageSharp)}
-      />
-      <div dangerouslySetInnerHTML={{ __html: speaker.biography }} />
-      <h2>Presenting</h2>
-      <p>{talks}</p>
-    </BaseStyles>
+      <BaseStyles>
+        <h1>{speaker.name}</h1>
+        <Themed.img
+          as={GatsbyImage}
+          sx={{
+            borderRadius: "35px",
+            border: "7px solid",
+            borderColor: "highlight",
+          }}
+          image={getImage(speaker.localImage.childImageSharp)}
+        />
+        <div dangerouslySetInnerHTML={{ __html: speaker.biography }} />
+        <h2>Presenting</h2>
+        <p>{talks}</p>
+      </BaseStyles>
     </Layout>
   )
 }
