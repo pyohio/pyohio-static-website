@@ -3,7 +3,7 @@
 import Layout from "gatsby-theme-catalyst-core/src/components/layout"
 import React from "react";
 import {Link, graphql} from "gatsby";
-import { jsx, Themed } from "theme-ui"
+import { jsx, Message, Themed } from "theme-ui"
 
 
 export default class TalksPage extends React.Component {
@@ -14,6 +14,9 @@ export default class TalksPage extends React.Component {
         return (
             <Layout>
                 <Themed.h1>Talks</Themed.h1>
+                <Message 
+                  sx={{backgroundColor: 'muted'}}
+                >Talk schedule TBD</Message>
 
         {talkList.map(({ node: talk }) => (
           <div key={talk.id}>

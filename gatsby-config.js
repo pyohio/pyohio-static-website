@@ -30,16 +30,16 @@ module.exports = {
         ],
       },
       {
-        name: `Attend`,
-        link: `/attend`,
+        name: `Participate`,
+        link: `/participate`,
         subMenu: [
           {
             name: `Virtual Attendance`,
-            link: `/attend`,
+            link: `/participate`,
           },
           {
             name: `Register`,
-            link: `/attend/register`,
+            link: `/participate/register`,
           },
         ],
       },

@@ -3,7 +3,7 @@
 import Layout from "gatsby-theme-catalyst-core/src/components/layout"
 import React from "react";
 import {Link, graphql} from "gatsby";
-import { jsx, Themed } from "theme-ui"
+import { jsx, Box, Flex, Themed } from "theme-ui"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default class TalksPage extends React.Component {
@@ -15,17 +15,23 @@ export default class TalksPage extends React.Component {
             <Layout>
                 <Themed.h1>Speakers</Themed.h1>
 
-        {speakerList.map(({ node: speaker }) => (
-          <div key={speaker.id}>
-            <Themed.p
-                as="h2"
-                sx={{
-                    fontSize: 3,
-                    lineHeight:1.25,
-                    pt: `20px`,
+            <Flex
+              sx={{
+                  flexFlow: 'row wrap',
                 }}
             >
 
+        {speakerList.map(({ node: speaker }) => (
+          <Box
+            key={speaker.id}
+            sx={{
+                flex: '1 1 auto',
+                maxWidth: 200,
+                textAlign: 'center',
+                px: 2,
+            }}
+          >
+            <Themed.p>
               <Themed.a
                 as={Link}
                 to={`/program/speakers/${speaker.slug}`}
@@ -33,8 +39,8 @@ export default class TalksPage extends React.Component {
                                   <Themed.img
                     as={GatsbyImage}
                     sx={{
-                        borderRadius: "25px",
-                        border: "5px solid",
+                        borderRadius: "35px",
+                        border: "7px solid",
                         borderColor: "highlight"
                     }}
                     image={getImage(speaker.localImage.childImageSharp)}
@@ -43,8 +49,9 @@ export default class TalksPage extends React.Component {
                 {speaker.name}
               </Themed.a>
             </Themed.p>
-          </div>
+          </Box>
         ))}
+        </Flex>
             </Layout>
         )
     }
