@@ -52,6 +52,13 @@ def get_event_data(ctx):
     click.echo("Getting talks...", err=True)
     results = get_all_json_results(sessions_url, headers)
 
+    click.echo("Deleteing old talk files...", err=True)
+    for f in Path(f"{DATA_DIR}/talks").glob('*.yaml'):
+        try:
+            f.unlink(missing_ok=True)
+        except OSError as e:
+            click.echo("Error: %s : %s" % (f, e.strerror), err=True)
+
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
     for talk in results:
@@ -90,6 +97,13 @@ def get_event_data(ctx):
         response = httpx.get(speaker_url, headers=headers)
         response.raise_for_status()
         speaker_data.append(response.json())
+
+    click.echo("Deleteing old speaker files...", err=True)
+    for f in Path(f"{DATA_DIR}/speakers").glob('*.yaml'):
+        try:
+            f.unlink(missing_ok=True)
+        except OSError as e:
+            click.echo("Error: %s : %s" % (f, e.strerror), err=True)
 
     click.echo("Writing speaker files...", err=True)
     for speaker in speaker_data:
