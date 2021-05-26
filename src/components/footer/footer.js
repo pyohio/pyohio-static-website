@@ -29,7 +29,6 @@ const SiteFooter = () => {
         variant: "variants.footer",
       }}
     >
-
       <div
         sx={{
           display: "grid",
@@ -77,13 +76,15 @@ const SiteFooter = () => {
         <Themed.p sx={{ m: 0 }}>
           © {new Date().getFullYear()} {title}
         </Themed.p>
-        <Themed.p sx={{ mb:0 }}>
-        <a href="https://www.netlify.com">
-          <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
-        </a>
+        <Themed.p sx={{ mb: 0 }}>
+          <a href="https://www.netlify.com">
+            <img
+              src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+              alt="Deploys by Netlify"
+            />
+          </a>
         </Themed.p>
       </div>
-
     </footer>
   )
 }

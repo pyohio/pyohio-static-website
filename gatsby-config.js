@@ -17,7 +17,7 @@ module.exports = {
         subMenu: [
           {
             name: `About PyOhio`,
-            link: `/about`
+            link: `/about`,
           },
           {
             name: `Code of Conduct`,
@@ -25,7 +25,7 @@ module.exports = {
           },
           {
             name: `Newsletter`,
-            link: `/about/newsletter`
+            link: `/about/newsletter`,
           },
         ],
       },
@@ -147,19 +147,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-remote-images`,
       options: {
-        nodeType: 'SpeakersYaml',
-        imagePath: 'avatar',
+        nodeType: "SpeakersYaml",
+        imagePath: "avatar",
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-112992906-1',
+        trackingId: "UA-112992906-1",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 }
