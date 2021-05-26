@@ -2,7 +2,7 @@
 import { jsx, useThemeUI, Themed } from "theme-ui"
 import { useSiteMetadata, SocialFooter } from "gatsby-theme-catalyst-core"
 import { IconContext } from "react-icons"
-import { useFooterConfig } from "gatsby-theme-catalyst-footer"
+import { useFooterConfig } from "gatsby-theme-catalyst-footer/src/utils/use-footer-config"
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 
