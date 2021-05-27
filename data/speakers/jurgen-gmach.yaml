@@ -8,3 +8,4 @@ talks:
 - code: J7ZCQQ
   slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
   title: 'Tool Confusion: Pythonic Code with flake8, tox and pre-commit'
+twitter: jugmac00

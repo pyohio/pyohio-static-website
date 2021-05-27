@@ -45,12 +45,32 @@ def pretalx(ctx):
 @click.pass_context
 def get_event_data(ctx):
     """Get session and speaker data from Pretalx"""
+    headers = {"Authorization": f"Token {ctx.obj['api_key']}"}
+
+    click.echo("Getting questions...", err=True)
+    questions_url = (
+        f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/questions"
+    )
+    questions_results = get_all_json_results(questions_url, headers)
+    twitter_question_id = None
+    for question in questions_results:
+        if question["question"]["en"] == "Twitter" and question["target"] == "speaker":
+            twitter_question_id = question["id"]
+   
+    click.echo("Getting answers...", err=True)
+    twitter_by_speaker_code = {}
+    if twitter_question_id:
+        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers?question={twitter_question_id}"
+        
+        answers_results = get_all_json_results(answers_url, headers)
+        for answer in answers_results:
+            twitter_by_speaker_code[answer["person"]] = answer["answer"].lstrip('@')
+
+    click.echo("Getting talks...", err=True)
     sessions_url = (
         f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/submissions?state=confirmed"
     )
-    headers = {"Authorization": f"Token {ctx.obj['api_key']}"}
-    click.echo("Getting talks...", err=True)
-    results = get_all_json_results(sessions_url, headers)
+    sessions_results = get_all_json_results(sessions_url, headers)
 
     click.echo("Deleteing old talk files...", err=True)
     for f in Path(f"{DATA_DIR}/talks").glob('*.yaml'):
@@ -61,7 +81,7 @@ def get_event_data(ctx):
 
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
-    for talk in results:
+    for talk in sessions_results:
         speakers = [
             {
                 "name": s["name"],
@@ -86,7 +106,7 @@ def get_event_data(ctx):
 
     click.echo("Getting speaker info...", err=True)
     speaker_codes = []
-    for talk in results:
+    for talk in sessions_results:
         for speaker in talk["speakers"]:
             speaker_codes.append(speaker["code"])
     speaker_data = []
@@ -128,6 +148,7 @@ def get_event_data(ctx):
             }
             speaker_talks.append(talk)
         data["talks"] = speaker_talks
+        data["twitter"] = twitter_by_speaker_code.get(data["code"])
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:

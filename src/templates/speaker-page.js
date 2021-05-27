@@ -4,6 +4,7 @@ import { Layout, Seo } from "gatsby-theme-catalyst-core"
 import { graphql, Link } from "gatsby"
 import { jsx, BaseStyles, Themed } from "theme-ui"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { FaTwitter } from "react-icons/fa"
 
 export default function TalkPage({ data }) {
   const speaker = data.speakersYaml
@@ -29,6 +30,8 @@ export default function TalkPage({ data }) {
           }}
           image={getImage(speaker.localImage.childImageSharp)}
         />
+
+        {speaker.twitter && <p><a href={`https://www.twitter.com/${speaker.twitter}`}><FaTwitter /> {speaker.twitter}</a></p>}
         <div dangerouslySetInnerHTML={{ __html: speaker.biography }} />
         <h2>Presenting</h2>
         <p>{talks}</p>
@@ -42,6 +45,7 @@ export const speakerPageQuery = graphql`
     speakersYaml(id: { eq: $id }) {
       name
       biography
+      twitter
       localImage {
         childImageSharp {
           gatsbyImageData(
