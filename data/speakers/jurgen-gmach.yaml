@@ -1,6 +1,13 @@
 avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
-biography: <p>I am a software developer and Linux sys admin with a deep passion for
+biography: '<p>I am a software developer and Linux sys admin with a deep passion for
   Python and open-source in general.</p>
+
+  <p>I''d love to hear from you! You can always reach out to me on <a href="https://twitter.com/jugmac00">Twitter</a>!</p>
+
+  <p>I also have a <a href="https://jugmac00.github.io/">personal website</a> with
+  <a href="https://jugmac00.github.io/blog/">blog posts</a>, mostly about Python and
+  Linux, tons of <a href="https://jugmac00.github.io/til/">"today I learned" posts</a>,
+  and also a list of my previous <a href="https://jugmac00.github.io/talks/">talks</a>.</p>'
 code: EARAKA
 name: Jürgen Gmach
 slug: jurgen-gmach
