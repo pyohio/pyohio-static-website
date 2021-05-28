@@ -31,7 +31,13 @@ export default function TalkPage({ data }) {
           image={getImage(speaker.localImage.childImageSharp)}
         />
 
-        {speaker.twitter && <p><a href={`https://www.twitter.com/${speaker.twitter}`}><FaTwitter /> {speaker.twitter}</a></p>}
+        {speaker.twitter && (
+          <p>
+            <a href={`https://www.twitter.com/${speaker.twitter}`}>
+              <FaTwitter /> {speaker.twitter}
+            </a>
+          </p>
+        )}
         <div dangerouslySetInnerHTML={{ __html: speaker.biography }} />
         <h2>Presenting</h2>
         <p>{talks}</p>

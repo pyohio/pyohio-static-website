@@ -6,6 +6,7 @@ const pyohioColors = {
   purple: "#502962",
   yellow: "#fcdc30",
   cyan: "#15bcdd",
+  darkCyan: "#1091aa",
   mutedPurple: "#46354e",
   darkPurple: "#1f1025",
 }
@@ -18,24 +19,24 @@ const theme = merge(BaseTheme, {
     background: baseColors.gray[1], //Try "#954264",
     text: baseColors.gray[8],
     textGray: "#6e6e6e",
-    primary: baseColors.blue[7],
+    primary: pyohioColors.darkCyan,
     secondary: baseColors.orange[7],
     accent: baseColors.orange[2],
-    highlight: baseColors.orange[5],
+    highlight: pyohioColors.purple,
     muted: baseColors.gray[2],
     header: {
       background: baseColors.gray[2],
       backgroundOpen: baseColors.blue[2],
-      text: baseColors.gray[8],
+      text: pyohioColors.purple,
       textOpen: baseColors.gray[8],
-      icons: baseColors.gray[6],
-      iconsOpen: baseColors.gray[6],
+      icons: pyohioColors.mutedPurple,
+      iconsOpen: pyohioColors.purple,
     },
     footer: {
       background: baseColors.gray[2],
       text: baseColors.gray[8],
       links: baseColors.gray[8],
-      icons: baseColors.gray[8],
+      icons: pyohioColors.purple,
     },
     // You can delete dark mode by removing the "modes" object and setting useColorMode to false in gatsby-theme-catalyst-core
     modes: {
