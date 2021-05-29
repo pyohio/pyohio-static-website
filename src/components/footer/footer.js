@@ -5,6 +5,7 @@ import { IconContext } from "react-icons"
 import { useFooterConfig } from "gatsby-theme-catalyst-footer/src/utils/use-footer-config"
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 
 const SiteFooter = () => {
   const { title } = useSiteMetadata()
@@ -71,18 +72,21 @@ const SiteFooter = () => {
           </IconContext.Provider>
         </div>
         <div>
-          <StaticImage
-            src="../../../content/assets/pyohio-2021-lightning-snake-transparent.png"
-            sx={{
-              // Styling for the logo using the breakpoint syntax from Theme-UI. Imagine something like [xs, sm, md, l, xl] for the breakpoint sizes. Play around with the logo sizes and your screen size to see the effects
-              height: ["30px", "30px", null, "30px", null],
-              width: ["100px", "100px", null, "150px", null],
-              // variant: "variants.siteLogo",
-            }}
-            alt="PyOhio Snake"
-            imgStyle={{ objectFit: "contain" }}
-            placeholder="blurred"
-          />
+          <Link to="/about/ohpyo">
+            <StaticImage
+              src="../../../content/assets/pyohio-2021-lightning-snake-sticker.png"
+              sx={{
+                // Styling for the logo using the breakpoint syntax from Theme-UI. Imagine something like [xs, sm, md, l, xl] for the breakpoint sizes. Play around with the logo sizes and your screen size to see the effects
+                height: ["30px", "30px", null, "30px", null],
+                width: ["100px", "100px", null, "150px", null],
+                // variant: "variants.siteLogo",
+              }}
+              alt="PyOhio Snake"
+              title="Why not OhPyO?"
+              imgStyle={{ objectFit: "contain" }}
+              placeholder="blurred"
+            />
+          </Link>
         </div>
         <Themed.p sx={{ m: 0 }}>
           © {new Date().getFullYear()} {title}
