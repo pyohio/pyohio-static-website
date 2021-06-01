@@ -1,0 +1,32 @@
+name: Update from PreTalx
+
+on:
+  schedule:
+    - cron:  '0 1,13 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-and-pr:
+    name: Update and PR
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.2
+        
+      - name: Install Poetry
+        run: |
+          cd scripts
+          pip install -U pip
+          pip install poetry
+          poetry install
+        env:
+          POETRY_VIRTUALENVS_CREATE: false
+
+
+      
