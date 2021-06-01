@@ -37,6 +37,8 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           commit-message: Update data from PreTalx
+          title: Update data from PreTalx
+          author: PyOhio Automation <noreply@pyohio.org>
           committer: PyOhio Automation <noreply@pyohio.org>
           body: |
             Automatic data update from PreTalx.
@@ -45,6 +47,9 @@ jobs:
             - If not, update data in PreTalx.
           labels: |
             automated-pr
+          branch: automatic-updates-from-pretalx
+          delete-branch: true
+          
         
         
       
