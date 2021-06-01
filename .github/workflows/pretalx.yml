@@ -28,5 +28,23 @@ jobs:
         env:
           POETRY_VIRTUALENVS_CREATE: false
 
+      - name: Get PreTalx Data
+        run: ./scripts/pretalx.py get-event-data
+        
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Update data from PreTalx
+          committer: PyOhio Automation <noreply@pyohio.org>
+          body: |
+            Automatic data update from PreTalx.
+            - Review changes to ensure they are appropriate to publish.
+            - If so, merge.
+            - If not, update data in PreTalx.
+          labels: |
+            automated-pr
+        
+        
+      
 
       
