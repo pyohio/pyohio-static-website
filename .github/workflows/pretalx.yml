@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Run Timestamp
+        run: date
+        
       - uses: actions/checkout@v2
 
       - name: Setup Python
