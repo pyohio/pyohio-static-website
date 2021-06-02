@@ -41,10 +41,10 @@ jobs:
           author: PyOhio Automation <noreply@pyohio.org>
           committer: PyOhio Automation <noreply@pyohio.org>
           body: |
-            Automatic data update from PreTalx.
+            This is an automatic data update from PreTalx.
             - Review changes to ensure they are appropriate to publish.
             - If so, merge.
-            - If not, update data in PreTalx.
+            - If not, update data in PreTalx and re-run this workflow.
           labels: |
             automated-pr
           branch: automatic-updates-from-pretalx
