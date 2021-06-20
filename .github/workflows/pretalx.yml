@@ -2,7 +2,7 @@ name: Update from PreTalx
 
 on:
   schedule:
-    - cron:  '30 13,1 * * *'
+    - cron: "30 13,1 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -15,12 +15,12 @@ jobs:
     steps:
       - name: Run Timestamp
         run: date
-        
+
       - uses: actions/checkout@v2
 
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
-        
+
       - name: Install Poetry
         run: |
           cd scripts
@@ -34,7 +34,7 @@ jobs:
         run: ./scripts/pretalx.py get-event-data
         env:
           PRETALX_API_KEY: ${{ secrets.PRETALX_API_KEY }}
-        
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
@@ -51,9 +51,3 @@ jobs:
             automated-pr
           branch: automatic-updates-from-pretalx
           delete-branch: true
-          
-        
-        
-      
-
-      

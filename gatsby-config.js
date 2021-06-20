@@ -35,12 +35,12 @@ module.exports = {
         link: `/participate`,
         subMenu: [
           {
-            name: `Virtual Attendance`,
-            link: `/participate`,
-          },
-          {
             name: `Register`,
             link: `/participate/register`,
+          },
+          {
+            name: `Virtual Attendance`,
+            link: `/participate`,
           },
         ],
       },
@@ -48,6 +48,10 @@ module.exports = {
         name: `Program`,
         link: `/program`,
         subMenu: [
+          {
+            name: `Schedule`,
+            link: `/program/schedule`,
+          },
           {
             name: `Talks`,
             link: `/program/talks`,
