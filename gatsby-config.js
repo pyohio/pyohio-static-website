@@ -7,11 +7,11 @@ module.exports = {
     siteUrl: `https://www.pyohio.org`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
 
     menuLinks: [
-      // {
-      //   name: `Example`,
-      //   link: `/example`,
-      //   location: `left`,
-      // },
+      {
+        name: `Register Now!`,
+        link: `https://ti.to/pyohio/pyohio-2021`,
+        location: `left`,
+      },
       {
         name: `About`,
         link: `/about`,

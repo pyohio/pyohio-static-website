@@ -18,6 +18,12 @@ const theme = merge(BaseTheme, {
     initialColorModeName: "dark",
     printColorModeName: "light,",
   },
+  buttons: {
+    primary: {
+      color: "primary",
+      bg: "highlight",
+    },
+  },
   colors: {
     ...tailwind.colors,
     background: baseColors.gray[1], //Try "#954264",
