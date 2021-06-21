@@ -14,7 +14,12 @@ export default class TalksPage extends React.Component {
       <Layout>
         <Seo title="PyOhio 2021 Talks" />
         <Themed.h1>Talks</Themed.h1>
-        <Message sx={{ backgroundColor: "muted" }}>Talk schedule TBD</Message>
+        <Message sx={{ backgroundColor: "muted" }}>
+          <Themed.a as={Link} to={`/program/schedule`}>
+            Talk schedule
+          </Themed.a>
+          TBD
+        </Message>
 
         {talkList.map(({ node: talk }) => (
           <div key={talk.id}>
