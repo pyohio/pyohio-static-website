@@ -27,6 +27,7 @@ export default function TalkPage({ data }) {
             borderRadius: "35px",
             border: "7px solid",
             borderColor: "highlight",
+            WebkitMaskImage: "-webkit-radial-gradient(white, black)",
           }}
           image={getImage(speaker.localImage.childImageSharp)}
         />
