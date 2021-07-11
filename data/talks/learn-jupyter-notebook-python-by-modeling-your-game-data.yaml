@@ -5,7 +5,7 @@ description: <p>When learning some new technology it usually seems to sink in be
   by modeling the StalkMarket prices of turnips on someone's ACNH Island.</p>
 slug: learn-jupyter-notebook-python-by-modeling-your-game-data
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/craig_sm512x590_copy_B2VOxVb.png
   code: BPYL8N
   name: Craig Lang
   slug: craig-lang
