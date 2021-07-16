@@ -127,6 +127,8 @@ def get_event_data(ctx):
 
     click.echo("Writing speaker files...", err=True)
     for speaker in speaker_data:
+        if speaker["biography"] is None:
+            speaker["biography"] = ""
         data = {
             "name": speaker["name"],
             "slug": slugify(speaker["name"]),
