@@ -134,6 +134,7 @@ def get_event_data(ctx):
             "slug": slugify(speaker["name"]),
             "code": speaker["code"],
             "avatar": speaker["avatar"],
+            "listed": True,
             "biography": markdown.markdown(speaker["biography"], extensions=[GithubFlavoredMarkdownExtension(), 'footnotes']),
         }
         if data["avatar"] is None:
@@ -151,6 +152,10 @@ def get_event_data(ctx):
             speaker_talks.append(talk)
         data["talks"] = speaker_talks
         data["twitter"] = twitter_by_speaker_code.get(data["code"])
+
+        # make organizers unlisted
+        if data["code"] == "KGVCNV":
+            data["listed"] = False
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:

@@ -8,6 +8,7 @@ biography: '<p>Zac''s modest goal is to help everyone write better code -- mostl
   a computer</a>, Zac can probably be found with a good book, a pile of chocolate,
   a long walk in the bush... or all three!</p>'
 code: LFU8AS
+listed: true
 name: Zac Hatfield-Dodds
 slug: zac-hatfield-dodds
 talks:

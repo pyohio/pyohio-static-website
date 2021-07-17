@@ -8,6 +8,7 @@ biography: '<p>I have spoken at IEEE, PyOhio and PyCon Canada on feature enginee
   <p>This conference talk is a synopsis of my published academic paper’s results:
   <a href="https://github.com/deborahanneharris/legal-documents">https://github.com/deborahanneharris/legal-documents</a></p>'
 code: CAMM3Y
+listed: true
 name: Deborah Diller Harris
 slug: deborah-diller-harris
 talks:

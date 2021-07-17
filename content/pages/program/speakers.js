@@ -57,7 +57,10 @@ export default class TalksPage extends React.Component {
 
 export const pageQuery = graphql`
   query SpeakersListQuery {
-    allSpeakersYaml(sort: { fields: [name] }) {
+    allSpeakersYaml(
+      sort: { fields: [name] }
+      filter: { listed: { eq: true } }
+    ) {
       edges {
         node {
           name

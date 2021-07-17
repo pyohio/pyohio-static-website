@@ -9,6 +9,7 @@ biography: '<p>I am a software developer and Linux sys admin with a deep passion
   Linux, tons of <a href="https://jugmac00.github.io/til/">"today I learned" posts</a>,
   and also a list of my previous <a href="https://jugmac00.github.io/talks/">talks</a>.</p>'
 code: EARAKA
+listed: true
 name: Jürgen Gmach
 slug: jurgen-gmach
 talks:

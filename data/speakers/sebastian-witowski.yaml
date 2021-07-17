@@ -7,6 +7,7 @@ biography: '<p>Sebastian is a Python consultant and trainer based in Poland. He 
   <p>In his spare time, he talks about Python, best practices in programming, and
   productivity.</p>'
 code: 8D7B98
+listed: true
 name: Sebastian Witowski
 slug: sebastian-witowski
 talks:
