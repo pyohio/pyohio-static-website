@@ -1,0 +1,15 @@
+code: JNEUKJ
+description: '<p>The world has lost the ability to pip install... what do we do?!?!
+  This talk explores a hypothetical Doomsday Scenario where the Python Package Index
+  has gone offline. We examine three ways we can import libraries we have not installed.</p>
+
+  <p>After this talk, attendees will have a better understanding of what happens when
+  a package is imported into Python.</p>'
+slug: life-without-pip-install
+speakers:
+- avatar: null
+  code: AJYLRJ
+  name: Aly Sivji
+  slug: aly-sivji
+title: Life Without `pip install` 😱
+type: Thunder Talk

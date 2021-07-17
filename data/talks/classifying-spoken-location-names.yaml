@@ -3,10 +3,10 @@ description: <p>This talk will highlight a problem such as classification of spe
   data where the expected spoken utterance is a location name, and how one can have
   a machine learn differences between utterances. Speech feature extraction and building
   a successful classification model will be discussed using open-source tools in Python,
-  along with practical examples to demonstrate usage.</p>
+  along with practical examples to demonstrate usage using pyAudioProcessing. <a href="https://github.com/jsingh811/pyAudioProcessing">https://github.com/jsingh811/pyAudioProcessing</a></p>
 slug: classifying-spoken-location-names
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/Jyotika_1159_1159_fScrJ6L.jpg
   code: YEPTF3
   name: Jyotika Singh
   slug: jyotika-singh
