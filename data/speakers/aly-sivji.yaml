@@ -10,6 +10,6 @@ name: Aly Sivji
 slug: aly-sivji
 talks:
 - code: JNEUKJ
-  slug: web-1-0-and-python
-  title: Web 1.0 and Python
+  slug: life-without-pip-install
+  title: Life Without `pip install` 😱
 twitter: CaiusSivjus
