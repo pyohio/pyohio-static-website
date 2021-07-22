@@ -13,6 +13,6 @@ name: Zac Hatfield-Dodds
 slug: zac-hatfield-dodds
 talks:
 - code: NUGCQJ
-  slug: i-wrote-code-to-write-your-tests
-  title: I Wrote Code to Write Your Tests!
+  slug: fully-automated-testing
+  title: Fully Automated Testing
 twitter: null

@@ -9,8 +9,8 @@ description: '<p>Software architecture has a bad rep. It''s supposed to be trick
   <p>This talk is about 5 basic principles for software architecture that can be applied
   to projects big and small: correctness, clarity, simplicity, modularity and empathy.
   It''s about boiling architecture down to it''s bare essence - ergonomics. We''ll
-  look at these 5 principles in code examples, and end up with 4 super-distilled lessons
-  that we can apply TODAY to our code to make it better.</p>'
+  look at these 5 principles and end up with 4 super-distilled lessons that we can
+  apply TODAY to our code to make it better.</p>'
 slug: easy-as-py-architecture-in-10-minutes
 speakers:
 - avatar: https://pretalx.com/media/avatars/Profile_umHLeC2.jpg
