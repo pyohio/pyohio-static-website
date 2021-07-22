@@ -11,7 +11,12 @@ description: '<p>The United States is facing an urgent crisis in the treatment o
   <p>All PTSD claims are legal arguments. As such, all legal arguments must have structured
   reasoning. Using this legal structure, documents can be processed by Python NLP
   machine learning models. These models can be used to streamline the process of adjudicating
-  the claims and appeals.</p>'
+  the claims and appeals. </p>
+
+  <p>Slides: <a href="https://bit.ly/DeepLearningPTSD">https://bit.ly/DeepLearningPTSD</a><br
+  />
+
+  Paper: <a href="https://github.com/deborahanneharris/legal-documents/">https://github.com/deborahanneharris/legal-documents/</a></p>'
 slug: combating-ptsd-with-machine-learning
 speakers:
 - avatar: https://pretalx.com/media/avatars/October_2018_7Di1U6j.JPG

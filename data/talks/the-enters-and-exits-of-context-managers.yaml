@@ -2,7 +2,8 @@ code: PKVU8N
 description: <p>Have you ever opened a file using the with keyword in Python? That
   little keyword is one of the many fascinating parts of the Python programming language,
   the Context Manager. This talk will cover all things Context Manager, from what
-  they are, how to build them, when to use them, and more.</p>
+  they are, how to build them, when to use them, and more. View the source code for
+  this entire presentation on <a href="https://github.com/MasonEgger/context-managers-sample-code">GitHub</a></p>
 slug: the-enters-and-exits-of-context-managers
 speakers:
 - avatar: https://pretalx.com/media/avatars/attachment_6_Dicge7M.jpeg

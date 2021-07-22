@@ -7,11 +7,11 @@ description: '<p>I maintain Hypothesis, a library to automatically generate inpu
 
   <p>If you''re tired of testing but still don''t want bugs, come see how we can take
   automation to a whole new level :-)</p>'
-slug: i-wrote-code-to-write-your-tests
+slug: fully-automated-testing
 speakers:
 - avatar: null
   code: LFU8AS
   name: Zac Hatfield-Dodds
   slug: zac-hatfield-dodds
-title: I Wrote Code to Write Your Tests!
+title: Fully Automated Testing
 type: Thunder Talk
