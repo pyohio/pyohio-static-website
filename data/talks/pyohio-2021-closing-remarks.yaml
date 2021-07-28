@@ -1,10 +1,13 @@
 code: XDZYKA
 description: <p>PyOhio 2021 closing remarks</p>
+duration: 5
+end_time: '2021-07-31T14:55:00-04:00'
 slug: pyohio-2021-closing-remarks
 speakers:
 - avatar: null
   code: KGVCNV
   name: Dave Forgac
   slug: dave-forgac
+start_time: '2021-07-31T14:50:00-04:00'
 title: PyOhio 2021 Closing Remarks
 type: Plenary Session

@@ -15,11 +15,14 @@ description: '<p>This talk teaches four simple concepts to those who want to sta
   out-degree distribution of passes, clustering coefficient, centrality, etc.)</li>
 
   </ol>'
+duration: 10
+end_time: '2021-07-31T10:25:00-04:00'
 slug: introduction-to-soccer-pass-network-analysis-with-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/image_2_ZU2pkc8.jpg
   code: WBC8WH
   name: Indranil Ghosh
   slug: indranil-ghosh
+start_time: '2021-07-31T10:15:00-04:00'
 title: Introduction to Soccer Pass Network Analysis with Python
 type: Thunder Talk

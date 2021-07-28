@@ -6,11 +6,14 @@ description: <p>This will be a tutorial based talk with a demo at the end on how
   which is an easy to use packaging and API for the above systems and also go over
   using speech recognition and text to speech to make interaction more fluid. At the
   end there will be an interactive demo.</p>
+duration: 10
+end_time: '2021-07-31T14:15:00-04:00'
 slug: how-to-make-friends-and-influence-users-with-huggingface
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_6905_dyp36KU.jpeg
   code: 38ZTYY
   name: Joshua Jay Herman
   slug: joshua-jay-herman
+start_time: '2021-07-31T14:05:00-04:00'
 title: How to Make Friends and Influence Users with Huggingface
 type: Thunder Talk
