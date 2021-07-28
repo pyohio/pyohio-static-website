@@ -28,11 +28,14 @@ description: '<p>I am a High School Freshman who enjoys coding and robotics. For
   Predictor using AI</a></li>
 
   </ul>'
+duration: 5
+end_time: '2021-07-31T14:35:00-04:00'
 slug: creating-and-teaching-games-in-python-to-teach-artificial-intelligence-concepts
 speakers:
 - avatar: null
   code: ZSEY9M
   name: Anay Pant
   slug: anay-pant
+start_time: '2021-07-31T14:30:00-04:00'
 title: Creating and Teaching Games in Python to Teach Artificial Intelligence Concepts
 type: Lightning Talk

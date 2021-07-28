@@ -5,6 +5,7 @@
   "private": true,
   "author": "PyOhio",
   "dependencies": {
+    "date-fns": "^2.23.0",
     "gatsby": "^3.4.2",
     "gatsby-cli": "^3.4.1",
     "gatsby-plugin-google-analytics": "^3.5.0",

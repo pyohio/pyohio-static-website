@@ -5,11 +5,14 @@ description: <p>Is your Python script taking too long, and your CPU utilization 
   the talk, we will look through various toy problems and learn how we can quickly
   speed it up for IO bound and CPU bound processes using the Python standard library,
   so you can get more done and raise that CPU usage to 100%.</p>
+duration: 10
+end_time: '2021-07-31T13:25:00-04:00'
 slug: redlining-your-cpu-for-fun-and-profit-threading-and-multiprocessing-in-python
 speakers:
 - avatar: null
   code: FM3WYU
   name: Alex Zharichenko
   slug: alex-zharichenko
+start_time: '2021-07-31T13:15:00-04:00'
 title: 'Redlining Your CPU for Fun and Profit: Threading and Multiprocessing in Python'
 type: Thunder Talk

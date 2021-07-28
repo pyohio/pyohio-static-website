@@ -2,11 +2,14 @@ code: FMY7SS
 description: <p>We will discuss Qtile, a window manager that is written in Python.
   We will go over basic functionalities and also see how to modify it for a more custom
   experience.</p>
+duration: 10
+end_time: null
 slug: python-your-desktop-with-qtile
 speakers:
 - avatar: null
   code: TPRJ7C
   name: Damien Calloway
   slug: damien-calloway
+start_time: null
 title: Python Your Desktop with Qtile
-type: Thunder Talk
+type: Bonus Talk

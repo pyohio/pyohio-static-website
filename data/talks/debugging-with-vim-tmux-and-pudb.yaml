@@ -6,11 +6,14 @@ description: <p>Ever found yourself stuck in a SSH session with some Python code
   you through using vim, tmux, and pudb to effectively debug code in various situations.
   We'll show how to insert breakpoints into the code and do remote debugging, all
   from the comfort of a tmux shell.</p>
+duration: 5
+end_time: '2021-07-31T13:35:00-04:00'
 slug: debugging-with-vim-tmux-and-pudb
 speakers:
 - avatar: null
   code: RHQGPQ
   name: Craig Maloney
   slug: craig-maloney
+start_time: '2021-07-31T13:30:00-04:00'
 title: Debugging with vim, tmux, and pudb
 type: Lightning Talk

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+from datetime import datetime
 from pathlib import Path
 
 import click
@@ -96,6 +97,9 @@ def get_event_data(ctx):
             "title": talk["title"],
             "slug": slugify(talk["title"]),
             "description": markdown.markdown(talk["description"], extensions=[GithubFlavoredMarkdownExtension(), 'footnotes']),
+            "start_time": talk.get("slot", {}).get("start"),
+            "end_time": talk.get("slot", {}).get("end"),
+            "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
         }

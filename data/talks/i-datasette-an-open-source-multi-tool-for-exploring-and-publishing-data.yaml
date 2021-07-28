@@ -14,11 +14,14 @@ description: '<p>Datasette is described by its creator, Simon Willison, as "a to
   <h2>Cincinnati &amp; Hamilton County Public Library Collection-Analysis</h2>
 
   <p><a href="https://ilsweb.cincinnatilibrary.org/collection-analysis/">https://ilsweb.cincinnatilibrary.org/collection-analysis/</a></p>'
+duration: 10
+end_time: '2021-07-31T10:55:00-04:00'
 slug: i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data
 speakers:
 - avatar: null
   code: W3XTHQ
   name: Ray Voelker
   slug: ray-voelker
+start_time: '2021-07-31T10:45:00-04:00'
 title: 'I ❤️ Datasette: An Open Source Multi-tool for Exploring and Publishing Data'
 type: Thunder Talk

@@ -46,11 +46,14 @@ description: '<p>Every year thousands of developers try to solve the programming
   </ol>
 
   </div>'
+duration: 10
+end_time: '2021-07-31T12:45:00-04:00'
 slug: 9-jupyter-notebook-tricks-for-your-next-advent-of-code
 speakers:
 - avatar: null
   code: 8D7B98
   name: Sebastian Witowski
   slug: sebastian-witowski
+start_time: '2021-07-31T12:35:00-04:00'
 title: 9 Jupyter Notebook Tricks for Your Next Advent of Code
 type: Thunder Talk

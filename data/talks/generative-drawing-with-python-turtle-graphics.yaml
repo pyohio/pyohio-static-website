@@ -4,11 +4,14 @@ description: '<p>Using Python''s built in Turtle module, and some random numbers
   less than fifty lines of code.</p>
 
   <p>Repository link: <a href="https://github.com/dominicduffin1/python-turtle-experiments">https://github.com/dominicduffin1/python-turtle-experiments</a></p>'
+duration: 5
+end_time: '2021-07-31T14:05:00-04:00'
 slug: generative-drawing-with-python-turtle-graphics
 speakers:
 - avatar: https://pretalx.com/media/avatars/DominicDuffin_Pi6MV8e.JPG
   code: 9CQKBJ
   name: Dominic Duffin
   slug: dominic-duffin
+start_time: '2021-07-31T14:00:00-04:00'
 title: Generative Drawing with Python Turtle Graphics
 type: Lightning Talk

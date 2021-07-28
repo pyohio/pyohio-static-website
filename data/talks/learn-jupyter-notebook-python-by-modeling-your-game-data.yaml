@@ -7,11 +7,14 @@ description: '<p>When learning some new technology it usually seems to sink in b
   <p>More information for after viewing the presentation: <br />
 
   <a href="https://snacktraces.com/pyohio21/">https://snacktraces.com/pyohio21/</a></p>'
+duration: 5
+end_time: '2021-07-31T11:05:00-04:00'
 slug: learn-jupyter-notebook-python-by-modeling-your-game-data
 speakers:
 - avatar: https://pretalx.com/media/avatars/craig_sm512x590_copy_B2VOxVb.png
   code: BPYL8N
   name: Craig Lang
   slug: craig-lang
+start_time: '2021-07-31T11:00:00-04:00'
 title: Learn Jupyter Notebook Python by Modeling Your Game Data
 type: Lightning Talk
