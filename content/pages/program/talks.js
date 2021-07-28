@@ -15,6 +15,7 @@ export default class TalksPage extends React.Component {
         <Seo title="PyOhio 2021 Talks" />
         <Themed.h1>Talks</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>
+          Now published:{" "}
           <Themed.a as={Link} to={`/program/schedule`}>
             Detailed schedule
           </Themed.a>
@@ -62,7 +63,7 @@ export default class TalksPage extends React.Component {
 
 export const pageQuery = graphql`
   query TalksListQuery {
-    allTalksYaml(sort: { fields: [title] }) {
+    allTalksYaml(sort: { fields: [title] }, filter: { type: { ne: "Break" } }) {
       edges {
         node {
           title

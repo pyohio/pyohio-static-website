@@ -3,7 +3,7 @@
 import { Layout, Seo } from "gatsby-theme-catalyst-core"
 import { graphql, Link } from "gatsby"
 import { jsx, BaseStyles, Themed } from "theme-ui"
-import {format} from "date-fns"
+import { format } from "date-fns"
 
 export default function TalkPage({ data }) {
   const talk = data.talksYaml
@@ -21,11 +21,17 @@ export default function TalkPage({ data }) {
       <BaseStyles>
         <h1>{talk.title}</h1>
         <p>
-          <em>{talk.type} at {format(new Date(talk.start_time), "hh:mma")} EDT</em>
+          <em>
+            {talk.type} at {format(new Date(talk.start_time), "hh:mma")} EDT
+          </em>
         </p>
         <div dangerouslySetInnerHTML={{ __html: talk.description }} />
-        <h2>Presented by</h2>
-        <p>{speakers}</p>
+        {talk.type !== "Break" && (
+          <div>
+            <h2>Presented by</h2>
+            <p>{speakers}</p>
+          </div>
+        )}
       </BaseStyles>
     </Layout>
   )

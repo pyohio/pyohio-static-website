@@ -16,7 +16,8 @@ export default class TalksPage extends React.Component {
         <Seo title="PyOhio 2021 Schedule" />
         <Themed.h1>Schedule</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>
-          PyOhio is July 31, 2021. There is a break from 12:00-12:30PM. All times EDT.
+          PyOhio is July 31, 2021. Times rounded to the nearest 5 mins. All
+          times EDT.
         </Message>
 
         <Themed.table
@@ -61,14 +62,18 @@ export default class TalksPage extends React.Component {
                     {talk.title}
                   </Themed.a>
                 </Themed.a>
-                by{" "}
-                {talk.speakers
-                  .map((s) => (
-                    <Themed.a as={Link} to={`/program/speakers/${s.slug}`}>
-                      {s.name}
-                    </Themed.a>
-                  ))
-                  .reduce((prev, curr) => [prev, ", ", curr])}
+                {talk.type !== "Break" && (
+                  <span>
+                    by{" "}
+                    {talk.speakers
+                      .map((s) => (
+                        <Themed.a as={Link} to={`/program/speakers/${s.slug}`}>
+                          {s.name}
+                        </Themed.a>
+                      ))
+                      .reduce((prev, curr) => [prev, ", ", curr])}
+                  </span>
+                )}
               </td>
             </tr>
           ))}
