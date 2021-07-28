@@ -16,7 +16,7 @@ export default class TalksPage extends React.Component {
         <Seo title="PyOhio 2021 Schedule" />
         <Themed.h1>Schedule</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>
-          PyOhio is July 31, 2021. All times EDT.
+          PyOhio is July 31, 2021. There is a break from 12:00-12:30PM. All times EDT.
         </Message>
 
         <Themed.table
@@ -30,6 +30,8 @@ export default class TalksPage extends React.Component {
               },
               th: {
                 backgroundColor: "muted",
+                border: "2px solid",
+                borderColor: "muted",
               },
             },
           }}

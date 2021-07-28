@@ -16,9 +16,8 @@ export default class TalksPage extends React.Component {
         <Themed.h1>Talks</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>
           <Themed.a as={Link} to={`/program/schedule`}>
-            Talk schedule
+            Detailed schedule
           </Themed.a>
-          TBD
         </Message>
 
         {talkList.map(({ node: talk }) => (
