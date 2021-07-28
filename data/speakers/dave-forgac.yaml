@@ -1,5 +1,5 @@
 avatar: https://www.gravatar.com/avatar/e4e205344ef244c966a39f4b5a20c55b?s=300
-biography: <p>PyOhio organizer</p>
+biography: <p>PyOhio 2021 Conference Chair</p>
 code: KGVCNV
 listed: false
 name: Dave Forgac
@@ -11,4 +11,7 @@ talks:
 - code: XDZYKA
   slug: pyohio-2021-closing-remarks
   title: PyOhio 2021 Closing Remarks
+- code: 7VP8C7
+  slug: break
+  title: Break
 twitter: tylerdave

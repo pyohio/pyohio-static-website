@@ -1,5 +1,15 @@
 code: CXGLBR
-description: <p>PyOhio 2021 opening remarks</p>
+description: '<p>Welcome to PyOhio!</p>
+
+  <ul>
+
+  <li><a href="https://www.pyohio.org/conduct">Code of Conduct</a></li>
+
+  <li><a href="https://chat.pyohio.org">Chat on Discord</a></li>
+
+  <li><a href="https://pyohio.org/shirts">T-Shirt Fundraiser</a></li>
+
+  </ul>'
 duration: 5
 end_time: '2021-07-31T09:05:00-04:00'
 slug: pyohio-2021-opening-remarks
