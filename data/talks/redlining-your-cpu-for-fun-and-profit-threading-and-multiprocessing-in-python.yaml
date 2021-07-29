@@ -6,7 +6,7 @@ description: <p>Is your Python script taking too long, and your CPU utilization 
   speed it up for IO bound and CPU bound processes using the Python standard library,
   so you can get more done and raise that CPU usage to 100%.</p>
 duration: 10
-end_time: '2021-07-31T13:25:00-04:00'
+end_time: '2021-07-31T17:25:00Z'
 slug: redlining-your-cpu-for-fun-and-profit-threading-and-multiprocessing-in-python
 speakers:
 - avatar: null

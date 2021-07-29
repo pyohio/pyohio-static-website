@@ -7,7 +7,7 @@ description: <p>This will be a tutorial based talk with a demo at the end on how
   using speech recognition and text to speech to make interaction more fluid. At the
   end there will be an interactive demo.</p>
 duration: 10
-end_time: '2021-07-31T14:15:00-04:00'
+end_time: '2021-07-31T18:15:00Z'
 slug: how-to-make-friends-and-influence-users-with-huggingface
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_6905_dyp36KU.jpeg

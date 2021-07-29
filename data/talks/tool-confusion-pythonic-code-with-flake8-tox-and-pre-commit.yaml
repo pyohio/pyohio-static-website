@@ -12,7 +12,7 @@ description: '<p>Imagine you created this awesome Python project.</p>
   <p>How do you make sure your colleagues also use the same linters... in the same
   version?</p>'
 duration: 5
-end_time: '2021-07-31T10:05:00-04:00'
+end_time: '2021-07-31T14:05:00Z'
 slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
 speakers:
 - avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg

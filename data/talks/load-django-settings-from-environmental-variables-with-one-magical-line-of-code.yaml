@@ -4,7 +4,7 @@ description: <p>This talk goes over a new Python library, djenv, that makes Djan
   and advanced usage including deploying Django projects with Docker.  We’ll dive
   into the djenv source code and teach advanced concepts like locals and del.</p>
 duration: 5
-end_time: '2021-07-31T14:40:00-04:00'
+end_time: '2021-07-31T18:40:00Z'
 slug: load-django-settings-from-environmental-variables-with-one-magical-line-of-code
 speakers:
 - avatar: https://pretalx.com/media/avatars/daniel-dufour_np1IADE.jpeg

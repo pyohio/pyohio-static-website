@@ -7,7 +7,7 @@ description: <p>Ever found yourself stuck in a SSH session with some Python code
   We'll show how to insert breakpoints into the code and do remote debugging, all
   from the comfort of a tmux shell.</p>
 duration: 5
-end_time: '2021-07-31T13:35:00-04:00'
+end_time: '2021-07-31T17:35:00Z'
 slug: debugging-with-vim-tmux-and-pudb
 speakers:
 - avatar: null

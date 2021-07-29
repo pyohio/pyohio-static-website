@@ -12,7 +12,7 @@ description: '<p>The match statement is a new feature of the Python language, de
   demonstrate some typical use cases, briefly discuss Python''s implementation, and
   propose some best practices when solving problems with the match statement.</p>'
 duration: 10
-end_time: '2021-07-31T09:55:00-04:00'
+end_time: '2021-07-31T13:55:00Z'
 slug: an-exploration-of-python-s-upcoming-match-statement
 speakers:
 - avatar: null
