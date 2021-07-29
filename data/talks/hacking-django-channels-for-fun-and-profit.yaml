@@ -6,7 +6,7 @@ description: <p>Django is growing some great async features and Channels has bee
   leverage all the batteries included with Django? We will show an approach that makes
   this all possible and easy as a developer.</p>
 duration: 10
-end_time: '2021-07-31T11:55:00-04:00'
+end_time: '2021-07-31T15:55:00Z'
 slug: hacking-django-channels-for-fun-and-profit
 speakers:
 - avatar: null

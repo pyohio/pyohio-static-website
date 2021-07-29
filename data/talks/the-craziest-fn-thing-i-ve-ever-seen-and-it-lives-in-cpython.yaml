@@ -8,7 +8,7 @@ description: '<p>I am enamored with dataclasses. I love them in Python, I love t
   <p>Join me as I shared what I found out about my dear dataclasses, and get a better
   understand of decorators and metaprogramming in Python!</p>'
 duration: 5
-end_time: '2021-07-31T13:05:00-04:00'
+end_time: '2021-07-31T17:05:00Z'
 slug: the-craziest-fn-thing-i-ve-ever-seen-and-it-lives-in-cpython
 speakers:
 - avatar: https://pretalx.com/media/avatars/Team_Photos_2019_0011_Daniel_tvh0zWe.jpg

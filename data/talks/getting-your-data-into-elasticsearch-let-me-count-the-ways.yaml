@@ -3,7 +3,7 @@ description: <p>There are a few different ways for you to index your data into E
   This talk will cover how to make your data searchable via your web app or from a
   data frame.</p>
 duration: 10
-end_time: '2021-07-31T09:45:00-04:00'
+end_time: '2021-07-31T13:45:00Z'
 slug: getting-your-data-into-elasticsearch-let-me-count-the-ways
 speakers:
 - avatar: null
