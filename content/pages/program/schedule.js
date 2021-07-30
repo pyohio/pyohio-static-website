@@ -4,12 +4,18 @@ import { Layout, Seo } from "gatsby-theme-catalyst-core"
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { jsx, Message, Themed } from "theme-ui"
-import { format } from "date-fns"
+import { DateTime } from "luxon"
 
 export default class TalksPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: talkList } = data.allTalksYaml
+
+    function formatTime(timeString) {
+      return DateTime.fromISO(timeString)
+        .setZone("America/New_York")
+        .toFormat("h:mma")
+    }
 
     return (
       <Layout>
@@ -44,8 +50,8 @@ export default class TalksPage extends React.Component {
           </tr>
           {talkList.map(({ node: talk }) => (
             <tr key={talk.id}>
-              <td>{format(new Date(talk.start_time), "hh:mma")}</td>
-              <td>{format(new Date(talk.end_time), "hh:mma")}</td>
+              <td>{formatTime(talk.start_time)}</td>
+              <td>{formatTime(talk.end_time)}</td>
 
               <td>
                 <Themed.a

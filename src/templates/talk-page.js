@@ -3,7 +3,7 @@
 import { Layout, Seo } from "gatsby-theme-catalyst-core"
 import { graphql, Link } from "gatsby"
 import { jsx, BaseStyles, Themed } from "theme-ui"
-import { format } from "date-fns"
+import { DateTime } from "luxon"
 
 export default function TalkPage({ data }) {
   const talk = data.talksYaml
@@ -15,6 +15,11 @@ export default function TalkPage({ data }) {
     ))
     .reduce((prev, curr) => [prev, ", ", curr])
 
+  function formatTime(timeString) {
+    return DateTime.fromISO(timeString)
+      .setZone("America/New_York")
+      .toFormat("h:mma")
+  }
   return (
     <Layout>
       <Seo title={`PyOhio 2021 Talk: ${talk.title}`} />
@@ -22,7 +27,7 @@ export default function TalkPage({ data }) {
         <h1>{talk.title}</h1>
         <p>
           <em>
-            {talk.type} at {format(new Date(talk.start_time), "hh:mma")} EDT
+            {talk.type} at {formatTime(talk.start_time)} EDT
           </em>
         </p>
         <div dangerouslySetInnerHTML={{ __html: talk.description }} />
