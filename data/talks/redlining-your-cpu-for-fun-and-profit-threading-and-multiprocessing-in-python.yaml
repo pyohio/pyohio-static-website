@@ -1,4 +1,5 @@
 code: C9SMFW
+content_warnings: null
 description: <p>Is your Python script taking too long, and your CPU utilization too
   low? Enter the concurrent execution standard libraries (<code>threading</code>,
   <code>multiprocessing</code>, <code>concurrent.futures</code>, etc.). Throughout
@@ -18,3 +19,4 @@ speakers:
 start_time: '2021-07-31T13:15:00-04:00'
 title: 'Redlining Your CPU for Fun and Profit: Threading and Multiprocessing in Python'
 type: Thunder Talk
+youtube_url: https://youtu.be/rUPIpH-mrO8

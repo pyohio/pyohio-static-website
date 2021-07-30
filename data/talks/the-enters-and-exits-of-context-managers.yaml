@@ -1,4 +1,5 @@
 code: PKVU8N
+content_warnings: null
 description: <p>Have you ever opened a file using the with keyword in Python? That
   little keyword is one of the many fascinating parts of the Python programming language,
   the Context Manager. This talk will cover all things Context Manager, from what
@@ -17,3 +18,4 @@ speakers:
 start_time: '2021-07-31T11:30:00-04:00'
 title: The Enters and Exits of Context Managers
 type: Lightning Talk
+youtube_url: https://youtu.be/rcs6W5EHJS8

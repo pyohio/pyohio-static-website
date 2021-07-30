@@ -1,4 +1,5 @@
 code: X9PWR7
+content_warnings: null
 description: '<p>The match statement is a new feature of the Python language, defined
   in PEP-634 and will be standard in the upcoming Python 3.10 (due out in October
   2021).</p>
@@ -24,3 +25,4 @@ speakers:
 start_time: '2021-07-31T09:45:00-04:00'
 title: An Exploration of Python's Upcoming Match Statement
 type: Thunder Talk
+youtube_url: https://youtu.be/VjKkRNEoGf4

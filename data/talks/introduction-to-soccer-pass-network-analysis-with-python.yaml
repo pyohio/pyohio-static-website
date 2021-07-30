@@ -1,4 +1,5 @@
 code: RVZZSV
+content_warnings: null
 description: '<p>This talk teaches four simple concepts to those who want to start
   working on football data analysis:</p>
 
@@ -28,3 +29,4 @@ speakers:
 start_time: '2021-07-31T10:15:00-04:00'
 title: Introduction to Soccer Pass Network Analysis with Python
 type: Thunder Talk
+youtube_url: https://youtu.be/FHEaI6oRYQM

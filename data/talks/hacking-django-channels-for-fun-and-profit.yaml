@@ -1,4 +1,5 @@
 code: V9789A
+content_warnings: null
 description: <p>Django is growing some great async features and Channels has been
   great for handling websockets connecting from your visitor's browser. But what happens
   when you need to do more? What if you want to keep long-running connections from
@@ -18,3 +19,4 @@ speakers:
 start_time: '2021-07-31T11:45:00-04:00'
 title: Hacking Django Channels for Fun (and Profit)
 type: Thunder Talk
+youtube_url: https://youtu.be/OslW2NF7Rhw

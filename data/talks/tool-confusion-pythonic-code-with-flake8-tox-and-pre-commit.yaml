@@ -1,4 +1,5 @@
 code: J7ZCQQ
+content_warnings: null
 description: '<p>Imagine you created this awesome Python project.</p>
 
   <p>But before you want to release it to the world, you want to make sure it follows
@@ -24,3 +25,4 @@ speakers:
 start_time: '2021-07-31T10:00:00-04:00'
 title: 'Tool Confusion: Pythonic Code with flake8, tox and pre-commit'
 type: Lightning Talk
+youtube_url: https://youtu.be/OnM3KuE7MQM

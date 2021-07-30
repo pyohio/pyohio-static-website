@@ -1,4 +1,5 @@
 code: AGYQRP
+content_warnings: null
 description: '<p>Learn how hardware works without having to learn C. Explore basic
   embedded hardware concepts with me as we use CircuitPython and a PyRuler. CircuitPython
   is a programming language that simplifies writing code for microcontrollers. The
@@ -22,3 +23,4 @@ speakers:
 start_time: '2021-07-31T10:05:00-04:00'
 title: Basics of Hardware with a PyRuler
 type: Thunder Talk
+youtube_url: https://youtu.be/fZpZ1pc8Kpk

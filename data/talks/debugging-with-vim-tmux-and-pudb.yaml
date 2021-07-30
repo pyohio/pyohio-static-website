@@ -1,4 +1,5 @@
 code: 3EBGBK
+content_warnings: null
 description: <p>Ever found yourself stuck in a SSH session with some Python code that
   isn't behaving and the need to debug the code? Or are you just someone who prefers
   using vim and tmux like myself? What if there was a way to debug your code in an
@@ -19,3 +20,4 @@ speakers:
 start_time: '2021-07-31T13:30:00-04:00'
 title: Debugging with vim, tmux, and pudb
 type: Lightning Talk
+youtube_url: https://youtu.be/HJDV3QQ1Y2w

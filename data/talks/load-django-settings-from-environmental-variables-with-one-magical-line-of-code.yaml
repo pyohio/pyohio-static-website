@@ -1,4 +1,5 @@
 code: SMHBXP
+content_warnings: null
 description: <p>This talk goes over a new Python library, djenv, that makes Django
   settings configurable through environmental variables.  We will go over both simple
   and advanced usage including deploying Django projects with Docker.  We’ll dive
@@ -17,3 +18,4 @@ start_time: '2021-07-31T14:35:00-04:00'
 title: Load Django Settings from Environmental Variables with One Magical Line of
   Code
 type: Lightning Talk
+youtube_url: https://youtu.be/tOWPubGmlzQ

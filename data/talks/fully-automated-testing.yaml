@@ -1,4 +1,5 @@
 code: NUGCQJ
+content_warnings: null
 description: '<p>I maintain Hypothesis, a library to automatically generate inputs
   to your tests (like "a list of integers" or "an object matching this database schema")
   -- so you don''t have to think of all the edge-cases yourself.  But we can go further!  Hypothesis
@@ -20,3 +21,4 @@ speakers:
 start_time: '2021-07-31T11:15:00-04:00'
 title: Fully Automated Testing
 type: Thunder Talk
+youtube_url: https://youtu.be/il22igf5zdU

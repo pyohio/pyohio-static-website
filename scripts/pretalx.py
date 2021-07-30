@@ -11,6 +11,8 @@ import yaml
 from mdx_gfm import GithubFlavoredMarkdownExtension
 from slugify import slugify
 
+from extra_data import TALK_EXTRAS
+
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
@@ -123,6 +125,11 @@ def get_event_data(ctx):
         else:
             data["qna"] = False
             data["qna_channel"] = None
+
+        data["youtube_url"] = TALK_EXTRAS.get(talk["code"], {}).get("youtube_url")
+        data["content_warnings"] = TALK_EXTRAS.get(talk["code"], {}).get(
+            "content_warnings"
+        )
 
         talks_by_code[talk["code"]] = data
         save_filename = Path(f"{DATA_DIR}/talks/").joinpath(f"{data['slug']}.yaml")

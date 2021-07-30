@@ -1,4 +1,5 @@
 code: HJNEUN
+content_warnings: null
 description: '<p>When learning some new technology it usually seems to sink in better
   if you use a practical example.  In this quick demo I show how I took video game
   data and used it to learn how to use Python Pandas library in a Jupyter Notebook
@@ -20,3 +21,4 @@ speakers:
 start_time: '2021-07-31T11:00:00-04:00'
 title: Learn Jupyter Notebook Python by Modeling Your Game Data
 type: Lightning Talk
+youtube_url: https://youtu.be/W3NC8IFbSKk

@@ -1,4 +1,5 @@
 code: LM7UNC
+content_warnings: null
 description: '<p>Everyone knows that writing code making art is easy! There are so
   many free resources available on the internet that becoming a programmer an artist
   has never been easier! In this talk I’ll demo several ways to make a todo list draw
@@ -46,3 +47,4 @@ speakers:
 start_time: '2021-07-31T14:40:00-04:00'
 title: How to Draw a Circle!!!
 type: Thunder Talk
+youtube_url: https://youtu.be/FmenuYvrvbY

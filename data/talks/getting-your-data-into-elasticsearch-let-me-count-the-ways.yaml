@@ -1,4 +1,5 @@
 code: CLG3NE
+content_warnings: null
 description: <p>There are a few different ways for you to index your data into Elasticsearch.
   This talk will cover how to make your data searchable via your web app or from a
   data frame.</p>
@@ -15,3 +16,4 @@ speakers:
 start_time: '2021-07-31T09:35:00-04:00'
 title: 'Getting Your Data into Elasticsearch: Let Me Count the Ways'
 type: Thunder Talk
+youtube_url: https://youtu.be/oJn7VhANpW0

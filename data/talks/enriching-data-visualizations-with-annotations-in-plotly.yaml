@@ -1,4 +1,5 @@
 code: ZSEDLM
+content_warnings: null
 description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile Python
   graphing library which lets us make interactive graphs.  In this talk, I will show
   how to go from a typical static visualization to one enriched with annotations which
@@ -20,3 +21,4 @@ speakers:
 start_time: '2021-07-31T11:05:00-04:00'
 title: Enriching Data Visualizations with Annotations in Plotly
 type: Thunder Talk
+youtube_url: https://youtu.be/D2vsLy85rog

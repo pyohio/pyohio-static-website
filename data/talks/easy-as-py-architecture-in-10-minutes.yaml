@@ -1,4 +1,5 @@
 code: X9CPAU
+content_warnings: null
 description: '<p>Software architecture has a bad rep. It''s supposed to be tricky,
   difficult, erudite. That''s crazy.</p>
 
@@ -24,3 +25,4 @@ speakers:
 start_time: '2021-07-31T13:05:00-04:00'
 title: 'Easy as Py: Architecture in 10 Minutes'
 type: Thunder Talk
+youtube_url: https://youtu.be/kgUbygKhFg0

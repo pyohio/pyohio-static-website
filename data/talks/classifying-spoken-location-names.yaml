@@ -1,4 +1,5 @@
 code: QWTWPM
+content_warnings: null
 description: <p>This talk will highlight a problem such as classification of speech
   data where the expected spoken utterance is a location name, and how one can have
   a machine learn differences between utterances. Speech feature extraction and building
@@ -17,3 +18,4 @@ speakers:
 start_time: '2021-07-31T14:15:00-04:00'
 title: Classifying Spoken Location Names
 type: Thunder Talk
+youtube_url: https://youtu.be/o8YQIa8AVrA

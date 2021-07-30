@@ -1,4 +1,5 @@
 code: FMY7SS
+content_warnings: null
 description: <p>We will discuss Qtile, a window manager that is written in Python.
   We will go over basic functionalities and also see how to modify it for a more custom
   experience.</p>
@@ -15,3 +16,4 @@ speakers:
 start_time: null
 title: Python Your Desktop with Qtile
 type: Bonus Talk
+youtube_url: null

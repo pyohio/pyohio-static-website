@@ -1,4 +1,5 @@
 code: EMWDQ3
+content_warnings: null
 description: '<p>The United States is facing an urgent crisis in the treatment of
   its military veterans. Post-traumatic stress disorder (PTSD) is a serious health
   issue assailing our veteran population. There are currently 300,000+ disability
@@ -30,3 +31,4 @@ speakers:
 start_time: '2021-07-31T09:05:00-04:00'
 title: Combating PTSD with Machine Learning
 type: Featured Talk
+youtube_url: https://youtu.be/AOi0vss2pXA

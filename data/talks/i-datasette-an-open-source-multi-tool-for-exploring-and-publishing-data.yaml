@@ -1,4 +1,5 @@
 code: VTNWPW
+content_warnings: null
 description: '<p>Datasette is described by its creator, Simon Willison, as "a tool
   for exploring and publishing data", and it provides an amazing data presentation,
   exploration, and retrieval platform that can rapidly be deployed to local, cloud
@@ -27,3 +28,4 @@ speakers:
 start_time: '2021-07-31T10:45:00-04:00'
 title: 'I ❤️ Datasette: An Open Source Multi-tool for Exploring and Publishing Data'
 type: Thunder Talk
+youtube_url: https://youtu.be/XBpI7lsX3U8

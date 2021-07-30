@@ -1,4 +1,5 @@
 code: DQ8YGN
+content_warnings: null
 description: <p>Machine Learning (ML) projects are gaining ground in industry, yet
   87% never pass the experiment phase. So often we pour endless time and money building
   models to help us make predictions about the world, but even top performing models
@@ -23,3 +24,4 @@ speakers:
 start_time: '2021-07-31T13:35:00-04:00'
 title: Avoiding the Oops with MLOps
 type: Thunder Talk
+youtube_url: https://youtu.be/ZS2eZJxXdt8

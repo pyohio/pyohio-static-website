@@ -1,4 +1,5 @@
 code: XELQP3
+content_warnings: null
 description: '<p>Many software developers have written a Python program without explicitly
   declaring the types of the parameters for a function''s parameters or return values.
   Since the Python programming language now supports type annotations, many people
@@ -27,3 +28,4 @@ speakers:
 start_time: '2021-07-31T11:35:00-04:00'
 title: 'Type Annotations in Python: Terribly Intimidating or Tremendously Informative?'
 type: Thunder Talk
+youtube_url: https://youtu.be/gT2PzTSkT1o

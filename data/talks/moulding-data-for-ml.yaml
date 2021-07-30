@@ -1,4 +1,5 @@
 code: N79ZE3
+content_warnings: null
 description: <p>Data is the most crucial entity for any ML model to function. Raw
   data isn't your best bet when it comes to using it for AI applications. Without
   a doubt, many recent breakthroughs in Machine Learning owe as much to having better
@@ -23,3 +24,4 @@ speakers:
 start_time: '2021-07-31T12:45:00-04:00'
 title: Moulding Data for ML
 type: Thunder Talk
+youtube_url: https://youtu.be/wVmhZ4HvBvg
