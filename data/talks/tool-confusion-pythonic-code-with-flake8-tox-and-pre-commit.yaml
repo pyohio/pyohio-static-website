@@ -14,8 +14,8 @@ description: '<p>Imagine you created this awesome Python project.</p>
   version?</p>'
 duration: 5
 end_time: '2021-07-31T14:05:00Z'
-qna: false
-qna_channel: null
+qna: true
+qna_channel: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
 slug: tool-confusion-pythonic-code-with-flake8-tox-and-pre-commit
 speakers:
 - avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
