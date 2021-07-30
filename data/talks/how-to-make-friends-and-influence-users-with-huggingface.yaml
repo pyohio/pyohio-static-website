@@ -7,6 +7,7 @@ description: <p>This will be a tutorial based talk with a demo at the end on how
   which is an easy to use packaging and API for the above systems and also go over
   using speech recognition and text to speech to make interaction more fluid. At the
   end there will be an interactive demo.</p>
+discord_channel_id: '870545475948904488'
 duration: 10
 end_time: '2021-07-31T18:15:00Z'
 qna: true
@@ -18,6 +19,7 @@ speakers:
   name: Joshua Jay Herman
   slug: joshua-jay-herman
 start_time: '2021-07-31T14:05:00-04:00'
+stream_timestamp: '14:05:03'
 title: How to Make Friends and Influence Users with Huggingface
 type: Thunder Talk
 youtube_url: https://youtu.be/EKU9UG5vU_k

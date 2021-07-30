@@ -3,6 +3,7 @@ content_warnings: null
 description: <p>Get up, stretch, get some water, get some snacks, say hi to your family,
   socialize in our Discord, hop on a video call, take some nice relaxing breaths --
   you do you! We'll be back in 30 minutes.</p>
+discord_channel_id: ''
 duration: 30
 end_time: '2021-07-31T16:30:00Z'
 qna: false
@@ -14,6 +15,7 @@ speakers:
   name: Dave Forgac
   slug: dave-forgac
 start_time: '2021-07-31T12:00:00-04:00'
+stream_timestamp: '11:59:37'
 title: Break
 type: Break
 youtube_url: null

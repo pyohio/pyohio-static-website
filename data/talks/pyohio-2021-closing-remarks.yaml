@@ -1,6 +1,7 @@
 code: XDZYKA
 content_warnings: null
 description: <p>Thank you to everyone who helped make PyOhio 2021 a success!</p>
+discord_channel_id: ''
 duration: 5
 end_time: '2021-07-31T18:55:00Z'
 qna: false
@@ -12,6 +13,7 @@ speakers:
   name: Dave Forgac
   slug: dave-forgac
 start_time: '2021-07-31T14:50:00-04:00'
+stream_timestamp: '14:51:27'
 title: PyOhio 2021 Closing Remarks
 type: Plenary Session
 youtube_url: https://youtu.be/R9mUBHdbB0s

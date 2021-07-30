@@ -11,6 +11,7 @@ description: <p>Machine Learning (ML) projects are gaining ground in industry, y
   delivery, like unification of system development and operations, to machine learning.
   This talk will cover the principles of MLOps and outline the path to making ML in
   production a reality.</p>
+discord_channel_id: '870544760560042024'
 duration: 10
 end_time: '2021-07-31T17:45:00Z'
 qna: true
@@ -22,6 +23,7 @@ speakers:
   name: Shawna Bankovich
   slug: shawna-bankovich
 start_time: '2021-07-31T13:35:00-04:00'
+stream_timestamp: '13:35:00'
 title: Avoiding the Oops with MLOps
 type: Thunder Talk
 youtube_url: https://youtu.be/ZS2eZJxXdt8

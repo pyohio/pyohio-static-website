@@ -15,6 +15,7 @@ description: '<p>Many software developers have written a Python program without 
   a Python program before it is executed. People who watch this talk will gain the
   knowledge they need to start writing their first type annotations, use them to improve
   their Python programs, and ultimately find them to be beneficial.</p>'
+discord_channel_id: '870546403808641114'
 duration: 10
 end_time: '2021-07-31T15:45:00Z'
 qna: true
@@ -26,6 +27,7 @@ speakers:
   name: Gregory M. Kapfhammer
   slug: gregory-m-kapfhammer
 start_time: '2021-07-31T11:35:00-04:00'
+stream_timestamp: '11:35:37'
 title: 'Type Annotations in Python: Terribly Intimidating or Tremendously Informative?'
 type: Thunder Talk
 youtube_url: https://youtu.be/gT2PzTSkT1o

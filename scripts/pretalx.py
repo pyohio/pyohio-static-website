@@ -130,6 +130,12 @@ def get_event_data(ctx):
         data["content_warnings"] = TALK_EXTRAS.get(talk["code"], {}).get(
             "content_warnings"
         )
+        data["discord_channel_id"] = TALK_EXTRAS.get(talk["code"], {}).get(
+            "channel_id", ""
+        )
+        data["stream_timestamp"] = TALK_EXTRAS.get(talk["code"], {}).get(
+            "video_start_time", ""
+        )
 
         talks_by_code[talk["code"]] = data
         save_filename = Path(f"{DATA_DIR}/talks/").joinpath(f"{data['slug']}.yaml")

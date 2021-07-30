@@ -47,6 +47,7 @@ description: '<p>Every year thousands of developers try to solve the programming
   </ol>
 
   </div>'
+discord_channel_id: '870544313975722014'
 duration: 10
 end_time: '2021-07-31T16:45:00Z'
 qna: true
@@ -58,6 +59,7 @@ speakers:
   name: Sebastian Witowski
   slug: sebastian-witowski
 start_time: '2021-07-31T12:35:00-04:00'
+stream_timestamp: '12:35:29'
 title: 9 Jupyter Notebook Tricks for Your Next Advent of Code
 type: Thunder Talk
 youtube_url: https://youtu.be/2JtDL43OqHk

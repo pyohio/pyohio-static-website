@@ -6,6 +6,7 @@ description: <p>Django is growing some great async features and Channels has bee
   Django to other websockets, such as Discord servers?  How do you do this and still
   leverage all the batteries included with Django? We will show an approach that makes
   this all possible and easy as a developer.</p>
+discord_channel_id: '870545315260952626'
 duration: 10
 end_time: '2021-07-31T15:55:00Z'
 qna: true
@@ -17,6 +18,7 @@ speakers:
   name: Calvin Hendryx-Parker
   slug: calvin-hendryx-parker
 start_time: '2021-07-31T11:45:00-04:00'
+stream_timestamp: '11:47:47'
 title: Hacking Django Channels for Fun (and Profit)
 type: Thunder Talk
 youtube_url: https://youtu.be/OslW2NF7Rhw

@@ -12,6 +12,7 @@ description: '<p>Software architecture has a bad rep. It''s supposed to be trick
   It''s about boiling architecture down to it''s bare essence - ergonomics. We''ll
   look at these 5 principles and end up with 4 super-distilled lessons that we can
   apply TODAY to our code to make it better.</p>'
+discord_channel_id: '870545033605029938'
 duration: 10
 end_time: '2021-07-31T17:15:00Z'
 qna: true
@@ -23,6 +24,7 @@ speakers:
   name: JC Coto
   slug: jc-coto
 start_time: '2021-07-31T13:05:00-04:00'
+stream_timestamp: '13:05:14'
 title: 'Easy as Py: Architecture in 10 Minutes'
 type: Thunder Talk
 youtube_url: https://youtu.be/kgUbygKhFg0

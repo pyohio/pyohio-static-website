@@ -11,6 +11,7 @@ description: '<p>Welcome to PyOhio!</p>
   <li><a href="https://pyohio.org/shirts">T-Shirt Fundraiser</a></li>
 
   </ul>'
+discord_channel_id: ''
 duration: 5
 end_time: '2021-07-31T13:05:00Z'
 qna: false
@@ -22,6 +23,7 @@ speakers:
   name: Dave Forgac
   slug: dave-forgac
 start_time: '2021-07-31T09:00:00-04:00'
+stream_timestamp: '9:05:00'
 title: PyOhio 2021 Opening Remarks
 type: Plenary Session
 youtube_url: https://youtu.be/HqBiSY_ExDo

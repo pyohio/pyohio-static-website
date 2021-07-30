@@ -8,6 +8,7 @@ description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile 
 
   <p>Here are some sample <a href="https://reshamas.github.io/covid19-plots/">plotly
   visualizations</a> I have made, and in this talk, I will share how to create them.</p>'
+discord_channel_id: ''
 duration: 10
 end_time: '2021-07-31T15:15:00Z'
 qna: false
@@ -19,6 +20,7 @@ speakers:
   name: Reshama Shaikh
   slug: reshama-shaikh
 start_time: '2021-07-31T11:05:00-04:00'
+stream_timestamp: '11:05:22'
 title: Enriching Data Visualizations with Annotations in Plotly
 type: Thunder Talk
 youtube_url: https://youtu.be/D2vsLy85rog

@@ -18,6 +18,7 @@ description: '<p>The United States is facing an urgent crisis in the treatment o
   />
 
   Paper: <a href="https://github.com/deborahanneharris/legal-documents/">https://github.com/deborahanneharris/legal-documents/</a></p>'
+discord_channel_id: '870544918479786024'
 duration: 20
 end_time: '2021-07-31T13:25:00Z'
 qna: true
@@ -29,6 +30,7 @@ speakers:
   name: Deborah Diller Harris
   slug: deborah-diller-harris
 start_time: '2021-07-31T09:05:00-04:00'
+stream_timestamp: '9:08:59'
 title: Combating PTSD with Machine Learning
 type: Featured Talk
 youtube_url: https://youtu.be/AOi0vss2pXA

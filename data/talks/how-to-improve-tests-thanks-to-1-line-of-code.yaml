@@ -6,6 +6,7 @@ description: '<p>What takes only one line of code and can dramatically improve y
 
   <p>In 5 minutes I''ll show you a few simple rules of naming tests that you can start
   using right away.</p>'
+discord_channel_id: '870545419749457940'
 duration: 5
 end_time: '2021-07-31T14:35:00Z'
 qna: true
@@ -17,6 +18,7 @@ speakers:
   name: Sebastian Buczyński
   slug: sebastian-buczynski
 start_time: '2021-07-31T10:30:00-04:00'
+stream_timestamp: '10:30:00'
 title: How to Improve Tests Thanks to 1 Line of Code?
 type: Lightning Talk
 youtube_url: https://youtu.be/3DOi738D244

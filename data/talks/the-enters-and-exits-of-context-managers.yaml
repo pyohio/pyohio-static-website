@@ -5,6 +5,7 @@ description: <p>Have you ever opened a file using the with keyword in Python? Th
   the Context Manager. This talk will cover all things Context Manager, from what
   they are, how to build them, when to use them, and more. View the source code for
   this entire presentation on <a href="https://github.com/MasonEgger/context-managers-sample-code">GitHub</a></p>
+discord_channel_id: '870546249248546837'
 duration: 5
 end_time: '2021-07-31T15:35:00Z'
 qna: true
@@ -16,6 +17,7 @@ speakers:
   name: Mason Egger
   slug: mason-egger
 start_time: '2021-07-31T11:30:00-04:00'
+stream_timestamp: '11:30:00'
 title: The Enters and Exits of Context Managers
 type: Lightning Talk
 youtube_url: https://youtu.be/rcs6W5EHJS8

@@ -10,6 +10,7 @@ description: '<p>Learn how hardware works without having to learn C. Explore bas
 
   <p>Resources: <a href="https://github.com/kirakirakira/python-hardware-pyruler">Python
   Hardware w/ PyRuler</a></p>'
+discord_channel_id: '870544812712001608'
 duration: 10
 end_time: '2021-07-31T14:15:00Z'
 qna: true
@@ -21,6 +22,7 @@ speakers:
   name: Kira Hartlage
   slug: kira-hartlage
 start_time: '2021-07-31T10:05:00-04:00'
+stream_timestamp: '10:05:08'
 title: Basics of Hardware with a PyRuler
 type: Thunder Talk
 youtube_url: https://youtu.be/fZpZ1pc8Kpk

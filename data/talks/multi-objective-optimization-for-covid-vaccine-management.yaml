@@ -15,6 +15,7 @@ description: '<p>In the past several months, we have seen that effectively distr
   will explain and implement multi-objective particle swarm optimization (PSO) in
   the python package “PyGMO” to find the optimal point for vaccine distribution in
   a neighborhood.</p>'
+discord_channel_id: '870545931207057450'
 duration: 10
 end_time: '2021-07-31T14:45:00Z'
 qna: true
@@ -26,6 +27,7 @@ speakers:
   name: Samira Soleimani
   slug: samira-soleimani
 start_time: '2021-07-31T10:35:00-04:00'
+stream_timestamp: '10:35:03'
 title: Multi-objective Optimization for COVID Vaccine Management
 type: Thunder Talk
 youtube_url: https://youtu.be/5sR8ZBZUWtQ

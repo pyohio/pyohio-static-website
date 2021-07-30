@@ -8,6 +8,7 @@ description: '<p>I maintain Hypothesis, a library to automatically generate inpu
 
   <p>If you''re tired of testing but still don''t want bugs, come see how we can take
   automation to a whole new level :-)</p>'
+discord_channel_id: '870545078471503922'
 duration: 10
 end_time: '2021-07-31T15:25:00Z'
 qna: true
@@ -19,6 +20,7 @@ speakers:
   name: Zac Hatfield-Dodds
   slug: zac-hatfield-dodds
 start_time: '2021-07-31T11:15:00-04:00'
+stream_timestamp: '11:15:05'
 title: Fully Automated Testing
 type: Thunder Talk
 youtube_url: https://youtu.be/il22igf5zdU

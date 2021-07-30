@@ -8,6 +8,7 @@ description: '<p>I am enamored with dataclasses. I love them in Python, I love t
 
   <p>Join me as I shared what I found out about my dear dataclasses, and get a better
   understand of decorators and metaprogramming in Python!</p>'
+discord_channel_id: ''
 duration: 5
 end_time: '2021-07-31T17:05:00Z'
 qna: false
@@ -19,6 +20,7 @@ speakers:
   name: Daniel Lindeman
   slug: daniel-lindeman
 start_time: '2021-07-31T13:00:00-04:00'
+stream_timestamp: '13:00:00'
 title: The Craziest fn Thing I've Ever Seen (and It Lives in CPython!!!)
 type: Lightning Talk
 youtube_url: https://youtu.be/mJOyWd-gHPg

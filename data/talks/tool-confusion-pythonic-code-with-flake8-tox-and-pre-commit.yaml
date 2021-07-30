@@ -12,6 +12,7 @@ description: '<p>Imagine you created this awesome Python project.</p>
 
   <p>How do you make sure your colleagues also use the same linters... in the same
   version?</p>'
+discord_channel_id: '870690419728605267'
 duration: 5
 end_time: '2021-07-31T14:05:00Z'
 qna: true
@@ -23,6 +24,7 @@ speakers:
   name: Jürgen Gmach
   slug: jurgen-gmach
 start_time: '2021-07-31T10:00:00-04:00'
+stream_timestamp: '10:00:00'
 title: 'Tool Confusion: Pythonic Code with flake8, tox and pre-commit'
 type: Lightning Talk
 youtube_url: https://youtu.be/OnM3KuE7MQM

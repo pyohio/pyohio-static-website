@@ -29,6 +29,7 @@ description: '<p>I am a High School Freshman who enjoys coding and robotics. For
   Predictor using AI</a></li>
 
   </ul>'
+discord_channel_id: ''
 duration: 5
 end_time: '2021-07-31T18:35:00Z'
 qna: false
@@ -40,6 +41,7 @@ speakers:
   name: Anay Pant
   slug: anay-pant
 start_time: '2021-07-31T14:30:00-04:00'
+stream_timestamp: '14:30:00'
 title: Creating and Teaching Games in Python to Teach Artificial Intelligence Concepts
 type: Lightning Talk
 youtube_url: https://youtu.be/eNaPGZX7Co0

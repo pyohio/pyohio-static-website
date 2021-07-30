@@ -11,6 +11,7 @@ description: <p>Data is the most crucial entity for any ML model to function. Ra
   Learning" which helps identify valuable information from the extensive amount of
   crude data available at your fingertips. Come learn how this data is moulded to
   fit your ML model right.</p>
+discord_channel_id: '870545853570502677'
 duration: 10
 end_time: '2021-07-31T16:55:00Z'
 qna: true
@@ -22,6 +23,7 @@ speakers:
   name: Aakanksha Chouhan
   slug: aakanksha-chouhan
 start_time: '2021-07-31T12:45:00-04:00'
+stream_timestamp: '12:44:07'
 title: Moulding Data for ML
 type: Thunder Talk
 youtube_url: https://youtu.be/wVmhZ4HvBvg

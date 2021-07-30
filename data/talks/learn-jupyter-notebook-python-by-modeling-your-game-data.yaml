@@ -8,6 +8,7 @@ description: '<p>When learning some new technology it usually seems to sink in b
   <p>More information for after viewing the presentation: <br />
 
   <a href="https://snacktraces.com/pyohio21/">https://snacktraces.com/pyohio21/</a></p>'
+discord_channel_id: '870545721915498538'
 duration: 5
 end_time: '2021-07-31T15:05:00Z'
 qna: true
@@ -19,6 +20,7 @@ speakers:
   name: Craig Lang
   slug: craig-lang
 start_time: '2021-07-31T11:00:00-04:00'
+stream_timestamp: '11:00:00'
 title: Learn Jupyter Notebook Python by Modeling Your Game Data
 type: Lightning Talk
 youtube_url: https://youtu.be/W3NC8IFbSKk

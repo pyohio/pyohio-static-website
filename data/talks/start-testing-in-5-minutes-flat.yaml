@@ -10,6 +10,7 @@ description: '<p>Every software project should have some degree of testing. Why?
   test cases. I''ll also share resources for learning more advanced techniques. In
   5 minutes flat, you''ll see just how easy it is to add valuable tests to your Python
   projects!</p>'
+discord_channel_id: '870546180650717184'
 duration: 5
 end_time: '2021-07-31T13:35:00Z'
 qna: true
@@ -21,6 +22,7 @@ speakers:
   name: Pandy Knight
   slug: pandy-knight
 start_time: '2021-07-31T09:30:00-04:00'
+stream_timestamp: '9:30:00'
 title: Start Testing in 5 Minutes Flat
 type: Lightning Talk
 youtube_url: https://youtu.be/fCBGP-IDAOM

@@ -4,6 +4,7 @@ description: <p>In this talk we will explore the recent decision by the United S
   Supreme Court regarding Java APIs from earlier this year. The decision has been
   issued in regards to the case of Google v. Oracle but will most likely have implications
   on the entire software industry.</p>
+discord_channel_id: '870546321529012275'
 duration: 10
 end_time: '2021-07-31T17:55:00Z'
 qna: true
@@ -15,6 +16,7 @@ speakers:
   name: Ian Zelikman
   slug: ian-zelikman
 start_time: '2021-07-31T13:45:00-04:00'
+stream_timestamp: '13:45:21'
 title: The Impact of Google v. Oracle Supreme Court Decision on the Software World
 type: Thunder Talk
 youtube_url: https://youtu.be/ox2ShMUUM4g

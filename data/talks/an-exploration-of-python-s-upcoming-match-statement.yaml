@@ -12,17 +12,19 @@ description: '<p>The match statement is a new feature of the Python language, de
   <p>This talk will compare the match statement to similar constructs in other languages,
   demonstrate some typical use cases, briefly discuss Python''s implementation, and
   propose some best practices when solving problems with the match statement.</p>'
+discord_channel_id: '870544450227695687'
 duration: 10
 end_time: '2021-07-31T13:55:00Z'
 qna: true
 qna_channel: an-exploration-of-python-s-upcoming-match-statement
 slug: an-exploration-of-python-s-upcoming-match-statement
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
   code: PWN7XL
   name: Andrew Kubera
   slug: andrew-kubera
 start_time: '2021-07-31T09:45:00-04:00'
+stream_timestamp: '9:45:13'
 title: An Exploration of Python's Upcoming Match Statement
 type: Thunder Talk
 youtube_url: https://youtu.be/VjKkRNEoGf4

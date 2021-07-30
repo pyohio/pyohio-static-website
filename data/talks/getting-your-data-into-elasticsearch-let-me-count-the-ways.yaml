@@ -3,6 +3,7 @@ content_warnings: null
 description: <p>There are a few different ways for you to index your data into Elasticsearch.
   This talk will cover how to make your data searchable via your web app or from a
   data frame.</p>
+discord_channel_id: '870545200437690428'
 duration: 10
 end_time: '2021-07-31T13:45:00Z'
 qna: true
@@ -14,6 +15,7 @@ speakers:
   name: Jay Miller
   slug: jay-miller
 start_time: '2021-07-31T09:35:00-04:00'
+stream_timestamp: '9:35:15'
 title: 'Getting Your Data into Elasticsearch: Let Me Count the Ways'
 type: Thunder Talk
 youtube_url: https://youtu.be/oJn7VhANpW0
