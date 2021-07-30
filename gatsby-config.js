@@ -39,6 +39,10 @@ module.exports = {
             link: `/participate/register`,
           },
           {
+            name: `T-Shirt Fundraiser`,
+            link: `/participate/shirts`,
+          },
+          {
             name: `Virtual Attendance`,
             link: `/participate`,
           },
