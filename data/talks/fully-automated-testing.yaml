@@ -9,6 +9,8 @@ description: '<p>I maintain Hypothesis, a library to automatically generate inpu
   automation to a whole new level :-)</p>'
 duration: 10
 end_time: '2021-07-31T15:25:00Z'
+qna: true
+qna_channel: fully-automated-testing
 slug: fully-automated-testing
 speakers:
 - avatar: null

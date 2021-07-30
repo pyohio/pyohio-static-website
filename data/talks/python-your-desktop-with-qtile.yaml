@@ -4,6 +4,8 @@ description: <p>We will discuss Qtile, a window manager that is written in Pytho
   experience.</p>
 duration: 10
 end_time: null
+qna: true
+qna_channel: python-your-desktop-with-qtile
 slug: python-your-desktop-with-qtile
 speakers:
 - avatar: null

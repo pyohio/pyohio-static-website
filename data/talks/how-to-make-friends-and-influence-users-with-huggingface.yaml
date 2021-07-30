@@ -8,6 +8,8 @@ description: <p>This will be a tutorial based talk with a demo at the end on how
   end there will be an interactive demo.</p>
 duration: 10
 end_time: '2021-07-31T18:15:00Z'
+qna: true
+qna_channel: how-to-make-friends-and-influence-users-with-huggingface
 slug: how-to-make-friends-and-influence-users-with-huggingface
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_6905_dyp36KU.jpeg

@@ -16,6 +16,8 @@ description: '<p>Many software developers have written a Python program without 
   their Python programs, and ultimately find them to be beneficial.</p>'
 duration: 10
 end_time: '2021-07-31T15:45:00Z'
+qna: true
+qna_channel: type-annotations-in-python-terribly-intimidating-or-tremendously-informative
 slug: type-annotations-in-python-terribly-intimidating-or-tremendously-informative
 speakers:
 - avatar: https://pretalx.com/media/avatars/gregory-kapfhammer-biography-small_VGSaa80.jpg

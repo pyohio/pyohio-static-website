@@ -6,6 +6,8 @@ description: <p>A whirlwind tour of the evolution of kitchens from Victorian cav
   the iceboxes, apply science to your IDEs.</p>
 duration: 5
 end_time: '2021-07-31T16:35:00Z'
+qna: true
+qna_channel: kitchen-practical-and-coding-practices
 slug: kitchen-practical-and-coding-practices
 speakers:
 - avatar: null

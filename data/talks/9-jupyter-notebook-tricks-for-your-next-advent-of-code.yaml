@@ -48,6 +48,8 @@ description: '<p>Every year thousands of developers try to solve the programming
   </div>'
 duration: 10
 end_time: '2021-07-31T16:45:00Z'
+qna: true
+qna_channel: 9-jupyter-notebook-tricks-for-your-next-advent-of-code
 slug: 9-jupyter-notebook-tricks-for-your-next-advent-of-code
 speakers:
 - avatar: null

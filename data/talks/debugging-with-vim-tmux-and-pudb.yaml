@@ -8,6 +8,8 @@ description: <p>Ever found yourself stuck in a SSH session with some Python code
   from the comfort of a tmux shell.</p>
 duration: 5
 end_time: '2021-07-31T17:35:00Z'
+qna: true
+qna_channel: debugging-with-vim-tmux-and-pudb
 slug: debugging-with-vim-tmux-and-pudb
 speakers:
 - avatar: null

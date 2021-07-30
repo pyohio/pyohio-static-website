@@ -12,6 +12,8 @@ description: <p>Machine Learning (ML) projects are gaining ground in industry, y
   production a reality.</p>
 duration: 10
 end_time: '2021-07-31T17:45:00Z'
+qna: true
+qna_channel: avoiding-the-oops-with-mlops
 slug: avoiding-the-oops-with-mlops
 speakers:
 - avatar: https://pretalx.com/media/avatars/SMALL-ABBIEMAEPHOTOGRAPHY-DALLASITES101-2.3-BANKOVICH-99_BJXO57M.jpg

@@ -12,6 +12,8 @@ description: '<p>Welcome to PyOhio!</p>
   </ul>'
 duration: 5
 end_time: '2021-07-31T13:05:00Z'
+qna: false
+qna_channel: null
 slug: pyohio-2021-opening-remarks
 speakers:
 - avatar: null

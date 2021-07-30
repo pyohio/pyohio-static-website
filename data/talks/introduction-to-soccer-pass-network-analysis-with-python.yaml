@@ -17,6 +17,8 @@ description: '<p>This talk teaches four simple concepts to those who want to sta
   </ol>'
 duration: 10
 end_time: '2021-07-31T14:25:00Z'
+qna: true
+qna_channel: introduction-to-soccer-pass-network-analysis-with-python
 slug: introduction-to-soccer-pass-network-analysis-with-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/image_2_ZU2pkc8.jpg

@@ -11,6 +11,8 @@ description: '<p>Learn how hardware works without having to learn C. Explore bas
   Hardware w/ PyRuler</a></p>'
 duration: 10
 end_time: '2021-07-31T14:15:00Z'
+qna: true
+qna_channel: basics-of-hardware-with-a-pyruler
 slug: basics-of-hardware-with-a-pyruler
 speakers:
 - avatar: https://pretalx.com/media/avatars/cropped_profile_kira_crhVz4t.JPG

@@ -9,6 +9,8 @@ description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile 
   visualizations</a> I have made, and in this talk, I will share how to create them.</p>'
 duration: 10
 end_time: '2021-07-31T15:15:00Z'
+qna: false
+qna_channel: null
 slug: enriching-data-visualizations-with-annotations-in-plotly
 speakers:
 - avatar: https://pretalx.com/media/avatars/B1E741FD-516B-44C6-AC9B-CBE650BC1DD3_jgsnNee.jpeg

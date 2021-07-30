@@ -4,6 +4,8 @@ description: <p>There are a few different ways for you to index your data into E
   data frame.</p>
 duration: 10
 end_time: '2021-07-31T13:45:00Z'
+qna: true
+qna_channel: getting-your-data-into-elasticsearch-let-me-count-the-ways
 slug: getting-your-data-into-elasticsearch-let-me-count-the-ways
 speakers:
 - avatar: null

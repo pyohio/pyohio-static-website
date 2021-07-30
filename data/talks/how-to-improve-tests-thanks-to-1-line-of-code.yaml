@@ -7,6 +7,8 @@ description: '<p>What takes only one line of code and can dramatically improve y
   using right away.</p>'
 duration: 5
 end_time: '2021-07-31T14:35:00Z'
+qna: true
+qna_channel: how-to-improve-tests-thanks-to-1-line-of-code
 slug: how-to-improve-tests-thanks-to-1-line-of-code
 speakers:
 - avatar: https://pretalx.com/media/avatars/2020-09-09_Webinterpret18058_TdVCRQx.png

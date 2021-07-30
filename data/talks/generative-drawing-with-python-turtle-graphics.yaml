@@ -6,6 +6,8 @@ description: '<p>Using Python''s built in Turtle module, and some random numbers
   <p>Repository link: <a href="https://github.com/dominicduffin1/python-turtle-experiments">https://github.com/dominicduffin1/python-turtle-experiments</a></p>'
 duration: 5
 end_time: '2021-07-31T18:05:00Z'
+qna: true
+qna_channel: generative-drawing-with-python-turtle-graphics
 slug: generative-drawing-with-python-turtle-graphics
 speakers:
 - avatar: https://pretalx.com/media/avatars/DominicDuffin_Pi6MV8e.JPG

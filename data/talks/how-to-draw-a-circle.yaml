@@ -35,6 +35,8 @@ description: '<p>Everyone knows that writing code making art is easy! There are 
   by the prospect of how easy it is to become a programmer an artist in 2021!</p>'
 duration: 10
 end_time: '2021-07-31T18:50:00Z'
+qna: true
+qna_channel: how-to-draw-a-circle
 slug: how-to-draw-a-circle
 speakers:
 - avatar: https://pretalx.com/media/avatars/kyle-fav_fpRt0BA.png

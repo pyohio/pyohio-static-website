@@ -11,6 +11,8 @@ description: '<p>Every software project should have some degree of testing. Why?
   projects!</p>'
 duration: 5
 end_time: '2021-07-31T13:35:00Z'
+qna: true
+qna_channel: start-testing-in-5-minutes-flat
 slug: start-testing-in-5-minutes-flat
 speakers:
 - avatar: https://pretalx.com/media/avatars/andy_django_profile_zoom_small_1UIzVKP.jpg

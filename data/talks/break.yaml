@@ -4,6 +4,8 @@ description: <p>Get up, stretch, get some water, get some snacks, say hi to your
   you do you! We'll be back in 30 minutes.</p>
 duration: 30
 end_time: '2021-07-31T16:30:00Z'
+qna: false
+qna_channel: null
 slug: break
 speakers:
 - avatar: null

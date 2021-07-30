@@ -49,23 +49,32 @@ def get_event_data(ctx):
     headers = {"Authorization": f"Token {ctx.obj['api_key']}"}
 
     click.echo("Getting questions...", err=True)
-    questions_url = (
-        f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/questions"
-    )
+    questions_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/questions"
     questions_results = get_all_json_results(questions_url, headers)
     twitter_question_id = None
+
     for question in questions_results:
         if question["question"]["en"] == "Twitter" and question["target"] == "speaker":
             twitter_question_id = question["id"]
-   
+        if question["question"]["en"] == "Q & A" and question["target"] == "submission":
+            qa_question_id = question["id"]
+
     click.echo("Getting answers...", err=True)
     twitter_by_speaker_code = {}
     if twitter_question_id:
         answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers?question={twitter_question_id}"
-        
+
         answers_results = get_all_json_results(answers_url, headers)
         for answer in answers_results:
-            twitter_by_speaker_code[answer["person"]] = answer["answer"].lstrip('@')
+            twitter_by_speaker_code[answer["person"]] = answer["answer"].lstrip("@")
+
+    qa_by_talk_code = {}
+    if qa_question_id:
+        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers?question={qa_question_id}"
+
+        answers_results = get_all_json_results(answers_url, headers)
+        for answer in answers_results:
+            qa_by_talk_code[answer["submission"]] = answer["answer"]
 
     click.echo("Getting talks...", err=True)
     sessions_url = (
@@ -74,7 +83,7 @@ def get_event_data(ctx):
     sessions_results = get_all_json_results(sessions_url, headers)
 
     click.echo("Deleteing old talk files...", err=True)
-    for f in Path(f"{DATA_DIR}/talks").glob('*.yaml'):
+    for f in Path(f"{DATA_DIR}/talks").glob("*.yaml"):
         try:
             f.unlink(missing_ok=True)
         except OSError as e:
@@ -96,13 +105,25 @@ def get_event_data(ctx):
             "code": talk["code"],
             "title": talk["title"],
             "slug": slugify(talk["title"]),
-            "description": markdown.markdown(talk["description"], extensions=[GithubFlavoredMarkdownExtension(), 'footnotes']),
+            "description": markdown.markdown(
+                talk["description"],
+                extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
+            ),
             "start_time": talk.get("slot", {}).get("start"),
             "end_time": talk.get("slot", {}).get("end"),
             "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
         }
+        # print(f"{talk['code']}: {type(qa_by_talk_code.get(talk['code']))}")
+
+        if qa_by_talk_code.get(talk["code"], "False") != "False":
+            data["qna"] = True
+            data["qna_channel"] = data["slug"]
+        else:
+            data["qna"] = False
+            data["qna_channel"] = None
+
         talks_by_code[talk["code"]] = data
         save_filename = Path(f"{DATA_DIR}/talks/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
@@ -123,7 +144,7 @@ def get_event_data(ctx):
         speaker_data.append(response.json())
 
     click.echo("Deleteing old speaker files...", err=True)
-    for f in Path(f"{DATA_DIR}/speakers").glob('*.yaml'):
+    for f in Path(f"{DATA_DIR}/speakers").glob("*.yaml"):
         try:
             f.unlink(missing_ok=True)
         except OSError as e:
@@ -139,7 +160,10 @@ def get_event_data(ctx):
             "code": speaker["code"],
             "avatar": speaker["avatar"],
             "listed": True,
-            "biography": markdown.markdown(speaker["biography"], extensions=[GithubFlavoredMarkdownExtension(), 'footnotes']),
+            "biography": markdown.markdown(
+                speaker["biography"],
+                extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
+            ),
         }
         if data["avatar"] is None:
             data["avatar"] = PLACEHOLDER_AVATAR

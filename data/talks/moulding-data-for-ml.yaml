@@ -12,6 +12,8 @@ description: <p>Data is the most crucial entity for any ML model to function. Ra
   fit your ML model right.</p>
 duration: 10
 end_time: '2021-07-31T16:55:00Z'
+qna: true
+qna_channel: moulding-data-for-ml
 slug: moulding-data-for-ml
 speakers:
 - avatar: https://pretalx.com/media/avatars/DSC_8858_59XTcnr_87hA2Zp.jpeg

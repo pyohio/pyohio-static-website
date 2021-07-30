@@ -2,6 +2,8 @@ code: XDZYKA
 description: <p>Thank you to everyone who helped make PyOhio 2021 a success!</p>
 duration: 5
 end_time: '2021-07-31T18:55:00Z'
+qna: false
+qna_channel: null
 slug: pyohio-2021-closing-remarks
 speakers:
 - avatar: null
