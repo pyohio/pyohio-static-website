@@ -20,6 +20,7 @@ export default function TalkPage({ data }) {
       .setZone("America/New_York")
       .toFormat("h:mma")
   }
+
   return (
     <Layout>
       <Seo title={`PyOhio 2021 Talk: ${talk.title}`} />
@@ -30,6 +31,15 @@ export default function TalkPage({ data }) {
             {talk.type} at {formatTime(talk.start_time)} EDT
           </em>
         </p>
+        {talk.youtube_url &&
+          <iframe
+            width="560"
+            height="315"
+            src={talk.youtube_url.replace('https://youtu.be/', 'https://www.youtube.com/embed/')}
+            frameborder="1"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>}
         <div dangerouslySetInnerHTML={{ __html: talk.description }} />
         {talk.type !== "Break" && (
           <div>
@@ -37,6 +47,7 @@ export default function TalkPage({ data }) {
             <p>{speakers}</p>
           </div>
         )}
+        <div></div>
       </BaseStyles>
     </Layout>
   )
@@ -49,6 +60,7 @@ export const talkPageQuery = graphql`
       description
       type
       start_time
+      youtube_url
       speakers {
         name
         slug
