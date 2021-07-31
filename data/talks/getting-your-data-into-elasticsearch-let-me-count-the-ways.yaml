@@ -15,7 +15,7 @@ speakers:
   name: Jay Miller
   slug: jay-miller
 start_time: '2021-07-31T09:35:00-04:00'
-stream_timestamp: '9:35:15'
+stream_timestamp: 09:35:15
 title: 'Getting Your Data into Elasticsearch: Let Me Count the Ways'
 type: Thunder Talk
 youtube_url: https://youtu.be/oJn7VhANpW0

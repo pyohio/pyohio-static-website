@@ -24,7 +24,7 @@ speakers:
   name: Andrew Kubera
   slug: andrew-kubera
 start_time: '2021-07-31T09:45:00-04:00'
-stream_timestamp: '9:45:13'
+stream_timestamp: 09:45:13
 title: An Exploration of Python's Upcoming Match Statement
 type: Thunder Talk
 youtube_url: https://youtu.be/VjKkRNEoGf4

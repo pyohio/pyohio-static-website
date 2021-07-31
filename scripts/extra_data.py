@@ -10,7 +10,7 @@ TALK_EXTRAS = {
         "title": "An Exploration of Python's Upcoming Match Statement",
         "youtube_url": "https://youtu.be/VjKkRNEoGf4",
         "content_warnings": None,
-        "video_start_time": "9:45:13",
+        "video_start_time": "09:45:13",
         "channel_id": "870544450227695687",
     },
     "DQ8YGN": {
@@ -45,7 +45,7 @@ TALK_EXTRAS = {
         "title": "Combating PTSD with Machine Learning",
         "youtube_url": "https://youtu.be/AOi0vss2pXA",
         "content_warnings": None,
-        "video_start_time": "9:08:59",
+        "video_start_time": "09:08:59",
         "channel_id": "870544918479786024",
     },
     "HXD7YB": {
@@ -94,7 +94,7 @@ TALK_EXTRAS = {
         "title": "Getting Your Data into Elasticsearch: Let Me Count the Ways",
         "youtube_url": "https://youtu.be/oJn7VhANpW0",
         "content_warnings": None,
-        "video_start_time": "9:35:15",
+        "video_start_time": "09:35:15",
         "channel_id": "870545200437690428",
     },
     "V9789A": {
@@ -185,7 +185,7 @@ TALK_EXTRAS = {
         "title": "PyOhio 2021 Opening Remarks",
         "youtube_url": "https://youtu.be/HqBiSY_ExDo",
         "content_warnings": None,
-        "video_start_time": "9:05:00",
+        "video_start_time": "09:05:00",
         "channel_id": "",
     },
     "FMY7SS": {
@@ -206,7 +206,7 @@ TALK_EXTRAS = {
         "title": "Start Testing in 5 Minutes Flat",
         "youtube_url": "https://youtu.be/fCBGP-IDAOM",
         "content_warnings": None,
-        "video_start_time": "9:30:00",
+        "video_start_time": "09:30:00",
         "channel_id": "870546180650717184",
     },
     "WP87GC": {
