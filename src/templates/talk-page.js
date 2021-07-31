@@ -31,8 +31,12 @@ export default function TalkPage({ data }) {
             {talk.type} at {formatTime(talk.start_time)} EDT
           </em>
         </p>
+        {talk.content_warnings &&
+        <p><span role="img">⚠</span>️ {talk.content_warnings}</p>
+        }
         {talk.youtube_url &&
           <iframe
+            title="Talk Video"
             width="560"
             height="315"
             src={talk.youtube_url.replace('https://youtu.be/', 'https://www.youtube.com/embed/')}
@@ -61,6 +65,7 @@ export const talkPageQuery = graphql`
       type
       start_time
       youtube_url
+      content_warnings
       speakers {
         name
         slug
