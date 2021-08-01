@@ -46,3 +46,5 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2021/attend                /2021/participate
 /2021/attend/register       /2021/participate/register
 /2021/present/speaker-info  /2021/speaking/speaker-info
+/2021/code-of-conduct       /2021/about/code-of-conduct
+/2021/conduct               /2021/about/code-of-conduct
