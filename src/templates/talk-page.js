@@ -31,19 +31,25 @@ export default function TalkPage({ data }) {
             {talk.type} at {formatTime(talk.start_time)} EDT
           </em>
         </p>
-        {talk.content_warnings &&
-        <p><span role="img">⚠</span>️ {talk.content_warnings}</p>
-        }
-        {talk.youtube_url &&
+        {talk.content_warnings && (
+          <p>
+            <span role="img">⚠</span>️ {talk.content_warnings}
+          </p>
+        )}
+        {talk.youtube_url && (
           <iframe
             title="Talk Video"
             width="560"
             height="315"
-            src={talk.youtube_url.replace('https://youtu.be/', 'https://www.youtube.com/embed/')}
+            src={talk.youtube_url.replace(
+              "https://youtu.be/",
+              "https://www.youtube.com/embed/"
+            )}
             frameborder="1"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>}
+          ></iframe>
+        )}
         <div dangerouslySetInnerHTML={{ __html: talk.description }} />
         {talk.type !== "Break" && (
           <div>
