@@ -12,7 +12,7 @@ description: '<p>Learn how hardware works without having to learn C. Explore bas
   Hardware w/ PyRuler</a></p>'
 discord_channel_id: '870544812712001608'
 duration: 10
-end_time: '2021-07-31T14:15:00Z'
+end_time: '2021-07-31T10:15:00-04:00'
 qna: true
 qna_channel: basics-of-hardware-with-a-pyruler
 slug: basics-of-hardware-with-a-pyruler

@@ -5,7 +5,7 @@ description: <p>There are a few different ways for you to index your data into E
   data frame.</p>
 discord_channel_id: '870545200437690428'
 duration: 10
-end_time: '2021-07-31T13:45:00Z'
+end_time: '2021-07-31T09:45:00-04:00'
 qna: true
 qna_channel: getting-your-data-into-elasticsearch-let-me-count-the-ways
 slug: getting-your-data-into-elasticsearch-let-me-count-the-ways

@@ -7,7 +7,7 @@ description: <p>Have you ever opened a file using the with keyword in Python? Th
   this entire presentation on <a href="https://github.com/MasonEgger/context-managers-sample-code">GitHub</a></p>
 discord_channel_id: '870546249248546837'
 duration: 5
-end_time: '2021-07-31T15:35:00Z'
+end_time: '2021-07-31T11:35:00-04:00'
 qna: true
 qna_channel: the-enters-and-exits-of-context-managers
 slug: the-enters-and-exits-of-context-managers

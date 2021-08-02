@@ -49,7 +49,7 @@ description: '<p>Every year thousands of developers try to solve the programming
   </div>'
 discord_channel_id: '870544313975722014'
 duration: 10
-end_time: '2021-07-31T16:45:00Z'
+end_time: '2021-07-31T12:45:00-04:00'
 qna: true
 qna_channel: 9-jupyter-notebook-tricks-for-your-next-advent-of-code
 slug: 9-jupyter-notebook-tricks-for-your-next-advent-of-code

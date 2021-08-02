@@ -8,7 +8,7 @@ description: <p>Django is growing some great async features and Channels has bee
   this all possible and easy as a developer.</p>
 discord_channel_id: '870545315260952626'
 duration: 10
-end_time: '2021-07-31T15:55:00Z'
+end_time: '2021-07-31T11:55:00-04:00'
 qna: true
 qna_channel: hacking-django-channels-for-fun-and-profit
 slug: hacking-django-channels-for-fun-and-profit

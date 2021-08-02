@@ -7,7 +7,7 @@ description: <p>This talk will highlight a problem such as classification of spe
   along with practical examples to demonstrate usage using pyAudioProcessing. <a href="https://github.com/jsingh811/pyAudioProcessing">https://github.com/jsingh811/pyAudioProcessing</a></p>
 discord_channel_id: '870544863706374174'
 duration: 10
-end_time: '2021-07-31T18:25:00Z'
+end_time: '2021-07-31T14:25:00-04:00'
 qna: true
 qna_channel: classifying-spoken-location-names
 slug: classifying-spoken-location-names
