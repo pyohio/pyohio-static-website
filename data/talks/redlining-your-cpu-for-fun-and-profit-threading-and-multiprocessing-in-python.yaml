@@ -8,7 +8,7 @@ description: <p>Is your Python script taking too long, and your CPU utilization 
   so you can get more done and raise that CPU usage to 100%.</p>
 discord_channel_id: ''
 duration: 10
-end_time: '2021-07-31T17:25:00Z'
+end_time: '2021-07-31T13:25:00-04:00'
 qna: false
 qna_channel: null
 slug: redlining-your-cpu-for-fun-and-profit-threading-and-multiprocessing-in-python

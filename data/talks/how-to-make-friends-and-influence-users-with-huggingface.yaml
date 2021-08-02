@@ -9,7 +9,7 @@ description: <p>This will be a tutorial based talk with a demo at the end on how
   end there will be an interactive demo.</p>
 discord_channel_id: '870545475948904488'
 duration: 10
-end_time: '2021-07-31T18:15:00Z'
+end_time: '2021-07-31T14:15:00-04:00'
 qna: true
 qna_channel: how-to-make-friends-and-influence-users-with-huggingface
 slug: how-to-make-friends-and-influence-users-with-huggingface

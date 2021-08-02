@@ -18,7 +18,7 @@ description: '<p>This talk teaches four simple concepts to those who want to sta
   </ol>'
 discord_channel_id: '870545593343291392'
 duration: 10
-end_time: '2021-07-31T14:25:00Z'
+end_time: '2021-07-31T10:25:00-04:00'
 qna: true
 qna_channel: introduction-to-soccer-pass-network-analysis-with-python
 slug: introduction-to-soccer-pass-network-analysis-with-python

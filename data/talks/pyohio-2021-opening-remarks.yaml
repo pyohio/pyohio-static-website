@@ -13,7 +13,7 @@ description: '<p>Welcome to PyOhio!</p>
   </ul>'
 discord_channel_id: ''
 duration: 5
-end_time: '2021-07-31T13:05:00Z'
+end_time: '2021-07-31T09:05:00-04:00'
 qna: false
 qna_channel: null
 slug: pyohio-2021-opening-remarks

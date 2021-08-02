@@ -17,7 +17,7 @@ description: '<p>Datasette is described by its creator, Simon Willison, as "a to
   <p><a href="https://ilsweb.cincinnatilibrary.org/collection-analysis/">https://ilsweb.cincinnatilibrary.org/collection-analysis/</a></p>'
 discord_channel_id: '870545537315790879'
 duration: 10
-end_time: '2021-07-31T14:55:00Z'
+end_time: '2021-07-31T10:55:00-04:00'
 qna: true
 qna_channel: i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data
 slug: i-datasette-an-open-source-multi-tool-for-exploring-and-publishing-data

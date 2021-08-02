@@ -14,7 +14,7 @@ description: '<p>Software architecture has a bad rep. It''s supposed to be trick
   apply TODAY to our code to make it better.</p>'
 discord_channel_id: '870545033605029938'
 duration: 10
-end_time: '2021-07-31T17:15:00Z'
+end_time: '2021-07-31T13:15:00-04:00'
 qna: true
 qna_channel: easy-as-py-architecture-in-10-minutes
 slug: easy-as-py-architecture-in-10-minutes

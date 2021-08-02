@@ -10,7 +10,7 @@ description: '<p>I am enamored with dataclasses. I love them in Python, I love t
   understand of decorators and metaprogramming in Python!</p>'
 discord_channel_id: ''
 duration: 5
-end_time: '2021-07-31T17:05:00Z'
+end_time: '2021-07-31T13:05:00-04:00'
 qna: false
 qna_channel: null
 slug: the-craziest-fn-thing-i-ve-ever-seen-and-it-lives-in-cpython

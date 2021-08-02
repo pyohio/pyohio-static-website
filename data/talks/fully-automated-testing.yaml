@@ -10,7 +10,7 @@ description: '<p>I maintain Hypothesis, a library to automatically generate inpu
   automation to a whole new level :-)</p>'
 discord_channel_id: '870545078471503922'
 duration: 10
-end_time: '2021-07-31T15:25:00Z'
+end_time: '2021-07-31T11:25:00-04:00'
 qna: true
 qna_channel: fully-automated-testing
 slug: fully-automated-testing

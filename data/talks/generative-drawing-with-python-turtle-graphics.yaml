@@ -7,7 +7,7 @@ description: '<p>Using Python''s built in Turtle module, and some random numbers
   <p>Repository link: <a href="https://github.com/dominicduffin1/python-turtle-experiments">https://github.com/dominicduffin1/python-turtle-experiments</a></p>'
 discord_channel_id: '870545133400100874'
 duration: 5
-end_time: '2021-07-31T18:05:00Z'
+end_time: '2021-07-31T14:05:00-04:00'
 qna: true
 qna_channel: generative-drawing-with-python-turtle-graphics
 slug: generative-drawing-with-python-turtle-graphics

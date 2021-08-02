@@ -10,7 +10,7 @@ description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile 
   visualizations</a> I have made, and in this talk, I will share how to create them.</p>'
 discord_channel_id: ''
 duration: 10
-end_time: '2021-07-31T15:15:00Z'
+end_time: '2021-07-31T11:15:00-04:00'
 qna: false
 qna_channel: null
 slug: enriching-data-visualizations-with-annotations-in-plotly
