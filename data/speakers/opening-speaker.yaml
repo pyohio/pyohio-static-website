@@ -1,0 +1,10 @@
+avatar: https://www.gravatar.com/avatar/?s=300
+biography: <p>PyOhio Opening Speaker</p>
+code: XXXXXX
+listed: false
+name: Opening Speaker
+slug: opening-speaker
+talks:
+- code: XXXXXX
+  slug: pyohio-2022-opening-remarks
+  title: PyOhio 2022 Opening Remarks

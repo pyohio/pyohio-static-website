@@ -1,0 +1,24 @@
+code: XXXXXX
+content_warnings: null
+description: '<p>Welcome to PyOhio!</p>
+  <ul>
+  <li><a href="https://www.pyohio.org/conduct">Code of Conduct</a></li>
+  <li><a href="https://chat.pyohio.org">Chat on Discord</a></li>
+  <li><a href="https://pyohio.org/shirts">T-Shirt Fundraiser</a></li>
+  </ul>'
+discord_channel_id: ''
+duration: 5
+end_time: '2022-07-30T09:05:00-04:00'
+qna: false
+qna_channel: null
+slug: pyohio-2022-opening-remarks
+speakers:
+- avatar: null
+  code: XXXXXX
+  name: Opening Speaker
+  slug: opening-speaker
+start_time: '2022-07-30T09:00:00-04:00'
+stream_timestamp: 09:05:00
+title: PyOhio 2022 Opening Remarks
+type: Plenary Session
+youtube_url: null
