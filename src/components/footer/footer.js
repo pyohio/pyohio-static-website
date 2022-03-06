@@ -74,7 +74,7 @@ const SiteFooter = () => {
         <div>
           <Link to="/about/ohpyo">
             <StaticImage
-              src="../../../content/assets/pyohio-2021-lightning-snake-sticker.png"
+              src="../../../content/assets/pyohio-lightning-snake-sticker.png"
               sx={{
                 // Styling for the logo using the breakpoint syntax from Theme-UI. Imagine something like [xs, sm, md, l, xl] for the breakpoint sizes. Play around with the logo sizes and your screen size to see the effects
                 height: ["30px", "30px", null, "30px", null],
