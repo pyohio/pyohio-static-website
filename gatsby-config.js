@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `PyOhio 2021`,
-    description: `The free annual Python community conference based in Ohio. July 31, 2021.`,
+    title: `PyOhio 2022`,
+    description: `The free annual Python community conference based in Ohio. July 30, 2022.`,
     keywords: [`python`, `programming`],
     author: `PyOhio Organizers`,
     siteUrl: `https://www.pyohio.org`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
 
     menuLinks: [
-      {
-        name: `Register Now!`,
-        link: `https://ti.to/pyohio/pyohio-2021`,
-        location: `left`,
-      },
+      // {
+      //   name: `Register Now!`,
+      //   link: `https://ti.to/pyohio/pyohio-2021`,
+      //   location: `left`,
+      // },
       {
         name: `About`,
         link: `/about`,
@@ -75,7 +75,7 @@ module.exports = {
             link: `/speaking/speaker-info`,
           },
           {
-            name: `Call for Proposals (closed)`,
+            name: `Call for Proposals`,
             link: `/speaking/call-for-proposals`,
           },
         ],
@@ -99,7 +99,7 @@ module.exports = {
       },
     ],
   },
-  pathPrefix: `/2021`,
+  pathPrefix: `/2022`,
   plugins: [
     {
       resolve: `gatsby-theme-catalyst-core`,
@@ -138,7 +138,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#cccccc`,
         display: `minimal-ui`,
-        icon: `content/assets/pyohio-2021-logo-sticker.png`, // This path is relative to the root of the site.
+        icon: `content/assets/pyohio-logo-white-transparent.png`, // This path is relative to the root of the site.
       },
     },
     {

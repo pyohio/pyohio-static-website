@@ -12,12 +12,12 @@ export default class TalksPage extends React.Component {
 
     return (
       <Layout>
-        <Seo title="PyOhio 2021 Talks" />
+        <Seo title="PyOhio 2022 Talks" />
         <Themed.h1>Talks</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>
-          Now published:{" "}
+          TBA:{" "}
           <Themed.a as={Link} to={`/program/schedule`}>
-            Detailed schedule
+            Detailed schedule TBA
           </Themed.a>
         </Message>
 
