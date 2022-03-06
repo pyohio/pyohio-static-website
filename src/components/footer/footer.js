@@ -34,11 +34,11 @@ const SiteFooter = () => {
       <Helmet>
         <meta
           property="og:image"
-          content="https://www.pyohio.org/pyohio-2021-logo-og.jpg"
+          content="https://www.pyohio.org/pyohio-og.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://www.pyohio.org/pyohio-2021-logo-og.jpg"
+          content="https://www.pyohio.org/pyohio-og.jpg"
         />
       </Helmet>
       <div
