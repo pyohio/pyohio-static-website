@@ -23,7 +23,7 @@ export default function TalkPage({ data }) {
 
   return (
     <Layout>
-      <Seo title={`PyOhio 2021 Talk: ${talk.title}`} />
+      <Seo title={`PyOhio 2022 Talk: ${talk.title}`} />
       <BaseStyles>
         <h1>{talk.title}</h1>
         <p>

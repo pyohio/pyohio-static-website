@@ -13,8 +13,9 @@ export default class TalksPage extends React.Component {
 
     return (
       <Layout>
-        <Seo title="PyOhio 2021 Speakers" />
+        <Seo title="PyOhio 2022 Speakers" />
         <Themed.h1>Speakers</Themed.h1>
+        <Themed.h2>To be announced!</Themed.h2>
 
         <Flex
           sx={{

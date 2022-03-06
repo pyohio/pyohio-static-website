@@ -1,7 +1,7 @@
 {
   "name": "pyohio-static-website",
   "description": "PyOhio website based on Gatsby Starter: Gatsby-Theme-Catalyst-Core, Gatsby-Theme-Catalyst-header-top, Gatsby-Theme-Catalyst-footer",
-  "version": "2021.0.1",
+  "version": "2022.0.1",
   "private": true,
   "author": "PyOhio",
   "dependencies": {
