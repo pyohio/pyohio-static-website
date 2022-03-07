@@ -97,6 +97,11 @@ module.exports = {
         link: `https://www.github.com/pyohio`,
         location: `all`, //Options are "all", "header", "footer"
       },
+      {
+        name: 'Youtube',
+        link: `https://youtube.com/pyohio`,
+        location: `all`,
+      }
     ],
   },
   pathPrefix: `/2022`,
