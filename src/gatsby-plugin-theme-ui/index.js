@@ -5,7 +5,7 @@ import { tailwind, baseColors } from "@theme-ui/preset-tailwind"
 const pyohioColors = {
   primary: "#3A3A3A",
   highlight: "#D2D2D2",
-  cyan: "#8D8D8D",
+  secondary: "#8D8D8D",
   darkSecondary: "#6D6D6D",
   mutedPrimary: "#3C3C3C",
   darkPrimary: "#161616",
