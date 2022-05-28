@@ -71,12 +71,12 @@ module.exports = {
         link: `/speaking`,
         subMenu: [
           {
-            name: `Information for Speakers`,
-            link: `/speaking/speaker-info`,
-          },
-          {
             name: `Call for Proposals`,
             link: `/speaking/call-for-proposals`,
+          },
+          {
+            name: `Information for Speakers`,
+            link: `/speaking/speaker-info`,
           },
         ],
       },
