@@ -18,9 +18,9 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 
-PRETALX_EVENT_ID = "pyohio-2021"
+PRETALX_EVENT_ID = "pyohio-2022"
 DATA_DIR = Path("./data")
-PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile-2021.png"
+PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 
 
 @click.group()
