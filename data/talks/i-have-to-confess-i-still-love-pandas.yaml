@@ -1,0 +1,22 @@
+code: VPHVKC
+content_warnings: null
+description: <p>Pandas is the first Python library that I learned to use. It is used
+  by data scientists to manage, transform and inspect data. As more and more open-source
+  tools appear, it seems the spotlight has shifted and I would love to shine some
+  light on this tool that all should know.</p>
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: false
+qna_channel: null
+slug: i-have-to-confess-i-still-love-pandas
+speakers:
+- avatar: https://pretalx.com/media/avatars/Cheuk_Ting_Ho_myGoldi.JPG
+  code: 8EGVC9
+  name: Cheuk Ting Ho
+  slug: cheuk-ting-ho
+start_time: TBD
+stream_timestamp: ''
+title: I Have to Confess, I Still Love Pandas
+type: Short Talk
+youtube_url: null

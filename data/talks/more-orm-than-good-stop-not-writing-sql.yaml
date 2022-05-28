@@ -1,0 +1,34 @@
+code: BSNAWP
+content_warnings: null
+description: '<p>You''ve spent too much time learning tool after tool to avoid writing
+  SQL, when there''s a really good way to interact with databases; it''s called SQL.  Just
+  use it!  But not alone; there''s a class of simple tools that help you keep your
+  SQL well-organized and tie it cleanly into your Python code:</p>
+
+  <ul>
+
+  <li>For database migrations, Agnostic</li>
+
+  <li>Instead of an ORM, PugSQL</li>
+
+  <li>... or a query builder like PyPika</li>
+
+  <li>For ETL transformations, dbt</li>
+
+  </ul>'
+discord_channel_id: ''
+duration: 5
+end_time: TBD
+qna: true
+qna_channel: more-orm-than-good-stop-not-writing-sql
+slug: more-orm-than-good-stop-not-writing-sql
+speakers:
+- avatar: null
+  code: DNWR98
+  name: Catherine Devlin
+  slug: catherine-devlin
+start_time: TBD
+stream_timestamp: ''
+title: 'More ORM Than Good: Stop Not Writing SQL'
+type: Shorter Talk
+youtube_url: null

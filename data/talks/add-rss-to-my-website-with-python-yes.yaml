@@ -1,0 +1,35 @@
+code: BD8VVJ
+content_warnings: null
+description: '<ul>
+
+  <li>Should I add RSS to my website?</li>
+
+  <li>Yes</li>
+
+  <li>Is it really hard to do?</li>
+
+  <li>No</li>
+
+  <li>Can I do it all with Python?</li>
+
+  <li>Yes</li>
+
+  </ul>
+
+  <p>Let''s find out how!</p>'
+discord_channel_id: ''
+duration: 5
+end_time: TBD
+qna: true
+qna_channel: add-rss-to-my-website-with-python-yes
+slug: add-rss-to-my-website-with-python-yes
+speakers:
+- avatar: https://pretalx.com/media/avatars/mm-profile_jkGwC7D.png
+  code: Z9JKTH
+  name: Mario Munoz
+  slug: mario-munoz
+start_time: TBD
+stream_timestamp: ''
+title: Add RSS to My Website with Python? Yes!
+type: Shorter Talk
+youtube_url: null

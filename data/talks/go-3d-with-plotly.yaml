@@ -1,0 +1,21 @@
+code: UEU39Y
+content_warnings: null
+description: <p>A quick primer on the Plotly graph_objects packages to create meaningful
+  and engaging 3D visualizations. This session with start with a tidied data set and
+  walk through the steps of generating a 3D rendering of that dataset.</p>
+discord_channel_id: ''
+duration: 5
+end_time: TBD
+qna: false
+qna_channel: null
+slug: go-3d-with-plotly
+speakers:
+- avatar: https://pretalx.com/media/avatars/cummings.399_ybtTPMF.jpg
+  code: FKJK3B
+  name: Sarah Cummings
+  slug: sarah-cummings
+start_time: TBD
+stream_timestamp: ''
+title: Go 3D with Plotly
+type: Shorter Talk
+youtube_url: null

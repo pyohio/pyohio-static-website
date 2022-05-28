@@ -1,0 +1,15 @@
+avatar: https://www.gravatar.com/avatar/6016b0e356fdf79a4f209e7b1c2e19b5?s=300
+biography: <p>In 1999, a radioactive database bit Catherine and transformed her from
+  a washed-up chemical engineering grad student into a DBA.  She was PyOhio's founding
+  chair and PyCon 2018's closing keynote speaker, and is current president of the
+  Dayton Dynamic Languages user group.  She lives in the woods near Dayton and probably
+  has sticks in her hair.</p>
+code: DNWR98
+listed: true
+name: Catherine Devlin
+slug: catherine-devlin
+talks:
+- code: BSNAWP
+  slug: more-orm-than-good-stop-not-writing-sql
+  title: 'More ORM Than Good: Stop Not Writing SQL'
+twitter: catherinedevlin

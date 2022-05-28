@@ -1,0 +1,23 @@
+code: UAFVRR
+content_warnings: null
+description: <p>This talk explores popular network clustering algorithms (using the
+  scikit-network and networkx Python libraries) on real-world movie datasets -- and
+  shows how to find the path between two actors (via costars), how Iranian and Turkish
+  actors are far removed from Hollywood but close to each other, and the one major
+  film industry that is far away from the rest of the world.</p>
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: exploring-movie-actor-networks-in-python
+slug: exploring-movie-actor-networks-in-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/Anand-Lift-Conference_qQFm1CL.jpg
+  code: 7CNVPN
+  name: Anand S
+  slug: anand-s
+start_time: TBD
+stream_timestamp: ''
+title: Exploring Movie Actor Networks in Python
+type: Short Talk
+youtube_url: null

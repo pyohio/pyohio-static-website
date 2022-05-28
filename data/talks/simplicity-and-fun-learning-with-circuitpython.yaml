@@ -1,0 +1,31 @@
+code: DSRRMX
+content_warnings: null
+description: '<p><a href="https://circuitpython.org">CircuitPython</a> is an open
+  source version of Python, designed to run on tiny computers called microcontrollers.
+  It has, from the start, focused on being beginner friendly and lowering the barrier
+  to entry for new folks into programming and electronics. This focus has led to creating
+  a language that is considered, by educators, to be an excellent option for teaching
+  in various environments, including university and high school classes, code camps,
+  and more. CircuitPython has accomplished this in multiple ways, including: easy
+  access to <a href="https://learn.adafruit.com/category/circuitpython">thorough documentation</a>,
+  building a welcoming and supportive <a href="https://adafru.it/discord">community</a>,
+  extensive <a href="https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html">hardware
+  support</a>, making it simple to <a href="https://learn.adafruit.com/welcome-to-circuitpython">get
+  started</a>, and, most importantly, making learning fun! Discover how and why CircuitPython
+  is a great choice for education.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: simplicity-and-fun-learning-with-circuitpython
+slug: simplicity-and-fun-learning-with-circuitpython
+speakers:
+- avatar: https://pretalx.com/media/avatars/kattni_lgNzvCx.jpg
+  code: ETNDAN
+  name: Kattni
+  slug: kattni
+start_time: TBD
+stream_timestamp: ''
+title: 'Simplicity and Fun: Learning with CircuitPython'
+type: Short Talk
+youtube_url: null

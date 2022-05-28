@@ -1,0 +1,28 @@
+code: TWC3VV
+content_warnings: null
+description: <p>Combining machine learning with business intelligence can have a significant
+  impact on the insights a business derives from its data. PyCaret is a low-code,
+  open-source machine learning library for Python, and PyCaret can be integrated within
+  Microsoft Power BI. This empowers citizen data analysts and data scientists to add
+  machine learning to their dashboards and reports within minutes. In this demonstration,
+  I'll give an overview of PyCaret and outline the different ways it can be used to
+  enrich your Power BI reports and dashboards. I'll detail the necessary set-up steps
+  to start using PyCaret’s machine learning capabilities in Power BI. Finally, I'll
+  demonstrate how to train and implement an unsupervised anomaly detector in Power
+  BI using PyCaret.</p>
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: false
+qna_channel: null
+slug: build-your-first-anomaly-detector-in-power-bi-using-pycaret
+speakers:
+- avatar: https://pretalx.com/media/avatars/CM_Headshot_RxFFUhs.JPG
+  code: LX7JYS
+  name: Cadey
+  slug: cadey
+start_time: TBD
+stream_timestamp: ''
+title: Build Your First Anomaly Detector in Power BI Using PyCaret
+type: Short Talk
+youtube_url: null
