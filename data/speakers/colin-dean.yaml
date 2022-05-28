@@ -1,0 +1,18 @@
+avatar: https://pretalx.com/media/avatars/colindean_codemash2020_tophat_CzoBNAG.jpg
+biography: <p>Colin Dean is a software engineer, community builder, and non-profit
+  leader. He's built software for IBM Watson, Target, Vivisimo, and Arcadia.io, plus
+  some open source software used by a lot of Mac-using developers. He's served on
+  boards of four non-profits, founding two, and advising other non-profits on leadership
+  and technical topics. He spends most of his time directing Code &amp; Supply, Pittsburgh's
+  largest community of software professionals, and its Meetups, conferences, and coworking
+  space, and otherwise loves cuddling with his dogs and partner.</p>
+code: MDNGES
+listed: true
+name: Colin Dean
+slug: colin-dean
+talks:
+- code: YQWKWN
+  slug: make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command
+  title: 'make python deps check test build: Towards Clone to Red-Green-Refactor in
+    One Command'
+twitter: colindean

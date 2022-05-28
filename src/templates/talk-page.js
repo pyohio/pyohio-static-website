@@ -16,11 +16,15 @@ export default function TalkPage({ data }) {
     .reduce((prev, curr) => [prev, ", ", curr])
 
   function formatTime(timeString) {
-    return DateTime.fromISO(timeString)
-      .setZone("America/New_York")
-      .toFormat("h:mma")
+    const talkTime = DateTime.fromISO(timeString)
+    if (isNaN(talkTime)) {
+      return "TBD"
+    } else {
+      return talkTime
+        .setZone("America/New_York")
+        .toFormat("h:mma")
+    }
   }
-
   return (
     <Layout>
       <Seo title={`PyOhio 2022 Talk: ${talk.title}`} />
@@ -31,12 +35,12 @@ export default function TalkPage({ data }) {
             {talk.type} at {formatTime(talk.start_time)} EDT
           </em>
         </p>
-        {talk.content_warnings && (
+        {/* {talk.content_warnings && (
           <p>
             <span role="img">⚠</span>️ {talk.content_warnings}
           </p>
-        )}
-        {talk.youtube_url && (
+        )} */}
+        {/* {talk.youtube_url && (
           <iframe
             title="Talk Video"
             width="560"
@@ -49,7 +53,7 @@ export default function TalkPage({ data }) {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        )}
+        )} */}
         <div dangerouslySetInnerHTML={{ __html: talk.description }} />
         {talk.type !== "Break" && (
           <div>
@@ -70,8 +74,8 @@ export const talkPageQuery = graphql`
       description
       type
       start_time
-      youtube_url
-      content_warnings
+      # youtube_url
+      # content_warnings
       speakers {
         name
         slug

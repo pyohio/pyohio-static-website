@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/attachment_6_Dicge7M.jpeg
+biography: <p>Mason is currently the Lead Developer Advocate at Gretel where he specializes
+  in synthetic data, data privacy, and Python. Prior to his role at Gretel he was
+  a Developer Advocate at DigitalOcean and an SRE helping build and maintain a highly
+  available hybrid multicloud PaaS. He is an avid programmer, speaker, educator, and
+  writer. He is an organizer of PyTexas and actively contributes to open source projects.
+  In his spare time he enjoys reading, camping, kayaking, and exploring new places.</p>
+code: SN9SZQ
+listed: true
+name: Mason Egger
+slug: mason-egger
+talks:
+- code: THWRAC
+  slug: i-can-t-believe-it-s-not-real-data-an-introduction-into-synthetic-data
+  title: I Can't Believe It's Not Real Data! An Introduction into Synthetic Data
+twitter: masonegger

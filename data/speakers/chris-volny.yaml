@@ -1,0 +1,24 @@
+avatar: https://www.gravatar.com/avatar/c40c841e404976b9e7e3c50037b131bd?s=300
+biography: "<p>Senior Software Engineer with Duo Security / Cisco working on the Duo\
+  \ CloudSSO platform.</p>\n<p>Interests include:<br />\n- WebAuthn and Passwordless\
+  \ authentication<br />\n  - <a href=\"https://youtu.be/QjEiPk9L--4?t=21143\">Ohio\
+  \ LinuxFest '21</a> and a <a href=\"https://www.brighttalk.com/webcast/10415/524569\"\
+  >CSA webinar</a><br />\n- Single Sign On / Cloud Security / Identity and Access\
+  \ Management<br />\n  - [Penguicon 2022 - SSO Technology]((<a href=\"https://penguicon2022.sched.com/event/10YF4/oidc-oauth-saml-and-sso-decoding-the-identity-and-access-alphabet-soup\"\
+  >https://penguicon2022.sched.com/event/10YF4/oidc-oauth-saml-and-sso-decoding-the-identity-and-access-alphabet-soup</a>)<br\
+  \ />\n- Async+Typed Python3<br />\n- React and TypeScript<br />\n- Social and information\
+  \ network analysis + modeling<br />\n   - specifically political homophily / filter\
+  \ bubbles + link prediction/recommendations<br />\n- Machine learning and data classification<br\
+  \ />\n    - mostly DNN and GAs<br />\n- CloudSec, IoT, and Connected Vehicles<br\
+  \ />\n- Meta-programming / ASTs / reflection<br />\n- System architecture, development\
+  \ lifecycle, code maintainability/quality/dependency analysis<br />\n- Number theory,\
+  \ steganography, and cryptography (math not money)</p>"
+code: JG9ASX
+listed: true
+name: Chris Volny
+slug: chris-volny
+talks:
+- code: KGPRLM
+  slug: advanced-typing-typevars-generics-and-protocols
+  title: 'Advanced Typing: TypeVars, Generics, and Protocols'
+twitter: github.com/cvolny

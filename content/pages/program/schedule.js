@@ -12,9 +12,14 @@ export default class TalksPage extends React.Component {
     const { edges: talkList } = data.allTalksYaml
 
     function formatTime(timeString) {
-      return DateTime.fromISO(timeString)
-        .setZone("America/New_York")
-        .toFormat("h:mma")
+      const talkTime = DateTime.fromISO(timeString)
+      if (isNaN(talkTime)) {
+        return "TBD"
+      } else {
+        return talkTime
+          .setZone("America/New_York")
+          .toFormat("h:mma")
+      }
     }
 
     return (

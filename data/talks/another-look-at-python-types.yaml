@@ -1,0 +1,24 @@
+code: ULKKUE
+content_warnings: null
+description: '<p>If you want to write expressive and accessible Python for the people
+  you collaborate with, Python Types should definitely be in your arsenal. There has
+  been a significant evolution to Python’s support for types: Newer, more elegant
+  syntax is available to help your code better communicate what its doing, and what
+  your functions are returning. There has never been a better time to try out typing,
+  or take a deeper look at newly available patterns.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: another-look-at-python-types
+slug: another-look-at-python-types
+speakers:
+- avatar: null
+  code: V3BN7B
+  name: Matt Land
+  slug: matt-land
+start_time: TBD
+stream_timestamp: ''
+title: Another Look at Python Types
+type: Short Talk
+youtube_url: null

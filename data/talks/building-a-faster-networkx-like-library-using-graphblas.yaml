@@ -1,0 +1,66 @@
+code: ZXVC8B
+content_warnings: null
+description: '<p>This is a call for engagement to help with <a href="https://github.com/python-graphblas/graphblas-algorithms"><code>graphblas-algorithms</code></a>!<br
+  />
+
+  We''ll also have weird math and weird Python syntax,<br />
+
+  so you can also come for the fun of getting your mind blown :)</p>
+
+  <p>GraphBLAS is a mathematical abstraction layer designed to express many<br />
+
+  graph algorithms in the language of linear algebra.  It''s weird and written in
+  C.<br />
+
+  It is also <em>incredibly</em> fast and powerful.<br />
+
+  Graph analytics has applications across industries and sciences--more than you might
+  expect--and we want to get the power of GraphBLAS into the hands of Pythonistas
+  and practitioners.</p>
+
+  <p>Our package, <a href="https://github.com/python-graphblas/python-graphblas"><code>python-graphblas</code></a>,
+  allows us to write GraphBLAS in the style of math, not the C API.<br />
+
+  Counterintuitively, by introducing some unconventional notation, we were able to
+  make our library more Pythonic.<br />
+
+  However, <a href="https://github.com/python-graphblas/python-graphblas"><code>python-graphblas</code></a>
+  is still low-level, and most users probably won''t use it directly.<br />
+
+  Instead, most people will probably want to use <a href="https://github.com/python-graphblas/graphblas-algorithms"><code>graphblas-algorithms</code></a>,<br
+  />
+
+  a library that looks like <a href="https://networkx.org/">NetworkX</a>, the most
+  popular graph library in Python.</p>
+
+  <p><a href="https://github.com/python-graphblas/graphblas-algorithms"><code>graphblas-algorithms</code></a>
+  is young.<br />
+
+  It is growing and has great potential, but it could use more help.<br />
+
+  Who can help?  Anybody who is interested!  We have a well-defined target--the <a
+  href="https://networkx.org/">NetworkX</a> API and its tests--so<br />
+
+  it''s very easy to find things to do.<br />
+
+  We actually find it fun like solving puzzles, and there is still a lot of low-lying
+  fruit.<br />
+
+  If you don''t know much about graphs or how to contribute to open-source, this could
+  be a great way to learn!</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: building-a-faster-networkx-like-library-using-graphblas
+slug: building-a-faster-networkx-like-library-using-graphblas
+speakers:
+- avatar: https://pretalx.com/media/avatars/2058401_FG82M4Y.jpg
+  code: JKYJ7V
+  name: Erik Welch
+  slug: erik-welch
+start_time: TBD
+stream_timestamp: ''
+title: Building a Faster NetworkX-Like Library Using GraphBLAS
+type: Short Talk
+youtube_url: null

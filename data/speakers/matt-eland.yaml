@@ -1,0 +1,19 @@
+avatar: https://pretalx.com/media/avatars/Profile512_HG3zB0C.png
+biography: '<p>Matt is a software engineering instructor at Tech Elevator''s Columbus
+  Ohio campus where he gets to raise up future developers and unleash them upon the
+  world to do awesome things. Prior to this Matt enjoyed a .NET and JavaScript-heavy
+  career in the startup and Software as a Service world.</p>
+
+  <p>Matt is an organizer for the Central Ohio .NET Developer Group, runs a data science
+  blog and YouTube channel, and is pursuing a master''s degree studying data science
+  and artificial intelligence as he continues to build nerdy things and look for ways
+  to share new things with the community.</p>'
+code: BRZLHC
+listed: true
+name: Matt Eland
+slug: matt-eland
+talks:
+- code: QYNCQC
+  slug: introducing-automated-machine-learning-with-python-and-azure
+  title: Introducing Automated Machine Learning with Python and Azure
+twitter: integerman

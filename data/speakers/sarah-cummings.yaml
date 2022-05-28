@@ -1,0 +1,18 @@
+avatar: https://pretalx.com/media/avatars/cummings.399_ybtTPMF.jpg
+biography: <p>A Python developer looking after 60+ integrations in her day job, Sarah
+  is a grad student of data analytics by night (and sometimes weekends) at the Fisher
+  College of Business at OSU. Sarah graduated with a BA in International Studies from
+  DePaul University and skidded her way into tech via a development-for-non-developers
+  Ruby class which got her hooked on puts "Hello World". 10 years of tech experience
+  and a few more object-oriented languages later, Sarah is a dedicated Pythonista.
+  When managing to pry herself away from her Mac, you can find her hiking the Hocking
+  Hills or camping in her tiny camper with her family.</p>
+code: FKJK3B
+listed: true
+name: Sarah Cummings
+slug: sarah-cummings
+talks:
+- code: UEU39Y
+  slug: go-3d-with-plotly
+  title: Go 3D with Plotly
+twitter: null

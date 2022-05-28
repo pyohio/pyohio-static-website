@@ -1,0 +1,23 @@
+avatar: https://pretalx.com/media/avatars/Anand-Lift-Conference_qQFm1CL.jpg
+biography: '<p>Anand is a co-founder of Gramener, a data science company. He leads
+  a team that automates insights from data and narrates these as visual data stories.
+  He is recognized as one of India''s top 10 data scientists, and is a regular TEDx
+  speaker.</p>
+
+  <p>Anand is a gold medalist at IIM Bangalore and an alumnus of IIT Madras, London
+  Business School, IBM, Infosys, Lehman Brothers, and BCG.</p>
+
+  <p>More importantly, he has hand-transcribed every Calvin &amp; Hobbes strip ever
+  and dreams of watching every film on the IMDb Top 250.</p>
+
+  <p>He blogs at <a href="https://s-anand.net">https://s-anand.net</a>. His talks
+  are at <a href="https://bit.ly/anandtalks">https://bit.ly/anandtalks</a></p>'
+code: 7CNVPN
+listed: true
+name: Anand S
+slug: anand-s
+talks:
+- code: UAFVRR
+  slug: exploring-movie-actor-networks-in-python
+  title: Exploring Movie Actor Networks in Python
+twitter: sanand0

@@ -1,0 +1,25 @@
+code: VBHM8G
+content_warnings: null
+description: '<p>Have you ever thought about how much code coverage is good enough?</p>
+
+  <p>Is 60% good or good enough? 80% is great, right?</p>
+
+  <p>But what about 100%? Impossible? Too hard to reach? Not worth the effort?</p>
+
+  <p>Join me in finding the right number.</p>'
+discord_channel_id: ''
+duration: 5
+end_time: TBD
+qna: true
+qna_channel: what-is-a-reasonable-percentage-of-code-coverage-and-why-is-it-100
+slug: what-is-a-reasonable-percentage-of-code-coverage-and-why-is-it-100
+speakers:
+- avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
+  code: EARAKA
+  name: Jürgen Gmach
+  slug: jurgen-gmach
+start_time: TBD
+stream_timestamp: ''
+title: What Is a Reasonable Percentage of Code Coverage and Why Is It 100%?
+type: Shorter Talk
+youtube_url: null

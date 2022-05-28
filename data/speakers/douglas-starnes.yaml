@@ -1,0 +1,19 @@
+avatar: https://www.gravatar.com/avatar/6a78aaa9333a1ea6a115da6ecdf37bd9?s=300
+biography: <p>Douglas Starnes is a tech author and Microsoft Most Valuable Professional
+  in developer technologies in Memphis, TN. He is published on Pluralsight, Real Python
+  and SkillShare. Douglas is co-director of the Memphis Python User Group, Memphis
+  .NET User Group, Memphis Xamarin User Group and Memphis Power Platform User Group.
+  He is also on the organizing committees of Scenic City Summit in Chattanooga, and
+  TDevConf, a virtual conference in the state of Tennessee. A frequent conference
+  and user group speaker, Douglas has delivered more than 70 featured presentations
+  and workshops at more than 35 events over the past 10 years. He holds a Bachelor
+  of Music degree with an emphasis on Music Composition from the University of Memphis.</p>
+code: GPEEB7
+listed: true
+name: Douglas Starnes
+slug: douglas-starnes
+talks:
+- code: KWLY7G
+  slug: why-visual-studio-code-is-the-ultimate-python-developer-tool
+  title: Why Visual Studio Code is the Ultimate Python Developer Tool
+twitter: poweredbyaltnet
