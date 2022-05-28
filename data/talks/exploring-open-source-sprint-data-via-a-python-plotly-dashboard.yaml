@@ -1,0 +1,24 @@
+code: AZAKUZ
+content_warnings: null
+description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile python
+  graphing library which lets us make interactive graphs. </p>
+
+  <p>In this talk, we will interpret open source sprint data presented using a Python
+  Plotly Dashboard. We will learn how the dashboard presentation permits extended
+  perspectives of data with multiple dimensions.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: exploring-open-source-sprint-data-via-a-python-plotly-dashboard
+slug: exploring-open-source-sprint-data-via-a-python-plotly-dashboard
+speakers:
+- avatar: https://pretalx.com/media/avatars/_reshama_shaikh_844rT4H.jpeg
+  code: RYWCC9
+  name: Reshama Shaikh
+  slug: reshama-shaikh
+start_time: TBD
+stream_timestamp: ''
+title: Exploring Open Source Sprint Data via a Python Plotly Dashboard
+type: Short Talk
+youtube_url: null

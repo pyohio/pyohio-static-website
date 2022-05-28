@@ -1,0 +1,15 @@
+avatar: https://pretalx.com/media/avatars/profile-berlin_aXVd7QW.jpg
+biography: <p>I am a Physicist and a Data Scientist. I work on a diverse range of
+  projects, mostly in R and Python, although I dabble in a range of other technologies.
+  I enjoy public speaking and delivering training. I strive to make data and code
+  more accessible, taking complex concepts and breaking them down into smaller, digestible
+  units.</p>
+code: 8FY3Z3
+listed: true
+name: Andrew Collier
+slug: andrew-collier
+talks:
+- code: 7BY8JQ
+  slug: exception-groups
+  title: Exception Groups
+twitter: datawookie

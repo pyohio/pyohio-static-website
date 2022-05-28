@@ -1,0 +1,13 @@
+avatar: https://pretalx.com/media/avatars/j%C3%BCrgen_vnSjfQu.jpg
+biography: <p>I am a software developer with a passion for Python and Linux, developing
+  open source both at my day job at Canonical, and at night as a maintainer of tox
+  and many other projects.</p>
+code: EARAKA
+listed: true
+name: Jürgen Gmach
+slug: jurgen-gmach
+talks:
+- code: VBHM8G
+  slug: what-is-a-reasonable-percentage-of-code-coverage-and-why-is-it-100
+  title: What Is a Reasonable Percentage of Code Coverage and Why Is It 100%?
+twitter: jugmac00

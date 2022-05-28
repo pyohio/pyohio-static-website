@@ -1,0 +1,34 @@
+avatar: https://pretalx.com/media/avatars/kattni_lgNzvCx.jpg
+biography: '<p><a href="https://kattni.com">Kattni</a> is a mentor, maker, open source
+  community leader, technical writer, embedded software developer and embedded hardware
+  designer. She is proud to be a woman in tech. She is sponsored by Adafruit to work
+  on the <a href="https://circuitpython.org">CircuitPython project</a>. She is also
+  <a href="https://github.com/sponsors/kattni">sponsored on GitHub</a> by some amazing
+  folks who enable her to further share her knowledge.</p>
+
+  <p>Halfway through 2017, Kattni discovered a passion she had never considered, and
+  it began a series of events that brought her to the amazing place she now finds
+  herself. Her path began with trying to learn Python, and stumbling into CircuitPython.
+  She quickly realised the best part about learning so many new things was sharing
+  that knowledge with others. This realisation has been fundamental to her journey,
+  and has continued to be a significant part of everything she does.</p>
+
+  <p>She spends her time with Adafruit maintaining the <a href="https://circuitpython.org/libraries">CircuitPython
+  libraries</a>, coordinating <a href="https://circuitpython.org/contributing">new
+  contributors</a>, leading the <a href="https://adafru.it/discord">Adafruit community</a>,
+  authoring <a href="https://learn.adafruit.com/users/kattni">guides and tutorials</a>,
+  and picking up whatever else needs to be done, including sometimes designing hardware
+  <a href="https://cdn-shop.adafruit.com/970x728/5378-01.jpg">bearing her name</a>.</p>
+
+  <p>In the rest of her life, she is a maker, programmer, artist, photographer, intermittent
+  chef, one-time gardener, and loved partner. She is tolerated by two cats who continue
+  to let her live with them.</p>'
+code: ETNDAN
+listed: true
+name: Kattni
+slug: kattni
+talks:
+- code: DSRRMX
+  slug: simplicity-and-fun-learning-with-circuitpython
+  title: 'Simplicity and Fun: Learning with CircuitPython'
+twitter: kattni
