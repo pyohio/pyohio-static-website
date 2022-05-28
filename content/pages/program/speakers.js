@@ -71,7 +71,7 @@ export const pageQuery = graphql`
               gatsbyImageData(
                 height: 150
                 width: 150
-                transformOptions: { fit: CONTAIN }
+                transformOptions: { fit: COVER }
               )
             }
           }

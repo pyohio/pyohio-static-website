@@ -58,7 +58,7 @@ export const speakerPageQuery = graphql`
           gatsbyImageData(
             height: 300
             width: 300
-            transformOptions: { fit: CONTAIN }
+            transformOptions: { fit: COVER }
           )
         }
       }
