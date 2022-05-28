@@ -60,6 +60,7 @@ def get_event_data(ctx):
             twitter_question_id = question["id"]
         if question["question"]["en"] == "Q & A" and question["target"] == "submission":
             qa_question_id = question["id"]
+    click.echo(f"Got {len(questions_results)} questions", err=True)
 
     click.echo("Getting answers...", err=True)
     twitter_by_speaker_code = {}
@@ -83,6 +84,7 @@ def get_event_data(ctx):
         f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/submissions?state=confirmed"
     )
     sessions_results = get_all_json_results(sessions_url, headers)
+    click.echo(f"Got {len(sessions_results)} talks", err=True)
 
     click.echo("Deleteing old talk files...", err=True)
     for f in Path(f"{DATA_DIR}/talks").glob("*.yaml"):
@@ -94,6 +96,7 @@ def get_event_data(ctx):
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
     for talk in sessions_results:
+        click.echo(talk)
         speakers = [
             {
                 "name": s["name"],
@@ -103,6 +106,8 @@ def get_event_data(ctx):
             }
             for s in talk["speakers"]
         ]
+        if talk.get("slot") is None:
+            talk["slot"] = {}
         data = {
             "code": talk["code"],
             "title": talk["title"],
