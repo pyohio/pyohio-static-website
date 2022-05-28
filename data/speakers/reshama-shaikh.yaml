@@ -1,0 +1,30 @@
+avatar: https://pretalx.com/media/avatars/_reshama_shaikh_844rT4H.jpeg
+biography: '<p>Reshama is a statistician/data scientist based in New York City. She
+  earned her M.S. in statistics from Rutgers University. She earned her M.B.A. from
+  NYU Stern School of Business where she studied strategy, business analytics and
+  technology management.</p>
+
+  <p>Reshama Shaikh is the Director of Data Umbrella. She is also on the Triage Team
+  for scikit-learn and an organizer for NYC PyLadies.</p>
+
+  <ul>
+
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/reshamas/">@reshamas</a></li>
+
+  <li>Twitter: <a href="https://twitter.com/reshamas">@reshamas</a></li>
+
+  <li>GitHub: <a href="https://github.com/reshamas">@reshamas</a></li>
+
+  </ul>
+
+  <p>Join the <a href="https://www.meetup.com/data-umbrella/">Data Umbrella Meetup
+  Group</a></p>'
+code: RYWCC9
+listed: true
+name: Reshama Shaikh
+slug: reshama-shaikh
+talks:
+- code: AZAKUZ
+  slug: exploring-open-source-sprint-data-via-a-python-plotly-dashboard
+  title: Exploring Open Source Sprint Data via a Python Plotly Dashboard
+twitter: reshamas

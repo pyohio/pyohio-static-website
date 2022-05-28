@@ -1,0 +1,14 @@
+avatar: https://pretalx.com/media/avatars/profile_pic_square_color_0QhYy9V.png
+biography: <p>Will Angel is a data professional in the Washington D.C. area and currently
+  works at Caribou Financial as a technical product manager, helping a data engineering
+  team help data analysts help people save money on their cars. Will helps run the
+  Data Visualization DC Meetup group and is bad at gardening.</p>
+code: VQPLA9
+listed: true
+name: Will Angel
+slug: will-angel
+talks:
+- code: DZ7AYZ
+  slug: intro-to-devops-in-python
+  title: Intro to DevOps in Python
+twitter: datadrivenangel
