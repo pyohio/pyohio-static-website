@@ -16,11 +16,15 @@ export default function TalkPage({ data }) {
     .reduce((prev, curr) => [prev, ", ", curr])
 
   function formatTime(timeString) {
-    return DateTime.fromISO(timeString)
-      .setZone("America/New_York")
-      .toFormat("h:mma")
+    const talkTime = DateTime.fromISO(timeString)
+    if (isNaN(talkTime)) {
+      return "TBD"
+    } else {
+      return talkTime
+        .setZone("America/New_York")
+        .toFormat("h:mma")
+    }
   }
-
   return (
     <Layout>
       <Seo title={`PyOhio 2022 Talk: ${talk.title}`} />
