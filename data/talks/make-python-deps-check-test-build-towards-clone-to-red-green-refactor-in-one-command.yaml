@@ -1,0 +1,27 @@
+code: YQWKWN
+content_warnings: null
+description: <p>Getting productive with a Python codebase, especially when you're
+  unfamiliar with the ecosystem, can be daunting. Building a cohesive strategy with
+  widely-available tooling shortens the time-to-productivity for new contributors
+  to projects internal and open-source, demonstrating that the maintainers care about
+  onboarding and the developer experience. I'll give an introduction to how my team
+  solved this problem using a 46-year-old program and push the audience in a direction
+  toward better developer experiences starting at the greatest common denominator
+  of tooling.</p>
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command
+slug: make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command
+speakers:
+- avatar: https://pretalx.com/media/avatars/colindean_codemash2020_tophat_CzoBNAG.jpg
+  code: MDNGES
+  name: Colin Dean
+  slug: colin-dean
+start_time: null
+stream_timestamp: ''
+title: 'make python deps check test build: Towards Clone to Red-Green-Refactor in
+  One Command'
+type: Short Talk
+youtube_url: null

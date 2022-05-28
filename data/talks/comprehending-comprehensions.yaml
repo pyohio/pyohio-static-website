@@ -1,0 +1,27 @@
+code: N9XS8Y
+content_warnings: null
+description: '<p>In this short talk, I will introduce all the key ideas necessary
+  for you to finally understand comprehensions: list, dict, and set comprehensions,
+  plus generator expressions.</p>
+
+  <p>I will explain the <strong>key</strong> argument in favour of list comprehensions
+  and I will show how to turn any suitable loop into its equivalent comprehension.</p>
+
+  <p>By the time the talk is over, you''ll be much closer to getting your black belt
+  in comprehension-fu.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: comprehending-comprehensions
+slug: comprehending-comprehensions
+speakers:
+- avatar: https://pretalx.com/media/avatars/rgs_half_qpHwx6a.jpg
+  code: BLNV7P
+  name: Rodrigo Girão Serrão
+  slug: rodrigo-girao-serrao
+start_time: null
+stream_timestamp: ''
+title: Comprehending Comprehensions
+type: Short Talk
+youtube_url: null

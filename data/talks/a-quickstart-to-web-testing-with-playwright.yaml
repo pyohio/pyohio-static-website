@@ -1,0 +1,27 @@
+code: YGLZWX
+content_warnings: null
+description: '<p>Playwright is a fantastic new open source web testing framework from
+  Microsoft. With Playwright, you can automate tests for web apps and REST APIs that
+  run on multiple browsers without flaky failures. It''s a nice, modern alternative
+  to Selenium WebDriver, and you can use Playwright in plain-old Python!</p>
+
+  <p>In this concise 10-minute quickstart, we''ll learn how to configure a Python
+  project with Playwright and <code>pytest</code>, automate a basic web test, and
+  run it against different browsers. You''ll be able to add more tests to our starter
+  project on your own after the talk!</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: a-quickstart-to-web-testing-with-playwright
+slug: a-quickstart-to-web-testing-with-playwright
+speakers:
+- avatar: https://pretalx.com/media/avatars/andy_django_profile_zoom_small_1UIzVKP.jpg
+  code: 8WV93W
+  name: Pandy Knight
+  slug: pandy-knight
+start_time: null
+stream_timestamp: ''
+title: A Quickstart to Web Testing with Playwright
+type: Short Talk
+youtube_url: null

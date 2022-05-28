@@ -1,0 +1,26 @@
+code: EKYFK7
+content_warnings: null
+description: '<p>Data sets can get large quickly. You can quickly go from looking
+  at: a few 100 lines and a handful of columns to…<br />
+
+  a million lines and with hundred of columns.<br />
+
+  Python Pandas (with smart use of Categories) can enable one to reduce the size of
+  ones data in memory by up to 90%.  Careless use can increase memory use.  Learn
+  when to use categories to save memory.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: processing-large-data-with-pandas
+slug: processing-large-data-with-pandas
+speakers:
+- avatar: https://pretalx.com/media/avatars/evelyn_boettcher_2022_3_4_QdtP4HL.png
+  code: EDHAQJ
+  name: Evelyn Boettcher
+  slug: evelyn-boettcher
+start_time: null
+stream_timestamp: ''
+title: Processing Large Data with Pandas
+type: Short Talk
+youtube_url: null

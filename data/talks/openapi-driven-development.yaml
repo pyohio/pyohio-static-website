@@ -1,0 +1,29 @@
+code: H8L7HD
+content_warnings: null
+description: '<p>As a service owner, one needs to provide strong guarantees for the
+  behavior of their APIs. To avoid eroding developer trust in your service, we show
+  how we guarantee strong contracts using <a href="https://spec.openapis.org/oas/v3.1.0">OpenAPI</a>
+  while avoiding extraneous overhead for service owners. This talk shows how to autogenerate
+  OpenAPI schemas, prevent breaking changes automatically with your CI/CD, and how
+  we improved the delivery cycle time for our teams.</p>
+
+  <p>At <a href="https://zapier.com">Zapier</a>, we connect over 4,000 of your favorite
+  online apps together. We''ve learned how to produce high-quality APIs with over
+  10 years of experience integrating with APIs. We''re applying these best practices
+  as we break out our services from our Django monolith.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: openapi-driven-development
+slug: openapi-driven-development
+speakers:
+- avatar: null
+  code: ZBTLFR
+  name: Olmo Maldonado
+  slug: olmo-maldonado
+start_time: null
+stream_timestamp: ''
+title: OpenAPI Driven Development
+type: Short Talk
+youtube_url: null

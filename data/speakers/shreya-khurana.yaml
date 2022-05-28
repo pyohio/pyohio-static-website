@@ -1,0 +1,15 @@
+avatar: https://pretalx.com/media/avatars/Screen_Shot_2022-04-03_at_1.46.41_AM_GtdmkRW.png
+biography: <p>Hi, I'm a data scientist in the Domain Search team at GoDaddy which
+  researches, develops, and deploys deep learning models for Godaddy’s domain business.
+  I enjoy working with data in general and more specifically building NLP models.
+  I'm a Python enthusiast and enjoy sharing my learnings with the community - I've
+  previously presented at the Grace Hopper Conference, PyCon US, EuroPython and GeoPython.</p>
+code: L79PHK
+listed: true
+name: Shreya Khurana
+slug: shreya-khurana
+talks:
+- code: GDKLTP
+  slug: baby-steps-towards-your-first-fastapi-app
+  title: Baby Steps Towards Your First FastAPI App
+twitter: null

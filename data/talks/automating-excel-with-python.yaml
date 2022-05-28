@@ -1,0 +1,22 @@
+code: RXLTKZ
+content_warnings: null
+description: <p>Learn how to read and write Excel spreadsheets using Python. This
+  talk will show you not only how to read and write data in Excel, but also how to
+  format the data in Excel and give you the ability to make beautiful spreadsheets
+  programmatically.</p>
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: automating-excel-with-python
+slug: automating-excel-with-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/headshot_akkPN8q.jpg
+  code: WF8U7R
+  name: Mike Driscoll
+  slug: mike-driscoll
+start_time: null
+stream_timestamp: ''
+title: Automating Excel with Python
+type: Short Talk
+youtube_url: null

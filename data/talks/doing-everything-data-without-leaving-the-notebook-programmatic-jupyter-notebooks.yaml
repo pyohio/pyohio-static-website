@@ -1,0 +1,31 @@
+code: TUJLCE
+content_warnings: null
+description: '<p>Jupyter notebooks is one of the most powerful tools for any data
+  scientist. It makes doing tasks like data wrangling, modeling, visualizing really
+  quick and easy for even people with not a lot of experience in software engineering.</p>
+
+  <p>But, a problem arises that to actually put that code into production involves
+  a lot of copying, pasting, and refactoring into order to be used in a full fledged
+  system. But what if we didn''t have to leave the notebook? What if the notebook
+  could be the production ready code?</p>
+
+  <p>This talk will giving an introduction to using the papermill library, how it
+  works, why it''s powerful, and an actual use case of how I use papermill in a pipeline
+  that transforms raw data into clean tidy data, and then runs multiple many notebooks
+  to generate various visualizations and statistics to be later used in a study.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: false
+qna_channel: null
+slug: doing-everything-data-without-leaving-the-notebook-programmatic-jupyter-notebooks
+speakers:
+- avatar: https://pretalx.com/media/avatars/4131575_f43E4iZ.jpg
+  code: FM3WYU
+  name: Alex Zharichenko
+  slug: alex-zharichenko
+start_time: null
+stream_timestamp: ''
+title: Doing Everything Data Without Leaving the Notebook | Programmatic Jupyter Notebooks
+type: Short Talk
+youtube_url: null

@@ -1,0 +1,23 @@
+code: TCJAEP
+content_warnings: null
+description: <p>Velocity is an important metric to a lot of software teams, but in
+  my experience, it’s often been the most important metric to management — often at
+  the expense of missing out on the rest of the story. In this talk, we'll explore
+  Earned Business Value, Cycle Time, and Cumulative Flow to examine how these metrics
+  might deliver additional insight into teams' development lifecycles.</p>
+discord_channel_id: ''
+duration: 5
+end_time: null
+qna: true
+qna_channel: beyond-velocity-3-metrics-for-engineering-team-success
+slug: beyond-velocity-3-metrics-for-engineering-team-success
+speakers:
+- avatar: https://pretalx.com/media/avatars/IWS45_FOpDpgF.jpg
+  code: N8VAC3
+  name: Amanda Quint
+  slug: amanda-quint
+start_time: null
+stream_timestamp: ''
+title: 'Beyond Velocity: 3 Metrics for Engineering Team Success'
+type: Shorter Talk
+youtube_url: null

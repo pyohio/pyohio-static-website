@@ -1,0 +1,49 @@
+code: QTSB88
+content_warnings: null
+description: '<p>You cracked open your brand new Mac or Linux dream machine and low
+  and behold, it has Python out-of-the-box and ready to roll… Or so you think? Maybe
+  you want to get started doing Python development on Windows and see that you can
+  grab Python easily from the Microsoft Store. Should you?</p>
+
+  <p>There are simple, yet crucial, reminders that can differentiate an expert developer
+  from a hobbyist. This talk is ideal for developers who want to optimize their system
+  setups. Developers of all skill levels often forget about the journey — and the
+  troubles — they had when first installing Python on their machines. Established,
+  senior developers might be able to install Python easily, but are they following
+  the Zen of Python when it comes to best practices for environment settings and versioning?</p>
+
+  <p>In this talk and live demo, we’ll discuss getting started with the end in mind
+  and making sure your development computer doesn’t become the next superfund site
+  (<a href="https://xkcd.com/1987/">https://xkcd.com/1987/</a>). </p>
+
+  <p>Developers will learn:<br />
+
+  - the importance of abiding by the Zen of Python;<br />
+
+  - where (and how) to install Python on your machine;<br />
+
+  - three rules to follow when installing Python;<br />
+
+  - proper version management with pyenv;<br />
+
+  - which Python add-ons (e.g.: virtualenv, pipx, piptools, Docker) can be used to
+  make environments both repeatable and simple.</p>
+
+  <p>After this presentation, developers will know the best practices needed to spend
+  less time setting up and more time having fun with the code.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: bootstrapping-your-local-python-environment
+slug: bootstrapping-your-local-python-environment
+speakers:
+- avatar: https://pretalx.com/media/avatars/Calvin_Hendryx-Parker_HS_IhLlb4s.png
+  code: ME3WGG
+  name: Calvin Hendryx-Parker
+  slug: calvin-hendryx-parker
+start_time: null
+stream_timestamp: ''
+title: Bootstrapping Your Local Python Environment
+type: Short Talk
+youtube_url: null

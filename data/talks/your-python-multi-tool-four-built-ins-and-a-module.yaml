@@ -1,0 +1,29 @@
+code: BRXPVT
+content_warnings: null
+description: '<p><strong>Your Python Multi-tool</strong>: <em>Four built-ins and a
+  module</em> </p>
+
+  <p>There are four built-in functions and a module that makeup a "Python Multi-tool".</p>
+
+  <p>help, dir, type, id, and inspect </p>
+
+  <p>Whether you are new to Python or have years of experience, these five tools are
+  very helpful when learning something new in the language. Easy to use and often
+  overlooked for use by tutorials, these are powerful allies that will be (re)introduced
+  to you in this talk.</p>'
+discord_channel_id: ''
+duration: 5
+end_time: null
+qna: true
+qna_channel: your-python-multi-tool-four-built-ins-and-a-module
+slug: your-python-multi-tool-four-built-ins-and-a-module
+speakers:
+- avatar: https://pretalx.com/media/avatars/craig_sm512x590_copy_B2VOxVb.png
+  code: BPYL8N
+  name: Craig Lang
+  slug: craig-lang
+start_time: null
+stream_timestamp: ''
+title: 'Your Python Multi-Tool: Four Built-Ins and a Module'
+type: Shorter Talk
+youtube_url: null

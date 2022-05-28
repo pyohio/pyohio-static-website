@@ -1,0 +1,23 @@
+code: TMCZSL
+content_warnings: null
+description: <p>APIs are great and fun to develop, but how can you deploy and host
+  one? This talk will cover designing and deploying a simple Python REST API to AWS
+  using AWS Lambda and AWS API Gateway, using the AWS Serverless Application Model
+  as infrastructure as code to define the API specs and deploy all of the code. All
+  with ZERO server interactions!</p>
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: false
+qna_channel: null
+slug: deploy-a-python-api-to-the-cloud-fast
+speakers:
+- avatar: https://pretalx.com/media/avatars/IMG_4745_qRCUrne.jpg
+  code: KYDXUC
+  name: Drake Pocsatko
+  slug: drake-pocsatko
+start_time: null
+stream_timestamp: ''
+title: Deploy a Python API to the Cloud, Fast!
+type: Short Talk
+youtube_url: null

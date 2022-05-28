@@ -1,0 +1,24 @@
+code: KWLY7G
+content_warnings: null
+description: <p>Since its release, Visual Studio Code has become one of the most popular
+  developer tools in the world. And it has not forgotten about Python. In fact, out
+  of the over 30,000 extensions available for VS Code, 3 of the top 4 are Python extensions.
+  This session will survey the features of VS Code and those extensions. Viewers will
+  leave with the facts needed to maximize the potential of incorporating VS Code into
+  the development environment.</p>
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: why-visual-studio-code-is-the-ultimate-python-developer-tool
+slug: why-visual-studio-code-is-the-ultimate-python-developer-tool
+speakers:
+- avatar: null
+  code: GPEEB7
+  name: Douglas Starnes
+  slug: douglas-starnes
+start_time: null
+stream_timestamp: ''
+title: Why Visual Studio Code is the Ultimate Python Developer Tool
+type: Short Talk
+youtube_url: null

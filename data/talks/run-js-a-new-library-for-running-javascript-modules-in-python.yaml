@@ -1,0 +1,24 @@
+code: QXZH39
+content_warnings: null
+description: <p><a href="https://github.com/danieljdufour/run-js">run-js</a> is a
+  new Python package that enables users to easily run JavaScript modules in Python
+  without breaking from the familiar Pythonic syntax. With inspiration from <a href="https://github.com/amoffat/sh">sh</a>,
+  it wraps the module instance intercepting requests. This talk will go over cool
+  examples on how to use run-js and also dive into its internals, explain sys.modules,
+  dunder methods, and how to pipe data between JS and Python processes.</p>
+discord_channel_id: ''
+duration: 5
+end_time: null
+qna: true
+qna_channel: run-js-a-new-library-for-running-javascript-modules-in-python
+slug: run-js-a-new-library-for-running-javascript-modules-in-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/daniel-dufour_NZCjsU0.png
+  code: 8NTC9F
+  name: Daniel Dufour
+  slug: daniel-dufour
+start_time: null
+stream_timestamp: ''
+title: 'Run-JS: A New Library for Running JavaScript Modules in Python'
+type: Shorter Talk
+youtube_url: null
