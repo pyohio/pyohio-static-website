@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/IMG_4745_qRCUrne.jpg
+biography: '<p>I am a cloud engineer in Columbus who focuses in serverless AWS solutions.
+  I have spent the majority of my career leveraging Python and AWS serverless offerings
+  to create seamless cloud experiences for customers and developers. </p>
+
+  <p>I am graduate of Ohio State University with a B.S. in Computer Science &amp;
+  Engineering, as well as a graduate of Washington &amp; Jefferson College with a
+  B.A. in Physics.</p>'
+code: KYDXUC
+listed: true
+name: Drake Pocsatko
+slug: drake-pocsatko
+talks:
+- code: TMCZSL
+  slug: deploy-a-python-api-to-the-cloud-fast
+  title: Deploy a Python API to the Cloud, Fast!
+twitter: null

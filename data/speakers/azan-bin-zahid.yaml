@@ -1,0 +1,27 @@
+avatar: https://pretalx.com/media/avatars/DSC_25882_L7744Il.jpg
+biography: '<ul>
+
+  <li>Software Engineer at Arbisoft working for edX / 2U</li>
+
+  <li>Speaker, Open edX Conference 2022</li>
+
+  <li>Led a development team of Open Data Pakistan</li>
+
+  <li>Google CodeU APAC Singapore Participant</li>
+
+  <li>Top Rated Freelancer on Upwork Inc.</li>
+
+  <li>[Inter]national Hackathons Winner </li>
+
+  <li>[ex] President, IEEE CS LUMS</li>
+
+  </ul>'
+code: HVKWNH
+listed: true
+name: Azan Bin Zahid
+slug: azan-bin-zahid
+talks:
+- code: SJWBN9
+  slug: paginated-apis-x-python
+  title: Paginated APIs x Python
+twitter: azanbinzahid
