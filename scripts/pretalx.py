@@ -21,7 +21,7 @@ except ImportError:
 PRETALX_EVENT_ID = "pyohio-2022"
 DATA_DIR = Path("./data")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
-DEFAULT_TIME = "2022-07-30T13:00:00Z"
+DEFAULT_TIME = "TBD"
 
 
 @click.group()
