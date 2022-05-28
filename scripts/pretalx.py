@@ -96,7 +96,6 @@ def get_event_data(ctx):
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
     for talk in sessions_results:
-        click.echo(talk)
         speakers = [
             {
                 "name": s["name"],
