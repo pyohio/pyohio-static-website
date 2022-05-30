@@ -15,10 +15,10 @@ qna: true
 qna_channel: processing-large-data-with-pandas
 slug: processing-large-data-with-pandas
 speakers:
-- avatar: https://pretalx.com/media/avatars/evelyn_boettcher_2022_3_4_QdtP4HL.png
+- avatar: https://pretalx.com/media/avatars/evelyn_square_2_0PoAJTh.png
   code: EDHAQJ
-  name: Evelyn Boettcher
-  slug: evelyn-boettcher
+  name: Evelyn J. Boettcher
+  slug: evelyn-j-boettcher
 start_time: TBD
 stream_timestamp: ''
 title: Processing Large Data with Pandas
