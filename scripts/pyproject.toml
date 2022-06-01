@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-httpx = "^0.18.1"
+httpx = "^0.23.0"
 PyYAML = "^5.4.1"
 click = "^8.0.1"
 python-slugify = "^5.0.2"
