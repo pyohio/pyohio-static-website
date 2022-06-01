@@ -2,7 +2,7 @@ code: KGPRLM
 content_warnings: null
 description: <p>So we've heard about Python type annotations, but let's get into the
   gritty bits around <code>typing.TypeVar</code> bounding (inclusive polymorphism),
-  <code>typing.Generic</code> (parameterized types), and <code>typing.Protcol</code>
+  <code>typing.Generic</code> (parameterized types), and <code>typing.Protocol</code>
   (interfaces) to learn how we can leverage types for structural subtyping (static
   duck typing).</p>
 discord_channel_id: ''
