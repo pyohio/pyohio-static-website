@@ -52,7 +52,7 @@ def get_event_data(ctx):
     headers = {"Authorization": f"Token {ctx.obj['api_key']}"}
 
     click.echo("Getting questions...", err=True)
-    questions_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/questions"
+    questions_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/questions/"
     questions_results = get_all_json_results(questions_url, headers)
     twitter_question_id = None
 
@@ -66,7 +66,7 @@ def get_event_data(ctx):
     click.echo("Getting answers...", err=True)
     twitter_by_speaker_code = {}
     if twitter_question_id:
-        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers?question={twitter_question_id}"
+        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers/?question={twitter_question_id}"
 
         answers_results = get_all_json_results(answers_url, headers)
         for answer in answers_results:
@@ -74,20 +74,18 @@ def get_event_data(ctx):
 
     qa_by_talk_code = {}
     if qa_question_id:
-        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers?question={qa_question_id}"
+        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers/?question={qa_question_id}"
 
         answers_results = get_all_json_results(answers_url, headers)
         for answer in answers_results:
             qa_by_talk_code[answer["submission"]] = answer["answer"]
 
     click.echo("Getting talks...", err=True)
-    sessions_url = (
-        f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/submissions?state=confirmed"
-    )
+    sessions_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/submissions/?state=confirmed"
     sessions_results = get_all_json_results(sessions_url, headers)
     click.echo(f"Got {len(sessions_results)} talks", err=True)
 
-    click.echo("Deleteing old talk files...", err=True)
+    click.echo("Deleting old talk files...", err=True)
     for f in Path(f"{DATA_DIR}/talks").glob("*.yaml"):
         try:
             f.unlink(missing_ok=True)
@@ -154,9 +152,7 @@ def get_event_data(ctx):
             speaker_codes.append(speaker["code"])
     speaker_data = []
     for speaker_code in speaker_codes:
-        speaker_url = (
-            f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/speakers/{speaker_code}"
-        )
+        speaker_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/speakers/{speaker_code}/"
         response = httpx.get(speaker_url, headers=headers)
         response.raise_for_status()
         speaker_data.append(response.json())
