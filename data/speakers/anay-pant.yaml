@@ -1,0 +1,32 @@
+avatar: https://www.pyohio.org/no-profile.png
+biography: '<p>I have been speaking or presenting at PyCon since I was in fifth grade
+  starting out with my Pythonista mom and now on my own! I presented about different
+  types of games, teaching, and robotics with Python. I love working with Python,
+  especially building neural networks for games I play, and developing neural networks
+  for competitions in Kaggle and Data.world.<br />
+
+  Here is a video link from my presentation in PyOhio21: <a href="https://www.youtube.com/watch?v=eNaPGZX7Co0&amp;ab_channel=PyOhio">https://www.youtube.com/watch?v=eNaPGZX7Co0&amp;ab_channel=PyOhio</a><br
+  />
+
+  Here is the link to one of the lectures for AiClub - Included are snippets from
+  Navigator: <a href="https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing">https://docs.google.com/presentation/d/1HbtudvKDDbJNVzORYFK-6QyyY7YT7-r1OoEZtTZoVg0/edit?usp=sharing</a><br
+  />
+
+  I am also part of a Robotics team called the FTC Ninjabots. We participate in seasonal
+  robotics competitions. Our design has sections on using  AI to detect objects. I
+  use the skills I know from AI and Python experience to make my contribution.<br
+  />
+
+  Here is the link to our Robotics Team’s website: <a href="https://ninjabotsfll.wixsite.com/ninjabots">https://ninjabotsfll.wixsite.com/ninjabots</a><br
+  />
+
+  GitHub page: <a href="https://anaypant.github.io/">https://anaypant.github.io/</a></p>'
+code: ZSEY9M
+listed: true
+name: Anay Pant
+slug: anay-pant
+talks:
+- code: 98ZPHF
+  slug: how-to-build-an-ai-powered-flappy-bird
+  title: How to Build an AI-Powered Flappy Bird!
+twitter: null
