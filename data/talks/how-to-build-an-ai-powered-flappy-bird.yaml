@@ -1,0 +1,25 @@
+code: 98ZPHF
+content_warnings: null
+description: <p>Flappy Bird is one of the most popular mobile games in the world.
+  The game consists of a bird that can flap up and down as it navigates through the
+  gaps in many pipes to receive a higher score.Through my adventures with python and
+  AI, I have been learning about genetic algorithms and how they work. I used the
+  flappy bird to expand my knowledge of theory and applications of genetic algorithms,
+  neural networks, and much more. Let me take you on my journey of creating an AI
+  to play Flappy Bird!</p>
+discord_channel_id: ''
+duration: 5
+end_time: TBD
+qna: false
+qna_channel: null
+slug: how-to-build-an-ai-powered-flappy-bird
+speakers:
+- avatar: null
+  code: ZSEY9M
+  name: Anay Pant
+  slug: anay-pant
+start_time: TBD
+stream_timestamp: ''
+title: How to Build an AI-Powered Flappy Bird!
+type: Shorter Talk
+youtube_url: null
