@@ -1,0 +1,57 @@
+code: WJQ3VU
+content_warnings: null
+description: '<p>Cloud-native application security involves balancing contradictory
+  requirements: the benefits of cloud services in accelerating development, while
+  at the same time handling security in an adverse environment where there are more
+  attack surfaces and opportunities for data breaches. Today, tools exist that focus
+  specifically on the security and vulnerability posture of cloud workloads. Container
+  and configuration vulnerabilities are identified, and enforcement policies are enacted
+  to protect the workloads if these are operating with such vulnerabilities.</p>
+
+  <p>Unfortunately, many security tools do not address the vulnerabilities of APIs.
+  Cloud-native applications expose many internal API services and developers are increasingly
+  using external API services for their applications. Both internal and external API
+  use expose the workload to new vulnerabilities; more strongly, workload security
+  and API security are really two sides to the same coin. This talk specifically focuses
+  on the security problems and vulnerabilities exposed through APIs.</p>
+
+  <p>Questions we address include:<br />
+
+  What does a developer know about a service before using it?<br />
+
+  Does a poorly defined interface expose API service vulnerabilities?<br />
+
+  Does the service perform well to begin with?<br />
+
+  How does the developer get/maintain an access token?<br />
+
+  Do API specs show critical use cases and dependencies?<br />
+
+  Can the security impact of an external API service be estimated and managed?<br
+  />
+
+  Do the APIs violate the OWASP API top 10?<br />
+
+  How can we test against the OWASP API top 10?<br />
+
+  Can PII be shared with such services?<br />
+
+  We show how SecureCN addresses both sides of the security coin: container workload
+  and API security in one tool, and we present actual issues with a live demonstration
+  of SecureCN.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: apis-the-universe-and-everything
+slug: apis-the-universe-and-everything
+speakers:
+- avatar: https://pretalx.com/media/avatars/Peter_Bosch_HMDEtzh.jpeg
+  code: JLHYYQ
+  name: Peter Bosch
+  slug: peter-bosch
+start_time: TBD
+stream_timestamp: ''
+title: APIs, the Universe, and Everything
+type: Short Talk
+youtube_url: null
