@@ -1,0 +1,14 @@
+avatar: https://pretalx.com/media/avatars/CAD33DBA-8684-440B-9106-F7AA25916A30_PsF6VQs.jpeg
+biography: <p>Josh Martin is a full stack web developer, who is getting sick of making
+  the same web forms all the time, and wondering what the heck is Kubernetes and why
+  it so awful to use. With a computer engineering degree in his back pocket, and a
+  love for all things hardware, he vents his frustrations by making "physical memes"™.</p>
+code: QUD3YR
+listed: true
+name: Josh Martin
+slug: josh-martin
+talks:
+- code: ZMDJFU
+  slug: squid-games-irl-with-python
+  title: Squid Games IRL with Python
+twitter: cjoshmartin
