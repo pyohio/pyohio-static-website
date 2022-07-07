@@ -3,13 +3,15 @@ import { BaseTheme } from "gatsby-theme-catalyst-core"
 import { tailwind, baseColors } from "@theme-ui/preset-tailwind"
 
 const pyohioColors = {
-  primary: "#3A3A3A",
-  highlight: "#D2D2D2",
-  secondary: "#8D8D8D",
+  primary: "#3776ab",
+  highlight: "#ffda4a",
+  secondary: "#74acdb",
   darkSecondary: "#6D6D6D",
-  mutedPrimary: "#3C3C3C",
-  darkPrimary: "#161616",
+  mutedPrimary: "#26455e",
+  darkPrimary: "#021b2e",
 }
+
+
 
 const theme = merge(BaseTheme, {
   // Modifications to the base theme go here. This is an example changing colors and using variants to change your navigation links. Uncomment the code below to see what happens.
