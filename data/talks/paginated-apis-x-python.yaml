@@ -6,12 +6,14 @@ description: '<p>While working with making requests to external RESTful APIs usi
   results, store them and/or add throttling between consecutive requests. </p>
 
   <p>This talk will cover some useful and robust ways to deal efficiently with range
-  paginated APIs patterns using Python.</p>'
+  paginated APIs patterns using Python.</p>
+
+  <p>Read more: <a href="https://github.com/azanbinzahid/paginated-apis-pyohio-2022">https://github.com/azanbinzahid/paginated-apis-pyohio-2022</a></p>'
 discord_channel_id: ''
 duration: 5
 end_time: TBD
-qna: true
-qna_channel: paginated-apis-x-python
+qna: false
+qna_channel: null
 slug: paginated-apis-x-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/DSC_25882_L7744Il.jpg
