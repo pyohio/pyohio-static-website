@@ -8,12 +8,16 @@ description: '<p>Playwright is a fantastic new open source web testing framework
   <p>In this concise 10-minute quickstart, we''ll learn how to configure a Python
   project with Playwright and <code>pytest</code>, automate a basic web test, and
   run it against different browsers. You''ll be able to add more tests to our starter
-  project on your own after the talk!</p>'
+  project on your own after the talk!</p>
+
+  <p>Example code with full instructions can be found here:<br />
+
+  <a href="https://github.com/AutomationPanda/playwright-python-tutorial"><a href="https://github.com/AutomationPanda/playwright-python-tutorial">https://github.com/AutomationPanda/playwright-python-tutorial</a></a></p>'
 discord_channel_id: ''
 duration: 10
 end_time: TBD
-qna: true
-qna_channel: a-quickstart-to-web-testing-with-playwright
+qna: false
+qna_channel: null
 slug: a-quickstart-to-web-testing-with-playwright
 speakers:
 - avatar: https://pretalx.com/media/avatars/andy_django_profile_zoom_small_1UIzVKP.jpg
