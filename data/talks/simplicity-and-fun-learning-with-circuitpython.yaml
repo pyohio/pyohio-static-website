@@ -12,7 +12,9 @@ description: '<p><a href="https://circuitpython.org">CircuitPython</a> is an ope
   extensive <a href="https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html">hardware
   support</a>, making it simple to <a href="https://learn.adafruit.com/welcome-to-circuitpython">get
   started</a>, and, most importantly, making learning fun! Discover how and why CircuitPython
-  is a great choice for education.</p>'
+  is a great choice for education.</p>
+
+  <p>Slides and talk resources can be found <a href="https://github.com/kattni/PyOhio2022">here</a>.</p>'
 discord_channel_id: ''
 duration: 10
 end_time: TBD
