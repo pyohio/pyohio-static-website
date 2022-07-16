@@ -1,15 +1,18 @@
 code: QYNCQC
 content_warnings: null
-description: <p>In this short talk we'll explore what a sample usage of the Azure
+description: '<p>In this short talk we''ll explore what a sample usage of the Azure
   ML Python SDK looks like and how you can use Python and Azure Machine Learning Studio
   to track and version datasets and machine learning models, discover new models that
   perform well with your data, evaluate those models, and deploy them as a web service
   - all without having to leave your IDE.</p>
+
+  <p>For additional talk resources, see <a href="https://matteland.dev/AzureMLPythonSDK"><a
+  href="https://MattEland.dev/AzureMLPythonSDK">https://MattEland.dev/AzureMLPythonSDK</a></a></p>'
 discord_channel_id: ''
 duration: 5
 end_time: TBD
-qna: false
-qna_channel: null
+qna: true
+qna_channel: introducing-automated-machine-learning-with-python-and-azure
 slug: introducing-automated-machine-learning-with-python-and-azure
 speakers:
 - avatar: https://pretalx.com/media/avatars/CodeMash400x400_hLeXhw7.jpg
