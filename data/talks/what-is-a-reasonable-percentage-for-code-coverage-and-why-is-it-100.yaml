@@ -11,8 +11,8 @@ discord_channel_id: ''
 duration: 5
 end_time: TBD
 qna: true
-qna_channel: what-is-a-reasonable-percentage-of-code-coverage-and-why-is-it-100
-slug: what-is-a-reasonable-percentage-of-code-coverage-and-why-is-it-100
+qna_channel: what-is-a-reasonable-percentage-for-code-coverage-and-why-is-it-100
+slug: what-is-a-reasonable-percentage-for-code-coverage-and-why-is-it-100
 speakers:
 - avatar: https://pretalx.com/media/avatars/profile_square_byv0On4.jpg
   code: EARAKA
@@ -20,6 +20,6 @@ speakers:
   slug: jurgen-gmach
 start_time: TBD
 stream_timestamp: ''
-title: What Is a Reasonable Percentage of Code Coverage and Why Is It 100%?
+title: What Is a Reasonable Percentage for Code Coverage and Why Is It 100%?
 type: Shorter Talk
 youtube_url: null

@@ -12,7 +12,7 @@ name: Colin Dean
 slug: colin-dean
 talks:
 - code: YQWKWN
-  slug: make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command
-  title: 'make python deps check test build: Towards Clone to Red-Green-Refactor in
-    One Command'
+  slug: make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool
+  title: 'make python devex: Towards Clone to Red-Green-Refactor in One Command with
+    a 45+-Year-Old Tool'
 twitter: colindean

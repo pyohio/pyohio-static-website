@@ -1,11 +1,13 @@
 code: HNKFLC
 content_warnings: null
-description: <p>Having unit tests and continuous integration (CI) as part of your
+description: '<p>Having unit tests and continuous integration (CI) as part of your
   development are considered best practises. But how do these things work? In this
   talk, we will cover the benefits of writing unit tests and how to get started with
-  it in Python. Then, we'll step it up running tests as part CI. And that's not all!
-  CI is not just about running tests, but for other things as well, like code quality
-  checks, and even building and generating documentation.</p>
+  it in Python. Then, we''ll step it up running tests as part CI. And that''s not
+  all! CI is not just about running tests, but for other things as well, like code
+  quality checks, and even building and generating documentation.</p>
+
+  <p>Presentation slides: <a href="https://speakerdeck.com/mariatta/intro-to-unit-testing-and-continuous-integration-20264b4c-2777-4736-9639-5810098da5a0">https://speakerdeck.com/mariatta/intro-to-unit-testing-and-continuous-integration-20264b4c-2777-4736-9639-5810098da5a0</a></p>'
 discord_channel_id: ''
 duration: 10
 end_time: TBD
@@ -15,8 +17,8 @@ slug: intro-to-unit-testing-and-continuous-integration
 speakers:
 - avatar: null
   code: PTGUYZ
-  name: Mariatta
-  slug: mariatta
+  name: Mariatta Wijaya
+  slug: mariatta-wijaya
 start_time: TBD
 stream_timestamp: ''
 title: Intro to Unit Testing and Continuous Integration
