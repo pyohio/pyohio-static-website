@@ -12,8 +12,8 @@ discord_channel_id: ''
 duration: 10
 end_time: TBD
 qna: true
-qna_channel: make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command
-slug: make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command
+qna_channel: make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool
+slug: make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool
 speakers:
 - avatar: https://pretalx.com/media/avatars/colindean_codemash2020_tophat_CzoBNAG.jpg
   code: MDNGES
@@ -21,7 +21,7 @@ speakers:
   slug: colin-dean
 start_time: TBD
 stream_timestamp: ''
-title: 'make python deps check test build: Towards Clone to Red-Green-Refactor in
-  One Command'
+title: 'make python devex: Towards Clone to Red-Green-Refactor in One Command with
+  a 45+-Year-Old Tool'
 type: Short Talk
 youtube_url: null
