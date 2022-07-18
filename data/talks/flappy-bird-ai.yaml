@@ -12,7 +12,7 @@ duration: 5
 end_time: TBD
 qna: false
 qna_channel: null
-slug: how-to-build-an-ai-powered-flappy-bird
+slug: flappy-bird-ai
 speakers:
 - avatar: null
   code: ZSEY9M
@@ -20,6 +20,6 @@ speakers:
   slug: anay-pant
 start_time: TBD
 stream_timestamp: ''
-title: How to Build an AI-Powered Flappy Bird!
+title: Flappy Bird AI!
 type: Shorter Talk
 youtube_url: null
