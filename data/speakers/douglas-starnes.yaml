@@ -14,6 +14,6 @@ name: Douglas Starnes
 slug: douglas-starnes
 talks:
 - code: KWLY7G
-  slug: why-visual-studio-code-is-the-ultimate-python-developer-tool
-  title: Why Visual Studio Code Is the Ultimate Python Developer Tool
+  slug: visual-studio-code-the-ultimate-python-developer-environment
+  title: 'Visual Studio Code: The Ultimate Python Developer Environment'
 twitter: poweredbyaltnet

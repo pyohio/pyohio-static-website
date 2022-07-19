@@ -11,8 +11,6 @@ description: '<p>You''ve spent too much time learning tool after tool to avoid w
 
   <li>Instead of an ORM, PugSQL</li>
 
-  <li>... or a query builder like PyPika</li>
-
   <li>For ETL transformations, dbt</li>
 
   </ul>'
