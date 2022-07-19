@@ -10,8 +10,8 @@ description: '<p>Jupyter is usually thought of as a tool for data scientists. Ex
 discord_channel_id: ''
 duration: 10
 end_time: TBD
-qna: false
-qna_channel: null
+qna: true
+qna_channel: jupyter-for-devops
 slug: jupyter-for-devops
 speakers:
 - avatar: https://pretalx.com/media/avatars/M48A0550_OFvFoAA.jpg

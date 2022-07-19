@@ -15,28 +15,31 @@ description: '<p>Cloud-native application security involves balancing contradict
   and API security are really two sides to the same coin. This talk specifically focuses
   on the security problems and vulnerabilities exposed through APIs.</p>
 
-  <p>Questions we address include:<br />
+  <p>Questions we address include:</p>
 
-  What does a developer know about a service before using it?<br />
+  <ul>
 
-  Does a poorly defined interface expose API service vulnerabilities?<br />
+  <li>What does a developer know about a service before using it?</li>
 
-  Does the service perform well to begin with?<br />
+  <li>Does a poorly defined interface expose API service vulnerabilities?</li>
 
-  How does the developer get/maintain an access token?<br />
+  <li>Does the service perform well to begin with?</li>
 
-  Do API specs show critical use cases and dependencies?<br />
+  <li>How does the developer get/maintain an access token?</li>
 
-  Can the security impact of an external API service be estimated and managed?<br
-  />
+  <li>Do API specs show critical use cases and dependencies?</li>
 
-  Do the APIs violate the OWASP API top 10?<br />
+  <li>Can the security impact of an external API service be estimated and managed?</li>
 
-  How can we test against the OWASP API top 10?<br />
+  <li>Do the APIs violate the OWASP API top 10?</li>
 
-  Can PII be shared with such services?<br />
+  <li>How can we test against the OWASP API top 10?</li>
 
-  We show how SecureCN addresses both sides of the security coin: container workload
+  <li>Can PII be shared with such services?</li>
+
+  </ul>
+
+  <p>We show how SecureCN addresses both sides of the security coin: container workload
   and API security in one tool, and we present actual issues with a live demonstration
   of SecureCN.</p>'
 discord_channel_id: ''
