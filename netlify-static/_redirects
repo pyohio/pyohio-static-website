@@ -22,7 +22,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /prospectus             /2022                           302
 /register               /2022/participate/register      302
 /schedule               /2022/program/schedule          302
-/shirts                 /2022 302
+/shirts                 https://www.customink.com/fundraising/pyohio-2022 302
 /sprints                /2022                           302
 /volunteer              /2022/participate/volunteer     302
 /hackfest               /2022/program                   302
