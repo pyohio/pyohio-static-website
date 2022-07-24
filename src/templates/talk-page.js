@@ -20,9 +20,7 @@ export default function TalkPage({ data }) {
     if (isNaN(talkTime)) {
       return "TBD"
     } else {
-      return talkTime
-        .setZone("America/New_York")
-        .toFormat("h:mma")
+      return talkTime.setZone("America/New_York").toFormat("h:mma")
     }
   }
   return (

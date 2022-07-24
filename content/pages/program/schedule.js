@@ -16,9 +16,7 @@ export default class TalksPage extends React.Component {
       if (isNaN(talkTime)) {
         return "TBD"
       } else {
-        return talkTime
-          .setZone("America/New_York")
-          .toFormat("h:mma")
+        return talkTime.setZone("America/New_York").toFormat("h:mma")
       }
     }
 
