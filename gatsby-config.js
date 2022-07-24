@@ -46,6 +46,10 @@ module.exports = {
             name: `Virtual Attendance`,
             link: `/participate`,
           },
+          {
+            name: `Volunteer`,
+            link: `/participate/volunteer`,
+          },
         ],
       },
       {
@@ -98,10 +102,10 @@ module.exports = {
         location: `all`, //Options are "all", "header", "footer"
       },
       {
-        name: 'Youtube',
+        name: "Youtube",
         link: `https://youtube.com/pyohio`,
         location: `all`,
-      }
+      },
     ],
   },
   pathPrefix: `/2022`,
