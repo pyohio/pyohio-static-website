@@ -10,8 +10,8 @@ description: '<p>While working with making requests to external RESTful APIs usi
 
   <p>Read more: <a href="https://github.com/azanbinzahid/paginated-apis-pyohio-2022">https://github.com/azanbinzahid/paginated-apis-pyohio-2022</a></p>'
 discord_channel_id: ''
-duration: 5
-end_time: TBD
+duration: 6
+end_time: '2022-07-30T15:42:00-04:00'
 qna: false
 qna_channel: null
 slug: paginated-apis-x-python
@@ -20,7 +20,7 @@ speakers:
   code: HVKWNH
   name: Azan Bin Zahid
   slug: azan-bin-zahid
-start_time: TBD
+start_time: '2022-07-30T15:36:00-04:00'
 stream_timestamp: ''
 title: Paginated APIs x Python
 type: Shorter Talk

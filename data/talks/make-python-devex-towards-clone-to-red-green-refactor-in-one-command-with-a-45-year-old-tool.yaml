@@ -9,8 +9,8 @@ description: <p>Getting productive with a Python codebase, especially when you'r
   toward better developer experiences starting at the greatest common denominator
   of tooling.</p>
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 13
+end_time: '2022-07-30T11:41:00-04:00'
 qna: true
 qna_channel: make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool
 slug: make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool
@@ -19,7 +19,7 @@ speakers:
   code: MDNGES
   name: Colin Dean
   slug: colin-dean
-start_time: TBD
+start_time: '2022-07-30T11:28:00-04:00'
 stream_timestamp: ''
 title: 'make python devex: Towards Clone to Red-Green-Refactor in One Command with
   a 45+-Year-Old Tool'

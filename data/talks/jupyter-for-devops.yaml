@@ -9,7 +9,7 @@ description: '<p>Jupyter is usually thought of as a tool for data scientists. Ex
   best practices will be covered like how to share notebooks securely and usefully.</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2022-07-30T13:06:00-04:00'
 qna: true
 qna_channel: jupyter-for-devops
 slug: jupyter-for-devops
@@ -18,7 +18,7 @@ speakers:
   code: KYYQVJ
   name: Moshe Zadka
   slug: moshe-zadka
-start_time: TBD
+start_time: '2022-07-30T12:56:00-04:00'
 stream_timestamp: ''
 title: Jupyter for DevOps
 type: Short Talk

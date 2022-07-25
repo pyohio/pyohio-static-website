@@ -7,8 +7,8 @@ description: '<p>Let''s face it: finding a job is not just about what you know b
   the hard way that will help you land awesome opportunities by building relationships
   with the right people.</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 11
+end_time: '2022-07-30T11:53:00-04:00'
 qna: true
 qna_channel: paving-an-easier-path-to-your-next-tech-job
 slug: paving-an-easier-path-to-your-next-tech-job
@@ -17,7 +17,7 @@ speakers:
   code: KQ8AGG
   name: Jason Wattier
   slug: jason-wattier
-start_time: TBD
+start_time: '2022-07-30T11:42:00-04:00'
 stream_timestamp: ''
 title: Paving an Easier Path to Your Next Tech Job
 type: Short Talk

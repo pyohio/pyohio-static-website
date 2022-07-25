@@ -19,7 +19,7 @@ description: '<p>Velocity is an important metric to a lot of software teams, but
   </ul>'
 discord_channel_id: ''
 duration: 5
-end_time: TBD
+end_time: '2022-07-30T13:11:00-04:00'
 qna: true
 qna_channel: beyond-velocity-3-metrics-for-engineering-team-success
 slug: beyond-velocity-3-metrics-for-engineering-team-success
@@ -28,7 +28,7 @@ speakers:
   code: N8VAC3
   name: Amanda Quint
   slug: amanda-quint
-start_time: TBD
+start_time: '2022-07-30T13:06:00-04:00'
 stream_timestamp: ''
 title: 'Beyond Velocity: 3 Metrics for Engineering Team Success'
 type: Shorter Talk

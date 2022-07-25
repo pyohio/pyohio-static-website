@@ -19,7 +19,7 @@ description: '<ul>
   <p>Let''s find out how!</p>'
 discord_channel_id: ''
 duration: 5
-end_time: TBD
+end_time: '2022-07-30T12:35:00-04:00'
 qna: true
 qna_channel: add-rss-to-my-website-with-python-yes
 slug: add-rss-to-my-website-with-python-yes
@@ -28,7 +28,7 @@ speakers:
   code: Z9JKTH
   name: Mario Munoz
   slug: mario-munoz
-start_time: TBD
+start_time: '2022-07-30T12:30:00-04:00'
 stream_timestamp: ''
 title: Add RSS to My Website with Python? Yes!
 type: Shorter Talk

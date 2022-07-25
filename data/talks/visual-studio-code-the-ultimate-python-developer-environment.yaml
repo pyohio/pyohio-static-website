@@ -7,8 +7,8 @@ description: <p>Since its release, Visual Studio Code has become one of the most
   leave with the facts needed to maximize the potential of incorporating VS Code into
   the development environment.</p>
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 9
+end_time: '2022-07-30T14:29:00-04:00'
 qna: true
 qna_channel: visual-studio-code-the-ultimate-python-developer-environment
 slug: visual-studio-code-the-ultimate-python-developer-environment
@@ -17,7 +17,7 @@ speakers:
   code: GPEEB7
   name: Douglas Starnes
   slug: douglas-starnes
-start_time: TBD
+start_time: '2022-07-30T14:20:00-04:00'
 stream_timestamp: ''
 title: 'Visual Studio Code: The Ultimate Python Developer Environment'
 type: Short Talk

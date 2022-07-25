@@ -9,8 +9,8 @@ description: '<p>Data sets can get large quickly. You can quickly go from lookin
   when to use categories to save memory. <a href="https://www.evelynboettcher.com/pyohio-pandas#/">Slides
   located here</a></p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 13
+end_time: '2022-07-30T10:11:48-04:00'
 qna: true
 qna_channel: processing-large-data-with-pandas
 slug: processing-large-data-with-pandas
@@ -19,7 +19,7 @@ speakers:
   code: EDHAQJ
   name: Evelyn J. Boettcher
   slug: evelyn-j-boettcher
-start_time: TBD
+start_time: '2022-07-30T09:58:00-04:00'
 stream_timestamp: ''
 title: Processing Large Data with Pandas
 type: Short Talk

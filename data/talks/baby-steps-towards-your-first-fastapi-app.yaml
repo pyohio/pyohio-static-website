@@ -17,8 +17,8 @@ description: '<p>FastAPI is a high-performing web framework used to build APIs i
 
   - generated swagger</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 11
+end_time: '2022-07-30T15:26:00-04:00'
 qna: true
 qna_channel: baby-steps-towards-your-first-fastapi-app
 slug: baby-steps-towards-your-first-fastapi-app
@@ -27,7 +27,7 @@ speakers:
   code: L79PHK
   name: Shreya Khurana
   slug: shreya-khurana
-start_time: TBD
+start_time: '2022-07-30T15:15:00-04:00'
 stream_timestamp: ''
 title: Baby Steps Towards Your First FastAPI App
 type: Short Talk

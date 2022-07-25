@@ -10,8 +10,8 @@ description: '<p>In this short talk, I will introduce all the key ideas necessar
   <p>By the time the talk is over, you''ll be much closer to getting your black belt
   in comprehension-fu.</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 14
+end_time: '2022-07-30T13:44:00-04:00'
 qna: true
 qna_channel: comprehending-comprehensions
 slug: comprehending-comprehensions
@@ -20,7 +20,7 @@ speakers:
   code: BLNV7P
   name: Rodrigo Girão Serrão
   slug: rodrigo-girao-serrao
-start_time: TBD
+start_time: '2022-07-30T13:30:00-04:00'
 stream_timestamp: ''
 title: Comprehending Comprehensions
 type: Short Talk

@@ -10,7 +10,7 @@ description: '<p>In this short talk we''ll explore what a sample usage of the Az
   href="https://MattEland.dev/AzureMLPythonSDK">https://MattEland.dev/AzureMLPythonSDK</a></a></p>'
 discord_channel_id: ''
 duration: 5
-end_time: TBD
+end_time: '2022-07-30T14:52:00-04:00'
 qna: true
 qna_channel: introducing-automated-machine-learning-with-python-and-azure
 slug: introducing-automated-machine-learning-with-python-and-azure
@@ -19,7 +19,7 @@ speakers:
   code: BRZLHC
   name: Matt Eland
   slug: matt-eland
-start_time: TBD
+start_time: '2022-07-30T14:47:00-04:00'
 stream_timestamp: ''
 title: Introducing Automated Machine Learning with Python and Azure
 type: Shorter Talk
