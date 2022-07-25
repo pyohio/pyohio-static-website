@@ -8,7 +8,7 @@ description: <p><a href="https://github.com/danieljdufour/run-js">run-js</a> is 
   dunder methods, and how to pipe data between JS and Python processes.</p>
 discord_channel_id: ''
 duration: 5
-end_time: TBD
+end_time: '2022-07-30T14:57:00-04:00'
 qna: true
 qna_channel: run-js-a-new-library-for-running-javascript-modules-in-python
 slug: run-js-a-new-library-for-running-javascript-modules-in-python
@@ -17,7 +17,7 @@ speakers:
   code: 8NTC9F
   name: Daniel Dufour
   slug: daniel-dufour
-start_time: TBD
+start_time: '2022-07-30T14:52:00-04:00'
 stream_timestamp: ''
 title: 'Run-JS: A New Library for Running JavaScript Modules in Python'
 type: Shorter Talk

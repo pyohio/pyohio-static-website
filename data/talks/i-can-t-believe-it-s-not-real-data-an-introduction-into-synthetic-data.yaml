@@ -16,8 +16,8 @@ description: '<p>From Data Science and Machine Learning to Software Engineering 
   Data removes bias, augments data sets, and makes once private data easily shareable
   while still protecting the privacy of the initial data set.</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 14
+end_time: '2022-07-30T10:26:00-04:00'
 qna: true
 qna_channel: i-can-t-believe-it-s-not-real-data-an-introduction-into-synthetic-data
 slug: i-can-t-believe-it-s-not-real-data-an-introduction-into-synthetic-data
@@ -26,7 +26,7 @@ speakers:
   code: SN9SZQ
   name: Mason Egger
   slug: mason-egger
-start_time: TBD
+start_time: '2022-07-30T10:12:00-04:00'
 stream_timestamp: ''
 title: I Can't Believe It's Not Real Data! An Introduction into Synthetic Data
 type: Short Talk

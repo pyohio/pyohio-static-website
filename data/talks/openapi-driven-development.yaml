@@ -12,8 +12,8 @@ description: '<p>As a service owner, one needs to provide strong guarantees for 
   10 years of experience integrating with APIs. We''re applying these best practices
   as we break out our services from our Django monolith.</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 16
+end_time: '2022-07-30T15:58:00-04:00'
 qna: true
 qna_channel: openapi-driven-development
 slug: openapi-driven-development
@@ -22,7 +22,7 @@ speakers:
   code: ZBTLFR
   name: Olmo Maldonado
   slug: olmo-maldonado
-start_time: TBD
+start_time: '2022-07-30T15:42:00-04:00'
 stream_timestamp: ''
 title: OpenAPI Driven Development
 type: Short Talk

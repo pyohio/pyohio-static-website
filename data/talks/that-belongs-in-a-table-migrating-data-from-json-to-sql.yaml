@@ -5,7 +5,7 @@ description: <p>I recently wanted to migrate data from a NoSQL Datastore to a re
   handling mildly relational data how we were able to move it from json-based to database.</p>
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2022-07-30T11:10:00-04:00'
 qna: false
 qna_channel: null
 slug: that-belongs-in-a-table-migrating-data-from-json-to-sql
@@ -14,7 +14,7 @@ speakers:
   code: PFEFTZ
   name: Jay Miller
   slug: jay-miller
-start_time: TBD
+start_time: '2022-07-30T11:00:00-04:00'
 stream_timestamp: ''
 title: 'That Belongs in a Table: Migrating Data from JSON to SQL'
 type: Short Talk

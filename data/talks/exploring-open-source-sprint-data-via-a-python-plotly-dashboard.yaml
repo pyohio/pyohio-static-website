@@ -7,8 +7,8 @@ description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile 
   Plotly Dashboard. We will learn how the dashboard presentation permits extended
   perspectives of data with multiple dimensions.</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 12
+end_time: '2022-07-30T14:47:00-04:00'
 qna: true
 qna_channel: exploring-open-source-sprint-data-via-a-python-plotly-dashboard
 slug: exploring-open-source-sprint-data-via-a-python-plotly-dashboard
@@ -17,7 +17,7 @@ speakers:
   code: RYWCC9
   name: Reshama Shaikh
   slug: reshama-shaikh
-start_time: TBD
+start_time: '2022-07-30T14:35:00-04:00'
 stream_timestamp: ''
 title: Exploring Open Source Sprint Data via a Python Plotly Dashboard
 type: Short Talk

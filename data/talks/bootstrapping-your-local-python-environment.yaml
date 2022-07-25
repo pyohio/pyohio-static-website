@@ -32,8 +32,8 @@ description: '<p>You cracked open your brand new Mac or Linux dream machine and 
   <p>After this presentation, developers will know the best practices needed to spend
   less time setting up and more time having fun with the code.</p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 13
+end_time: '2022-07-30T11:28:00-04:00'
 qna: true
 qna_channel: bootstrapping-your-local-python-environment
 slug: bootstrapping-your-local-python-environment
@@ -42,7 +42,7 @@ speakers:
   code: ME3WGG
   name: Calvin Hendryx-Parker
   slug: calvin-hendryx-parker
-start_time: TBD
+start_time: '2022-07-30T11:15:00-04:00'
 stream_timestamp: ''
 title: Bootstrapping Your Local Python Environment
 type: Short Talk

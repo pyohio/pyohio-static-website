@@ -15,8 +15,8 @@ description: '<p>You''ve spent too much time learning tool after tool to avoid w
 
   </ul>'
 discord_channel_id: ''
-duration: 5
-end_time: TBD
+duration: 4
+end_time: '2022-07-30T11:00:00-04:00'
 qna: true
 qna_channel: more-orm-than-good-stop-not-writing-sql
 slug: more-orm-than-good-stop-not-writing-sql
@@ -25,7 +25,7 @@ speakers:
   code: DNWR98
   name: Catherine Devlin
   slug: catherine-devlin
-start_time: TBD
+start_time: '2022-07-30T10:56:00-04:00'
 stream_timestamp: ''
 title: 'More ORM Than Good: Stop Not Writing SQL'
 type: Shorter Talk

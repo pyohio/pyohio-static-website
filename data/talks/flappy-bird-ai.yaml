@@ -8,8 +8,8 @@ description: <p>Flappy Bird is one of the most popular mobile games in the world
   neural networks, and much more. Let me take you on my journey of creating an AI
   to play Flappy Bird!</p>
 discord_channel_id: ''
-duration: 5
-end_time: TBD
+duration: 17
+end_time: '2022-07-30T09:21:00-04:00'
 qna: false
 qna_channel: null
 slug: flappy-bird-ai
@@ -18,7 +18,7 @@ speakers:
   code: ZSEY9M
   name: Anay Pant
   slug: anay-pant
-start_time: TBD
+start_time: '2022-07-30T09:04:00-04:00'
 stream_timestamp: ''
 title: Flappy Bird AI!
 type: Shorter Talk

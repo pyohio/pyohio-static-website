@@ -6,7 +6,7 @@ description: <p>Learn how to read and write Excel spreadsheets using Python. Thi
   programmatically.</p>
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2022-07-30T12:45:00-04:00'
 qna: true
 qna_channel: automating-excel-with-python
 slug: automating-excel-with-python
@@ -15,7 +15,7 @@ speakers:
   code: WF8U7R
   name: Mike Driscoll
   slug: mike-driscoll
-start_time: TBD
+start_time: '2022-07-30T12:35:00-04:00'
 stream_timestamp: ''
 title: Automating Excel with Python
 type: Short Talk

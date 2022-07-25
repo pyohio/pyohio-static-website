@@ -9,8 +9,8 @@ description: '<p>Having unit tests and continuous integration (CI) as part of yo
 
   <p>Presentation slides: <a href="https://speakerdeck.com/mariatta/intro-to-unit-testing-and-continuous-integration-20264b4c-2777-4736-9639-5810098da5a0">https://speakerdeck.com/mariatta/intro-to-unit-testing-and-continuous-integration-20264b4c-2777-4736-9639-5810098da5a0</a></p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 11
+end_time: '2022-07-30T10:41:00-04:00'
 qna: true
 qna_channel: intro-to-unit-testing-and-continuous-integration
 slug: intro-to-unit-testing-and-continuous-integration
@@ -19,7 +19,7 @@ speakers:
   code: PTGUYZ
   name: Mariatta
   slug: mariatta
-start_time: TBD
+start_time: '2022-07-30T10:30:00-04:00'
 stream_timestamp: ''
 title: Intro to Unit Testing and Continuous Integration
 type: Short Talk

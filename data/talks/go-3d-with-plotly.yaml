@@ -5,7 +5,7 @@ description: <p>A quick primer on the Plotly graph_objects packages to create me
   walk through the steps of generating a 3D rendering of that dataset.</p>
 discord_channel_id: ''
 duration: 5
-end_time: TBD
+end_time: '2022-07-30T13:49:00-04:00'
 qna: false
 qna_channel: null
 slug: go-3d-with-plotly
@@ -14,7 +14,7 @@ speakers:
   code: FKJK3B
   name: Sarah Cummings
   slug: sarah-cummings
-start_time: TBD
+start_time: '2022-07-30T13:44:00-04:00'
 stream_timestamp: ''
 title: Go 3D with Plotly
 type: Shorter Talk

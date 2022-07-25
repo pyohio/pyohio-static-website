@@ -15,7 +15,7 @@ description: '<p>Jupyter notebooks is one of the most powerful tools for any dat
   to generate various visualizations and statistics to be later used in a study.</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2022-07-30T12:55:00-04:00'
 qna: false
 qna_channel: null
 slug: doing-everything-data-without-leaving-the-notebook-programmatic-jupyter-notebooks
@@ -24,7 +24,7 @@ speakers:
   code: FM3WYU
   name: Alex Zharichenko
   slug: alex-zharichenko
-start_time: TBD
+start_time: '2022-07-30T12:45:00-04:00'
 stream_timestamp: ''
 title: 'Doing Everything Data Without Leaving the Notebook: Programmatic Jupyter Notebooks'
 type: Short Talk

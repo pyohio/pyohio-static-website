@@ -6,8 +6,8 @@ description: <p>So we've heard about Python type annotations, but let's get into
   (interfaces) to learn how we can leverage types for structural subtyping (static
   duck typing).</p>
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 13
+end_time: '2022-07-30T14:19:00-04:00'
 qna: true
 qna_channel: advanced-typing-typevars-generics-and-protocols
 slug: advanced-typing-typevars-generics-and-protocols
@@ -16,7 +16,7 @@ speakers:
   code: JG9ASX
   name: Chris Volny
   slug: chris-volny
-start_time: TBD
+start_time: '2022-07-30T14:06:00-04:00'
 stream_timestamp: ''
 title: 'Advanced Typing: TypeVars, Generics, and Protocols'
 type: Short Talk

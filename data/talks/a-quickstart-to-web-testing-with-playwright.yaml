@@ -14,8 +14,8 @@ description: '<p>Playwright is a fantastic new open source web testing framework
 
   <a href="https://github.com/AutomationPanda/playwright-python-tutorial"><a href="https://github.com/AutomationPanda/playwright-python-tutorial">https://github.com/AutomationPanda/playwright-python-tutorial</a></a></p>'
 discord_channel_id: ''
-duration: 10
-end_time: TBD
+duration: 9
+end_time: '2022-07-30T10:50:00-04:00'
 qna: false
 qna_channel: null
 slug: a-quickstart-to-web-testing-with-playwright
@@ -24,7 +24,7 @@ speakers:
   code: 8WV93W
   name: Pandy Knight
   slug: pandy-knight
-start_time: TBD
+start_time: '2022-07-30T10:41:00-04:00'
 stream_timestamp: ''
 title: A Quickstart to Web Testing with Playwright
 type: Short Talk

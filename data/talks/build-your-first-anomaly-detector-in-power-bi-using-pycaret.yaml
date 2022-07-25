@@ -12,7 +12,7 @@ description: <p>Combining machine learning with business intelligence can have a
   BI using PyCaret.</p>
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2022-07-30T13:25:00-04:00'
 qna: false
 qna_channel: null
 slug: build-your-first-anomaly-detector-in-power-bi-using-pycaret
@@ -21,7 +21,7 @@ speakers:
   code: LX7JYS
   name: Cadey Moore
   slug: cadey-moore
-start_time: TBD
+start_time: '2022-07-30T13:15:00-04:00'
 stream_timestamp: ''
 title: Build Your First Anomaly Detector in Power BI Using PyCaret
 type: Short Talk
