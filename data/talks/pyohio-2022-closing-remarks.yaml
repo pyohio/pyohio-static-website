@@ -18,7 +18,7 @@ duration: 2
 end_time: '2022-07-30T16:00:00-04:00'
 qna: false
 qna_channel: null
-slug: pyohio-2021-closing-remarks
+slug: pyohio-2022-closing-remarks
 speakers:
 - avatar: null
   code: KGVCNV
@@ -26,6 +26,6 @@ speakers:
   slug: dave-forgac
 start_time: '2022-07-30T15:58:00-04:00'
 stream_timestamp: ''
-title: PyOhio 2021 Closing Remarks
+title: PyOhio 2022 Closing Remarks
 type: Plenary Session
 youtube_url: null
