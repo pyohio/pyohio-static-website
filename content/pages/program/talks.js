@@ -15,9 +15,9 @@ export default class TalksPage extends React.Component {
         <Seo title="PyOhio 2022 Talks" />
         <Themed.h1>Talks</Themed.h1>
         <Message sx={{ backgroundColor: "muted" }}>
-          TBA:{" "}
+          Schedule posted:{" "}
           <Themed.a as={Link} to={`/program/schedule`}>
-            Detailed schedule TBA
+            PyOhio 2022 Schedule
           </Themed.a>
         </Message>
 
