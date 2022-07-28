@@ -3,7 +3,8 @@ biography: <p>Hi, I'm a data scientist in the Domain Search team at GoDaddy whic
   researches, develops, and deploys deep learning models for Godaddy’s domain business.
   I enjoy working with data in general and more specifically building NLP models.
   I'm a Python enthusiast and enjoy sharing my learnings with the community - I've
-  previously presented at the Grace Hopper Conference, PyCon US, EuroPython and GeoPython.</p>
+  previously presented at the Grace Hopper Conference, PyCon US, EuroPython, and GeoPython.
+  When not across a screen, I can be found frolicking in nature and playing my uke.</p>
 code: L79PHK
 listed: true
 name: Shreya Khurana
@@ -12,4 +13,4 @@ talks:
 - code: GDKLTP
   slug: baby-steps-towards-your-first-fastapi-app
   title: Baby Steps Towards Your First FastAPI App
-twitter: null
+twitter: ShreyaKhurana16

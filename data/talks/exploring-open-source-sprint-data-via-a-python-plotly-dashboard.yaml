@@ -5,7 +5,36 @@ description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile 
 
   <p>In this talk, we will interpret open source sprint data presented using a Python
   Plotly Dashboard. We will learn how the dashboard presentation permits extended
-  perspectives of data with multiple dimensions.</p>'
+  perspectives of data with multiple dimensions.</p>
+
+  <h2>Resources</h2>
+
+  <ul>
+
+  <li>Video Tutorial: <a href="https://youtu.be/b1gmh4W3H9A">Build a Plotly Dashboard
+  with Python</a></li>
+
+  <li>GitHub repo:  <a href="https://github.com/data-umbrella/data-umbrella-sprints-dashboard">data-umbrella-sprints-dashboard</a></li>
+
+  <li>Report: <a href="https://blog.dataumbrella.org/data-umbrella-afme2-2021-scikit-learn-sprint-report">Data
+  Umbrella AFME2 2021 scikit-learn Sprint Report</a></li>
+
+  </ul>
+
+  <h3>Extra Resources</h3>
+
+  <ul>
+
+  <li>Blog: <a href="https://medium.com/p/6127ff6e0f80">Enriching Data Visualizations
+  with Annotations in Plotly using Python</a></li>
+
+  <li>Video: <a href="https://youtu.be/D2vsLy85rog">Enriching Data Visualizations
+  with Annotations in Plotly</a> (PyOhio 2021)</li>
+
+  <li>Video: <a href="https://youtu.be/kMFvpmOaF2I">Animating Visualizations in Python
+  with Plotly</a> (PyGotham 2021)</li>
+
+  </ul>'
 discord_channel_id: ''
 duration: 12
 end_time: '2022-07-30T14:47:00-04:00'

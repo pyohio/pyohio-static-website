@@ -8,7 +8,11 @@ description: '<p>In this short talk, I will introduce all the key ideas necessar
   and I will show how to turn any suitable loop into its equivalent comprehension.</p>
 
   <p>By the time the talk is over, you''ll be much closer to getting your black belt
-  in comprehension-fu.</p>'
+  in comprehension-fu.</p>
+
+  <p><strong>References</strong>: you <a href="https://gum.co/comprehending-comprehensions">can
+  get the ebook “Comprehending Comprehensions”</a> and you can find the talk slides
+  <a href="https://github.com/mathspp/talks">on GitHub</a>.</p>'
 discord_channel_id: ''
 duration: 14
 end_time: '2022-07-30T13:44:00-04:00'
