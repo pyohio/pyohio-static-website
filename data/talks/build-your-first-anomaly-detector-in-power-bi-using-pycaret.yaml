@@ -10,7 +10,7 @@ description: <p>Combining machine learning with business intelligence can have a
   to start using PyCaret’s machine learning capabilities in Power BI. Finally, I'll
   demonstrate how to train and implement an unsupervised anomaly detector in Power
   BI using PyCaret.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: '2022-07-30T13:25:00-04:00'
 qna: false
@@ -22,7 +22,7 @@ speakers:
   name: Cadey Moore
   slug: cadey-moore
 start_time: '2022-07-30T13:15:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '13:15:00'
 title: Build Your First Anomaly Detector in Power BI Using PyCaret
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/Wy-LAJcakD8

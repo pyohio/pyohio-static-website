@@ -8,7 +8,7 @@ description: '<p>Data sets can get large quickly. You can quickly go from lookin
   ones data in memory by up to 90%.  However, careless use can increase memory use.  Learn
   when to use categories to save memory. <a href="https://www.evelynboettcher.com/pyohio-pandas#/">Slides
   located here</a></p>'
-discord_channel_id: ''
+discord_channel_id: 1002093246085873714
 duration: 13
 end_time: '2022-07-30T10:11:48-04:00'
 qna: true
@@ -20,7 +20,7 @@ speakers:
   name: Evelyn J. Boettcher
   slug: evelyn-j-boettcher
 start_time: '2022-07-30T09:58:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '9:58:48'
 title: Processing Large Data with Pandas
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/a6Ej3u01vFQ

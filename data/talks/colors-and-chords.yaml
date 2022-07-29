@@ -6,7 +6,7 @@ description: <p>Learn about a modular Python and Arduino based optical and music
   colors, patterns, musical chords, rhythms, themes, codes, and emotions.  See how
   visitors can play along with great songs using what we promote as the "world's easiest
   musical instrument"!</p>
-discord_channel_id: ''
+discord_channel_id: 1002093254436728892
 duration: 10
 end_time: '2022-07-30T09:41:00-04:00'
 qna: true
@@ -18,7 +18,7 @@ speakers:
   name: Michael N
   slug: michael-n
 start_time: '2022-07-30T09:31:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '9:31:25'
 title: Colors and Chords
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/cSuSVJz7AP4

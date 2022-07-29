@@ -8,7 +8,7 @@ description: '<p>In this short talk we''ll explore what a sample usage of the Az
 
   <p>For additional talk resources, see <a href="https://matteland.dev/AzureMLPythonSDK"><a
   href="https://MattEland.dev/AzureMLPythonSDK">https://MattEland.dev/AzureMLPythonSDK</a></a></p>'
-discord_channel_id: ''
+discord_channel_id: 1002093261118251018
 duration: 5
 end_time: '2022-07-30T14:52:00-04:00'
 qna: true
@@ -20,7 +20,7 @@ speakers:
   name: Matt Eland
   slug: matt-eland
 start_time: '2022-07-30T14:47:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '14:47:11'
 title: Introducing Automated Machine Learning with Python and Azure
 type: Shorter Talk
-youtube_url: null
+youtube_url: https://youtu.be/4JI5ezqmYJQ

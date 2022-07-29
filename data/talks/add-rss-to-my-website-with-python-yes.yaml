@@ -17,7 +17,7 @@ description: '<ul>
   </ul>
 
   <p>Let''s find out how!</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093262779191337
 duration: 5
 end_time: '2022-07-30T12:35:00-04:00'
 qna: true
@@ -29,7 +29,7 @@ speakers:
   name: Mario Munoz
   slug: mario-munoz
 start_time: '2022-07-30T12:30:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '12:30:25'
 title: Add RSS to My Website with Python? Yes!
 type: Shorter Talk
-youtube_url: null
+youtube_url: https://youtu.be/QXuZNAijplI

@@ -15,7 +15,7 @@ description: '<p>From Data Science and Machine Learning to Software Engineering 
   Data, and the efficacy of it. You''ll see real-world situations where Synthetic
   Data removes bias, augments data sets, and makes once private data easily shareable
   while still protecting the privacy of the initial data set.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093243468615771
 duration: 14
 end_time: '2022-07-30T10:26:00-04:00'
 qna: true
@@ -27,7 +27,7 @@ speakers:
   name: Mason Egger
   slug: mason-egger
 start_time: '2022-07-30T10:12:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '10:12:10'
 title: I Can't Believe It's Not Real Data! An Introduction into Synthetic Data
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/TZOA_wMHiPw
