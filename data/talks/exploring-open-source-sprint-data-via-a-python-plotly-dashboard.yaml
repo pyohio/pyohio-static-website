@@ -35,7 +35,7 @@ description: '<p><a href="https://plotly.com/python/">Plotly</a> is a versatile 
   with Plotly</a> (PyGotham 2021)</li>
 
   </ul>'
-discord_channel_id: ''
+discord_channel_id: 1002093253253922887
 duration: 12
 end_time: '2022-07-30T14:47:00-04:00'
 qna: true
@@ -47,7 +47,7 @@ speakers:
   name: Reshama Shaikh
   slug: reshama-shaikh
 start_time: '2022-07-30T14:35:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '14:35:00'
 title: Exploring Open Source Sprint Data via a Python Plotly Dashboard
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/kY4XiFCf_B4

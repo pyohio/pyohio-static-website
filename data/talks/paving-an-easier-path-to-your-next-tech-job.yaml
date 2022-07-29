@@ -6,7 +6,7 @@ description: '<p>Let''s face it: finding a job is not just about what you know b
   industry veteran or new to tech. I''ll share successful strategies I''ve learned
   the hard way that will help you land awesome opportunities by building relationships
   with the right people.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093257305624616
 duration: 11
 end_time: '2022-07-30T11:53:00-04:00'
 qna: true
@@ -18,7 +18,7 @@ speakers:
   name: Jason Wattier
   slug: jason-wattier
 start_time: '2022-07-30T11:42:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '11:42:12'
 title: Paving an Easier Path to Your Next Tech Job
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/S39lZ7Ztw5U

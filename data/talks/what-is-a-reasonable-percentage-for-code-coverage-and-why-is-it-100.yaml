@@ -7,7 +7,7 @@ description: '<p>Have you ever thought about how much code coverage is good enou
   <p>But what about 100%? Impossible? Too hard to reach? Not worth the effort?</p>
 
   <p>Join me in finding the right number.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093247247687690
 duration: 6
 end_time: '2022-07-30T10:56:00-04:00'
 qna: true
@@ -19,7 +19,7 @@ speakers:
   name: Jürgen Gmach
   slug: jurgen-gmach
 start_time: '2022-07-30T10:50:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '10:50:10'
 title: What Is a Reasonable Percentage for Code Coverage and Why Is It 100%?
 type: Shorter Talk
-youtube_url: null
+youtube_url: https://youtu.be/C1hO0naoU8I

@@ -8,7 +8,7 @@ description: <p>Getting productive with a Python codebase, especially when you'r
   solved this problem using a 46-year-old program and push the audience in a direction
   toward better developer experiences starting at the greatest common denominator
   of tooling.</p>
-discord_channel_id: ''
+discord_channel_id: 1002093249923657728
 duration: 13
 end_time: '2022-07-30T11:41:00-04:00'
 qna: true
@@ -20,8 +20,8 @@ speakers:
   name: Colin Dean
   slug: colin-dean
 start_time: '2022-07-30T11:28:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '11:28:38'
 title: 'make python devex: Towards Clone to Red-Green-Refactor in One Command with
   a 45+-Year-Old Tool'
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/WTsiO3brQwE

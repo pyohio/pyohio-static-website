@@ -4,7 +4,7 @@ description: <p>Get up, stretch, get some water, get some snacks, say hi to your
   socialize in our <a href="https://chat.pyohio.org">Discord</a>, order a <a href="https://pyohio.org/shirts">t-shirt</a>,
   hop on a video call, take some nice relaxing breaths -- <strong>you do you!</strong>
   We'll be back in 30 minutes.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 30
 end_time: '2022-07-30T12:30:00-04:00'
 qna: false
@@ -16,7 +16,7 @@ speakers:
   name: Dave Forgac
   slug: dave-forgac
 start_time: '2022-07-30T12:00:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '12:00:00'
 title: Break
 type: Break
-youtube_url: null
+youtube_url: ''

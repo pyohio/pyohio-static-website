@@ -3,7 +3,7 @@ content_warnings: null
 description: <p>I recently wanted to migrate data from a NoSQL Datastore to a relational
   data structure. Let's just say the process was quite the adventure. Let's look at
   handling mildly relational data how we were able to move it from json-based to database.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: '2022-07-30T11:10:00-04:00'
 qna: false
@@ -15,7 +15,7 @@ speakers:
   name: Jay Miller
   slug: jay-miller
 start_time: '2022-07-30T11:00:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '11:00:16'
 title: 'That Belongs in a Table: Migrating Data from JSON to SQL'
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/mmpuAWNJwx8

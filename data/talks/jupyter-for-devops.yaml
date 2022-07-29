@@ -7,7 +7,7 @@ description: '<p>Jupyter is usually thought of as a tool for data scientists. Ex
   <p>The talk will cover an example of using SSH-based automation using Paramiko,
   Cloud automation using AWS/Boto3, and source control automation using GitLab. Some
   best practices will be covered like how to share notebooks securely and usefully.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093248271110225
 duration: 10
 end_time: '2022-07-30T13:06:00-04:00'
 qna: true
@@ -19,7 +19,7 @@ speakers:
   name: Moshe Zadka
   slug: moshe-zadka
 start_time: '2022-07-30T12:56:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '12:56:14'
 title: Jupyter for DevOps
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/1oR0mfon1AM
