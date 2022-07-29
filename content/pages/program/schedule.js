@@ -26,8 +26,8 @@ export default class TalksPage extends React.Component {
         <Themed.h1>Schedule</Themed.h1>
         {/* <Themed.h2>To be announced closer to the event!</Themed.h2> */}
         <Message sx={{ backgroundColor: "muted" }}>
-          PyOhio is July 30, 2022. Times rounded to the nearest 5 mins.
-          There are short breaks between groups of talks. All times EDT.
+          PyOhio is July 30, 2022. Times rounded to the nearest 5 mins. There
+          are short breaks between groups of talks. All times EDT.
         </Message>
 
         <Themed.table
