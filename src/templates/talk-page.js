@@ -38,7 +38,7 @@ export default function TalkPage({ data }) {
             <span role="img">⚠</span>️ {talk.content_warnings}
           </p>
         )} */}
-        {/* {talk.youtube_url && (
+        {talk.youtube_url && (
           <iframe
             title="Talk Video"
             width="560"
@@ -51,7 +51,7 @@ export default function TalkPage({ data }) {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        )} */}
+        )}
         <div dangerouslySetInnerHTML={{ __html: talk.description }} />
         {talk.type !== "Break" && (
           <div>
