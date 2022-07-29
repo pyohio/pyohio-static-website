@@ -72,7 +72,7 @@ export const talkPageQuery = graphql`
       description
       type
       start_time
-      # youtube_url
+      youtube_url
       # content_warnings
       speakers {
         name
