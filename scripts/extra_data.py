@@ -1,7 +1,7 @@
 TALK_EXTRAS = {
     "HNKFLC": {
         "title": "Intro to Unit Testing and Continuous Integration",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/4Fc_ptaKYEQ",
         "content_warnings": None,
         "video_start_time": "10:30:00",
         "channel_id": 1002092124352815265,
@@ -9,7 +9,7 @@ TALK_EXTRAS = {
     },
     "TUJLCE": {
         "title": "Doing Everything Data Without Leaving the Notebook: Programmatic Jupyter Notebooks",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/RrEwicdbolE",
         "content_warnings": None,
         "video_start_time": "12:45:40",
         "channel_id": None,
@@ -25,7 +25,7 @@ TALK_EXTRAS = {
     },
     "QXZH39": {
         "title": "Run-JS: A New Library for Running JavaScript Modules in Python",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/m9gOaMBLkpk",
         "content_warnings": None,
         "video_start_time": "14:51:56",
         "channel_id": 1002093242621374594,
@@ -33,7 +33,7 @@ TALK_EXTRAS = {
     },
     "THWRAC": {
         "title": "I Can't Believe It's Not Real Data! An Introduction into Synthetic Data",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/TZOA_wMHiPw",
         "content_warnings": None,
         "video_start_time": "10:12:10",
         "channel_id": 1002093243468615771,
@@ -41,7 +41,7 @@ TALK_EXTRAS = {
     },
     "DSRRMX": {
         "title": "Simplicity and Fun: Learning with CircuitPython",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/Wp9pK_ndh4g",
         "content_warnings": None,
         "video_start_time": "9:21:10",
         "channel_id": 1002093244093571082,
@@ -49,7 +49,7 @@ TALK_EXTRAS = {
     },
     "RXLTKZ": {
         "title": "Automating Excel with Python",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/ZUEziLUbTIU",
         "content_warnings": None,
         "video_start_time": "12:35:47",
         "channel_id": 1002093244684963881,
@@ -57,7 +57,7 @@ TALK_EXTRAS = {
     },
     "EKYFK7": {
         "title": "Processing Large Data with Pandas",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/a6Ej3u01vFQ",
         "content_warnings": None,
         "video_start_time": "9:58:48",
         "channel_id": 1002093246085873714,
@@ -65,7 +65,7 @@ TALK_EXTRAS = {
     },
     "VBHM8G": {
         "title": "What Is a Reasonable Percentage for Code Coverage and Why Is It 100%?",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/C1hO0naoU8I",
         "content_warnings": None,
         "video_start_time": "10:50:10",
         "channel_id": 1002093247247687690,
@@ -73,7 +73,7 @@ TALK_EXTRAS = {
     },
     "TWC3VV": {
         "title": "Build Your First Anomaly Detector in Power BI Using PyCaret",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/Wy-LAJcakD8",
         "content_warnings": None,
         "video_start_time": "13:15:00",
         "channel_id": None,
@@ -81,7 +81,7 @@ TALK_EXTRAS = {
     },
     "3AQ8XP": {
         "title": "Jupyter for DevOps",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/1oR0mfon1AM",
         "content_warnings": None,
         "video_start_time": "12:56:14",
         "channel_id": 1002093248271110225,
@@ -89,7 +89,7 @@ TALK_EXTRAS = {
     },
     "AKNMAS": {
         "title": "PyOhio 2022 Opening Remarks",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/3TbeMvlFB9E",
         "content_warnings": None,
         "video_start_time": "9:00:00",
         "channel_id": None,
@@ -97,7 +97,7 @@ TALK_EXTRAS = {
     },
     "VPHVKC": {
         "title": "I Have to Confess, I Still Love Pandas",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/gFGlXvFemVk",
         "content_warnings": None,
         "video_start_time": "9:45:00",
         "channel_id": None,
@@ -105,7 +105,7 @@ TALK_EXTRAS = {
     },
     "GDKLTP": {
         "title": "Baby Steps Towards Your First FastAPI App",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/q4BUHmPt7oY",
         "content_warnings": None,
         "video_start_time": "15:15:00",
         "channel_id": 1002093249160298577,
@@ -113,7 +113,7 @@ TALK_EXTRAS = {
     },
     "YQWKWN": {
         "title": "make python devex: Towards Clone to Red-Green-Refactor in One Command with a 45+-Year-Old Tool",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/WTsiO3brQwE",
         "content_warnings": None,
         "video_start_time": "11:28:38",
         "channel_id": 1002093249923657728,
@@ -121,7 +121,7 @@ TALK_EXTRAS = {
     },
     "QTSB88": {
         "title": "Bootstrapping Your Local Python Environment",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/qPT7X6VYqo8",
         "content_warnings": None,
         "video_start_time": "11:15:00",
         "channel_id": 1002093250586361856,
@@ -129,7 +129,7 @@ TALK_EXTRAS = {
     },
     "UEU39Y": {
         "title": "Go 3D with Plotly",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/fwRTohFjq5w",
         "content_warnings": None,
         "video_start_time": "13:44:41",
         "channel_id": None,
@@ -137,7 +137,7 @@ TALK_EXTRAS = {
     },
     "HAP8VZ": {
         "title": "Remote Collaboration: How to Build Human Connection Across Pixels",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/g4e-pTxyHsM",
         "content_warnings": None,
         "video_start_time": "11:53:46",
         "channel_id": 1002093252041777233,
@@ -145,7 +145,7 @@ TALK_EXTRAS = {
     },
     "N9XS8Y": {
         "title": "Comprehending Comprehensions",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/ScsElLE_Pak",
         "content_warnings": None,
         "video_start_time": "13:29:58",
         "channel_id": 1002093252796751872,
@@ -153,7 +153,7 @@ TALK_EXTRAS = {
     },
     "AZAKUZ": {
         "title": "Exploring Open Source Sprint Data via a Python Plotly Dashboard",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/kY4XiFCf_B4",
         "content_warnings": None,
         "video_start_time": "14:35:00",
         "channel_id": 1002093253253922887,
@@ -161,7 +161,7 @@ TALK_EXTRAS = {
     },
     "NV7NLB": {
         "title": "Colors and Chords",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/cSuSVJz7AP4",
         "content_warnings": None,
         "video_start_time": "9:31:25",
         "channel_id": 1002093254436728892,
@@ -169,7 +169,7 @@ TALK_EXTRAS = {
     },
     "SJWBN9": {
         "title": "Paginated APIs x Python",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/RCQhchesRt0",
         "content_warnings": None,
         "video_start_time": "15:36:47",
         "channel_id": None,
@@ -177,7 +177,7 @@ TALK_EXTRAS = {
     },
     "ULKKUE": {
         "title": "Another Look at Python Types",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/Z3BcBnQb3eI",
         "content_warnings": None,
         "video_start_time": "13:55:00",
         "channel_id": 1002093255422386187,
@@ -185,7 +185,7 @@ TALK_EXTRAS = {
     },
     "H8L7HD": {
         "title": "OpenAPI Driven Development",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/VhRonVCkoNk",
         "content_warnings": None,
         "video_start_time": "15:42:24",
         "channel_id": 1002093256567431258,
@@ -193,7 +193,7 @@ TALK_EXTRAS = {
     },
     "Z7X9MQ": {
         "title": "Paving an Easier Path to Your Next Tech Job",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/S39lZ7Ztw5U",
         "content_warnings": None,
         "video_start_time": "11:42:12",
         "channel_id": 1002093257305624616,
@@ -201,7 +201,7 @@ TALK_EXTRAS = {
     },
     "98ZPHF": {
         "title": "Flappy Bird AI!",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/2Cm8AcCg2aI",
         "content_warnings": None,
         "video_start_time": "9:04:00",
         "channel_id": None,
@@ -209,7 +209,7 @@ TALK_EXTRAS = {
     },
     "TMCZSL": {
         "title": "Deploy a Python API to the Cloud, Fast!",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/jD63M9y00m8",
         "content_warnings": None,
         "video_start_time": "15:26:44",
         "channel_id": None,
@@ -217,7 +217,7 @@ TALK_EXTRAS = {
     },
     "BRXPVT": {
         "title": "Your Python Multi-Tool: Four Built-Ins and a Module",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/1BHVDsB57yQ",
         "content_warnings": None,
         "video_start_time": "13:24:49",
         "channel_id": 1002093257787981915,
@@ -225,7 +225,7 @@ TALK_EXTRAS = {
     },
     "KGPRLM": {
         "title": "Advanced Typing: TypeVars, Generics, and Protocols",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/oJd6lhF0JbI",
         "content_warnings": None,
         "video_start_time": "14:06:39",
         "channel_id": 1002093258622631947,
@@ -233,7 +233,7 @@ TALK_EXTRAS = {
     },
     "YGLZWX": {
         "title": "A Quickstart to Web Testing with Playwright",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/_tAhD-OCuN8",
         "content_warnings": None,
         "video_start_time": "10:41:12",
         "channel_id": None,
@@ -241,7 +241,7 @@ TALK_EXTRAS = {
     },
     "ZXVC8B": {
         "title": "Building a Faster NetworkX-Like Library Using GraphBLAS",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/lVkkBj6m9K0",
         "content_warnings": None,
         "video_start_time": "14:56:59",
         "channel_id": 1002093260346499153,
@@ -249,7 +249,7 @@ TALK_EXTRAS = {
     },
     "QYNCQC": {
         "title": "Introducing Automated Machine Learning with Python and Azure",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/4JI5ezqmYJQ",
         "content_warnings": None,
         "video_start_time": "14:47:11",
         "channel_id": 1002093261118251018,
@@ -257,7 +257,7 @@ TALK_EXTRAS = {
     },
     "BSNAWP": {
         "title": "More ORM Than Good: Stop Not Writing SQL",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/jeyr2brQM7k",
         "content_warnings": None,
         "video_start_time": "10:56:24",
         "channel_id": 1002093262024224808,
@@ -265,7 +265,7 @@ TALK_EXTRAS = {
     },
     "BD8VVJ": {
         "title": "Add RSS to My Website with Python? Yes!",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/QXuZNAijplI",
         "content_warnings": None,
         "video_start_time": "12:30:25",
         "channel_id": 1002093262779191337,
@@ -273,7 +273,7 @@ TALK_EXTRAS = {
     },
     "KWLY7G": {
         "title": "Visual Studio Code: The Ultimate Python Developer Environment",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/4O3Z49T8xLM",
         "content_warnings": None,
         "video_start_time": "14:20:17",
         "channel_id": 1002093263534166076,
@@ -281,7 +281,7 @@ TALK_EXTRAS = {
     },
     "8SEMKX": {
         "title": "That Belongs in a Table: Migrating Data from JSON to SQL",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/mmpuAWNJwx8",
         "content_warnings": None,
         "video_start_time": "11:00:16",
         "channel_id": None,
@@ -289,7 +289,7 @@ TALK_EXTRAS = {
     },
     "TCJAEP": {
         "title": "Beyond Velocity: 3 Metrics for Engineering Team Success",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/-qpCJqQByx0",
         "content_warnings": None,
         "video_start_time": "13:06:23",
         "channel_id": 1002093264473690213,
@@ -297,7 +297,7 @@ TALK_EXTRAS = {
     },
     "PCFFBK": {
         "title": "PyOhio 2022 Closing Remarks",
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/Ci_HEdBSOMU",
         "content_warnings": None,
         "video_start_time": "15:58:43",
         "channel_id": None,
