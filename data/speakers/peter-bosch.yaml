@@ -1,0 +1,19 @@
+avatar: https://pretalx.com/media/avatars/Peter_Bosch_HMDEtzh.jpeg
+biography: <p>Peter Bosch is a distinguished engineer at Cisco. In this position,
+  Peter is the CTO for the application security venture.  He and his team are responsible
+  for the architecture, prototyping and building out of application security for cloud-native
+  deployments.  Prior to application security, Peter and team also built prototypes
+  for Mobile SDWAN (= SASE), virtualized professional media systems, and virtualized
+  mobile packet-core solutions.  Peter has worked for more than 30 years with (distributed)
+  operating systems, media, mobility and networked systems.  Peter has published many
+  peer-reviewed papers, patents and other types of publications that can be found
+  on the Web.</p>
+code: JLHYYQ
+listed: true
+name: Peter Bosch
+slug: peter-bosch
+talks:
+- code: WJQ3VU
+  slug: container-security-and-their-apis
+  title: Container Security and Their APIs
+twitter: null
