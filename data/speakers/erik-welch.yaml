@@ -8,4 +8,4 @@ talks:
 - code: ZXVC8B
   slug: building-a-faster-networkx-like-library-using-graphblas
   title: Building a Faster NetworkX-Like Library Using GraphBLAS
-twitter: https://twitter.com/eriknwelch
+twitter: eriknwelch
