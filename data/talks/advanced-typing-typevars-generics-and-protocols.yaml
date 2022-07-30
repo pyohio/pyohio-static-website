@@ -1,10 +1,12 @@
 code: KGPRLM
 content_warnings: null
-description: <p>So we've heard about Python type annotations, but let's get into the
-  gritty bits around <code>typing.TypeVar</code> bounding (inclusive polymorphism),
+description: '<p>So we''ve heard about Python type annotations, but let''s get into
+  the gritty bits around <code>typing.TypeVar</code> bounding (inclusive polymorphism),
   <code>typing.Generic</code> (parameterized types), and <code>typing.Protocol</code>
   (interfaces) to learn how we can leverage types for structural subtyping (static
   duck typing).</p>
+
+  <p>Slides for this talk are available at: <a href="https://docs.google.com/presentation/d/1R2IzE-1I1otv1PXbXyR-JvOkBxdRAVDpXpFVmELRatA/edit?usp=drivesdk">https://docs.google.com/presentation/d/1R2IzE-1I1otv1PXbXyR-JvOkBxdRAVDpXpFVmELRatA/edit?usp=drivesdk</a></p>'
 discord_channel_id: 1002093258622631947
 duration: 13
 end_time: '2022-07-30T14:19:00-04:00'
