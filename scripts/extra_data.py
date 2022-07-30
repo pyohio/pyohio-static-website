@@ -303,4 +303,20 @@ TALK_EXTRAS = {
         "channel_id": None,
         "channel_name": None,
     },
+    "WJQ3VU": {
+        "title": "Container Security and Their APIs",
+        "youtube_url": "https://youtu.be/7cP86Uv57N8",
+        "content_warnings": None,
+        "video_start_time": "16:00:00",
+        "channel_id": None,
+        "channel_name": None,
+    },
+    "3ACXXW": {
+        "title": "The PyOhio 2022 Mix Tape",
+        "youtube_url": "https://youtu.be/pK6qLtgPySE",
+        "content_warnings": None,
+        "video_start_time": "16:00:00",
+        "channel_id": None,
+        "channel_name": None,
+    },
 }
