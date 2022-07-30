@@ -1,0 +1,14 @@
+avatar: https://www.pyohio.org/no-profile.png
+biography: <p>Mike is a Senior Backend Engineer at Zapier, the author of <em>How to
+  Make Mistakes in Python</em>, and an organizer of PyOhio, a regional conference
+  for the Python programming community. He enjoys mucking about with guitars, rolling
+  funny-shaped dice, and trying to complete his Animal Crossing museum collection.</p>
+code: YCKJD7
+listed: true
+name: Mike Pirnat
+slug: mike-pirnat
+talks:
+- code: 3ACXXW
+  slug: the-pyohio-2022-mix-tape
+  title: The PyOhio 2022 Mix Tape
+twitter: mpirnat
