@@ -1,0 +1,31 @@
+code: WJQ3VU
+content_warnings: null
+description: '<p>Cloud-native application security involves balancing contradictory
+  requirements: the benefits of cloud services in accelerating development, while
+  at the same time handling security in an adverse environment where there are more
+  attack surfaces and opportunities for data breaches. Unfortunately, many security
+  tools do not address the vulnerabilities of APIs that run in those containers. Cloud-native
+  applications expose many internal API services and developers are increasingly using
+  external API services for their applications. Both internal and external API use
+  expose the workload to new vulnerabilities; more strongly, workload security and
+  API security are really two sides to the same coin.</p>
+
+  <p>This talk specifically focuses on the security problems and vulnerabilities exposed
+  through APIs, and introduces Cisco’s Panoptica, a tool for discovering, managing,
+  and repairing these vulnerabilities, and APIClarity, Panoptica’s open source core.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: null
+qna: true
+qna_channel: container-security-and-their-apis
+slug: container-security-and-their-apis
+speakers:
+- avatar: https://pretalx.com/media/avatars/Peter_Bosch_HMDEtzh.jpeg
+  code: JLHYYQ
+  name: Peter Bosch
+  slug: peter-bosch
+start_time: null
+stream_timestamp: ''
+title: Container Security and Their APIs
+type: Bonus Talk
+youtube_url: null
