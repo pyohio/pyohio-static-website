@@ -13,7 +13,7 @@ description: '<p>In this short talk, I will introduce all the key ideas necessar
   <p><strong>References</strong>: you <a href="https://gum.co/comprehending-comprehensions">can
   get the ebook “Comprehending Comprehensions”</a> and you can find the talk slides
   <a href="https://github.com/mathspp/talks">on GitHub</a>.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093252796751872
 duration: 14
 end_time: '2022-07-30T13:44:00-04:00'
 qna: true
@@ -25,7 +25,7 @@ speakers:
   name: Rodrigo Girão Serrão
   slug: rodrigo-girao-serrao
 start_time: '2022-07-30T13:30:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '13:29:58'
 title: Comprehending Comprehensions
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/ScsElLE_Pak

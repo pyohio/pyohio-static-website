@@ -8,7 +8,7 @@ description: '<p>Having unit tests and continuous integration (CI) as part of yo
   quality checks, and even building and generating documentation.</p>
 
   <p>Presentation slides: <a href="https://speakerdeck.com/mariatta/intro-to-unit-testing-and-continuous-integration-20264b4c-2777-4736-9639-5810098da5a0">https://speakerdeck.com/mariatta/intro-to-unit-testing-and-continuous-integration-20264b4c-2777-4736-9639-5810098da5a0</a></p>'
-discord_channel_id: ''
+discord_channel_id: 1002092124352815265
 duration: 11
 end_time: '2022-07-30T10:41:00-04:00'
 qna: true
@@ -20,7 +20,7 @@ speakers:
   name: Mariatta
   slug: mariatta
 start_time: '2022-07-30T10:30:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '10:30:00'
 title: Intro to Unit Testing and Continuous Integration
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/4Fc_ptaKYEQ

@@ -15,7 +15,7 @@ description: '<p><a href="https://circuitpython.org">CircuitPython</a> is an ope
   is a great choice for education.</p>
 
   <p>Slides and talk resources can be found <a href="https://github.com/kattni/PyOhio2022">here</a>.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093244093571082
 duration: 10
 end_time: '2022-07-30T09:31:00-04:00'
 qna: true
@@ -27,7 +27,7 @@ speakers:
   name: Kattni Rembor
   slug: kattni-rembor
 start_time: '2022-07-30T09:21:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '9:21:10'
 title: 'Simplicity and Fun: Learning with CircuitPython'
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/Wp9pK_ndh4g

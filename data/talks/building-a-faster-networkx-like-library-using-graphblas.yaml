@@ -48,7 +48,7 @@ description: '<p>This is a call for engagement to help with <a href="https://git
 
   If you don''t know much about graphs or how to contribute to open-source, this could
   be a great way to learn!</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093260346499153
 duration: 13
 end_time: '2022-07-30T15:10:00-04:00'
 qna: true
@@ -60,7 +60,7 @@ speakers:
   name: Erik Welch
   slug: erik-welch
 start_time: '2022-07-30T14:57:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '14:56:59'
 title: Building a Faster NetworkX-Like Library Using GraphBLAS
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/lVkkBj6m9K0

@@ -11,7 +11,7 @@ description: '<p>As a service owner, one needs to provide strong guarantees for 
   online apps together. We''ve learned how to produce high-quality APIs with over
   10 years of experience integrating with APIs. We''re applying these best practices
   as we break out our services from our Django monolith.</p>'
-discord_channel_id: ''
+discord_channel_id: 1002093256567431258
 duration: 16
 end_time: '2022-07-30T15:58:00-04:00'
 qna: true
@@ -23,7 +23,7 @@ speakers:
   name: Olmo Maldonado
   slug: olmo-maldonado
 start_time: '2022-07-30T15:42:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '15:42:24'
 title: OpenAPI Driven Development
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/VhRonVCkoNk

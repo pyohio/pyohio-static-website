@@ -4,7 +4,7 @@ description: '<p>Thesis/Description: At the core of all learning is human connec
   and vulnerability. We have to encourage folks to ease the anxiety and fear with
   imposter syndrome by knowing each other well. This leads to better code, better
   culture, and better products by intentional collaboration and learning.</br></p>'
-discord_channel_id: ''
+discord_channel_id: 1002093252041777233
 duration: 5
 end_time: '2022-07-30T11:58:00-04:00'
 qna: true
@@ -16,7 +16,7 @@ speakers:
   name: Rainu Ittycheriah
   slug: rainu-ittycheriah
 start_time: '2022-07-30T11:53:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '11:53:46'
 title: 'Remote Collaboration: How to Build Human Connection Across Pixels'
 type: Shorter Talk
-youtube_url: null
+youtube_url: https://youtu.be/g4e-pTxyHsM

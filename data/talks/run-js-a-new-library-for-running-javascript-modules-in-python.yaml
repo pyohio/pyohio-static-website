@@ -6,7 +6,7 @@ description: <p><a href="https://github.com/danieljdufour/run-js">run-js</a> is 
   it wraps the module instance intercepting requests. This talk will go over cool
   examples on how to use run-js and also dive into its internals, explain sys.modules,
   dunder methods, and how to pipe data between JS and Python processes.</p>
-discord_channel_id: ''
+discord_channel_id: 1002093242621374594
 duration: 5
 end_time: '2022-07-30T14:57:00-04:00'
 qna: true
@@ -18,7 +18,7 @@ speakers:
   name: Daniel Dufour
   slug: daniel-dufour
 start_time: '2022-07-30T14:52:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '14:51:56'
 title: 'Run-JS: A New Library for Running JavaScript Modules in Python'
 type: Shorter Talk
-youtube_url: null
+youtube_url: https://youtu.be/m9gOaMBLkpk

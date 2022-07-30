@@ -1,8 +1,8 @@
 code: 3ACXXW
 content_warnings: null
-description: '<p>If you can''t get enough of the sweet, sweet hold music from PyOhio
+description: '<p>If you couldn''t get enough of the sweet, sweet hold music from PyOhio
   2022, then you''ll love this bonus video -- all of the 2022 tunes in a tasty, seamless
-  mix. All songs are curated from the YouTube audio library. Turn up the volume, turn
+  mix! All songs are curated from the YouTube audio library. Turn up the volume, turn
   down the lights, and remember when you spent a sunny Saturday learning about all
   things Python.</p>
 
@@ -52,12 +52,12 @@ description: '<p>If you can''t get enough of the sweet, sweet hold music from Py
 
   <li>0:46:21: "Nadie Es Ilegal" - Ashley Shadow</li>
 
-  <li>0:48:47: "So Long Analog" - Noir Et Blanc Vie</li>
+  <li>0:48:47: "So Long Analog" - Noir et Blanc Vie</li>
 
   <li>0:51:11: "Newsroom" - Riot</li>
 
   </ul>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: TBD
 qna: false
@@ -69,7 +69,7 @@ speakers:
   name: Mike Pirnat
   slug: mike-pirnat
 start_time: TBD
-stream_timestamp: ''
+stream_timestamp: '16:00:00'
 title: The PyOhio 2022 Mix Tape
 type: Bonus Talk
-youtube_url: null
+youtube_url: https://youtu.be/pK6qLtgPySE

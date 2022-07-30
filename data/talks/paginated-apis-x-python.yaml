@@ -9,7 +9,7 @@ description: '<p>While working with making requests to external RESTful APIs usi
   paginated APIs patterns using Python.</p>
 
   <p>Read more: <a href="https://github.com/azanbinzahid/paginated-apis-pyohio-2022">https://github.com/azanbinzahid/paginated-apis-pyohio-2022</a></p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 6
 end_time: '2022-07-30T15:42:00-04:00'
 qna: false
@@ -21,7 +21,7 @@ speakers:
   name: Azan Bin Zahid
   slug: azan-bin-zahid
 start_time: '2022-07-30T15:36:00-04:00'
-stream_timestamp: ''
+stream_timestamp: '15:36:47'
 title: Paginated APIs x Python
 type: Shorter Talk
-youtube_url: null
+youtube_url: https://youtu.be/RCQhchesRt0
