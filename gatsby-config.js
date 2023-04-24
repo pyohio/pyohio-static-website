@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `PyOhio 2022`,
-    description: `The free annual Python community conference based in Ohio. July 30, 2022.`,
+    title: `PyOhio 2023`,
+    description: `The free annual Python community conference based in Ohio. Date TBD 2023`,
     keywords: [`python`, `programming`],
     author: `PyOhio Organizers`,
     siteUrl: `https://www.pyohio.org`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
@@ -108,7 +108,7 @@ module.exports = {
       },
     ],
   },
-  pathPrefix: `/2022`,
+  pathPrefix: `/2023`,
   plugins: [
     {
       resolve: `gatsby-theme-catalyst-core`,
