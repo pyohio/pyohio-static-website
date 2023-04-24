@@ -1,7 +1,7 @@
 {
   "name": "pyohio-static-website",
   "description": "PyOhio website based on Gatsby Starter: Gatsby-Theme-Catalyst-Core, Gatsby-Theme-Catalyst-header-top, Gatsby-Theme-Catalyst-footer",
-  "version": "2022.0.1",
+  "version": "2023.0.1",
   "private": true,
   "author": "PyOhio",
   "dependencies": {
@@ -31,12 +31,12 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2022 && cp -r ./archive/20* ./public && cp -rv ./netlify-static/* ./public/",
+    "build-prod": "npm run build && mv -v ./public ./_public && mkdir -p ./public && mv -v ./_public ./public/2023 && cp -r ./archive/20* ./public && cp -rv ./netlify-static/* ./public/",
     "build": "npx gatsby build --prefix-paths",
     "clean": "npx gatsby clean",
     "develop": "npx gatsby clean && npx gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "move-year": "cd public && mkdir 2022 | mv * 2022",
+    "move-year": "cd public && mkdir 2023 | mv * 2023",
     "production": "npm run clean && npm run build && npm run move",
     "serve": "npx gatsby serve --prefix-paths",
     "start": "npm run develop",
