@@ -1,22 +1,23 @@
 code: 9D9P88
 content_warnings: null
-description: <p>Get up, stretch, get some water, get some snacks, say hi to your family,
+description:
+  <p>Get up, stretch, get some water, get some snacks, say hi to your family,
   socialize in our <a href="https://chat.pyohio.org">Discord</a>, order a <a href="https://pyohio.org/shirts">t-shirt</a>,
   hop on a video call, take some nice relaxing breaths -- <strong>you do you!</strong>
   We'll be back in 30 minutes.</p>
 discord_channel_id: null
 duration: 30
-end_time: '2022-07-30T12:30:00-04:00'
+end_time: "2023-11-01T12:30:00-04:00"
 qna: false
 qna_channel: null
 slug: break
 speakers:
-- avatar: null
-  code: KGVCNV
-  name: Dave Forgac
-  slug: dave-forgac
-start_time: '2022-07-30T12:00:00-04:00'
-stream_timestamp: '12:00:00'
+  - avatar: null
+    code: KGVCNV
+    name: PyOhio Organizers
+    slug: organizers
+start_time: "2023-11-01T12:00:00-04:00"
+stream_timestamp: "12:00:00"
 title: Break
 type: Break
-youtube_url: ''
+youtube_url: ""

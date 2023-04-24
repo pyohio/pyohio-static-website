@@ -1,0 +1,11 @@
+avatar: https://example.com
+biography: <p>PyOhio Organizer</p>
+code: KGVCNV
+listed: false
+name: PyOhio Organizers
+slug: organizers
+talks:
+  - code: 9D9P88
+    slug: break
+    title: Break
+twitter: pyohio
