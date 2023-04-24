@@ -5,34 +5,34 @@ https://pyohio.org/* https://www.pyohio.org/:splat 301!
 # Optional: Redirect default Netlify subdomain to primary domain
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
-/                       /2022                           302
-/sponsors/prospectus/   /2022                           302
+/                       /2023                           302
+/sponsors/prospectus/   /2023                           302
 
 # Short URLs change year to year:
-/about                  /2022/about                     302
-/coc                    /2022/about/code-of-conduct     302
-/code-of-conduct        /2022/about/code-of-conduct     302
-/conduct                /2022/about/code-of-conduct     302
-/attend                 /2022/participate               302
-/cfp                    /2022/speaking/call-for-proposals 302
-/call-for-proposals     /2022/speaking/call-for-proposals 302
-/directions             /2022/participate/              302
-/events                 /2022/program                   302
-/hotel                  /2022/participate/              302
-/prospectus             /2022                           302
-/register               /2022/participate/register      302
-/schedule               /2022/program/schedule          302
-/shirts                 https://www.customink.com/fundraising/pyohio-2022 302
-/sprints                /2022                           302
-/volunteer              /2022/participate/volunteer     302
-/hackfest               /2022/program                   302
-/osu-open-source        /2022/about                     302
+/about                  /2023/about                     302
+/coc                    /2023/about/code-of-conduct     302
+/code-of-conduct        /2023/about/code-of-conduct     302
+/conduct                /2023/about/code-of-conduct     302
+/attend                 /2023/participate               302
+/cfp                    /2023/speaking/call-for-proposals 302
+/call-for-proposals     /2023/speaking/call-for-proposals 302
+/directions             /2023/participate/              302
+/events                 /2023/program                   302
+/hotel                  /2023/participate/              302
+/prospectus             /2023                           302
+/register               /2023/participate/register      302
+/schedule               /2023/program/schedule          302
+/shirts                 https://www.customink.com/fundraising/pyohio-2023 302
+/sprints                /2023                           302
+/volunteer              /2023/participate/volunteer     302
+/hackfest               /2023/program                   302
+/osu-open-source        /2023/about                     302
 
 # OhPyOh
-/ohpyo   /2022/about/ohpyo 302
-/opyoh   /2022/about/ohpyo 302
-/opyo    /2022/about/ohpyo 302
-/ohpy    /2022/about/ohpyo 302
+/ohpyo   /2023/about/ohpyo 302
+/opyoh   /2023/about/ohpyo 302
+/opyo    /2023/about/ohpyo 302
+/ohpy    /2023/about/ohpyo 302
 
 # Off-site
 /video https://www.youtube.com/c/PyOhio 302
