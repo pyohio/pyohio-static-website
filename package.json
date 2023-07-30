@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "cd 2023 && yarn dev",
     "start": "cd 2023 && yarn start",
-    "build": "cd 2023 && && yarn install && yarn build",
+    "build": "cd 2023 && yarn install && yarn build",
     "preview": "cd 2023 && yarn preview",
     "build-prod": "yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2023/dist ./public/2023 && cp -rv ./netlify-static/* ./public/",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
