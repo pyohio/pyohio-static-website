@@ -1,0 +1,54 @@
+---
+import { Picture } from '@astrojs/image/components';
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Timeline from "~/components/ui/Timeline.astro";
+import Headline from "~/components/ui/Headline.astro";
+import type { Steps } from "~/types";
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
+  items = [],
+  image = await Astro.slots.render("image"),
+  isReversed = false,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render("bg"),
+} = Astro.props as Steps;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl ${classes?.container ?? ""}`} bg={bg}>
+  <div class:list={["flex flex-col gap-8 md:gap-12 md:flex-row", { "md:flex-row-reverse": isReversed }]}>
+    <div class="md:py-4 md:basis-1/2 md:self-center">
+      <Headline
+        title={title}
+        subtitle={subtitle}
+        tagline={tagline}
+        classes={{ container: "text-left", title: "text-3xl lg:text-4xl", ...((classes?.headline as {}) ?? {}) }}
+      />
+      <Timeline items={items} classes={classes?.items as {}} />
+    </div>
+    <div class="relative md:basis-1/2">
+      {
+        image &&
+          (typeof image === 'string' ? (
+            <Fragment set:html={image} />
+          ) : (
+            <Picture
+              class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
+              widths={[400, 768]}
+              sizes="(max-width: 768px) 100vw, 432px"
+              aspectRatio="432:768"
+              width={432}
+              height={768}
+              src={image?.src}
+              alt={image?.alt || ""}
+            />
+          ))
+      }
+    </div>
+  </div>
+</WidgetWrapper>
