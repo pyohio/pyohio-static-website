@@ -1,46 +1,24 @@
 {
   "name": "pyohio-static-website",
-  "description": "PyOhio website based on Gatsby Starter: Gatsby-Theme-Catalyst-Core, Gatsby-Theme-Catalyst-header-top, Gatsby-Theme-Catalyst-footer",
-  "version": "2022.0.1",
+  "description": "PyOhio website",
+  "version": "2023.0.1",
   "private": true,
   "author": "PyOhio",
   "dependencies": {
-    "gatsby": "^3.4.2",
-    "gatsby-cli": "^3.4.1",
-    "gatsby-plugin-google-analytics": "^3.5.0",
-    "gatsby-plugin-manifest": "^3.5.0",
-    "gatsby-plugin-netlify": "^3.5.0",
-    "gatsby-plugin-remote-images": "^3.0.0",
-    "gatsby-remark-images": "^5.2.1",
-    "gatsby-source-filesystem": "^3.5.0",
-    "gatsby-theme-catalyst-core": "^6.0.0-beta.9",
-    "gatsby-theme-catalyst-footer": "^6.0.0-beta.9",
-    "gatsby-theme-catalyst-header-top": "^6.0.0-beta.9",
-    "luxon": "^2.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "remark-html": "^13.0.2"
+    "@onwidget/astrowind": "file:./2023"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-plugin"
-  ],
+  "keywords": [],
   "license": "MIT",
   "scripts": {
-    "build-prod": "mkdir -p ./public && cp -r ./archive/20* ./public && cp -rv ./netlify-static/* ./public/",
-    "build": "npx gatsby build --prefix-paths",
-    "clean": "npx gatsby clean",
-    "develop": "npx gatsby clean && npx gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "move-year": "cd public && mkdir 2022 | mv * 2022",
-    "production": "npm run clean && npm run build && npm run move",
-    "serve": "npx gatsby serve --prefix-paths",
-    "start": "npm run develop",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "cd 2023 && yarn dev",
+    "start": "cd 2023 && yarn start",
+    "build": "cd 2023 && yarn build",
+    "preview": "cd 2023 && yarn preview",
+    "build-prod": "yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2023/dist ./public/2023 && cp -rv ./netlify-static/* ./public/",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "repository": {
     "type": "git",
