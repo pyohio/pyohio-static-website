@@ -30,6 +30,8 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /volunteer /2023 302
 /hackfest /2023 302
 /osu-open-source /2023 302
+/info-list https://subscribe.pyohio.org/2023 302
+/volunteer-list https://subscribe.pyohio.org/volunteer 302
 
 # OhPyOh
 
