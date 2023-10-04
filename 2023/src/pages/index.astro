@@ -25,12 +25,27 @@ const metadata = {
     </Fragment>
     <Fragment slot="subtitle">
       Save the date: PyOhio 2023 will be streaming online December 16!
-        <p>The CFP is open now through October 22 anywhere on Earth! We're looking for short talks on any topics of interest to 
-        Python users anywhere between 5 and 15 minutes long: <a href="https://pretalx.com/pyohio-2023/cfp">PyOhio CFP</a></p>
+        <p>The CFP is open now through October 22 anywhere on Earth!</a></p>
         <p>Check back here and join our mailing lists for updates.</p>
     </Fragment>
 
   </Hero>
+
+  <CallToAction
+  callToAction={{
+    text: 'Submit a talk proposal!',
+    href: 'https://pretalx.com/pyohio-2023/cfp',
+    icon: 'tabler:speakerphone',
+  }}
+  >
+  <Fragment slot="title">
+  Submit a talk!</Fragment>
+  <Fragment slot="subtitle">
+    We're looking for short talks on any topics of interest to 
+    Python users anywhere between 5 and 15 minutes long: <a href="https://pretalx.com/pyohio-2023/cfp">PyOhio CFP details</a>
+  </Fragment>
+  </CallToAction>
+
   <CallToAction
   callToAction={{
     text: 'Subscribe for updates',
