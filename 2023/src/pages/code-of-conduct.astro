@@ -10,21 +10,25 @@ const metadata = {
 };
 ---
 <Layout metadata={metadata}>
-
-    <h2>Code of Conduct</h2>
-    <p>Everyone interacting at PyOhio events and online spaces is expected to follow the
-    <a href="https://www.python.org/psf/conduct/">PSF Code of Conduct</a>.
-    
-    <h2>Reporting<h2>
-    <p>All incidents should be reported by emailing conduct@pyohio.org. This email is an
-    alias with the following responders:
-
-    <ul>
-        <li>Dave Forgac</li>
-        <li>Mike Pirnat</li>
-        <li>Kattni Rembor</li>
-    </li>
-    For any report that involves the above individuals, email conduct-wg@python.org instead.
-    </p>    
-    
+    <Hero>
+        <Fragment slot="title">
+          PyOhio Code of Conduct
+        </Fragment>
+        <Fragment slot="subtitle">
+            <p>Everyone interacting at PyOhio events and online spaces is expected to follow the
+                <a href="https://www.python.org/psf/conduct/">PSF Code of Conduct</a>.
+                
+                <h2>Reporting<h2>
+                <p>All incidents should be reported by emailing conduct@pyohio.org. This email is an
+                alias with the following responders:
+            
+                <ul>
+                    <li>Dave Forgac</li>
+                    <li>Mike Pirnat</li>
+                    <li>Kattni Rembor</li>
+                </li>
+                For any report that involves the above individuals, email conduct-wg@python.org instead.
+                </p> 
+        </Fragment>
+      </Hero>
 </Layout>
