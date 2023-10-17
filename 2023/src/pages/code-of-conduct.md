@@ -1,11 +1,9 @@
 ---
-title: 'Terms and Conditions'
+title: 'PyOhio Code of Conduct'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-# PyOhio Code of Conduct
-
-Everyone interacting at PyOhio events and online spaces is expected to follow the <a class="underline" href="https://www.python.org/psf/conduct/">PSF Code of Conduct</a>.
+Everyone interacting at PyOhio events and online spaces is expected to follow the [PSF Code of Conduct](https://www.python.org/psf/conduct/).
 
 ## Reporting
 
