@@ -12,20 +12,20 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Short URLs change year to year:
 
-/about /2023 302
-/coc /2023 302
-/code-of-conduct /2023 302
-/conduct /2023 302
+/about /2023/code-of-conduct 302
+/coc /2023/code-of-conduct 302
+/code-of-conduct /2023/code-of-conduct 302
+/conduct /2023/code-of-conduct 302
 /attend /2023 302
-/cfp /2023 302
-/call-for-proposals /2023 302
+/cfp https://pretalx.com/pyohio-2023/cfp 302
+/call-for-proposals https://pretalx.com/pyohio-2023/cfp 302
 /directions /2023 302
 /events /2023 302
 /hotel /2023 302
 /prospectus /2023 302
 /register /2023 302
 /schedule /2023 302
-/shirts https://www.customink.com/fundraising/pyohio-2022 302
+/shirts /2023 302
 /sprints /2023 302
 /volunteer /2023 302
 /hackfest /2023 302
