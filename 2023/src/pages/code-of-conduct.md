@@ -3,11 +3,11 @@ title: 'PyOhio Code of Conduct'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Everyone interacting at PyOhio events and online spaces is expected to follow the [PSF Code of Conduct](https://www.python.org/psf/conduct/).
+Everyone interacting at PyOhio events and in online spaces is expected to follow the [PSF Code of Conduct](https://www.python.org/psf/conduct/).
 
 ## Reporting
 
-All incidents should be reported by emailing conduct@pyohio.org. This email is analias with the following responders:
+All incidents should be reported by emailing conduct@pyohio.org. This email alias contacts the following responders:
 
 - Dave Forgac
 - Mike Pirnat
