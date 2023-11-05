@@ -1,24 +1,17 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import { getHomePermalink } from '~/utils/permalinks';
-
-const title = `Error 404`;
+import DefaultLayout from '../layouts/DefaultLayout.astro'
 ---
 
-<Layout metadata={{ title }}>
-  <section class="flex items-center h-full p-16">
-    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-      <div class="max-w-md text-center">
-        <h2 class="mb-8 font-bold text-9xl">
-          <span class="sr-only">Error</span>
-          <span class="text-primary">404</span>
-        </h2>
-        <p class="text-3xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
-        <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          But dont worry, you can find plenty of other things on our homepage.
-        </p>
-        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Back to homepage</a>
-      </div>
+<DefaultLayout title="404">
+  <section class="my-12">
+    <div class="container">
+      <h1>404</h1>
     </div>
   </section>
-</Layout>
+  <section class="my-12">
+    <div class="space-content container">
+      <p class="text-2xl">This page does not exist. Don't worry though, we got you.</p>
+      <a class="button" href="/">Let's get you home Astronout 🚀</a>
+    </div>
+  </section>
+</DefaultLayout>
