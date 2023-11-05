@@ -2,6 +2,6 @@
   publish = "public"
   command = "yarn build-prod"
 [build.environment]
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
   YARN_VERSION = "1.22.5"
   YARN_FLAGS = "--no-ignore-optional"
