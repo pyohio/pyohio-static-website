@@ -8,11 +8,11 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.9"
 httpx = "^0.23.0"
-PyYAML = "^5.4.1"
 click = "^8.0.1"
 python-slugify = "^5.0.2"
-Markdown = "^3.3.4"
-py-gfm = "^1.0.2"
+markdown = "^3.5.1"
+py-gfm = "^2.0.0"
+pyyaml = "^6.0.1"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b1"
