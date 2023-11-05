@@ -6,7 +6,7 @@ import compress from 'astro-compress'
 // https://astro.build/config
 export default defineConfig({
   base: '/2023',
-  publicDir: 'public',
+  publicDir: './public-src',
   compressHTML: true,
   integrations: [
     mdx(),
