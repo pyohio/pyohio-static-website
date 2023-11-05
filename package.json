@@ -15,9 +15,9 @@
     "clean": "rm -rf public",
     "dev": "cd 2023 && yarn dev",
     "start": "cd 2023 && yarn start",
-    "build": "cd 2023 && yarn install && yarn build",
+    "build": "cd 2023 && pwd && yarn install && yarn build",
     "preview": "cd 2023 && yarn preview",
-    "build-prod": "yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2023/dist ./public/2023 && cp -rv ./netlify-static/* ./public/ && tree public/2023",
+    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2023/dist ./public/2023 && cp -rv ./netlify-static/* ./public/ && pwd && tree public/2023",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "repository": {
