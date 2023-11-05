@@ -1,76 +1,11 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-
-// import Header from '~/components/widgets/Header.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-
-const metadata = {
-  title: "PyOhio 2023",
-};
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Hero from '../components/Hero.astro'
+import Feature from '../components/Feature.astro'
+import Counter from '../components/Counter.astro'
+import ContentMedia from '../components/ContentMedia.astro'
 ---
-<Layout metadata={metadata}>
-  <Fragment slot="header">
-    <!-- <Header
-      {...headerData}
-      showRssFeed
-      showToggleTheme
-      position="left"
-    /> -->
-  </Fragment>
 
-  <Hero>
-    <Fragment slot="title">
-      PyOhio 2023
-    </Fragment>
-    <Fragment slot="subtitle">
-      Save the date: PyOhio 2023 will be streaming online December 16!
-        <p>The CFP is open now through October 22 anywhere on Earth!</p>
-        <p>Check back here and join our mailing lists for updates.</p>
-    </Fragment>
-
-  </Hero>
-
-  <CallToAction
-  callToAction={{
-    text: 'Submit a talk proposal!',
-    href: 'https://pretalx.com/pyohio-2023/cfp',
-    icon: 'tabler:speakerphone',
-  }}
-  >
-  <Fragment slot="title">
-  Submit a talk!</Fragment>
-  <Fragment slot="subtitle">
-    We're looking for short talks on any topics of interest to 
-    Python users anywhere between 5 and 15 minutes long: <a href="https://pretalx.com/pyohio-2023/cfp">PyOhio CFP details</a>
-  </Fragment>
-  </CallToAction>
-
-  <CallToAction
-  callToAction={{
-    text: 'Subscribe for updates',
-    href: 'https://subscribe.pyohio.org/2023',
-    icon: 'tabler:mail',
-  }}
->
-  <Fragment slot="title">
-Stay up-to-date</Fragment>
-  <Fragment slot="subtitle">
-Subscribe to our mailing list for updates on upcoming PyOhio events!
-  </Fragment>
-</CallToAction>
-<CallToAction
-callToAction={{
-  text: 'Subscribe to volunteer list',
-  href: 'https://subscribe.pyohio.org/volunteer',
-  icon: 'tabler:mail',
-}}
->
-<Fragment slot="title">
-Want to help?</Fragment>
-<Fragment slot="subtitle">
-Subscribe here to receive email updates about helping organize PyOhio
-events and volunteering on-site or online.
-</Fragment>
-</CallToAction>
-</Layout>
+<DefaultLayout title="Home">
+  <Hero />
+</DefaultLayout>

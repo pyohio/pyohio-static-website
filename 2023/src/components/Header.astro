@@ -1,0 +1,60 @@
+---
+import Navigation from '../components/Navigation.astro'
+import { SkipLinks } from 'accessible-astro-components'
+import { Icon } from 'astro-icon'
+---
+
+<header>
+  <SkipLinks />
+  <Navigation>
+    <li class="menu-item">
+      <a href="/2023">Home</a>
+    </li>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">About</button>
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <a href="/2023/speakers/">Speakers</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/2023/code-of-conduct">Code of Conduct</a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Events</button>
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <a href="/2023/talks/">Talks</a>
+        </li>
+      </ul>
+    </li>
+    <li>Registration Opens Soon!</li>
+  </Navigation>
+</header>
+
+<style lang="scss" is:global>
+  @use '../assets/scss/base/outline' as *;
+
+  header {
+    .type-icon a {
+      display: block;
+
+      [astro-icon] {
+        margin-top: -4px;
+        width: 30px;
+
+        path {
+          fill: var(--action-color);
+          transition: fill 0.2s ease-in-out;
+        }
+      }
+
+      &:hover {
+        [astro-icon] path {
+          fill: var(--action-color-state);
+        }
+      }
+    }
+  }
+</style>

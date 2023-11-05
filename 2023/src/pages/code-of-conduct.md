@@ -1,6 +1,6 @@
 ---
-title: 'PyOhio Code of Conduct'
-layout: '~/layouts/MarkdownLayout.astro'
+title: 'Code of Conduct'
+layout: '../layouts/MarkdownLayout.astro'
 ---
 
 Everyone interacting at PyOhio events and in online spaces is expected to follow the [PSF Code of Conduct](https://www.python.org/psf/conduct/).

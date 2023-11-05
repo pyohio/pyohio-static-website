@@ -1,0 +1,46 @@
+---
+import { Icon } from 'astro-icon'
+
+const { src = '/2023/pyohio-2023-logo.png' } = Astro.props
+---
+
+<section class="hero my-24">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h2 class="text-center text-4xl md:text-left lg:text-6xl">
+          <slot>The Free Python Community Conference Based in Ohio</slot>
+        </h2>
+        <p>Streaming Online Saturday, December 16</p>
+        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+          <!-- <button class="button has-icon">
+            <Icon pack="ion" name="ticket-outline" />
+            Register (open soon)
+          </button>
+          <button class="button has-icon">
+            <Icon pack="ion" name="shirt-outline" />
+            Buy a Shirt (open soon)
+          </button> -->
+          Registration and t-shirt sales opening soon!
+        </div>
+      </div>
+      <img class="hidden rounded-3xl lg:block" src={src} alt="" decoding="async" />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .text-gradient {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-500));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  :global(.darkmode .text-gradient) {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-400));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

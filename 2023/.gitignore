@@ -1,16 +1,14 @@
 # build output
-dist/
-.output/
+dist
 
 # dependencies
 node_modules/
+.snowpack/
 
 # logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-
 
 # environment variables
 .env
@@ -19,7 +17,11 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-package-lock.json
-pnpm-lock.yaml
+# vscode settings and dictionaries
+.vscode
 
-.astro
+# webstorm settings and dictionaries
+.idea
+
+# package lock
+package-lock.json
