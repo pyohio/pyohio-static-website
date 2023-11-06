@@ -22,23 +22,23 @@ we have tighter time requirements than in live events:
 
 - Talks should be between **5 - 15 minutes** in length.
 
-Please, please, please do not go over the maximum time for your talk! If
-you go over time, we cannot guarantee that the entire talk will be
-presented on the stream.
+Please, please, please do not go over the maximum time for your talk! **If
+your video is over 15 minutes, we cannot guarantee that the entire talk will be
+presented on the stream.**
 
 ### What format should my video be?
 
-- Format: H264 MP4 (.mp4 or .m4v please)
-- Resolution: 1920x1080
-- Frame rate: 30fps
-- Audio: AAC (preferred) or MP3
+- **Format:** H264 MP4 (.mp4 or .m4v please)
+- **Resolution:** 1920x1080
+- **Frame rate:** 30fps
+- **Audio:** AAC (preferred) or MP3
 
-Please **do not submit your video in .mkv format**,
+Please **DO NOT submit your video in .mkv format**,
 it just makes extra work for us to prepare it for streaming.
 
 ### When does my video have to be delivered by?
 
-We would like to receive all videos by TBD.
+We would like to receive all videos by December 4, 2023.
 This will give us enough time to pre-screen and process them.
 
 **If it looks like you will not be able to make that date, please
@@ -49,7 +49,7 @@ This will help keep the program chair's panic level under control. :-)
 
 You have two choices for delivering your video:
 
-1.  **Upload your video to the private Dropbox folder that will be
+1.  **Upload your video to the private folder that will be
     created for you** (we'll contact everyone separately by email with
     the link to this folder)
 2.  **Upload your video to your own cloud sharing service** and send a
@@ -174,7 +174,7 @@ their own, original material, with appropriate citations when incorporating
 the work of others.
 
 We will make every effort to provide accommodations for speakers and
-attendees of all abilities---all we ask is that you let us know so we
+attendees of all abilities -- all we ask is that you let us know so we
 can prepare accordingly.
 
 PyOhio is a conference in support of the local programmer community. We
