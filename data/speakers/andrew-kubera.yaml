@@ -1,0 +1,12 @@
+avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
+biography: <p>Andrew Kubera uses asynchronous Python daily as a software architect</p>
+code: PWN7XL
+listed: true
+name: Andrew Kubera
+slug: andrew-kubera
+talks:
+- code: H9SQXW
+  slug: how-many-times-can-one-line-fail-exceptiongroups-except-what-they-are-and-how-to-use-them
+  title: 'How Many Times Can One Line Fail? ExceptionGroups & Except*: What They Are
+    and How to Use Them'
+twitter: null

@@ -1,0 +1,24 @@
+code: EMJQGD
+content_warnings: null
+description: <p>PyScript allows you to run Python code in a browser, like JavaScript
+  does. It also lets you import geospatial mapping libraries like Folium and GeoPandas,
+  all without actually installing anything! In this talk, we'll discuss the benefits
+  and ease of using PyScript for this task, then we'll go through a basic geospatial
+  analysis and display the results in a web map. In the end we'll have an app that
+  can be easily shared, containing Python code that anyone can view and run.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: true
+qna_channel: build-a-web-map-with-pyscript
+slug: build-a-web-map-with-pyscript
+speakers:
+- avatar: https://pretalx.com/media/avatars/HeatonC_Headshot_21_1105_qlx7WzW.jpg
+  code: C8PGYQ
+  name: Christy Heaton
+  slug: christy-heaton
+start_time: TBD
+stream_timestamp: ''
+title: Build a Web Map with Pyscript!
+type: Short Talk
+youtube_url: null

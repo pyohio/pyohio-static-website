@@ -1,0 +1,23 @@
+code: YSKVJE
+content_warnings: null
+description: <p>Never have to activate another virtualenv again? Yes, please! Remove
+  the clutter of various API tokens that have accumulated in my shell configuration
+  over the years? Yes, please! Use Direnv to automate your environment setup, removing
+  pain points and barriers for your development team. We'll look at good, better,
+  and best levels of managing environment variables with Direnv.</p>
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: false
+qna_channel: null
+slug: better-living-through-direnv
+speakers:
+- avatar: https://pretalx.com/media/avatars/headshot_2_FzSCjLf.jpg
+  code: EPSBZD
+  name: Kyle Adams
+  slug: kyle-adams
+start_time: TBD
+stream_timestamp: ''
+title: Better Living Through Direnv
+type: Short Talk
+youtube_url: null

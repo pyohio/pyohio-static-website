@@ -1,0 +1,35 @@
+code: ZYP7RC
+content_warnings: null
+description: '<p>APIs are a great way to consume publicly accessible data. But what
+  do you do when there''s no API? Enter web scraping: a way you can harvest data out
+  of the same HTML documents you look at in your web browser. </p>
+
+  <p>We''ll talk about:</p>
+
+  <ul>
+
+  <li>What is Scrapy and why should you use it?</li>
+
+  <li>How to scrape data from HTML elements in a web page</li>
+
+  <li>Where and how to run your scraper</li>
+
+  </ul>
+
+  <p>Source code for the example project in the talk will be available!</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: false
+qna_channel: null
+slug: web-scraping-crash-course-with-python-and-scrapy
+speakers:
+- avatar: https://pretalx.com/media/avatars/d62981489965d21b211546664505996d_YSc4uKp.png
+  code: GXSENE
+  name: James Walters
+  slug: james-walters
+start_time: TBD
+stream_timestamp: ''
+title: Web Scraping Crash Course! With Python and Scrapy
+type: Short Talk
+youtube_url: null

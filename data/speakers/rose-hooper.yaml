@@ -1,0 +1,14 @@
+avatar: ''
+biography: <p>Rose is a neurodivergent technology enthusiast that loves coding, Python,
+  making, 3d printing, electronics, photography and music.  She also loves mentoring
+  and helping others.  You can find her hiding in her basement office, doing everything
+  other than what she should be focused on.</p>
+code: E8JE8X
+listed: true
+name: Rose Hooper
+slug: rose-hooper
+talks:
+- code: FNBFMF
+  slug: glacial-refactoring-a-glacier-inspired-approach-to-code-cleanup
+  title: 'Glacial Refactoring: A Glacier-inspired Approach to Code Cleanup'
+twitter: null

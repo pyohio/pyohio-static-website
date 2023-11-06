@@ -1,0 +1,24 @@
+code: VPBCKD
+content_warnings: null
+description: <p>PEP 593 introduced the <code>Annotated</code> Type in Python 3.9,
+  allowing typing metadata. In 2023, usage of the type by popular libraries has significantly
+  increased. For example, <code>FastAPI</code> and <code>Pydantic</code> have fully
+  adopted the <code>Annotated</code> type and recommend it as the preferred syntax
+  for their functionality.  In this talk, we will explore usage of this type in open
+  source projects and take a look at how it might be used in your code.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: true
+qna_channel: what-is-the-annotated-type
+slug: what-is-the-annotated-type
+speakers:
+- avatar: https://pretalx.com/media/avatars/381c43450b023b606561c1b112b3610b_AtXiSNp.jpg
+  code: NL3RWX
+  name: Daniel Schelkoph
+  slug: daniel-schelkoph
+start_time: TBD
+stream_timestamp: ''
+title: What Is the `Annotated` Type?
+type: Short Talk
+youtube_url: null

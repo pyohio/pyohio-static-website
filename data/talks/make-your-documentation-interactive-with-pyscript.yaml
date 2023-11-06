@@ -1,0 +1,25 @@
+code: FUYLYZ
+content_warnings: null
+description: '<p>Your documentation is peppered with examples – what if users could
+  run them in an interactive REPL, right inside the online documentation? With PyScript,
+  developers can add an interactive Python session to any webpage, including integration
+  with Sphinx, MkDocs, readthedocs, and GitHub Pages.</p>
+
+  <p>In this talk, you will learn how to enhance your Python web documentation by
+  making it fully interactive and runnable anywhere, in a fully serverless way.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: make-your-documentation-interactive-with-pyscript
+slug: make-your-documentation-interactive-with-pyscript
+speakers:
+- avatar: https://pretalx.com/media/avatars/profile_srsb8gd.jpg
+  code: R3YRRD
+  name: Jeff Glass
+  slug: jeff-glass
+start_time: TBD
+stream_timestamp: ''
+title: Make Your Documentation Interactive with PyScript
+type: Short Talk
+youtube_url: null
