@@ -1,0 +1,24 @@
+code: XWPYAC
+content_warnings: null
+description: <p>The swag bags for PyCon 2019 included an Adafruit Circuit Playground
+  Express, a lovely little circuit board with many inputs and outputs, and—crucially
+  for us—the ability to run Python. With the power of Python and a few other bits
+  of software, it’s possible to turn one into your personal “On Air” light. This talk
+  will walk the viewer through the steps required to accomplish this, and reference
+  related resources for the sake of inspiration. There will be pretty lights.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: true
+qna_channel: adafruit-circuit-playground-express-as-an-on-air-light
+slug: adafruit-circuit-playground-express-as-an-on-air-light
+speakers:
+- avatar: https://pretalx.com/media/avatars/75206a486223cfd46fb9dbc1fcc76941_Q53krNm.jpg
+  code: EPYVQY
+  name: Nik Kantar
+  slug: nik-kantar
+start_time: TBD
+stream_timestamp: ''
+title: Adafruit Circuit Playground Express as an “On Air” Light
+type: Short Talk
+youtube_url: null

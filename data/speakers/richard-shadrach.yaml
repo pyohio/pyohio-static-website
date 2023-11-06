@@ -1,0 +1,13 @@
+avatar: https://pretalx.com/media/avatars/45562402_9WddwZQ.jpeg
+biography: <p>I am a core contributor to pandas. I earned a PhD in Mathematics from
+  Michigan State University studying Arithmetic Geometry and am now a Director of
+  Data Science at 84.51° specializing in large scale optimization problems.</p>
+code: AWZYBX
+listed: true
+name: Richard Shadrach
+slug: richard-shadrach
+talks:
+- code: 8NSBJJ
+  slug: debugging-failing-pytest-tests-in-a-notebook
+  title: Debugging Failing Pytest Tests in a Notebook
+twitter: null

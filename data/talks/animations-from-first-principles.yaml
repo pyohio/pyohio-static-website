@@ -1,0 +1,31 @@
+code: GBGFXR
+content_warnings: null
+description: '<p>How do animations really work?</p>
+
+  <p>How do you create an animation?</p>
+
+  <p>What if you want to morph a circle into a figure eight?</p>
+
+  <p>As it turns out, all you need is two or three functions and a loop!</p>
+
+  <p>In this talk, we''ll go over the basic concepts and code needed to create an
+  animation <em>from first principles</em>.</p>
+
+  <p>Because the talk presents the ideas and the code from first principles, you will
+  be able to take the key concepts and build your own animations!</p>'
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: true
+qna_channel: animations-from-first-principles
+slug: animations-from-first-principles
+speakers:
+- avatar: https://pretalx.com/media/avatars/rgs_square_pMKs1bG.jpg
+  code: BLNV7P
+  name: Rodrigo Girão Serrão
+  slug: rodrigo-girao-serrao
+start_time: TBD
+stream_timestamp: ''
+title: Animations from First Principles
+type: Short Talk
+youtube_url: null

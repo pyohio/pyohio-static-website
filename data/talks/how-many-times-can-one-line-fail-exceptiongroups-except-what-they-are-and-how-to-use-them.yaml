@@ -1,0 +1,29 @@
+code: H9SQXW
+content_warnings: null
+description: '<p>Async programming can make complex things easy, but at the same time
+  be hard to get 100% correct; particularly when it comes to exceptions and handling
+  states outside the "happy path". Python has been gaining tools to more easily handle
+  the failure cases, notably in 3.11 a new exception handling syntax: <code>except*</code>.</p>
+
+  <p>Don''t know what this does or how to read it? This talk is for you.</p>
+
+  <p>This talk will briefly discuss asyncio and how async code differs from normal
+  functions, <code>TaskGroups</code> and when to use them, and finally <code>ExceptionGroups</code>
+  and the <code>try: except*:</code> syntax.</p>'
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: false
+qna_channel: null
+slug: how-many-times-can-one-line-fail-exceptiongroups-except-what-they-are-and-how-to-use-them
+speakers:
+- avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
+  code: PWN7XL
+  name: Andrew Kubera
+  slug: andrew-kubera
+start_time: TBD
+stream_timestamp: ''
+title: 'How Many Times Can One Line Fail? ExceptionGroups & Except*: What They Are
+  and How to Use Them'
+type: Short Talk
+youtube_url: null

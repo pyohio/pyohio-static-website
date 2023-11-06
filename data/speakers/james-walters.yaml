@@ -1,0 +1,15 @@
+avatar: https://pretalx.com/media/avatars/d62981489965d21b211546664505996d_YSc4uKp.png
+biography: <p>I started learning Python and Django in Fall 2021 with hopes that my
+  colleague and I would be able to rebuild an aging internal web app. Today, that
+  project is nearly complete, and my enthusiasm for Python is busting at the seams.
+  I've used it to solve tons of problems--including writing a web scraper to keep
+  track of some client data posted to the web!</p>
+code: GXSENE
+listed: true
+name: James Walters
+slug: james-walters
+talks:
+- code: ZYP7RC
+  slug: web-scraping-crash-course-with-python-and-scrapy
+  title: Web Scraping Crash Course! With Python and Scrapy
+twitter: null

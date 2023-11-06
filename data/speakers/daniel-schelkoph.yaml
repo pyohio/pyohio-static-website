@@ -1,0 +1,15 @@
+avatar: https://pretalx.com/media/avatars/381c43450b023b606561c1b112b3610b_AtXiSNp.jpg
+biography: <p>Dan currently works at Tenet3®, a knowledge management company in Dayton,
+  OH. There he leads the creation of compelling development environments, machine
+  learning software, and secure computing environments on-premise and in the cloud.  Previously,
+  he served 12 years in the Air Force as a Communications Officer, operating and protecting
+  Air Force Networks.</p>
+code: NL3RWX
+listed: true
+name: Daniel Schelkoph
+slug: daniel-schelkoph
+talks:
+- code: VPBCKD
+  slug: what-is-the-annotated-type
+  title: What Is the `Annotated` Type?
+twitter: null

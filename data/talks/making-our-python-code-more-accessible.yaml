@@ -1,0 +1,22 @@
+code: QENEDH
+content_warnings: null
+description: <p>While web developers work to make websites more accessible to end
+  users, we rarely talk about the accessibility of the code itself. This talk gives
+  a brief introduction into accessibility concepts, and a glimpse into our effort
+  to tackle the accessibility of our Python code.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: true
+qna_channel: making-our-python-code-more-accessible
+slug: making-our-python-code-more-accessible
+speakers:
+- avatar: null
+  code: ALFHNT
+  name: Dmitriy
+  slug: dmitriy
+start_time: TBD
+stream_timestamp: ''
+title: Making Our Python Code More Accessible
+type: Short Talk
+youtube_url: null
