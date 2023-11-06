@@ -191,8 +191,8 @@ resources to help you polish your proposals and talks.
 You may review prior years' talks for examples:
 
 - [PyOhio Talk Videos](https://www.youtube.com/@PyOhio/playlists)
-- [2022 Talks](https://www.pyohio.org/2022/events/talks/)
-- [2021 Talks](https://www.pyohio.org/2021/events/talks/)
+- [2022 Talks](https://www.pyohio.org/2022/program/talks/)
+- [2021 Talks](https://www.pyohio.org/2021/program/talks/)
 - [2020 Talks](https://www.pyohio.org/2020/events/talks/)
 - [2019 Talks](https://www.pyohio.org/2019/events/talks/)
 - [2019 Tutorials](https://www.pyohio.org/2019/events/tutorials/)
