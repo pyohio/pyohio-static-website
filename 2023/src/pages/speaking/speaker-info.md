@@ -7,7 +7,7 @@ title: Information for Speakers
 
 ## Video Recording Guidelines
 
-Congratulations again on having your talk accepted for PyOhio 2022!
+Congratulations again on having your talk accepted for PyOhio!
 We're truly thankful to have you as part of this unusual year of our
 conference.
 
@@ -16,13 +16,11 @@ their talks. This doc will walk you through the essentials.
 
 ### How long should my video be?
 
-For PyOhio 2022, we are doing a collection of short talks. To help keep
+For PyOhio 2023, we are doing a collection of short talks. To help keep
 the event on track and running smoothly for all of our remote attendees,
 we have tighter time requirements than in live events:
 
-- **Short Talks** should be between **10 - 15 minutes** in length.
-
-- **Shorter Talks** should be **5 minutes ± 30 seconds** in length.
+- Talks should be between **5 - 15 minutes** in length.
 
 Please, please, please do not go over the maximum time for your talk! If
 you go over time, we cannot guarantee that the entire talk will be
@@ -40,8 +38,8 @@ it just makes extra work for us to prepare it for streaming.
 
 ### When does my video have to be delivered by?
 
-We would like to receive all videos by **23:59:59 EDT on Sunday, July
-17**. This will give us enough time to pre-screen and process them.
+We would like to receive all videos by TBD.
+This will give us enough time to pre-screen and process them.
 
 **If it looks like you will not be able to make that date, please
 contact us at <program@pyohio.org>** as soon as possible to let us know!
@@ -163,7 +161,7 @@ it for streaming!
 PyOhio is dedicated to featuring a diverse and inclusive speaker lineup.
 
 **All speakers will be expected to have read and adhere to the
-conference [Code of Conduct](/conduct). In particular for
+conference [Code of Conduct](/code-of-conduct). In particular for
 speakers: slide contents and spoken material should be appropriate for a
 professional audience including people of many different backgrounds.
 Sexual language and imagery is not appropriate, and neither are language
@@ -192,9 +190,10 @@ resources to help you polish your proposals and talks.
 
 You may review prior years' talks for examples:
 
-- [2020 Talks Listing](https://www.pyohio.org/2020/events/talks/)
-- [2020
-  Videos](https://www.youtube.com/playlist?list=PL2k6bbM_wgjtGSzPXzUzP3AfVO-o4imbB)
+- [PyOhio Talk Videos](https://www.youtube.com/@PyOhio/playlists)
+- [2022 Talks](https://www.pyohio.org/2022/events/talks/)
+- [2021 Talks](https://www.pyohio.org/2021/events/talks/)
+- [2020 Talks](https://www.pyohio.org/2020/events/talks/)
 - [2019 Talks](https://www.pyohio.org/2019/events/talks/)
 - [2019 Tutorials](https://www.pyohio.org/2019/events/tutorials/)
 
