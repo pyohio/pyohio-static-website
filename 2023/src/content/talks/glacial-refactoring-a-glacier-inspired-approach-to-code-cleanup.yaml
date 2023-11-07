@@ -1,0 +1,23 @@
+code: FNBFMF
+content_warnings: null
+description: <p>Explore a glacier-inspired approach to understanding and refactoring
+  (seemingly) complicated code.  Learn how the glacial retreat can help you understand
+  code and codescapes. This intentionally slow-moving method allows the safe reworking
+  of scary-looking code through a practical incremental approach. Transform code mountains,
+  cliffs, lakes, and caverns into flattened out easy to explore codebase.</p>
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: true
+qna_channel: glacial-refactoring-a-glacier-inspired-approach-to-code-cleanup
+slug: glacial-refactoring-a-glacier-inspired-approach-to-code-cleanup
+speakers:
+- avatar: null
+  code: E8JE8X
+  name: Rose Hooper
+  slug: rose-hooper
+start_time: TBD
+stream_timestamp: ''
+title: 'Glacial Refactoring: A Glacier-inspired Approach to Code Cleanup'
+type: Short Talk
+youtube_url: null

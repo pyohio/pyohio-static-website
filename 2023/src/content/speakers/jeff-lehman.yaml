@@ -1,0 +1,24 @@
+avatar: https://pretalx.com/media/avatars/40501228_xFHT0tu.jpg
+biography: '<p>Jeff Lehman has been an SQL Server Developer for 20+ years and has
+  been working with Python and many other languages, both professionally and on the
+  side as a hobby. He has a Bachelors Degree in Data Management and Masters in Software
+  Engineering. He has been involved with computers and programming since the late
+  80s (fourth grade) where he first got exposed to programing and technology. He works
+  at R&amp;L Carriers as a SQL Developer for the business intelligence team using
+  SQL and Python on a daily basis for development and data analysis. He has also been
+  an Amateur Radio Operator for over 20 years.</p>
+
+  <p>SQL Developer by day, husband and father by night he is married to one of the
+  most patient and wonderful women in the world and is lucky enough to have an awesome
+  8 Year old son and a fantastic 23 year old step son.</p>
+
+  <p>You can check out some of his work on Github at <a href="http://github.com/n8acl">http://github.com/n8acl</a></p>'
+code: Z3V8DR
+listed: true
+name: Jeff Lehman
+slug: jeff-lehman
+talks:
+- code: LEHCRT
+  slug: hamming-it-up-using-python-with-ham-radio
+  title: Hamming it Up! Using Python with Ham Radio
+twitter: null

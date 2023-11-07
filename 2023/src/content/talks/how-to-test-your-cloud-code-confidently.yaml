@@ -1,0 +1,26 @@
+code: HGFGD9
+content_warnings: null
+description: <p>Writing cloud native Python is one of the easiest ways to build an
+  application for AWS. However, when it comes to running unit tests on your code,
+  how do you ensure that your API calls to other AWS services don't actually change
+  things? Thats where The Stubber comes in! A lesser-known part of AWS's python SDK
+  Boto3, The Stubber is a way to mock your API calls and return exactly what AWS promises
+  that you will get when you invoke their APIs without actually invoking them. This
+  talk will cover why its important to unit test your Python AWS Lambdas, how to use
+  the Stubber, and a demo running unit tests with the Stubber.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: false
+qna_channel: null
+slug: how-to-test-your-cloud-code-confidently
+speakers:
+- avatar: null
+  code: BPY7DK
+  name: Drake Pocsatko
+  slug: drake-pocsatko
+start_time: TBD
+stream_timestamp: ''
+title: How to Test Your Cloud Code Confidently
+type: Short Talk
+youtube_url: null

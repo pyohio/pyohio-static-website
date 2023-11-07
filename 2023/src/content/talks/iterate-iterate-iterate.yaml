@@ -1,0 +1,22 @@
+code: CTTQPZ
+content_warnings: null
+description: <p>The iteration protocol and generators are Python's power tools. Properly
+  used, they allow for clearer code that is easier to debug and understand. The talk
+  will cover the iteration protocol itself, generator functions and expressions, the
+  itertools and more_itertools libraries, and how to use them to up your Python level.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: false
+qna_channel: null
+slug: iterate-iterate-iterate
+speakers:
+- avatar: https://pretalx.com/media/avatars/M48A0550_OFvFoAA.jpg
+  code: KYYQVJ
+  name: Moshe Zadka
+  slug: moshe-zadka
+start_time: TBD
+stream_timestamp: ''
+title: Iterate, Iterate, Iterate
+type: Short Talk
+youtube_url: null
