@@ -1,0 +1,25 @@
+code: FEMGPT
+content_warnings: null
+description: <p>As developers, we know that writing code is only half the battle.
+  The other half is writing documentation that effectively communicates our ideas
+  and helps others understand and use our code. But how do we write good technical
+  documentation that is both accurate and engaging? In this talk, let's explore the
+  secrets to mastering the art of software technical documentation and transform the
+  way you approach technical writing.</p>
+discord_channel_id: ''
+duration: 15
+end_time: TBD
+qna: true
+qna_channel: from-code-to-clarity-how-good-technical-documentation-is-the-key-to-great-software
+slug: from-code-to-clarity-how-good-technical-documentation-is-the-key-to-great-software
+speakers:
+- avatar: https://pretalx.com/media/avatars/Ria_Bhatia-_Picture_LjrvIPt.png
+  code: AFAAPF
+  name: Ria Bhatia
+  slug: ria-bhatia
+start_time: TBD
+stream_timestamp: ''
+title: 'From Code to Clarity: How Good Technical Documentation is the Key to Great
+  Software'
+type: Short Talk
+youtube_url: null

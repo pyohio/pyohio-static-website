@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/87388c2faa3c4d423c5dd9e436028e4f_kz7REaG.jpg
+biography: '<p>Howdy y''all!</p>
+
+  <p>Sometimes I''m a Build Engineer and talk your ear off about tools and developer
+  experience. Sometimes I go by "Dunder Seuss" and perform "edutainment" about Python
+  itself.<br />
+
+  But mostly I''m just here to have fun and enjoy the company of others.</p>'
+code: YB8CFR
+listed: true
+name: Joshua Cannon
+slug: joshua-cannon
+talks:
+- code: 9H3ASU
+  slug: mommy-how-are-objects-made-by-dunder-seuss
+  title: Mommy, How Are Objects Made? - by Dunder Seuss
+twitter: null

@@ -1,0 +1,13 @@
+avatar: ''
+biography: <p>Dmitriy has been building web applications with Python for the past
+  decade, and works as a senior developer at the Caktus Group. He also enjoys teaching
+  and mentoring, talking with people, and many other things.</p>
+code: ALFHNT
+listed: true
+name: Dmitriy
+slug: dmitriy
+talks:
+- code: QENEDH
+  slug: making-our-python-code-more-accessible
+  title: Making Our Python Code More Accessible
+twitter: null

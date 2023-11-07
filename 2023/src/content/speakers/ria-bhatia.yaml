@@ -1,0 +1,28 @@
+avatar: https://pretalx.com/media/avatars/Ria_Bhatia-_Picture_LjrvIPt.png
+biography: '<p>Ria Bhatia is a driven and passionate software engineer. Over the course
+  of her career, she has worked with various database systems, prioritizing performance,
+  data durability, and scalability. Her expertise extends from cloud-based relational
+  databases to embedded persistent key-value stores.</p>
+
+  <p>Ria is passionate about simplifying complex concepts, fostering team learning,
+  and staying at the forefront of technology trends. She''s an enthusiastic speaker,
+  having previously presented at prestigious conferences like PyCascades''23 and Women
+  Tech Network Conference.</p>
+
+  <p>Committed to gender diversity in tech, Ria mentors aspiring engineers and has
+  been recognized with the Google Women in Technology Scholarship and the Nutanix
+  Women in Tech Scholarship for her leadership and community contributions.</p>
+
+  <p>Beyond tech, Ria enjoys screen-free hobbies like reading and embroidery, showcasing
+  her artistic talents. She''s also adept at playing multiple instruments, demonstrating
+  her musical talent and diverse interests.</p>'
+code: AFAAPF
+listed: true
+name: Ria Bhatia
+slug: ria-bhatia
+talks:
+- code: FEMGPT
+  slug: from-code-to-clarity-how-good-technical-documentation-is-the-key-to-great-software
+  title: 'From Code to Clarity: How Good Technical Documentation is the Key to Great
+    Software'
+twitter: null

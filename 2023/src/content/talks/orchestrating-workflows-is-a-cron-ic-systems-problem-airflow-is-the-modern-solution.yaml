@@ -1,0 +1,40 @@
+code: EPWGVK
+content_warnings: null
+description: '<p>As a developer, devops specialist, or SRE, you almost certainly have
+  recurring computational jobs running on your systems. cron is the simple, time-tested
+  sysadmin tool for making a Unix host run a task on a regular schedule.</p>
+
+  <p>However, with the ongoing migration to cloud-based microservices and APIs, many
+  computational tasks have a large, complex, and widely distributed graph of upstream
+  dependencies. These dependencies come in many different forms: for example, a file
+  or other resource arrives; a service or API becomes available; a database finishes
+  a maintenance task; the clock strikes midnight.</p>
+
+  <p>Teams that try to manage such complex dependencies with cron inevitably end up
+  writing brittle, custom code and scripts to ensure that their jobs execute in the
+  correct order.</p>
+
+  <p>This raises the question: how can a team more effectively define, manage, visualize,
+  and monitor such complex workflows? An increasingly popular answer is Apache Airflow,
+  the open-source system for workflow orchestration.</p>
+
+  <p>From this talk, you will learn about the use cases for Airflow, walk through
+  some introductory examples of the Python code that defines workflows, and watch
+  these workflows operating in real-time in the web UI.</p>'
+discord_channel_id: ''
+duration: 10
+end_time: TBD
+qna: false
+qna_channel: null
+slug: orchestrating-workflows-is-a-cron-ic-systems-problem-airflow-is-the-modern-solution
+speakers:
+- avatar: https://pretalx.com/media/avatars/31bbff7ee6bdb557e3b4fdc9f9371bf9_L1Omyte.jpg
+  code: WDRWVW
+  name: Jack Bennett
+  slug: jack-bennett
+start_time: TBD
+stream_timestamp: ''
+title: Orchestrating Workflows Is a 'cron-ic' Systems Problem. Airflow Is the Modern
+  Solution.
+type: Short Talk
+youtube_url: null

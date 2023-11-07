@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/M48A0550_OFvFoAA.jpg
+biography: <p>Moshe has been involved in the Linux community since 1998, helping in
+  Linux "installation parties". They have been programming Python since 1999, and
+  have contributed to the core Python interpreter. Moshe has been a DevOps/SRE since
+  before those terms existed, caring deeply about software reliability, build reproducibility
+  and other such things. They have worked in companies as small as three people and
+  as big as tens of thousands -- usually some place around where software meets system
+  administration.</p>
+code: KYYQVJ
+listed: true
+name: Moshe Zadka
+slug: moshe-zadka
+talks:
+- code: CTTQPZ
+  slug: iterate-iterate-iterate
+  title: Iterate, Iterate, Iterate
+twitter: null
