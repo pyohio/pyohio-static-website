@@ -1,0 +1,23 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+
+const speakers = (await getCollection('speakers', ({data}) => {
+    return data
+}))
+
+---
+<DefaultLayout title="Speakers">
+    <section>
+    <h1>Speakers</h1>
+    <ul>
+        {
+            speakers.map((speaker) => (
+                <li>
+                    <h3>{speaker.data.name}</h3>
+                </li>
+            ))
+        }
+    </ul>
+    </section>
+</DefaultLayout>
