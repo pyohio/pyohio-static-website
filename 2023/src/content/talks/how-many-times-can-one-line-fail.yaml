@@ -15,7 +15,7 @@ duration: 15
 end_time: TBD
 qna: false
 qna_channel: null
-slug: how-many-times-can-one-line-fail-exceptiongroups-except-what-they-are-and-how-to-use-them
+slug: how-many-times-can-one-line-fail
 speakers:
 - avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
   code: PWN7XL

@@ -9,8 +9,8 @@ discord_channel_id: ''
 duration: 10
 end_time: TBD
 qna: true
-qna_channel: glacial-refactoring-a-glacier-inspired-approach-to-code-cleanup
-slug: glacial-refactoring-a-glacier-inspired-approach-to-code-cleanup
+qna_channel: glacial-refactoring
+slug: glacial-refactoring
 speakers:
 - avatar: null
   code: E8JE8X

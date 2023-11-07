@@ -12,6 +12,6 @@ name: Sadukie
 slug: sadukie
 talks:
 - code: VHEDH9
-  slug: who-put-the-python-in-my-browser-a-quick-guide-to-pyscript
+  slug: who-put-the-python-in-my-browser
   title: Who Put the Python in My Browser?! A Quick Guide to Pyscript!
 twitter: null

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -109,7 +110,7 @@ def get_event_data(ctx):
         data = {
             "code": talk["code"],
             "title": talk["title"],
-            "slug": slugify(talk["title"]),
+            "slug": slugify(re.split(':|\?|\.', talk["title"])[0]),
             "description": markdown.markdown(
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],

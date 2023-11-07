@@ -9,6 +9,6 @@ name: Rose Hooper
 slug: rose-hooper
 talks:
 - code: FNBFMF
-  slug: glacial-refactoring-a-glacier-inspired-approach-to-code-cleanup
+  slug: glacial-refactoring
   title: 'Glacial Refactoring: A Glacier-inspired Approach to Code Cleanup'
 twitter: null

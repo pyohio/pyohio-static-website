@@ -6,7 +6,7 @@ name: Andrew Kubera
 slug: andrew-kubera
 talks:
 - code: H9SQXW
-  slug: how-many-times-can-one-line-fail-exceptiongroups-except-what-they-are-and-how-to-use-them
+  slug: how-many-times-can-one-line-fail
   title: 'How Many Times Can One Line Fail? ExceptionGroups & Except*: What They Are
     and How to Use Them'
 twitter: null

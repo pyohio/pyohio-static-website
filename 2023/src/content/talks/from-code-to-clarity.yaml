@@ -10,8 +10,8 @@ discord_channel_id: ''
 duration: 15
 end_time: TBD
 qna: true
-qna_channel: from-code-to-clarity-how-good-technical-documentation-is-the-key-to-great-software
-slug: from-code-to-clarity-how-good-technical-documentation-is-the-key-to-great-software
+qna_channel: from-code-to-clarity
+slug: from-code-to-clarity
 speakers:
 - avatar: https://pretalx.com/media/avatars/Ria_Bhatia-_Picture_LjrvIPt.png
   code: AFAAPF
