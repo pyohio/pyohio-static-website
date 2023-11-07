@@ -5,13 +5,23 @@ import { getCollection } from 'astro:content'
 const talks = (await getCollection('talks', ({data}) => {
     return data
 }))
+
 ---
 <DefaultLayout title="Talks">
+    <section>
+    <h1>Talks</h1>
     <ul>
         {
             talks.map((talk) => (
-                <li>${talk.id}</li>
+                <li><h3>{talk.data.title}</h3>
+                    <>by {
+                        talk.data.speakers.map((speaker) =>(
+                            <span>{speaker.name}</span>
+                        ))
+                    }</p>
+                </li>
             ))
         }
     </ul>
+    </section>
 </DefaultLayout>
