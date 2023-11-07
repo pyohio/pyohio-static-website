@@ -19,7 +19,7 @@ except ImportError:
     from yaml import Loader, Dumper
 
 PRETALX_EVENT_ID = "pyohio-2023"
-DATA_DIR = Path("./data")
+DATA_DIR = Path("./2023/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_TIME = "TBD"
 
