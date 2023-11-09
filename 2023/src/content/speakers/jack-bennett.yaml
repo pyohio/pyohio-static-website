@@ -6,7 +6,7 @@ name: Jack Bennett
 slug: jack-bennett
 talks:
 - code: EPWGVK
-  slug: orchestrating-workflows-is-a-cron-ic-systems-problem-airflow-is-the-modern-solution
+  slug: orchestrating-workflows-is-a-cron-ic-systems-problem
   title: Orchestrating Workflows Is a 'cron-ic' Systems Problem. Airflow Is the Modern
     Solution.
 twitter: null

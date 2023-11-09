@@ -26,7 +26,7 @@ duration: 10
 end_time: TBD
 qna: false
 qna_channel: null
-slug: orchestrating-workflows-is-a-cron-ic-systems-problem-airflow-is-the-modern-solution
+slug: orchestrating-workflows-is-a-cron-ic-systems-problem
 speakers:
 - avatar: https://pretalx.com/media/avatars/31bbff7ee6bdb557e3b4fdc9f9371bf9_L1Omyte.jpg
   code: WDRWVW

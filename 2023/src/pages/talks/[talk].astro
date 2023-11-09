@@ -1,0 +1,44 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+  const talks = await getCollection('talks', ({ data }) => {
+    return data
+  })
+
+  return talks.map((talk) => {
+    return {
+      params: { talk: talk.data.slug },
+      props: { talk },
+    }
+  })
+}
+const { talk } = Astro.props
+---
+
+<DefaultLayout title="Talks">
+  <section class="my-12">
+    <div class="container">
+      <h1>{talk.data.title}</h1>
+      <p class="italic">talk time TBD</p>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="space-content container">
+      <Fragment set:html={talk.data.description} />
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Presented by</h2>
+      {
+        talk.data.speakers.map((speaker) => (
+          <p>
+            <a href={'/2023/speakers/' + speaker.slug}>{speaker.name}</a>
+          </p>
+        ))
+      }
+    </div>
+  </section>
+</DefaultLayout>

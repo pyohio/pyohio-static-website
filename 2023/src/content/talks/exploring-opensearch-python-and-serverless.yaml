@@ -20,8 +20,8 @@ discord_channel_id: ''
 duration: 15
 end_time: TBD
 qna: true
-qna_channel: exploring-opensearch-python-and-serverless-crafting-efficient-and-modern-search-applications
-slug: exploring-opensearch-python-and-serverless-crafting-efficient-and-modern-search-applications
+qna_channel: exploring-opensearch-python-and-serverless
+slug: exploring-opensearch-python-and-serverless
 speakers:
 - avatar: https://pretalx.com/media/avatars/Screenshot_2023-10-23_at_13.58.21_ASc9dXP.png
   code: Z8HXML
