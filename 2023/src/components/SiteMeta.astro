@@ -17,6 +17,11 @@ let subtitle = 'PyOhio 2023'
 <meta property="og:image" content={Astro.site ? `${Astro.site}${image}` : image} />
 
 <!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={`${title} - ${subtitle}`} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={Astro.site ? `${Astro.site}${image}` : image} />
+<meta name="twitter:site" content="@pyohio" />
 
 <!-- page title -->
 <title>{title} - {subtitle}</title>
