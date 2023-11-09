@@ -8,9 +8,8 @@ import Footer from '../components/Footer.astro'
 const {
   title = 'Astro',
   description = 'The free Python community conference based in Ohio. Streaming online Saturday, December 16, 2023.',
-  url,
-  image = '/social-preview-image.png',
-  author = 'Mark Teekman',
+  image = '/2023/pyohio-2023-logo.png',
+  author = 'PyOhio Organizers',
 } = Astro.props
 ---
 
@@ -28,7 +27,7 @@ const {
       description={description.substring(0, 100)}
       url={Astro.site
         ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
+        : `https://www.pyohio.org/2023/${title.toLowerCase().replaceAll(' ', '-')}`}
       image={image}
       author={author}
     />
