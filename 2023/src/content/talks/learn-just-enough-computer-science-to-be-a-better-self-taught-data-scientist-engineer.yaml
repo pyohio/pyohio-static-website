@@ -21,7 +21,7 @@ qna: true
 qna_channel: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
 slug: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/pyohio_avatar_FudoNWW.jpeg
   code: RL9TYY
   name: Jian Jin
   slug: jian-jin
