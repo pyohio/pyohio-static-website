@@ -23,5 +23,25 @@ let subtitle = 'PyOhio 2023'
 <meta name="twitter:image" content={Astro.site ? `${Astro.site}${image}` : image} />
 <meta name="twitter:site" content="@pyohio" />
 
+<!-- event schema -->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Event",
+        "name": "PyOhio 2023",
+        "description": "Free online Python programming community conference.",
+        "image": "https://www.pyohio.org/2023/pyohio-2023-logo.png",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "startDate": "2023-12-16T10:00-05:00",
+        "endDate": "2023-12-16T18:00-05:00",
+        "location": [
+            {
+                "@type": "VirtualLocation",
+                "url": "https://www.pyohio.org/2023"
+            }
+        ]
+    }
+</script>
 <!-- page title -->
 <title>{title} - {subtitle}</title>
