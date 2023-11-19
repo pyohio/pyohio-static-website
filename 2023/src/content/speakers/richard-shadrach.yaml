@@ -7,7 +7,7 @@ listed: true
 name: Richard Shadrach
 slug: richard-shadrach
 talks:
-- code: 8NSBJJ
-  slug: debugging-failing-pytest-tests-in-a-notebook
-  title: Debugging Failing Pytest Tests in a Notebook
+  - code: 8NSBJJ
+    slug: debugging-failing-pytest-tests-in-a-notebook
+    title: Debugging Failing Pytest Tests in a Notebook
 twitter: null

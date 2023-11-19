@@ -28,10 +28,10 @@ qna: false
 qna_channel: null
 slug: orchestrating-workflows-is-a-cron-ic-systems-problem
 speakers:
-- avatar: https://pretalx.com/media/avatars/jack-bennett-headshot-bw-edited-avatar-profile-pic_RQyocEo.jpg
-  code: WDRWVW
-  name: Jack Bennett
-  slug: jack-bennett
+  - avatar: https://pretalx.com/media/avatars/jack-bennett-headshot-bw-edited-avatar-profile-pic_RQyocEo.jpg
+    code: WDRWVW
+    name: Jack Bennett
+    slug: jack-bennett
 start_time: TBD
 stream_timestamp: ''
 title: Orchestrating Workflows Is a 'cron-ic' Systems Problem. Airflow Is the Modern

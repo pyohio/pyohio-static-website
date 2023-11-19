@@ -9,7 +9,7 @@ listed: true
 name: Jeff Glass
 slug: jeff-glass
 talks:
-- code: FUYLYZ
-  slug: make-your-documentation-interactive-with-pyscript
-  title: Make Your Documentation Interactive with PyScript
+  - code: FUYLYZ
+    slug: make-your-documentation-interactive-with-pyscript
+    title: Make Your Documentation Interactive with PyScript
 twitter: null

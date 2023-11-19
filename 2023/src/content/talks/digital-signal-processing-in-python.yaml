@@ -12,10 +12,10 @@ qna: false
 qna_channel: null
 slug: digital-signal-processing-in-python
 speakers:
-- avatar: https://pretalx.com/media/avatars/Headshot1_4BYNPUc.png
-  code: UNKVJC
-  name: Meg Sharma
-  slug: meg-sharma
+  - avatar: https://pretalx.com/media/avatars/Headshot1_4BYNPUc.png
+    code: UNKVJC
+    name: Meg Sharma
+    slug: meg-sharma
 start_time: TBD
 stream_timestamp: ''
 title: 'Digital Signal Processing in Python: A MATLAB Alternative'

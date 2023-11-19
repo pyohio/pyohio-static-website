@@ -11,7 +11,7 @@ listed: true
 name: Mariatta
 slug: mariatta
 talks:
-- code: ATCNTJ
-  slug: f-strings
-  title: F-strings!
+  - code: ATCNTJ
+    slug: f-strings
+    title: F-strings!
 twitter: null

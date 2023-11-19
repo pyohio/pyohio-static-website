@@ -15,10 +15,10 @@ qna: false
 qna_channel: null
 slug: not-so-precise-float-arithmetic-in-python
 speakers:
-- avatar: https://pretalx.com/media/avatars/IMG_2460_inePQXW.jpg
-  code: E3XJKT
-  name: Syed Muhammad Dawoud Sheraz Ali
-  slug: syed-muhammad-dawoud-sheraz-ali
+  - avatar: https://pretalx.com/media/avatars/IMG_2460_inePQXW.jpg
+    code: E3XJKT
+    name: Syed Muhammad Dawoud Sheraz Ali
+    slug: syed-muhammad-dawoud-sheraz-ali
 start_time: TBD
 stream_timestamp: ''
 title: (Not-so) Precise Float Arithmetic in Python

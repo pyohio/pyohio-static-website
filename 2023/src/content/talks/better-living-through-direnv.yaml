@@ -12,10 +12,10 @@ qna: false
 qna_channel: null
 slug: better-living-through-direnv
 speakers:
-- avatar: https://pretalx.com/media/avatars/headshot_2_FzSCjLf.jpg
-  code: EPSBZD
-  name: Kyle Adams
-  slug: kyle-adams
+  - avatar: https://pretalx.com/media/avatars/headshot_2_FzSCjLf.jpg
+    code: EPSBZD
+    name: Kyle Adams
+    slug: kyle-adams
 start_time: TBD
 stream_timestamp: ''
 title: Better Living Through Direnv

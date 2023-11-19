@@ -8,7 +8,7 @@ listed: true
 name: Christy Heaton
 slug: christy-heaton
 talks:
-- code: EMJQGD
-  slug: build-a-web-map-with-pyscript
-  title: Build a Web Map with Pyscript!
+  - code: EMJQGD
+    slug: build-a-web-map-with-pyscript
+    title: Build a Web Map with Pyscript!
 twitter: null

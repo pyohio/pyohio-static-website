@@ -14,7 +14,7 @@ listed: true
 name: Rodrigo Girão Serrão
 slug: rodrigo-girao-serrao
 talks:
-- code: GBGFXR
-  slug: animations-from-first-principles
-  title: Animations from First Principles
+  - code: GBGFXR
+    slug: animations-from-first-principles
+    title: Animations from First Principles
 twitter: null

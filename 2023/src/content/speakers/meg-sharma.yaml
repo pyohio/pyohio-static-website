@@ -8,7 +8,7 @@ listed: true
 name: Meg Sharma
 slug: meg-sharma
 talks:
-- code: GXQXHT
-  slug: digital-signal-processing-in-python
-  title: 'Digital Signal Processing in Python: A MATLAB Alternative'
+  - code: GXQXHT
+    slug: digital-signal-processing-in-python
+    title: 'Digital Signal Processing in Python: A MATLAB Alternative'
 twitter: null

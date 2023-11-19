@@ -8,7 +8,7 @@ listed: true
 name: Connie Skomra
 slug: connie-skomra
 talks:
-- code: PCWTVG
-  slug: python-s-magic-for-machine-learning-in-15-minutes
-  title: Python's Magic for Machine Learning in 15 Minutes
+  - code: PCWTVG
+    slug: python-s-magic-for-machine-learning-in-15-minutes
+    title: Python's Magic for Machine Learning in 15 Minutes
 twitter: null

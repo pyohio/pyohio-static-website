@@ -14,10 +14,10 @@ qna: true
 qna_channel: make-your-documentation-interactive-with-pyscript
 slug: make-your-documentation-interactive-with-pyscript
 speakers:
-- avatar: https://pretalx.com/media/avatars/profile_srsb8gd.jpg
-  code: R3YRRD
-  name: Jeff Glass
-  slug: jeff-glass
+  - avatar: https://pretalx.com/media/avatars/profile_srsb8gd.jpg
+    code: R3YRRD
+    name: Jeff Glass
+    slug: jeff-glass
 start_time: TBD
 stream_timestamp: ''
 title: Make Your Documentation Interactive with PyScript

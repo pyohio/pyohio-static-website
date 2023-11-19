@@ -6,7 +6,7 @@ listed: true
 name: Syed Muhammad Dawoud Sheraz Ali
 slug: syed-muhammad-dawoud-sheraz-ali
 talks:
-- code: XWKXML
-  slug: not-so-precise-float-arithmetic-in-python
-  title: (Not-so) Precise Float Arithmetic in Python
+  - code: XWKXML
+    slug: not-so-precise-float-arithmetic-in-python
+    title: (Not-so) Precise Float Arithmetic in Python
 twitter: null

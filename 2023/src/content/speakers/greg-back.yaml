@@ -6,7 +6,7 @@ listed: true
 name: Greg Back
 slug: greg-back
 talks:
-- code: BCTXJR
-  slug: supercharging-terraform-with-cdktf
-  title: Supercharging Terraform with CDKTF
+  - code: BCTXJR
+    slug: supercharging-terraform-with-cdktf
+    title: Supercharging Terraform with CDKTF
 twitter: null

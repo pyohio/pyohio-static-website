@@ -5,7 +5,7 @@ listed: true
 name: samuel oranyeli
 slug: samuel-oranyeli
 talks:
-- code: ZMZAT7
-  slug: inequality-joins-in-pandas-with-pyjanitor
-  title: Inequality Joins in Pandas with Pyjanitor
+  - code: ZMZAT7
+    slug: inequality-joins-in-pandas-with-pyjanitor
+    title: Inequality Joins in Pandas with Pyjanitor
 twitter: null

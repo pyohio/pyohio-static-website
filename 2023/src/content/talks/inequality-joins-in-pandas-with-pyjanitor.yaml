@@ -21,10 +21,10 @@ qna: true
 qna_channel: inequality-joins-in-pandas-with-pyjanitor
 slug: inequality-joins-in-pandas-with-pyjanitor
 speakers:
-- avatar: https://pretalx.com/media/avatars/thumb-102067_vpIBeHF.jpg
-  code: WVUBZP
-  name: samuel oranyeli
-  slug: samuel-oranyeli
+  - avatar: https://pretalx.com/media/avatars/thumb-102067_vpIBeHF.jpg
+    code: WVUBZP
+    name: samuel oranyeli
+    slug: samuel-oranyeli
 start_time: TBD
 stream_timestamp: ''
 title: Inequality Joins in Pandas with Pyjanitor

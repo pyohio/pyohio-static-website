@@ -18,7 +18,7 @@ listed: true
 name: Jeff Lehman
 slug: jeff-lehman
 talks:
-- code: LEHCRT
-  slug: hamming-it-up-using-python-with-ham-radio
-  title: Hamming it Up! Using Python with Ham Radio
+  - code: LEHCRT
+    slug: hamming-it-up-using-python-with-ham-radio
+    title: Hamming it Up! Using Python with Ham Radio
 twitter: null

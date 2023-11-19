@@ -5,7 +5,7 @@ listed: true
 name: Drake Pocsatko
 slug: drake-pocsatko
 talks:
-- code: HGFGD9
-  slug: how-to-test-your-cloud-code-confidently
-  title: How to Test Your Cloud Code Confidently
+  - code: HGFGD9
+    slug: how-to-test-your-cloud-code-confidently
+    title: How to Test Your Cloud Code Confidently
 twitter: null

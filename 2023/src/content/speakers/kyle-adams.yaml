@@ -8,7 +8,7 @@ listed: true
 name: Kyle Adams
 slug: kyle-adams
 talks:
-- code: YSKVJE
-  slug: better-living-through-direnv
-  title: Better Living Through Direnv
+  - code: YSKVJE
+    slug: better-living-through-direnv
+    title: Better Living Through Direnv
 twitter: null

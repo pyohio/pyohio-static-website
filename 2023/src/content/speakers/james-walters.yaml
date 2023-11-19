@@ -9,7 +9,7 @@ listed: true
 name: James Walters
 slug: james-walters
 talks:
-- code: ZYP7RC
-  slug: web-scraping-crash-course-with-python-and-scrapy
-  title: Web Scraping Crash Course! With Python and Scrapy
+  - code: ZYP7RC
+    slug: web-scraping-crash-course-with-python-and-scrapy
+    title: Web Scraping Crash Course! With Python and Scrapy
 twitter: null

@@ -7,7 +7,7 @@ listed: true
 name: Jian Jin
 slug: jian-jin
 talks:
-- code: QUUBQS
-  slug: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
-  title: Learn Just Enough Computer Science to Be a Better (Self-taught) Data Scientist/Engineer
+  - code: QUUBQS
+    slug: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
+    title: Learn Just Enough Computer Science to Be a Better (Self-taught) Data Scientist/Engineer
 twitter: null

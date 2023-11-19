@@ -1,18 +1,18 @@
 code: HLAWUG
 content_warnings: null
-description: '<p>Code is organic: it grows and rots with neglect. So does the associated
+description: "<p>Code is organic: it grows and rots with neglect. So does the associated
   “meta-code” - like docs, tests, configurations, and requirements. This is fertile
   soil for Zombies, a horde of which can seriously disrupt the software development
   process. </p>
 
-  <p>In this talk, we''ll explore how automated testing strategies can be used to
+  <p>In this talk, we'll explore how automated testing strategies can be used to
   identify and minimize drift in meta-code. Techniques of yore - such as Behaviour-Driven
   Development and Living Documentation - are resuscitated before your eyes using the
   arcane magic of Large Language Models (LLMs). Limitations / good targets for application
-  are discussed in the context of the author''s experience. </p>
+  are discussed in the context of the author's experience. </p>
 
-  <p>And if you act now, we''ll throw in two other hyphenated proper nouns (Provider-Driven
-  Contracts and Example-Based Requirements) for free!</p>'
+  <p>And if you act now, we'll throw in two other hyphenated proper nouns (Provider-Driven
+  Contracts and Example-Based Requirements) for free!</p>"
 discord_channel_id: ''
 duration: 15
 end_time: TBD
@@ -20,10 +20,10 @@ qna: false
 qna_channel: null
 slug: slaying-software-zombies-with-llms-and-lesser-incantations
 speakers:
-- avatar: https://pretalx.com/media/avatars/robbie-wr-ong_Ik8U5mr.png
-  code: XJQEKZ
-  name: Paul Pereyda Karayan
-  slug: paul-pereyda-karayan
+  - avatar: https://pretalx.com/media/avatars/robbie-wr-ong_Ik8U5mr.png
+    code: XJQEKZ
+    name: Paul Pereyda Karayan
+    slug: paul-pereyda-karayan
 start_time: TBD
 stream_timestamp: ''
 title: Slaying Software Zombies with LLMs (and Lesser Incantations)

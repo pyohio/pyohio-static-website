@@ -16,10 +16,10 @@ qna: false
 qna_channel: null
 slug: full-stack-python-with-htmx
 speakers:
-- avatar: https://pretalx.com/media/avatars/andy_django_profile_zoom_small_1UIzVKP.jpg
-  code: 8WV93W
-  name: Pandy Knight
-  slug: pandy-knight
+  - avatar: https://pretalx.com/media/avatars/andy_django_profile_zoom_small_1UIzVKP.jpg
+    code: 8WV93W
+    name: Pandy Knight
+    slug: pandy-knight
 start_time: TBD
 stream_timestamp: ''
 title: Full-Stack Python with HTMX

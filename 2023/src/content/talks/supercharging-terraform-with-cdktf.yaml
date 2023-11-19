@@ -1,14 +1,14 @@
 code: BCTXJR
 content_warnings: null
-description: '<p>Terraform is great tool for managing infrastructure as code, but
+description: "<p>Terraform is great tool for managing infrastructure as code, but
   its default configuration language (HCL) can be inefficient or difficult for more
   advanced or dynamic use cases. Fortunately, we can use the full power of Python
   with the HashiCorp-supported Cloud Development Kit for Terraform.</p>
 
-  <p>In this presentation, I''ll give an example of this power to support an access
+  <p>In this presentation, I'll give an example of this power to support an access
   management application, leveraging user profile data in Okta to generate groups
   representing an organization hierarchy, that can respond to organization changes
-  with minimal if any code changes needed.</p>'
+  with minimal if any code changes needed.</p>"
 discord_channel_id: ''
 duration: 10
 end_time: TBD
@@ -16,10 +16,10 @@ qna: true
 qna_channel: supercharging-terraform-with-cdktf
 slug: supercharging-terraform-with-cdktf
 speakers:
-- avatar: https://pretalx.com/media/avatars/2023s_W8Kd7J1.jpg
-  code: NFU9J7
-  name: Greg Back
-  slug: greg-back
+  - avatar: https://pretalx.com/media/avatars/2023s_W8Kd7J1.jpg
+    code: NFU9J7
+    name: Greg Back
+    slug: greg-back
 start_time: TBD
 stream_timestamp: ''
 title: Supercharging Terraform with CDKTF

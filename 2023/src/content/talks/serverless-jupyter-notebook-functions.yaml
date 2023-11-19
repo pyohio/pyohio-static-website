@@ -15,10 +15,10 @@ qna: true
 qna_channel: serverless-jupyter-notebook-functions
 slug: serverless-jupyter-notebook-functions
 speakers:
-- avatar: https://pretalx.com/media/avatars/1648921791170_znx1qJJ.jpg
-  code: MLVXFU
-  name: Koushik Krishnan
-  slug: koushik-krishnan
+  - avatar: https://pretalx.com/media/avatars/1648921791170_znx1qJJ.jpg
+    code: MLVXFU
+    name: Koushik Krishnan
+    slug: koushik-krishnan
 start_time: TBD
 stream_timestamp: ''
 title: Serverless Jupyter Notebook Functions

@@ -11,10 +11,10 @@ qna: true
 qna_channel: making-our-python-code-more-accessible
 slug: making-our-python-code-more-accessible
 speakers:
-- avatar: null
-  code: ALFHNT
-  name: Dmitriy
-  slug: dmitriy
+  - avatar: null
+    code: ALFHNT
+    name: Dmitriy
+    slug: dmitriy
 start_time: TBD
 stream_timestamp: ''
 title: Making Our Python Code More Accessible

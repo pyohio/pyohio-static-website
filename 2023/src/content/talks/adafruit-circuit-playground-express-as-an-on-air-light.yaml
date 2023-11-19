@@ -13,10 +13,10 @@ qna: true
 qna_channel: adafruit-circuit-playground-express-as-an-on-air-light
 slug: adafruit-circuit-playground-express-as-an-on-air-light
 speakers:
-- avatar: https://pretalx.com/media/avatars/75206a486223cfd46fb9dbc1fcc76941_Q53krNm.jpg
-  code: EPYVQY
-  name: Nik Kantar
-  slug: nik-kantar
+  - avatar: https://pretalx.com/media/avatars/75206a486223cfd46fb9dbc1fcc76941_Q53krNm.jpg
+    code: EPYVQY
+    name: Nik Kantar
+    slug: nik-kantar
 start_time: TBD
 stream_timestamp: ''
 title: Adafruit Circuit Playground Express as an “On Air” Light

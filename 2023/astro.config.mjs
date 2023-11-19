@@ -9,6 +9,9 @@ export default defineConfig({
   base: '/2023',
   publicDir: './public-src',
   compressHTML: true,
+  image: {
+    domains: ['pyohio.org', 'pretalx.com', 'gravatar.com'],
+  },
   integrations: [
     mdx(),
     tailwind({

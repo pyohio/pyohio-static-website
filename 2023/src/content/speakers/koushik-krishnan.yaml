@@ -7,7 +7,7 @@ listed: true
 name: Koushik Krishnan
 slug: koushik-krishnan
 talks:
-- code: PMYX7X
-  slug: serverless-jupyter-notebook-functions
-  title: Serverless Jupyter Notebook Functions
+  - code: PMYX7X
+    slug: serverless-jupyter-notebook-functions
+    title: Serverless Jupyter Notebook Functions
 twitter: null
