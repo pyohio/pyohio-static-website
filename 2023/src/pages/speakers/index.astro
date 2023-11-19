@@ -1,7 +1,8 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
-import { Image } from 'astro:assets'
+import { Picture } from "astro-imagetools/components";
+
 
 const speakers = await getCollection('speakers', ({ data }) => {
   return data
@@ -18,14 +19,20 @@ const speakers = await getCollection('speakers', ({ data }) => {
     <div class="mx-12 flex flex-wrap">
       {
         speakers.map((speaker) => (
-          <div class="w-1/8 mx-6">
-            <Image
-              class="border-red rounded-3xl border-8"
+          <div class="mx-6 py-3 text-center max-w-[10%]">
+            <a href={speaker.data.slug}>
+            <Picture
               src={speaker.data.avatar}
               alt={speaker.data.name + ' profile photo'}
               height="150"
               width="150"
-            />
+              layout="constrained"
+              attributes={{
+          img: {
+            class: "rounded-3xl border-8"
+          },
+        }}
+            /></a>
             <a href={speaker.data.slug}>{speaker.data.name}</a>
           </div>
         ))
