@@ -180,7 +180,7 @@ def get_event_data(ctx):
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
         }
-        if data["avatar"] is None:
+        if not data["avatar"]:
             data["avatar"] = PLACEHOLDER_AVATAR
         if data["avatar"].startswith("https://www.gravatar.com/avatar"):
             data["avatar"] = f"{data['avatar']}?s=300"
