@@ -17,10 +17,10 @@ qna: false
 qna_channel: null
 slug: how-many-times-can-one-line-fail
 speakers:
-  - avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
-    code: PWN7XL
-    name: Andrew Kubera
-    slug: andrew-kubera
+- avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
+  code: PWN7XL
+  name: Andrew Kubera
+  slug: andrew-kubera
 start_time: TBD
 stream_timestamp: ''
 title: 'How Many Times Can One Line Fail? ExceptionGroups & Except*: What They Are

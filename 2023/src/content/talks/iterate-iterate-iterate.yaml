@@ -11,10 +11,10 @@ qna: false
 qna_channel: null
 slug: iterate-iterate-iterate
 speakers:
-  - avatar: https://pretalx.com/media/avatars/M48A0550_OFvFoAA.jpg
-    code: KYYQVJ
-    name: Moshe Zadka
-    slug: moshe-zadka
+- avatar: https://pretalx.com/media/avatars/M48A0550_OFvFoAA.jpg
+  code: KYYQVJ
+  name: Moshe Zadka
+  slug: moshe-zadka
 start_time: TBD
 stream_timestamp: ''
 title: Iterate, Iterate, Iterate

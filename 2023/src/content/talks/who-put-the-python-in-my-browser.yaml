@@ -12,10 +12,10 @@ qna: false
 qna_channel: null
 slug: who-put-the-python-in-my-browser
 speakers:
-  - avatar: https://pretalx.com/media/avatars/SarahDutkiewicz_REOpqy4.jpg
-    code: WLVEC8
-    name: Sadukie
-    slug: sadukie
+- avatar: https://pretalx.com/media/avatars/SarahDutkiewicz_REOpqy4.jpg
+  code: WLVEC8
+  name: Sadukie
+  slug: sadukie
 start_time: TBD
 stream_timestamp: ''
 title: Who Put the Python in My Browser?! A Quick Guide to Pyscript!

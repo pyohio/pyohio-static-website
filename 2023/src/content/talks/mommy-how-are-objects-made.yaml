@@ -9,10 +9,10 @@ qna: true
 qna_channel: mommy-how-are-objects-made
 slug: mommy-how-are-objects-made
 speakers:
-  - avatar: https://pretalx.com/media/avatars/87388c2faa3c4d423c5dd9e436028e4f_0Ul84Og.jpg
-    code: YB8CFR
-    name: Joshua Cannon
-    slug: joshua-cannon
+- avatar: https://pretalx.com/media/avatars/87388c2faa3c4d423c5dd9e436028e4f_0Ul84Og.jpg
+  code: YB8CFR
+  name: Joshua Cannon
+  slug: joshua-cannon
 start_time: TBD
 stream_timestamp: ''
 title: Mommy, How Are Objects Made? - by Dunder Seuss

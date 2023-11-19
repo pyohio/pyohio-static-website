@@ -16,10 +16,10 @@ qna: true
 qna_channel: hamming-it-up-using-python-with-ham-radio
 slug: hamming-it-up-using-python-with-ham-radio
 speakers:
-  - avatar: https://pretalx.com/media/avatars/40501228_xFHT0tu.jpg
-    code: Z3V8DR
-    name: Jeff Lehman
-    slug: jeff-lehman
+- avatar: https://pretalx.com/media/avatars/40501228_xFHT0tu.jpg
+  code: Z3V8DR
+  name: Jeff Lehman
+  slug: jeff-lehman
 start_time: TBD
 stream_timestamp: ''
 title: Hamming it Up! Using Python with Ham Radio

@@ -12,7 +12,7 @@ listed: true
 name: Wayne
 slug: wayne
 talks:
-  - code: YTBUGS
-    slug: what-i-learned-in-three-years-writing-tests-live
-    title: What I Learned in Three Years Writing Tests Live
+- code: YTBUGS
+  slug: what-i-learned-in-three-years-writing-tests-live
+  title: What I Learned in Three Years Writing Tests Live
 twitter: null

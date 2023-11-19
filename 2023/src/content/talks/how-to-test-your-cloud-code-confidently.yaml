@@ -15,10 +15,10 @@ qna: false
 qna_channel: null
 slug: how-to-test-your-cloud-code-confidently
 speakers:
-  - avatar: null
-    code: BPY7DK
-    name: Drake Pocsatko
-    slug: drake-pocsatko
+- avatar: null
+  code: BPY7DK
+  name: Drake Pocsatko
+  slug: drake-pocsatko
 start_time: TBD
 stream_timestamp: ''
 title: How to Test Your Cloud Code Confidently

@@ -13,10 +13,10 @@ qna: true
 qna_channel: from-code-to-clarity
 slug: from-code-to-clarity
 speakers:
-  - avatar: https://pretalx.com/media/avatars/Ria_Bhatia-_Picture_LjrvIPt.png
-    code: AFAAPF
-    name: Ria Bhatia
-    slug: ria-bhatia
+- avatar: https://pretalx.com/media/avatars/Ria_Bhatia-_Picture_LjrvIPt.png
+  code: AFAAPF
+  name: Ria Bhatia
+  slug: ria-bhatia
 start_time: TBD
 stream_timestamp: ''
 title: 'From Code to Clarity: How Good Technical Documentation is the Key to Great

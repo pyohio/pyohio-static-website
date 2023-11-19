@@ -11,7 +11,7 @@ listed: true
 name: Nik Kantar
 slug: nik-kantar
 talks:
-  - code: XWPYAC
-    slug: adafruit-circuit-playground-express-as-an-on-air-light
-    title: Adafruit Circuit Playground Express as an “On Air” Light
+- code: XWPYAC
+  slug: adafruit-circuit-playground-express-as-an-on-air-light
+  title: Adafruit Circuit Playground Express as an “On Air” Light
 twitter: null

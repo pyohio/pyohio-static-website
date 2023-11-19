@@ -12,10 +12,10 @@ qna: true
 qna_channel: glacial-refactoring
 slug: glacial-refactoring
 speakers:
-  - avatar: null
-    code: E8JE8X
-    name: Rose Hooper
-    slug: rose-hooper
+- avatar: null
+  code: E8JE8X
+  name: Rose Hooper
+  slug: rose-hooper
 start_time: TBD
 stream_timestamp: ''
 title: 'Glacial Refactoring: A Glacier-inspired Approach to Code Cleanup'

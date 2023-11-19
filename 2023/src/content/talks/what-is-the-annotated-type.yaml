@@ -13,10 +13,10 @@ qna: true
 qna_channel: what-is-the-annotated-type
 slug: what-is-the-annotated-type
 speakers:
-  - avatar: https://pretalx.com/media/avatars/IMG_0066_tLqbLpT.jpeg
-    code: NL3RWX
-    name: Daniel Schelkoph
-    slug: daniel-schelkoph
+- avatar: https://pretalx.com/media/avatars/IMG_0066_tLqbLpT.jpeg
+  code: NL3RWX
+  name: Daniel Schelkoph
+  slug: daniel-schelkoph
 start_time: TBD
 stream_timestamp: ''
 title: What Is the `Annotated` Type?

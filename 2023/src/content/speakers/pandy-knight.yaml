@@ -13,7 +13,7 @@ listed: true
 name: Pandy Knight
 slug: pandy-knight
 talks:
-  - code: 8FA883
-    slug: full-stack-python-with-htmx
-    title: Full-Stack Python with HTMX
+- code: 8FA883
+  slug: full-stack-python-with-htmx
+  title: Full-Stack Python with HTMX
 twitter: null

@@ -13,10 +13,10 @@ qna: true
 qna_channel: build-a-web-map-with-pyscript
 slug: build-a-web-map-with-pyscript
 speakers:
-  - avatar: https://pretalx.com/media/avatars/HeatonC_Headshot_21_1105_qlx7WzW.jpg
-    code: C8PGYQ
-    name: Christy Heaton
-    slug: christy-heaton
+- avatar: https://pretalx.com/media/avatars/HeatonC_Headshot_21_1105_qlx7WzW.jpg
+  code: C8PGYQ
+  name: Christy Heaton
+  slug: christy-heaton
 start_time: TBD
 stream_timestamp: ''
 title: Build a Web Map with Pyscript!

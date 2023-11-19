@@ -11,7 +11,7 @@ listed: true
 name: Moshe Zadka
 slug: moshe-zadka
 talks:
-  - code: CTTQPZ
-    slug: iterate-iterate-iterate
-    title: Iterate, Iterate, Iterate
+- code: CTTQPZ
+  slug: iterate-iterate-iterate
+  title: Iterate, Iterate, Iterate
 twitter: null

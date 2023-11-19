@@ -7,7 +7,7 @@ listed: true
 name: Dmitriy
 slug: dmitriy
 talks:
-  - code: QENEDH
-    slug: making-our-python-code-more-accessible
-    title: Making Our Python Code More Accessible
+- code: QENEDH
+  slug: making-our-python-code-more-accessible
+  title: Making Our Python Code More Accessible
 twitter: null

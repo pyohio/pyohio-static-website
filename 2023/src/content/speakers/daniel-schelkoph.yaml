@@ -9,7 +9,7 @@ listed: true
 name: Daniel Schelkoph
 slug: daniel-schelkoph
 talks:
-  - code: VPBCKD
-    slug: what-is-the-annotated-type
-    title: What Is the `Annotated` Type?
+- code: VPBCKD
+  slug: what-is-the-annotated-type
+  title: What Is the `Annotated` Type?
 twitter: null

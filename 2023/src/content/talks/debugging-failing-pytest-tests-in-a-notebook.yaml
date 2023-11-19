@@ -20,10 +20,10 @@ qna: true
 qna_channel: debugging-failing-pytest-tests-in-a-notebook
 slug: debugging-failing-pytest-tests-in-a-notebook
 speakers:
-  - avatar: https://pretalx.com/media/avatars/45562402_9WddwZQ.jpeg
-    code: AWZYBX
-    name: Richard Shadrach
-    slug: richard-shadrach
+- avatar: https://pretalx.com/media/avatars/45562402_9WddwZQ.jpeg
+  code: AWZYBX
+  name: Richard Shadrach
+  slug: richard-shadrach
 start_time: TBD
 stream_timestamp: ''
 title: Debugging Failing Pytest Tests in a Notebook
