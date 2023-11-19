@@ -27,10 +27,12 @@ const speakers = await getCollection('speakers', ({ data }) => {
               height="150"
               width="150"
               layout="constrained"
+              fadeInTransition={false}
               attributes={{
           img: {
             class: "rounded-3xl border-4"
           },
+
         }}
             /></a>
             <a href={speaker.data.slug}>{speaker.data.name}</a>
