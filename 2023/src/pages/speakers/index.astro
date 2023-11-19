@@ -19,7 +19,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
     <div class="mx-12 flex flex-wrap">
       {
         speakers.map((speaker) => (
-          <div class="mx-6 py-3 text-center max-w-[10%]">
+          <div class="mx-6 py-3 text-center max-w-[10%] min-w-[8rem]">
             <a href={speaker.data.slug}>
             <Picture
               src={speaker.data.avatar}
@@ -29,7 +29,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
               layout="constrained"
               attributes={{
           img: {
-            class: "rounded-3xl border-8"
+            class: "rounded-3xl border-4"
           },
         }}
             /></a>
