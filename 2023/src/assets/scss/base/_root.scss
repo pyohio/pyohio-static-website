@@ -2,7 +2,7 @@
 // | Root
 // | -------------------------------------------------------------
 
-@use "color" as *;
+@use 'color' as *;
 
 :root {
   @each $color, $shades in $colors {

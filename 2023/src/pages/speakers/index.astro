@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
+import { Picture } from 'astro-imagetools/components'
 
 const speakers = await getCollection('speakers', ({ data }) => {
   return data
@@ -14,18 +15,29 @@ const speakers = await getCollection('speakers', ({ data }) => {
     </div>
   </section>
   <section class="my-12">
-    <div class="space-content container">
-      <ul>
-        {
-          speakers.map((speaker) => (
-            <li>
-              <h3>
-                <a href={speaker.data.slug}>{speaker.data.name}</a>
-              </h3>
-            </li>
-          ))
-        }
-      </ul>
+    <div class="mx-12 flex flex-wrap">
+      {
+        speakers.map((speaker) => (
+          <div class="mx-6 min-w-[8rem] max-w-[10%] py-3 text-center">
+            <a href={speaker.data.slug}>
+              <Picture
+                src={speaker.data.avatar}
+                alt={speaker.data.name + ' profile photo'}
+                height="150"
+                width="150"
+                layout="constrained"
+                fadeInTransition={false}
+                attributes={{
+                  img: {
+                    class: 'rounded-3xl border-4',
+                  },
+                }}
+              />
+            </a>
+            <a href={speaker.data.slug}>{speaker.data.name}</a>
+          </div>
+        ))
+      }
     </div>
   </section>
 </DefaultLayout>
