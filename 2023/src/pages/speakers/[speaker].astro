@@ -1,6 +1,8 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets';
+
 
 export async function getStaticPaths() {
   const speakers = await getCollection('speakers', ({ data }) => {
@@ -21,6 +23,7 @@ const { speaker } = Astro.props
   <section class="my-12">
     <div class="container">
       <h1>{speaker.data.name}</h1>
+      <Image class="border-8 rounded-3xl border-red" src={speaker.data.avatar} alt={speaker.data.name} height="300" width="300"/>
     </div>
   </section>
   <section class="my-12">
