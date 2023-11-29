@@ -8,11 +8,11 @@ description: '<p>APIs are a great way to consume publicly accessible data. But w
 
   <ul>
 
+  <li>What is web scraping?</li>
+
   <li>What is Scrapy and why should you use it?</li>
 
   <li>How to scrape data from HTML elements in a web page</li>
-
-  <li>Where and how to run your scraper</li>
 
   </ul>
 
