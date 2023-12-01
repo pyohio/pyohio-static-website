@@ -15,6 +15,10 @@ speakers:
   code: ALFHNT
   name: Dmitriy Chukhin
   slug: dmitriy-chukhin
+- avatar: null
+  code: SSWGNQ
+  name: Janelle Bouchard
+  slug: janelle-bouchard
 start_time: TBD
 stream_timestamp: ''
 title: Making Our Python Code More Accessible
