@@ -1,0 +1,22 @@
+avatar: https://pretalx.com/media/avatars/DSC_0672_1_wcU720A.jpg
+biography: '<p>Name: Laysa Uchoa<br />
+
+  Cloud Engineer<br />
+
+  Company: Nordcloud</p>
+
+  <p>I’m a digital architect who constructs scalable structures using the magic of
+  the cloud and Python. I’m a certified cloud engineer and an enthusiastic advocate
+  of the Python language and its environments. In addition to this, I am the leader
+  of the PyLadies Munich chapter — a community where individuals gather to learn,
+  share, and nurture their growth.</p>'
+code: ZLLVEH
+listed: true
+name: Laysa Uchoa
+slug: laysa-uchoa
+talks:
+- code: RXXMJE
+  slug: exploring-opensearch-python-and-serverless
+  title: 'Exploring OpenSearch, Python, and Serverless: Crafting Efficient and Modern
+    Search Applications'
+twitter: null
