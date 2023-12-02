@@ -11,18 +11,18 @@ const { src = '/2023/pyohio-2023-logo.png' } = Astro.props
         <h2 class="text-center text-4xl md:text-left lg:text-6xl">
           <slot>The Free Python Community Conference Based in Ohio</slot>
         </h2>
-        <p>Streaming online Saturday, December 16 starting at 10am EST</p>
-        <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <!-- <button class="button has-icon">
-            <Icon pack="ion" name="ticket-outline" />
-            Register (open soon)
-          </button>
-          <button class="button has-icon">
-            <Icon pack="ion" name="shirt-outline" />
-            Buy a Shirt (open soon)
-          </button> -->
-          Registration and t-shirt sales opening soon!
-        </div>
+        <p>
+          Streaming online Saturday, December 16 starting at 10am EST. No registration required!
+          <ul>
+            <li>
+              <a href="https://www.customink.com/fundraising/pyohio-2023">Order your PyOhio 2023 t-shirt</a> to support future
+              events!
+            </li>
+            <li>Subscribe to the <a href="https://www.youtube.com/pyohio">PyOhio YouTube channel</a></li>
+            <li><a href="/2023/discord/">Join PyOhio Discord</a> for conversation</li>
+            <li>Check back here or in our Discord for the steaming link</li>
+          </ul>
+        </p>
       </div>
       <img class="hidden rounded-3xl md:block" src={src} alt="PyOhio 2023 Logo" decoding="async" />
     </div>
