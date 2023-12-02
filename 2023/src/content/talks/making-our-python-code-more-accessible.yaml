@@ -11,7 +11,7 @@ qna: true
 qna_channel: making-our-python-code-more-accessible
 slug: making-our-python-code-more-accessible
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/1516960061188_1GiJivw.jpeg
   code: ALFHNT
   name: Dmitriy Chukhin
   slug: dmitriy-chukhin
