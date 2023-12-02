@@ -12,7 +12,7 @@ qna: true
 qna_channel: glacial-refactoring
 slug: glacial-refactoring
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/profile_sgaXAVL.jpg
   code: E8JE8X
   name: Rose Hooper
   slug: rose-hooper

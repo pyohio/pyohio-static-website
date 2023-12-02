@@ -9,13 +9,13 @@ description: <p>Writing cloud native Python is one of the easiest ways to build 
   talk will cover why its important to unit test your Python AWS Lambdas, how to use
   the Stubber, and a demo running unit tests with the Stubber.</p>
 discord_channel_id: ''
-duration: 15
+duration: 10
 end_time: TBD
 qna: false
 qna_channel: null
 slug: how-to-test-your-cloud-code-confidently
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/face_square_Rioh51M.jpg
   code: BPY7DK
   name: Drake Pocsatko
   slug: drake-pocsatko
