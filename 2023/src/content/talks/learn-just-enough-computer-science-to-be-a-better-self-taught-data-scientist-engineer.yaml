@@ -1,12 +1,16 @@
 code: QUUBQS
 content_warnings: null
-description: '<p>Are you an aspiring data scientist or engineer, forging your own
-  path through the vast landscape of data science and engineering? The journey can
-  be intimidating, with an ever-expanding array of tools and concepts to master, both
-  within and beyond the realm of Python. In this talk, I will be your guide, helping
-  you navigate this wilderness by focusing on the indispensable knowledge that has
-  opened doors to more projects and become a proficient self-taught data scientist
-  and engineer.</p>
+description: '<p>Note: Please be advised that this talk is specifically tailored for
+  individuals with limited to no background in computer science. If you already possess
+  expertise as a Python developer or hold a degree in computer science, the content
+  may not be as engaging for you.</p>
+
+  <p>Are you an aspiring data scientist or engineer, forging your own path through
+  the vast landscape of data science and engineering? The journey can be intimidating,
+  with an ever-expanding array of tools and concepts to master, both within and beyond
+  the realm of Python. In this talk, I will be your guide, helping you navigate this
+  wilderness by focusing on the indispensable knowledge that has opened doors to more
+  projects and become a proficient self-taught data scientist and engineer.</p>
 
   <p>Join me as I share my personal experiences and insights, highlighting the skills
   and knowledge that have had the most significant impact on my journey. From the
