@@ -12,13 +12,12 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Short URLs change year to year:
 
-/about /2023/code-of-conduct 302
-/coc /2023/code-of-conduct 302
-/code-of-conduct /2023/code-of-conduct 302
-/conduct /2023/code-of-conduct 302
+/about /2023/about/ 302
+/coc /2023/code-of-conduct/ 302
+/code-of-conduct /2023/code-of-conduct/ 302
+/conduct /2023/code-of-conduct/ 302
+/discord /2023/discord/
 /attend /2023 302
-/cfp https://pretalx.com/pyohio-2023/cfp 302
-/call-for-proposals https://pretalx.com/pyohio-2023/cfp 302
 /directions /2023 302
 /events /2023 302
 /hotel /2023 302
@@ -30,6 +29,13 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /volunteer /2023 302
 /hackfest /2023 302
 /osu-open-source /2023 302
+/2023/home /2023 302
+
+# Off-site
+
+/cfp https://pretalx.com/pyohio-2023/cfp 302
+/call-for-proposals https://pretalx.com/pyohio-2023/cfp 302
+/video https://www.youtube.com/c/PyOhio 302
 /info-list https://subscribe.pyohio.org/2023 302
 /volunteer-list https://subscribe.pyohio.org/volunteer 302
 
@@ -39,10 +45,6 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /opyoh /2022/about/ohpyo 302
 /opyo /2022/about/ohpyo 302
 /ohpy /2022/about/ohpyo 302
-
-# Off-site
-
-/video https://www.youtube.com/c/PyOhio 302
 
 # 2020 Renamed Talks
 
