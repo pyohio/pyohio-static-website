@@ -6,7 +6,7 @@ description: <p>While web developers work to make websites more accessible to en
   to tackle the accessibility of our Python code.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T11:53:00-05:00'
 qna: true
 qna_channel: making-our-python-code-more-accessible
 slug: making-our-python-code-more-accessible
@@ -19,7 +19,7 @@ speakers:
   code: SSWGNQ
   name: Janelle Bouchard
   slug: janelle-bouchard
-start_time: TBD
+start_time: '2023-12-16T11:39:00-05:00'
 stream_timestamp: ''
 title: Making Our Python Code More Accessible
 type: Short Talk

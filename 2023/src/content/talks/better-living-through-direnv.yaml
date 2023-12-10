@@ -7,7 +7,7 @@ description: <p>Never have to activate another virtualenv again? Yes, please! Re
   and best levels of managing environment variables with Direnv.</p>
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T10:33:00-05:00'
 qna: false
 qna_channel: null
 slug: better-living-through-direnv
@@ -16,7 +16,7 @@ speakers:
   code: EPSBZD
   name: Kyle Adams
   slug: kyle-adams
-start_time: TBD
+start_time: '2023-12-16T10:18:00-05:00'
 stream_timestamp: ''
 title: Better Living Through Direnv
 type: Short Talk

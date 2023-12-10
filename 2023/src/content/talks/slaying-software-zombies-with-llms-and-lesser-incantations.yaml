@@ -15,7 +15,7 @@ description: '<p>Code is organic: it grows and rots with neglect. So does the as
   Contracts and Example-Based Requirements) for free!</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T13:53:00-05:00'
 qna: false
 qna_channel: null
 slug: slaying-software-zombies-with-llms-and-lesser-incantations
@@ -24,7 +24,7 @@ speakers:
   code: XJQEKZ
   name: Paul Pereyda Karayan
   slug: paul-pereyda-karayan
-start_time: TBD
+start_time: '2023-12-16T13:40:00-05:00'
 stream_timestamp: ''
 title: Slaying Software Zombies with LLMs (and Lesser Incantations)
 type: Short Talk

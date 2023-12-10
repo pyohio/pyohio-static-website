@@ -23,7 +23,7 @@ description: '<p>As a developer, devops specialist, or SRE, you almost certainly
   these workflows operating in real-time in the web UI.</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T12:43:00-05:00'
 qna: false
 qna_channel: null
 slug: orchestrating-workflows-is-a-cron-ic-systems-problem
@@ -32,7 +32,7 @@ speakers:
   code: WDRWVW
   name: Jack Bennett
   slug: jack-bennett
-start_time: TBD
+start_time: '2023-12-16T12:27:00-05:00'
 stream_timestamp: ''
 title: Orchestrating Workflows Is a 'cron-ic' Systems Problem. Airflow Is the Modern
   Solution.

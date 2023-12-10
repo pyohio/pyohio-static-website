@@ -16,7 +16,7 @@ description: '<p>Are you an aspiring data scientist or engineer, forging your ow
   in data science and engineering.</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T10:18:00-05:00'
 qna: true
 qna_channel: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
 slug: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
@@ -25,7 +25,7 @@ speakers:
   code: RL9TYY
   name: Jian Jin
   slug: jian-jin
-start_time: TBD
+start_time: '2023-12-16T10:04:00-05:00'
 stream_timestamp: ''
 title: Learn Just Enough Computer Science to Be a Better (Self-taught) Data Scientist/Engineer
 type: Short Talk

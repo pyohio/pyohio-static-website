@@ -8,7 +8,7 @@ description: <p>As developers, we know that writing code is only half the battle
   way you approach technical writing.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T13:29:00-05:00'
 qna: true
 qna_channel: from-code-to-clarity
 slug: from-code-to-clarity
@@ -17,7 +17,7 @@ speakers:
   code: AFAAPF
   name: Ria Bhatia
   slug: ria-bhatia
-start_time: TBD
+start_time: '2023-12-16T13:16:00-05:00'
 stream_timestamp: ''
 title: 'From Code to Clarity: How Good Technical Documentation is the Key to Great
   Software'

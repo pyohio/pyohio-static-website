@@ -4,7 +4,7 @@ description: <p>A whimsical explanation of the various dunders and types that pa
   in object creation and construction as told by Momma Python to her child.</p>
 discord_channel_id: ''
 duration: 5
-end_time: TBD
+end_time: '2023-12-16T13:04:00-05:00'
 qna: true
 qna_channel: mommy-how-are-objects-made
 slug: mommy-how-are-objects-made
@@ -13,7 +13,7 @@ speakers:
   code: YB8CFR
   name: Joshua Cannon
   slug: joshua-cannon
-start_time: TBD
+start_time: '2023-12-16T13:00:00-05:00'
 stream_timestamp: ''
 title: Mommy, How Are Objects Made? - by Dunder Seuss
 type: Short Talk

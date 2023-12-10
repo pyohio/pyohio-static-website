@@ -10,7 +10,7 @@ description: <p>Writing cloud native Python is one of the easiest ways to build 
   the Stubber, and a demo running unit tests with the Stubber.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T12:27:00-05:00'
 qna: false
 qna_channel: null
 slug: how-to-test-your-cloud-code-confidently
@@ -19,7 +19,7 @@ speakers:
   code: BPY7DK
   name: Drake Pocsatko
   slug: drake-pocsatko
-start_time: TBD
+start_time: '2023-12-16T12:13:00-05:00'
 stream_timestamp: ''
 title: How to Test Your Cloud Code Confidently
 type: Short Talk

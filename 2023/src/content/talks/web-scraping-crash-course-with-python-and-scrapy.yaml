@@ -19,7 +19,7 @@ description: '<p>APIs are a great way to consume publicly accessible data. But w
   <p>Source code for the example project in the talk will be available!</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T15:36:00-05:00'
 qna: false
 qna_channel: null
 slug: web-scraping-crash-course-with-python-and-scrapy
@@ -28,7 +28,7 @@ speakers:
   code: GXSENE
   name: James Walters
   slug: james-walters
-start_time: TBD
+start_time: '2023-12-16T15:21:00-05:00'
 stream_timestamp: ''
 title: Web Scraping Crash Course! With Python and Scrapy
 type: Short Talk

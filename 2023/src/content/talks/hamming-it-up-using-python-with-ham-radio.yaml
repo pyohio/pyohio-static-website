@@ -11,7 +11,7 @@ description: '<p>Amateur (Ham) Radio is a hobby and service that has been around
   in some of the gaps and what Python can do to help you in Ham Radio.</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T14:39:00-05:00'
 qna: true
 qna_channel: hamming-it-up-using-python-with-ham-radio
 slug: hamming-it-up-using-python-with-ham-radio
@@ -20,7 +20,7 @@ speakers:
   code: Z3V8DR
   name: Jeff Lehman
   slug: jeff-lehman
-start_time: TBD
+start_time: '2023-12-16T14:25:00-05:00'
 stream_timestamp: ''
 title: Hamming it Up! Using Python with Ham Radio
 type: Short Talk

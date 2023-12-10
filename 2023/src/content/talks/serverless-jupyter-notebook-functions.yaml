@@ -10,7 +10,7 @@ description: <p>Jupyter notebooks are awesome! They are a great tool for both Py
   microservices.</p>
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T13:16:00-05:00'
 qna: true
 qna_channel: serverless-jupyter-notebook-functions
 slug: serverless-jupyter-notebook-functions
@@ -19,7 +19,7 @@ speakers:
   code: MLVXFU
   name: Koushik Krishnan
   slug: koushik-krishnan
-start_time: TBD
+start_time: '2023-12-16T13:04:00-05:00'
 stream_timestamp: ''
 title: Serverless Jupyter Notebook Functions
 type: Short Talk
