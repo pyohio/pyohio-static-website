@@ -16,17 +16,17 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /coc /2023/code-of-conduct/ 302
 /code-of-conduct /2023/code-of-conduct/ 302
 /conduct /2023/code-of-conduct/ 302
-/discord /2023/discord/
+/discord /2023/discord/ 302
 /attend /2023 302
 /directions /2023 302
 /events /2023 302
 /hotel /2023 302
 /prospectus /2023 302
 /register /2023 302
-/schedule /2023 302
+/schedule /2023/schedule/ 302
 /shirts /2023 302
 /sprints /2023 302
-/volunteer /2023 302
+/volunteer /volunteer-list 302
 /hackfest /2023 302
 /osu-open-source /2023 302
 /2023/home /2023 302
