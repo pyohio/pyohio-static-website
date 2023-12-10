@@ -9,7 +9,7 @@ description: '<p>Your documentation is peppered with examples – what if users 
   making it fully interactive and runnable anywhere, in a fully serverless way.</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T13:40:00-05:00'
 qna: true
 qna_channel: make-your-documentation-interactive-with-pyscript
 slug: make-your-documentation-interactive-with-pyscript
@@ -18,7 +18,7 @@ speakers:
   code: R3YRRD
   name: Jeff Glass
   slug: jeff-glass
-start_time: TBD
+start_time: '2023-12-16T13:29:00-05:00'
 stream_timestamp: ''
 title: Make Your Documentation Interactive with PyScript
 type: Short Talk

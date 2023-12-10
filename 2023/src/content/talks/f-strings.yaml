@@ -8,7 +8,7 @@ description: '<p>By now we hope you''ve been using f-strings, but do you know th
   Watch this talk so you don''t miss out!</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T14:09:00-05:00'
 qna: true
 qna_channel: f-strings
 slug: f-strings
@@ -17,7 +17,7 @@ speakers:
   code: PTGUYZ
   name: Mariatta
   slug: mariatta
-start_time: TBD
+start_time: '2023-12-16T14:00:00-05:00'
 stream_timestamp: ''
 title: F-strings!
 type: Short Talk

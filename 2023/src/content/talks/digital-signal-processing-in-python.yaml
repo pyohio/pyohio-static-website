@@ -7,7 +7,7 @@ description: <p>I will be discussing the use of digital signal processing techni
   libraries such as scikit-learn and tensorflow2.</p>
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T12:53:00-05:00'
 qna: false
 qna_channel: null
 slug: digital-signal-processing-in-python
@@ -16,7 +16,7 @@ speakers:
   code: UNKVJC
   name: Meg Sharma
   slug: meg-sharma
-start_time: TBD
+start_time: '2023-12-16T12:43:00-05:00'
 stream_timestamp: ''
 title: 'Digital Signal Processing in Python: A MATLAB Alternative'
 type: Short Talk

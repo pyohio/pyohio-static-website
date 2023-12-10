@@ -8,7 +8,7 @@ description: <p>The swag bags for PyCon 2019 included an Adafruit Circuit Playgr
   related resources for the sake of inspiration. There will be pretty lights.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T15:11:00-05:00'
 qna: true
 qna_channel: adafruit-circuit-playground-express-as-an-on-air-light
 slug: adafruit-circuit-playground-express-as-an-on-air-light
@@ -17,7 +17,7 @@ speakers:
   code: EPYVQY
   name: Nik Kantar
   slug: nik-kantar
-start_time: TBD
+start_time: '2023-12-16T15:00:00-05:00'
 stream_timestamp: ''
 title: Adafruit Circuit Playground Express as an “On Air” Light
 type: Short Talk

@@ -37,7 +37,7 @@ description: '<p>Uncover the extraordinary world of Python''s machine learning a
   for this whirlwind exploration of Python''s magic for Machine Learning!</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T11:13:00-05:00'
 qna: false
 qna_channel: null
 slug: python-s-magic-for-machine-learning-in-15-minutes
@@ -46,7 +46,7 @@ speakers:
   code: YC7MCH
   name: Connie Skomra
   slug: connie-skomra
-start_time: TBD
+start_time: '2023-12-16T11:00:00-05:00'
 stream_timestamp: ''
 title: Python's Magic for Machine Learning in 15 Minutes
 type: Short Talk

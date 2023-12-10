@@ -1,0 +1,23 @@
+code: XAQKZG
+content_warnings: null
+description: <p>Dave and Kattni bring it on home and get us hyped for next time.</p>
+discord_channel_id: ''
+duration: 5
+end_time: '2023-12-16T16:45:00-05:00'
+qna: false
+qna_channel: null
+slug: pyohio-2023-closing-remarks
+speakers:
+- avatar: https://pretalx.com/media/avatars/e4e205344ef244c966a39f4b5a20c55b_JA2kj4S.jpg
+  code: KGVCNV
+  name: Dave Forgac
+  slug: dave-forgac
+- avatar: null
+  code: DCSCPQ
+  name: Kattni
+  slug: kattni
+start_time: '2023-12-16T16:41:00-05:00'
+stream_timestamp: ''
+title: PyOhio 2023 Closing Remarks
+type: Plenary Session
+youtube_url: null

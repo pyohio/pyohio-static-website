@@ -6,7 +6,7 @@ description: <p>The iteration protocol and generators are Python's power tools. 
   itertools and more_itertools libraries, and how to use them to up your Python level.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T11:39:00-05:00'
 qna: false
 qna_channel: null
 slug: iterate-iterate-iterate
@@ -15,7 +15,7 @@ speakers:
   code: KYYQVJ
   name: Moshe Zadka
   slug: moshe-zadka
-start_time: TBD
+start_time: '2023-12-16T11:25:00-05:00'
 stream_timestamp: ''
 title: Iterate, Iterate, Iterate
 type: Short Talk

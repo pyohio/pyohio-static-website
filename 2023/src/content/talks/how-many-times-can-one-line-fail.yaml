@@ -12,7 +12,7 @@ description: '<p>Async programming can make complex things easy, but at the same
   and the <code>try: except*:</code> syntax.</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T14:25:00-05:00'
 qna: false
 qna_channel: null
 slug: how-many-times-can-one-line-fail
@@ -21,7 +21,7 @@ speakers:
   code: PWN7XL
   name: Andrew Kubera
   slug: andrew-kubera
-start_time: TBD
+start_time: '2023-12-16T14:15:00-05:00'
 stream_timestamp: ''
 title: 'How Many Times Can One Line Fail? ExceptionGroups & Except*: What They Are
   and How to Use Them'

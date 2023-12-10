@@ -15,7 +15,7 @@ description: '<p>This talk describes how to use the <code>pytest-ndb</code> pack
   use <code>pytest-ndb</code>!</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T14:15:00-05:00'
 qna: true
 qna_channel: debugging-failing-pytest-tests-in-a-notebook
 slug: debugging-failing-pytest-tests-in-a-notebook
@@ -24,7 +24,7 @@ speakers:
   code: AWZYBX
   name: Richard Shadrach
   slug: richard-shadrach
-start_time: TBD
+start_time: '2023-12-16T14:09:00-05:00'
 stream_timestamp: ''
 title: Debugging Failing Pytest Tests in a Notebook
 type: Short Talk

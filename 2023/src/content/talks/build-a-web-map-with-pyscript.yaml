@@ -8,7 +8,7 @@ description: <p>PyScript allows you to run Python code in a browser, like JavaSc
   can be easily shared, containing Python code that anyone can view and run.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T15:21:00-05:00'
 qna: true
 qna_channel: build-a-web-map-with-pyscript
 slug: build-a-web-map-with-pyscript
@@ -17,7 +17,7 @@ speakers:
   code: C8PGYQ
   name: Christy Heaton
   slug: christy-heaton
-start_time: TBD
+start_time: '2023-12-16T15:11:00-05:00'
 stream_timestamp: ''
 title: Build a Web Map with PyScript!
 type: Short Talk

@@ -8,7 +8,7 @@ description: <p>PEP 593 introduced the <code>Annotated</code> Type in Python 3.9
   source projects and take a look at how it might be used in your code.</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T14:54:00-05:00'
 qna: true
 qna_channel: what-is-the-annotated-type
 slug: what-is-the-annotated-type
@@ -17,7 +17,7 @@ speakers:
   code: NL3RWX
   name: Daniel Schelkoph
   slug: daniel-schelkoph
-start_time: TBD
+start_time: '2023-12-16T14:39:00-05:00'
 stream_timestamp: ''
 title: What Is the `Annotated` Type?
 type: Short Talk

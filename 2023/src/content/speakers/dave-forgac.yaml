@@ -1,0 +1,14 @@
+avatar: https://pretalx.com/media/avatars/e4e205344ef244c966a39f4b5a20c55b_JA2kj4S.jpg
+biography: ''
+code: KGVCNV
+listed: false
+name: Dave Forgac
+slug: dave-forgac
+talks:
+- code: PMRREY
+  slug: pyohio-2023-opening-remarks
+  title: PyOhio 2023 Opening Remarks
+- code: XAQKZG
+  slug: pyohio-2023-closing-remarks
+  title: PyOhio 2023 Closing Remarks
+twitter: null

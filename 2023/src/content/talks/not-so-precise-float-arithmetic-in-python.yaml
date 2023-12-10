@@ -10,7 +10,7 @@ description: '<p>Just like in other programming languages, floating number arith
   precision and then discuss a few potential solutions to the problem in Python.</p>'
 discord_channel_id: ''
 duration: 10
-end_time: TBD
+end_time: '2023-12-16T11:25:00-05:00'
 qna: false
 qna_channel: null
 slug: not-so-precise-float-arithmetic-in-python
@@ -19,7 +19,7 @@ speakers:
   code: E3XJKT
   name: Syed Muhammad Dawoud Sheraz Ali
   slug: syed-muhammad-dawoud-sheraz-ali
-start_time: TBD
+start_time: '2023-12-16T11:13:00-05:00'
 stream_timestamp: ''
 title: (Not-so) Precise Float Arithmetic in Python
 type: Short Talk

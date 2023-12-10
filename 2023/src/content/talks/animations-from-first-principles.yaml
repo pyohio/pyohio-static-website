@@ -15,7 +15,7 @@ description: '<p>How do animations really work?</p>
   be able to take the key concepts and build your own animations!</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T16:26:00-05:00'
 qna: true
 qna_channel: animations-from-first-principles
 slug: animations-from-first-principles
@@ -24,7 +24,7 @@ speakers:
   code: BLNV7P
   name: Rodrigo Girão Serrão
   slug: rodrigo-girao-serrao
-start_time: TBD
+start_time: '2023-12-16T16:11:00-05:00'
 stream_timestamp: ''
 title: Animations from First Principles
 type: Short Talk

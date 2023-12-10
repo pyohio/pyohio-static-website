@@ -7,7 +7,7 @@ description: <p>By the powers of WASM, Pyodide, and modern web technologies, you
   PyScript!</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T10:45:00-05:00'
 qna: false
 qna_channel: null
 slug: who-put-the-python-in-my-browser
@@ -16,7 +16,7 @@ speakers:
   code: WLVEC8
   name: Sadukie
   slug: sadukie
-start_time: TBD
+start_time: '2023-12-16T10:33:00-05:00'
 stream_timestamp: ''
 title: Who Put the Python in My Browser?! A Quick Guide to PyScript!
 type: Short Talk

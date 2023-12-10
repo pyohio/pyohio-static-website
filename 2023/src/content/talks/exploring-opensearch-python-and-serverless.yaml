@@ -18,7 +18,7 @@ description: '<p>OpenSearch, a community-driven, open-source project, offers a r
   the tools and insights needed to embrace this exciting synergy.</p>'
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2023-12-16T12:13:00-05:00'
 qna: true
 qna_channel: exploring-opensearch-python-and-serverless
 slug: exploring-opensearch-python-and-serverless
@@ -31,7 +31,7 @@ speakers:
   code: Z8HXML
   name: Yuliia Barabash
   slug: yuliia-barabash
-start_time: TBD
+start_time: '2023-12-16T12:00:00-05:00'
 stream_timestamp: ''
 title: 'Exploring OpenSearch, Python, and Serverless: Crafting Efficient and Modern
   Search Applications'
