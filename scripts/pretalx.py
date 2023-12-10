@@ -23,6 +23,10 @@ PRETALX_EVENT_ID = "pyohio-2023"
 DATA_DIR = Path("./2023/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_TIME = "TBD"
+UNLISTED_SPEAKERS = [
+    "KGVCNV",  # Dave Forgac
+    "DCSCPQ",  # Kattni
+]
 
 
 @click.group()
@@ -110,7 +114,7 @@ def get_event_data(ctx):
         data = {
             "code": talk["code"],
             "title": talk["title"],
-            "slug": slugify(re.split(':|\?|\.', talk["title"])[0]),
+            "slug": slugify(re.split(":|\?|\.", talk["title"])[0]),
             "description": markdown.markdown(
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
@@ -197,7 +201,7 @@ def get_event_data(ctx):
         data["twitter"] = twitter_by_speaker_code.get(data["code"])
 
         # make organizers unlisted
-        if data["code"] == "KGVCNV":
+        if data["code"] in UNLISTED_SPEAKERS:
             data["listed"] = False
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
