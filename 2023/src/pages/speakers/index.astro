@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content'
 import { Picture } from 'astro-imagetools/components'
 
 const speakers = await getCollection('speakers', ({ data }) => {
-  return data
+  return data.listed == true;
 })
 ---
 
