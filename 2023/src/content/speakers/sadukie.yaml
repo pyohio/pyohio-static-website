@@ -11,7 +11,7 @@ listed: true
 name: Sadukie
 slug: sadukie
 social_link_display: sadukie.github.io
-social_link_type: website
+social_link_type: web
 social_link_url: https://sadukie.github.io
 talks:
 - code: VHEDH9

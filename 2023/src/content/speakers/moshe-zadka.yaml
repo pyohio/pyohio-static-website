@@ -11,7 +11,7 @@ listed: true
 name: Moshe Zadka
 slug: moshe-zadka
 social_link_display: cobordism.com
-social_link_type: website
+social_link_type: web
 social_link_url: https://cobordism.com
 talks:
 - code: CTTQPZ

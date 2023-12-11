@@ -222,7 +222,7 @@ def get_social_link_data(social_link):
         if social_link != "null":
             social_link_url = social_link
             social_link_display = social_link.replace("https://", "")
-            social_link_type = "website"
+            social_link_type = "web"
 
         if social_link.startswith("https://twitter.com/"):
             social_link_url = social_link
