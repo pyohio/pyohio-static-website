@@ -4,9 +4,11 @@ code: PWN7XL
 listed: true
 name: Andrew Kubera
 slug: andrew-kubera
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: H9SQXW
   slug: how-many-times-can-one-line-fail
   title: 'How Many Times Can One Line Fail? ExceptionGroups & Except*: What They Are
     and How to Use Them'
-twitter: null

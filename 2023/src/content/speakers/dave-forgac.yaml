@@ -1,9 +1,12 @@
 avatar: https://pretalx.com/media/avatars/e4e205344ef244c966a39f4b5a20c55b_JA2kj4S.jpg
-biography: ''
+biography: <p>PyOhio organizer.</p>
 code: KGVCNV
 listed: false
 name: Dave Forgac
 slug: dave-forgac
+social_link_display: '@tylerdave@mastodon.social'
+social_link_type: mastodon
+social_link_url: https://mastodon.social/@tylerdave
 talks:
 - code: PMRREY
   slug: pyohio-2023-opening-remarks
@@ -11,4 +14,3 @@ talks:
 - code: XAQKZG
   slug: pyohio-2023-closing-remarks
   title: PyOhio 2023 Closing Remarks
-twitter: null

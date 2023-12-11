@@ -6,8 +6,10 @@ code: AWZYBX
 listed: true
 name: Richard Shadrach
 slug: richard-shadrach
+social_link_display: github.com/rhshadrach
+social_link_type: github
+social_link_url: https://github.com/rhshadrach
 talks:
 - code: 8NSBJJ
   slug: debugging-failing-pytest-tests-in-a-notebook
   title: Debugging Failing Pytest Tests in a Notebook
-twitter: null

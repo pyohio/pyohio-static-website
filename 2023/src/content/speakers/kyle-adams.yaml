@@ -7,8 +7,10 @@ code: EPSBZD
 listed: true
 name: Kyle Adams
 slug: kyle-adams
+social_link_display: linkedin.com/in/kyleadams
+social_link_type: linkedin
+social_link_url: https://www.linkedin.com/in/kyleadams
 talks:
 - code: YSKVJE
   slug: better-living-through-direnv
   title: Better Living Through Direnv
-twitter: null

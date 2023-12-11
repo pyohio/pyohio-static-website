@@ -10,8 +10,10 @@ code: YB8CFR
 listed: true
 name: Joshua Cannon
 slug: joshua-cannon
+social_link_display: '@thejcannon@fosstodon.org'
+social_link_type: mastodon
+social_link_url: https://fosstodon.org/@thejcannon
 talks:
 - code: 9H3ASU
   slug: mommy-how-are-objects-made
   title: Mommy, How Are Objects Made? - by Dunder Seuss
-twitter: null

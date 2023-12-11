@@ -10,8 +10,10 @@ code: EPYVQY
 listed: true
 name: Nik Kantar
 slug: nik-kantar
+social_link_display: '@nik@nkantar.social'
+social_link_type: mastodon
+social_link_url: https://nkantar.social/@nik
 talks:
 - code: XWPYAC
   slug: adafruit-circuit-playground-express-as-an-on-air-light
   title: Adafruit Circuit Playground Express as an “On Air” Light
-twitter: null

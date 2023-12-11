@@ -14,9 +14,11 @@ code: ZLLVEH
 listed: true
 name: Laysa Uchoa
 slug: laysa-uchoa
+social_link_display: linkedin.com/in/laysauchoa/
+social_link_type: linkedin
+social_link_url: https://www.linkedin.com/in/laysauchoa/
 talks:
 - code: RXXMJE
   slug: exploring-opensearch-python-and-serverless
   title: 'Exploring OpenSearch, Python, and Serverless: Crafting Efficient and Modern
     Search Applications'
-twitter: null

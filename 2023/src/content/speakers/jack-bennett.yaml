@@ -18,9 +18,11 @@ code: WDRWVW
 listed: true
 name: Jack Bennett
 slug: jack-bennett
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: EPWGVK
   slug: orchestrating-workflows-is-a-cron-ic-systems-problem
   title: Orchestrating Workflows Is a 'cron-ic' Systems Problem. Airflow Is the Modern
     Solution.
-twitter: null

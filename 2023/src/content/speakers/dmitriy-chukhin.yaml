@@ -6,8 +6,10 @@ code: ALFHNT
 listed: true
 name: Dmitriy Chukhin
 slug: dmitriy-chukhin
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: QENEDH
   slug: making-our-python-code-more-accessible
   title: Making Our Python Code More Accessible
-twitter: null

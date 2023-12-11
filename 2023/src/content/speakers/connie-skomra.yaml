@@ -7,8 +7,10 @@ code: YC7MCH
 listed: true
 name: Connie Skomra
 slug: connie-skomra
+social_link_display: linkedin.com/in/connieskomra/
+social_link_type: linkedin
+social_link_url: https://www.linkedin.com/in/connieskomra/
 talks:
 - code: PCWTVG
   slug: python-s-magic-for-machine-learning-in-15-minutes
   title: Python's Magic for Machine Learning in 15 Minutes
-twitter: null

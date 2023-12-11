@@ -59,23 +59,26 @@ def get_event_data(ctx):
     click.echo("Getting questions...", err=True)
     questions_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/questions/"
     questions_results = get_all_json_results(questions_url, headers)
-    twitter_question_id = None
+    social_media_question_id = None
 
     for question in questions_results:
-        if question["question"]["en"] == "Twitter" and question["target"] == "speaker":
-            twitter_question_id = question["id"]
+        if (
+            question["question"]["en"] == "Social Media"
+            and question["target"] == "speaker"
+        ):
+            social_media_question_id = question["id"]
         if question["question"]["en"] == "Q & A" and question["target"] == "submission":
             qa_question_id = question["id"]
     click.echo(f"Got {len(questions_results)} questions", err=True)
 
     click.echo("Getting answers...", err=True)
-    twitter_by_speaker_code = {}
-    if twitter_question_id:
-        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers/?question={twitter_question_id}"
+    social_media_by_speaker_code = {}
+    if social_media_question_id:
+        answers_url = f"https://pretalx.com/api/events/{PRETALX_EVENT_ID}/answers/?question={social_media_question_id}"
 
         answers_results = get_all_json_results(answers_url, headers)
         for answer in answers_results:
-            twitter_by_speaker_code[answer["person"]] = answer["answer"].lstrip("@")
+            social_media_by_speaker_code[answer["person"]] = answer["answer"]
 
     qa_by_talk_code = {}
     if qa_question_id:
@@ -198,7 +201,10 @@ def get_event_data(ctx):
             }
             speaker_talks.append(talk)
         data["talks"] = speaker_talks
-        data["twitter"] = twitter_by_speaker_code.get(data["code"])
+        social_link_data = get_social_link_data(
+            social_media_by_speaker_code.get(data["code"])
+        )
+        data.update(social_link_data)
 
         # make organizers unlisted
         if data["code"] in UNLISTED_SPEAKERS:
@@ -207,6 +213,46 @@ def get_event_data(ctx):
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)
+
+
+def get_social_link_data(social_link):
+    social_link_url = social_link_display = social_link_type = None
+
+    if social_link is not None:
+        if social_link != "null":
+            social_link_url = social_link
+            social_link_display = social_link.replace("https://", "")
+            social_link_type = "web"
+
+        if social_link.startswith("https://twitter.com/"):
+            social_link_url = social_link
+            social_link_display = social_link.replace("https://twitter.com/", "@")
+            social_link_type = "twitter"
+        elif social_link.startswith("https://www.linkedin.com/in/"):
+            social_link_url = social_link
+            social_link_display = social_link.replace("https://www.", "")
+            social_link_type = "linkedin"
+        elif social_link.startswith("https://medium.com/@"):
+            social_link_url = social_link
+            social_link_display = social_link.replace("https://", "")
+            social_link_type = "medium"
+        elif social_link.startswith("https://github.com"):
+            social_link_url = social_link
+            social_link_display = social_link.replace("https://", "")
+            social_link_type = "github"
+        elif re.match(r"https://.*\..*@.*", social_link):
+            social_link_url = social_link
+            mastodon_instance, mastodon_username = social_link.replace(
+                "https://", ""
+            ).split("/@")
+            social_link_display = f"@{mastodon_username}@{mastodon_instance}"
+            social_link_type = "mastodon"
+
+    return {
+        "social_link_url": social_link_url,
+        "social_link_display": social_link_display,
+        "social_link_type": social_link_type,
+    }
 
 
 def get_all_json_results(url, headers):

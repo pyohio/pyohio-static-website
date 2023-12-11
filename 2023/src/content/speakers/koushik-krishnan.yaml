@@ -6,8 +6,10 @@ code: MLVXFU
 listed: true
 name: Koushik Krishnan
 slug: koushik-krishnan
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: PMYX7X
   slug: serverless-jupyter-notebook-functions
   title: Serverless Jupyter Notebook Functions
-twitter: null

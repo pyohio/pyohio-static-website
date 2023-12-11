@@ -9,8 +9,10 @@ code: XJQEKZ
 listed: true
 name: Paul Pereyda Karayan
 slug: paul-pereyda-karayan
+social_link_display: '@pgpkarayan'
+social_link_type: twitter
+social_link_url: https://twitter.com/pgpkarayan
 talks:
 - code: HLAWUG
   slug: slaying-software-zombies-with-llms-and-lesser-incantations
   title: Slaying Software Zombies with LLMs (and Lesser Incantations)
-twitter: null

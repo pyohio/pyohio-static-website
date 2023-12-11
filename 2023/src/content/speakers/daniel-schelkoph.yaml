@@ -8,8 +8,10 @@ code: NL3RWX
 listed: true
 name: Daniel Schelkoph
 slug: daniel-schelkoph
+social_link_display: github.com/dschelkoph
+social_link_type: github
+social_link_url: https://github.com/dschelkoph
 talks:
 - code: VPBCKD
   slug: what-is-the-annotated-type
   title: What Is the `Annotated` Type?
-twitter: null

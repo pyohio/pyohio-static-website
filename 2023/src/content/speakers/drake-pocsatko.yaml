@@ -7,8 +7,10 @@ code: BPY7DK
 listed: true
 name: Drake Pocsatko
 slug: drake-pocsatko
+social_link_display: linkedin.com/in/drake-pocsatko/
+social_link_type: linkedin
+social_link_url: https://www.linkedin.com/in/drake-pocsatko/
 talks:
 - code: HGFGD9
   slug: how-to-test-your-cloud-code-confidently
   title: How to Test Your Cloud Code Confidently
-twitter: null

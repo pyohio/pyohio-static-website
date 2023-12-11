@@ -7,8 +7,10 @@ code: C8PGYQ
 listed: true
 name: Christy Heaton
 slug: christy-heaton
+social_link_display: '@christyheaton@mas.to'
+social_link_type: mastodon
+social_link_url: https://mas.to/@christyheaton
 talks:
 - code: EMJQGD
   slug: build-a-web-map-with-pyscript
   title: Build a Web Map with PyScript!
-twitter: null

@@ -7,8 +7,10 @@ code: E8JE8X
 listed: true
 name: Rose Hooper
 slug: rose-hooper
+social_link_display: '@krayola@octodon.social'
+social_link_type: mastodon
+social_link_url: https://octodon.social/@krayola
 talks:
 - code: FNBFMF
   slug: glacial-refactoring
   title: 'Glacial Refactoring: A Glacier-inspired Approach to Code Cleanup'
-twitter: null
