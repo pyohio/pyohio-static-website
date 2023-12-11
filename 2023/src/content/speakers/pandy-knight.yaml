@@ -12,8 +12,10 @@ code: 8WV93W
 listed: true
 name: Pandy Knight
 slug: pandy-knight
+social_link_display: '@AutomationPanda'
+social_link_type: twitter
+social_link_url: https://twitter.com/AutomationPanda
 talks:
 - code: 8FA883
   slug: full-stack-python-with-htmx
   title: Full-Stack Python with HTMX
-twitter: null

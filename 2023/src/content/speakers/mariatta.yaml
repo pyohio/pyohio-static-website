@@ -10,8 +10,10 @@ code: PTGUYZ
 listed: true
 name: Mariatta
 slug: mariatta
+social_link_display: '@mariatta@fosstodon.org'
+social_link_type: mastodon
+social_link_url: https://fosstodon.org/@mariatta
 talks:
 - code: ATCNTJ
   slug: f-strings
   title: F-strings!
-twitter: null

@@ -4,8 +4,10 @@ code: WVUBZP
 listed: true
 name: Samuel Oranyeli
 slug: samuel-oranyeli
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: ZMZAT7
   slug: inequality-joins-in-pandas-with-pyjanitor
   title: Inequality Joins in Pandas with Pyjanitor
-twitter: null

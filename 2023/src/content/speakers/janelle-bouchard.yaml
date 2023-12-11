@@ -4,8 +4,10 @@ code: SSWGNQ
 listed: true
 name: Janelle Bouchard
 slug: janelle-bouchard
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: QENEDH
   slug: making-our-python-code-more-accessible
   title: Making Our Python Code More Accessible
-twitter: null

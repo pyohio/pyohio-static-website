@@ -8,8 +8,10 @@ code: R3YRRD
 listed: true
 name: Jeff Glass
 slug: jeff-glass
+social_link_display: jeff.glass
+social_link_type: website
+social_link_url: https://jeff.glass
 talks:
 - code: FUYLYZ
   slug: make-your-documentation-interactive-with-pyscript
   title: Make Your Documentation Interactive with PyScript
-twitter: null

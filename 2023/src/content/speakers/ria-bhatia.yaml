@@ -20,9 +20,11 @@ code: AFAAPF
 listed: true
 name: Ria Bhatia
 slug: ria-bhatia
+social_link_display: '@RiaBhatia24'
+social_link_type: twitter
+social_link_url: https://twitter.com/RiaBhatia24
 talks:
 - code: FEMGPT
   slug: from-code-to-clarity
   title: 'From Code to Clarity: How Good Technical Documentation is the Key to Great
     Software'
-twitter: null

@@ -5,8 +5,10 @@ code: E3XJKT
 listed: true
 name: Syed Muhammad Dawoud Sheraz Ali
 slug: syed-muhammad-dawoud-sheraz-ali
+social_link_display: medium.com/@dawoud.sheraz
+social_link_type: medium
+social_link_url: https://medium.com/@dawoud.sheraz
 talks:
 - code: XWKXML
   slug: not-so-precise-float-arithmetic-in-python
   title: (Not-so) Precise Float Arithmetic in Python
-twitter: null

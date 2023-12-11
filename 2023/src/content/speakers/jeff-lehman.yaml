@@ -17,8 +17,10 @@ code: Z3V8DR
 listed: true
 name: Jeff Lehman
 slug: jeff-lehman
+social_link_display: null
+social_link_type: null
+social_link_url: null
 talks:
 - code: LEHCRT
   slug: hamming-it-up-using-python-with-ham-radio
   title: Hamming it Up! Using Python with Ham Radio
-twitter: null

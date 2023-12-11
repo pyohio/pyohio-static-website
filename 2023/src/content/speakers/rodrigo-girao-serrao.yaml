@@ -13,8 +13,10 @@ code: BLNV7P
 listed: true
 name: Rodrigo Girão Serrão
 slug: rodrigo-girao-serrao
+social_link_display: '@mathsppblog'
+social_link_type: twitter
+social_link_url: https://twitter.com/mathsppblog
 talks:
 - code: GBGFXR
   slug: animations-from-first-principles
   title: Animations from First Principles
-twitter: null

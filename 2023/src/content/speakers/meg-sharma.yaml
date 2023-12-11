@@ -7,8 +7,10 @@ code: UNKVJC
 listed: true
 name: Meg Sharma
 slug: meg-sharma
+social_link_display: linkedin.com/in/meg21/
+social_link_type: linkedin
+social_link_url: https://www.linkedin.com/in/meg21/
 talks:
 - code: GXQXHT
   slug: digital-signal-processing-in-python
   title: 'Digital Signal Processing in Python: A MATLAB Alternative'
-twitter: null

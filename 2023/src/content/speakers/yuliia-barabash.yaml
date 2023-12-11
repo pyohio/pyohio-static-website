@@ -16,9 +16,11 @@ code: Z8HXML
 listed: true
 name: Yuliia Barabash
 slug: yuliia-barabash
+social_link_display: linkedin.com/in/yuliia-barabash/
+social_link_type: linkedin
+social_link_url: https://www.linkedin.com/in/yuliia-barabash/
 talks:
 - code: RXXMJE
   slug: exploring-opensearch-python-and-serverless
   title: 'Exploring OpenSearch, Python, and Serverless: Crafting Efficient and Modern
     Search Applications'
-twitter: null
