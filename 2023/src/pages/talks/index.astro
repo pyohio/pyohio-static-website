@@ -24,8 +24,7 @@ const talks = await getCollection('talks', ({ data }) => {
                 <a href={talk.data.slug}>{talk.data.title}</a>
               </h3>
               <p>
-                by{' '}
-                <span>{(talk.data.speakers.map((speaker) => (speaker.name))).join(", ")}</span>
+                by <span>{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
               </p>
             </li>
           ))

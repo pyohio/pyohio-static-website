@@ -2,6 +2,7 @@
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { Picture } from 'astro-imagetools/components'
+import { Icon } from 'astro-icon'
 
 export async function getStaticPaths() {
   const speakers = await getCollection('speakers', ({ data }) => {
@@ -19,7 +20,7 @@ const { speaker } = Astro.props
 ---
 
 <DefaultLayout title="Talks">
-  <section class="my-12">
+  <section class="mt-12">
     <div class="container">
       <h1>{speaker.data.name}</h1>
       <Picture
@@ -35,9 +36,19 @@ const { speaker } = Astro.props
           },
         }}
       />
+      {
+        speaker.data.social_link_url && (
+          <p>
+            <a href={speaker.data.social_link_url}>
+              <Icon class="inline h-6 pr-1" name={'mdi:' + speaker.data.social_link_type} />
+              {speaker.data.social_link_display}
+            </a>
+          </p>
+        )
+      }
     </div>
   </section>
-  <section class="my-12">
+  <section class="my-6">
     <div class="space-content container">
       <Fragment set:html={speaker.data.biography} />
     </div>
