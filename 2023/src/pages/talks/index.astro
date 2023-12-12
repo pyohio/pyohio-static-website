@@ -3,7 +3,7 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 
 const talks = await getCollection('talks', ({ data }) => {
-  return data
+  return data.type !== 'Break'
 })
 ---
 
@@ -11,7 +11,7 @@ const talks = await getCollection('talks', ({ data }) => {
   <section class="my-12">
     <div class="container">
       <h1>Talks</h1>
-      <p class="italic">Talks will stream Saturday, December 16 starting at 10am EST. Full schedule TBD.</p>
+      <p class="italic">Talks will stream Saturday, December 16 starting at 10am EST. See <a href="/2023/talks/schedule/">full schedule</a> for talk times.</p>
     </div>
   </section>
   <section class="my-12">
