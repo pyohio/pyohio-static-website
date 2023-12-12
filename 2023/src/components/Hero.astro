@@ -21,11 +21,13 @@ const { src = '/2023/pyohio-2023-logo.png' } = Astro.props
             </li>
             <li>Subscribe to the <a href="https://www.youtube.com/pyohio">PyOhio YouTube channel</a></li>
             <li><a href="/2023/discord/">Join PyOhio Discord</a> for conversation</li>
-            <li>Check back here or in our Discord for the steaming link</li>
           </ul>
         </p>
       </div>
-      <img class="hidden rounded-3xl md:block" src={src} alt="PyOhio 2023 Logo" decoding="async" />
+      <div>
+      <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/4kcLgHDQicg?si=OmXs1e1n5NoaWZzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <img class="hidden rounded-3xl md:block my-6" src={src} alt="PyOhio 2023 Logo" decoding="async" />
+      </div>
     </div>
   </div>
 </section>
