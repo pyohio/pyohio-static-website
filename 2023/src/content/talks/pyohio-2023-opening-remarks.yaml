@@ -1,6 +1,23 @@
 code: PMRREY
 content_warnings: null
-description: <p>Dave tells it like it is.</p>
+description: '<p>Welcome to PyOhio!</p>
+
+  <p>Here is some important information before we get started:</p>
+
+  <ul>
+
+  <li><a href="https://www.pyohio.org/2023/code-of-conduct/">Code of Conduct</a></li>
+
+  <li><a href="https://www.pyohio.org/2023/discord/">Chat on Discord</a></li>
+
+  <li><a href="https://www.customink.com/fundraising/pyohio-2023">T-Shirts</a> – available
+  through Dec 19!</li>
+
+  <li><a href="https://www.pyohio.org/volunteer">Volunteer!</a></li>
+
+  <li><a href="https://www.pyohio.org/2023/talks/schedule/">Conference Schedule</a></li>
+
+  </ul>'
 discord_channel_id: ''
 duration: 5
 end_time: '2023-12-16T10:04:00-05:00'
