@@ -23,13 +23,12 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /hotel /2023 302
 /prospectus /2023 302
 /register /2023 302
-/schedule /2023/schedule/ 302
+/schedule /2023/talks/schedule/ 302
 /shirts https://www.customink.com/fundraising/pyohio-2023 302
 /sprints /2023 302
 /volunteer /volunteer-list 302
 /hackfest /2023 302
 /osu-open-source /2023 302
-/2023/home /2023 302
 
 # Off-site
 
@@ -45,6 +44,11 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /opyoh /2022/about/ohpyo 302
 /opyo /2022/about/ohpyo 302
 /ohpy /2022/about/ohpyo 302
+
+# 2023 Moved URLs
+
+/2023/home /2023 302
+/2023/schedule /2023/talks/schedule
 
 # 2020 Renamed Talks
 

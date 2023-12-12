@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
 
 export async function getStaticPaths() {
   const talks = await getCollection('talks', ({ data }) => {
@@ -15,13 +16,22 @@ export async function getStaticPaths() {
   })
 }
 const { talk } = Astro.props
+
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mma')
+  }
+}
 ---
 
 <DefaultLayout title="Talks">
   <section class="my-12">
     <div class="container">
       <h1>{talk.data.title}</h1>
-      <p class="italic">talk time TBD</p>
+      <p class="italic">{talk.data.type} at {formatTime(talk.data.start_time)}</p>
     </div>
   </section>
   <section class="my-12">
