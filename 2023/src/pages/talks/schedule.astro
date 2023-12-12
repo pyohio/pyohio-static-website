@@ -20,7 +20,7 @@ function formatTime(timeString) {
   if (isNaN(talkTime)) {
     return 'TBD'
   } else {
-    return talkTime.setZone('America/New_York').toFormat('h:mma')
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
   }
 }
 ---
@@ -45,7 +45,7 @@ function formatTime(timeString) {
               <td class="px-4">{formatTime(talk.data.start_time)}</td>
               <td class="px-4">
                 <p class="text-2xl font-bold">
-                  <a href={talk.data.slug}>{talk.data.title}</a>
+                  <a href={"/2023/talks/" + talk.data.slug}>{talk.data.title}</a>
                 </p>
                 <p>by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
               </td>
