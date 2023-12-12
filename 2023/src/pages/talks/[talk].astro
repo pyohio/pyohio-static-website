@@ -5,7 +5,7 @@ import { DateTime } from 'luxon'
 
 export async function getStaticPaths() {
   const talks = await getCollection('talks', ({ data }) => {
-    return data
+    return data.type !== 'Break'
   })
 
   return talks.map((talk) => {
