@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import os
 import re
-from datetime import datetime
 from pathlib import Path
 
 import click
@@ -12,12 +11,12 @@ import yaml
 from mdx_gfm import GithubFlavoredMarkdownExtension
 from slugify import slugify
 
-from extra_data import TALK_EXTRAS
+from extra_data import BREAKS, TALK_EXTRAS
 
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
-    from yaml import Loader, Dumper
+    from yaml import Dumper
 
 PRETALX_EVENT_ID = "pyohio-2023"
 DATA_DIR = Path("./2023/src/content")
@@ -213,6 +212,15 @@ def get_event_data(ctx):
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)
+
+    click.echo("Writing break files...", err=True)
+    for break_code in BREAKS:
+        break_data = BREAKS[break_code]
+        save_filename = Path(f"{DATA_DIR}/talks/").joinpath(
+            f"{break_code.lower()}.yaml"
+        )
+        with open(save_filename, "w") as save_file:
+            yaml.dump(break_data, save_file, allow_unicode=True)
 
 
 def get_social_link_data(social_link):
