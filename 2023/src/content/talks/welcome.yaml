@@ -23,7 +23,7 @@ duration: 5
 end_time: '2023-12-16T10:04:00-05:00'
 qna: false
 qna_channel: null
-slug: pyohio-2023-opening-remarks
+slug: welcome
 speakers:
 - avatar: https://pretalx.com/media/avatars/e4e205344ef244c966a39f4b5a20c55b_JA2kj4S.jpg
   code: KGVCNV
@@ -31,6 +31,6 @@ speakers:
   slug: dave-forgac
 start_time: '2023-12-16T10:00:00-05:00'
 stream_timestamp: ''
-title: PyOhio 2023 Opening Remarks
+title: Welcome!
 type: Plenary Session
 youtube_url: null
