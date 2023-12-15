@@ -20,7 +20,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/2WORtba6S18",
         "content_warnings": None,
         "video_start_time": "10:04:19",
-        "channel_id": None,
+        "channel_id": 1185092014350540820,
         "channel_name": "Learn Just Enough Computer Science to Be a Better (Self-taught) Data Scientist/Engineer",
     },
     "YSKVJE": {
@@ -84,7 +84,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/To1GASgqSek",
         "content_warnings": None,
         "video_start_time": "11:39:44",
-        "channel_id": None,
+        "channel_id": 1185091827834048542,
         "channel_name": "Making Our Python Code More Accessible",
     },
     "BREAK2": {
@@ -100,7 +100,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/3tqLanasKUY",
         "content_warnings": None,
         "video_start_time": "12:00:00",
-        "channel_id": None,
+        "channel_id": 1185091733269270671,
         "channel_name": "Exploring OpenSearch, Python, and Serverless",
     },
     "HGFGD9": {
@@ -140,7 +140,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/P6ZoR8Egkpg",
         "content_warnings": None,
         "video_start_time": "13:00:00",
-        "channel_id": None,
+        "channel_id": 1185091608186720276,
         "channel_name": "Mommy, How Are Objects Made",
     },
     "PMYX7X": {
@@ -148,7 +148,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/mFfnJkhAglA",
         "content_warnings": None,
         "video_start_time": "13:04:53",
-        "channel_id": None,
+        "channel_id": 1185091497880731719,
         "channel_name": "Serverless Jupyter Notebook Functions",
     },
     "FEMGPT": {
@@ -156,7 +156,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/hHsEYB06itU",
         "content_warnings": None,
         "video_start_time": "13:16:08",
-        "channel_id": None,
+        "channel_id": 1185091384663879701,
         "channel_name": "From Code to Clarity",
     },
     "FUYLYZ": {
@@ -164,7 +164,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/ysSewLZEqnM",
         "content_warnings": None,
         "video_start_time": "13:29:46",
-        "channel_id": None,
+        "channel_id": 1185091267240140850,
         "channel_name": "Make Your Documentation Interactive with PyScript",
     },
     "HLAWUG": {
@@ -188,7 +188,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/SNA2O0NQl_Q",
         "content_warnings": None,
         "video_start_time": "14:00:00",
-        "channel_id": None,
+        "channel_id": 1185090335165124638,
         "channel_name": "F-strings!",
     },
     "8NSBJJ": {
@@ -196,7 +196,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/90PuD9hNOyo",
         "content_warnings": None,
         "video_start_time": "14:09:41",
-        "channel_id": None,
+        "channel_id": 1185090223982526576,
         "channel_name": "Debugging Failing Pytest Tests in a Notebook",
     },
     "H9SQXW": {
@@ -212,7 +212,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/GWmfEaRvV1g",
         "content_warnings": None,
         "video_start_time": "14:25:33",
-        "channel_id": None,
+        "channel_id": 1185089886471082044,
         "channel_name": "Hamming it Up! Using Python with Ham Radio",
     },
     "VPBCKD": {
@@ -220,7 +220,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/5uyda0og04s",
         "content_warnings": None,
         "video_start_time": "14:39:07",
-        "channel_id": None,
+        "channel_id": 1185089762307100774,
         "channel_name": "What Is the `Annotated` Type",
     },
     "BREAK5": {
@@ -236,7 +236,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/htqBik6sRNo",
         "content_warnings": None,
         "video_start_time": "15:00:00",
-        "channel_id": None,
+        "channel_id": 1185089621865021500,
         "channel_name": "Adafruit Circuit Playground Express as an “On Air” Light",
     },
     "EMJQGD": {
@@ -244,7 +244,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/eF2EQFaPEJg",
         "content_warnings": None,
         "video_start_time": "15:11:10",
-        "channel_id": None,
+        "channel_id": 1185089464205328464,
         "channel_name": "Build a Web Map with PyScript!",
     },
     "ZYP7RC": {
@@ -260,7 +260,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/AjdBLOAhgDI",
         "content_warnings": None,
         "video_start_time": "15:36:32",
-        "channel_id": None,
+        "channel_id": 1185089311754948608,
         "channel_name": "Inequality Joins in Pandas with Pyjanitor",
     },
     "BREAK6": {
@@ -276,7 +276,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/EEGSMkNOsLo",
         "content_warnings": None,
         "video_start_time": "16:00:00",
-        "channel_id": None,
+        "channel_id": 1185089168041316372,
         "channel_name": "Glacial Refactoring",
     },
     "GBGFXR": {
@@ -284,7 +284,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/1JZLI23CxCE",
         "content_warnings": None,
         "video_start_time": "16:11:02",
-        "channel_id": None,
+        "channel_id": 1185089024872943677,
         "channel_name": "Animations from First Principles",
     },
     "YTBUGS": {
@@ -292,7 +292,7 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/hdej-WqwpFw",
         "content_warnings": None,
         "video_start_time": "16:26:05",
-        "channel_id": None,
+        "channel_id": 1185088862209454181,
         "channel_name": "What I Learned in Three Years Writing Tests Live",
     },
     "XAQKZG": {
