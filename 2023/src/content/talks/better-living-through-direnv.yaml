@@ -5,7 +5,7 @@ description: <p>Never have to activate another virtualenv again? Yes, please! Re
   over the years? Yes, please! Use Direnv to automate your environment setup, removing
   pain points and barriers for your development team. We'll look at good, better,
   and best levels of managing environment variables with Direnv.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: '2023-12-16T10:33:00-05:00'
 qna: false
@@ -17,7 +17,7 @@ speakers:
   name: Kyle Adams
   slug: kyle-adams
 start_time: '2023-12-16T10:18:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '10:18:32'
 title: Better Living Through Direnv
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/FBfvjCzrs7Q

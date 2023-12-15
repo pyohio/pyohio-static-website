@@ -9,11 +9,11 @@ description: '<p>Amateur (Ham) Radio is a hobby and service that has been around
 
   <p>In this talk, we will look at some of the ways that Python can be used to fill
   in some of the gaps and what Python can do to help you in Ham Radio.</p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 15
 end_time: '2023-12-16T14:39:00-05:00'
 qna: true
-qna_channel: hamming-it-up-using-python-with-ham-radio
+qna_channel: Hamming it Up! Using Python with Ham Radio
 slug: hamming-it-up-using-python-with-ham-radio
 speakers:
 - avatar: https://pretalx.com/media/avatars/40501228_xFHT0tu.jpg
@@ -21,7 +21,7 @@ speakers:
   name: Jeff Lehman
   slug: jeff-lehman
 start_time: '2023-12-16T14:25:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '14:25:33'
 title: Hamming it Up! Using Python with Ham Radio
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/GWmfEaRvV1g

@@ -4,7 +4,7 @@ description: '<p>Thank you to everyone who helped make PyOhio happen this year, 
   YOU!</p>
 
   <p>We can''t wait to tell you about PyOhio 2024!</p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 5
 end_time: '2023-12-16T16:45:00-05:00'
 qna: false
@@ -20,7 +20,7 @@ speakers:
   name: Kattni
   slug: kattni
 start_time: '2023-12-16T16:41:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '16:41:04'
 title: Thank You & Looking Ahead to PyOhio 2024
 type: Plenary Session
-youtube_url: null
+youtube_url: https://youtu.be/52b4Tg74Fu0

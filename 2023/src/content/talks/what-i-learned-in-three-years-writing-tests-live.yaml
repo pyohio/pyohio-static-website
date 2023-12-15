@@ -4,11 +4,11 @@ description: <p>Live-streaming the writing of tests on Twitch – twice a week, 
   three years – taught me a lot. Join me for a retrospective about the good, the bad,
   and the ugly lessons that I learned running the Salt Project Test Clinic on Twitch
   during a global pandemic.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: '2023-12-16T16:41:00-05:00'
 qna: true
-qna_channel: what-i-learned-in-three-years-writing-tests-live
+qna_channel: What I Learned in Three Years Writing Tests Live
 slug: what-i-learned-in-three-years-writing-tests-live
 speakers:
 - avatar: https://pretalx.com/media/avatars/227ccc36fc63b5229dd4af47a5ad83df_rNUhh1Q.jpg
@@ -16,7 +16,7 @@ speakers:
   name: Wayne
   slug: wayne
 start_time: '2023-12-16T16:26:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '16:26:05'
 title: What I Learned in Three Years Writing Tests Live
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/hdej-WqwpFw

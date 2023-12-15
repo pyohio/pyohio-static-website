@@ -6,11 +6,11 @@ description: <p>As developers, we know that writing code is only half the battle
   documentation that is both accurate and engaging? In this talk, let's explore the
   secrets to mastering the art of software technical documentation and transform the
   way you approach technical writing.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 15
 end_time: '2023-12-16T13:29:00-05:00'
 qna: true
-qna_channel: from-code-to-clarity
+qna_channel: From Code to Clarity
 slug: from-code-to-clarity
 speakers:
 - avatar: https://pretalx.com/media/avatars/Ria_Bhatia-_Picture_LjrvIPt.png
@@ -18,8 +18,8 @@ speakers:
   name: Ria Bhatia
   slug: ria-bhatia
 start_time: '2023-12-16T13:16:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '13:16:08'
 title: 'From Code to Clarity: How Good Technical Documentation is the Key to Great
   Software'
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/hHsEYB06itU

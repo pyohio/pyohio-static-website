@@ -9,7 +9,7 @@ description: <p>These days, JavaScript dominates the front-end web ecosystem bec
   Python app</a> with FastAPI, HTMX, and a few other Python tools. You will learn
   how to build modern web apps entirely in Python – as well as how HTMX democratizes
   front-end web development!</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 5
 end_time: '2023-12-16T10:55:00-05:00'
 qna: false
@@ -21,7 +21,7 @@ speakers:
   name: Pandy Knight
   slug: pandy-knight
 start_time: '2023-12-16T10:45:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '10:45:17'
 title: Full-Stack Python with HTMX
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/zR0qpPTvosI

@@ -14,11 +14,12 @@ description: '<p>Are you an aspiring data scientist or engineer, forging your ow
   networks and learning just enough web development for efficient data scraping. I''ll
   break down these key components that will empower you on your path to expertise
   in data science and engineering.</p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 15
 end_time: '2023-12-16T10:18:00-05:00'
 qna: true
-qna_channel: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
+qna_channel: Learn Just Enough Computer Science to Be a Better (Self-taught) Data
+  Scientist/Engineer
 slug: learn-just-enough-computer-science-to-be-a-better-self-taught-data-scientist-engineer
 speakers:
 - avatar: https://pretalx.com/media/avatars/pyohio_avatar_FudoNWW.jpeg
@@ -26,7 +27,7 @@ speakers:
   name: Jian Jin
   slug: jian-jin
 start_time: '2023-12-16T10:04:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '10:04:19'
 title: Learn Just Enough Computer Science to Be a Better (Self-taught) Data Scientist/Engineer
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/2WORtba6S18

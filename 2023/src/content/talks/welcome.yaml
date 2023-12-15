@@ -18,7 +18,7 @@ description: '<p>Welcome to PyOhio!</p>
   <li><a href="https://www.pyohio.org/2023/talks/schedule/">Conference Schedule</a></li>
 
   </ul>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 5
 end_time: '2023-12-16T10:04:00-05:00'
 qna: false
@@ -30,7 +30,7 @@ speakers:
   name: Dave Forgac
   slug: dave-forgac
 start_time: '2023-12-16T10:00:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '10:02:11'
 title: Welcome!
 type: Plenary Session
-youtube_url: null
+youtube_url: https://youtu.be/MvuIu6l7i4o

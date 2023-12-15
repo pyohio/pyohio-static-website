@@ -4,11 +4,11 @@ description: <p>While web developers work to make websites more accessible to en
   users, we rarely talk about the accessibility of the code itself. This talk gives
   a brief introduction into accessibility concepts, and a glimpse into our effort
   to tackle the accessibility of our Python code.</p>
-discord_channel_id: ''
+discord_channel_id: null
 duration: 15
 end_time: '2023-12-16T11:53:00-05:00'
 qna: true
-qna_channel: making-our-python-code-more-accessible
+qna_channel: Making Our Python Code More Accessible
 slug: making-our-python-code-more-accessible
 speakers:
 - avatar: https://pretalx.com/media/avatars/1516960061188_1GiJivw.jpeg
@@ -20,7 +20,7 @@ speakers:
   name: Janelle Bouchard
   slug: janelle-bouchard
 start_time: '2023-12-16T11:39:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '11:39:44'
 title: Making Our Python Code More Accessible
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/To1GASgqSek

@@ -14,11 +14,11 @@ description: '<p>Joins in Pandas are equality based. However, there are other sc
   <p>This talk shows an efficient way to handle inequality joins in Pandas. It also
   shows benchmarks that shows significant performance benefits as well as lower memory
   usage compared to Cartesian joins.</p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 15
 end_time: '2023-12-16T15:52:00-05:00'
 qna: true
-qna_channel: inequality-joins-in-pandas-with-pyjanitor
+qna_channel: Inequality Joins in Pandas with Pyjanitor
 slug: inequality-joins-in-pandas-with-pyjanitor
 speakers:
 - avatar: https://pretalx.com/media/avatars/thumb-102067_vpIBeHF.jpg
@@ -26,7 +26,7 @@ speakers:
   name: Samuel Oranyeli
   slug: samuel-oranyeli
 start_time: '2023-12-16T15:36:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '15:36:32'
 title: Inequality Joins in Pandas with Pyjanitor
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/AjdBLOAhgDI
