@@ -6,11 +6,11 @@ description: '<p>By now we hope you''ve been using f-strings, but do you know th
   <p>In this talk, we''ll go through the useful features of f-strings, from formatting
   to debugging. We''ll also share how f-strings have been improved since Python 3.12.
   Watch this talk so you don''t miss out!</p>'
-discord_channel_id: ''
+discord_channel_id: 1185090335165124638
 duration: 10
 end_time: '2023-12-16T14:09:00-05:00'
 qna: true
-qna_channel: f-strings
+qna_channel: F-strings!
 slug: f-strings
 speakers:
 - avatar: https://pretalx.com/media/avatars/6b6e72d297aa0270654a0d4575f1287e_pTfiDO6.jpg
@@ -18,7 +18,7 @@ speakers:
   name: Mariatta
   slug: mariatta
 start_time: '2023-12-16T14:00:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '14:00:00'
 title: F-strings!
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/SNA2O0NQl_Q

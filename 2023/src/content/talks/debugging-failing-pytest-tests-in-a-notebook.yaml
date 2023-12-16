@@ -13,11 +13,11 @@ description: '<p>This talk describes how to use the <code>pytest-ndb</code> pack
   fixtures and parametrizations, must be copied. For simple tests this might not be
   an issue, but for a complex test it can be quite time consuming. Instead, you can
   use <code>pytest-ndb</code>!</p>'
-discord_channel_id: ''
+discord_channel_id: 1185090223982526576
 duration: 10
 end_time: '2023-12-16T14:15:00-05:00'
 qna: true
-qna_channel: debugging-failing-pytest-tests-in-a-notebook
+qna_channel: Debugging Failing Pytest Tests in a Notebook
 slug: debugging-failing-pytest-tests-in-a-notebook
 speakers:
 - avatar: https://pretalx.com/media/avatars/45562402_9WddwZQ.jpeg
@@ -25,7 +25,7 @@ speakers:
   name: Richard Shadrach
   slug: richard-shadrach
 start_time: '2023-12-16T14:09:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '14:09:41'
 title: Debugging Failing Pytest Tests in a Notebook
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/90PuD9hNOyo

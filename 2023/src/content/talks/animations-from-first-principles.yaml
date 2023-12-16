@@ -13,11 +13,11 @@ description: '<p>How do animations really work?</p>
 
   <p>Because the talk presents the ideas and the code from first principles, you will
   be able to take the key concepts and build your own animations!</p>'
-discord_channel_id: ''
+discord_channel_id: 1185089024872943677
 duration: 15
 end_time: '2023-12-16T16:26:00-05:00'
 qna: true
-qna_channel: animations-from-first-principles
+qna_channel: Animations from First Principles
 slug: animations-from-first-principles
 speakers:
 - avatar: https://pretalx.com/media/avatars/rgs_square_pMKs1bG.jpg
@@ -25,7 +25,7 @@ speakers:
   name: Rodrigo Girão Serrão
   slug: rodrigo-girao-serrao
 start_time: '2023-12-16T16:11:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '16:11:02'
 title: Animations from First Principles
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/1JZLI23CxCE

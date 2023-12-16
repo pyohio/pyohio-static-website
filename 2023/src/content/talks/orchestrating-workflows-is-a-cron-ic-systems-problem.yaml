@@ -21,7 +21,7 @@ description: '<p>As a developer, devops specialist, or SRE, you almost certainly
   <p>From this talk, you will learn about the use cases for Airflow, walk through
   some introductory examples of the Python code that defines workflows, and watch
   these workflows operating in real-time in the web UI.</p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: '2023-12-16T12:43:00-05:00'
 qna: false
@@ -33,8 +33,8 @@ speakers:
   name: Jack Bennett
   slug: jack-bennett
 start_time: '2023-12-16T12:27:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '12:27:43'
 title: Orchestrating Workflows Is a 'cron-ic' Systems Problem. Airflow Is the Modern
   Solution.
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/5wfy1Cofivw

@@ -6,11 +6,11 @@ description: <p>PyScript allows you to run Python code in a browser, like JavaSc
   and ease of using PyScript for this task, then we'll go through a basic geospatial
   analysis and display the results in a web map. In the end we'll have an app that
   can be easily shared, containing Python code that anyone can view and run.</p>
-discord_channel_id: ''
+discord_channel_id: 1185089464205328464
 duration: 15
 end_time: '2023-12-16T15:21:00-05:00'
 qna: true
-qna_channel: build-a-web-map-with-pyscript
+qna_channel: Build a Web Map with PyScript!
 slug: build-a-web-map-with-pyscript
 speakers:
 - avatar: https://pretalx.com/media/avatars/HeatonC_Headshot_21_1105_qlx7WzW.jpg
@@ -18,7 +18,7 @@ speakers:
   name: Christy Heaton
   slug: christy-heaton
 start_time: '2023-12-16T15:11:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '15:11:10'
 title: Build a Web Map with PyScript!
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/eF2EQFaPEJg

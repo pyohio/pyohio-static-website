@@ -131,7 +131,7 @@ def get_event_data(ctx):
 
         if qa_by_talk_code.get(talk["code"], "False") != "False":
             data["qna"] = True
-            data["qna_channel"] = data["slug"]
+            data["qna_channel"] = re.split(":|\?|\.", talk["title"])[0]
         else:
             data["qna"] = False
             data["qna_channel"] = None
@@ -173,6 +173,7 @@ def get_event_data(ctx):
 
     click.echo("Writing speaker files...", err=True)
     for speaker in speaker_data:
+        # print(speaker["email"])
         if speaker["biography"] is None:
             speaker["biography"] = ""
         data = {

@@ -6,11 +6,11 @@ description: <p>The swag bags for PyCon 2019 included an Adafruit Circuit Playgr
   of software, it’s possible to turn one into your personal “On Air” light. This talk
   will walk the viewer through the steps required to accomplish this, and reference
   related resources for the sake of inspiration. There will be pretty lights.</p>
-discord_channel_id: ''
+discord_channel_id: 1185089621865021500
 duration: 15
 end_time: '2023-12-16T15:11:00-05:00'
 qna: true
-qna_channel: adafruit-circuit-playground-express-as-an-on-air-light
+qna_channel: Adafruit Circuit Playground Express as an “On Air” Light
 slug: adafruit-circuit-playground-express-as-an-on-air-light
 speakers:
 - avatar: https://pretalx.com/media/avatars/75206a486223cfd46fb9dbc1fcc76941_Q53krNm.jpg
@@ -18,7 +18,7 @@ speakers:
   name: Nik Kantar
   slug: nik-kantar
 start_time: '2023-12-16T15:00:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '15:00:00'
 title: Adafruit Circuit Playground Express as an “On Air” Light
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/htqBik6sRNo

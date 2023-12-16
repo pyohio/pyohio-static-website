@@ -2,11 +2,11 @@ code: 9H3ASU
 content_warnings: null
 description: <p>A whimsical explanation of the various dunders and types that participate
   in object creation and construction as told by Momma Python to her child.</p>
-discord_channel_id: ''
+discord_channel_id: 1185091608186720276
 duration: 5
 end_time: '2023-12-16T13:04:00-05:00'
 qna: true
-qna_channel: mommy-how-are-objects-made
+qna_channel: Mommy, How Are Objects Made
 slug: mommy-how-are-objects-made
 speakers:
 - avatar: https://pretalx.com/media/avatars/87388c2faa3c4d423c5dd9e436028e4f_lxsOG28.jpg
@@ -14,7 +14,7 @@ speakers:
   name: Joshua Cannon
   slug: joshua-cannon
 start_time: '2023-12-16T13:00:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '13:00:00'
 title: Mommy, How Are Objects Made? - by Dunder Seuss
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/P6ZoR8Egkpg

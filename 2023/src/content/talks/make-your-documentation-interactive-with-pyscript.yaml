@@ -7,11 +7,11 @@ description: '<p>Your documentation is peppered with examples – what if users 
 
   <p>In this talk, you will learn how to enhance your Python web documentation by
   making it fully interactive and runnable anywhere, in a fully serverless way.</p>'
-discord_channel_id: ''
+discord_channel_id: 1185091267240140850
 duration: 10
 end_time: '2023-12-16T13:40:00-05:00'
 qna: true
-qna_channel: make-your-documentation-interactive-with-pyscript
+qna_channel: Make Your Documentation Interactive with PyScript
 slug: make-your-documentation-interactive-with-pyscript
 speakers:
 - avatar: https://pretalx.com/media/avatars/profile_srsb8gd.jpg
@@ -19,7 +19,7 @@ speakers:
   name: Jeff Glass
   slug: jeff-glass
 start_time: '2023-12-16T13:29:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '13:29:46'
 title: Make Your Documentation Interactive with PyScript
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/ysSewLZEqnM

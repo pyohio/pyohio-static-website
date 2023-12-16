@@ -5,19 +5,19 @@ description: <p>By the powers of WASM, Pyodide, and modern web technologies, you
   such as Pandas, Matplotlib, Numpy, WebGL, and more... PyScript allows you to leverage
   your Python skills to create rich web applications. Come see what you can do with
   PyScript!</p>
-discord_channel_id: ''
+discord_channel_id: 1185338390669959261
 duration: 15
 end_time: '2023-12-16T10:45:00-05:00'
 qna: false
-qna_channel: null
+qna_channel: Who Put the Python in My Browser?!
 slug: who-put-the-python-in-my-browser
 speakers:
-- avatar: https://pretalx.com/media/avatars/SarahDutkiewicz_REOpqy4.jpg
-  code: WLVEC8
-  name: Sadukie
-  slug: sadukie
+  - avatar: https://pretalx.com/media/avatars/SarahDutkiewicz_REOpqy4.jpg
+    code: WLVEC8
+    name: Sadukie
+    slug: sadukie
 start_time: '2023-12-16T10:33:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '10:33:21'
 title: Who Put the Python in My Browser?! A Quick Guide to PyScript!
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/nfqYepL0ykE

@@ -17,7 +17,7 @@ description: '<p>APIs are a great way to consume publicly accessible data. But w
   </ul>
 
   <p>Source code for the example project in the talk will be available!</p>'
-discord_channel_id: ''
+discord_channel_id: null
 duration: 10
 end_time: '2023-12-16T15:36:00-05:00'
 qna: false
@@ -29,7 +29,7 @@ speakers:
   name: James Walters
   slug: james-walters
 start_time: '2023-12-16T15:21:00-05:00'
-stream_timestamp: ''
+stream_timestamp: '15:21:50'
 title: Web Scraping Crash Course! With Python and Scrapy
 type: Short Talk
-youtube_url: null
+youtube_url: https://youtu.be/L3B_9ooL3Uo
