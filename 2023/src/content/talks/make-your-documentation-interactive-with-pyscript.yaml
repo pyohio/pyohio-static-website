@@ -7,7 +7,7 @@ description: '<p>Your documentation is peppered with examples – what if users 
 
   <p>In this talk, you will learn how to enhance your Python web documentation by
   making it fully interactive and runnable anywhere, in a fully serverless way.</p>'
-discord_channel_id: null
+discord_channel_id: 1185091267240140850
 duration: 10
 end_time: '2023-12-16T13:40:00-05:00'
 qna: true

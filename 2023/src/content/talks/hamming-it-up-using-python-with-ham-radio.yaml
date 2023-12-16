@@ -9,7 +9,7 @@ description: '<p>Amateur (Ham) Radio is a hobby and service that has been around
 
   <p>In this talk, we will look at some of the ways that Python can be used to fill
   in some of the gaps and what Python can do to help you in Ham Radio.</p>'
-discord_channel_id: null
+discord_channel_id: 1185089886471082044
 duration: 15
 end_time: '2023-12-16T14:39:00-05:00'
 qna: true

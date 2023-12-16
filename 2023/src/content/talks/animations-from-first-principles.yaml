@@ -13,7 +13,7 @@ description: '<p>How do animations really work?</p>
 
   <p>Because the talk presents the ideas and the code from first principles, you will
   be able to take the key concepts and build your own animations!</p>'
-discord_channel_id: null
+discord_channel_id: 1185089024872943677
 duration: 15
 end_time: '2023-12-16T16:26:00-05:00'
 qna: true

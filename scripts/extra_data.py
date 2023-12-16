@@ -36,8 +36,8 @@ TALK_EXTRAS = {
         "youtube_url": "https://youtu.be/nfqYepL0ykE",
         "content_warnings": None,
         "video_start_time": "10:33:21",
-        "channel_id": None,
-        "channel_name": None,
+        "channel_id": 1185338390669959261,
+        "channel_name": "Who Put the Python in My Browser?!",
     },
     "8FA883": {
         "title": "Full-Stack Python with HTMX",
@@ -121,7 +121,7 @@ TALK_EXTRAS = {
     },
     "GXQXHT": {
         "title": "Digital Signal Processing in Python: A MATLAB Alternative",
-        "youtube_url": "https://youtu.be/_LQWTsKT8VA",
+        "youtube_url": "https://youtu.be/lpV9WNaFZd4",
         "content_warnings": None,
         "video_start_time": "12:43:13",
         "channel_id": None,
@@ -312,6 +312,7 @@ BREAKS = {
         "start_time": "2023-12-16T10:55:00-05:00",
         "end_time": "2023-12-16T11:00:00-05:00",
         "type": "Break",
+        "stream_timestamp": "10:55:22",
     },
     "BREAK2": {
         "code": "BREAK2",
@@ -319,6 +320,7 @@ BREAKS = {
         "start_time": "2023-12-16T11:53:00-05:00",
         "end_time": "2023-12-16T12:00:00-05:00",
         "type": "Break",
+        "stream_timestamp": "11:53:00",
     },
     "BREAK3": {
         "code": "BREAK3",
@@ -326,6 +328,7 @@ BREAKS = {
         "start_time": "2023-12-16T12:54:00-05:00",
         "end_time": "2023-12-16T13:00:00-05:00",
         "type": "Break",
+        "stream_timestamp": "12:53:43",
     },
     "BREAK4": {
         "code": "BREAK4",
@@ -333,6 +336,7 @@ BREAKS = {
         "start_time": "2023-12-16T13:54:00-05:00",
         "end_time": "2023-12-16T14:00:00-05:00",
         "type": "Break",
+        "stream_timestamp": "13:53:34",
     },
     "BREAK5": {
         "code": "BREAK5",
@@ -340,6 +344,7 @@ BREAKS = {
         "start_time": "2023-12-16T14:55:00-05:00",
         "end_time": "2023-12-16T15:00:00-05:00",
         "type": "Break",
+        "stream_timestamp": "14:54:20",
     },
     "BREAK6": {
         "code": "BREAK6",
@@ -347,5 +352,6 @@ BREAKS = {
         "start_time": "2023-12-16T15:53:00-05:00",
         "end_time": "2023-12-16T16:00:00-05:00",
         "type": "Break",
+        "stream_timestamp": "15:52:28",
     },
 }

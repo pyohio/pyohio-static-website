@@ -6,7 +6,7 @@ description: <p>PyScript allows you to run Python code in a browser, like JavaSc
   and ease of using PyScript for this task, then we'll go through a basic geospatial
   analysis and display the results in a web map. In the end we'll have an app that
   can be easily shared, containing Python code that anyone can view and run.</p>
-discord_channel_id: null
+discord_channel_id: 1185089464205328464
 duration: 15
 end_time: '2023-12-16T15:21:00-05:00'
 qna: true

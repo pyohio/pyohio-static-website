@@ -8,7 +8,7 @@ description: <p>Jupyter notebooks are awesome! They are a great tool for both Py
   talk I'll show you how you can turn your Jupyter notebooks into a web service without
   any modifications to it. Jupyrest is being used at Microsoft to power hundreds of
   microservices.</p>
-discord_channel_id: null
+discord_channel_id: 1185091497880731719
 duration: 10
 end_time: '2023-12-16T13:16:00-05:00'
 qna: true

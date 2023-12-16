@@ -6,7 +6,7 @@ description: <p>PEP 593 introduced the <code>Annotated</code> Type in Python 3.9
   adopted the <code>Annotated</code> type and recommend it as the preferred syntax
   for their functionality.  In this talk, we will explore usage of this type in open
   source projects and take a look at how it might be used in your code.</p>
-discord_channel_id: null
+discord_channel_id: 1185089762307100774
 duration: 15
 end_time: '2023-12-16T14:54:00-05:00'
 qna: true

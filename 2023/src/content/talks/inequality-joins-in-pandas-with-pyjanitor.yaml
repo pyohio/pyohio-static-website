@@ -14,7 +14,7 @@ description: '<p>Joins in Pandas are equality based. However, there are other sc
   <p>This talk shows an efficient way to handle inequality joins in Pandas. It also
   shows benchmarks that shows significant performance benefits as well as lower memory
   usage compared to Cartesian joins.</p>'
-discord_channel_id: null
+discord_channel_id: 1185089311754948608
 duration: 15
 end_time: '2023-12-16T15:52:00-05:00'
 qna: true

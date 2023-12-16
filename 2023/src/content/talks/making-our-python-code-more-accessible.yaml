@@ -4,7 +4,7 @@ description: <p>While web developers work to make websites more accessible to en
   users, we rarely talk about the accessibility of the code itself. This talk gives
   a brief introduction into accessibility concepts, and a glimpse into our effort
   to tackle the accessibility of our Python code.</p>
-discord_channel_id: null
+discord_channel_id: 1185091827834048542
 duration: 15
 end_time: '2023-12-16T11:53:00-05:00'
 qna: true
