@@ -15,7 +15,7 @@ py-gfm = "^2.0.0"
 pyyaml = "^6.0.1"
 
 [tool.poetry.dev-dependencies]
-black = "^21.5b1"
+black = "^24.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
