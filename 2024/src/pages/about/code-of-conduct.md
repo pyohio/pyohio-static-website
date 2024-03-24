@@ -1,6 +1,6 @@
 ---
 title: 'Code of Conduct'
-layout: '../layouts/MarkdownLayout.astro'
+layout: '../../layouts/MarkdownLayout.astro'
 ---
 
 # Code of Conduct
