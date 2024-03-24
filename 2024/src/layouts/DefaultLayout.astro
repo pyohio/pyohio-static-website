@@ -6,9 +6,9 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 
 const {
-  title = 'PyOhio 2023',
-  description = 'The free Python community conference based in Ohio. Streaming online Saturday, December 16, 2023.',
-  image = '/pyohio-2023-logo.png',
+  title = 'PyOhio 2024',
+  description = 'The free Python community conference based in Ohio. Saturday &amp; Sunday, December 16, 2023.',
+  image = '/pyohio-2024-logo.png',
   author = 'PyOhio Organizers',
 } = Astro.props
 ---
@@ -27,7 +27,7 @@ const {
       description={description.substring(0, 100)}
       url={Astro.site
         ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://www.pyohio.org/2023/${title.toLowerCase().replaceAll(' ', '-')}`}
+        : `https://www.pyohio.org/2024/${title.toLowerCase().replaceAll(' ', '-')}`}
       image={image}
       author={author}
     />
@@ -84,7 +84,7 @@ const {
         background-color: var(--background);
 
         header {
-          background-color: var(--primary-500);
+          background-color: var(--primary-700);
           color: var(--neutral-100);
           --action-color: var(--neutral-100);
           --action-color-state: var(--neutral-200);
