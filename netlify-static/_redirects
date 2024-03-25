@@ -46,6 +46,10 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /opyo /2022/about/ohpyo 302
 /ohpy /2022/about/ohpyo 302
 
+# 2024 Moved URLs
+
+/2024/sponsorship-prospectus /2024/sponsors/prospectus
+
 # 2023 Moved URLs
 
 /2023/home /2023 302
@@ -66,9 +70,8 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Custom 404s
 
-/2024/* /2024/404 404
-/2023/* /2023/404 404
-/2022/* /2022/404 404
-/2021/* /2021/404 404
-/2020/* /2020/404 404
-
+/2024/_ /2024/404 404
+/2023/_ /2023/404 404
+/2022/_ /2022/404 404
+/2021/_ /2021/404 404
+/2020/\* /2020/404 404
