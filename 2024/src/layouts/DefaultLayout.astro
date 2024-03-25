@@ -10,6 +10,7 @@ const {
   description = 'The free Python community conference based in Ohio. Saturday &amp; Sunday July 27-28, 2024.',
   image = '/pyohio-2024-logo-og.png',
   author = 'PyOhio Organizers',
+  url = Astro.site + Astro.url.pathname.replace('/2024/', '2024/'),
 } = Astro.props
 ---
 
@@ -22,15 +23,7 @@ const {
     <!-- favicon -->
     <link rel="icon" type="image/png" href="/2024/favicon.png" />
 
-    <SiteMeta
-      title={title}
-      description={description.substring(0, 100)}
-      url={Astro.site
-        ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://www.pyohio.org/2024/${title.toLowerCase().replaceAll(' ', '-')}`}
-      image={image}
-      author={author}
-    />
+    <SiteMeta title={title} description={description.substring(0, 100)} url={url} image={image} author={author} />
   </head>
   <body>
     <Header />
