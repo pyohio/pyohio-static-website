@@ -66,4 +66,4 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # For custom 404s
 
-/2024/\* /2024/index.html 200
+/2024/* /2024/index.html 200
