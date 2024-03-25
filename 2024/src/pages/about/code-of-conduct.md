@@ -9,7 +9,7 @@ Everyone interacting at PyOhio events and in online spaces is expected to follow
 
 ## Reporting
 
-All incidents should be reported by emailing conduct@pyohio.org. This email alias contacts the following responders:
+All incidents should be reported by emailing safety@pyohio.org. This email alias contacts the following responders:
 
 - Dave Forgac
 - Mike Pirnat
