@@ -6,7 +6,7 @@ import { astroImageTools } from 'astro-imagetools'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.pyohio.org/2024',
+  site: 'https://www.pyohio.org',
   base: '/2024',
   publicDir: './public-src',
   compressHTML: true,
