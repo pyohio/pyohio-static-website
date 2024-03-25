@@ -64,6 +64,3 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2021/code-of-conduct /2021/about/code-of-conduct
 /2021/conduct /2021/about/code-of-conduct
 
-# For custom 404s
-
-/2024/* /2024/index.html 404
