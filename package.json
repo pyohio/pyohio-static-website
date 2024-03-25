@@ -1,23 +1,23 @@
 {
   "name": "pyohio-static-website",
   "description": "PyOhio website",
-  "version": "2023.0.1",
+  "version": "2024.0.1",
   "private": true,
   "author": "PyOhio",
   "dependencies": {},
   "devDependencies": {
-    "@onwidget/astrowind": "file:./2023",
+    "@onwidget/astrowind": "file:./2024",
     "prettier": "^2.2.1"
   },
   "keywords": [],
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf public",
-    "dev": "cd 2023 && yarn dev",
-    "start": "cd 2023 && yarn start",
-    "build": "cd 2023 && pwd && yarn install && yarn build",
-    "preview": "cd 2023 && yarn preview",
-    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2023/dist ./public/2023 && cp -rv ./netlify-static/* ./public/ && pwd && tree public/2023",
+    "dev": "cd 2024 && yarn dev",
+    "start": "cd 2024 && yarn start",
+    "build": "cd 2024 && pwd && yarn install && yarn build",
+    "preview": "cd 2024 && yarn preview",
+    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2024/dist ./public/2024 && cp -rv ./netlify-static/* ./public/ && pwd && tree public/2024",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "repository": {

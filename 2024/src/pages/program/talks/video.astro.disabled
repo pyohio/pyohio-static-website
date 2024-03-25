@@ -1,0 +1,37 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+var talks = await getCollection('talks', ({ data }) => {
+  return data
+})
+talks.sort((a, b) => {
+  if (a.data.start_time < b.data.start_time) {
+    return -1
+  }
+  if (a.data.start_time > b.data.start_time) {
+    return 1
+  }
+  return 0
+})
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
+  }
+}
+---
+
+<DefaultLayout title="Video Stream">
+  <section class="my-12">
+    <div class="container">
+      <h1>Video Stream</h1>
+   </div>
+  </section>
+  <section class="my-12 container">
+    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/4kcLgHDQicg?si=OmXs1e1n5NoaWZzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+</DefaultLayout>

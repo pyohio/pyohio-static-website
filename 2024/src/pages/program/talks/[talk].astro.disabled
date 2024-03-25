@@ -1,0 +1,57 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+export async function getStaticPaths() {
+  const talks = await getCollection('talks', ({ data }) => {
+    return data.type !== 'Break'
+  })
+
+  return talks.map((talk) => {
+    return {
+      params: { talk: talk.data.slug },
+      props: { talk },
+    }
+  })
+}
+const { talk } = Astro.props
+
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
+  }
+}
+---
+
+<DefaultLayout title="Talks">
+  <section class="my-12">
+    <div class="container">
+      <h1>{talk.data.title}</h1>
+      <p class="italic">{talk.data.type} at {formatTime(talk.data.start_time)}</p>
+    </div>
+  </section>
+  <section class="container">
+    <iframe class="w-full aspect-video" src={"https://www.youtube.com/embed/"+talk.data.youtube_url.replace("https://youtu.be/", "")} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+  <section class="my-12">
+    <div class="space-content container">
+      <Fragment set:html={talk.data.description} />
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Presented by</h2>
+      {
+        talk.data.speakers.map((speaker) => (
+          <p>
+            <a href={'/2023/speakers/' + speaker.slug}>{speaker.name}</a>
+          </p>
+        ))
+      }
+    </div>
+  </section>
+</DefaultLayout>

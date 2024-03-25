@@ -12,21 +12,21 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Short URLs change year to year:
 
-/about /2023/about/ 302
-/coc /2023/code-of-conduct/ 302
-/code-of-conduct /2023/code-of-conduct/ 302
-/conduct /2023/code-of-conduct/ 302
-/discord /2023/discord/ 302
-/attend /2024 302
-/directions /2024 302
+/about /2024/about/ 302
+/coc /2024/about/code-of-conduct 302
+/code-of-conduct /2024/about/code-of-conduct 302
+/conduct /2024/about/code-of-conduct 302
+/discord /2024/attend/discord 302
+/attend /2024/attend/registration 302
+/directions /2024/attend/travel-and-hotels 302
 /events /2024 302
-/hotel /2024 302
-/prospectus /2024 302
-/register /2024 302
-/schedule /2023/talks/schedule/ 302
-/shirts https://www.customink.com/fundraising/pyohio-2023 302
+/hotel /2024/attend/travel-and/hotels 302
+/prospectus /2024/sponsors/prospectus 302
+/register /2024/attend/registration 302
+/schedule /2024/ 302
+/shirts /2024 302
 /sprints /2024 302
-/volunteer /volunteer-list 302
+/volunteer /2024/attend/volunteer 302
 /hackfest /2024 302
 /osu-open-source /2024 302
 
@@ -63,3 +63,12 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2021/present/speaker-info /2021/speaking/speaker-info
 /2021/code-of-conduct /2021/about/code-of-conduct
 /2021/conduct /2021/about/code-of-conduct
+
+# Custom 404s
+
+/2024/* /2024/404 404
+/2023/* /2023/404 404
+/2022/* /2022/404 404
+/2021/* /2021/404 404
+/2020/* /2020/404 404
+

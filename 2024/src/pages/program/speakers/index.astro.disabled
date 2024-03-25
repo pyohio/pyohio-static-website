@@ -1,0 +1,43 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { Picture } from 'astro-imagetools/components'
+
+const speakers = await getCollection('speakers', ({ data }) => {
+  return data.listed == true
+})
+---
+
+<DefaultLayout title="Talks">
+  <section class="my-12">
+    <div class="container">
+      <h1>Speakers</h1>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="mx-12 flex flex-wrap">
+      {
+        speakers.map((speaker) => (
+          <div class="mx-6 min-w-[8rem] max-w-[9%] py-3 text-center">
+            <a href={speaker.data.slug}>
+              <Picture
+                src={speaker.data.avatar}
+                alt={speaker.data.name + ' profile photo'}
+                height="150"
+                width="150"
+                layout="constrained"
+                fadeInTransition={false}
+                attributes={{
+                  img: {
+                    class: 'rounded-3xl border-4',
+                  },
+                }}
+              />
+            </a>
+            <a href={speaker.data.slug}>{speaker.data.name}</a>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</DefaultLayout>

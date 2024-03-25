@@ -1,0 +1,52 @@
+---
+import { Icon } from 'astro-icon'
+import { Image } from 'astro:assets'
+import logo from '../assets/img/pyohio-2024-logo.png'
+
+---
+
+<section class="hero my-24">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div>
+        <video class="rounded-3xl" autoplay loop controls>
+          <source src="/2024/pyohio-2024-animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h2 class="text-center text-4xl md:text-left lg:text-6xl">
+          <slot>The Python Community Conference Based in Ohio</slot>
+        </h2>
+        <p>
+          PyOhio is July 27-28, 2024 in Cleveland, Ohio.
+        </p>
+            <p><strong>Important Information:</strong>
+          <ul>
+            <li><a href="/2024/about/health-and-safety/">Health & Safety Guidelines</a></li>
+            <li><a href="/2024/about/code-of-conduct/">Code of Conduct</a></li>
+            <li><a href="https://pretalx.com/pyohio-2024/cfp">Call for Proposals</a> open now!</li>
+            <li>Registration and travel information coming soon!</li>
+          </ul>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .text-gradient {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-500));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  :global(.darkmode .text-gradient) {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-400));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
