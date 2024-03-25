@@ -5,6 +5,8 @@ title: Sponsorship Prospectus
 
 # Sponsorship Prospectus
 
-The 2024 sponsorship prospectus will be posted very soon.
+Download: [PyOhio 2024 Sponsorship Prospectus PDF](/2024/files/pyohio-2024-sponsorship-prospectus.pdf)
 
-Email sponsorship@pyohio.org with any questions.
+<iframe src="https://docs.google.com/viewer?embedded=true&url=https://www.pyohio.org/2024/files/pyohio-2024-sponsorship-prospectus.pdf" width="1000" height="600"></iframe>
+
+If you have any questions about sponsorships or would like to sponsor PyOhio, email sponsorship@pyohio.org.
