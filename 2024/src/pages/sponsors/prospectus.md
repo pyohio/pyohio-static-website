@@ -7,4 +7,4 @@ title: Sponsorship Prospectus
 
 The 2024 sponsorship prospectus will be posted very soon.
 
-Email sponsors@pyohio.org with any questions.
+Email sponsorship@pyohio.org with any questions.
