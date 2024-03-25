@@ -1,27 +1,22 @@
 ---
 import { Icon } from 'astro-icon'
 import { Image } from 'astro:assets'
-import logo from '../assets/img/pyohio-2024-logo.png'
-
+import animation from '../assets/img/pyohio-2024-animation.gif'
 ---
 
 <section class="hero my-24">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div>
-        <video class="rounded-3xl" poster="/2024/pyohio-2024-poster.png" autoplay loop muted controls playsinline>
-          <source src="/2024/pyohio-2024-animation.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <Image class="rounded-3xl" src={animation} alt="PyOhio 2024 Animated Logo" />
       </div>
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h2 class="text-center text-4xl md:text-left lg:text-6xl">
           <slot>The Python Community Conference Based in Ohio</slot>
         </h2>
+        <p>PyOhio is July 27-28, 2024 in Cleveland, Ohio.</p>
         <p>
-          PyOhio is July 27-28, 2024 in Cleveland, Ohio.
-        </p>
-            <p><strong>Important Information:</strong>
+          <strong>Important Information:</strong>
           <ul>
             <li><a href="/2024/about/health-and-safety/">Health & Safety Guidelines</a></li>
             <li><a href="/2024/about/code-of-conduct/">Code of Conduct</a></li>
@@ -30,7 +25,6 @@ import logo from '../assets/img/pyohio-2024-logo.png'
           </ul>
         </p>
       </div>
-
     </div>
   </div>
 </section>
