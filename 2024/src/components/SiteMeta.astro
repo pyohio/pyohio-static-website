@@ -1,7 +1,8 @@
 ---
 const { title, description, url, image, author } = Astro.props
 
-let subtitle = 'PyOhio 2024'
+const subtitle = 'PyOhio 2024'
+const ogImageURL = 'https://www.pyohio.org/2024/pyohio-2024-logo-og.png'
 ---
 
 <!-- general meta -->
@@ -14,13 +15,13 @@ let subtitle = 'PyOhio 2024'
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={url} />
-<meta property="og:image" content={Astro.site ? `${Astro.site}${image}` : image} />
+<meta property="og:image" content={ogImageURL} />
 
 <!-- twitter card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={`${title} - ${subtitle}`} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={Astro.site ? `${Astro.site}${image}` : image} />
+<meta name="twitter:image" content={ogImageURL} />
 <meta name="twitter:site" content="@pyohio" />
 
 <!-- event schema -->
