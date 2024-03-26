@@ -7,9 +7,11 @@ layout: '../../layouts/MarkdownLayout.astro'
 
 We want PyOhio to be an event that **everyone** feels safe attending. The PyOhio Health and Safety Guidelines provide a framework from which we can work to make that happen. Together, we will help keep our immuno-compromised friends safe, allow those who share their homes with immuno-compromised people to feel safe joining us, and respect the health of the PyOhio community.
 
+These guidelines apply to all PyOhio attendees, within the PyOhio event space. PyOhio is being held on the 6th and 7th floors of The Westin Cleveland Downtown. Everything outlined here should be followed when in any space on the 6th floor or 7th floor, and on the stairs or in the elevator between them. This includes attending talks and Open Spaces, and any time spent in the hallways or quiet room. Please ensure you act in accordance with these guidelines at all times while attending PyOhio.
+
 ## Masks Are Required
 
-We are asking you to wear a mask during your time at PyOhio. This includes attending talks and Open Spaces, and any time spent in the hallways or quiet room.
+We are asking you to wear a mask during your time at PyOhio.
 
 **Exceptions are:**
 
