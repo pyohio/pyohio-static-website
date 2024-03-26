@@ -41,10 +41,10 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # OhPyOh
 
-/ohpyo /2022/about/ohpyo 302
-/opyoh /2022/about/ohpyo 302
-/opyo /2022/about/ohpyo 302
-/ohpy /2022/about/ohpyo 302
+/ohpyo /2024/about/ohpyo 302
+/opyoh /2024/about/ohpyo 302
+/opyo /2024/about/ohpyo 302
+/ohpy /2024/about/ohpyo 302
 
 # 2024 Moved URLs
 
@@ -70,8 +70,8 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Custom 404s
 
-/2024/_ /2024/404 404
-/2023/_ /2023/404 404
-/2022/_ /2022/404 404
-/2021/_ /2021/404 404
-/2020/\* /2020/404 404
+/2024/* /2024/404 404
+/2023/* /2023/404 404
+/2022/* /2022/404 404
+/2021/* /2021/404 404
+/2020/* /2020/404 404
