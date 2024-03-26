@@ -23,8 +23,8 @@ PyOhio attendees include a variety of working professionals, students, academics
 
 Attendees will receive positive exposure to your organization including the benefits listed in the prospectus PDF. Your sponsorship dollars will cover the cost of the conference including venue rental, video production, refreshments, badges, web hosting, etc. With your sponsorship support covering our costs we are able to offer free admission to our attendees.
 
-<iframe credentialless src="https://docs.google.com/viewer?embedded=true&url=https://www.pyohio.org/2024/files/pyohio-2024-sponsorship-prospectus.pdf" width="1000" height="600">Text</iframe>
-
 ## Contact Us About Sponsorship
 
 If you have any questions about sponsorships or would like to sponsor PyOhio, email sponsorship@pyohio.org.
+
+<iframe credentialless src="https://docs.google.com/viewer?embedded=true&url=https://www.pyohio.org/2024/files/pyohio-2024-sponsorship-prospectus.pdf" width="1000" height="600">Text</iframe>
