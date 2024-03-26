@@ -63,7 +63,7 @@ The choice to physically distance from others is left up to attendees. Regardles
 
 If you feel that a PyOhio attendee is not following the Health and Safety Guidelines, we ask that you please report the incident to PyOhio organizers by sending an email safety@pyohio.org. You may also report verbally. The privacy of anyone making a report will be respected and maintained; names will not be shared. We will use the information provided to investigate and, if necessary, act on the situation. 
 
-You may report anyone not following these guidelines, however, please remember that there may be other events at the same time, and those events may not have such guidelines for their attendees. We can only enforce following these guidelines with PyOhio attendees.
+You may report anyone not following these guidelines, however, please remember that there may be other events at the same time, and those events may not have such guidelines for their attendees. We can only enforce these guidelines with PyOhio attendees.
 
 ## Future Updates to These Guidelines
 
