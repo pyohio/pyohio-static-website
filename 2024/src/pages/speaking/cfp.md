@@ -5,6 +5,10 @@ title: Call for Proposals
 
 # Call for Proposals
 
+<a class="button" href="https://pretalx.com/pyohio-2024/cfp">PyOhio 2024 CFP</a>
+
+The PyOhio 2024 CFP is open through May 20, 2024 Anywhere on Earth.
+
 View our CFP and submit a proposal at https://pretalx.com/pyohio-2024/cfp
 
 As we return to an in-person event after several years of streamed short talks, it’s also time to change up our format. This year’s PyOhio will once again feature multiple full-sized talk tracks, with most talks approximately 30 minutes long.
