@@ -49,11 +49,19 @@ If you test positive for COVID-19 or exhibit any related symptoms during your at
 
 We ask that you notify PyOhio organizers by emailing safety@pyohio.org. Your privacy will be respected and maintained. This information will be used only to notify attendees, so they may take appropriate precautions or get tested. We will not share your name but we will share the events in which you participated as you indicate in your report.
 
-## Ventilation and Physical Distancing
+## Ventilation, Venue, and Physical Distancing
 
 PyOhio will be held entirely indoors. There is 100% active outside air exchange within the event space.
 
+There may be other events taking place in the PyOhio venue during our event. Those events may not have the same health and safety guidelines for their attendees. Therefore, there may be people in our event space who are not following the guidelines outlined here. We strive to create a safe space for everyone to attend PyOhio, however, we want to clarify that our policy does not extend to other events.
+
 The choice to physically distance from others is left up to attendees. Regardless of your choice, please respect fellow attendees' boundaries if they request that physical distancing be maintained.
+
+## Reporting
+
+If you feel that a PyOhio attendee is not following the Health and Safety Guidelines, we ask that you please report the incident to PyOhio organizers by sending an email safety@pyohio.org. You may also report verbally. The privacy of anyone making a report will be respected and maintained; names will not be shared. We will use the information provided to investigate and, if necessary, act on the situation. 
+
+You may report anyone not following these guidelines, however, please remember that there may be other events at the same time, and those events may not have such guidelines for their attendees. We can only enforce following these guidelines with PyOhio attendees.
 
 ## Future Updates to These Guidelines
 
