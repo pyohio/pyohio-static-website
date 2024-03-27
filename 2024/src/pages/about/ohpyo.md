@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: PyOhio? OhPyO? OhPyOh?
+title: PyOhio? OhPyO? OHPy?
 ---
 
-# PyOhio? OhPyO? OhPyOh?
+# PyOhio? OhPyO? OHPy?
 
 How did PyOhio get its name?
 
