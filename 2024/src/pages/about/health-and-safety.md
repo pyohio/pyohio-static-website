@@ -67,4 +67,4 @@ You may report anyone not following these guidelines, however, please remember t
 
 ## Future Updates to These Guidelines
 
-We promise not to downgrade our Health and Safety policy between now and the event to allow community members to make decisions about attending with confidence that his policy won't be weakened between when they book travel or submit a talk, and when the conference takes place. If there is a development that recommends additional precaution, then we may add it. As we get closer to PyOhio, we may add additional information here as well. We will not, however, be subtracting anything or softening the mask policy.
+We promise not to downgrade our Health and Safety policy between now and the event to allow community members to make decisions about attending with confidence that this policy won't be weakened between when they book travel or submit a talk, and when the conference takes place. If there is a development that recommends additional precaution, then we may add it. As we get closer to PyOhio, we may add additional information here as well. We will not, however, be subtracting anything or softening the mask policy.
