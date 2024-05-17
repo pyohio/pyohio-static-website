@@ -18,13 +18,16 @@ try:
 except ImportError:
     from yaml import Dumper
 
-PRETALX_EVENT_ID = "pyohio-2023"
-DATA_DIR = Path("./2023/src/content")
+PRETALX_EVENT_ID = "pyohio-2024"
+DATA_DIR = Path("./2024/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_TIME = "TBD"
 UNLISTED_SPEAKERS = [
     "KGVCNV",  # Dave Forgac
     "DCSCPQ",  # Kattni
+]
+KEYNOTE_SPEAKERS = [
+    "UAVJNC", # Steph
 ]
 
 
@@ -98,6 +101,8 @@ def get_event_data(ctx):
             f.unlink(missing_ok=True)
         except OSError as e:
             click.echo("Error: %s : %s" % (f, e.strerror), err=True)
+
+def get_talk_slug():
 
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
@@ -206,9 +211,16 @@ def get_event_data(ctx):
         )
         data.update(social_link_data)
 
+        data["speaker_type"] = "speaker"
+
         # make organizers unlisted
         if data["code"] in UNLISTED_SPEAKERS:
             data["listed"] = False
+            data["speaker_type"] = "organizer"
+
+        if data["code"] in KEYNOTE_SPEAKERS:
+            data["speaker_type"] = "keynote"
+
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
@@ -237,7 +249,7 @@ def get_social_link_data(social_link):
             social_link_url = social_link
             social_link_display = social_link.replace("https://twitter.com/", "@")
             social_link_type = "twitter"
-        elif social_link.startswith("https://www.linkedin.com/in/"):
+        elif social_link.startswith("https://linkedin.com/in/"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://www.", "")
             social_link_type = "linkedin"

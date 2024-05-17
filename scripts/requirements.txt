@@ -1,0 +1,6 @@
+httpx
+click
+python-slugify
+markdown
+py-gfm
+pyyaml
