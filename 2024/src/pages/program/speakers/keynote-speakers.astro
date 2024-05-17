@@ -2,6 +2,7 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { Picture } from 'astro-imagetools/components'
+import { Icon } from 'astro-icon'
 
 const speakers = await getCollection('speakers', ({ data }) => {
   return data.listed == true
@@ -11,20 +12,20 @@ const speakers = await getCollection('speakers', ({ data }) => {
 <DefaultLayout title="Talks">
   <section class="my-12">
     <div class="container">
-      <h1>Speakers</h1>
+      <h1>Keynote Speakers</h1>
     </div>
   </section>
-  <section class="my-12">
-    <div class="mx-12 flex flex-wrap">
+  <section>
       {
         speakers.map((speaker) => (
-          <div class="mx-6 min-w-[8rem] max-w-[9%] py-3 text-center">
+          <div class="container">
+            <h2>{speaker.data.name}</h2>
             <a href={speaker.data.slug}>
               <Picture
                 src={speaker.data.avatar}
                 alt={speaker.data.name + ' profile photo'}
-                height="150"
-                width="150"
+                height="250"
+                width="250"
                 layout="constrained"
                 fadeInTransition={false}
                 attributes={{
@@ -34,10 +35,15 @@ const speakers = await getCollection('speakers', ({ data }) => {
                 }}
               />
             </a>
-            <a href={speaker.data.slug}>{speaker.data.name}</a>
+            <section class="my-6">
+              <Fragment set:html={speaker.data.biography} />
+            </section>     
           </div>
         ))
       }
-    </div>
   </section>
+  <section class="container">
+  <strong>More keynote speakers to be announced soon!</strong>
+  </section>
+
 </DefaultLayout>

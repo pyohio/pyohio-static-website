@@ -10,6 +10,7 @@ export default defineConfig({
   base: '/2024',
   publicDir: './public-src',
   compressHTML: true,
+  trailingSlash: 'ignore',
   image: {
     domains: ['pyohio.org', 'pretalx.com', 'gravatar.com'],
   },
