@@ -28,6 +28,7 @@ UNLISTED_SPEAKERS = [
 ]
 KEYNOTE_SPEAKERS = [
     "UAVJNC", # Steph
+    "PTGUYZ", # Mariatta
 ]
 
 
@@ -101,8 +102,6 @@ def get_event_data(ctx):
             f.unlink(missing_ok=True)
         except OSError as e:
             click.echo("Error: %s : %s" % (f, e.strerror), err=True)
-
-def get_talk_slug():
 
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
@@ -220,6 +219,7 @@ def get_talk_slug():
 
         if data["code"] in KEYNOTE_SPEAKERS:
             data["speaker_type"] = "keynote"
+            data["keynote_index"] = KEYNOTE_SPEAKERS.index(data["code"])
 
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
