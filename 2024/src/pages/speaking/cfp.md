@@ -7,7 +7,7 @@ title: Call for Proposals
 
 <a class="button" href="https://pretalx.com/pyohio-2024/cfp">PyOhio 2024 CFP</a>
 
-The PyOhio 2024 CFP is open through May 20, 2024 Anywhere on Earth.
+The PyOhio 2024 CFP is open through May 26, 2024 Anywhere on Earth.
 
 View our CFP and submit a proposal at https://pretalx.com/pyohio-2024/cfp
 
