@@ -19,8 +19,8 @@ const speakers = await getCollection('speakers', ({ data }) => {
       {
         speakers.map((speaker) => (
           <div class="container">
-            <h2>{speaker.data.name}</h2>
-            <a href={speaker.data.slug}>
+            <h2 id={speaker.data.slug}>{speaker.data.name}</h2>
+            {/* <a href={speaker.data.slug}> */}
               <Picture
                 src={speaker.data.avatar}
                 alt={speaker.data.name + ' profile photo'}
@@ -34,7 +34,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
                   },
                 }}
               />
-            </a>
+            {/* </a> */}
             <section class="my-6">
               <Fragment set:html={speaker.data.biography} />
             </section>     
