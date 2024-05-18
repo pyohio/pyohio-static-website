@@ -5,8 +5,10 @@ import { Picture } from 'astro-imagetools/components'
 import { Icon } from 'astro-icon'
 
 const speakers = await getCollection('speakers', ({ data }) => {
-  return data.listed == true
+  return data.speaker_type == "keynote"
 })
+speakers.sort((a, b) => a.data.keynote_index - b.data.keynote_index)
+
 ---
 
 <DefaultLayout title="Keynote Speakers">
