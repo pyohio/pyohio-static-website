@@ -5,8 +5,10 @@ import { Picture } from 'astro-imagetools/components'
 import { Icon } from 'astro-icon'
 
 const speakers = await getCollection('speakers', ({ data }) => {
-  return data.listed == true
+  return data.speaker_type == "keynote"
 })
+speakers.sort((a, b) => a.data.keynote_index - b.data.keynote_index)
+
 ---
 
 <DefaultLayout title="Keynote Speakers">
@@ -19,8 +21,8 @@ const speakers = await getCollection('speakers', ({ data }) => {
       {
         speakers.map((speaker) => (
           <div class="container">
-            <h2>{speaker.data.name}</h2>
-            <a href={speaker.data.slug}>
+            <h2 id={speaker.data.slug}>{speaker.data.name}</h2>
+            {/* <a href={speaker.data.slug}> */}
               <Picture
                 src={speaker.data.avatar}
                 alt={speaker.data.name + ' profile photo'}
@@ -34,8 +36,8 @@ const speakers = await getCollection('speakers', ({ data }) => {
                   },
                 }}
               />
-            </a>
-            <section class="my-6">
+            {/* </a> */}
+            <section class="mt-6 mb-12">
               <Fragment set:html={speaker.data.biography} />
             </section>     
           </div>

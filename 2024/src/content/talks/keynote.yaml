@@ -1,6 +1,6 @@
-code: EJSYK9
+code: KHNSQ3
 content_warnings: null
-description: <p>TBA</p>
+description: <p>Keynote</p>
 discord_channel_id: ''
 duration: 45
 end_time: TBD
@@ -8,10 +8,10 @@ qna: false
 qna_channel: null
 slug: keynote
 speakers:
-- avatar: https://pretalx.com/media/avatars/23SSC_WILBhs-139_4Q4w5Jn-cropped_waCp668.jpg
-  code: UAVJNC
-  name: Steph Hippo
-  slug: steph-hippo
+- avatar: https://pretalx.com/media/avatars/6b6e72d297aa0270654a0d4575f1287e_Hr78GUN.jpg
+  code: PTGUYZ
+  name: Mariatta
+  slug: mariatta
 start_time: TBD
 stream_timestamp: ''
 title: Keynote
