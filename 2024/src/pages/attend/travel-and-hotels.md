@@ -1,15 +1,22 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: Travel &amp; Hotels
+title: Travel & Hotels
 ---
 
-# Travel &amp; Hotels
+# Travel & Hotels
 
 ## Hotels
 
-We will have a room block at The Westin Cleveland Downtown. We will announce when it is available for booking.
+The conference will take place at The Westin Cleveland Downtown. The following hotels are all within a short walk of the venue:
 
-There are also more than a dozen other hotels within a 15 minute walk. We will provide suggestions for alternative hotels when we publish the room block information.
+- Westin Cleveland Downtown
+- Drury Plaza Hotel Cleveland Downtown
+- Hampton Inn Cleveland Downtown
+- Hilton Cleveland Downtown
+- Cleveland Marriott Downtown at Key Tower
+- Hyatt Regency Cleveland at the Arcade
+
+We do not currently have a room block but will announce if one becomes available.
 
 ## Travel
 
