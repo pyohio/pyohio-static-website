@@ -5,7 +5,7 @@ title: Individual Sponsors
 
 # Individual Sponsors
 
-Individual sponsors will be listed here once registration opens!
+Individual sponsors will be listed here soon.
 
 ## About Individual Sponsorship
 
