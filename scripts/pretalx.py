@@ -29,6 +29,7 @@ UNLISTED_SPEAKERS = [
 KEYNOTE_SPEAKERS = [
     "UAVJNC", # Steph
     "PTGUYZ", # Mariatta
+    "UYHZBE", # Trey
 ]
 
 
