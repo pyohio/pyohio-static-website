@@ -1,0 +1,24 @@
+avatar: https://pretalx.com/media/avatars/avatar_W4JeHPS.jpg
+biography: '<p>Trey Hunner helps developers level-up their Python skills through <a
+  href="https://www.pythonmorsels.com/newsletter/">weekly emails</a> and hands-on
+  learning.</p>
+
+  <p>Trey runs the <a href="https://www.pythonmorsels.com">Python Morsels</a> skill-building
+  system and provides <a href="https://truthful.technology">Python team training</a>
+  through his company, Truthful Technology LLC. He has also volunteered with the PSF,
+  PyCon US, his local meetup, and open source Python projects.</p>
+
+  <p>Trey loves learning, teaching, and Python.</p>'
+code: UYHZBE
+keynote_index: 2
+listed: true
+name: Trey Hunner
+slug: trey-hunner
+social_link_display: '@treyhunner'
+social_link_type: twitter
+social_link_url: https://twitter.com/treyhunner
+speaker_type: keynote
+talks:
+- code: FAKV3H
+  slug: keynote
+  title: Keynote
