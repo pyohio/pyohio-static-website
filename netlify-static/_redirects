@@ -20,6 +20,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /attend /2024/attend/registration 302
 /directions /2024/attend/travel-and-hotels 302
 /events /2024 302
+/health-and-safety /2024/about/health-and-safety/ 302
 /hotel /2024/attend/travel-and/hotels 302
 /prospectus /2024/sponsors/prospectus 302
 /register /2024/attend/registration 302
