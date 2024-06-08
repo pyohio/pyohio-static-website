@@ -1,0 +1,20 @@
+avatar: https://pretalx.com/media/avatars/jess_cAYx6nn.jpeg
+biography: '<p>Jessica Garson is a Python programmer, educator, and artist. She currently
+  works at Elastic as a Senior Developer Advocate. Previously, Jessica was at Twitter
+  for four years, working in Developer Relations. She has spoken at conferences all
+  over the globe, ranging from PyCon to Write the Docs.</p>
+
+  <p>In her spare time, she is on a never-ending quest for the perfect vegan snack.
+  She uses code and modular synthesizers to make music and audio-reactive video art.</p>'
+code: QJCEWP
+listed: true
+name: Jessica Garson
+slug: jessica-garson
+social_link_display: twitter.com/jessicagarson
+social_link_type: web
+social_link_url: twitter.com/jessicagarson
+speaker_type: speaker
+talks:
+- code: LUKKXH
+  slug: how-to-do-the-same-thing-over-and-over-again-and-yield-different
+  title: How to do the same thing over and over again and yield different results

@@ -1,0 +1,40 @@
+code: VWWTQF
+content_warnings: null
+description: '<p>Happy developers do not have to fight their tools and environment
+  to be productive. They get set up in minutes, deploy without hesitation, and use
+  the same tools to debug in any environment. In this talk and live demo, we''ll explore
+  how a Kubernetes-based development workflow can help you and your team hit the ground
+  running.</p>
+
+  <p>We will delve into establishing a powerful Django backend for server-side functionality
+  and a dynamic React frontend for an engaging user experience. For databases, the
+  setup will include a local Postgres database for development and CloudNativePG for
+  production-level deployments. Additionally, the integration of Redis for enhanced
+  application performance and email testing will be covered. </p>
+
+  <p>This comprehensive approach ensures that onboarding a new developer on a project
+  is streamlined, overcoming the typical pain points such as: <br />
+
+  * manual installation steps <br />
+
+  * the inconsistency of tools across development environments</p>
+
+  <p>Kubernetes will empower your development and DevOps teams to speak a common language
+  and collaborate effectively, standardizing deployments and debugging processes in
+  local, preview, staging, and production environments.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Mastering the Zen of Dev Experience
+slug: mastering-the-zen-of-dev-experience-kubernetes-and-the-art-of
+speakers:
+- avatar: https://pretalx.com/media/avatars/Calvin_Hendryx-Parker_104oRPw.jpg
+  code: ME3WGG
+  name: Calvin Hendryx-Parker
+  slug: calvin-hendryx-parker
+start_time: TBD
+stream_timestamp: ''
+title: 'Mastering the Zen of Dev Experience: Kubernetes and the Art of Simplicity'
+type: 30 Minute Talk
+youtube_url: null

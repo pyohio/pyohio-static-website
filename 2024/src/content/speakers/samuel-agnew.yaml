@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/sagnewshreds_E8xEubp.jpg
+biography: <p>Sam Agnew is a developer evangelist at Twilio and loves inspiring and
+  equipping developers around the world. He particularly enjoys being a member of
+  the New York Python and JavaScript communities. The only thing he finds more satisfying
+  than writing code is playing fast guitar solos and hacking old video games.</p>
+code: TDNT9P
+listed: true
+name: Samuel Agnew
+slug: samuel-agnew
+social_link_display: null
+social_link_type: null
+social_link_url: null
+speaker_type: speaker
+talks:
+- code: 7GPCCR
+  slug: gotta-go-fast-using-asyncio-for-more-efficient-web-scraping
+  title: Gotta go Fast! Using Asyncio for more Efficient Web Scraping

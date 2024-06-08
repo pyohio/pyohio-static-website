@@ -1,0 +1,28 @@
+code: DVJYEG
+content_warnings: null
+description: '<h2>Overview:</h2>
+
+  <p>Many people have probably used Locust or a tool built on top of it (like Load
+  Forge) in the past. These tools are primarily used for web application load testing
+  by hitting public endpoints and monitoring how they respond. In this talk we review
+  how to use Locust to load test a PostgreSQL database.</p>
+
+  <h2>Additional Info</h2>
+
+  <p>This is a link to an article I wrote about this topic: <a href="https://miguel-codes.medium.com/unconventional-load-testing-leveraging-python-locust-for-postgresql-stress-testing-d6e07d63714b">https://miguel-codes.medium.com/unconventional-load-testing-leveraging-python-locust-for-postgresql-stress-testing-d6e07d63714b</a></p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Stress Less
+slug: stress-less-easy-database-load-testing-using-python-and-locust
+speakers:
+- avatar: https://pretalx.com/media/avatars/E8C5B10A-1596-4FE4-9A36-2089BAD44D82_zDIrugz.jpg
+  code: 8KG3AQ
+  name: Miguel
+  slug: miguel
+start_time: TBD
+stream_timestamp: ''
+title: 'Stress Less: Easy Database Load Testing Using Python and Locust'
+type: 30 Minute Talk
+youtube_url: null

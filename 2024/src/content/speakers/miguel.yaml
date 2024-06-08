@@ -1,0 +1,18 @@
+avatar: https://pretalx.com/media/avatars/E8C5B10A-1596-4FE4-9A36-2089BAD44D82_zDIrugz.jpg
+biography: <p>I was born in Columbus, Ohio. I spent most of my childhood either drawing
+  or taking apart electronics. While most kids asked for action figures and games
+  for Christmas I was asking for tools and a soldering iron. I have 3 years of experience
+  in tech, specializing in data engineering and software development. I am a father
+  of 4 beautiful kids</p>
+code: 8KG3AQ
+listed: true
+name: Miguel
+slug: miguel
+social_link_display: www.linkedin.com/in/miguelbjohnson/
+social_link_type: web
+social_link_url: https://www.linkedin.com/in/miguelbjohnson/
+speaker_type: speaker
+talks:
+- code: DVJYEG
+  slug: stress-less-easy-database-load-testing-using-python-and-locust
+  title: 'Stress Less: Easy Database Load Testing Using Python and Locust'

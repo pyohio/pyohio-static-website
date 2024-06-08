@@ -1,0 +1,31 @@
+code: KSJSPY
+content_warnings: null
+description: <p>Utilizing the Python programming language and the Tkinter library,
+  I propose to develop a simulated robotic application tailored for search and rescue
+  missions. Central to this endeavor is the integration of a neural network, trained
+  on pertinent search and rescue data, to effectively guide the robotic agent towards
+  areas with a high probability of locating survivors. The neural network's computations
+  yield a dynamic cost map, which takes into account both traversal costs and the
+  priority of various regions within the search area. This cost map serves as a comprehensive
+  tool, continuously furnishing the robotic agent with insights into the search region
+  and optimizing its search strategy. Importantly, this approach is conceived to address
+  challenges inherent in reinforcement learning, such as the lack of a global view
+  and the need to balance multiple objectives in search and rescue mission.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: A NOVEL FRAMEWORK TO EFFICIENT PATH PLANNING THROUGH REAL-TIME COST MAP
+  GENERATION USING NEURAL NETWORKS FOR SEARCH AND RESCUE MISSIONS
+slug: a-novel-framework-to-efficient-path-planning-through-real-time
+speakers:
+- avatar: https://pretalx.com/media/avatars/IMG_4438_R62I7Vt.jpg
+  code: M8FBJN
+  name: Keith Martin Machina
+  slug: keith-martin-machina
+start_time: TBD
+stream_timestamp: ''
+title: A NOVEL FRAMEWORK TO EFFICIENT PATH PLANNING THROUGH REAL-TIME COST MAP GENERATION
+  USING NEURAL NETWORKS FOR SEARCH AND RESCUE MISSIONS
+type: 30 Minute Talk
+youtube_url: null

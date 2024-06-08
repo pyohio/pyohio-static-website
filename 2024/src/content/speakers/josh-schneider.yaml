@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/4fd8d11f5cc00e1fa20dc9a596b16088_LyrAVLg.jpg
+biography: <p>Father of two boys. Former Test Automation Engineer and current Application
+  Security Engineer. Primarily fluent in Python, but conversant in C#, Go, VBScript,
+  and others. Huge movie geek.</p>
+code: UKGFFX
+listed: true
+name: Josh Schneider
+slug: josh-schneider
+social_link_display: '@diji@mastodon.social'
+social_link_type: mastodon
+social_link_url: https://mastodon.social/@diji
+speaker_type: speaker
+talks:
+- code: DQNF8G
+  slug: hot-pathlib-not-string-paths
+  title: 'Hot: pathlib, Not: string paths'

@@ -1,0 +1,20 @@
+avatar: https://pretalx.com/media/avatars/profile-jt_JQdJmlQ.png
+biography: <p>Jess Temporal is a Sr. Developer Advocate at Auth0 by Okta. Co-founder
+  and co-host of the first Brazilian podcast about data science Pizza de Dados. GitHub
+  Star, author of "The Big Git Microbook" and creator of GitFichas, a collection of
+  Git study cards. Also loves to knit and picking up new skills, right now learning
+  to rollerblade and to play the keyboard.</p>
+code: V9AARY
+listed: true
+name: Jessica Temporal
+slug: jessica-temporal
+social_link_display: 'all social media profiles are here and feel free to use them
+  all: jtemporal.com/socials'
+social_link_type: web
+social_link_url: 'all social media profiles are here and feel free to use them all:
+  https://jtemporal.com/socials'
+speaker_type: speaker
+talks:
+- code: YZMLAA
+  slug: device-authorization-flow-101-logging-in-from-input-constrained
+  title: 'Device Authorization Flow 101: Logging in from input constrained devices'

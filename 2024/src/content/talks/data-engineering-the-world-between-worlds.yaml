@@ -1,0 +1,28 @@
+code: P397LH
+content_warnings: null
+description: <p>Data engineering is an often misunderstood, conflated range of skills
+  from database administration, analytics, ETL, cloud infrastructure, big data and
+  back. As someone who worked as a data engineer for just over 5 years, I’d love to
+  share my stories about my time as a data engineer to pull back the curtain on what
+  kind of value you might be able to get from data engineering as the heat of ML Ops
+  and AI takes flight, both as organization and individual. Notably, many data engineering
+  teams heavily leverage Python due to the depth and breadth of the data libraries,
+  and the ease by which folks can learn Python to start creating value within the
+  space. We'll also talk about a few of the key libraries that you can learn to set
+  yourself apart if you decide data engineering is for you!</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Data Engineering
+slug: data-engineering-the-world-between-worlds
+speakers:
+- avatar: null
+  code: R9HB7N
+  name: Rainu Ittycheriah
+  slug: rainu-ittycheriah
+start_time: TBD
+stream_timestamp: ''
+title: 'Data Engineering: The World Between Worlds'
+type: 30 Minute Talk
+youtube_url: null

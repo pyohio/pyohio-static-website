@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
+biography: <p>Andrew has been attending PyOhio since 2014, and was an member of the
+  Central Ohio Python User Group (COPy) until he left the Columbus area for New York
+  City. He now works as a Software Architect in the telecom industry, using asynchronous
+  Python to solve network automation problems.</p>
+code: PWN7XL
+listed: true
+name: Andrew Kubera
+slug: andrew-kubera
+social_link_display: null
+social_link_type: null
+social_link_url: null
+speaker_type: speaker
+talks:
+- code: XXQLZ3
+  slug: asyncio-by-example
+  title: Asyncio By Example

@@ -1,0 +1,19 @@
+avatar: https://pretalx.com/media/avatars/square-vince_g23uQZP.jpg
+biography: <p>As a 10+ year Django user, Vince has extensive experience in the Python
+  world, ranging from Fortune 500 web development to small business and startup challenges.
+  Vince is currently the Technical Director at CodeRed, a tech firm based right here
+  in Cleveland Ohio, which provides a unique Python-based web hosting platform. Vince
+  is also a Wagtail Core Team member, and in 2023 was recognized as an Individual
+  Member of the Django Software Foundation.</p>
+code: R3UWNF
+listed: true
+name: Vince Salvino
+slug: vince-salvino
+social_link_display: null
+social_link_type: null
+social_link_url: null
+speaker_type: speaker
+talks:
+- code: WMJDDE
+  slug: wagtail-the-python-cms-taking-the-world-by-storm
+  title: 'Wagtail: the Python CMS taking the world by storm'

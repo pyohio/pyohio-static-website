@@ -1,0 +1,21 @@
+avatar: https://pretalx.com/media/avatars/1615684432676_U5XDwSy.jpeg
+biography: '<p>Graduated university with an Engineering and Finance degree and got
+  my first job in the telco industry as a software developer. Spent a few years in
+  engineering and then switched to product management for a few years ending up owning
+  a suit of developer focussed products. After launching a few new products, moved
+  back to engineering leadership looking after cloud products.</p>
+
+  <p>An opportunity to work for Canonical, makers of Ubuntu, came up where I have
+  been an engineering manager for the last 2 years automating operations of data centres.</p>'
+code: ATDLZU
+listed: true
+name: David Andersson
+slug: david-andersson
+social_link_display: www.linkedin.com/in/david-andersson-b0b454b3/
+social_link_type: web
+social_link_url: https://www.linkedin.com/in/david-andersson-b0b454b3/
+speaker_type: speaker
+talks:
+- code: Y8BHML
+  slug: simplifying-python-web-app-operations-automating-k8s-ops-with
+  title: 'Simplifying Python Web App Operations: Automating K8s Ops with Open Source'

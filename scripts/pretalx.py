@@ -27,9 +27,9 @@ UNLISTED_SPEAKERS = [
     "DCSCPQ",  # Kattni
 ]
 KEYNOTE_SPEAKERS = [
-    "UAVJNC", # Steph
-    "PTGUYZ", # Mariatta
-    "UYHZBE", # Trey
+    "UAVJNC",  # Steph
+    "PTGUYZ",  # Mariatta
+    "UYHZBE",  # Trey
 ]
 
 
@@ -121,7 +121,9 @@ def get_event_data(ctx):
         data = {
             "code": talk["code"],
             "title": talk["title"],
-            "slug": slugify(re.split(":|\?|\.", talk["title"])[0]),
+            "slug": slugify(
+                re.split("\?|\.", talk["title"])[0], word_boundary=True, max_length=64
+            ),
             "description": markdown.markdown(
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
@@ -133,6 +135,9 @@ def get_event_data(ctx):
             "type": talk["submission_type"]["en"],
         }
         # print(f"{talk['code']}: {type(qa_by_talk_code.get(talk['code']))}")
+
+        if data["type"] == "Keynote":
+            data["slug"] = f"{data['speakers'][0]['slug']}-keynote"
 
         if qa_by_talk_code.get(talk["code"], "False") != "False":
             data["qna"] = True
@@ -221,7 +226,6 @@ def get_event_data(ctx):
         if data["code"] in KEYNOTE_SPEAKERS:
             data["speaker_type"] = "keynote"
             data["keynote_index"] = KEYNOTE_SPEAKERS.index(data["code"])
-
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:

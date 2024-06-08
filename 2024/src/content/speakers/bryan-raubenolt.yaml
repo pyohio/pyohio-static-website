@@ -1,0 +1,25 @@
+avatar: https://pretalx.com/media/avatars/IMG_0863_77KbA19.JPG
+biography: <p>Bryan Raubenolt is a classically trained chemical and biomolecular engineer
+  (B.S. – Tulane University), and computational chemist (M.S. and PhD – University
+  of New Orleans) with an expertise in molecular simulations. He is currently a postdoctoral
+  research fellow in the Blankenberg Group at the Center for Computational Life Sciences
+  of The Cleveland Clinic’s Lerner Research Institute, where he develops open-source
+  bioinformatics and cheminformatics software for the Galaxy Project. He is an active
+  researcher at Discovery Accelerator, a joint center that utilizes Cleveland Clinic’s
+  research and clinical expertise and IBM’s global leadership in computing technologies.
+  He is part of a specialized team of researchers developing algorithms and attempting
+  to use Quantum System One (QS1) to unlock the fundamental physics of life at the
+  atom scale, hoping to help answer the oldest question in biology – how and why proteins
+  adopt the shapes that they do.</p>
+code: VBWRLY
+listed: true
+name: Bryan Raubenolt
+slug: bryan-raubenolt
+social_link_display: null
+social_link_type: null
+social_link_url: null
+speaker_type: speaker
+talks:
+- code: QE87TH
+  slug: quantum-computing-with-qiskit-in-galaxy
+  title: Quantum Computing with Qiskit in Galaxy

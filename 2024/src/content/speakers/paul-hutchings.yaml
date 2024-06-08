@@ -1,0 +1,14 @@
+avatar: https://www.pyohio.org/no-profile.png
+biography: <p>Placeholder</p>
+code: GLLNQF
+listed: true
+name: Paul Hutchings
+slug: paul-hutchings
+social_link_display: null
+social_link_type: null
+social_link_url: null
+speaker_type: speaker
+talks:
+- code: ZDN8QP
+  slug: zen-commandments
+  title: Zen Commandments

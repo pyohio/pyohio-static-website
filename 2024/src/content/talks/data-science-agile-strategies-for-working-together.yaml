@@ -1,0 +1,27 @@
+code: HPDBPB
+content_warnings: null
+description: '<p>Data science and Agile aren''t famous for getting along. Data scientists
+  complain that Agile frameworks are too restrictive and deadline-focused to accommodate
+  the type of work they do. Scrum masters and product owners have a hard timing planning
+  around unclear timelines and uncertain outcomes, and wish the data scientists would
+  just tell them how much effort a task will take.</p>
+
+  <p>But it doesn''t have to be this way! Data science and Agile can work together
+  to create a better system for everyone. In this talk I''ll highlight tips and pitfalls
+  from my own experience, as well as stories I''ve heard from my colleagues.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+slug: data-science-agile-strategies-for-working-together
+speakers:
+- avatar: https://pretalx.com/media/avatars/alyssa_profile_JSILWFg.jpeg
+  code: EJKPCG
+  name: Alyssa Batula
+  slug: alyssa-batula
+start_time: TBD
+stream_timestamp: ''
+title: 'Data Science & Agile: Strategies for Working Together'
+type: 30 Minute Talk
+youtube_url: null

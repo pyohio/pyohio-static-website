@@ -1,0 +1,14 @@
+avatar: https://www.pyohio.org/no-profile.png
+biography: <p>-</p>
+code: QGEHAQ
+listed: true
+name: Jamie Bliss
+slug: jamie-bliss
+social_link_display: null
+social_link_type: null
+social_link_url: null
+speaker_type: speaker
+talks:
+- code: QPUASH
+  slug: a-confession-of-my-python-sins
+  title: A Confession of my Python Sins

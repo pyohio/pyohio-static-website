@@ -1,0 +1,20 @@
+avatar: https://pretalx.com/media/avatars/IMG_5001_WrMybRW.png
+biography: <p><strong>Ruby Henry, Ph.D.</strong> embarked on her software development
+  journey a decade ago, transitioning from years of impactful academic research and
+  teaching. She founded <strong>Version^</strong> to help developers and project managers
+  upgrade software seamlessly. As the first named inventor on a US patent application
+  for code conversion, Ruby is at the forefront of innovation in the tech landscape.
+  She holds a B.A. in economics from Harvard University and a Ph.D. from the Toulouse
+  School of Economics.</p>
+code: KURFK3
+listed: true
+name: Ruby Henry, Ph.d.
+slug: ruby-henry-ph-d
+social_link_display: www.linkedin.com/in/rubyhenry/
+social_link_type: web
+social_link_url: https://www.linkedin.com/in/rubyhenry/
+speaker_type: speaker
+talks:
+- code: 8LLX9Y
+  slug: evolve-or-die-how-i-stopped-avoiding-and-starting-loving-python
+  title: 'Evolve or Die: How I Stopped Avoiding and Starting Loving Python Upgrades'

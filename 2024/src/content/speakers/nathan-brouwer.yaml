@@ -1,0 +1,19 @@
+avatar: https://pretalx.com/media/avatars/brouwer_headshot_t2VsOXr.jpg
+biography: <p>I am a biologist, data scientist and educator. In May I concluded my
+  last semester as an Assistant Teaching Professor at the University of Pittsburgh,
+  where I taught computational biology, science communication, biological data analysis,
+  and introductory biology. I am in the process to pivoting to full-time work in data
+  science.</p>
+code: C3JF9W
+listed: true
+name: Nathan Brouwer
+slug: nathan-brouwer
+social_link_display: www.linkedin.com/in/nathan-brouwer-phd-97100980/
+social_link_type: web
+social_link_url: https://www.linkedin.com/in/nathan-brouwer-phd-97100980/
+speaker_type: speaker
+talks:
+- code: ZXHQKT
+  slug: 23-python-and-me-using-machine-learning-in-python-to-analyze
+  title: '23, Python and Me: Using Machine Learning In Python to Analyze Consumer
+    Genomics Data'

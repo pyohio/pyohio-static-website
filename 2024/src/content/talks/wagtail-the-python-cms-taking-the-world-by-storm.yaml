@@ -1,0 +1,33 @@
+code: WMJDDE
+content_warnings: null
+description: '<p>What do NASA, Google Blogs, The Motley Fool, CFPB.gov, and the British
+  National Health Service all have in common? Their websites are powered by Wagtail,
+  the fastest-growing Python CMS that you''ve probably never heard of. Because it
+  is 100% free and open-source, you can build your own website with Wagtail too!</p>
+
+  <p>We''ll discuss:<br />
+
+  * What is Wagtail and what does it do?<br />
+
+  * How does it compare to other systems such as WordPress?<br />
+
+  * Overview of the Wagtail open-source project. How a team of volunteers makes this
+  all possible.<br />
+
+  * Demo and brief getting started tutorial.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Wagtail
+slug: wagtail-the-python-cms-taking-the-world-by-storm
+speakers:
+- avatar: https://pretalx.com/media/avatars/square-vince_g23uQZP.jpg
+  code: R3UWNF
+  name: Vince Salvino
+  slug: vince-salvino
+start_time: TBD
+stream_timestamp: ''
+title: 'Wagtail: the Python CMS taking the world by storm'
+type: 30 Minute Talk
+youtube_url: null
