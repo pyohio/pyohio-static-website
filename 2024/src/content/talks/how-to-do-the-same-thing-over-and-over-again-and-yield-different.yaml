@@ -10,7 +10,7 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: How to do the same thing over and over again and yield different results
+qna_channel: How to Do the Same Thing Over and Over Again and Yield Different Results
 slug: how-to-do-the-same-thing-over-and-over-again-and-yield-different
 speakers:
 - avatar: https://pretalx.com/media/avatars/jess_cAYx6nn.jpeg
@@ -19,6 +19,6 @@ speakers:
   slug: jessica-garson
 start_time: TBD
 stream_timestamp: ''
-title: How to do the same thing over and over again and yield different results
+title: How to Do the Same Thing Over and Over Again and Yield Different Results
 type: 30 Minute Talk
 youtube_url: null

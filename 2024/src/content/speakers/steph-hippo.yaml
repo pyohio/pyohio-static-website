@@ -17,9 +17,10 @@ keynote_index: 0
 listed: true
 name: Steph Hippo
 slug: steph-hippo
-social_link_display: https://linkedin.com/in/stephhippo
-social_link_type: linkedin
-social_link_url: https://linkedin.com/in/stephhippo
+social_links:
+- social_link_display: linkedin.com/in/stephhippo
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/stephhippo
 speaker_type: keynote
 talks:
 - code: EJSYK9

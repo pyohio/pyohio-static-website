@@ -11,7 +11,7 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: Sorting 18650 Cells for Do-it-yourself Batteries
+qna_channel: Sorting 18650 Cells for Do-It-Yourself Batteries
 slug: sorting-18650-cells-for-do-it-yourself-batteries
 speakers:
 - avatar: https://pretalx.com/media/avatars/profile_3iOZ0Im.jpg
@@ -20,6 +20,6 @@ speakers:
   slug: terry-howald
 start_time: TBD
 stream_timestamp: ''
-title: Sorting 18650 Cells for Do-it-yourself Batteries
+title: Sorting 18650 Cells for Do-It-Yourself Batteries
 type: 30 Minute Talk
 youtube_url: null

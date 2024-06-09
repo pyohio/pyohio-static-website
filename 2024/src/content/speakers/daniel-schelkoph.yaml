@@ -8,9 +8,7 @@ code: NL3RWX
 listed: true
 name: Daniel Schelkoph
 slug: daniel-schelkoph
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: EWVQHG

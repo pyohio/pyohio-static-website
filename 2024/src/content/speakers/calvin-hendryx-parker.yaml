@@ -19,9 +19,10 @@ code: ME3WGG
 listed: true
 name: Calvin Hendryx-Parker
 slug: calvin-hendryx-parker
-social_link_display: www.linkedin.com/in/calvinhp/
-social_link_type: web
-social_link_url: https://www.linkedin.com/in/calvinhp/
+social_links:
+- social_link_display: linkedin.com/in/calvinhp/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/calvinhp/
 speaker_type: speaker
 talks:
 - code: VWWTQF

@@ -17,9 +17,10 @@ code: CHGH3X
 listed: true
 name: Fabio Cumbo
 slug: fabio-cumbo
-social_link_display: '@cumbofabio'
-social_link_type: twitter
-social_link_url: https://twitter.com/cumbofabio
+social_links:
+- social_link_display: '@cumbofabio'
+  social_link_type: fa6-brands:twitter
+  social_link_url: https://twitter.com/cumbofabio
 speaker_type: speaker
 talks:
 - code: YMAT93

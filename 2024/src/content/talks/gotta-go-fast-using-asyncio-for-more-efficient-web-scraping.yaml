@@ -13,7 +13,7 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: Gotta go Fast! Using Asyncio for more Efficient Web Scraping
+qna_channel: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping
 slug: gotta-go-fast-using-asyncio-for-more-efficient-web-scraping
 speakers:
 - avatar: https://pretalx.com/media/avatars/sagnewshreds_E8xEubp.jpg
@@ -22,6 +22,6 @@ speakers:
   slug: samuel-agnew
 start_time: TBD
 stream_timestamp: ''
-title: Gotta go Fast! Using Asyncio for more Efficient Web Scraping
+title: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping
 type: 30 Minute Talk
 youtube_url: null

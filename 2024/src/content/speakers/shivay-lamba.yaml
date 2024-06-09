@@ -7,9 +7,10 @@ code: T9TYF8
 listed: true
 name: Shivay Lamba
 slug: shivay-lamba
-social_link_display: x.com/howdevelop
-social_link_type: web
-social_link_url: https://x.com/howdevelop
+social_links:
+- social_link_display: '@howdevelop'
+  social_link_type: fa6-brands:x-twitter
+  social_link_url: https://x.com/howdevelop
 speaker_type: speaker
 talks:
 - code: FJ97TP

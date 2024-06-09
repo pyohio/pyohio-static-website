@@ -4,12 +4,13 @@ code: M8FBJN
 listed: true
 name: Keith Martin Machina
 slug: keith-martin-machina
-social_link_display: www.linkedin.com/in/keith-martin-machina-39b584148/
-social_link_type: web
-social_link_url: https://www.linkedin.com/in/keith-martin-machina-39b584148/
+social_links:
+- social_link_display: linkedin.com/in/keith-martin-machina-39b584148/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/keith-martin-machina-39b584148/
 speaker_type: speaker
 talks:
 - code: KSJSPY
   slug: a-novel-framework-to-efficient-path-planning-through-real-time
-  title: A NOVEL FRAMEWORK TO EFFICIENT PATH PLANNING THROUGH REAL-TIME COST MAP GENERATION
-    USING NEURAL NETWORKS FOR SEARCH AND RESCUE MISSIONS
+  title: A Novel Framework to Efficient Path Planning Through Real-time Cost Map Generation
+    Using Neural Networks for Search and Rescue Missions

@@ -9,11 +9,9 @@ code: R3UWNF
 listed: true
 name: Vince Salvino
 slug: vince-salvino
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: WMJDDE
   slug: wagtail-the-python-cms-taking-the-world-by-storm
-  title: 'Wagtail: the Python CMS taking the world by storm'
+  title: 'Wagtail: The Python CMS Taking the World by Storm'

@@ -6,11 +6,12 @@ code: UKGFFX
 listed: true
 name: Josh Schneider
 slug: josh-schneider
-social_link_display: '@diji@mastodon.social'
-social_link_type: mastodon
-social_link_url: https://mastodon.social/@diji
+social_links:
+- social_link_display: '@diji@mastodon.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://mastodon.social/@diji
 speaker_type: speaker
 talks:
 - code: DQNF8G
   slug: hot-pathlib-not-string-paths
-  title: 'Hot: pathlib, Not: string paths'
+  title: 'Hot: Pathlib, Not: String Paths'

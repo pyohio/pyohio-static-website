@@ -7,11 +7,9 @@ code: TDNT9P
 listed: true
 name: Samuel Agnew
 slug: samuel-agnew
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: 7GPCCR
   slug: gotta-go-fast-using-asyncio-for-more-efficient-web-scraping
-  title: Gotta go Fast! Using Asyncio for more Efficient Web Scraping
+  title: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping

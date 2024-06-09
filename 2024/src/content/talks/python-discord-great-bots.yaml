@@ -12,7 +12,7 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: Python+Discord = Great bots!
+qna_channel: Python + Discord = Great Bots!
 slug: python-discord-great-bots
 speakers:
 - avatar: https://pretalx.com/media/avatars/Adetayo_Alex_Oladele_Jlo9fS9.jpeg
@@ -21,6 +21,6 @@ speakers:
   slug: alex-oladele
 start_time: TBD
 stream_timestamp: ''
-title: Python+Discord = Great bots!
+title: Python + Discord = Great Bots!
 type: 30 Minute Talk
 youtube_url: null

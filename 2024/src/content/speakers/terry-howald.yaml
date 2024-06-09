@@ -11,11 +11,9 @@ code: Q87BKZ
 listed: true
 name: Terry Howald
 slug: terry-howald
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: Y3RNEG
   slug: sorting-18650-cells-for-do-it-yourself-batteries
-  title: Sorting 18650 Cells for Do-it-yourself Batteries
+  title: Sorting 18650 Cells for Do-It-Yourself Batteries

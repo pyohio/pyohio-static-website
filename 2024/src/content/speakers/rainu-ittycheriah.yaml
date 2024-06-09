@@ -1,12 +1,13 @@
 avatar: https://www.pyohio.org/no-profile.png
-biography: ''
+biography: <p>Bio forthcoming</p>
 code: R9HB7N
 listed: true
 name: Rainu Ittycheriah
 slug: rainu-ittycheriah
-social_link_display: '@rainuitty on Mastodon'
-social_link_type: web
-social_link_url: '@rainuitty on Mastodon'
+social_links:
+- social_link_display: '@rainuitty@mastodon.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://mastodon.social/@rainuitty
 speaker_type: speaker
 talks:
 - code: P397LH

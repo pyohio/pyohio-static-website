@@ -6,9 +6,10 @@ code: HVAES8
 listed: true
 name: Al Sweigart
 slug: al-sweigart
-social_link_display: '@AlSweigart@mastodon.social'
-social_link_type: mastodon
-social_link_url: https://mastodon.social/@AlSweigart
+social_links:
+- social_link_display: '@AlSweigart@mastodon.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://mastodon.social/@AlSweigart
 speaker_type: speaker
 talks:
 - code: WY9FAP

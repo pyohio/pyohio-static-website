@@ -51,7 +51,7 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: Is Python your TYPE of programming language
+qna_channel: Is Python Your TYPE of Programming Language
 slug: is-python-your-type-of-programming-language
 speakers:
 - avatar: https://pretalx.com/media/avatars/jack-bennett-headshot-bw-edited-avatar-profile-pic_RQyocEo.jpg
@@ -60,7 +60,7 @@ speakers:
   slug: jack-bennett
 start_time: TBD
 stream_timestamp: ''
-title: Is Python your TYPE of programming language? How to use static typing in Python
-  with type hints, MyPy and Pydantic
+title: Is Python Your TYPE of Programming Language? How to Use Static Typing in Python
+  With Type Hints, MyPy and Pydantic
 type: 30 Minute Talk
 youtube_url: null

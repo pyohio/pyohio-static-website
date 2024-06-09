@@ -20,9 +20,10 @@ code: UVE988
 listed: true
 name: Leon Adato
 slug: leon-adato
-social_link_display: www.linkedin.com/in/leonadato/
-social_link_type: web
-social_link_url: https://www.linkedin.com/in/leonadato/
+social_links:
+- social_link_display: linkedin.com/in/leonadato/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/leonadato/
 speaker_type: speaker
 talks:
 - code: HJH7YH

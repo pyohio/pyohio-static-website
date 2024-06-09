@@ -10,9 +10,16 @@ keynote_index: 1
 listed: true
 name: Mariatta
 slug: mariatta
-social_link_display: '@mariatta@www.linkedin.com/in/mariatta/, x.com/mariatta, fosstodon.org'
-social_link_type: mastodon
-social_link_url: https://www.linkedin.com/in/mariatta/, https://x.com/mariatta, https://fosstodon.org/@mariatta
+social_links:
+- social_link_display: linkedin.com/in/mariatta/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/mariatta/
+- social_link_display: '@mariatta'
+  social_link_type: fa6-brands:x-twitter
+  social_link_url: https://x.com/mariatta
+- social_link_display: '@mariatta@fosstodon.org'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://fosstodon.org/@mariatta
 speaker_type: keynote
 talks:
 - code: KHNSQ3

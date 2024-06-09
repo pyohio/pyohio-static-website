@@ -10,9 +10,10 @@ code: KURFK3
 listed: true
 name: Ruby Henry, Ph.d.
 slug: ruby-henry-ph-d
-social_link_display: www.linkedin.com/in/rubyhenry/
-social_link_type: web
-social_link_url: https://www.linkedin.com/in/rubyhenry/
+social_links:
+- social_link_display: linkedin.com/in/rubyhenry/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/rubyhenry/
 speaker_type: speaker
 talks:
 - code: 8LLX9Y

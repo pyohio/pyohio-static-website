@@ -15,7 +15,7 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: Asyncio By Example
+qna_channel: Asyncio by Example
 slug: asyncio-by-example
 speakers:
 - avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
@@ -24,6 +24,6 @@ speakers:
   slug: andrew-kubera
 start_time: TBD
 stream_timestamp: ''
-title: Asyncio By Example
+title: Asyncio by Example
 type: 30 Minute Talk
 youtube_url: null

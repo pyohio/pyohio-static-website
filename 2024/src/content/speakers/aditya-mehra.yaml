@@ -10,12 +10,10 @@ code: BPDLRN
 listed: true
 name: Aditya Mehra
 slug: aditya-mehra
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: 8PZZLK
   slug: introducing-immortal-objects-building-block-towards-a-multi-core
-  title: 'Introducing Immortal Objects: building block towards a multi-core Python
-    runtime.'
+  title: 'Introducing Immortal Objects: Building Block Towards a Multi-core Python
+    Runtime'

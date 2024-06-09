@@ -11,9 +11,7 @@ code: EJKPCG
 listed: true
 name: Alyssa Batula
 slug: alyssa-batula
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: HPDBPB

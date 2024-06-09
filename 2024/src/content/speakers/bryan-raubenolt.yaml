@@ -15,9 +15,7 @@ code: VBWRLY
 listed: true
 name: Bryan Raubenolt
 slug: bryan-raubenolt
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: QE87TH

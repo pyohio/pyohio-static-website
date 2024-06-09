@@ -10,11 +10,12 @@ code: QJCEWP
 listed: true
 name: Jessica Garson
 slug: jessica-garson
-social_link_display: twitter.com/jessicagarson
-social_link_type: web
-social_link_url: twitter.com/jessicagarson
+social_links:
+- social_link_display: '@jessicagarson'
+  social_link_type: fa6-brands:twitter
+  social_link_url: https://twitter.com/jessicagarson
 speaker_type: speaker
 talks:
 - code: LUKKXH
   slug: how-to-do-the-same-thing-over-and-over-again-and-yield-different
-  title: How to do the same thing over and over again and yield different results
+  title: How to Do the Same Thing Over and Over Again and Yield Different Results

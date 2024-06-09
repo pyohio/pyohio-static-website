@@ -8,9 +8,10 @@ code: HMNDYW
 listed: true
 name: Sameer Shukla
 slug: sameer-shukla
-social_link_display: '@SameerKShukla'
-social_link_type: web
-social_link_url: '@SameerKShukla'
+social_links:
+- social_link_display: '@SameerKShukla'
+  social_link_type: fa6-brands:twitter
+  social_link_url: https://twitter.com/SameerKShukla
 speaker_type: speaker
 talks:
 - code: DCZDL9

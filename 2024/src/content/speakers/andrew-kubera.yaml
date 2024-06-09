@@ -7,11 +7,9 @@ code: PWN7XL
 listed: true
 name: Andrew Kubera
 slug: andrew-kubera
-social_link_display: null
-social_link_type: null
-social_link_url: null
+social_links: []
 speaker_type: speaker
 talks:
 - code: XXQLZ3
   slug: asyncio-by-example
-  title: Asyncio By Example
+  title: Asyncio by Example

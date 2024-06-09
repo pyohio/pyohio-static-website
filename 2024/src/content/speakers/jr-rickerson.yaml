@@ -12,9 +12,10 @@ code: AQVCEK
 listed: true
 name: JR Rickerson
 slug: jr-rickerson
-social_link_display: '@jrrickerson@fosstodon.org (Mastodon)'
-social_link_type: web
-social_link_url: '@jrrickerson@fosstodon.org (Mastodon)'
+social_links:
+- social_link_display: '@jrrickerson@fosstodon.org'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://fosstodon.org/@jrrickerson
 speaker_type: speaker
 talks:
 - code: E8JAWJ
