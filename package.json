@@ -4,7 +4,9 @@
   "version": "2024.0.1",
   "private": true,
   "author": "PyOhio",
-  "dependencies": {},
+  "dependencies": {
+    "astro-icon": "^1.1.0"
+  },
   "devDependencies": {
     "@onwidget/astrowind": "file:./2024",
     "prettier": "^2.2.1"

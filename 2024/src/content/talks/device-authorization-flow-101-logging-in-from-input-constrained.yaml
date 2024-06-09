@@ -1,0 +1,30 @@
+code: YZMLAA
+content_warnings: null
+description: '<p>Have you ever heard of device authorization flow? You may have not
+  heard it but good chances are you already used it.</p>
+
+  <p>Device flow allows you to login to your applications on input constrained devices,
+  think of IoT devices or smart TVs for example.</p>
+
+  <p>Great applications allow the user to continue the login process on a more comfortable
+  device instead of using, for example, the virtual keyboard on a SmartTV.</p>
+
+  <p>If you are developing applications that need this type of connectivity come to
+  this talk to learn what device flow actually is, how it works, and better yet, see
+  it working in an application that integrates Python (using FastAPI) and Micropython.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Device Authorization Flow 101
+slug: device-authorization-flow-101-logging-in-from-input-constrained
+speakers:
+- avatar: https://pretalx.com/media/avatars/profile-jt_JQdJmlQ.png
+  code: V9AARY
+  name: Jessica Temporal
+  slug: jessica-temporal
+start_time: TBD
+stream_timestamp: ''
+title: 'Device Authorization Flow 101: Logging in From Input Constrained Devices'
+type: 30 Minute Talk
+youtube_url: null

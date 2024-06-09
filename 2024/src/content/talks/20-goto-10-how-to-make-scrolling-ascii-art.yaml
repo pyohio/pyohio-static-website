@@ -1,0 +1,23 @@
+code: WY9FAP
+content_warnings: null
+description: <p>Scroll art is a form of animated ASCII art that beginners can make.
+  Using loops, print(), and random numbers, you'll learn how to make a surprisingly
+  wide variety of digital art within the constraints of text strings. You'll also
+  learn about the history of ASCII art, computer education, and where to find inspiration
+  for your own digital art.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+slug: 20-goto-10-how-to-make-scrolling-ascii-art
+speakers:
+- avatar: https://pretalx.com/media/avatars/f058499cabc6e56e7622015b4db79304_gf1pFUs.jpg
+  code: HVAES8
+  name: Al Sweigart
+  slug: al-sweigart
+start_time: TBD
+stream_timestamp: ''
+title: '20 GOTO 10: How to Make Scrolling ASCII Art'
+type: 30 Minute Talk
+youtube_url: null

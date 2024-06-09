@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/IMG_4438_R62I7Vt.jpg
+biography: <p>A Masters in Artificial Intelligence graduate.</p>
+code: M8FBJN
+listed: true
+name: Keith Martin Machina
+slug: keith-martin-machina
+social_links:
+- social_link_display: linkedin.com/in/keith-martin-machina-39b584148/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/keith-martin-machina-39b584148/
+speaker_type: speaker
+talks:
+- code: KSJSPY
+  slug: a-novel-framework-to-efficient-path-planning-through-real-time
+  title: A Novel Framework to Efficient Path Planning Through Real-time Cost Map Generation
+    Using Neural Networks for Search and Rescue Missions

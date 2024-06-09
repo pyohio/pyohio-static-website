@@ -1,0 +1,18 @@
+avatar: https://pretalx.com/media/avatars/6c3157c0aec2983310b14b1a3aaf0ef5_k2EjKmd.jpg
+biography: <p>I'm Shivay Lamba, a software engineer specializing in Web Development,
+  Machine Learning, and DevOps. I am also a Developer Relations Consultant helping
+  various startups improve their developer experience. I am also an open-source contributor,
+  maintainer, and mentor.</p>
+code: T9TYF8
+listed: true
+name: Shivay Lamba
+slug: shivay-lamba
+social_links:
+- social_link_display: '@howdevelop'
+  social_link_type: fa6-brands:x-twitter
+  social_link_url: https://x.com/howdevelop
+speaker_type: speaker
+talks:
+- code: FJ97TP
+  slug: serverless-ai-inferencing-using-python-and-webassembly
+  title: Serverless AI Inferencing Using Python and WebAssembly

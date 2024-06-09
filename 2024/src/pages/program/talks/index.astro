@@ -1,9 +1,9 @@
 ---
-import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 
 const talks = await getCollection('talks', ({ data }) => {
-  return data.type !== 'Break'
+  return data.type == '30 Minute Talk'
 })
 ---
 
@@ -11,25 +11,23 @@ const talks = await getCollection('talks', ({ data }) => {
   <section class="my-12">
     <div class="container">
       <h1>Talks</h1>
-      <p class="italic">Talks will stream Saturday, December 16 starting at 10am EST. See <a href="/2023/talks/schedule/">full schedule</a> for talk times.</p>
+      <p class="italic">Additional talks are pending speaker confirmation. Full talk schedule to be announced closer to the event.</p>
     </div>
   </section>
   <section class="my-12">
-    <div class="space-content container">
-      <ul>
+    <div class=" container">
         {
           talks.map((talk) => (
-            <li>
-              <h3>
-                <a href={talk.data.slug}>{talk.data.title}</a>
-              </h3>
-              <p>
+            <div>
+              <h2 class="text-2xl">
+                <a href={'/2024/program/talks/' + talk.data.slug}>{talk.data.title}</a>
+              </h2>
+              <p class="mb-4">
                 by <span>{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
               </p>
-            </li>
+            </div>
           ))
         }
-      </ul>
     </div>
   </section>
 </DefaultLayout>

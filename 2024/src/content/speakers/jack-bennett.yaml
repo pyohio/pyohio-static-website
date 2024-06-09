@@ -1,0 +1,13 @@
+avatar: https://pretalx.com/media/avatars/jack-bennett-headshot-bw-edited-avatar-profile-pic_RQyocEo.jpg
+biography: <p>Bio forthcoming</p>
+code: WDRWVW
+listed: true
+name: Jack Bennett
+slug: jack-bennett
+social_links: []
+speaker_type: speaker
+talks:
+- code: HCM8XD
+  slug: is-python-your-type-of-programming-language
+  title: Is Python Your TYPE of Programming Language? How to Use Static Typing in
+    Python With Type Hints, MyPy and Pydantic

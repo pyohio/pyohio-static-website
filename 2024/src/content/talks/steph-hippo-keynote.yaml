@@ -1,0 +1,19 @@
+code: EJSYK9
+content_warnings: null
+description: <p>TBA</p>
+discord_channel_id: ''
+duration: 45
+end_time: TBD
+qna: false
+qna_channel: null
+slug: steph-hippo-keynote
+speakers:
+- avatar: https://pretalx.com/media/avatars/23SSC_WILBhs-139_4Q4w5Jn-cropped_waCp668.jpg
+  code: UAVJNC
+  name: Steph Hippo
+  slug: steph-hippo
+start_time: TBD
+stream_timestamp: ''
+title: Keynote
+type: Keynote
+youtube_url: null

@@ -2,7 +2,7 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { Picture } from 'astro-imagetools/components'
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 
 export async function getStaticPaths() {
   const speakers = await getCollection('speakers', ({ data }) => {
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 const { speaker } = Astro.props
 ---
 
-<DefaultLayout title="Talks">
+<DefaultLayout title={speaker.data.name}>
   <section class="mt-12">
     <div class="container">
       <h1>{speaker.data.name}</h1>
@@ -37,13 +37,14 @@ const { speaker } = Astro.props
         }}
       />
       {
-        speaker.data.social_link_url && (
+        speaker.data.social_links.map((social_link) => (
           <p>
-            <a href={speaker.data.social_link_url}>
-              <Icon class="inline h-6 pr-1" name={'mdi:' + speaker.data.social_link_type} />
-              {speaker.data.social_link_display}
+            <a href={social_link.social_link_url}>
+              <Icon class="inline h-6 pr-1" name={social_link.social_link_type} />
+              {social_link.social_link_display}
             </a>
           </p>
+        )
         )
       }
     </div>
@@ -59,7 +60,7 @@ const { speaker } = Astro.props
       {
         speaker.data.talks.map((talk) => (
           <p>
-            <a href={'/2023/talks/' + talk.slug}>{talk.title}</a>
+            <a href={'/2024/program/talks/' + talk.slug}>{talk.title}</a>
           </p>
         ))
       }

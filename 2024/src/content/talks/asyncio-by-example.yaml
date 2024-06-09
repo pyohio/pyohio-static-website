@@ -1,0 +1,29 @@
+code: XXQLZ3
+content_warnings: null
+description: '<p>Async functions in Python are a great way to simplify otherwise complex
+  code involving network calls, database queries, or in general waiting and responding
+  to "events". But before you can asycio.run you must learn how to walk-through some
+  examples. </p>
+
+  <p>This talk will start with the async/await basics, then show common patterns encountered
+  when solving problems with Python''s asyncio module, and introduce some of its newer
+  features, such as Barriers, TaskGroups, and ExceptionGroups.<br />
+
+  This is a code-heavy, zero-to-hero talk where all the examples are run, and we can
+  experiment and change the code if the audience has questions.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Asyncio by Example
+slug: asyncio-by-example
+speakers:
+- avatar: https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg
+  code: PWN7XL
+  name: Andrew Kubera
+  slug: andrew-kubera
+start_time: TBD
+stream_timestamp: ''
+title: Asyncio by Example
+type: 30 Minute Talk
+youtube_url: null

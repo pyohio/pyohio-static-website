@@ -1,0 +1,24 @@
+code: LUKKXH
+content_warnings: null
+description: <p>When I started working with Elasticsearch, the data in my index quickly
+  needed to be updated. I built a solution using Cloud Functions and Cloud Scheduler
+  in GCP to update my data automatically, a paradigm I've used for creative projects.
+  This talk will outline strategies for automating routine processes while ensuring
+  that the outcomes adapt to changing requirements, enhancing project innovation and
+  data accuracy.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: How to Do the Same Thing Over and Over Again and Yield Different Results
+slug: how-to-do-the-same-thing-over-and-over-again-and-yield-different
+speakers:
+- avatar: https://pretalx.com/media/avatars/jess_cAYx6nn.jpeg
+  code: QJCEWP
+  name: Jessica Garson
+  slug: jessica-garson
+start_time: TBD
+stream_timestamp: ''
+title: How to Do the Same Thing Over and Over Again and Yield Different Results
+type: 30 Minute Talk
+youtube_url: null

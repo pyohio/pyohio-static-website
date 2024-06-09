@@ -1,0 +1,28 @@
+avatar: https://pretalx.com/media/avatars/Adetayo_Alex_Oladele_Jlo9fS9.jpeg
+biography: <p>Alex is a board game enthusiast, amateur yo-yoer , cat lover and Site
+  Reliability Engineer (SRE) at IBM in Raleigh, NC. His primary focus as an SRE, is
+  managing the world's largest GitHub Enterprise Server instance and uplifting his
+  team any way he can. In his free-time Alex does a decent amount of Python development,
+  and is often expressing his love for it. Alex serves as a board member on the student-driven
+  nonprofit InspireNC, an organization dedicated to the promotion of knowledge, and
+  involvement in the fields of science, technology, engineering, arts, and mathematics
+  (STEAM).</p>
+code: SZA7TK
+listed: true
+name: Alex Oladele
+slug: alex-oladele
+social_links:
+- social_link_display: linkedin.com/in/alexoladele
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/alexoladele
+- social_link_display: '@wizkid_alex@triangletoot.party'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://triangletoot.party/@wizkid_alex
+- social_link_display: '@wizkid_alex'
+  social_link_type: fa6-brands:twitter
+  social_link_url: https://twitter.com/wizkid_alex
+speaker_type: speaker
+talks:
+- code: NC9JDX
+  slug: python-discord-great-bots
+  title: Python + Discord = Great Bots!

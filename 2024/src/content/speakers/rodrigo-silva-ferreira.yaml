@@ -1,0 +1,21 @@
+avatar: https://pretalx.com/media/avatars/RodrigoPhoto_Vbzzfu5.jpg
+biography: <p>Rodrigo Silva Ferreira was born and raised in Salvador, Brazil. Although
+  his background is in analytical chemistry, Rodrigo currently works as a software
+  quality engineer at a statistical software company in central Pennsylvania. When
+  he is not busy testing statistical products, Rodrigo enjoys learning about how statistics
+  and data can be used to help address complex public policy problems. He is interested
+  in bridging the gap between chemistry, statistics, and public policy.</p>
+code: UYRBHX
+listed: true
+name: Rodrigo Silva Ferreira
+slug: rodrigo-silva-ferreira
+social_links:
+- social_link_display: linkedin.com/in/rsf309/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/rsf309/
+speaker_type: speaker
+talks:
+- code: YAQZHH
+  slug: signal-processing-in-electrochemistry-with-python-applications
+  title: 'Signal Processing in Electrochemistry with Python: Applications to the US
+    Opioids Crisis'

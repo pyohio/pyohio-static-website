@@ -1,0 +1,25 @@
+code: Y3RNEG
+content_warnings: null
+description: <p>Do-it-yourself batteries can be made with salvaged 18650 cells, but
+  there are a number of steps to the process. First the cells must be extracted and
+  tested. The test data are then stored and analyzed to create cell configurations
+  for targeted battery sizes. Since a large number of cells are required to build
+  nontrivial batteries, this process presents an excellent learning opportunity for
+  data analysis. Here we examine how Python is leveraged to sort cell test data for
+  battery creation.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Sorting 18650 Cells for Do-It-Yourself Batteries
+slug: sorting-18650-cells-for-do-it-yourself-batteries
+speakers:
+- avatar: https://pretalx.com/media/avatars/profile_3iOZ0Im.jpg
+  code: Q87BKZ
+  name: Terry Howald
+  slug: terry-howald
+start_time: TBD
+stream_timestamp: ''
+title: Sorting 18650 Cells for Do-It-Yourself Batteries
+type: 30 Minute Talk
+youtube_url: null

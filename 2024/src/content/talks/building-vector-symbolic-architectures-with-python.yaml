@@ -1,0 +1,35 @@
+code: YMAT93
+content_warnings: null
+description: '<p>Vector-Symbolic Architectures (a.k.a. Hyperdimensional Computing)
+  is a relatively new computational paradigm that involves the use of random vectors
+  in a high-dimensional space to represent and process information. As a computational
+  paradigm, it finds applications in a wide range of fields, including artificial
+  intelligence, natural language processing, internet-of-things, robotics, bioinformatics,
+  and other scientific domains.</p>
+
+  <p>Here we are going to introduce some fundamental concepts at the base of Hyperdimensional
+  Computing, following a presentation of <em>hdlib</em>, a library for building Vector-Symbolic
+  Architectures with Python. Finally, we are going to see how to easily build a machine
+  learning model based on the Hyperdimensional Computing paradigm as a practical use
+  case.</p>
+
+  <p>As a reference, <em>hdlib</em> is open-source, it is available on GitHub at <a
+  href="https://github.com/cumbof/hdlib"><a href="https://github.com/cumbof/hdlib">https://github.com/cumbof/hdlib</a></a>,
+  and it is published on the Journal of Open Source Software at <a href="https://doi.org/10.21105/joss.05704"><a
+  href="https://doi.org/10.21105/joss.05704">https://doi.org/10.21105/joss.05704</a></a>.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Building Vector-Symbolic Architectures with Python
+slug: building-vector-symbolic-architectures-with-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/0b0a7f2cfe3843afe6fde5efe51d2caf_vO6iHjv.jpg
+  code: CHGH3X
+  name: Fabio Cumbo
+  slug: fabio-cumbo
+start_time: TBD
+stream_timestamp: ''
+title: Building Vector-Symbolic Architectures with Python
+type: 30 Minute Talk
+youtube_url: null

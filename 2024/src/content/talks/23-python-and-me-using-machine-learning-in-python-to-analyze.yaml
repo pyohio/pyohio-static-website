@@ -1,0 +1,31 @@
+code: ZXHQKT
+content_warnings: null
+description: <p>We are over 20 years into the genomics era, with new insights into
+  human health and our recent evolutionary history emerging almost daily. Genomics
+  may seem like the province of PhDs and R&amp;D departments, but anyone with basic
+  Python skills can navigate a genomics data pipeline and explore human genetic diversity,
+  including their own! In this presentation, I will introduce the fields of population
+  and health genomics, and the types of domain-specific data used for genomics study.
+  I will then demonstrate how you can use Python to visualize and analyze public data
+  sources like the 1000 Genomes Project using unsupervised machine learning methods,
+  and how to investigate your own genomics data from sources like <em>23andMe</em>.
+  Since many people are not comfortable giving for-profit companies access to their
+  genomic data, I'll also show how you can simulate realistic personal genomic data
+  via a supervised ML model.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: 23, Python and Me
+slug: 23-python-and-me-using-machine-learning-in-python-to-analyze
+speakers:
+- avatar: https://pretalx.com/media/avatars/brouwer_headshot_t2VsOXr.jpg
+  code: C3JF9W
+  name: Nathan Brouwer
+  slug: nathan-brouwer
+start_time: TBD
+stream_timestamp: ''
+title: '23, Python and Me: Using Machine Learning in Python to Analyze Consumer Genomics
+  Data'
+type: 30 Minute Talk
+youtube_url: null

@@ -14,11 +14,12 @@ keynote_index: 2
 listed: true
 name: Trey Hunner
 slug: trey-hunner
-social_link_display: '@treyhunner'
-social_link_type: twitter
-social_link_url: https://twitter.com/treyhunner
+social_links:
+- social_link_display: '@treyhunner'
+  social_link_type: fa6-brands:twitter
+  social_link_url: https://twitter.com/treyhunner
 speaker_type: keynote
 talks:
 - code: FAKV3H
-  slug: keynote
+  slug: trey-hunner-keynote
   title: Keynote

@@ -8,18 +8,18 @@ const speakers = await getCollection('speakers', ({ data }) => {
 })
 ---
 
-<DefaultLayout title="Talks">
+<DefaultLayout title="Speakers">
   <section class="my-12">
     <div class="container">
       <h1>Speakers</h1>
     </div>
   </section>
   <section class="my-12">
-    <div class="mx-12 flex flex-wrap">
+    <div class="mx-12 flex flex-wrap container">
       {
         speakers.map((speaker) => (
           <div class="mx-6 min-w-[8rem] max-w-[9%] py-3 text-center">
-            <a href={speaker.data.slug}>
+            <a href={'/2024/program/speakers/' + speaker.data.slug}>
               <Picture
                 src={speaker.data.avatar}
                 alt={speaker.data.name + ' profile photo'}
@@ -34,7 +34,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
                 }}
               />
             </a>
-            <a href={speaker.data.slug}>{speaker.data.name}</a>
+            <a href={'/2024/program/speakers/' + speaker.data.slug}>{speaker.data.name}</a>
           </div>
         ))
       }

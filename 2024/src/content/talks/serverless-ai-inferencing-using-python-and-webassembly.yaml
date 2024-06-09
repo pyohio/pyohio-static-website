@@ -1,0 +1,24 @@
+code: FJ97TP
+content_warnings: null
+description: <p>Unleashing the power of serverless AI has never been more accessible,
+  and Python enthusiasts are in for a treat! Dive into this talk to discover how WebAssembly
+  based Open Source project Spin seamlessly bridges the gap between Python and Serverless
+  AI. There are no models to download. Just create, build and deploy! This talk will
+  guide you on building your own serverless AI inferencing using Python and promises
+  to elevate your game instantly.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Serverless AI Inferencing Using Python and WebAssembly
+slug: serverless-ai-inferencing-using-python-and-webassembly
+speakers:
+- avatar: https://pretalx.com/media/avatars/6c3157c0aec2983310b14b1a3aaf0ef5_k2EjKmd.jpg
+  code: T9TYF8
+  name: Shivay Lamba
+  slug: shivay-lamba
+start_time: TBD
+stream_timestamp: ''
+title: Serverless AI Inferencing Using Python and WebAssembly
+type: 30 Minute Talk
+youtube_url: null

@@ -1,0 +1,15 @@
+avatar: https://www.pyohio.org/no-profile.png
+biography: <p>Bio forthcoming</p>
+code: R9HB7N
+listed: true
+name: Rainu Ittycheriah
+slug: rainu-ittycheriah
+social_links:
+- social_link_display: '@rainuitty@mastodon.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://mastodon.social/@rainuitty
+speaker_type: speaker
+talks:
+- code: P397LH
+  slug: data-engineering-the-world-between-worlds
+  title: 'Data Engineering: The World Between Worlds'

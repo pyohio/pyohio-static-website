@@ -1,0 +1,24 @@
+code: DCZDL9
+content_warnings: null
+description: <p>In this session, we will explore techniques for building resilient
+  applications that can gracefully handle failures and ensure high availability. Specifically,
+  we will focus on implementing circuit breakers and retry mechanisms using FastAPI.
+  By the end of this talk, attendees will understand the principles behind these patterns
+  and see a live demonstration of how to implement them in a FastAPI application.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Building Resilient Applications with Circuit Breakers and Retries Using
+  FastAPI
+slug: building-resilient-applications-with-circuit-breakers-and-using
+speakers:
+- avatar: https://pretalx.com/media/avatars/Sam-Image_5To9Rfy.jpeg
+  code: HMNDYW
+  name: Sameer Shukla
+  slug: sameer-shukla
+start_time: TBD
+stream_timestamp: ''
+title: Building Resilient Applications with Circuit Breakers and Retries Using FastAPI
+type: 30 Minute Talk
+youtube_url: null

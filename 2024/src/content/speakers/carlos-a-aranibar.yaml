@@ -1,0 +1,26 @@
+avatar: https://pretalx.com/media/avatars/profile_vCfJrB9.jpg
+biography: '<p>Carlos Aranibar is a Data Scientist 📊 from Bolivia 🇧🇴 who now lives
+  in Chicago. </p>
+
+  <p>He has a background in Economics and Statistics and holds a Master''s in Data
+  Science.<br />
+
+  Carlos is skilled in querying data, process optimization, and automation.<br />
+
+  He loves to learn and actively participates in multiple Meetups, discussing new
+  developments in tech/software/data. Carlos is also a volunteer for PostgreSQL.  </p>
+
+  <p>Fluent in both English and Spanish!  </p>
+
+  <p><a href="https://www.linkedin.com/in/carlos-aranibar/"><em>Carlos'' LinkedIn</em></a>,
+  feel free to reach out!</p>'
+code: MGPBMB
+listed: true
+name: Carlos A Aranibar
+slug: carlos-a-aranibar
+social_links: []
+speaker_type: speaker
+talks:
+- code: 8TRXAM
+  slug: boosting-neuroimaging-analysis-and-results-digestibility
+  title: Boosting Neuroimaging Analysis and Results Digestibility 🧠

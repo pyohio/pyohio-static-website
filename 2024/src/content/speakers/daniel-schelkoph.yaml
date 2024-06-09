@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/IMG_0066_tLqbLpT.jpeg
+biography: <p>Dan currently works at Tenet3®, a knowledge management company in Dayton,
+  OH. He leads the creation of compelling development environments, machine learning
+  software, and secure computing environments on-premise and in the cloud. Previously,
+  he served 12 years in the Air Force as a Communications Officer, operating and protecting
+  Air Force Networks.</p>
+code: NL3RWX
+listed: true
+name: Daniel Schelkoph
+slug: daniel-schelkoph
+social_links: []
+speaker_type: speaker
+talks:
+- code: EWVQHG
+  slug: validating-complex-types-using-pydantic
+  title: Validating Complex Types Using Pydantic

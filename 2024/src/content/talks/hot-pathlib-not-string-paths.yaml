@@ -1,0 +1,39 @@
+code: DQNF8G
+content_warnings: null
+description: '<p>Have you seen <code>pathlib</code>?  If not, once I show you, you
+  will never go back to string paths and <code>os.path</code> ever again! <code>pathlib</code>
+  turns paths into path objects, which have attributes and methods that cover a number
+  of operations. In this talk, we will:</p>
+
+  <ul>
+
+  <li>Talk about how to create <code>Path</code> objects, and how this differs on
+  Windows vs Mac/Linux</li>
+
+  <li>Talk about the many properties of pure paths</li>
+
+  <li>Talk about folder operations from <code>Path</code> objects, such as creating
+  directory structures and recursive globbing.</li>
+
+  <li>Talk about file operations, made simpler with <code>Path</code> objects, such
+  as reading contents, getting properties like file size, and deleting.</li>
+
+  </ul>
+
+  <p>Stop messing with string paths and get with <code>pathlib</code>!</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: Hot
+slug: hot-pathlib-not-string-paths
+speakers:
+- avatar: https://pretalx.com/media/avatars/4fd8d11f5cc00e1fa20dc9a596b16088_LyrAVLg.jpg
+  code: UKGFFX
+  name: Josh Schneider
+  slug: josh-schneider
+start_time: TBD
+stream_timestamp: ''
+title: 'Hot: Pathlib, Not: String Paths'
+type: 30 Minute Talk
+youtube_url: null

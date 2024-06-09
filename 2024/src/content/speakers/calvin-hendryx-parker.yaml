@@ -1,0 +1,30 @@
+avatar: https://pretalx.com/media/avatars/Calvin_Hendryx-Parker_104oRPw.jpg
+biography: '<p>Calvin Hendryx-Parker is the co-founder and CTO of <a href="https://sixfeetup.com/">Six
+  Feet Up</a>, a Python and AI for good consulting company that celebrates its 25th
+  anniversary in 2024.</p>
+
+  <p>Calvin’s Massive Transformative Purpose (MTP) is to inspire and enable tech leaders
+  to open minds and bring the world together for a sustainable future. At Six Feet
+  Up, Calvin establishes the company''s technical vision and leads all aspects of
+  the company''s technology development.</p>
+
+  <p>Six Feet Up, a top 10 United States Custom Software Development Company according
+  to Clutch.co, was founded with Python at the forefront. </p>
+
+  <p>In 2019, Calvin was named an <a href="https://aws.amazon.com/developer/community/heroes/?community-heroes-all.sort-by=item.additionalFields.sortPosition&amp;community-heroes-all.sort-order=asc&amp;awsf.filter-hero-category=heroes%23community&amp;awsf.filter-location=location%23namer&amp;awsf.filter-year=*all&amp;awsf.filter-activity=*all">AWS
+  Hero</a> — one of only 50 Heroes in North America. He is the co-founder of <a href="https://www.meetup.com/indypy/">IndyPy</a>,
+  the largest Python meetup in Indiana. In 2023, he was named Tech Executive of the
+  Year by the Indiana Business Journal.</p>'
+code: ME3WGG
+listed: true
+name: Calvin Hendryx-Parker
+slug: calvin-hendryx-parker
+social_links:
+- social_link_display: linkedin.com/in/calvinhp/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/calvinhp/
+speaker_type: speaker
+talks:
+- code: VWWTQF
+  slug: mastering-the-zen-of-dev-experience-kubernetes-and-the-art-of
+  title: 'Mastering the Zen of Dev Experience: Kubernetes and the Art of Simplicity'

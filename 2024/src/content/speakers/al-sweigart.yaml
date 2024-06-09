@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/f058499cabc6e56e7622015b4db79304_gf1pFUs.jpg
+biography: <p>Al Sweigart is a software developer, artist, Fellow of the Python Software
+  Foundation, and the author of Automate the Boring Stuff with Python and other programming
+  books freely available under the Creative Commons license at <a href="https://inventwithpython.com">https://inventwithpython.com</a>.</p>
+code: HVAES8
+listed: true
+name: Al Sweigart
+slug: al-sweigart
+social_links:
+- social_link_display: '@AlSweigart@mastodon.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://mastodon.social/@AlSweigart
+speaker_type: speaker
+talks:
+- code: WY9FAP
+  slug: 20-goto-10-how-to-make-scrolling-ascii-art
+  title: '20 GOTO 10: How to Make Scrolling ASCII Art'

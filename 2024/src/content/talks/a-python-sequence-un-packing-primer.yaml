@@ -1,0 +1,36 @@
+code: 8WZN9J
+content_warnings: null
+description: "<p><em>What happens in Python when you type things like?</em></p>\n\
+  <pre class=\"highlight\"><code>def spam():\n    return 1,2,3\n\na, b, c = spam()\n\
+  </code></pre>\n\n<pre class=\"highlight\"><code>def foo(*args, **kwargs):\n   ...\n\
+  </code></pre>\n\n<pre class=\"highlight\"><code>for name, value in some_dict.items():\n\
+  </code></pre>\n\n<pre class=\"highlight\"><code>my_dict = some_func_that_returns_a_dict()\n\
+  \nsome_other_func(**my_dict)\n</code></pre>\n\n<p>In this talk, we'll examine Python's\
+  \ ability to unpack values from (or sometimes pack them into) sequences. We'll see\
+  \ how that capability powers a host of powerful Python idioms. We'll also look at\
+  \ some less commonly used syntax to unpack sequences into complex data structures.\
+  \ Used judiciously, these techniques can simplify your code. Last, we'll talk about\
+  \ mental models, and why it's important to develop good mental models for what's\
+  \ happening \"under-the-hood\" when we write Python. Well show what can (and did)\
+  \ happen when having the wrong mental model of unpacking syntax lead to a bug. We'll\
+  \ look at code that shows the problem, discuss what's really happening, then use\
+  \ the Python bytecode disassembler to confirm our intuition.</p>\n<p>Although this\
+  \ talk briefly uses the Python bytecode disassembler, it's aimed at beginners (though\
+  \ not complete novices) who want to write more idiomatic Python, and develop a better\
+  \ intuition for what's really happening in the interpreter when their code runs.</p>"
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: A Python Sequence (Un)Packing Primer
+slug: a-python-sequence-un-packing-primer
+speakers:
+- avatar: null
+  code: BBWCPM
+  name: Brian Costlow
+  slug: brian-costlow
+start_time: TBD
+stream_timestamp: ''
+title: A Python Sequence (Un)Packing Primer
+type: 30 Minute Talk
+youtube_url: null

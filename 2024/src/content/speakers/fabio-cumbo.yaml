@@ -1,0 +1,28 @@
+avatar: https://pretalx.com/media/avatars/0b0a7f2cfe3843afe6fde5efe51d2caf_vO6iHjv.jpg
+biography: '<p>I''m Fabio, a Software Engineer with a PhD in <a href="http://phd.dia.uniroma3.it/">Computer
+  Science and Automation Engineering</a>, currently Postdoctoral Researcher at the
+  <a href="https://www.lerner.ccf.org/computational-medicine/blankenberg/">Blankenberg
+  Lab</a>, <a href="https://my.clevelandclinic.org/research/computational-life-sciences">Center
+  for Computational Life Sciences</a>, <a href="https://www.lerner.ccf.org/">Lerner
+  Research Institute</a> of the <a href="https://my.clevelandclinic.org/">Cleveland
+  Clinic</a>, Cleveland, Ohio, USA.</p>
+
+  <p>Have a look at my professional profile, including academic path and achievements,
+  on my <a href="https://cumbof.github.io/">personal web space</a>.</p>
+
+  <p><a href="https://github.com/cumbof">Github</a> | <a href="https://twitter.com/cumbofabio">Twitter</a>
+  | <a href="https://scholar.google.com/citations?user=DJWJY7EAAAAJ&amp;hl=en">Google
+  Scholar</a> | <a href="https://orcid.org/0000-0003-2920-5838">ORCID</a></p>'
+code: CHGH3X
+listed: true
+name: Fabio Cumbo
+slug: fabio-cumbo
+social_links:
+- social_link_display: '@cumbofabio'
+  social_link_type: fa6-brands:twitter
+  social_link_url: https://twitter.com/cumbofabio
+speaker_type: speaker
+talks:
+- code: YMAT93
+  slug: building-vector-symbolic-architectures-with-python
+  title: Building Vector-Symbolic Architectures with Python

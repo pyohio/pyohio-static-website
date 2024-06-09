@@ -27,9 +27,9 @@ UNLISTED_SPEAKERS = [
     "DCSCPQ",  # Kattni
 ]
 KEYNOTE_SPEAKERS = [
-    "UAVJNC", # Steph
-    "PTGUYZ", # Mariatta
-    "UYHZBE", # Trey
+    "UAVJNC",  # Steph
+    "PTGUYZ",  # Mariatta
+    "UYHZBE",  # Trey
 ]
 
 
@@ -121,7 +121,9 @@ def get_event_data(ctx):
         data = {
             "code": talk["code"],
             "title": talk["title"],
-            "slug": slugify(re.split(":|\?|\.", talk["title"])[0]),
+            "slug": slugify(
+                re.split("\?|\.", talk["title"])[0], word_boundary=True, max_length=64
+            ),
             "description": markdown.markdown(
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
@@ -133,6 +135,9 @@ def get_event_data(ctx):
             "type": talk["submission_type"]["en"],
         }
         # print(f"{talk['code']}: {type(qa_by_talk_code.get(talk['code']))}")
+
+        if data["type"] == "Keynote":
+            data["slug"] = f"{data['speakers'][0]['slug']}-keynote"
 
         if qa_by_talk_code.get(talk["code"], "False") != "False":
             data["qna"] = True
@@ -206,10 +211,18 @@ def get_event_data(ctx):
             }
             speaker_talks.append(talk)
         data["talks"] = speaker_talks
-        social_link_data = get_social_link_data(
-            social_media_by_speaker_code.get(data["code"])
-        )
-        data.update(social_link_data)
+
+        social_links = [
+            link.strip()
+            for link in social_media_by_speaker_code.get(data["code"], "").split(",")
+            if link != ""
+        ]
+        social_data = []
+        for social_link in social_links:
+            social_link_data = get_social_link_data(social_link)
+            social_data.append(social_link_data)
+        data["social_links"] = social_data
+        # pprint.pprint(social_data)
 
         data["speaker_type"] = "speaker"
 
@@ -221,7 +234,6 @@ def get_event_data(ctx):
         if data["code"] in KEYNOTE_SPEAKERS:
             data["speaker_type"] = "keynote"
             data["keynote_index"] = KEYNOTE_SPEAKERS.index(data["code"])
-
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
@@ -244,31 +256,37 @@ def get_social_link_data(social_link):
         if social_link != "null":
             social_link_url = social_link
             social_link_display = social_link.replace("https://", "")
-            social_link_type = "web"
-
+            social_link_type = "fa:link"
         if social_link.startswith("https://twitter.com/"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://twitter.com/", "@")
-            social_link_type = "twitter"
-        elif social_link.startswith("https://linkedin.com/in/"):
+            social_link_type = "fa6-brands:twitter"
+        if social_link.startswith("https://x.com/"):
+            social_link_url = social_link
+            social_link_display = social_link.replace("https://x.com/", "@")
+            social_link_type = "fa6-brands:x-twitter"
+        elif social_link.startswith(
+            "https://linkedin.com/in/"
+        ) or social_link.startswith("https://www.linkedin.com/in/"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://www.", "")
-            social_link_type = "linkedin"
+            social_link_display = social_link_display.replace("https://", "")
+            social_link_type = "fa6-brands:linkedin"
         elif social_link.startswith("https://medium.com/@"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://", "")
-            social_link_type = "medium"
+            social_link_type = "fa6-brands:medium"
         elif social_link.startswith("https://github.com"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://", "")
-            social_link_type = "github"
+            social_link_type = "fa6-brands:github"
         elif re.match(r"https://.*\..*@.*", social_link):
             social_link_url = social_link
             mastodon_instance, mastodon_username = social_link.replace(
                 "https://", ""
             ).split("/@")
             social_link_display = f"@{mastodon_username}@{mastodon_instance}"
-            social_link_type = "mastodon"
+            social_link_type = "fa6-brands:mastodon"
 
     return {
         "social_link_url": social_link_url,
