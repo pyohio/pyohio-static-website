@@ -1,5 +1,5 @@
 ---
-import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
 
@@ -34,9 +34,9 @@ function formatTime(timeString) {
       <p class="italic">{talk.data.type} at {formatTime(talk.data.start_time)}</p>
     </div>
   </section>
-  <section class="container">
+  <!-- <section class="container">
     <iframe class="w-full aspect-video" src={"https://www.youtube.com/embed/"+talk.data.youtube_url.replace("https://youtu.be/", "")} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </section>
+  </section> -->
   <section class="my-12">
     <div class="space-content container">
       <Fragment set:html={talk.data.description} />
@@ -48,7 +48,7 @@ function formatTime(timeString) {
       {
         talk.data.speakers.map((speaker) => (
           <p>
-            <a href={'/2023/speakers/' + speaker.slug}>{speaker.name}</a>
+            <a href={'/2024/program/speakers/' + speaker.slug}>{speaker.name}</a>
           </p>
         ))
       }
