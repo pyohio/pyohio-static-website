@@ -13,11 +13,15 @@ description: '<p>Happy developers do not have to fight their tools and environme
   application performance and email testing will be covered. </p>
 
   <p>This comprehensive approach ensures that onboarding a new developer on a project
-  is streamlined, overcoming the typical pain points such as: <br />
+  is streamlined, overcoming the typical pain points such as:</p>
 
-  * manual installation steps <br />
+  <ul>
 
-  * the inconsistency of tools across development environments</p>
+  <li>manual installation steps </li>
+
+  <li>the inconsistency of tools across development environments</li>
+
+  </ul>
 
   <p>Kubernetes will empower your development and DevOps teams to speak a common language
   and collaborate effectively, standardizing deployments and debugging processes in
@@ -29,7 +33,7 @@ qna: true
 qna_channel: Mastering the Zen of Dev Experience
 slug: mastering-the-zen-of-dev-experience-kubernetes-and-the-art-of
 speakers:
-- avatar: https://pretalx.com/media/avatars/Calvin_Hendryx-Parker_104oRPw.jpg
+- avatar: https://pretalx.com/media/avatars/4d1fa184d439599ed301821daec94063_SeL9nf0.jpg
   code: ME3WGG
   name: Calvin Hendryx-Parker
   slug: calvin-hendryx-parker

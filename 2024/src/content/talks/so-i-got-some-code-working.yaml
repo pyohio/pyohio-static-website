@@ -1,0 +1,29 @@
+code: NZWEHD
+content_warnings: null
+description: '<p>You have some code running locally, but you want to be able to share
+  it with your team members and you run into the biggest snag of all, none of them
+  are technical. </p>
+
+  <p>So how do you share code when the idea of asking someone to run git or docker
+  stops them from every trying to automate the boring work that they have to do? </p>
+
+  <p>Let''s dive into the fun of trying to go from trying to share code and have others
+  run it. From sharing a juypter notebook/Google Collab, to new places like py.space,
+  or even trying to host a web app on python anywhere, what are the easiest solutions
+  to get code snippets up and running for non-technical people?</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: true
+qna_channel: So, I got some code working
+slug: so-i-got-some-code-working
+speakers:
+- avatar: https://pretalx.com/media/avatars/elaine-wong-2_oSWDTQl.jpeg
+  code: Q8HPFK
+  name: Elaine Wong
+  slug: elaine-wong
+start_time: TBD
+stream_timestamp: ''
+title: So, I got some code working... now how do i share it?!
+type: 30 Minute Talk
+youtube_url: null

@@ -15,16 +15,20 @@ description: '<p>Python''s dynamic typing system famously offers flexibility, bu
   build upon Python’s type hints to help you improve your code reliability and effectiveness
   with minimal extra effort.</p>
 
-  <p>At the end of this presentation you will be able to:<br />
+  <p>At the end of this presentation you will be able to:</p>
 
-  * Use type hints, MyPy, and Pydantic to define and enforce static data types in
-  Python.<br />
+  <ul>
 
-  * Identify important use cases where static types provide greater code reliability
-  and quality.<br />
+  <li>Use type hints, MyPy, and Pydantic to define and enforce static data types in
+  Python.</li>
 
-  * Leverage these tools to increase the resilience of your code against bad data,
-  and deliver more useful and actionable error messages sooner.</p>
+  <li>Identify important use cases where static types provide greater code reliability
+  and quality.</li>
+
+  <li>Leverage these tools to increase the resilience of your code against bad data,
+  and deliver more useful and actionable error messages sooner.</li>
+
+  </ul>
 
   <p>MyPy is a type checker that leverages built-in type hints to identify possible
   type errors during a separate static analysis stage. By integrating a MyPy step

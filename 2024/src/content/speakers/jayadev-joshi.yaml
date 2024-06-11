@@ -1,0 +1,17 @@
+avatar: https://pretalx.com/media/avatars/1700080226004_TUCJUh1.jpeg
+biography: <p>Currently, I am working as a bioinformatics researcher at the Cleveland
+  Clinic, and my area of interest includes machine learning, big data, and NGS data
+  analysis. I am developing new tools, workflow, and pipelines that can be easily
+  integrated under Galaxy software (usegalaxy.org). I spend most of my time in writing
+  programs using Python, and R to analyze high throughput data.</p>
+code: SAEDGP
+listed: true
+name: Jayadev Joshi
+slug: jayadev-joshi
+social_links: []
+speaker_type: speaker
+talks:
+- code: PMMXMD
+  slug: enhancing-the-jupyterlab-notebook-to-overcome-bioinformatics-gin
+  title: Enhancing the JupyterLab Notebook to Overcome Bioinformatics Analysis Challenges
+    with GiN

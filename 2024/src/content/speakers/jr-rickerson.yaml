@@ -5,9 +5,9 @@ biography: '<p>JR Rickerson is a Software Craftsman at Red Rivet Studios, the co
   technologies across several industries.  He fell in love with Python around 2008
   and has been using it wherever he can ever since. He is also a serial hobbyist and
   enjoys reading, baking, hiking, tinkering with microcontrollers, and playing games
-  of all kinds.<br />
+  of all kinds.</p>
 
-  You can find him on Mastodon, Github, and LinkedIn.</p>'
+  <p>You can find him on Mastodon, Github, and LinkedIn.</p>'
 code: AQVCEK
 listed: true
 name: JR Rickerson

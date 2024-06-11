@@ -9,7 +9,10 @@ code: KYYQVJ
 listed: true
 name: Moshe Zadka
 slug: moshe-zadka
-social_links: []
+social_links:
+- social_link_display: cobordism.com
+  social_link_type: fa:link
+  social_link_url: https://cobordism.com
 speaker_type: speaker
 talks:
 - code: FBZUBP
