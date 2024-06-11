@@ -253,10 +253,12 @@ def get_social_link_data(social_link):
     social_link_url = social_link_display = social_link_type = None
 
     if social_link is not None:
-        if social_link != "null":
+        if social_link.startswith("http://") or social_link.startswith("https://"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://", "")
             social_link_type = "fa:link"
+        else:
+            print(f"Invalid social link: {social_link}")
         if social_link.startswith("https://twitter.com/"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://twitter.com/", "@")

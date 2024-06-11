@@ -12,9 +12,9 @@ listed: true
 name: Elaine Wong
 slug: elaine-wong
 social_links:
-- social_link_display: elthenerd
-  social_link_type: fa:link
-  social_link_url: elthenerd
+- social_link_display: null
+  social_link_type: null
+  social_link_url: null
 speaker_type: speaker
 talks:
 - code: NZWEHD
