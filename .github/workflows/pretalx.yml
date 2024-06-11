@@ -23,8 +23,11 @@ jobs:
 
       - name: Install deps
         run: |
-          echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV # hack: https://github.com/astral-sh/uv/issues/1386#issuecomment-1947801083
+          # hack: https://github.com/astral-sh/uv/issues/1386#issuecomment-1947801083
           pip install uv
+          uv venv .venv
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
           uv pip install -r ./scripts/requirements.txt
 
       - name: Get PreTalx Data
