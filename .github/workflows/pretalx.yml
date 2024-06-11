@@ -16,19 +16,19 @@ jobs:
       - name: Run Timestamp
         run: date
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v5
 
-      - name: Install Poetry
+      - name: Install deps
         run: |
-          cd scripts
-          pip install -U pip
-          pip install poetry
-          poetry install
-        env:
-          POETRY_VIRTUALENVS_CREATE: false
+          # hack: https://github.com/astral-sh/uv/issues/1386#issuecomment-1947801083
+          pip install uv
+          uv venv .venv
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+          uv pip install -r ./scripts/requirements.txt
 
       - name: Get PreTalx Data
         run: ./scripts/pretalx.py get-event-data
