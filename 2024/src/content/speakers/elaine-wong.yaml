@@ -11,7 +11,13 @@ code: Q8HPFK
 listed: true
 name: Elaine Wong
 slug: elaine-wong
-social_links: []
+social_links:
+- social_link_display: '@elthenerd'
+  social_link_type: fa6-brands:x-twitter
+  social_link_url: https://x.com/elthenerd
+- social_link_display: '@elthenerd@fosstodon.org'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://fosstodon.org/@elthenerd
 speaker_type: speaker
 talks:
 - code: NZWEHD
