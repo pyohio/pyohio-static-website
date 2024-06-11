@@ -1,0 +1,16 @@
+avatar: https://pretalx.com/media/avatars/1656533339216_FxGxnGS.jpeg
+biography: <p>Software engineer at Meta, working in the PyTorch org developing Torcharrow
+  preproc for recommendation system models. Previously ML acceleration at AWS Inferentia
+  + MS in ECE from UCLA. I have been involved in OSS development since 2017 through
+  Google summer of Code and have mentored various projects across Scilab, Tensorflow,
+  Gensim.</p>
+code: ES3U77
+listed: true
+name: Mandar Deshpande
+slug: mandar-deshpande
+social_links: []
+speaker_type: speaker
+talks:
+- code: C7YYRN
+  slug: boosting-python-numeric-computations-with-dynamic-c-integration
+  title: Boosting Python Numeric Computations with Dynamic C++ Integration

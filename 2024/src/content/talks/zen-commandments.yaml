@@ -16,7 +16,7 @@ qna: true
 qna_channel: Zen Commandments
 slug: zen-commandments
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/IMG_20201023_105744_swJz40E.jpg
   code: GLLNQF
   name: Paul Hutchings
   slug: paul-hutchings

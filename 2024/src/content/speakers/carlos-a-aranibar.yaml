@@ -18,7 +18,10 @@ code: MGPBMB
 listed: true
 name: Carlos A Aranibar
 slug: carlos-a-aranibar
-social_links: []
+social_links:
+- social_link_display: linkedin.com/in/carlos-aranibar/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/carlos-aranibar/
 speaker_type: speaker
 talks:
 - code: 8TRXAM

@@ -2,23 +2,23 @@ code: 8PZZLK
 content_warnings: null
 description: '<p>In this presentation, I''ll cover memory management in Python starting
   from the fundamentals. I''ll explain the rationale behind the need for PEP 683:
-  "– Immortal Objects, Using a Fixed Refcount" , discussing about this change may
-  be unlocking exciting avenues for true parallelism in python.</p>
+  "Immortal Objects, Using a Fixed Refcount", discussing about this change may be
+  unlocking exciting avenues for true parallelism in Python.</p>
 
   <p>The takeaway of this presentation would be :<br />
 
   a) Refresher on object(mutable vs immutable and their significance)<br />
 
-  b) Refresher on Life cycle of a python object.<br />
+  b) Refresher on Life cycle of a Python object.<br />
 
-  c) Refresher on python memory management with garbage collection<br />
+  c) Refresher on Python memory management with garbage collection<br />
 
   d) How overcoming with pseudo immutable object will be unlocking exciting avenues
   for true parallelism in Python.</p>
 
   <p>The target audience would be intermediate and advanced pythonistas. However I
   will present the information in simple and subtle manner for better understanding
-  of python newbies .</p>'
+  of Python newbies.</p>'
 discord_channel_id: ''
 duration: 30
 end_time: TBD
