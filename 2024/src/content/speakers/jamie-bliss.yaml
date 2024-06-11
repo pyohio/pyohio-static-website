@@ -1,10 +1,16 @@
-avatar: https://www.pyohio.org/no-profile.png
-biography: <p>Bio forthcoming</p>
+avatar: https://pretalx.com/media/avatars/headshot_QOd407N.jpg
+biography: '<p>Jamie is a perennial open source developer, contributing to hundreds
+  of projects. She is probably most well known for her game engine, PursuedPyBear.</p>
+
+  <p>Professionally, she does backend, infrastructure, and automation.</p>'
 code: QGEHAQ
 listed: true
 name: Jamie Bliss
 slug: jamie-bliss
-social_links: []
+social_links:
+- social_link_display: '@astraluma@tacobelllabs.net'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://tacobelllabs.net/@astraluma
 speaker_type: speaker
 talks:
 - code: QPUASH
