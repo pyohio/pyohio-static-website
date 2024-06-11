@@ -24,8 +24,6 @@ jobs:
       - name: Install deps
         run: |
           pip install uv
-          uv venv
-          source .venv/bin/activate
           uv pip install -r ./scripts/requirements.txt
 
       - name: Get PreTalx Data
