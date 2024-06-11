@@ -21,14 +21,12 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
 
-      - name: Install Poetry
+      - name: Install deps
         run: |
-          cd scripts
-          pip install -U pip
-          pip install poetry
-          poetry install
-        env:
-          POETRY_VIRTUALENVS_CREATE: false
+          pip install uv
+          uv venv
+          source ./venv/bin/activate
+          uv pip install -r ./scripts/requirements.txt
 
       - name: Get PreTalx Data
         run: ./scripts/pretalx.py get-event-data
