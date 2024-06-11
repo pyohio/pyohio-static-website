@@ -12,7 +12,7 @@ qna: true
 qna_channel: A Confession of My Python Sins
 slug: a-confession-of-my-python-sins
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/headshot_QOd407N.jpg
   code: QGEHAQ
   name: Jamie Bliss
   slug: jamie-bliss
