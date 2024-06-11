@@ -219,8 +219,13 @@ def get_event_data(ctx):
         ]
         social_data = []
         for social_link in social_links:
-            social_link_data = get_social_link_data(social_link)
+            try:
+                social_link_data = get_social_link_data(social_link)
+            except ValueError as e:
+                print(f"Error: {e}")
+                continue
             social_data.append(social_link_data)
+
         data["social_links"] = social_data
         # pprint.pprint(social_data)
 
@@ -258,7 +263,7 @@ def get_social_link_data(social_link):
             social_link_display = social_link.replace("https://", "")
             social_link_type = "fa:link"
         else:
-            print(f"Invalid social link: {social_link}")
+            raise ValueError(f"Invalid social link data: {social_link}")
         if social_link.startswith("https://twitter.com/"):
             social_link_url = social_link
             social_link_display = social_link.replace("https://twitter.com/", "@")
