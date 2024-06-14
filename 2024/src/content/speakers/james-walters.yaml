@@ -1,0 +1,18 @@
+avatar: https://pretalx.com/media/avatars/1ee97e4ffea12ee1b6abacce5006ed42_wFsonjx.jpg
+biography: <p>I started learning Python and Django in Fall 2021 with hopes that my
+  colleague and I would be able to rebuild an aging internal web app. Today, that
+  project is complete and in production, and my enthusiasm for Python is busting at
+  the seams! It's a great privilege to return to PyOhio!</p>
+code: GXSENE
+listed: true
+name: James Walters
+slug: james-walters
+social_links:
+- social_link_display: '@jameswalters@fosstodon.org'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://fosstodon.org/@jameswalters
+speaker_type: speaker
+talks:
+- code: EDLLMH
+  slug: what-django-deployment-is-really-about
+  title: What Django Deployment is Really About
