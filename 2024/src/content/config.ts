@@ -8,7 +8,17 @@ const speakers = defineCollection({
   type: 'data',
 })
 
+const sponsors = defineCollection({
+  type: 'data',
+})
+
+const individualSponsors = defineCollection({
+  type: 'data',
+})
+
 export const collections = {
   talks,
   speakers,
+  sponsors,
+  individualSponsors,
 }
