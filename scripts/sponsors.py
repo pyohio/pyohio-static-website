@@ -41,7 +41,7 @@ def get_individual_sponsors(ctx):
 
     sponsors = sponsor_list.json()
 
-    save_filename = Path(f"{DATA_DIR}/individual-sponsors/individual-sponsors.yaml")
+    save_filename = Path(f"{DATA_DIR}/individualSponsors/individual-sponsors.yaml")
     with open(save_filename, "w") as save_file:
         yaml.dump(sponsors, save_file, allow_unicode=True)
 
