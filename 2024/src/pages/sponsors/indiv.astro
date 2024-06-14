@@ -1,0 +1,26 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getEntry } from 'astro:content'
+
+const individualSponsors = await getEntry('individualSponsors', 'individual-sponsors')
+---
+
+<DefaultLayout title="Talks">
+  <section class="my-12">
+    <div class="container">
+      <h1>Talks</h1>
+      <p class="italic">Additional talks are pending speaker confirmation. Full talk schedule to be announced closer to the event.</p>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="container">
+      <div class="text-center">
+      {
+        individualSponsors.data.map((sponsor) => (
+            <button class="font-bold m-3 border rounded">{sponsor}</button>
+          ))
+      }
+      </div>
+  </div>
+  </section>
+</DefaultLayout>
