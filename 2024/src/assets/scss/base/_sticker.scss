@@ -1,0 +1,110 @@
+// | -------------------------------------------------------------
+// | Sticker
+// | -------------------------------------------------------------
+
+.sticker {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: var(--neutral-800);
+  background-color: var(--secondary-200);
+  border: 4px solid var(--primary-400);
+  border-radius: 0.5rem;
+
+  &.color-secondary {
+    background-color: var(--secondary-100);
+    border-color: (var(--secondary-100));
+  }
+
+  &.color-neutral {
+    background-color: var(--neutral-500);
+    border-color: (var(--neutral-500));
+  }
+
+  &.color-info {
+    background-color: var(--info-300);
+    border-color: (var(--info-300));
+  }
+
+  &.color-success {
+    background-color: var(--success-400);
+    border-color: (var(--success-400));
+  }
+
+  &.color-warning {
+    background-color: var(--warning-400);
+    border-color: (var(--warning-400));
+
+    &:hover,
+    &:focus {
+      background-color: var(--warning-300);
+      border-color: var(--warning-300);
+    }
+  }
+
+  &.color-error {
+    background-color: var(--error-300);
+    border-color: (var(--error-300));
+
+    &:hover,
+    &:focus {
+      background-color: var(--error-200);
+      border-color: var(--error-200);
+    }
+  }
+
+  &.size-tiny {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  &.size-small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  &.size-large {
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  &.size-huge {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  &.behavior-full {
+    display: block;
+    width: 100%;
+  }
+
+  &.type-secondary {
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  &.has-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    [astro-icon] {
+      width: 30px;
+    }
+  }
+}
+
+.darkmode .button.type-secondary {
+  color: var(--neutral-100);
+}
