@@ -5,6 +5,7 @@ import click
 import httpx
 import yaml
 
+from slugify import slugify
 
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
@@ -12,7 +13,8 @@ except ImportError:
     pass
 
 
-INDIVIDUAL_SPONSORS_URL = "https://staging-admin.pyohio.org/api/individual-sponsors"
+INDIVIDUAL_SPONSORS_URL = "https://admin.pyohio.org/api/individual-sponsors"
+SPONSORS_URL = "https://admin.pyohio.org/api/sponsors"
 DATA_DIR = Path("./2024/src/content")
 
 
@@ -39,9 +41,26 @@ def get_individual_sponsors(ctx):
 
     sponsors = sponsor_list.json()
 
-    save_filename = Path(f"{DATA_DIR}/sponsors/individual-sponsors.yaml")
+    save_filename = Path(f"{DATA_DIR}/individual-sponsors/individual-sponsors.yaml")
     with open(save_filename, "w") as save_file:
         yaml.dump(sponsors, save_file, allow_unicode=True)
+
+
+@sponsors.command()
+@click.pass_context
+def get_sponsors(ctx):
+    """Get corporate sponsor data from PyOhio Admin API"""
+
+    sponsor_list = httpx.get(SPONSORS_URL)
+    sponsor_list.raise_for_status()
+
+    sponsors = sponsor_list.json()
+
+    for sponsor in sponsors:
+        sponsor["slug"] = slugify(sponsor["name"])
+        save_filename = Path(f"{DATA_DIR}/sponsors/{sponsor['slug']}.yaml")
+        with open(save_filename, "w") as save_file:
+            yaml.dump(sponsor, save_file, allow_unicode=True)
 
 
 if __name__ == "__main__":
