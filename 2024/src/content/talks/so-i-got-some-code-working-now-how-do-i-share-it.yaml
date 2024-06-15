@@ -15,8 +15,8 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: So, I got some code working
-slug: so-i-got-some-code-working
+qna_channel: So, I Got Some Code Working… Now How Do I Share It
+slug: so-i-got-some-code-working-now-how-do-i-share-it
 speakers:
 - avatar: https://pretalx.com/media/avatars/elaine-wong-2_oSWDTQl.jpeg
   code: Q8HPFK
@@ -24,6 +24,6 @@ speakers:
   slug: elaine-wong
 start_time: TBD
 stream_timestamp: ''
-title: So, I got some code working... now how do i share it?!
+title: So, I Got Some Code Working… Now How Do I Share It?!
 type: 30 Minute Talk
 youtube_url: null
