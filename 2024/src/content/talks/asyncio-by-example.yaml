@@ -7,10 +7,10 @@ description: '<p>Async functions in Python are a great way to simplify otherwise
 
   <p>This talk will start with the async/await basics, then show common patterns encountered
   when solving problems with Python''s asyncio module, and introduce some of its newer
-  features, such as Barriers, TaskGroups, and ExceptionGroups.<br />
+  features, such as Barriers, TaskGroups, and ExceptionGroups.</p>
 
-  This is a code-heavy, zero-to-hero talk where all the examples are run, and we can
-  experiment and change the code if the audience has questions.</p>'
+  <p>This is a code-heavy, zero-to-hero talk where all the examples are run, and we
+  can experiment and change the code if the audience has questions.</p>'
 discord_channel_id: ''
 duration: 30
 end_time: TBD
