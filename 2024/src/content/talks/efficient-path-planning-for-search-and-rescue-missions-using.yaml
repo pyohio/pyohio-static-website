@@ -15,9 +15,8 @@ discord_channel_id: ''
 duration: 30
 end_time: TBD
 qna: true
-qna_channel: A Novel Framework to Efficient Path Planning Through Real-time Cost Map
-  Generation Using Neural Networks for Search and Rescue Missions
-slug: a-novel-framework-to-efficient-path-planning-through-real-time
+qna_channel: Efficient Path Planning for Search and Rescue Missions Using Neural Networks
+slug: efficient-path-planning-for-search-and-rescue-missions-using
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_4438_R62I7Vt.jpg
   code: M8FBJN
@@ -25,7 +24,6 @@ speakers:
   slug: keith-martin-machina
 start_time: TBD
 stream_timestamp: ''
-title: A Novel Framework to Efficient Path Planning Through Real-time Cost Map Generation
-  Using Neural Networks for Search and Rescue Missions
+title: Efficient Path Planning for Search and Rescue Missions Using Neural Networks
 type: 30 Minute Talk
 youtube_url: null
