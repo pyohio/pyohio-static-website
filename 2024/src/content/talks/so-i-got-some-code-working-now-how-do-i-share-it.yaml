@@ -8,8 +8,8 @@ description: '<p>You have some code running locally, but you want to be able to 
   stops them from every trying to automate the boring work that they have to do? </p>
 
   <p>Let''s dive into the fun of trying to go from trying to share code and have others
-  run it. From sharing a juypter notebook/Google Collab, to new places like py.space,
-  or even trying to host a web app on python anywhere, what are the easiest solutions
+  run it. From sharing a Juypter notebook/Google Collab, to new places like py.space,
+  or even trying to host a web app on PythonAnywhere, what are the easiest solutions
   to get code snippets up and running for non-technical people?</p>'
 discord_channel_id: ''
 duration: 30
