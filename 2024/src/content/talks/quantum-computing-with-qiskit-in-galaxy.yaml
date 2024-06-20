@@ -1,42 +1,18 @@
 code: QE87TH
 content_warnings: null
 description: '<p>The era of quantum computing is here. As it continues to evolve from
-  being a technology in its infancy, to something that could perhaps revolutionize
-  many aspects of daily life, it is capturing the interest of academia, government,
-  and industry alike. It is thus of great importance for members of the scientific
-  community to familiarize themselves with the theory and applications of this new
-  computing method, and most importantly, how to program and develop algorithms on
-  these devices. Here, we introduce the incorporation of Qiskit, IBM''s python-based
-  software stack for quantum computing, into the Galaxy ecosystem. The basic theory
-  of quantum computing is revised in this talk, along with the many important components
-  of the coding framework and syntaxes. We introduce a series of previously developed
+  being a technology in its infancy, to something that could revolutionize many aspects
+  of daily life, it is capturing the interest of academia, government, and industry
+  alike. It is thus of great importance for members of the scientific community to
+  familiarize themselves with the theory and applications of this new computing method
+  -- and especially how to program and develop algorithms on these devices.</p>
+
+  <p>In this talk, we''ll take a look at the incorporation of Qiskit, IBM''s Python-based
+  software stack for quantum computing, into the Galaxy ecosystem. We''ll revisit
+  the basic theory of quantum computing along with the many important components of
+  the coding framework and syntaxes, and we''ll explore a series of previously developed
   Qiskit tutorials and Jupyter notebooks, presenting new ways of solving some of the
-  most relevant problems in contemporary science and engineering. </p>
-
-  <p>One of the most anticipated applications for quantum computers remains in the
-  enhancement of biophysics. To this end, many speculate that one of the first and
-  most influential areas to be improved is in protein structure prediction. This is
-  known as the "protein folding problem", whereby the primary amino acid sequence
-  determines their 3D conformation. Why is this important? All biological activity,
-  and by extension, all aspects of life (and disease), are the result of unique functions
-  these proteins develop once they adopt this 3D structure. The computational complexity
-  of this problem is insurmountable. We therefore hypothesize that quantum computers
-  will have a significant advantage. This work culminates in the creation of a full
-  biophysics Galaxy workflow: 1) the ab initio prediction of a protein conformation
-  (a coarse grain, alpha Carbon trace backbone model), 2) the conversion of this quantum
-  output into a conventional PDB format, 3) the posterior reconstruction of the protein''s
-  full all-atom structure, 4) the application of a force field and creation of a physiologically
-  relevant system, and 5) molecular dynamics simulations and subsequent analysis of
-  this system. </p>
-
-  <p>Bringing Qiskit into Galaxy will be an asset to researchers, educators, and trainees,
-  allowing many to leverage this new technology to advance their own research efforts.
-  Users will be able to readily run programs either on a simulator (emulating quantum
-  circuits on a classical computer) or on actual quantum hardware on the backend (provided
-  they have IBM credentials). We anticipate that over the next decade quantum computers
-  will be more and more accessible to researchers. These new galaxy tools and workflows
-  will thus help the community stay up to date and at the forefront of the quantum
-  revolution.</p>'
+  most relevant problems in contemporary science and engineering.</p>'
 discord_channel_id: ''
 duration: 30
 end_time: TBD

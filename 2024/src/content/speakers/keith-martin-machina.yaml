@@ -11,6 +11,5 @@ social_links:
 speaker_type: speaker
 talks:
 - code: KSJSPY
-  slug: a-novel-framework-to-efficient-path-planning-through-real-time
-  title: A Novel Framework to Efficient Path Planning Through Real-time Cost Map Generation
-    Using Neural Networks for Search and Rescue Missions
+  slug: efficient-path-planning-for-search-and-rescue-missions-using
+  title: Efficient Path Planning for Search and Rescue Missions Using Neural Networks
