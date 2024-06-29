@@ -11,8 +11,10 @@ Everyone interacting at PyOhio events and in online spaces is expected to follow
 
 All incidents should be reported by emailing safety@pyohio.org. This email alias contacts the following responders:
 
+- Alex Knill
+- Anurag Saxena
 - Dave Forgac
-- Mike Pirnat
 - Kattni Rembor
+- Keith Murray
 
 For any report that involves the above individuals, email conduct-wg@python.org instead.
