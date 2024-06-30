@@ -21,16 +21,17 @@ description: '<p>What do NASA, Google Blogs, The Motley Fool, CFPB.gov, and the 
   </ul>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T15:15:00-04:00'
 qna: true
 qna_channel: Wagtail
+room: Cattelya
 slug: wagtail-the-python-cms-taking-the-world-by-storm
 speakers:
 - avatar: https://pretalx.com/media/avatars/square-vince_g23uQZP.jpg
   code: R3UWNF
   name: Vince Salvino
   slug: vince-salvino
-start_time: TBD
+start_time: '2024-07-28T14:45:00-04:00'
 stream_timestamp: ''
 title: 'Wagtail: The Python CMS Taking the World by Storm'
 type: 30 Minute Talk

@@ -30,16 +30,17 @@ description: '<p>Uncover the secrets to turbocharging your Python numeric comput
   support interoperability</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T15:30:00-04:00'
 qna: true
 qna_channel: Boosting Python Numeric Computations with Dynamic C++ Integration
+room: Calypso
 slug: boosting-python-numeric-computations-with-dynamic-c-integration
 speakers:
 - avatar: https://pretalx.com/media/avatars/1656533339216_FxGxnGS.jpeg
   code: ES3U77
   name: Mandar Deshpande
   slug: mandar-deshpande
-start_time: TBD
+start_time: '2024-07-27T15:00:00-04:00'
 stream_timestamp: ''
 title: Boosting Python Numeric Computations with Dynamic C++ Integration
 type: 30 Minute Talk

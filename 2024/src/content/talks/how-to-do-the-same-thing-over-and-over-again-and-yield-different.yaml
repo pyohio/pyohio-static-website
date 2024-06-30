@@ -8,16 +8,17 @@ description: <p>When I started working with Elasticsearch, the data in my index 
   data accuracy.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T14:45:00-04:00'
 qna: true
 qna_channel: How to Do the Same Thing Over and Over Again and Yield Different Results
+room: Cattelya
 slug: how-to-do-the-same-thing-over-and-over-again-and-yield-different
 speakers:
 - avatar: https://pretalx.com/media/avatars/jess_cAYx6nn.jpeg
   code: QJCEWP
   name: Jessica Garson
   slug: jessica-garson
-start_time: TBD
+start_time: '2024-07-27T14:15:00-04:00'
 stream_timestamp: ''
 title: How to Do the Same Thing Over and Over Again and Yield Different Results
 type: 30 Minute Talk

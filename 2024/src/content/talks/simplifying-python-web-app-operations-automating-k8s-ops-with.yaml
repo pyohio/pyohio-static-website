@@ -10,16 +10,17 @@ description: <p>After creating a great web app using Python such as with flask, 
   an informed decision on which tool best suits your needs!</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T12:15:00-04:00'
 qna: true
 qna_channel: Simplifying Python Web App Operations
+room: Calypso
 slug: simplifying-python-web-app-operations-automating-k8s-ops-with
 speakers:
 - avatar: https://pretalx.com/media/avatars/1615684432676_U5XDwSy.jpeg
   code: ATDLZU
   name: David Andersson
   slug: david-andersson
-start_time: TBD
+start_time: '2024-07-27T11:45:00-04:00'
 stream_timestamp: ''
 title: 'Simplifying Python Web App Operations: Automating K8s Ops with Open Source'
 type: 30 Minute Talk

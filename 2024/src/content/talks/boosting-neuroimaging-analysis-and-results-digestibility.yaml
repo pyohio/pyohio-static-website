@@ -5,16 +5,17 @@ description: <p>Make neuroimaging results easier to digest for patients and equi
   capabilities through MNE, an open-source Python Library.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T14:45:00-04:00'
 qna: true
 qna_channel: Boosting Neuroimaging Analysis and Results Digestibility 🧠
+room: Calypso
 slug: boosting-neuroimaging-analysis-and-results-digestibility
 speakers:
 - avatar: https://pretalx.com/media/avatars/profile_vCfJrB9.jpg
   code: MGPBMB
   name: Carlos A Aranibar
   slug: carlos-a-aranibar
-start_time: TBD
+start_time: '2024-07-27T14:15:00-04:00'
 stream_timestamp: ''
 title: Boosting Neuroimaging Analysis and Results Digestibility 🧠
 type: 30 Minute Talk

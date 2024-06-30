@@ -14,16 +14,17 @@ description: '<p>Have you ever heard of device authorization flow? You may have 
   it working in an application that integrates Python (using FastAPI) and Micropython.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:45:00-04:00'
 qna: true
 qna_channel: Device Authorization Flow 101
+room: Orchid Ballroom West
 slug: device-authorization-flow-101-logging-in-from-input-constrained
 speakers:
 - avatar: https://pretalx.com/media/avatars/profile-jt_JQdJmlQ.png
   code: V9AARY
   name: Jessica Temporal
   slug: jessica-temporal
-start_time: TBD
+start_time: '2024-07-28T13:15:00-04:00'
 stream_timestamp: ''
 title: 'Device Authorization Flow 101: Logging in From Input Constrained Devices'
 type: 30 Minute Talk

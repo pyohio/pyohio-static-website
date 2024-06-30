@@ -12,16 +12,17 @@ description: '<h2>Overview</h2>
   <p>This is a link to an article I wrote about this topic: <a href="https://miguel-codes.medium.com/unconventional-load-testing-leveraging-python-locust-for-postgresql-stress-testing-d6e07d63714b">https://miguel-codes.medium.com/unconventional-load-testing-leveraging-python-locust-for-postgresql-stress-testing-d6e07d63714b</a></p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:00:00-04:00'
 qna: true
 qna_channel: Stress Less
+room: Orchid Ballroom East
 slug: stress-less-easy-database-load-testing-using-python-and-locust
 speakers:
 - avatar: https://pretalx.com/media/avatars/Screenshot_2024-06-10_at_9.30.09AM_iFc1tFy.png
   code: 8KG3AQ
   name: Miguel Johnson
   slug: miguel-johnson
-start_time: TBD
+start_time: '2024-07-28T12:30:00-04:00'
 stream_timestamp: ''
 title: 'Stress Less: Easy Database Load Testing Using Python and Locust'
 type: 30 Minute Talk

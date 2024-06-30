@@ -15,16 +15,17 @@ description: '<p>The era of quantum computing is here. As it continues to evolve
   most relevant problems in contemporary science and engineering.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T11:30:00-04:00'
 qna: false
 qna_channel: null
+room: Calypso
 slug: quantum-computing-with-qiskit-in-galaxy
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_0863_77KbA19.JPG
   code: VBWRLY
   name: Bryan Raubenolt
   slug: bryan-raubenolt
-start_time: TBD
+start_time: '2024-07-27T11:00:00-04:00'
 stream_timestamp: ''
 title: Quantum Computing with Qiskit in Galaxy
 type: 30 Minute Talk

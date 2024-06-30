@@ -3,16 +3,17 @@ content_warnings: null
 description: <p>Keynote.</p>
 discord_channel_id: ''
 duration: 45
-end_time: TBD
+end_time: '2024-07-27T16:30:00-04:00'
 qna: false
 qna_channel: null
+room: Orchid Ballroom
 slug: trey-hunner-keynote
 speakers:
 - avatar: https://pretalx.com/media/avatars/avatar_W4JeHPS.jpg
   code: UYHZBE
   name: Trey Hunner
   slug: trey-hunner
-start_time: TBD
+start_time: '2024-07-27T15:45:00-04:00'
 stream_timestamp: ''
 title: Keynote
 type: Keynote

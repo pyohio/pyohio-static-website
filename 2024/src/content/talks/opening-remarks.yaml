@@ -3,12 +3,13 @@ content_warnings: null
 description: <p>Opening Remarks Saturday</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2024-07-27T09:15:00-04:00'
 qna: false
 qna_channel: null
+room: Orchid Ballroom
 slug: opening-remarks
 speakers: []
-start_time: TBD
+start_time: '2024-07-27T09:00:00-04:00'
 stream_timestamp: ''
 title: Opening Remarks
 type: Plenary Session

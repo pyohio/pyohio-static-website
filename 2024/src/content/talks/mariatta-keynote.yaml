@@ -3,16 +3,17 @@ content_warnings: null
 description: <p>Keynote</p>
 discord_channel_id: ''
 duration: 45
-end_time: TBD
+end_time: '2024-07-28T16:15:00-04:00'
 qna: false
 qna_channel: null
+room: Orchid Ballroom
 slug: mariatta-keynote
 speakers:
 - avatar: https://pretalx.com/media/avatars/6b6e72d297aa0270654a0d4575f1287e_Hr78GUN.jpg
   code: PTGUYZ
   name: Mariatta
   slug: mariatta
-start_time: TBD
+start_time: '2024-07-28T15:30:00-04:00'
 stream_timestamp: ''
 title: Keynote
 type: Keynote
