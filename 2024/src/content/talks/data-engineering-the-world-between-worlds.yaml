@@ -12,7 +12,7 @@ description: <p>Data engineering is an often misunderstood, conflated range of s
   yourself apart if you decide data engineering is for you!</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T15:30:00-04:00'
 qna: true
 qna_channel: Data Engineering
 slug: data-engineering-the-world-between-worlds
@@ -21,7 +21,7 @@ speakers:
   code: R9HB7N
   name: Rainu Ittycheriah
   slug: rainu-ittycheriah
-start_time: TBD
+start_time: '2024-07-27T15:00:00-04:00'
 stream_timestamp: ''
 title: 'Data Engineering: The World Between Worlds'
 type: 30 Minute Talk

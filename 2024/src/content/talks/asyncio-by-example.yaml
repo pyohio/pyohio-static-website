@@ -13,7 +13,7 @@ description: '<p>Async functions in Python are a great way to simplify otherwise
   can experiment and change the code if the audience has questions.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:45:00-04:00'
 qna: true
 qna_channel: Asyncio by Example
 slug: asyncio-by-example
@@ -22,7 +22,7 @@ speakers:
   code: PWN7XL
   name: Andrew Kubera
   slug: andrew-kubera
-start_time: TBD
+start_time: '2024-07-28T13:15:00-04:00'
 stream_timestamp: ''
 title: Asyncio by Example
 type: 30 Minute Talk

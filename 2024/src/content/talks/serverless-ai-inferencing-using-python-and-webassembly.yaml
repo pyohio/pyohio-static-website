@@ -8,7 +8,7 @@ description: <p>Unleashing the power of serverless AI has never been more access
   to elevate your game instantly.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T10:45:00-04:00'
 qna: true
 qna_channel: Serverless AI Inferencing Using Python and WebAssembly
 slug: serverless-ai-inferencing-using-python-and-webassembly
@@ -17,7 +17,7 @@ speakers:
   code: T9TYF8
   name: Shivay Lamba
   slug: shivay-lamba
-start_time: TBD
+start_time: '2024-07-27T10:15:00-04:00'
 stream_timestamp: ''
 title: Serverless AI Inferencing Using Python and WebAssembly
 type: 30 Minute Talk

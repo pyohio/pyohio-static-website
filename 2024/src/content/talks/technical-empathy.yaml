@@ -20,7 +20,7 @@ description: '<p>From software to sneakers to sofas, the best designs are execut
   empathy in themselves and foster it within teams.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T15:15:00-04:00'
 qna: true
 qna_channel: Technical Empathy
 slug: technical-empathy
@@ -29,7 +29,7 @@ speakers:
   code: UVE988
   name: Leon Adato
   slug: leon-adato
-start_time: TBD
+start_time: '2024-07-28T14:45:00-04:00'
 stream_timestamp: ''
 title: Technical Empathy
 type: 30 Minute Talk

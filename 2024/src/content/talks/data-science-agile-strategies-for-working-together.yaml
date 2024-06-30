@@ -11,7 +11,7 @@ description: '<p>Data science and Agile aren''t famous for getting along. Data s
   from my own experience, as well as stories I''ve heard from my colleagues.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T12:15:00-04:00'
 qna: false
 qna_channel: null
 slug: data-science-agile-strategies-for-working-together
@@ -20,7 +20,7 @@ speakers:
   code: EJKPCG
   name: Alyssa Batula
   slug: alyssa-batula
-start_time: TBD
+start_time: '2024-07-27T11:45:00-04:00'
 stream_timestamp: ''
 title: 'Data Science & Agile: Strategies for Working Together'
 type: 30 Minute Talk
