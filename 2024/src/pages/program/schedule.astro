@@ -1,0 +1,103 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattelya"]
+const talks = (await getCollection("talks")).sort(
+  (a, b) => Date.parse(a.data.start_time) - Date.parse(b.data.start_time) || roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)
+);
+
+const talkDataByDate = talks.reduce((acc, talk) => {
+  const date = DateTime.fromISO(talk.data.start_time).toISODate()
+  if (!acc[date]) {
+    acc[date] = []
+  }
+  acc[date].push(talk)
+  return acc
+}, {})
+
+const talkDataByDateAndTime = Object.keys(talkDataByDate).reduce((acc, date) => {
+  acc[date] = talkDataByDate[date].reduce((acc, talk) => {
+    const time = DateTime.fromISO(talk.data.start_time)
+    if (!acc[time]) {
+      acc[time] = []
+    }
+    acc[time].push(talk)
+    return acc
+  }, {})
+  return acc
+}, {})
+
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
+  }
+}
+---
+
+<DefaultLayout title="Schedule">
+  <section class="my-6">
+    <div class="container">
+      <h1>Schedule</h1>
+    </div>
+  </section>
+
+
+{( Object.keys(talkDataByDateAndTime).map((scheduleDate) => (
+  <section class=" container">
+      <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
+      <table class="table-fixed">
+        <thead class="text-center border">
+          <th class="w-32 px-4 border">Start Time</th>
+          <th class="px-4 border" colspan="4">Room</th>
+        
+        </thead>
+        <thead class="text-center border">
+          <th class="w-32 px-4 border"></th>
+          <th class="px-4 border">Orchid Ballroom West</th>
+          <th class="px-4 border">Orchid Ballroom East</th>
+          <th class="px-4 border">Calypso</th>
+          <th class="px-4 border">Cattelya</th>
+        </thead>
+
+      {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
+        <tr class="border">
+          <td class="text-center border"><p>{formatTime(scheduleTime)}</p></td>
+            {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
+              () => {
+                if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
+                  return <td class="border px-2" colspan="2">
+                    <p class="">{talk.data.title}</p>
+                  </td><td></td>
+                } else if (talk.data.type === "Break") {
+                  if (talk.data.title === "Lunch Break"){
+                    return <td class="border px-2" colspan="4">
+                    <p class="">{talk.data.title}</p>
+                  </td>
+                  } else {
+                    return <td class="border px-2" colspan="4">
+                    <p class="">{talk.data.title}</p>
+                  </td>
+                  }
+
+                } else {
+              return <td class="border text-left align-top px-2">
+                <p class="font-bold">
+                  <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
+                </p>
+                                by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}
+              </td>
+                }
+            }
+          ))}
+        </tr>
+      ))}
+      </table>
+  </section>
+)))}
+
+</DefaultLayout>

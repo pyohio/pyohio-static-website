@@ -22,6 +22,7 @@ PRETALX_EVENT_ID = "pyohio-2024"
 DATA_DIR = Path("./2024/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_TIME = "TBD"
+PLENARY_ROOM = "Orchid Ballroom"
 UNLISTED_SPEAKERS = [
     "KGVCNV",  # Dave Forgac
     "DCSCPQ",  # Kattni
@@ -118,6 +119,7 @@ def get_event_data(ctx):
         ]
         if talk.get("slot") is None:
             talk["slot"] = {}
+
         data = {
             "code": talk["code"],
             "title": talk["title"],
@@ -130,11 +132,14 @@ def get_event_data(ctx):
             ),
             "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME),
             "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME),
+            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD"),
             "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
         }
-        # print(f"{talk['code']}: {type(qa_by_talk_code.get(talk['code']))}")
+
+        if data["type"] in ["Keynote", "Plenary Session"]:
+            data["room"] = PLENARY_ROOM
 
         if data["type"] == "Keynote":
             data["slug"] = f"{data['speakers'][0]['slug']}-keynote"

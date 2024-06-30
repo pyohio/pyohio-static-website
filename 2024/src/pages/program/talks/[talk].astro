@@ -25,13 +25,21 @@ function formatTime(timeString) {
     return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
   }
 }
+function formatDay(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('cccc')
+  }
+}
 ---
 
 <DefaultLayout title="Talks">
   <section class="my-12">
     <div class="container">
       <h1>{talk.data.title}</h1>
-      <p class="italic">{talk.data.type} at {formatTime(talk.data.start_time)}</p>
+      <p class="italic">{talk.data.type}<br/>{formatDay(talk.data.start_time)} at {formatTime(talk.data.start_time)} in {talk.data.room}</p>
     </div>
   </section>
   <!-- <section class="container">
