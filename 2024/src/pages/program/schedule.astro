@@ -48,25 +48,25 @@ function formatTime(timeString) {
 
 
 {( Object.keys(talkDataByDateAndTime).map((scheduleDate) => (
-  <section class=" container">
+  <section class="container">
       <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
-      <table class="table-fixed">
-        <thead class="text-center border">
+      <div class="">
+      <table class="table-auto">
+        <thead class="text-center border heading">
           <th class="w-32 px-4 border">Start Time</th>
           <th class="px-4 border" colspan="4">Room</th>
-        
         </thead>
-        <thead class="text-center border">
+        <thead class="text-center border sticky-heading">
           <th class="w-32 px-4 border"></th>
-          <th class="px-4 border">Orchid Ballroom West</th>
-          <th class="px-4 border">Orchid Ballroom East</th>
-          <th class="px-4 border">Calypso</th>
-          <th class="px-4 border">Cattelya</th>
+          <th class="px-4 border min-w-8">Orchid Ballroom West</th>
+          <th class="px-4 border min-w-8">Orchid Ballroom East</th>
+          <th class="px-4 border min-w-8">Calypso</th>
+          <th class="px-4 border min-w-8">Cattelya</th>
         </thead>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
         <tr class="border">
-          <td class="text-center border"><p>{formatTime(scheduleTime)}</p></td>
+          <td class="text-center border time"><p>{formatTime(scheduleTime)}</p></td>
             {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
@@ -96,8 +96,27 @@ function formatTime(timeString) {
           ))}
         </tr>
       ))}
-      </table>
+      </table></div>
   </section>
 )))}
 
-</DefaultLayout>
+
+
+<style lang="scss" is:global>
+  @use '../../assets/scss/base/color' as *;
+  .sticky-heading {
+    position: sticky;
+    top: 0;
+    background-color:  var(--neutral-background);
+    z-index: 3;
+  }
+  .heading {
+    background-color: var(--neutral-background);
+  }
+  .time {
+    background-color: var(--neutral-background);
+    position: sticky;
+  left: 0;
+  z-index: 2;
+  }
+</style>
