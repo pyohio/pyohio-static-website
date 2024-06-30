@@ -51,17 +51,17 @@ function formatTime(timeString) {
   <section class="container">
       <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
       <div class="">
-      <table class="table-fixed text-sm">
+      <table class="table-auto text-sm">
         <thead class="text-center border heading">
-          <th class="w-32 px-4 border">Start Time</th>
-          <th class="px-4 border" colspan="4">Room</th>
+          <th class="w-32 p-2 border">Start Time</th>
+          <th class="p-x2 border" colspan="4">Room</th>
         </thead>
         <thead class="text-center border sticky-heading">
-          <th class="w-32 px-4 border"></th>
-          <th class="px-4 border min-w-12">Orchid Ballroom West</th>
-          <th class="px-4 border min-w-12">Orchid Ballroom East</th>
-          <th class="px-4 border min-w-12">Calypso</th>
-          <th class="px-4 border min-w-12">Cattelya</th>
+          <th class="w-32 p-2 border"></th>
+          <th class="p-2 border talk">Orchid Ballroom West</th>
+          <th class="p-2 border talk">Orchid Ballroom East</th>
+          <th class="p-2 border talk">Calypso</th>
+          <th class="p-2 border talk">Cattelya</th>
         </thead>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
@@ -70,7 +70,7 @@ function formatTime(timeString) {
             {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
-                  return <td class="border px-2" colspan="2">
+                  return <td class="border p-2" colspan="2">
                     <p class="">{talk.data.title}</p>
                   </td><td></td>
                 } else if (talk.data.type === "Break") {
@@ -79,17 +79,19 @@ function formatTime(timeString) {
                     <p class="">{talk.data.title}</p>
                   </td>
                   } else {
-                    return <td class="border px-2" colspan="4">
+                    return <td class="border p-2" colspan="4">
                     <p class="">{talk.data.title}</p>
                   </td>
                   }
 
                 } else {
-              return <td class="border text-left align-top px-2">
+              return <td class="border text-left align-top p-2">
                 <p class="font-bold">
                   <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
                 </p>
+                <p class="text-xs">
                                 by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}
+                                </p>
               </td>
                 }
             }
@@ -118,5 +120,8 @@ function formatTime(timeString) {
     position: sticky;
   left: 0;
   z-index: 2;
+  }
+  .talk {
+    min-width: 14em;
   }
 </style>
