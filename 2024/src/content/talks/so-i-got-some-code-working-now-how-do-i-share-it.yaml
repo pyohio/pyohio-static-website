@@ -13,7 +13,7 @@ description: '<p>You have some code running locally, but you want to be able to 
   to get code snippets up and running for non-technical people?</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T10:45:00-04:00'
 qna: true
 qna_channel: So, I Got Some Code Working… Now How Do I Share It
 slug: so-i-got-some-code-working-now-how-do-i-share-it
@@ -22,7 +22,7 @@ speakers:
   code: Q8HPFK
   name: Elaine Wong
   slug: elaine-wong
-start_time: TBD
+start_time: '2024-07-27T10:15:00-04:00'
 stream_timestamp: ''
 title: So, I Got Some Code Working… Now How Do I Share It?!
 type: 30 Minute Talk
