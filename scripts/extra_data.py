@@ -307,6 +307,13 @@ TALK_EXTRAS = {}
 # }
 
 BREAKS = {
+    "SATREG": {
+        "code": "SATREG",
+        "title": "Registration Opens",
+        "start_time": "2024-07-27T08:00:00-04:00",
+        "end_time": "2024-07-27T09:00:00-04:00",
+        "type": "Break",
+    },
     "BREAK2": {
         "code": "BREAK2",
         "title": "Break",
@@ -347,6 +354,13 @@ BREAKS = {
         "title": "Break",
         "start_time": "2024-07-27T15:30:00-04:00",
         "end_time": "2024-07-27T15:45:00-04:00",
+        "type": "Break",
+    },
+    "SUNREG": {
+        "code": "SUNREG",
+        "title": "Registration Opens",
+        "start_time": "2024-07-28T11:30:00-04:00",
+        "end_time": "2024-07-28T12:00:00-04:00",
         "type": "Break",
     },
     "BREAK7": {

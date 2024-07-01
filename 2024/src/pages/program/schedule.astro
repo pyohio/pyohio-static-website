@@ -52,40 +52,40 @@ function formatTime(timeString) {
       <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
       <div class="">
       <table class="table-auto text-sm">
-        <thead class="text-center border heading">
-          <th class="w-32 p-2 border time">Start Time</th>
-          <th class="p-x2 border" colspan="4">Room</th>
+        <thead class="text-center  heading">
+          <th class="w-32 p-2  time">Start Time</th>
+          <th class="p-x2 " colspan="4">Room</th>
         </thead>
-        <thead class="text-center border sticky-heading">
-          <th class="w-32 p-2 border"></th>
-          <th class="p-2 border talk">Orchid Ballroom West</th>
-          <th class="p-2 border talk">Orchid Ballroom East</th>
-          <th class="p-2 border talk">Calypso</th>
-          <th class="p-2 border talk">Cattelya</th>
+        <thead class="text-center  sticky-heading">
+          <th class="w-32 p-2 "></th>
+          <th class="p-2  heading">Orchid Ballroom West</th>
+          <th class="p-2  heading">Orchid Ballroom East</th>
+          <th class="p-2  heading">Calypso</th>
+          <th class="p-2  heading">Cattelya</th>
         </thead>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
-        <tr class="border">
-          <td class="text-center border time"><p>{formatTime(scheduleTime)}</p></td>
+        <tr class="">
+          <td class="text-center  font-bold time"><p>{formatTime(scheduleTime)}</p></td>
             {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
-                  return <td class="border p-2" colspan="2">
+                  return <td class="font-bold p-2 plenary" colspan="2">
                     <p class="">{talk.data.title}</p>
-                  </td><td></td>
+                  </td><td class="break" colspan="2"></td>
                 } else if (talk.data.type === "Break") {
                   if (talk.data.title === "Lunch Break"){
-                    return <td class="border px-2" colspan="4">
-                    <p class="">{talk.data.title}</p>
+                    return <td class=" p-2 break" colspan="4">
+                    <p class="font-bold">{talk.data.title}</p>
                   </td>
                   } else {
-                    return <td class="border p-2" colspan="4">
+                    return <td class=" p-2 break" colspan="4">
                     <p class="">{talk.data.title}</p>
                   </td>
                   }
 
                 } else {
-              return <td class="border text-left align-top p-2">
+              return <td class=" text-left align-top p-2 talk">
                 <p class="font-bold">
                   <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
                 </p>
@@ -109,19 +109,35 @@ function formatTime(timeString) {
   .sticky-heading {
     position: sticky;
     top: 0;
-    background-color:  var(--neutral-background);
+    background-color:  var(--table-heading);
     z-index: 3;
   }
   .heading {
-    background-color: var(--neutral-background);
+    background-color: var(--table-heading);
+    border: 1px solid var(--table-border);
+    
   }
   .time {
-    background-color: var(--neutral-background);
+    background-color: var(--table-heading);
     position: sticky;
+    border-top: 1px solid var(--table-border);
   left: 0;
   z-index: 2;
   }
   .talk {
     min-width: 14em;
+    background-color: var(--table-background);
+    border: 1px solid var(--table-border);
+  }
+  .plenary {
+    min-width: 14em;
+    background-color: var(--table-background) ;
+    border: 1px solid var(--table-border);
+  }
+  .break {
+    background-color: var(--table-muted);
+  }
+  table {
+    border: 1px solid var(--table-border);
   }
 </style>
