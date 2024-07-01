@@ -19,7 +19,7 @@ description: '<p>Vector-Symbolic Architectures (a.k.a. Hyperdimensional Computin
   href="https://doi.org/10.21105/joss.05704">https://doi.org/10.21105/joss.05704</a></a>.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T14:30:00-04:00'
 qna: true
 qna_channel: Building Vector-Symbolic Architectures with Python
 slug: building-vector-symbolic-architectures-with-python
@@ -28,7 +28,7 @@ speakers:
   code: CHGH3X
   name: Fabio Cumbo
   slug: fabio-cumbo
-start_time: TBD
+start_time: '2024-07-28T14:00:00-04:00'
 stream_timestamp: ''
 title: Building Vector-Symbolic Architectures with Python
 type: 30 Minute Talk
