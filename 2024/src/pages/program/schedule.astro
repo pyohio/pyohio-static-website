@@ -53,16 +53,16 @@ function formatTime(timeString) {
       <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
       <div class="">
       <table class="table-auto text-sm">
-        <thead class="text-center  heading">
+        <thead class="text-center heading">
           <th class="w-32 p-2  time">Start Time</th>
           <th class="p-x2 " colspan="4">Room</th>
         </thead>
-        <thead class="text-center  sticky-heading">
-          <th class="w-32 p-2 "></th>
-          <th class="p-2  heading">Orchid Ballroom West</th>
-          <th class="p-2  heading">Orchid Ballroom East</th>
-          <th class="p-2  heading">Calypso</th>
-          <th class="p-2  heading">Cattelya</th>
+        <thead class="text-center">
+          <th class="p-2 sticky-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
+          <th class="p-2 sticky-heading">Orchid Ballroom West</th>
+          <th class="p-2 sticky-heading">Orchid Ballroom East</th>
+          <th class="p-2 sticky-heading">Calypso</th>
+          <th class="p-2 sticky-heading">Cattelya</th>
         </thead>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
@@ -122,11 +122,11 @@ function formatTime(timeString) {
     top: 0;
     background-color:  var(--table-heading);
     z-index: 3;
+    border: 1px solid var(--table-border);
   }
   .heading {
     background-color: var(--table-heading);
     border: 1px solid var(--table-border);
-    
   }
   .time {
     background-color: var(--table-heading);
@@ -157,5 +157,7 @@ function formatTime(timeString) {
   }
   table {
     border: 1px solid var(--table-border);
+    border-collapse: separate;
+    border-spacing: 0;
   }
 </style>
