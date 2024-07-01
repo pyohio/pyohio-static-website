@@ -23,7 +23,7 @@ description: '<p>Have you seen <code>pathlib</code>?  If not, once I show you, y
   <p>Stop messing with string paths and get with <code>pathlib</code>!</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:00:00-04:00'
 qna: true
 qna_channel: Hot
 slug: hot-pathlib-not-string-paths
@@ -32,7 +32,7 @@ speakers:
   code: UKGFFX
   name: Josh Schneider
   slug: josh-schneider
-start_time: TBD
+start_time: '2024-07-28T12:30:00-04:00'
 stream_timestamp: ''
 title: 'Hot: Pathlib, Not: String Paths'
 type: 30 Minute Talk

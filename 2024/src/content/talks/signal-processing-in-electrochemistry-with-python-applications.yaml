@@ -22,7 +22,7 @@ description: '<p>With an average of 195 daily deaths due to synthetic opioids ov
   address problems at the intersection of statistics, public health, and public policy.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:00:00-04:00'
 qna: true
 qna_channel: Signal Processing in Electrochemistry with Python
 slug: signal-processing-in-electrochemistry-with-python-applications
@@ -31,7 +31,7 @@ speakers:
   code: UYRBHX
   name: Rodrigo Silva Ferreira
   slug: rodrigo-silva-ferreira
-start_time: TBD
+start_time: '2024-07-28T12:30:00-04:00'
 stream_timestamp: ''
 title: 'Signal Processing in Electrochemistry with Python: Applications to the US
   Opioids Crisis'

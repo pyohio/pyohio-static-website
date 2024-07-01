@@ -11,7 +11,7 @@ description: '<p>With the 20th anniversary of the Zen of Python coming up in Aug
   perhaps the most important question: is the Zen of Python still relevant today?</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T14:30:00-04:00'
 qna: true
 qna_channel: Zen Commandments
 slug: zen-commandments
@@ -20,7 +20,7 @@ speakers:
   code: GLLNQF
   name: Paul Hutchings
   slug: paul-hutchings
-start_time: TBD
+start_time: '2024-07-28T14:00:00-04:00'
 stream_timestamp: ''
 title: Zen Commandments
 type: 30 Minute Talk

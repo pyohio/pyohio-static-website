@@ -11,7 +11,7 @@ description: '<p>The internet has a wide variety of information available for hu
   use asyncio to improve the performance of your web scraping endeavors.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T14:30:00-04:00'
 qna: true
 qna_channel: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping
 slug: gotta-go-fast-using-asyncio-for-more-efficient-web-scraping
@@ -20,7 +20,7 @@ speakers:
   code: TDNT9P
   name: Samuel Agnew
   slug: samuel-agnew
-start_time: TBD
+start_time: '2024-07-28T14:00:00-04:00'
 stream_timestamp: ''
 title: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping
 type: 30 Minute Talk

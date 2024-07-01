@@ -10,7 +10,7 @@ description: '<p>Okay you already enjoy using python, and you already enjoy usin
   for maintainability, and how to build for widespread adoption.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T15:15:00-04:00'
 qna: true
 qna_channel: Python + Discord = Great Bots!
 slug: python-discord-great-bots
@@ -19,7 +19,7 @@ speakers:
   code: SZA7TK
   name: Alex Oladele
   slug: alex-oladele
-start_time: TBD
+start_time: '2024-07-28T14:45:00-04:00'
 stream_timestamp: ''
 title: Python + Discord = Great Bots!
 type: 30 Minute Talk
