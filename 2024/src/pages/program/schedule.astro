@@ -70,12 +70,22 @@ function formatTime(timeString) {
             {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
-                  return <td class="font-bold p-2 plenary" colspan="2">
-                    <p class="">{talk.data.title}</p>
-                  </td><td class="break" colspan="2"></td>
+                  if (talk.data.title === "Lightning Talks"){
+                    return <td class="align-top font-bold p-2 plenary lightning-talks" colspan="2">
+                      <p class=""><a href="/2024/program/lightning-talks">{talk.data.title}</a></p>
+                      </td><td class="break" colspan="2"></td>
+                  } else if (talk.data.type === "Keynote") {
+                    return <td class="align-top font-bold p-2 plenary talk" colspan="2">
+                      <p class="">{talk.data.title}</p>
+                      </td><td class="break" colspan="2"></td> 
+                }else {
+                    return <td class="font-bold p-2 plenary" colspan="2">
+                      <p class="">{talk.data.title}</p>
+                      </td><td class="break" colspan="2"></td>
+                  }
                 } else if (talk.data.type === "Break") {
                   if (talk.data.title === "Lunch Break"){
-                    return <td class=" p-2 break" colspan="4">
+                    return <td class="align-top p-2 break lunch" colspan="4">
                     <p class="font-bold">{talk.data.title}</p>
                   </td>
                   } else {
@@ -126,6 +136,7 @@ function formatTime(timeString) {
   }
   .talk {
     min-width: 14em;
+    height: 9em;
     background-color: var(--table-background);
     border: 1px solid var(--table-border);
   }
@@ -134,8 +145,14 @@ function formatTime(timeString) {
     background-color: var(--table-background) ;
     border: 1px solid var(--table-border);
   }
+  .lightning-talks {
+    height: 12em;
+  }
   .break {
     background-color: var(--table-muted);
+  }
+  .lunch {
+    height: 12em;
   }
   table {
     border: 1px solid var(--table-border);

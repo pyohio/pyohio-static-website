@@ -356,6 +356,13 @@ BREAKS = {
         "end_time": "2024-07-27T15:45:00-04:00",
         "type": "Break",
     },
+    "SATCLOSE": {
+        "code": "SATCLOSE",
+        "title": "Conference Space Closes",
+        "start_time": "2024-07-27T18:30:00-04:00",
+        "end_time": "2024-07-27T19:00:00-04:00",
+        "type": "Break",
+    },
     "SUNREG": {
         "code": "SUNREG",
         "title": "Registration Opens",

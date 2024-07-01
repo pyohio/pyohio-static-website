@@ -5,6 +5,12 @@ title: Lightning Talks
 
 # Lightning Talks
 
-Lightning talks are quick 5-minute (hard limit!) talks on any topics of interest to the PyOhio community.
+_Saturday at 4:30pm-6:30pm in Orchid Ballroom_
 
-Schedule and the sign-up process for lightning talks will be posted closer to the event.
+Lightning talks are quick 5-minute (hard limit!) talks on any topics of interest to the PyOhio community. Slides are encouraged but not required!
+
+A sign-up sheet will be posted in the lobby near registration until 3:00pm on Saturday. Talks will be selected and the order randomized. The talk list will be posted on this page by 3:45pm.
+
+## Talks
+
+_Talks will be posted here_
