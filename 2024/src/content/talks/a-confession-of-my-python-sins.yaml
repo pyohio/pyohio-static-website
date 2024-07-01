@@ -7,16 +7,17 @@ description: '<p>I''ve been writing Python code for twenty years now, and in tha
   abominations, and other sins.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:00:00-04:00'
 qna: true
 qna_channel: A Confession of My Python Sins
+room: Calypso
 slug: a-confession-of-my-python-sins
 speakers:
 - avatar: https://pretalx.com/media/avatars/headshot_QOd407N.jpg
   code: QGEHAQ
   name: Jamie Bliss
   slug: jamie-bliss
-start_time: TBD
+start_time: '2024-07-28T12:30:00-04:00'
 stream_timestamp: ''
 title: A Confession of My Python Sins
 type: 30 Minute Talk

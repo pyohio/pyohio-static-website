@@ -7,17 +7,18 @@ description: <p>In this session, we will explore techniques for building resilie
   and see a live demonstration of how to implement them in a FastAPI application.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T11:30:00-04:00'
 qna: true
 qna_channel: Building Resilient Applications with Circuit Breakers and Retries Using
   FastAPI
+room: Orchid Ballroom East
 slug: building-resilient-applications-with-circuit-breakers-and-using
 speakers:
 - avatar: https://pretalx.com/media/avatars/Sam-Image_5To9Rfy.jpeg
   code: HMNDYW
   name: Sameer Shukla
   slug: sameer-shukla
-start_time: TBD
+start_time: '2024-07-27T11:00:00-04:00'
 stream_timestamp: ''
 title: Building Resilient Applications with Circuit Breakers and Retries Using FastAPI
 type: 30 Minute Talk

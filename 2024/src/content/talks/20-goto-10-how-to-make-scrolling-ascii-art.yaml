@@ -7,16 +7,17 @@ description: <p>Scroll art is a form of animated ASCII art that beginners can ma
   for your own digital art.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-27T15:30:00-04:00'
 qna: false
 qna_channel: null
+room: Orchid Ballroom East
 slug: 20-goto-10-how-to-make-scrolling-ascii-art
 speakers:
 - avatar: https://pretalx.com/media/avatars/f058499cabc6e56e7622015b4db79304_gf1pFUs.jpg
   code: HVAES8
   name: Al Sweigart
   slug: al-sweigart
-start_time: TBD
+start_time: '2024-07-27T15:00:00-04:00'
 stream_timestamp: ''
 title: '20 GOTO 10: How to Make Scrolling ASCII Art'
 type: 30 Minute Talk

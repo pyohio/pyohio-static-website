@@ -1,0 +1,161 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattelya"]
+const talks = (await getCollection("talks")).sort(
+  (a, b) => Date.parse(a.data.start_time) - Date.parse(b.data.start_time) || roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)
+);
+
+const talkDataByDate = talks.reduce((acc, talk) => {
+  const date = DateTime.fromISO(talk.data.start_time).toISODate()
+  if (!acc[date]) {
+    acc[date] = []
+  }
+  acc[date].push(talk)
+  return acc
+}, {})
+
+const talkDataByDateAndTime = Object.keys(talkDataByDate).reduce((acc, date) => {
+  acc[date] = talkDataByDate[date].reduce((acc, talk) => {
+    const time = DateTime.fromISO(talk.data.start_time)
+    if (!acc[time]) {
+      acc[time] = []
+    }
+    acc[time].push(talk)
+    return acc
+  }, {})
+  return acc
+}, {})
+
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
+  }
+}
+---
+
+<DefaultLayout title="Schedule">
+  <section class="my-6">
+    <div class="container">
+      <h1>Schedule</h1>
+      <p><em><a href="/2024/program/open-spaces/">Open Spaces</a> rooms are available during the conference days. All times EDT.</em></p>
+    </div>
+  </section>
+
+
+{( Object.keys(talkDataByDateAndTime).map((scheduleDate) => (
+  <section class="container">
+      <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
+      <div class="">
+      <table class="table-auto text-sm">
+        <thead class="text-center  heading">
+          <th class="w-32 p-2  time">Start Time</th>
+          <th class="p-x2 " colspan="4">Room</th>
+        </thead>
+        <thead class="text-center  sticky-heading">
+          <th class="w-32 p-2 "></th>
+          <th class="p-2  heading">Orchid Ballroom West</th>
+          <th class="p-2  heading">Orchid Ballroom East</th>
+          <th class="p-2  heading">Calypso</th>
+          <th class="p-2  heading">Cattelya</th>
+        </thead>
+
+      {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
+        <tr class="">
+          <td class="text-center  font-bold time"><p>{formatTime(scheduleTime)}</p></td>
+            {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
+              () => {
+                if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
+                  if (talk.data.title === "Lightning Talks"){
+                    return <td class="align-top font-bold p-2 plenary lightning-talks" colspan="2">
+                      <p class=""><a href="/2024/program/lightning-talks">{talk.data.title}</a></p>
+                      </td><td class="break" colspan="2"></td>
+                  } else if (talk.data.type === "Keynote") {
+                    return <td class="align-top font-bold p-2 plenary talk" colspan="2">
+                      <p class="">{talk.data.title}</p>
+                      </td><td class="break" colspan="2"></td> 
+                }else {
+                    return <td class="font-bold p-2 plenary" colspan="2">
+                      <p class="">{talk.data.title}</p>
+                      </td><td class="break" colspan="2"></td>
+                  }
+                } else if (talk.data.type === "Break") {
+                  if (talk.data.title === "Lunch Break"){
+                    return <td class="align-top p-2 break lunch" colspan="4">
+                    <p class="font-bold">{talk.data.title}</p>
+                  </td>
+                  } else {
+                    return <td class=" p-2 break font-bold" colspan="4">
+                    <p class="">{talk.data.title}</p>
+                  </td>
+                  }
+
+                } else {
+              return <td class=" text-left align-top p-2 talk">
+                <p class="font-bold">
+                  <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
+                </p>
+                <p class="text-xs">
+                                by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}
+                                </p>
+              </td>
+                }
+            }
+          ))}
+        </tr>
+      ))}
+      </table></div>
+  </section>
+)))}
+
+
+
+<style lang="scss" is:global>
+  @use '../../assets/scss/base/color' as *;
+  .sticky-heading {
+    position: sticky;
+    top: 0;
+    background-color:  var(--table-heading);
+    z-index: 3;
+  }
+  .heading {
+    background-color: var(--table-heading);
+    border: 1px solid var(--table-border);
+    
+  }
+  .time {
+    background-color: var(--table-heading);
+    position: sticky;
+    border-top: 1px solid var(--table-border);
+  left: 0;
+  z-index: 2;
+  }
+  .talk {
+    min-width: 14em;
+    height: 9em;
+    background-color: var(--table-background);
+    border: 1px solid var(--table-border);
+  }
+  .plenary {
+    min-width: 14em;
+    background-color: var(--table-background) ;
+    border: 1px solid var(--table-border);
+  }
+  .lightning-talks {
+    height: 12em;
+  }
+  .break {
+    background-color: var(--table-muted);
+  }
+  .lunch {
+    height: 12em;
+  }
+  table {
+    border: 1px solid var(--table-border);
+  }
+</style>

@@ -17,9 +17,8 @@ const {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <!-- favicon -->
     <link rel="icon" type="image/png" href="/2024/favicon.png" />
 
@@ -47,16 +46,24 @@ const {
         --background: var(--neutral-100);
         --primary-background: var(--primary-100);
         --neutral-background: var(--neutral-200);
+        --table-heading: var(--primary-50);
+        --table-muted: var(--neutral-300);
+        --table-background: var(--neutral-100);
+        --table-border: var(--neutral-300);
       }
 
       // dark color scheme overrides
       .darkmode {
-        --font-color: var(--neutral-100);
+        --font-color: var(--neutral-400);
         --action-color: var(--secondary-100);
         --action-color-state: var(--secondary-500);
         --background: var(--dark-100);
         --primary-background: var(--primary-500);
         --neutral-background: var(--neutral-900);
+        --table-heading: var(--primary-800);
+        --table-muted: var(--neutral-800);
+        --table-background: var(--neutral-900);
+        --table-border: var(--neutral-800);
       }
 
       .dropdown-menu {
@@ -67,7 +74,7 @@ const {
       html,
       body {
         height: 100%;
-        overflow-x: hidden;
+        overflow-x: auto;
       }
 
       body {

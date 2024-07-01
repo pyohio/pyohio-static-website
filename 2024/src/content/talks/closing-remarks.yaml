@@ -3,12 +3,13 @@ content_warnings: null
 description: <p>Closing Remarks</p>
 discord_channel_id: ''
 duration: 15
-end_time: TBD
+end_time: '2024-07-28T16:30:00-04:00'
 qna: false
 qna_channel: null
+room: Orchid Ballroom
 slug: closing-remarks
 speakers: []
-start_time: TBD
+start_time: '2024-07-28T16:15:00-04:00'
 stream_timestamp: ''
 title: Closing Remarks
 type: Plenary Session

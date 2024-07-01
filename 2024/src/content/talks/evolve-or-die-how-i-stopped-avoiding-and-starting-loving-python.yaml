@@ -131,16 +131,17 @@ description: '<p>Imagine you’re all set to board a flight. You''ve got your bo
   future development.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T14:30:00-04:00'
 qna: true
 qna_channel: Evolve or Die
+room: Orchid Ballroom West
 slug: evolve-or-die-how-i-stopped-avoiding-and-starting-loving-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_5001_WrMybRW.png
   code: KURFK3
   name: Ruby Henry, Ph.d.
   slug: ruby-henry-ph-d
-start_time: TBD
+start_time: '2024-07-28T14:00:00-04:00'
 stream_timestamp: ''
 title: 'Evolve or Die: How I Stopped Avoiding and Starting Loving Python Upgrades'
 type: 30 Minute Talk

@@ -21,16 +21,17 @@ description: '<p>In this presentation, I''ll cover memory management in Python s
   of Python newbies.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2024-07-28T13:45:00-04:00'
 qna: false
 qna_channel: null
+room: Cattelya
 slug: introducing-immortal-objects-building-block-towards-a-multi-core
 speakers:
 - avatar: https://pretalx.com/media/avatars/IMG_7017_wvjkI8L.jpg
   code: BPDLRN
   name: Aditya Mehra
   slug: aditya-mehra
-start_time: TBD
+start_time: '2024-07-28T13:15:00-04:00'
 stream_timestamp: ''
 title: 'Introducing Immortal Objects: Building Block Towards a Multi-core Python Runtime'
 type: 30 Minute Talk

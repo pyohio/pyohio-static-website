@@ -24,8 +24,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /hotel /2024/attend/travel-and/hotels 302
 /prospectus /2024/sponsors/prospectus 302
 /register /2024/attend/registration 302
-/schedule /2024/ 302
-/shirts /2024 302
+/schedule /2024/program/schedule 302
 /sprints /2024 302
 /volunteer /2024/attend/volunteer 302
 /hackfest /2024 302
@@ -33,6 +32,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Off-site
 
+/shirts https://www.customink.com/fundraising/pyohio 302
 /cfp https://pretalx.com/pyohio-2024/cfp 302
 /call-for-proposals https://pretalx.com/pyohio-2024/cfp 302
 /video https://www.youtube.com/c/PyOhio 302
@@ -50,11 +50,12 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 # 2024 Moved URLs
 
 /2024/sponsorship-prospectus /2024/sponsors/prospectus
+/2024/program/talks/schedule /2024/program/schedule
 
 # 2023 Moved URLs
 
 /2023/home /2023 302
-/2023/schedule /2023/talks/schedule
+/2023/chedule /2023/talks/schedule
 
 # 2020 Renamed Talks
 

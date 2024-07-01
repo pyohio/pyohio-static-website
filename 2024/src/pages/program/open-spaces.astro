@@ -1,0 +1,140 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+
+---
+
+<DefaultLayout title="Open Spaces">
+  <section class="my-6">
+    <div class="container">
+      <h1>Open Spaces</h1>
+    </div>
+  </section>
+
+  <section class="container">
+    <p>Open Spaces are self-organized meetups that take place in dedicated rooms during the conference. Topics are defined and discussion is facilitated by attendees rather than conference organizers.</p>
+    <br/>
+    <p>Anyone can participate in an Open Space and anyone can host one! A sign-up board will be posted in the 6th floor lobby near registration. Be sure to take a look at the topics posted or post your own!</p>
+      <h2 class="my-6">Saturday, July 27</h2>
+      <table class="table-auto text-sm">
+        <thead class="text-center  heading">
+          <th class="w-32 p-2  time">Start Time</th>
+          <th class="p-x2 " colspan="4">Room</th>
+        </thead>
+        <thead class="text-center  sticky-heading">
+          <th class="w-32 p-2 "></th>
+          <th class="p-2  heading">Vanda North</th>
+          <th class="p-2  heading">Vanda South</th>
+        </thead>
+        <tr>
+          <td class="time">10:15 am</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">11:00 am</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">11:45 am</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">12:15 pm</td>
+          <td class="break" colspan="2">Lunch Break</td>
+        </tr>
+        <tr>
+          <td class="time">2:15 pm</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">3:00 pm</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+      </table>
+
+
+      <h2 class="my-6">Sunday, July 28</h2>
+      <table class="table-auto text-sm">
+        <thead class="text-center  heading">
+          <th class="w-32 p-2  time">Start Time</th>
+          <th class="p-x2 " colspan="4">Room</th>
+        </thead>
+        <thead class="text-center  sticky-heading">
+          <th class="w-32 p-2 "></th>
+          <th class="p-2  heading">Vanda North</th>
+          <th class="p-2  heading">Vanda South</th>
+        </thead>
+        <tr>
+          <td class="time">12:30 pm</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">1:15 pm</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">2:00 pm</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+        <tr>
+          <td class="time">2:45 pm</td>
+          <td class="talk">Open Space</td>
+          <td class="talk">Open Space</td>
+        </tr>
+
+      </table>
+  </section>
+
+</DefaultLayout>
+
+<style lang="scss" is:global>
+  @use '../../assets/scss/base/color' as *;
+  .sticky-heading {
+    position: sticky;
+    top: 0;
+    background-color:  var(--table-heading);
+    z-index: 3;
+  }
+  .heading {
+    background-color: var(--table-heading);
+    border: 1px solid var(--table-border);
+    
+  }
+  .time {
+    background-color: var(--table-heading);
+    position: sticky;
+    border-top: 1px solid var(--table-border);
+  left: 0;
+  z-index: 2;
+    font-weight: bold;
+    padding: .5rem;
+    text-align: center;
+  }
+  .talk {
+    min-width: 14em;
+    background-color: var(--table-background);
+    border: 1px solid var(--table-border);
+    padding: .5rem;
+    font-weight: bold;
+  }
+  .plenary {
+    min-width: 14em;
+    background-color: var(--table-background) ;
+    border: 1px solid var(--table-border);
+  }
+  .break {
+    background-color: var(--table-muted);
+    padding: .5rem;
+    font-weight: bold;
+  }
+  table {
+    border: 1px solid var(--table-border);
+  }
+</style>

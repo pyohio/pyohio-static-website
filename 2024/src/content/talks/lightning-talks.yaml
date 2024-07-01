@@ -3,12 +3,13 @@ content_warnings: null
 description: <p>Lightning Talks</p>
 discord_channel_id: ''
 duration: 90
-end_time: TBD
+end_time: '2024-07-27T18:00:00-04:00'
 qna: false
 qna_channel: null
+room: Orchid Ballroom
 slug: lightning-talks
 speakers: []
-start_time: TBD
+start_time: '2024-07-27T16:30:00-04:00'
 stream_timestamp: ''
 title: Lightning Talks
 type: Plenary Session
