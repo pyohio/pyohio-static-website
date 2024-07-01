@@ -54,8 +54,8 @@ function formatTime(timeString) {
       <div class="">
       <table class="table-auto text-sm">
         <thead class="text-center heading">
-          <th class="w-32 p-2  time">Start Time</th>
-          <th class="p-x2 " colspan="4">Room</th>
+          <th class="w-32 p-2">Start Time</th>
+          <th class="p-x2" colspan="4">Room</th>
         </thead>
         <thead class="text-center">
           <th class="p-2 sticky-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
@@ -67,7 +67,7 @@ function formatTime(timeString) {
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
         <tr class="">
-          <td class="text-center  font-bold time"><p>{formatTime(scheduleTime)}</p></td>
+          <td class="text-center font-bold time"><p>{formatTime(scheduleTime)}</p></td>
             {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
@@ -96,7 +96,7 @@ function formatTime(timeString) {
                   }
 
                 } else {
-              return <td class=" text-left align-top p-2 talk">
+              return <td class="align-top p-2 talk">
                 <p class="font-bold">
                   <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
                 </p>
@@ -122,35 +122,44 @@ function formatTime(timeString) {
     top: 0;
     background-color:  var(--table-heading);
     z-index: 3;
-    border: 1px solid var(--table-border);
-  }
+    border-right: 1px solid var(--table-border);
+    border-top: 1px solid var(--table-border);
+    border-bottom: 1px solid var(--table-border);
+   }
   .heading {
     background-color: var(--table-heading);
-    border: 1px solid var(--table-border);
   }
   .time {
     background-color: var(--table-heading);
     position: sticky;
-    border-top: 1px solid var(--table-border);
-  left: 0;
-  z-index: 2;
+    border-right: 1px solid var(--table-border);
+    left: 0;
+    z-index: 2;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--table-border);
+    }
   }
   .talk {
     min-width: 14em;
     height: 9em;
     background-color: var(--table-background);
-    border: 1px solid var(--table-border);
+    border-top: 1px solid var(--table-border);
+    border-right: 1px solid var(--table-border);
+    text-align: left;
   }
   .plenary {
     min-width: 14em;
     background-color: var(--table-background) ;
-    border: 1px solid var(--table-border);
+    border-top: 1px solid var(--table-border);
+    border-right: 1px solid var(--table-border);
+    text-align: left;
   }
   .lightning-talks {
     height: 12em;
   }
   .break {
     background-color: var(--table-muted);
+    text-align: left;
   }
   .lunch {
     height: 12em;
