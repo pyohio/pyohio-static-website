@@ -58,7 +58,7 @@ function formatTime(timeString) {
           <th class="p-x2" colspan="4">Room</th>
         </thead>
         <thead class="text-center">
-          <th class="p-2 sticky-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
+          <th class="p-2 time-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
           <th class="p-2 sticky-heading">Orchid Ballroom West</th>
           <th class="p-2 sticky-heading">Orchid Ballroom East</th>
           <th class="p-2 sticky-heading">Calypso</th>
@@ -126,6 +126,16 @@ function formatTime(timeString) {
     border-top: 1px solid var(--table-border);
     border-bottom: 1px solid var(--table-border);
    }
+   .time-heading {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:  var(--table-heading);
+    z-index: 4;
+    border-right: 1px solid var(--table-border);
+    border-top: 1px solid var(--table-border);
+    border-bottom: 1px solid var(--table-border);
+   }
   .heading {
     background-color: var(--table-heading);
   }
@@ -143,14 +153,14 @@ function formatTime(timeString) {
     min-width: 14em;
     height: 9em;
     background-color: var(--table-background);
-    border-top: 1px solid var(--table-border);
+    border-bottom: 1px solid var(--table-border);
     border-right: 1px solid var(--table-border);
     text-align: left;
   }
   .plenary {
     min-width: 14em;
     background-color: var(--table-background) ;
-    border-top: 1px solid var(--table-border);
+    border-bottom: 1px solid var(--table-border);
     border-right: 1px solid var(--table-border);
     text-align: left;
   }
