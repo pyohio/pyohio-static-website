@@ -2,9 +2,9 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 
-const talks = await getCollection('talks', ({ data }) => {
-  return data.type == '30 Minute Talk'
-})
+const talks = (await getCollection('talks')).filter(talk => talk.data.type === '30 Minute Talk').sort(
+  (a, b) => Date.parse(a.data.title) - Date.parse(b.data.title)
+)
 ---
 
 <DefaultLayout title="Talks">
