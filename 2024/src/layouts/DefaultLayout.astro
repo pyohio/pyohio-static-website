@@ -77,6 +77,24 @@ const {
         overflow-x: auto;
       }
 
+      @media print {
+        body {
+          overflow:visible !important;
+        }
+        table {
+          border:solid #000 !important;
+          border-width: 3px !important;
+        }
+        th, td {
+          border:solid #000 !important;
+          border-width: 3px !important;
+        }
+        .pagebreak {
+          clear: both;
+          page-break-after: always;
+        }
+      }
+
       body {
         display: flex;
         flex-direction: column;
