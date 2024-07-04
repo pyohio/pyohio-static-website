@@ -1,9 +1,9 @@
 code: KHNSQ3
 content_warnings: null
-description: <p>Keynote</p>
+description: <p>Mariatta presents our Saturday afternoon keynote.</p>
 discord_channel_id: ''
 duration: 45
-end_time: '2024-07-28T16:15:00-04:00'
+end_time: '2024-07-27T16:30:00-04:00'
 qna: false
 qna_channel: null
 room: Orchid Ballroom
@@ -13,7 +13,7 @@ speakers:
   code: PTGUYZ
   name: Mariatta
   slug: mariatta
-start_time: '2024-07-28T15:30:00-04:00'
+start_time: '2024-07-27T15:45:00-04:00'
 stream_timestamp: ''
 title: Keynote
 type: Keynote
