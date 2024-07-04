@@ -314,42 +314,50 @@ BREAKS = {
         "end_time": "2024-07-27T09:00:00-04:00",
         "type": "Break",
     },
-    "BREAK2": {
+    "BREAK1": {
         "code": "BREAK2",
         "title": "Break",
         "start_time": "2024-07-27T10:00:00-04:00",
         "end_time": "2024-07-27T10:15:00-04:00",
         "type": "Break",
     },
-    "BREAK3": {
+    "BREAK2": {
         "code": "BREAK3",
         "title": "Break",
         "start_time": "2024-07-27T10:45:00-04:00",
         "end_time": "2024-07-27T11:00:00-04:00",
         "type": "Break",
     },
-    "BREAK4": {
+    "BREAK3": {
         "code": "BREAK4",
         "title": "Break",
         "start_time": "2024-07-27T11:30:00-04:00",
         "end_time": "2024-07-27T11:45:00-04:00",
         "type": "Break",
     },
-    "BREAK1": {
-        "code": "BREAK1",
+    "SATLUN": {
+        "code": "SATLUN",
         "title": "Lunch Break",
         "start_time": "2024-07-27T12:15:00-04:00",
         "end_time": "2024-07-27T14:00:00-04:00",
         "type": "Break",
     },
-    "BREAK5": {
+    "BREAK4": {
         "code": "BREAK5",
         "title": "Break",
         "start_time": "2024-07-27T14:45:00-04:00",
         "end_time": "2024-07-27T15:00:00-04:00",
         "type": "Break",
     },
-    "BREAK6": {
+    "OPEN1": {
+        "code": "OPEN1",
+        "title": "open time slot",
+        "start_time": "2024-07-27T15:00:00-04:00",
+        "end_time": "2024-07-27T15:30:00-04:00",
+        "type": "Open",
+        "room": "Cattelya",
+    },
+    "BREAK5": {
         "code": "BREAK6",
         "title": "Break",
         "start_time": "2024-07-27T15:30:00-04:00",
@@ -370,35 +378,35 @@ BREAKS = {
         "end_time": "2024-07-28T12:00:00-04:00",
         "type": "Break",
     },
-    "BREAK7": {
+    "BREAK6": {
         "code": "BREAK7",
         "title": "Break",
         "start_time": "2024-07-28T12:15:00-04:00",
         "end_time": "2024-07-28T12:30:00-04:00",
         "type": "Break",
     },
-    "BREAK8": {
+    "BREAK7": {
         "code": "BREAK8",
         "title": "Break",
         "start_time": "2024-07-28T13:00:00-04:00",
         "end_time": "2024-07-28T13:15:00-04:00",
         "type": "Break",
     },
-    "BREAK9": {
+    "BREAK8": {
         "code": "BREAK9",
         "title": "Break",
         "start_time": "2024-07-28T13:45:00-04:00",
         "end_time": "2024-07-28T14:00:00-04:00",
         "type": "Break",
     },
-    "BREAK10": {
+    "BREAK9": {
         "code": "BREAK10",
         "title": "Break",
         "start_time": "2024-07-28T14:30:00-04:00",
         "end_time": "2024-07-28T14:45:00-04:00",
         "type": "Break",
     },
-    "BREAK11": {
+    "BREAK10": {
         "code": "BREAK11",
         "title": "Break",
         "start_time": "2024-07-28T15:15:00-04:00",
