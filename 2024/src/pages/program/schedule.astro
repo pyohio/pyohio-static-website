@@ -72,8 +72,9 @@ function formatTime(timeString) {
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){
-                    return <td class="align-top font-bold p-2 plenary lightning-talks" colspan="2">
-                      <p class=""><a href="/2024/program/lightning-talks">{talk.data.title}</a></p>
+                    return <td class="align-top p-2 plenary lightning-talks" colspan="2">
+                      <p class="font-bold"><a href="/2024/program/lightning-talks">{talk.data.title}</a></p>
+                      <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
                       </td><td class="break" colspan="2"></td>
                   } else if (talk.data.type === "Keynote") {
                     return <td class="align-top p-2 plenary talk" colspan="2">
