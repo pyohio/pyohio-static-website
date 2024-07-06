@@ -26,7 +26,7 @@ duration: 30
 end_time: '2024-07-28T13:00:00-04:00'
 qna: true
 qna_channel: Hot
-room: Cattelya
+room: Cattleya
 slug: hot-pathlib-not-string-paths
 speakers:
 - avatar: https://pretalx.com/media/avatars/4fd8d11f5cc00e1fa20dc9a596b16088_LyrAVLg.jpg

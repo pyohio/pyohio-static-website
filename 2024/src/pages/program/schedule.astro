@@ -3,7 +3,7 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
 
-const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattelya"]
+const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattleya"]
 const talks = (await getCollection("talks")).sort(
   (a, b) => Date.parse(a.data.start_time) - Date.parse(b.data.start_time) || roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)
 );
@@ -62,7 +62,7 @@ function formatTime(timeString) {
           <th class="p-2 sticky-heading">Orchid Ballroom West</th>
           <th class="p-2 sticky-heading">Orchid Ballroom East</th>
           <th class="p-2 sticky-heading">Calypso</th>
-          <th class="p-2 sticky-heading">Cattelya</th>
+          <th class="p-2 sticky-heading">Cattleya</th>
         </thead>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (

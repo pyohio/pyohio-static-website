@@ -24,7 +24,7 @@ duration: 30
 end_time: '2024-07-28T15:15:00-04:00'
 qna: true
 qna_channel: Wagtail
-room: Cattelya
+room: Cattleya
 slug: wagtail-the-python-cms-taking-the-world-by-storm
 speakers:
 - avatar: https://pretalx.com/media/avatars/square-vince_g23uQZP.jpg
