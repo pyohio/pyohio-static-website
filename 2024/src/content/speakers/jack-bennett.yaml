@@ -25,4 +25,4 @@ talks:
 - code: HCM8XD
   slug: is-python-your-type-of-programming-language
   title: Is Python Your TYPE of Programming Language? How to Use Static Typing in
-    Python With Type Hints, MyPy and Pydantic
+    Python with Type Hints, MyPy and Pydantic
