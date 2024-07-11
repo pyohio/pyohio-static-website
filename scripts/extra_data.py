@@ -355,7 +355,7 @@ BREAKS = {
         "start_time": "2024-07-27T15:00:00-04:00",
         "end_time": "2024-07-27T15:30:00-04:00",
         "type": "Open",
-        "room": "Cattelya",
+        "room": "Cattleya",
     },
     "BREAK5": {
         "code": "BREAK6",
