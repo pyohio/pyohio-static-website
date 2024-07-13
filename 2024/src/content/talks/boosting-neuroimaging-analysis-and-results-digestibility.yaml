@@ -1,8 +1,16 @@
 code: 8TRXAM
 content_warnings: null
-description: <p>Make neuroimaging results easier to digest for patients and equip
-  technicians with an enhanced toolkit featuring improved visualization and analysis
-  capabilities through MNE, an open-source Python Library.</p>
+description: '<p>Electroencephalogram (EEG) measures brain activity, and despite advancements
+  in sensors since its 1924 invention, its result presentation has changed very little.
+  We''re addressing this using MNE, an open-source Python library.</p>
+
+  <p>Join us to simplify neuroimaging results for patients and enhance visualization
+  tools for technicians. Affordable biotracking devices now capture brain wave data,
+  and MNE enables innovative data export and manipulation. This opens new possibilities
+  for advanced statistics, improved visualizations, and enhanced analysis capabilities.</p>
+
+  <p>No medical background is required – join us in revolutionizing brain activity
+  interpretation, making it more accessible and meaningful for everyone.</p>'
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T14:45:00-04:00'
