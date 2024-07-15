@@ -187,7 +187,7 @@ def get_event_data(ctx):
 
         talk_data.append(data)
     click.echo("Writing talk data json...")
-    write_json_talks(talk_data, "talks.json", path=DATA_DIR)
+    write_json_talks(talk_data, "talks.json", path=Path(DATA_DIR, "json"))
 
     click.echo("Getting speaker info...", err=True)
     speaker_codes = []
