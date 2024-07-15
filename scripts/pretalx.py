@@ -182,7 +182,7 @@ def get_event_data(ctx):
         data["speaker_names"] = ", ".join([s["name"] for s in speakers])
 
         data["description_youtube"] = (
-            f"{data['type']} by {data['speaker_names']} at PyOhio 2023:\n{data['description_text']}PyOhio talk listing: {data['talk_url']}"
+            f"{data['type']} by {data['speaker_names']} at PyOhio {YEAR}:\n{data['description_text']}PyOhio talk listing: {data['talk_url']}"
         )
 
         talk_data.append(data)
