@@ -7,7 +7,8 @@ import click
 import httpx
 import markdown
 import yaml
-
+import orjson
+from markdownify import markdownify
 from mdx_gfm import GithubFlavoredMarkdownExtension
 from slugify import slugify
 
@@ -19,6 +20,7 @@ except ImportError:
     from yaml import Dumper
 
 PRETALX_EVENT_ID = "pyohio-2024"
+YEAR = "2024"
 DATA_DIR = Path("./2024/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_TIME = "TBD"
@@ -107,6 +109,7 @@ def get_event_data(ctx):
 
     click.echo("Writing talk files...", err=True)
     talks_by_code = {}
+    talk_data = []
     for talk in sessions_results:
         speakers = [
             {
@@ -166,6 +169,25 @@ def get_event_data(ctx):
         save_filename = Path(f"{DATA_DIR}/talks/").joinpath(f"{data['slug']}.yaml")
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)
+
+        data["description_text"] = (
+            markdownify(data["description"])
+            .replace("<", "")
+            .replace(">", "")
+            .replace("\n\n\n", "\n\n")
+        )
+        if talk_slug := data.get("slug"):
+            data["talk_url"] = f"https://www.pyohio.org/{YEAR}/talks/{talk_slug}"
+
+        data["speaker_names"] = ", ".join([s["name"] for s in speakers])
+
+        data["description_youtube"] = (
+            f"{data['type']} by {data['speaker_names']} at PyOhio 2023:\n{data['description_text']}PyOhio talk listing: {data['talk_url']}"
+        )
+
+        talk_data.append(data)
+    click.echo("Writing talk data json...")
+    write_json_talks(talk_data, "talks.json", path=Path(DATA_DIR, "json"))
 
     click.echo("Getting speaker info...", err=True)
     speaker_codes = []
@@ -246,6 +268,7 @@ def get_event_data(ctx):
             data["keynote_index"] = KEYNOTE_SPEAKERS.index(data["code"])
 
         save_filename = Path(f"{DATA_DIR}/speakers/").joinpath(f"{data['slug']}.yaml")
+
         with open(save_filename, "w") as save_file:
             yaml.dump(data, save_file, allow_unicode=True)
 
@@ -323,6 +346,12 @@ def write_yaml_document(document, filename, path="."):
     outfile_name = str(Path(path, filename).resolve())
     with open(outfile_name, "w") as outfile:
         yaml.dump(document, outfile, default_flow_style=False, Dumper=Dumper)
+
+
+def write_json_talks(talks, filename, path="."):
+    outfile_name = str(Path(path, filename).resolve())
+    with open(outfile_name, "wb") as outfile:
+        outfile.write(orjson.dumps(talks, option=orjson.OPT_INDENT_2))
 
 
 if __name__ == "__main__":
