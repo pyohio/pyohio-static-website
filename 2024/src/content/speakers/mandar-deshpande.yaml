@@ -12,5 +12,5 @@ social_links: []
 speaker_type: speaker
 talks:
 - code: C7YYRN
-  slug: boosting-python-numeric-computations-with-dynamic-c-integration
-  title: Boosting Python Numeric Computations with Dynamic C++ Integration
+  slug: boosting-numeric-computations-with-c-integration
+  title: Boosting Numeric Computations with C++ Integration
