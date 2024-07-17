@@ -26,13 +26,12 @@ description: '<p>Uncover the secrets to turbocharging your Python numeric comput
 
   1. reasoning<br />
 
-  2. Integration framework/paths specifically for pybind/torchbind and how Thrift
-  support interoperability</p>'
+  2. Integration framework/paths specifically for pybind</p>'
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T15:30:00-04:00'
-qna: true
-qna_channel: Boosting Python Numeric Computations with Dynamic C++ Integration
+qna: false
+qna_channel: null
 room: Calypso
 slug: boosting-python-numeric-computations-with-dynamic-c-integration
 speakers:

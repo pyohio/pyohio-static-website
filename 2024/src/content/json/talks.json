@@ -32,7 +32,7 @@
     "code": "C7YYRN",
     "title": "Boosting Python Numeric Computations with Dynamic C++ Integration",
     "slug": "boosting-python-numeric-computations-with-dynamic-c-integration",
-    "description": "<p>Uncover the secrets to turbocharging your Python numeric computations by harnessing the dynamic performance of <code>C++</code>. This talk is aimed at the beginner-intermediate Python developer working in the ML/AI infra or performance optimization space.</p>\n<p>Have you ever wondered how the growing usage of the numeric computation stack, including libraries like numpy, scipy, and scikit-learn, along with deep learning libraries such as pytorch and tensorflow, are shaping the future of AI and Machine Learning? And what about the intriguing fact that these libraries are built on wrappers for the underlying C++ code? Have you considered the benefits this brings, or how the optimization of these libraries as per the host device - be it CPU, GPU, or Apple Silicon - enhances performance and efficiency?</p>\n<p>And finally, let's consider the practical applications and real-world examples of this integration between Python and C++. What are the challenges and solutions in bridging the gap between Python and C++ in the context of AI and Machine Learning.</p>\n<p>Observing the growing trends at my workplace over the past few years, I am sure this process is going to be standardised soon with more developers being involved in such integrations/optimizations.</p>\n<p>This talk aims to get the Python community excited for this growing trend by sharing:<br />\n1. reasoning<br />\n2. Integration framework/paths specifically for pybind/torchbind and how Thrift support interoperability</p>",
+    "description": "<p>Uncover the secrets to turbocharging your Python numeric computations by harnessing the dynamic performance of <code>C++</code>. This talk is aimed at the beginner-intermediate Python developer working in the ML/AI infra or performance optimization space.</p>\n<p>Have you ever wondered how the growing usage of the numeric computation stack, including libraries like numpy, scipy, and scikit-learn, along with deep learning libraries such as pytorch and tensorflow, are shaping the future of AI and Machine Learning? And what about the intriguing fact that these libraries are built on wrappers for the underlying C++ code? Have you considered the benefits this brings, or how the optimization of these libraries as per the host device - be it CPU, GPU, or Apple Silicon - enhances performance and efficiency?</p>\n<p>And finally, let's consider the practical applications and real-world examples of this integration between Python and C++. What are the challenges and solutions in bridging the gap between Python and C++ in the context of AI and Machine Learning.</p>\n<p>Observing the growing trends at my workplace over the past few years, I am sure this process is going to be standardised soon with more developers being involved in such integrations/optimizations.</p>\n<p>This talk aims to get the Python community excited for this growing trend by sharing:<br />\n1. reasoning<br />\n2. Integration framework/paths specifically for pybind</p>",
     "start_time": "2024-07-27T15:00:00-04:00",
     "end_time": "2024-07-27T15:30:00-04:00",
     "room": "Calypso",
@@ -46,16 +46,16 @@
       }
     ],
     "type": "30 Minute Talk",
-    "qna": true,
-    "qna_channel": "Boosting Python Numeric Computations with Dynamic C++ Integration",
+    "qna": false,
+    "qna_channel": null,
     "youtube_url": null,
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Uncover the secrets to turbocharging your Python numeric computations by harnessing the dynamic performance of `C++`. This talk is aimed at the beginner\\-intermediate Python developer working in the ML/AI infra or performance optimization space.\n\nHave you ever wondered how the growing usage of the numeric computation stack, including libraries like numpy, scipy, and scikit\\-learn, along with deep learning libraries such as pytorch and tensorflow, are shaping the future of AI and Machine Learning? And what about the intriguing fact that these libraries are built on wrappers for the underlying C\\+\\+ code? Have you considered the benefits this brings, or how the optimization of these libraries as per the host device \\- be it CPU, GPU, or Apple Silicon \\- enhances performance and efficiency?\n\nAnd finally, let's consider the practical applications and real\\-world examples of this integration between Python and C\\+\\+. What are the challenges and solutions in bridging the gap between Python and C\\+\\+ in the context of AI and Machine Learning.\n\nObserving the growing trends at my workplace over the past few years, I am sure this process is going to be standardised soon with more developers being involved in such integrations/optimizations.\n\nThis talk aims to get the Python community excited for this growing trend by sharing:  \n\n1\\. reasoning  \n\n2\\. Integration framework/paths specifically for pybind/torchbind and how Thrift support interoperability\n\n",
+    "description_text": "Uncover the secrets to turbocharging your Python numeric computations by harnessing the dynamic performance of `C++`. This talk is aimed at the beginner\\-intermediate Python developer working in the ML/AI infra or performance optimization space.\n\nHave you ever wondered how the growing usage of the numeric computation stack, including libraries like numpy, scipy, and scikit\\-learn, along with deep learning libraries such as pytorch and tensorflow, are shaping the future of AI and Machine Learning? And what about the intriguing fact that these libraries are built on wrappers for the underlying C\\+\\+ code? Have you considered the benefits this brings, or how the optimization of these libraries as per the host device \\- be it CPU, GPU, or Apple Silicon \\- enhances performance and efficiency?\n\nAnd finally, let's consider the practical applications and real\\-world examples of this integration between Python and C\\+\\+. What are the challenges and solutions in bridging the gap between Python and C\\+\\+ in the context of AI and Machine Learning.\n\nObserving the growing trends at my workplace over the past few years, I am sure this process is going to be standardised soon with more developers being involved in such integrations/optimizations.\n\nThis talk aims to get the Python community excited for this growing trend by sharing:  \n\n1\\. reasoning  \n\n2\\. Integration framework/paths specifically for pybind\n\n",
     "talk_url": "https://www.pyohio.org/2024/talks/boosting-python-numeric-computations-with-dynamic-c-integration",
     "speaker_names": "Mandar Deshpande",
-    "description_youtube": "30 Minute Talk by Mandar Deshpande at PyOhio 2024:\nUncover the secrets to turbocharging your Python numeric computations by harnessing the dynamic performance of `C++`. This talk is aimed at the beginner\\-intermediate Python developer working in the ML/AI infra or performance optimization space.\n\nHave you ever wondered how the growing usage of the numeric computation stack, including libraries like numpy, scipy, and scikit\\-learn, along with deep learning libraries such as pytorch and tensorflow, are shaping the future of AI and Machine Learning? And what about the intriguing fact that these libraries are built on wrappers for the underlying C\\+\\+ code? Have you considered the benefits this brings, or how the optimization of these libraries as per the host device \\- be it CPU, GPU, or Apple Silicon \\- enhances performance and efficiency?\n\nAnd finally, let's consider the practical applications and real\\-world examples of this integration between Python and C\\+\\+. What are the challenges and solutions in bridging the gap between Python and C\\+\\+ in the context of AI and Machine Learning.\n\nObserving the growing trends at my workplace over the past few years, I am sure this process is going to be standardised soon with more developers being involved in such integrations/optimizations.\n\nThis talk aims to get the Python community excited for this growing trend by sharing:  \n\n1\\. reasoning  \n\n2\\. Integration framework/paths specifically for pybind/torchbind and how Thrift support interoperability\n\nPyOhio talk listing: https://www.pyohio.org/2024/talks/boosting-python-numeric-computations-with-dynamic-c-integration"
+    "description_youtube": "30 Minute Talk by Mandar Deshpande at PyOhio 2024:\nUncover the secrets to turbocharging your Python numeric computations by harnessing the dynamic performance of `C++`. This talk is aimed at the beginner\\-intermediate Python developer working in the ML/AI infra or performance optimization space.\n\nHave you ever wondered how the growing usage of the numeric computation stack, including libraries like numpy, scipy, and scikit\\-learn, along with deep learning libraries such as pytorch and tensorflow, are shaping the future of AI and Machine Learning? And what about the intriguing fact that these libraries are built on wrappers for the underlying C\\+\\+ code? Have you considered the benefits this brings, or how the optimization of these libraries as per the host device \\- be it CPU, GPU, or Apple Silicon \\- enhances performance and efficiency?\n\nAnd finally, let's consider the practical applications and real\\-world examples of this integration between Python and C\\+\\+. What are the challenges and solutions in bridging the gap between Python and C\\+\\+ in the context of AI and Machine Learning.\n\nObserving the growing trends at my workplace over the past few years, I am sure this process is going to be standardised soon with more developers being involved in such integrations/optimizations.\n\nThis talk aims to get the Python community excited for this growing trend by sharing:  \n\n1\\. reasoning  \n\n2\\. Integration framework/paths specifically for pybind\n\nPyOhio talk listing: https://www.pyohio.org/2024/talks/boosting-python-numeric-computations-with-dynamic-c-integration"
   },
   {
     "code": "HCM8XD",
@@ -69,7 +69,7 @@
     "speakers": [
       {
         "name": "Jack Bennett",
-        "avatar": "https://pretalx.com/media/avatars/jack-bennett-headshot-bw-edited-avatar-profile-pic_RQyocEo.jpg",
+        "avatar": "https://pretalx.com/media/avatars/jack-bennett-headshot-bw-edited-avatar-profile-pic_RQyocEo-sq_Zvkywkn.jpg",
         "code": "WDRWVW",
         "slug": "jack-bennett"
       }
@@ -127,7 +127,7 @@
     "speakers": [
       {
         "name": "Leon Adato",
-        "avatar": "https://pretalx.com/media/avatars/Beard2_rZ3PoEg.png",
+        "avatar": "https://pretalx.com/media/avatars/Beard2_rZ3PoEg-sq_eV61ztL.png",
         "code": "UVE988",
         "slug": "leon-adato"
       }
@@ -301,7 +301,7 @@
     "speakers": [
       {
         "name": "Andrew Kubera",
-        "avatar": "https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9.jpg",
+        "avatar": "https://pretalx.com/media/avatars/20200115_013004_HDR_SAo4dk9-sq_nKQleFN.jpg",
         "code": "PWN7XL",
         "slug": "andrew-kubera"
       }
@@ -330,7 +330,7 @@
     "speakers": [
       {
         "name": "Moshe Zadka",
-        "avatar": "https://pretalx.com/media/avatars/M48A0550_OFvFoAA.jpg",
+        "avatar": "https://pretalx.com/media/avatars/M48A0550_OFvFoAA-sq_24fvIVw.jpg",
         "code": "KYYQVJ",
         "slug": "moshe-zadka"
       }
@@ -359,7 +359,7 @@
     "speakers": [
       {
         "name": "Aditya Mehra",
-        "avatar": "https://pretalx.com/media/avatars/IMG_1060_hIMFReS.jpg",
+        "avatar": "https://pretalx.com/media/avatars/IMG_1060_hIMFReS-sq_9YvJWn6.jpg",
         "code": "BPDLRN",
         "slug": "aditya-mehra"
       }
@@ -533,7 +533,7 @@
     "speakers": [
       {
         "name": "Ruby Henry, Ph.d.",
-        "avatar": "https://pretalx.com/media/avatars/IMG_5001_WrMybRW.png",
+        "avatar": "https://pretalx.com/media/avatars/IMG_5001_WrMybRW-sq_fdHcB68.png",
         "code": "KURFK3",
         "slug": "ruby-henry-ph-d"
       }
@@ -852,7 +852,7 @@
     "speakers": [
       {
         "name": "Bryan Raubenolt",
-        "avatar": "https://pretalx.com/media/avatars/IMG_0863_77KbA19.JPG",
+        "avatar": "https://pretalx.com/media/avatars/IMG_0863_77KbA19-sq_jk80pQ5.jpeg",
         "code": "VBWRLY",
         "slug": "bryan-raubenolt"
       }
@@ -910,7 +910,7 @@
     "speakers": [
       {
         "name": "Daniel Schelkoph",
-        "avatar": "https://pretalx.com/media/avatars/IMG_0066_tLqbLpT.jpeg",
+        "avatar": "https://pretalx.com/media/avatars/IMG_0066_tLqbLpT-sq_lr4fWxS.jpeg",
         "code": "NL3RWX",
         "slug": "daniel-schelkoph"
       }
@@ -997,7 +997,7 @@
     "speakers": [
       {
         "name": "Keith Martin Machina",
-        "avatar": "https://pretalx.com/media/avatars/IMG_4438_R62I7Vt.jpg",
+        "avatar": "https://pretalx.com/media/avatars/IMG_4438_R62I7Vt-sq_pp7fHUs.jpg",
         "code": "M8FBJN",
         "slug": "keith-martin-machina"
       }
