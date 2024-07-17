@@ -1,13 +1,10 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
-import { Image } from 'astro:assets'
+import Sponsor from '../../components/Sponsor.astro'
 import auth0Logo from '../../assets/img/auth0-by-okta-logo.svg'
 import psfLogo from '../../assets/img/psf-logo.svg'
 import blackPythonDevsLogo from '../../assets/img/black-python-devs-logo.png'
 import pyTexasLogo from '../../assets/img/pytexas-logo.svg'
-
-const logoWidth = 400
-
 ---
 
 <DefaultLayout title="Sponsor">
@@ -19,32 +16,12 @@ const logoWidth = 400
   <section>
     <div class="container">
       <h2>Gold Sponsor</h2>
-        <div class="sponsor">
-          <!-- <h3>Auth0 by Okta</h3> -->
-          <Image src={auth0Logo} width={logoWidth} alt="Auth0 by Okta logo"/>
-          <p><a href="https://a0.to/pyohio">https://a0.to/pyohio</a></p>
-          <p>Auth0 by Okta makes it easy for Python developers to manage user identity and authorization in Python or your favorite Python framework. Our Developer Center provides access to SDKs, sample code, and the resources you need to build a scalable custom login experience quickly and securely, and stay focused on the app you're building.</p>
-        </div>
+        <Sponsor sponsorLogo={auth0Logo} sponsorName="Auth0 by Okta" sponsorDescription="Auth0 by Okta makes it easy for Python developers to manage user identity and authorization in Python or your favorite Python framework. Our Developer Center provides access to SDKs, sample code, and the resources you need to build a scalable custom login experience quickly and securely, and stay focused on the app you're building." sponsorURL="https://a0.to/pyohio"/>
       <h2>Python Software Foundation Grant</h2>
-        <div class="sponsor">
-          <!-- <h3>The Python Software Foundation</h3> -->
-          <Image src={psfLogo} width={logoWidth} alt="Python Software Foundation logo"/>
-          <p><a href="https://www.python.org/psf/">https://www.python.org/psf/</a></p>
-          <p>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. The majority of the PSF's work is focused on empowering and supporting people within the Python community. The PSF has active grant programs that support sprints, conferences, meet ups, user groups, and Python development efforts all over the world. In addition, the PSF underwrites and runs PyCon US, the primary Python community conference. Being part of the PSF means being part of the Python community. Recently we changed the PSF to an open membership organization, so that everyone who uses and supports Python can join. To learn more, visit https://www.python.org/psf/membership.</p>
-        </div>
+        <Sponsor sponsorLogo={psfLogo} sponsorName="The Python Software Foundation" sponsorDescription="The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. The majority of the PSF's work is focused on empowering and supporting people within the Python community. The PSF has active grant programs that support sprints, conferences, meet ups, user groups, and Python development efforts all over the world. In addition, the PSF underwrites and runs PyCon US, the primary Python community conference. Being part of the PSF means being part of the Python community. Recently we changed the PSF to an open membership organization, so that everyone who uses and supports Python can join. To learn more, visit https://www.python.org/psf/membership." sponsorURL="https://www.python.org/psf/"/>
       <h2>Community Sponsors</h2>
-        <div class="sponsor">
-          <!-- <h3>Black Python Devs</h3> -->
-          <Image src={blackPythonDevsLogo} width={logoWidth} alt="Black Python Devs logo"/>
-          <p><a href="https://blackpythondevs.com/">https://blackpythondevs.com/</a></p>
-          <p>Black Python Devs is a community with a main mission of increasing the participation of Black Python developers in existing Python communities and programs and to assist in launching new ones in Black Communities where not currently present. This helps drive an impact through establishing guidance, mentorship, and career support for Black Pythonistas around the world, investing in local communities of Black Python Devs, and increasing the engagement of Black Python Devs in existing Python communities, programs, events, and initiatives.</p>
-        </div>
-      <div class="sponsor">
-        <!-- <h3>PyTexas</h3> -->
-        <Image src={pyTexasLogo} width={logoWidth} alt="PyTexas logo"/>
-        <p><a href="https://pytexas.org/">https://pytexas.org/</a></p>
-        <p>The PyTexas Foundation is a 501(c)3 non-profit run by a Texas-based volunteer group. We are Python enthusiasts that want to share the programming language with the world, starting right here in Texas. We host and support a variety of programs that benefit the Python community in Texas, including an annual conference and virtual monthly meetup, a virtual community for the Python developers in Texas and beyond, and various in-person meetups in cities throughout the state.</p>
-    </div>
+        <Sponsor sponsorLogo={blackPythonDevsLogo} sponsorName="Black Python Devs" sponsorDescription="Black Python Devs is a community with a main mission of increasing the participation of Black Python developers in existing Python communities and programs and to assist in launching new ones in Black Communities where not currently present. This helps drive an impact through establishing guidance, mentorship, and career support for Black Pythonistas around the world, investing in local communities of Black Python Devs, and increasing the engagement of Black Python Devs in existing Python communities, programs, events, and initiatives." sponsorURL="https://blackpythondevs.com/"/>
+        <Sponsor sponsorLogo={pyTexasLogo} sponsorName="PyTexas" sponsorDescription="The PyTexas Foundation is a 501(c)3 non-profit run by a Texas-based volunteer group. We are Python enthusiasts that want to share the programming language with the world, starting right here in Texas. We host and support a variety of programs that benefit the Python community in Texas, including an annual conference and virtual monthly meetup, a virtual community for the Python developers in Texas and beyond, and various in-person meetups in cities throughout the state." sponsorURL="https://pytexas.org/"/>
     </div>
   </section>
   <section class="my-12">
