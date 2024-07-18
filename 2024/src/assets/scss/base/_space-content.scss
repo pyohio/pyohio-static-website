@@ -7,31 +7,31 @@
 .space-content {
   > * + *,
   > dl > * + * {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
   }
 
   > h2 {
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     @include breakpoint(large) {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
   }
 
   > h3 {
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     @include breakpoint(large) {
-      margin-top: 3rem;
+      margin-top: 1.5rem;
     }
   }
 
   > h4 {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 
     @include breakpoint(large) {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
 
@@ -39,7 +39,7 @@
     margin-top: 1rem;
 
     @include breakpoint(large) {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
   }
 
@@ -47,7 +47,7 @@
     margin-top: 1rem;
 
     @include breakpoint(large) {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
   }
 

@@ -29,7 +29,7 @@ Navigate to the venue at The Westin Cleveland Downtown, 777 St Clair Ave NE, Cle
 
 ### Parking
 
-More information about parking in the area will be provided closer to the event.
+PyOhio does not provide an official parking location but there are [a number of parking options](https://en.parkopedia.com/parking/locations/westin_hotels_%26_resorts_777_saint_clair_ave_ne_cleveland_ohio_44114_united_states_jag5dpmuj5d0sp5733/?country=us&arriving=202407270800&leaving=202407272100) within a short walk.
 
 ### Flying
 
