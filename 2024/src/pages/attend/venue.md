@@ -5,9 +5,7 @@ title: Venue
 
 # PyOhio 2024 Venue
 
-PyOhio 2024 will be held at [The Westin Cleveland Downtown](https://www.marriott.com/en-us/hotels/clewi-the-westin-cleveland-downtown/) located at 777 St Clair Ave NE, Cleveland, OH.
-
-PyOhio does not provide an official parking location but there are [a number of parking options](https://en.parkopedia.com/parking/locations/westin_hotels_%26_resorts_777_saint_clair_ave_ne_cleveland_ohio_44114_united_states_jag5dpmuj5d0sp5733/?country=us&arriving=202407270800&leaving=202407272100) within a short walk.
+PyOhio 2024 will be held at [The Westin Cleveland Downtown](https://www.marriott.com/en-us/hotels/clewi-the-westin-cleveland-downtown/) located at 777 St Clair Ave NE, Cleveland, OH. [Direction & Parking](/2024/attend/travel-and-hotels)
 
 ## Conference Spaces
 
