@@ -27,7 +27,7 @@ The following are near the venue and should be available during the lunch break 
 - [Mabel's BBQ](http://www.mabelsbbq.com/) at 2050 E 4th St
 - [Otani Noodle](https://www.otaninoodle.com/) at 234 Euclid Ave - Noodles, rice dishes, and bubble tea.
 
-This is just a sampling of what's available in the area and there are many other options. Explore and share your finds in the food discussion channel in the [PyOhio Discord](/2024/attend/discord).
+This is just a sampling of what's available in the area and there are many other options. Explore and share your finds in the `#lets-get-food` channel in the [PyOhio Discord](/2024/attend/discord).
 
 ## Coffee
 
