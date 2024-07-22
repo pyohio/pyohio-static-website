@@ -43,14 +43,38 @@ function formatTime(timeString) {
   <section class="my-6">
     <div class="container">
       <h1>Schedule</h1>
-      <p><em><a href="/2024/program/open-spaces/">Open Spaces</a> rooms are available during the conference days. All times EDT.</em></p>
+      <p><em><a href="/2024/program/open-spaces/">Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
     </div>
   </section>
 
   <section class="container text-s">
-   <h2 class="my-6">Friday, July 26</h2>
-   <p><strong>6pm-8pm: </strong> <a href="/2024/program/friday-tutorial">Beginner Tutorial: Learn Python with Your Face</a></p>
-   <p class="italic">Space limited, separate registration required.</p>
+    <h2 class="my-6">Friday, July 26</h2>
+    <table class="table-auto text-sm">
+    <thead class="text-center">
+      <th class="w-32 p-2 heading">Start Time</th>
+      <th class="p-x2 heading" colspan="4">Room</th>
+    </thead>
+    <thead class="text-center">
+      <th class="p-2 time-heading">Fri</th>
+      <th class="p-2 sticky-heading">Orchid Ballroom West</th>
+      <th class="p-2 sticky-heading">Orchid Ballroom East</th>
+      <th class="p-2 sticky-heading">Calypso</th>
+      <th class="p-2 sticky-heading">Cattleya</th>
+      <tr>
+        <td class="text-center font-bold time"><p>6:00 pm</p></td>
+        <td class="align-top p-2 plenary" colspan="2">
+          <p class="font-bold"><a href="/2024/program/friday-tutorial">Beginner Tutorial: Learn Python with Your Face</a></p>
+          <p class="text-xs">  Space limited, separate registration required.</p>
+        </td><td class="break" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="text-center font-bold time"><p>8:00 pm</p></td>
+        <td class="align-top p-2 break" colspan="4">
+          <p class="font-bold">Conference Space Closes</p>
+        </td>
+      </tr>
+    </thead>
+  </table>
   </section>
 
 {( Object.keys(talkDataByDateAndTime).map((scheduleDate) => (
