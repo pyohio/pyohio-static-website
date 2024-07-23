@@ -11,6 +11,8 @@ _Friday at 6pm-8pm in Orchid Ballroom_
 
 **Separate registration required**
 
+[You can register here](https://ti.to/pyohio/2024/with/friday-beginner-tutorial-learn-python-with-your-face)
+
 <br>
 
 This beginner tutorial will be a gentle hands-on introduction to Python programming by playing with photos.
