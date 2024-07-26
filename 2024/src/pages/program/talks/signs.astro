@@ -5,12 +5,13 @@ import { DateTime } from 'luxon'
 
 const talks = (await getCollection('talks')).filter(talk => talk.data.type === '30 Minute Talk').sort((a, b) => DateTime.fromISO(a.data.start_time) - DateTime.fromISO(b.data.start_time))
 
-function formatTime(timeString) {
-  const talkTime = DateTime.fromISO(timeString)
-  if (isNaN(talkTime)) {
+function formatTimes(startTimeString, endTimeString) {
+  const startTime = DateTime.fromISO(startTimeString)
+  const endTime = DateTime.fromISO(endTimeString)
+  if (isNaN(startTime)) {
     return 'TBD'
   } else {
-    return talkTime.setZone('America/New_York').toFormat("cccc 'at' h:mma")
+    return startTime.setZone('America/New_York').toFormat("cccc") + ' ' + startTime.setZone('America/New_York').toFormat("h:mma").toLowerCase() + '-' + endTime.setZone('America/New_York').toFormat('h:mma').toLowerCase()
   }
 }
 
@@ -21,17 +22,18 @@ function formatTime(timeString) {
         {
           talks.map((talk) => (
             <div class="pagebreak">
-              <p class="text-6xl mt-24 mb-12">
+              <p class="text-9xl mt-24 mb-12">
                 {talk.data.title}
               </p>
               <p class="mb-4 text-4xl">
                 by <span>{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
               </p>
-              <p class="text-4xl mt-24">
-                {talk.data.room}
+
+                  <p class="text-4xl mt-24">
+                {formatTimes(talk.data.start_time, talk.data.end_time)}
                 </p>
-                  <p class="text-4xl mb-24">
-                {formatTime(talk.data.start_time)}
+                <p class="text-4xl mb-24">
+                in {talk.data.room}
                 </p>
             </div>
           ))
