@@ -610,9 +610,9 @@
   },
   {
     "code": "DCZDL9",
-    "title": "Building Resilient Applications with Circuit Breakers and Retries Using FastAPI",
-    "slug": "building-resilient-applications-with-circuit-breakers-and-using",
-    "description": "<p>In this session, we will explore techniques for building resilient applications that can gracefully handle failures and ensure high availability. Specifically, we will focus on implementing circuit breakers and retry mechanisms using FastAPI. By the end of this talk, attendees will understand the principles behind these patterns and see a live demonstration of how to implement them in a FastAPI application.</p>",
+    "title": "Canceled: Building Resilient Applications with Circuit Breakers and Retries Using FastAPI",
+    "slug": "canceled-building-resilient-applications-with-circuit-breakers",
+    "description": "<p><strong>We regret to announce that Sameer was unable to attend PyOhio and that this session has been canceled.</strong> Sorry, folks!</p>\n<hr />\n<p>In this session, we will explore techniques for building resilient applications that can gracefully handle failures and ensure high availability. Specifically, we will focus on implementing circuit breakers and retry mechanisms using FastAPI. By the end of this talk, attendees will understand the principles behind these patterns and see a live demonstration of how to implement them in a FastAPI application.</p>",
     "start_time": "2024-07-27T11:00:00-04:00",
     "end_time": "2024-07-27T11:30:00-04:00",
     "room": "Orchid Ballroom East",
@@ -627,15 +627,15 @@
     ],
     "type": "30 Minute Talk",
     "qna": true,
-    "qna_channel": "Building Resilient Applications with Circuit Breakers and Retries Using FastAPI",
+    "qna_channel": "Canceled",
     "youtube_url": null,
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "In this session, we will explore techniques for building resilient applications that can gracefully handle failures and ensure high availability. Specifically, we will focus on implementing circuit breakers and retry mechanisms using FastAPI. By the end of this talk, attendees will understand the principles behind these patterns and see a live demonstration of how to implement them in a FastAPI application.\n\n",
-    "talk_url": "https://www.pyohio.org/2024/talks/building-resilient-applications-with-circuit-breakers-and-using",
+    "description_text": "**We regret to announce that Sameer was unable to attend PyOhio and that this session has been canceled.** Sorry, folks!\n\n\n\n---\n\nIn this session, we will explore techniques for building resilient applications that can gracefully handle failures and ensure high availability. Specifically, we will focus on implementing circuit breakers and retry mechanisms using FastAPI. By the end of this talk, attendees will understand the principles behind these patterns and see a live demonstration of how to implement them in a FastAPI application.\n\n",
+    "talk_url": "https://www.pyohio.org/2024/talks/canceled-building-resilient-applications-with-circuit-breakers",
     "speaker_names": "Sameer Shukla",
-    "description_youtube": "30 Minute Talk by Sameer Shukla at PyOhio 2024:\nIn this session, we will explore techniques for building resilient applications that can gracefully handle failures and ensure high availability. Specifically, we will focus on implementing circuit breakers and retry mechanisms using FastAPI. By the end of this talk, attendees will understand the principles behind these patterns and see a live demonstration of how to implement them in a FastAPI application.\n\nPyOhio talk listing: https://www.pyohio.org/2024/talks/building-resilient-applications-with-circuit-breakers-and-using"
+    "description_youtube": "30 Minute Talk by Sameer Shukla at PyOhio 2024:\n**We regret to announce that Sameer was unable to attend PyOhio and that this session has been canceled.** Sorry, folks!\n\n\n\n---\n\nIn this session, we will explore techniques for building resilient applications that can gracefully handle failures and ensure high availability. Specifically, we will focus on implementing circuit breakers and retry mechanisms using FastAPI. By the end of this talk, attendees will understand the principles behind these patterns and see a live demonstration of how to implement them in a FastAPI application.\n\nPyOhio talk listing: https://www.pyohio.org/2024/talks/canceled-building-resilient-applications-with-circuit-breakers"
   },
   {
     "code": "YAQZHH",

@@ -15,5 +15,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: DCZDL9
-  slug: building-resilient-applications-with-circuit-breakers-and-using
-  title: Building Resilient Applications with Circuit Breakers and Retries Using FastAPI
+  slug: canceled-building-resilient-applications-with-circuit-breakers
+  title: 'Canceled: Building Resilient Applications with Circuit Breakers and Retries
+    Using FastAPI'
