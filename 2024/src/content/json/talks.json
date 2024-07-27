@@ -93,7 +93,7 @@
     "description": "<p>Scroll art is a form of animated ASCII art that beginners can make. Using loops, print(), and random numbers, you'll learn how to make a surprisingly wide variety of digital art within the constraints of text strings. You'll also learn about the history of ASCII art, computer education, and where to find inspiration for your own digital art.</p>",
     "start_time": "2024-07-27T15:00:00-04:00",
     "end_time": "2024-07-27T15:30:00-04:00",
-    "room": "Orchid Ballroom West",
+    "room": "Orchid Ballroom East",
     "duration": 30,
     "speakers": [
       {
@@ -760,7 +760,7 @@
     "description": "<p>Data engineering is an often misunderstood, conflated range of skills from database administration, analytics, ETL, cloud infrastructure, big data and back. As someone who worked as a data engineer for just over 5 years, I’d love to share my stories about my time as a data engineer to pull back the curtain on what kind of value you might be able to get from data engineering as the heat of ML Ops and AI takes flight, both as organization and individual. Notably, many data engineering teams heavily leverage Python due to the depth and breadth of the data libraries, and the ease by which folks can learn Python to start creating value within the space. We'll also talk about a few of the key libraries that you can learn to set yourself apart if you decide data engineering is for you!</p>",
     "start_time": "2024-07-27T15:00:00-04:00",
     "end_time": "2024-07-27T15:30:00-04:00",
-    "room": "Orchid Ballroom East",
+    "room": "Orchid Ballroom West",
     "duration": 30,
     "speakers": [
       {

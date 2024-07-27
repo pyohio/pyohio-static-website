@@ -15,7 +15,7 @@ duration: 30
 end_time: '2024-07-27T15:30:00-04:00'
 qna: true
 qna_channel: Data Engineering
-room: Orchid Ballroom East
+room: Orchid Ballroom West
 slug: data-engineering-the-world-between-worlds
 speakers:
 - avatar: https://pretalx.com/media/avatars/Screenshot_2024-06-19_at_9.15.42AM_nxy6wif.png
