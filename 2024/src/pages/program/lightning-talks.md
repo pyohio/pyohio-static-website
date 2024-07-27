@@ -19,7 +19,7 @@ A sign-up sheet will be posted in the lobby near registration until 3:00pm on Sa
 - **Python, Learning hack & My Stroke** by Tom Fetherston
 - **Text Mining on Python** by Pragathi R
 - **Tracking College Baseball Roster with Django** by Carl James
-- **I Might not Speak English but... I Speak Eython** by Reddy Tintaya
+- **I Might not Speak English but... I Speak Python** by Reddy Tintaya
 - **Python + Auto Racing = Dodge Python** by Charles Severance
 - **Some Fun w/ Jupyter** by Moshe Zadka
 - **Recurse Center's 4 Social Rules** by Al Sweigart
