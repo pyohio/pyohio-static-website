@@ -16,10 +16,12 @@ A sign-up sheet will be posted in the lobby near registration until 3:00pm on Sa
 - **Declarative Datasets with Labrea** by Eric Steele
 - **Creating Interactive GenAI Apps Powered by Streamlit, Open Source** by Shivay Lamba
 - **inspect is Fun!** by Josh Schneider
+- **Python, Learning hack & My Stroke** by Tom Fetherston
 - **Tracking College Baseball Roster with Django** by Carl James
+- **I Might not Speak English but... I Speak Eython** by Reddy Tintaya
 - **Python + Auto Racing = Dodge Python** by Charles Severance
 - **Some Fun w/ Jupyter** by Moshe Zadka
-- **Python, Learning hack & My Stroke** by Tom Fetherston
 - **Recurse Center's 4 Social Rules** by Al Sweigart
 - **Visualizing Dependencies w/ pip-viz** by John Cassid
 - **Black Python Devs** by Abigail Dogbe
+- **Find These Videos at pyvideo.org** by Andrew Kubera
