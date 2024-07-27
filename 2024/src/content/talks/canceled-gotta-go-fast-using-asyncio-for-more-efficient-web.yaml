@@ -1,8 +1,13 @@
 code: 7GPCCR
 content_warnings: null
-description: '<p>The internet has a wide variety of information available for human
-  consumption. But this data is often difficult to access programmatically if it doesn''t
-  come in the form of a dedicated API. With tools like Beautiful Soup, Python developers
+description: '<p><strong>We regret to announce that Samuel was unable to attend PyOhio
+  and that this session has been canceled.</strong> Sorry, folks!</p>
+
+  <hr />
+
+  <p>The internet has a wide variety of information available for human consumption.
+  But this data is often difficult to access programmatically if it doesn''t come
+  in the form of a dedicated API. With tools like Beautiful Soup, Python developers
   can parse data directly from web pages.</p>
 
   <p>There''s just one problem: looping through HTTP requests for a bunch of URLs
@@ -13,9 +18,9 @@ discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T14:30:00-04:00'
 qna: true
-qna_channel: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping
+qna_channel: Canceled
 room: Orchid Ballroom East
-slug: gotta-go-fast-using-asyncio-for-more-efficient-web-scraping
+slug: canceled-gotta-go-fast-using-asyncio-for-more-efficient-web
 speakers:
 - avatar: https://pretalx.com/media/avatars/sagnewshreds_E8xEubp.jpg
   code: TDNT9P
@@ -23,6 +28,6 @@ speakers:
   slug: samuel-agnew
 start_time: '2024-07-28T14:00:00-04:00'
 stream_timestamp: ''
-title: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping
+title: 'Canceled: Gotta Go Fast! Using Asyncio for More Efficient Web Scraping'
 type: 30 Minute Talk
 youtube_url: null
