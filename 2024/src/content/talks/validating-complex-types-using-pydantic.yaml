@@ -18,7 +18,15 @@ description: '<p>For some Python Objects it is difficult to understand its conte
 
   <p>In this talk, we will describe how to utilize typing metadata and Pydantic to
   not only provide additional context for these data structures, but to validate the
-  input/output of functions as well.</p>'
+  input/output of functions as well.</p>
+
+  <p>Links for the talk:<br />
+
+  - <a href="https://github.com/dschelkoph/ds_validator_talk">Notebook</a> used in
+  talk; dev container compatible<br />
+
+  - <a href="https://pypi.org/project/ds_validator/">ds_validator</a>, the package
+  demonstrated in the talk</p>'
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T14:45:00-04:00'
