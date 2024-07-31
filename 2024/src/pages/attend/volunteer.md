@@ -5,7 +5,7 @@ title: Volunteer
 
 # Volunteer
 
-PyOhio only happens thanks to the work of manu volunteers. Want to help?
+PyOhio only happens thanks to the work of many volunteers. Want to help?
 
 Sign up for our [volunteer interest list](https://volunteer-list.pyohio.org/) and we'll email you when we're looking for more help. There is no obligation when you join the list and you can unsubscribe at any time.
 
