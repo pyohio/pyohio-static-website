@@ -204,7 +204,7 @@
   },
   {
     "code": "FAKV3H",
-    "title": "Keynote",
+    "title": "Keynote: Brains Are Beautiful Liars",
     "slug": "trey-hunner-keynote",
     "description": "<p>Trey Hunner presents our Sunday afternoon keynote.</p>",
     "start_time": "2024-07-28T15:30:00-04:00",
@@ -233,9 +233,9 @@
   },
   {
     "code": "KHNSQ3",
-    "title": "Keynote",
+    "title": "Keynote: Changelong",
     "slug": "mariatta-keynote",
-    "description": "<p>Mariatta presents our Saturday afternoon keynote.</p>",
+    "description": "<p>In open source projects, major changes to open source software are documented in Changelogs. Users can read the changelogs before updating their dependency to get a list of new features, bug fixes, and deprecations.</p>\n<p>But open source is not just about code, there is a community around it. Just like code gets improved and updated, other aspects of the community, like governance and infrastructure are also evolving, and yet such changes are usually more difficult to do and implement.</p>\n<p>This session discusses challenges in the Python open source community when it comes to making changes outside of code, and how us as a community can move forward to continue the evolution of Python as code and as community.</p>",
     "start_time": "2024-07-27T15:45:00-04:00",
     "end_time": "2024-07-27T16:30:00-04:00",
     "room": "Orchid Ballroom",
@@ -255,10 +255,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Mariatta presents our Saturday afternoon keynote.\n\n",
+    "description_text": "In open source projects, major changes to open source software are documented in Changelogs. Users can read the changelogs before updating their dependency to get a list of new features, bug fixes, and deprecations.\n\nBut open source is not just about code, there is a community around it. Just like code gets improved and updated, other aspects of the community, like governance and infrastructure are also evolving, and yet such changes are usually more difficult to do and implement.\n\nThis session discusses challenges in the Python open source community when it comes to making changes outside of code, and how us as a community can move forward to continue the evolution of Python as code and as community.\n\n",
     "talk_url": "https://www.pyohio.org/2024/talks/mariatta-keynote",
     "speaker_names": "Mariatta",
-    "description_youtube": "Keynote by Mariatta at PyOhio 2024:\nMariatta presents our Saturday afternoon keynote.\n\nPyOhio talk listing: https://www.pyohio.org/2024/talks/mariatta-keynote"
+    "description_youtube": "Keynote by Mariatta at PyOhio 2024:\nIn open source projects, major changes to open source software are documented in Changelogs. Users can read the changelogs before updating their dependency to get a list of new features, bug fixes, and deprecations.\n\nBut open source is not just about code, there is a community around it. Just like code gets improved and updated, other aspects of the community, like governance and infrastructure are also evolving, and yet such changes are usually more difficult to do and implement.\n\nThis session discusses challenges in the Python open source community when it comes to making changes outside of code, and how us as a community can move forward to continue the evolution of Python as code and as community.\n\nPyOhio talk listing: https://www.pyohio.org/2024/talks/mariatta-keynote"
   },
   {
     "code": "YMAT93",
