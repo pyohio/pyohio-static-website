@@ -14,7 +14,7 @@ export default defineConfig({
         },
         // Configure where our media assets are stored & served from
         media_folder: "public/assets/blog",
-        public_folder: "/assets/blog",
+        public_folder: "/blog/assets/blog",
         // Configure the content collections
         collections: [
           {
