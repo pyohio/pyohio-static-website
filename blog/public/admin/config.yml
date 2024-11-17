@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: githum
+  repo: pyohio/pyohio-static-website
   branch: main
 media_folder: "src/assets/media"
 public_folger: "src/assets/media"
