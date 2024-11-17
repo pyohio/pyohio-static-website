@@ -9,9 +9,9 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-	"dependencies": {
-		"astro-decap-cms": "^0.1.0"
-	},
+  "dependencies": {
+    "astro-decap-cms": "^0.1.0"
+  },
   "devDependencies": {
     "astro": "1.9.2"
   }
