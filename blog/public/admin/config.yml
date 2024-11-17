@@ -1,5 +1,5 @@
 backend:
-  name: githum
+  name: github
   repo: pyohio/pyohio-static-website
   branch: main
 media_folder: "src/assets/media"
