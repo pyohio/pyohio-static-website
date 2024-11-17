@@ -3,7 +3,7 @@ backend:
   repo: pyohio/pyohio-static-website
   branch: main
 media_folder: "blog/public/media"
-public_folder: "/blog/public/media"
+public_folder: "/blog/media"
 publish_mode: editorial_workflow
 collections:
   - name: "posts"
