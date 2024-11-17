@@ -4,6 +4,7 @@ backend:
   branch: main
 media_folder: "src/assets/media"
 public_folger: "src/assets/media"
+publish_mode: editorial_workflow
 collections:
   - name: "blog"
     label: "Blog"
@@ -14,5 +15,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Hero Image", name: "heroIimage", widget: "image"}
+      - {label: "Hero Image", name: "heroIimage", widget: "image", required: false}
