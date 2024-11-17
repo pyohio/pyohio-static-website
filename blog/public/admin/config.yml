@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: pyohio/pyohio-static-website
+  branch: main
+media_folder: "blog/src/assets/media"
+public_folger: "blog/src/assets/media"
+publish_mode: editorial_workflow
+collections:
+  - name: "blog"
+    label: "Blog Post"
+    folder: "blog/src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Hero Image", name: "heroIimage", widget: "image", required: false}
