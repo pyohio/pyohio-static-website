@@ -2,13 +2,14 @@ backend:
   name: github
   repo: pyohio/pyohio-static-website
   branch: main
-media_folder: "blog/src/assets/media"
-public_folger: "blog/src/assets/media"
+media_folder: "blog/public/media"
+public_folder: "/blog/media"
 publish_mode: editorial_workflow
 collections:
-  - name: "blog"
-    label: "Blog Post"
-    folder: "blog/src/content/blog"
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "blog/src/content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
