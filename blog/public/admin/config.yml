@@ -24,6 +24,21 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
+          label: "Show Date?",
+          name: "showDate",
+          widget: "boolean",
+          default: true,
+          required: false,
+        }
+      - {
+          label: "Show Hero Image?",
+          name: "showHeroImage",
+          widget: "boolean",
+          default: true,
+          required: false,
+        }
+
+      - {
           label: "Hero Image",
           name: "heroImage",
           widget: "image",
