@@ -12,6 +12,7 @@ const posts = defineCollection({
     showDate: z.boolean().optional(),
     showHeroImage: z.boolean().optional(),
     heroImage: z.string().optional(),
+    heroImageAltText: z.string().optional(),
   }),
 })
 

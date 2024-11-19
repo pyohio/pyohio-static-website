@@ -44,3 +44,9 @@ collections:
           widget: "image",
           required: false,
         }
+      - {
+          label: "Hero Image Alt Text",
+          name: "heroImageAltText",
+          widget: "string",
+          required: false,
+        }

@@ -13,6 +13,7 @@ const {
   pubDate,
   updatedDate,
   heroImage,
+  heroImageAltText,
   showDate,
   showHeroImage,
 } = Astro.props
@@ -70,7 +71,12 @@ const {
           showHeroImage && (
             <div class="hero-image">
               {heroImage && (
-                <img width={762} height={400} src={heroImage} alt="" />
+                <img
+                  width={762}
+                  height={400}
+                  src={heroImage}
+                  alt={heroImageAltText}
+                />
               )}
             </div>
           )
