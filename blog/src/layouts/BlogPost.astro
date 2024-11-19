@@ -7,8 +7,16 @@ import FormattedDate from "../components/FormattedDate.astro"
 
 type Props = CollectionEntry<"posts">["data"]
 
-const { title, description, pubDate, updatedDate, heroImage, showDate } =
-  Astro.props
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  heroImageAltText,
+  showDate,
+  showHeroImage,
+} = Astro.props
 ---
 
 <html lang="en">
@@ -59,28 +67,40 @@ const { title, description, pubDate, updatedDate, heroImage, showDate } =
     <Header />
     <main>
       <article>
-        <div class="hero-image">
-          {heroImage && <img width={762} height={400} src={heroImage} alt="" />}
-        </div>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
-              {showDate && <FormattedDate date={pubDate} />}
-              {
-                updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )
-              }
+        {
+          showHeroImage && (
+            <div class="hero-image">
+              {heroImage && (
+                <img
+                  width={762}
+                  height={400}
+                  src={heroImage}
+                  alt={heroImageAltText}
+                />
+              )}
             </div>
-            <h1>{title}</h1>
-            <hr />
-          </div>
-          <slot />
-        </div>
+          )
+        }
       </article>
+      <div class="prose">
+        <div class="title">
+          <div class="date">
+            {showDate && <FormattedDate date={pubDate} />}
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Last updated on <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+          <h1>{title}</h1>
+          <hr />
+        </div>
+        <slot />
+      </div>
     </main>
+
     <Footer />
   </body>
 </html>

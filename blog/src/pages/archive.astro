@@ -14,7 +14,10 @@ const posts = (await getCollection("posts")).sort(
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title="PyOhio Blog Archive"
+      description="The PyOhio blog archive."
+    />
     <style>
       main {
         width: 960px;
@@ -57,6 +60,11 @@ const posts = (await getCollection("posts")).sort(
         color: rgb(var(--black));
         /* line-height: 1; */
       }
+      .page-title {
+        padding: 1em 0 0.5em 0;
+        text-align: center;
+        line-height: 1;
+      }
       .date {
         margin: 0;
         color: rgb(var(--gray));
@@ -89,6 +97,8 @@ const posts = (await getCollection("posts")).sort(
     <Header />
     <main>
       <section>
+        <h1 class="page-title">PyOhio Blog Archive</h1>
+        <hr />
         <ul>
           {
             posts.map((post) => (
