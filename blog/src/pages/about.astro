@@ -2,7 +2,12 @@
 import Layout from "../layouts/BlogPost.astro"
 ---
 
-<Layout title="About PyOhio" description="Lorem ipsum dolor sit amet">
+<Layout
+  title="About PyOhio"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  showDate={false}
+>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
