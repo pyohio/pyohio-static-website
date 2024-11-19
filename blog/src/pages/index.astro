@@ -40,7 +40,7 @@ const posts = (await getCollection("posts"))
         text-align: center;
       }
       ul li:first-child img {
-        width: 100%;
+        width: 50%;
       }
       ul li:first-child .title {
         font-size: 2.369rem;
@@ -48,6 +48,7 @@ const posts = (await getCollection("posts"))
       ul li img {
         margin-bottom: 0.5rem;
         border-radius: 12px;
+        max-width: 50%;
       }
       ul li a {
         display: block;
@@ -96,8 +97,8 @@ const posts = (await getCollection("posts"))
                 <a href={`/blog/${post.slug}/`}>
                   {post.data.heroImage && (
                     <img
-                      width={720}
-                      height={360}
+                      width={510}
+                      height={255}
                       src={post.data.heroImage}
                       alt=""
                     />

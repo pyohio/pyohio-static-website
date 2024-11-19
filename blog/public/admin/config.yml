@@ -11,11 +11,17 @@ collections:
     label_singular: "Blog Post"
     folder: "blog/src/content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - {
+          label: "Updated Date",
+          name: "updatedDate",
+          widget: "datetime",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Hero Image",

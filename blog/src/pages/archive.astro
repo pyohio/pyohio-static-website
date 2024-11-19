@@ -55,7 +55,7 @@ const posts = (await getCollection("posts")).sort(
       .title {
         margin: 0;
         color: rgb(var(--black));
-        line-height: 1;
+        /* line-height: 1; */
       }
       .date {
         margin: 0;
@@ -94,10 +94,10 @@ const posts = (await getCollection("posts")).sort(
             posts.map((post) => (
               <li>
                 <a href={`/blog/${post.slug}/`}>
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="date">
+                  <h3 class="date">
                     <FormattedDate date={post.data.pubDate} />
-                  </p>
+                  </h3>
+                  <h4 class="title">{post.data.title}</h4>
                   <p class="description">{post.data.description}</p>
                 </a>
               </li>
