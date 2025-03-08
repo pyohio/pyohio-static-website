@@ -12,17 +12,16 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Short URLs change year to year:
 
-/about /2024/about/ 302
-/coc /2024/about/code-of-conduct 302
-/code-of-conduct /2024/about/code-of-conduct 302
-/conduct /2024/about/code-of-conduct 302
-/discord /2024/attend/discord 302
+/about /2025 302
+/coc /2025/about/code-of-conduct 302
+/code-of-conduct /2025/about/code-of-conduct 302
+/conduct /2025/about/code-of-conduct 302
 /attend /2024/attend/registration 302
 /directions /2024/attend/travel-and-hotels 302
 /events /2024 302
-/health-and-safety /2024/about/health-and-safety/ 302
+/health-and-safety /2025/about/health-and-safety 302
 /hotel /2024/attend/travel-and/hotels 302
-/prospectus /2024/sponsors/prospectus 302
+/prospectus /2025 302
 /register /2024/attend/registration 302
 /schedule /2024/program/schedule 302
 /sprints /2024 302
@@ -33,12 +32,14 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 # Off-site
 
 /shirts https://www.customink.com/fundraising/pyohio 302
-/cfp https://pretalx.com/pyohio-2024/cfp 302
-/call-for-proposals https://pretalx.com/pyohio-2024/cfp 302
+/cfp https://pretalx.com/pyohio-2025/cfp 302
+/call-for-proposals https://pretalx.com/pyohio-2025/cfp 302
 /video https://www.youtube.com/c/PyOhio 302
 /info-list https://newsletter.pyohio.org/ 302
 /mailing-list https://newsletter.pyohio.org/ 302
 /volunteer-list https://volunteer-list.pyohio.org/ 302
+/discord https://discord.gg/agA4D7Mmdn 302
+/2025/attend/discord https://discord.gg/agA4D7Mmdn 302
 
 # OhPyOh
 
