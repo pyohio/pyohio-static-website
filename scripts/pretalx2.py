@@ -35,7 +35,7 @@ PRETALX_EVENT_ID = "pyohio-2024"
 YEAR = "2024"
 DATA_DIR = Path("./2024/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
-DEFAULT_AVATAR_PATH = "img/no-profile.png"
+DEFAULT_AVATAR_PATH = "src/content/speakers/img/no-profile.png"
 DEFAULT_TIME = "TBD"
 PLENARY_ROOM = "Orchid Ballroom"
 UNLISTED_SPEAKERS = [
@@ -297,32 +297,6 @@ class DataProcessor:
 
         return processed_talk
 
-    def process_speakers(
-        self,
-        speaker_codes: List[str],
-        client: PretalxClient,
-        talks_by_code: Dict[str, Dict],
-        social_media_by_speaker_code: Dict[str, str],
-    ) -> None:
-        """Process speaker data and save to files."""
-        self.clean_directory(self.speakers_dir)
-        click.echo("Getting speaker info...", err=True)
-
-        speaker_data = []
-        for speaker_code in speaker_codes:
-            speaker_info = client.get_speaker_data(speaker_code)
-            speaker_data.append(speaker_info)
-
-        click.echo("Writing speaker files...", err=True)
-        for speaker in speaker_data:
-            processed_speaker = self._process_single_speaker(
-                speaker, talks_by_code, social_media_by_speaker_code
-            )
-
-            save_filename = self.speakers_dir / f"{processed_speaker['slug']}.yaml"
-            with open(save_filename, "w") as save_file:
-                yaml.dump(processed_speaker, save_file, allow_unicode=True)
-
     def download_avatar(self, avatar_url: str, speaker_slug: str) -> str:
         """
         Download avatar image and save to images directory.
@@ -368,6 +342,32 @@ class DataProcessor:
         except Exception as e:
             click.echo(f"Error downloading avatar for {speaker_slug}: {e}", err=True)
             return DEFAULT_AVATAR_PATH
+
+    def process_speakers(
+        self,
+        speaker_codes: List[str],
+        client: PretalxClient,
+        talks_by_code: Dict[str, Dict],
+        social_media_by_speaker_code: Dict[str, str],
+    ) -> None:
+        """Process speaker data and save to files."""
+        self.clean_directory(self.speakers_dir)
+        click.echo("Getting speaker info...", err=True)
+
+        speaker_data = []
+        for speaker_code in speaker_codes:
+            speaker_info = client.get_speaker_data(speaker_code)
+            speaker_data.append(speaker_info)
+
+        click.echo("Writing speaker files...", err=True)
+        for speaker in speaker_data:
+            processed_speaker = self._process_single_speaker(
+                speaker, talks_by_code, social_media_by_speaker_code
+            )
+
+            save_filename = self.speakers_dir / f"{processed_speaker['slug']}.yaml"
+            with open(save_filename, "w") as save_file:
+                yaml.dump(processed_speaker, save_file, allow_unicode=True)
 
     def _process_single_speaker(
         self,
@@ -604,6 +604,48 @@ def get_event_data(ctx):
 
     # Process breaks
     processor.process_breaks()
+
+
+@pretalx.command()
+def make_talk_extras():
+    """Generate talk extras data for the TALK_EXTRAS dictionary and print to stdout."""
+    # Initialize the data processor for access to data directories
+    processor = DataProcessor(DATA_DIR, YEAR)
+    talks_dir = processor.talks_dir
+
+    click.echo(f"Reading talk YAML files from {talks_dir}...", err=True)
+
+    # Dictionary to store talk extras
+    talk_extras = {}
+
+    # Read each YAML file in the talks directory
+    for talk_file in talks_dir.glob("*.yaml"):
+        try:
+            # Skip break files (they don't have talk codes)
+            if talk_file.stem in [b.lower() for b in BREAKS.keys()]:
+                continue
+
+            with open(talk_file, "r") as f:
+                talk_data = yaml.safe_load(f)
+
+            # Only process files that have a talk code
+            if "code" in talk_data:
+                talk_extras[talk_data["code"]] = {
+                    "title": talk_data["title"],
+                    "youtube_url": None,
+                    "content_warnings": None,
+                    "channel_id": "",
+                    "channel_name": "",
+                    "video_start_time": "",
+                }
+        except Exception as e:
+            click.echo(f"Error processing {talk_file}: {e}", err=True)
+
+    # Print JSON to stdout using orjson
+    json_bytes = orjson.dumps(
+        talk_extras, option=orjson.OPT_INDENT_2 | orjson.OPT_SORT_KEYS
+    )
+    print(json_bytes.decode("utf-8"))
 
 
 if __name__ == "__main__":
