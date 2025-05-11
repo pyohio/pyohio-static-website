@@ -5,7 +5,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Lightning Talks",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/FMfgVo4-i8Y",
     },
     "7GPCCR": {
         "channel_id": "",
@@ -21,7 +21,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Evolve or Die: How I Stopped Avoiding and Starting Loving Python Upgrades",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/VSoojqx0xMo",
     },
     "8PZZLK": {
         "channel_id": "",
@@ -29,7 +29,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Introducing Immortal Objects: Building Block Towards a Multi-core Python Runtime",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/U-o2QtXAnps",
     },
     "8TRXAM": {
         "channel_id": "",
@@ -37,7 +37,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Boosting Neuroimaging Analysis and Results Digestibility 🧠",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/lNC5DwuUb8M",
     },
     "8WZN9J": {
         "channel_id": "",
@@ -45,7 +45,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "A Python Sequence (Un)Packing Primer",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/oZv1mRhLxxU",
     },
     "C7YYRN": {
         "channel_id": "",
@@ -53,7 +53,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Boosting Python Numeric Computations with Dynamic C++ Integration",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/lNC5DwuUb8M",
     },
     "DCZDL9": {
         "channel_id": "",
@@ -69,7 +69,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Hot: Pathlib, Not: String Paths",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/pUw7bRAFLPc",
     },
     "DVJYEG": {
         "channel_id": "",
@@ -77,7 +77,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Stress Less: Easy Database Load Testing Using Python and Locust",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/C2PggXqIJtE",
     },
     "E8JAWJ": {
         "channel_id": "",
@@ -85,7 +85,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Snakes & Ladders: A Gentle Introduction to Generators and Iterators",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/E-LGJ27JY1w",
     },
     "EDLLMH": {
         "channel_id": "",
@@ -93,7 +93,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "What Django Deployment is Really About",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/rqHWHQrkAnI",
     },
     "EJSYK9": {
         "channel_id": "",
@@ -101,7 +101,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Keynote",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/cXMpzHAZbLA",
     },
     "EWVQHG": {
         "channel_id": "",
@@ -109,7 +109,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Validating Complex Types Using Pydantic",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/RP8U828yOX4",
     },
     "FAKV3H": {
         "channel_id": "",
@@ -117,7 +117,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Keynote: Brains Are Beautiful Liars",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/APuLJ4pfM4c",
     },
     "FBZUBP": {
         "channel_id": "",
@@ -125,7 +125,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Python <3 Rust",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/-NNR8KeJeI4",
     },
     "FJ97TP": {
         "channel_id": "",
@@ -133,7 +133,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Serverless AI Inferencing Using Python and WebAssembly",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/CYs27fJhAZU",
     },
     "HCM8XD": {
         "channel_id": "",
@@ -149,7 +149,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Technical Empathy",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/92gZqp8EsSc",
     },
     "HPDBPB": {
         "channel_id": "",
@@ -157,7 +157,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Data Science & Agile: Strategies for Working Together",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/6HPacg9zDkU",
     },
     "KHNSQ3": {
         "channel_id": "",
@@ -165,7 +165,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Keynote: Changelong",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/uJat5JEeoBU",
     },
     "KNVA99": {
         "channel_id": "",
@@ -181,7 +181,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Efficient Path Planning for Search and Rescue Missions Using Neural Networks",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/SEVsdCf92ag",
     },
     "LUKKXH": {
         "channel_id": "",
@@ -189,7 +189,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "How to Do the Same Thing Over and Over Again and Yield Different Results",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/tLq3spBR9qg",
     },
     "NC9JDX": {
         "channel_id": "",
@@ -197,7 +197,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Python + Discord = Great Bots!",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/J-0T0Znk5Z8",
     },
     "NZWEHD": {
         "channel_id": "",
@@ -205,7 +205,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "So, I Got Some Code Working… Now How Do I Share It?!",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/4rLy4bYxQ0c",
     },
     "P397LH": {
         "channel_id": "",
@@ -213,7 +213,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Data Engineering: The World Between Worlds",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/SWYK7us-gnY",
     },
     "PMMXMD": {
         "channel_id": "",
@@ -221,7 +221,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Enhancing the JupyterLab Notebook to Overcome Bioinformatics Analysis Challenges with GiN",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/SmDLM1LtX24",
     },
     "QE87TH": {
         "channel_id": "",
@@ -229,7 +229,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Quantum Computing with Qiskit in Galaxy",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/cR1-ymGB_HQ",
     },
     "QPUASH": {
         "channel_id": "",
@@ -237,7 +237,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "A Confession of My Python Sins",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/EFgmCHzVQOs",
     },
     "UGTCE7": {
         "channel_id": "",
@@ -261,7 +261,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Mastering the Zen of Dev Experience: Kubernetes and the Art of Simplicity",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/AZvMebTZDkk",
     },
     "WMJDDE": {
         "channel_id": "",
@@ -269,7 +269,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Wagtail: The Python CMS Taking the World by Storm",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/kyly_c2HQE8",
     },
     "WY9FAP": {
         "channel_id": "",
@@ -277,7 +277,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "20 GOTO 10: How to Make Scrolling ASCII Art",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/QOQnYO8CGtU",
     },
     "XXQLZ3": {
         "channel_id": "",
@@ -285,7 +285,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Asyncio by Example",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/oRI9TAN0GbQ",
     },
     "Y8BHML": {
         "channel_id": "",
@@ -293,7 +293,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Simplifying Python Web App Operations: Automating K8s Ops with Open Source",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/2_Laq499rr4",
     },
     "YAQZHH": {
         "channel_id": "",
@@ -301,7 +301,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Signal Processing in Electrochemistry with Python: Applications to the US Opioids Crisis",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/7UPzG0HhjDE",
     },
     "YMAT93": {
         "channel_id": "",
@@ -309,7 +309,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Building Vector-Symbolic Architectures with Python",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/srKmE_j-gfo",
     },
     "YZMLAA": {
         "channel_id": "",
@@ -317,7 +317,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Device Authorization Flow 101: Logging in From Input Constrained Devices",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/gjLUK6vT2KU",
     },
     "ZDN8QP": {
         "channel_id": "",
@@ -325,7 +325,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Zen Commandments",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/v7rwqh8kcuY",
     },
     "ZXHQKT": {
         "channel_id": "",
@@ -333,7 +333,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "23, Python and Me: Using Machine Learning in Python to Analyze Consumer Genomics Data",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://youtu.be/_51o1CK_3_0",
     },
 }
 
