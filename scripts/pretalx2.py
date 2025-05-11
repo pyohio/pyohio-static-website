@@ -2,12 +2,15 @@
 """
 Utilities for getting data from Pretalx API for PyOhio conference website.
 This script fetches talk and speaker data from Pretalx and saves it as YAML and JSON files.
+It also downloads speaker avatar images to local storage.
 """
 
 import os
 import re
+import shutil
 from pathlib import Path
 from typing import Dict, List, Optional, Any, Tuple
+from urllib.parse import urlparse
 
 import click
 import httpx
@@ -32,6 +35,7 @@ PRETALX_EVENT_ID = "pyohio-2024"
 YEAR = "2024"
 DATA_DIR = Path("./2024/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
+DEFAULT_AVATAR_PATH = "img/no-profile.png"
 DEFAULT_TIME = "TBD"
 PLENARY_ROOM = "Orchid Ballroom"
 UNLISTED_SPEAKERS = [
@@ -137,9 +141,15 @@ class DataProcessor:
         self.talks_dir = data_dir / "talks"
         self.speakers_dir = data_dir / "speakers"
         self.json_dir = data_dir / "json"
+        self.images_dir = data_dir / "speakers" / "img"
 
         # Ensure directories exist
-        for directory in [self.talks_dir, self.speakers_dir, self.json_dir]:
+        for directory in [
+            self.talks_dir,
+            self.speakers_dir,
+            self.json_dir,
+            self.images_dir,
+        ]:
             directory.mkdir(parents=True, exist_ok=True)
 
     def clean_directory(self, directory: Path) -> None:
@@ -150,6 +160,35 @@ class DataProcessor:
                 f.unlink(missing_ok=True)
             except OSError as e:
                 click.echo(f"Error: {f} : {e.strerror}", err=True)
+
+        # Clean the images directory if it's a subdirectory of the speakers directory
+        if directory == self.speakers_dir:
+            # Only clean images directory if it exists
+            if self.images_dir.exists():
+                click.echo("Cleaning speaker images directory...", err=True)
+
+                # Save the placeholder image if it exists
+                no_profile = self.images_dir / "no-profile.png"
+                has_placeholder = no_profile.exists()
+                temp_path = None
+
+                if has_placeholder:
+                    temp_path = self.data_dir / "no-profile-temp.png"
+                    shutil.copy(no_profile, temp_path)
+
+                # Remove all files in the image directory
+                for img_file in self.images_dir.glob("*.*"):
+                    try:
+                        img_file.unlink(missing_ok=True)
+                    except OSError as e:
+                        click.echo(
+                            f"Error deleting image: {img_file} : {e.strerror}", err=True
+                        )
+
+                # Restore the placeholder image if it existed
+                if has_placeholder and temp_path and temp_path.exists():
+                    shutil.copy(temp_path, no_profile)
+                    temp_path.unlink(missing_ok=True)
 
     def process_talks(
         self, talks: List[Dict], qa_by_talk_code: Dict[str, str]
@@ -284,6 +323,52 @@ class DataProcessor:
             with open(save_filename, "w") as save_file:
                 yaml.dump(processed_speaker, save_file, allow_unicode=True)
 
+    def download_avatar(self, avatar_url: str, speaker_slug: str) -> str:
+        """
+        Download avatar image and save to images directory.
+        Returns the relative path to the saved image.
+        """
+        if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
+            return DEFAULT_AVATAR_PATH
+
+        # Add size parameter for Gravatar URLs
+        if avatar_url.startswith("https://www.gravatar.com/avatar"):
+            avatar_url = f"{avatar_url}?s=300"
+
+        try:
+            # Get file extension from URL or default to .png
+            parsed_url = urlparse(avatar_url)
+            path = parsed_url.path
+            extension = os.path.splitext(path)[1].lower()
+            if not extension or extension not in [
+                ".jpg",
+                ".jpeg",
+                ".png",
+                ".gif",
+                ".webp",
+            ]:
+                extension = ".png"
+
+            # Create image filename
+            image_filename = f"{speaker_slug}{extension}"
+            image_path = self.images_dir / image_filename
+            relative_path = f"src/content/speakers/img/{image_filename}"
+
+            # Download the image
+            response = httpx.get(avatar_url, follow_redirects=True, timeout=10.0)
+            response.raise_for_status()
+
+            # Save image to file
+            with open(image_path, "wb") as img_file:
+                img_file.write(response.content)
+
+            click.echo(f"Downloaded avatar for {speaker_slug}", err=True)
+            return relative_path
+
+        except Exception as e:
+            click.echo(f"Error downloading avatar for {speaker_slug}: {e}", err=True)
+            return DEFAULT_AVATAR_PATH
+
     def _process_single_speaker(
         self,
         speaker: Dict,
@@ -294,22 +379,28 @@ class DataProcessor:
         if speaker["biography"] is None:
             speaker["biography"] = ""
 
+        # Get slug first since we need it for the avatar
+        speaker_slug = slugify(speaker["name"])
+
+        # Save original avatar URL
+        avatar_url = speaker["avatar"] or PLACEHOLDER_AVATAR
+
+        # Download avatar and get relative path
+        avatar_path = self.download_avatar(avatar_url, speaker_slug)
+
         # Process basic speaker data
         processed_speaker = {
             "name": speaker["name"],
-            "slug": slugify(speaker["name"]),
+            "slug": speaker_slug,
             "code": speaker["code"],
-            "avatar": speaker["avatar"] or PLACEHOLDER_AVATAR,
+            "avatar": avatar_path,
+            "avatar_url": avatar_url,
             "listed": True,
             "biography": markdown.markdown(
                 speaker["biography"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
         }
-
-        # Fix avatar URL if needed
-        if processed_speaker["avatar"].startswith("https://www.gravatar.com/avatar"):
-            processed_speaker["avatar"] = f"{processed_speaker['avatar']}?s=300"
 
         # Get talks by this speaker
         speaker_talks = []
@@ -323,6 +414,33 @@ class DataProcessor:
                 speaker_talks.append(talk)
 
         processed_speaker["talks"] = speaker_talks
+
+        # For imported avatar URLs, ensure the default placeholder image exists
+        if not os.path.exists(self.images_dir / "no-profile.png"):
+            placeholder_src = (
+                DATA_DIR.parent.parent / "static" / "img" / "no-profile.png"
+            )
+
+            # First check if the placeholder exists in the static directory
+            if placeholder_src.exists():
+                # Copy the existing placeholder image
+                shutil.copy(placeholder_src, self.images_dir / "no-profile.png")
+                click.echo(
+                    f"Copied existing placeholder image from {placeholder_src}",
+                    err=True,
+                )
+            else:
+                # Try to download the placeholder from the URL
+                try:
+                    response = httpx.get(
+                        PLACEHOLDER_AVATAR, follow_redirects=True, timeout=10.0
+                    )
+                    if response.status_code == 200:
+                        with open(self.images_dir / "no-profile.png", "wb") as img_file:
+                            img_file.write(response.content)
+                        click.echo("Downloaded no-profile.png image", err=True)
+                except Exception as e:
+                    click.echo(f"Error downloading placeholder image: {e}", err=True)
 
         # Process social links
         social_links = [
