@@ -9,8 +9,8 @@ description: <p>Unleashing the power of serverless AI has never been more access
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T10:45:00-04:00'
-qna: true
-qna_channel: Serverless AI Inferencing Using Python and WebAssembly
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: serverless-ai-inferencing-using-python-and-webassembly
 speakers:
@@ -22,4 +22,4 @@ start_time: '2024-07-27T10:15:00-04:00'
 stream_timestamp: ''
 title: Serverless AI Inferencing Using Python and WebAssembly
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/CYs27fJhAZU

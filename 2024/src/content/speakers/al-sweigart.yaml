@@ -1,4 +1,5 @@
-avatar: https://pretalx.com/media/avatars/HVAES8_qkATXdK.jpg
+avatar: src/content/speakers/img/al-sweigart.jpg
+avatar_url: https://pretalx.com/media/avatars/HVAES8_qkATXdK.jpg
 biography: <p>Al Sweigart is a software developer, artist, Fellow of the Python Software
   Foundation, and the author of Automate the Boring Stuff with Python and other programming
   books freely available under the Creative Commons license at <a href="https://inventwithpython.com">https://inventwithpython.com</a>.</p>

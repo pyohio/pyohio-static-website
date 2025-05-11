@@ -23,8 +23,8 @@ description: '<p>With an average of 195 daily deaths due to synthetic opioids ov
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:00:00-04:00'
-qna: true
-qna_channel: Signal Processing in Electrochemistry with Python
+qna: false
+qna_channel: null
 room: Orchid Ballroom West
 slug: signal-processing-in-electrochemistry-with-python-applications
 speakers:
@@ -37,4 +37,4 @@ stream_timestamp: ''
 title: 'Signal Processing in Electrochemistry with Python: Applications to the US
   Opioids Crisis'
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/7UPzG0HhjDE

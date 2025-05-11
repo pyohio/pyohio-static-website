@@ -15,8 +15,8 @@ description: '<p>Have you ever heard of device authorization flow? You may have 
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:45:00-04:00'
-qna: true
-qna_channel: Device Authorization Flow 101
+qna: false
+qna_channel: null
 room: Orchid Ballroom West
 slug: device-authorization-flow-101-logging-in-from-input-constrained
 speakers:
@@ -28,4 +28,4 @@ start_time: '2024-07-28T13:15:00-04:00'
 stream_timestamp: ''
 title: 'Device Authorization Flow 101: Logging in From Input Constrained Devices'
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/gjLUK6vT2KU

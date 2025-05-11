@@ -40,8 +40,8 @@ description: '<p>People often spend so much time learning how to build apps in D
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T11:30:00-04:00'
-qna: true
-qna_channel: What Django Deployment is Really About
+qna: false
+qna_channel: null
 room: Cattleya
 slug: what-django-deployment-is-really-about
 speakers:
@@ -53,4 +53,4 @@ start_time: '2024-07-27T11:00:00-04:00'
 stream_timestamp: ''
 title: What Django Deployment is Really About
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/rqHWHQrkAnI

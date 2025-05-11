@@ -13,8 +13,8 @@ description: <p>Data engineering is an often misunderstood, conflated range of s
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T15:30:00-04:00'
-qna: true
-qna_channel: Data Engineering
+qna: false
+qna_channel: null
 room: Orchid Ballroom West
 slug: data-engineering-the-world-between-worlds
 speakers:
@@ -26,4 +26,4 @@ start_time: '2024-07-27T15:00:00-04:00'
 stream_timestamp: ''
 title: 'Data Engineering: The World Between Worlds'
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/SWYK7us-gnY

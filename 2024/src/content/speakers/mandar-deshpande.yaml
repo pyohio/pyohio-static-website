@@ -1,4 +1,5 @@
-avatar: https://pretalx.com/media/avatars/ES3U77_cBJBU6u.jpeg
+avatar: src/content/speakers/img/mandar-deshpande.jpeg
+avatar_url: https://pretalx.com/media/avatars/ES3U77_cBJBU6u.jpeg
 biography: <p>Software engineer at Meta, working in the PyTorch org developing Torcharrow
   preproc for recommendation system models. Previously ML acceleration at AWS Inferentia
   + MS in ECE from UCLA. I have been involved in OSS development since 2017 through

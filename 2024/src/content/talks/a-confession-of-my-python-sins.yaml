@@ -8,8 +8,8 @@ description: '<p>I''ve been writing Python code for twenty years now, and in tha
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:00:00-04:00'
-qna: true
-qna_channel: A Confession of My Python Sins
+qna: false
+qna_channel: null
 room: Calypso
 slug: a-confession-of-my-python-sins
 speakers:
@@ -21,4 +21,4 @@ start_time: '2024-07-28T12:30:00-04:00'
 stream_timestamp: ''
 title: A Confession of My Python Sins
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/EFgmCHzVQOs

@@ -30,8 +30,8 @@ description: '<p>For some Python Objects it is difficult to understand its conte
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T14:45:00-04:00'
-qna: true
-qna_channel: Validating Complex Types Using Pydantic
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: validating-complex-types-using-pydantic
 speakers:
@@ -43,4 +43,4 @@ start_time: '2024-07-27T14:15:00-04:00'
 stream_timestamp: ''
 title: Validating Complex Types Using Pydantic
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/RP8U828yOX4

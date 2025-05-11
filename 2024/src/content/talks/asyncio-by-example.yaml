@@ -14,8 +14,8 @@ description: '<p>Async functions in Python are a great way to simplify otherwise
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:45:00-04:00'
-qna: true
-qna_channel: Asyncio by Example
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: asyncio-by-example
 speakers:
@@ -27,4 +27,4 @@ start_time: '2024-07-28T13:15:00-04:00'
 stream_timestamp: ''
 title: Asyncio by Example
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/oRI9TAN0GbQ

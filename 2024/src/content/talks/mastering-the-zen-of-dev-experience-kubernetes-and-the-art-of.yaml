@@ -29,8 +29,8 @@ description: '<p>Happy developers do not have to fight their tools and environme
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:45:00-04:00'
-qna: true
-qna_channel: Mastering the Zen of Dev Experience
+qna: false
+qna_channel: null
 room: Calypso
 slug: mastering-the-zen-of-dev-experience-kubernetes-and-the-art-of
 speakers:
@@ -42,4 +42,4 @@ start_time: '2024-07-28T13:15:00-04:00'
 stream_timestamp: ''
 title: 'Mastering the Zen of Dev Experience: Kubernetes and the Art of Simplicity'
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/AZvMebTZDkk

@@ -16,9 +16,8 @@ description: <p>My talk is focused on GiN, (Galaxy in Notebooks) is an open-sour
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T10:45:00-04:00'
-qna: true
-qna_channel: Enhancing the JupyterLab Notebook to Overcome Bioinformatics Analysis
-  Challenges with GiN
+qna: false
+qna_channel: null
 room: Cattleya
 slug: enhancing-the-jupyterlab-notebook-to-overcome-bioinformatics-gin
 speakers:
@@ -31,4 +30,4 @@ stream_timestamp: ''
 title: Enhancing the JupyterLab Notebook to Overcome Bioinformatics Analysis Challenges
   with GiN
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/SmDLM1LtX24

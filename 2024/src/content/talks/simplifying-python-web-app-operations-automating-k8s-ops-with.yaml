@@ -11,8 +11,8 @@ description: <p>After creating a great web app using Python such as with flask, 
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T12:15:00-04:00'
-qna: true
-qna_channel: Simplifying Python Web App Operations
+qna: false
+qna_channel: null
 room: Calypso
 slug: simplifying-python-web-app-operations-automating-k8s-ops-with
 speakers:
@@ -24,4 +24,4 @@ start_time: '2024-07-27T11:45:00-04:00'
 stream_timestamp: ''
 title: 'Simplifying Python Web App Operations: Automating K8s Ops with Open Source'
 type: 30 Minute Talk
-youtube_url: null
+youtube_url: https://youtu.be/2_Laq499rr4
