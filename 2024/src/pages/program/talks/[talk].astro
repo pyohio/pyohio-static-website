@@ -42,9 +42,19 @@ function formatDay(timeString) {
       <p class="italic">{talk.data.type}<br/>{formatDay(talk.data.start_time)} at {formatTime(talk.data.start_time)} in {talk.data.room}</p>
     </div>
   </section>
-  <!-- <section class="container">
-    <iframe class="w-full aspect-video" src={"https://www.youtube.com/embed/"+talk.data.youtube_url.replace("https://youtu.be/", "")} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </section> -->
+  <section class="container">
+
+    {talk.data.youtube_url && (
+      <iframe
+      class="w-full aspect-video"
+      src={"https://www.youtube.com/embed/"+talk.data.youtube_url.replace("https://youtu.be/", "")}
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      ></iframe>
+    )}
+  </section>
   <section class="my-12">
     <div class="space-content container">
       <Fragment set:html={talk.data.description} />
