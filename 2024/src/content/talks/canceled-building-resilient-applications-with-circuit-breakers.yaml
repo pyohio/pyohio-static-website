@@ -13,8 +13,8 @@ description: '<p><strong>We regret to announce that Sameer was unable to attend 
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T11:30:00-04:00'
-qna: true
-qna_channel: Canceled
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: canceled-building-resilient-applications-with-circuit-breakers
 speakers:

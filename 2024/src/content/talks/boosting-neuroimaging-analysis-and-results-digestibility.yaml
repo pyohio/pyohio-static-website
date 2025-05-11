@@ -14,8 +14,8 @@ description: '<p>Electroencephalogram (EEG) measures brain activity, and despite
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T14:45:00-04:00'
-qna: true
-qna_channel: Boosting Neuroimaging Analysis and Results Digestibility 🧠
+qna: false
+qna_channel: null
 room: Calypso
 slug: boosting-neuroimaging-analysis-and-results-digestibility
 speakers:

@@ -15,8 +15,8 @@ description: '<p>Generators and Iterators are two core features of Python that a
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T10:45:00-04:00'
-qna: true
-qna_channel: Snakes & Ladders
+qna: false
+qna_channel: null
 room: Calypso
 slug: snakes-ladders-a-gentle-introduction-to-generators-and-iterators
 speakers:

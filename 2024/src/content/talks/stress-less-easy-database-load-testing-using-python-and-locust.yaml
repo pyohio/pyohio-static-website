@@ -13,8 +13,8 @@ description: '<h2>Overview</h2>
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:00:00-04:00'
-qna: true
-qna_channel: Stress Less
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: stress-less-easy-database-load-testing-using-python-and-locust
 speakers:

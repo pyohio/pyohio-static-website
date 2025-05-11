@@ -9,8 +9,8 @@ description: <p>Unleashing the power of serverless AI has never been more access
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T10:45:00-04:00'
-qna: true
-qna_channel: Serverless AI Inferencing Using Python and WebAssembly
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: serverless-ai-inferencing-using-python-and-webassembly
 speakers:

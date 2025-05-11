@@ -14,8 +14,8 @@ description: <p>Utilizing the Python programming language and the Tkinter librar
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T12:15:00-04:00'
-qna: true
-qna_channel: Efficient Path Planning for Search and Rescue Missions Using Neural Networks
+qna: false
+qna_channel: null
 room: Orchid Ballroom West
 slug: efficient-path-planning-for-search-and-rescue-missions-using
 speakers:

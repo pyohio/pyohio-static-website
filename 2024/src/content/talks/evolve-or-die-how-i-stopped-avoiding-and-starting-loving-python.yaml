@@ -28,8 +28,8 @@ description: '<p>Imagine you’re all set to board a flight. You''ve got your bo
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T14:30:00-04:00'
-qna: true
-qna_channel: Evolve or Die
+qna: false
+qna_channel: null
 room: Orchid Ballroom West
 slug: evolve-or-die-how-i-stopped-avoiding-and-starting-loving-python
 speakers:

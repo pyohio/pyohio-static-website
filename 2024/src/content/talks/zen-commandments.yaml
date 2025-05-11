@@ -12,8 +12,8 @@ description: '<p>With the 20th anniversary of the Zen of Python coming up in Aug
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T14:30:00-04:00'
-qna: true
-qna_channel: Zen Commandments
+qna: false
+qna_channel: null
 room: Cattleya
 slug: zen-commandments
 speakers:

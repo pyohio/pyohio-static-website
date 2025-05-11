@@ -15,8 +15,8 @@ description: <p>We are over 20 years into the genomics era, with new insights in
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T15:15:00-04:00'
-qna: true
-qna_channel: 23, Python and Me
+qna: false
+qna_channel: null
 room: Calypso
 slug: 23-python-and-me-using-machine-learning-in-python-to-analyze
 speakers:

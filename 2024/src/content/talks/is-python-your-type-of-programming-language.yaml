@@ -54,8 +54,8 @@ description: '<p>Python''s dynamic typing system famously offers flexibility, bu
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T12:15:00-04:00'
-qna: true
-qna_channel: Is Python Your TYPE of Programming Language
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: is-python-your-type-of-programming-language
 speakers:

@@ -24,8 +24,8 @@ description: '<p>Have you seen <code>pathlib</code>?  If not, once I show you, y
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T13:00:00-04:00'
-qna: true
-qna_channel: Hot
+qna: false
+qna_channel: null
 room: Cattleya
 slug: hot-pathlib-not-string-paths
 speakers:

@@ -9,8 +9,8 @@ description: <p>When I started working with Elasticsearch, the data in my index 
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-27T14:45:00-04:00'
-qna: true
-qna_channel: How to Do the Same Thing Over and Over Again and Yield Different Results
+qna: false
+qna_channel: null
 room: Cattleya
 slug: how-to-do-the-same-thing-over-and-over-again-and-yield-different
 speakers:

@@ -1,4 +1,5 @@
-avatar: https://pretalx.com/media/avatars/GXSENE_6SmU4Ni.jpg
+avatar: src/content/speakers/img/james-walters.jpg
+avatar_url: https://pretalx.com/media/avatars/GXSENE_6SmU4Ni.jpg
 biography: <p>I started learning Python and Django in Fall 2021 with hopes that my
   colleague and I would be able to rebuild an aging internal web app. Today, that
   project is complete and in production, and my enthusiasm for Python is busting at

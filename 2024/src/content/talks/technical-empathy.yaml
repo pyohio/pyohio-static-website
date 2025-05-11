@@ -21,8 +21,8 @@ description: '<p>From software to sneakers to sofas, the best designs are execut
 discord_channel_id: ''
 duration: 30
 end_time: '2024-07-28T15:15:00-04:00'
-qna: true
-qna_channel: Technical Empathy
+qna: false
+qna_channel: null
 room: Orchid Ballroom East
 slug: technical-empathy
 speakers:
