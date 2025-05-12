@@ -15,12 +15,12 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf public",
-    "dev": "cd 2024 && yarn dev",
+    "dev": "cd 2025 && yarn dev",
     "blog-dev": "cd blog && yarn dev",
-    "build": "cd 2024 && yarn install && yarn build && cd ../blog && yarn install && yarn build",
-    "preview": "cd 2024 && yarn preview",
+    "build": "cd 2025 && yarn install && yarn build && cd ../blog && yarn install && yarn build",
+    "preview": "cd 2025 && yarn preview",
     "blog-preview": "cd blog && yarn preview",
-    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2024/dist ./public/2024 && cp -r ./blog/dist ./public/blog && cp -rv ./netlify-static/* ./public/",
+    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2025/dist ./public/2025 && cp -r ./blog/dist ./public/blog && cp -rv ./netlify-static/* ./public/",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "repository": {
