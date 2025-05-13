@@ -1,0 +1,24 @@
+avatar: src/content/speakers/img/tathagata-dasgupta.jpg
+avatar_url: https://pretalx.com/media/avatars/9TGPL7_9Mlit4L.jpg
+biography: <p>Tathagata Dasgupta (T) loves building things — probably too many things.
+  By day, T wears two hats, as an Engineering Manager and a Senior Site Reliability
+  Engineer for the Low Latency Group at London Stock Exchange Group. Before that,
+  he had fun writing Python for autonomous driving, and large scale financial systems.
+  Fascinated by computers from an early age, he feels lucky to spend his professional
+  life “playing with computers” for a living. Beyond the keyboard, T is passionate
+  about building tech communities. During his decade in Chicago, he helped run the
+  Chicago Python User Group (ChiPy), launching a volunteer-driven mentorship program,
+  designing hands-on coding challenges, and helping ChiPy become one of the most vibrant
+  tech communities in the country. When he’s not coding, managing, or mentoring, you’ll
+  probably find him hopelessly losing high stake wrestling matches against a four
+  year old!</p>
+code: 9TGPL7
+listed: true
+name: Tathagata Dasgupta
+slug: tathagata-dasgupta
+social_links: []
+speaker_type: speaker
+talks:
+- code: BCR7DQ
+  slug: a-bug-s-life
+  title: A Bug's Life

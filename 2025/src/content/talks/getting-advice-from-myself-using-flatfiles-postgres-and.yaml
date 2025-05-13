@@ -1,0 +1,27 @@
+code: L7HLC9
+content_warnings: null
+description: '<p>Cicero said - there is no one who can give you wiser advice than
+  you can give yourself. That''s why when I started generating transcripts from my
+  productivity podcast, I decided to start using it to give myself productivity advice
+  using ALL of my content.</p>
+
+  <p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search
+  as the base for using personal transcriptions, blog posts, and more for RAG and
+  AI Agents.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: getting-advice-from-myself-using-flatfiles-postgres-and
+speakers:
+- avatar: https://pretalx.com/media/avatars/PFEFTZ_eBO4cb1.jpg
+  code: PFEFTZ
+  name: Jay Miller
+  slug: jay-miller
+start_time: TBD
+stream_timestamp: ''
+title: Getting advice from Myself using Flatfiles, Postgres, and Frontmatter
+type: 30 Minute Talk
+youtube_url: null

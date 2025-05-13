@@ -1,0 +1,34 @@
+code: QTMGPJ
+content_warnings: null
+description: <p>If you're a software engineer, a data scientist, or almost any other
+  type of developer, you're probably familiar with the idea of writing well-organized,
+  reusable code. Principles like DRY ("Don't Repeat Yourself") and ETC ("Easy to Change")
+  are powerful heuristics at the line-by-line level of code. Design concepts like
+  modularity, decoupling, MVC ("Model-View-Controller") and "Fat Model, Skinny Controller"
+  can help you make software-level organizing decisions. Resources for project-level
+  organization (code, data, documentation, etc.) are abundant and growing fast. Putting
+  all this together in a useful way can be challenging, but there's no shortage of
+  advice, resources, or templates in any of these areas. By comparison, material related
+  to effective organization at the level of the coder's file system or source tree
+  is sparse, harder to find, or designed for a more general audience. This talk uses
+  "code-scape" as an umbrella term to consolidate ideas about organizing files and
+  folders, maintaining your codebase, building a second brain, digital filing systems,
+  etc. and shares examples of how you can use lightweight Python scripts to help keep
+  your code-scape organized, searchable, and safeguarded.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: organizing-and-maintaining-your-code-scape-with-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/XDMC3Z_U53oo54.jpg
+  code: XDMC3Z
+  name: Matt Lavin
+  slug: matt-lavin
+start_time: TBD
+stream_timestamp: ''
+title: Organizing and Maintaining Your Code-Scape with Python
+type: 30 Minute Talk
+youtube_url: null

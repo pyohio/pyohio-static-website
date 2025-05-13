@@ -1,0 +1,31 @@
+code: KCL8TZ
+content_warnings: null
+description: '<p>Working in the concrete industry, I often found myself doing tasks
+  that felt repetitive. Python has been great for automating these tasks, with the
+  goal being to both increase efficiency and remove opportunities for human error,
+  which can be costly in this business. Automating things has also taught me that
+  seemingly simple tasks can be more complicated than they seem.</p>
+
+  <p>As part of this I will discuss libraries that I have found useful, including
+  ezdxf, which can be used for drafting and creating files that can be read by CAD
+  software.</p>
+
+  <p>Python really is a programming language for everyone, and can have a use case
+  in places you might not expect.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: using-python-in-the-concrete-industry
+speakers:
+- avatar: https://pretalx.com/media/avatars/A9WKCF_369Euu7.png
+  code: A9WKCF
+  name: Scott Windsor
+  slug: scott-windsor
+start_time: TBD
+stream_timestamp: ''
+title: Using Python in the Concrete Industry
+type: 30 Minute Talk
+youtube_url: null

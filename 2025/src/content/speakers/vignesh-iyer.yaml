@@ -1,0 +1,22 @@
+avatar: src/content/speakers/img/vignesh-iyer.png
+avatar_url: https://pretalx.com/media/avatars/8ZXJG9_Crovi6g.png
+biography: <p>Vignesh Iyer is a passionate Software Engineer at NVIDIA who believes
+  in building software that creates a meaningful, positive impact. With a deep curiosity
+  and a constant drive to learn, Vignesh enjoys exploring new technologies, crafting
+  innovative projects, and actively contributing to the open-source ecosystem.</p>
+code: 8ZXJG9
+listed: true
+name: Vignesh Iyer
+slug: vignesh-iyer
+social_links:
+- social_link_display: linkedin.com/in/vgnshiyer/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/vgnshiyer/
+- social_link_display: blog.vgnshiyer.dev
+  social_link_type: fa:link
+  social_link_url: https://blog.vgnshiyer.dev
+speaker_type: speaker
+talks:
+- code: K9WBAG
+  slug: from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to
+  title: 'From Busy Waiting to Async Awaiting: A journey from iterators to asyncio'

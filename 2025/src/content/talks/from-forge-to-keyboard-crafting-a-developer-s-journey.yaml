@@ -1,0 +1,30 @@
+code: WLDTLY
+content_warnings: null
+description: '<p>What do metalsmithing, managing a manufacturing floor, and raising
+  children have to do with writing code? More than you might think.</p>
+
+  <p>Through stories of precision, adaptability, and resilience, I''ll show how non-technical
+  experiences have helped me to thrive in tech. From iteration at my forge, troubleshooting
+  on the manufacturing floor, and to building empathy as a parent I''ll share how
+  life''s lessons have built transferable skills.</p>
+
+  <p>Whether you''re a seasoned professional or a new developer, this session will
+  inspire you to embrace your own journey and discover the hidden strengths you can
+  bring to the table.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: from-forge-to-keyboard-crafting-a-developer-s-journey
+speakers:
+- avatar: https://pretalx.com/media/avatars/NYDQLT_ESEqRyP.jpg
+  code: NYDQLT
+  name: Bianca Ploss
+  slug: bianca-ploss
+start_time: TBD
+stream_timestamp: ''
+title: 'From Forge to Keyboard: Crafting a Developer''s Journey'
+type: 30 Minute Talk
+youtube_url: null

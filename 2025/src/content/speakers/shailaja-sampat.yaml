@@ -1,0 +1,28 @@
+avatar: src/content/speakers/img/shailaja-sampat.jpg
+avatar_url: https://pretalx.com/media/avatars/BWLCU3_csf4oYv.jpg
+biography: <p>Shailaja Sampat is a Senior Researcher in the Artificial Intelligence
+  (AI) lab at Fujitsu's research division in the USA. She recently earned her Ph.D.
+  from Arizona State University, with a thesis focused on the intersection of natural
+  language processing and computer vision. Currently, her work involves research and
+  development aimed at enhancing Fujitsu's enterprise AI solutions, including automated
+  machine learning (AutoML), data wrangling, and foundation models for tabular data.
+  She has published over ten papers in top-tier AI and software engineering conferences,
+  such as EMNLP, NAACL, EACL, KR&amp;R, and ASE, as well as in workshops at CVPR and
+  AAAI. Her previous affiliations include IBM Research, Philips Research, ITRI-Taiwan,
+  and IIT Bombay-India, where she held positions as a short-term researcher. She is
+  a professional member of ACM, AAAI, and ACL and regularly contributes as a peer
+  reviewer and area chair for these organizations.</p>
+code: BWLCU3
+listed: true
+name: Shailaja Sampat
+slug: shailaja-sampat
+social_links:
+- social_link_display: linkedin.com/in/shailaja-sampat/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/shailaja-sampat/
+speaker_type: speaker
+talks:
+- code: TN9ZZE
+  slug: from-data-to-insights-in-minutes-accelerating-predictive-in-with
+  title: 'From Data to Insights in Minutes: Accelerating Predictive Modelling (in
+    Python) with AutoML'

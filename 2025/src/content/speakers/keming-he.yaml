@@ -1,0 +1,52 @@
+avatar: src/content/speakers/img/keming-he.jpeg
+avatar_url: https://pretalx.com/media/avatars/V3JQKX_HvSMWwM.jpeg
+biography: '<p>Hi! I''m Keming He, a Computer Science and Engineering student at The
+  Ohio State University with a passion for Python development. As a rising tech builder:</p>
+
+  <ul>
+
+  <li>
+
+  <p>I created <strong>Buckeye GPT</strong> – a production-grade ChatGPT alternative
+  giving university students FREE access to advanced language models and Deep Research
+  features that typically cost $20/month</p>
+
+  </li>
+
+  <li>
+
+  <p>I''m a <strong>multi-cloud expert</strong> with Google Cloud and Terraform certifications,
+  specializing in benchmarking Python serverless functions across AWS, Azure, and
+  GCP using Infrastructure as Code best practices</p>
+
+  </li>
+
+  <li>
+
+  <p>I''ve conducted extensive <strong>Python dependency management research</strong>,
+  comparing performance metrics between uv, poetry, conda, and pip+pyenv workflows</p>
+
+  </li>
+
+  </ul>
+
+  <p>When not coding, I contribute to open source and help fellow students access
+  cutting-edge technology through practical Python implementations. My work combines
+  technical excellence with a commitment to making advanced tools accessible to everyone.</p>'
+code: V3JQKX
+listed: true
+name: Keming He
+slug: keming-he
+social_links:
+- social_link_display: linkedin.com/in/keminghe
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/keminghe
+- social_link_display: github.com/KemingHe
+  social_link_type: fa6-brands:github
+  social_link_url: https://github.com/KemingHe
+speaker_type: speaker
+talks:
+- code: 8TJMMX
+  slug: beyond-the-benchmark-why-the-best-python-dependency-manager-not
+  title: 'Beyond the Benchmark: Why the "Best" Python Dependency Manager Might Not
+    Be Best for You'

@@ -1,0 +1,18 @@
+avatar: src/content/speakers/img/matt-lavin.jpg
+avatar_url: https://pretalx.com/media/avatars/XDMC3Z_U53oo54.jpg
+biography: <p>Matt Lavin is an Assistant Professor of Data Analytics at Denison University.
+  His area of specialization is digital humanities and cultural analytics. He has
+  been working in Python for 12+ years, and he has used computational methods to conduct
+  authorship attribution analysis on fiction purported to be ghostwritten by H.P.
+  Lovecraft, to profile the voices of audiobook narrators, and to analyze gender bias
+  in historic book reviews.</p>
+code: XDMC3Z
+listed: true
+name: Matt Lavin
+slug: matt-lavin
+social_links: []
+speaker_type: speaker
+talks:
+- code: QTMGPJ
+  slug: organizing-and-maintaining-your-code-scape-with-python
+  title: Organizing and Maintaining Your Code-Scape with Python

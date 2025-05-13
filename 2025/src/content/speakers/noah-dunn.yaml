@@ -1,0 +1,25 @@
+avatar: src/content/speakers/img/noah-dunn.jpg
+avatar_url: https://pretalx.com/media/avatars/UAWQFP_SLWr5ti.jpg
+biography: '<p>Noah Dunn is a software engineer turned cybersecurity professional
+  turned cybersecurity engineer. He started his career working for GE Appliances building
+  cloud security infrastructure and automation tooling for internal applications and
+  resource management. From there, he moved into a cybersecurity research role for
+  Northrop Grumman, performing code audits on large, distributed systems. He is employed
+  currently by Palo Alto Networks, where he automates tooling for Threat Intelligence
+  and Consulting in order to make the jobs of his colleagues easier. He has earned
+  several Cybersecurity certifications including OSCP, GREM, and the DEF CON Offensive
+  IoT Exploitation certification. In addition, he has several software certifications:
+  AWS Developer Associate and Cloud Solutions Architect Associate. Noah is passionate
+  about education around Cybersecurity and Software Engineering, and he hopes to provide
+  the same types of resources to the public that he has used as he has progressed
+  so far in his career.</p>'
+code: UAWQFP
+listed: true
+name: Noah Dunn
+slug: noah-dunn
+social_links: []
+speaker_type: speaker
+talks:
+- code: LP8NKE
+  slug: gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse
+  title: GDIOCSpider - Extracting and Identifying IOCs from the GDriveverse

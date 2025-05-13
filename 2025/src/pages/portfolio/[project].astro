@@ -1,0 +1,63 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Breadcrumbs, BreadcrumbsItem } from 'accessible-astro-components'
+import { getCollection, render } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects')
+  return projects.map((project) => {
+    return {
+      params: { project: project.id },
+      props: { project },
+    }
+  })
+}
+
+interface Props {
+  project: CollectionEntry<'projects'>
+}
+
+const { project } = Astro.props
+const { Content } = await render(project)
+---
+
+<DefaultLayout title={project.data.title} description={project.data.body} url={project.data.title}>
+  <div class="container">
+    <div class="mt-12">
+      <Breadcrumbs>
+        <BreadcrumbsItem href="/" label="Home" />
+        <BreadcrumbsItem href="/portfolio" label="Portfolio" />
+        <BreadcrumbsItem currentPage={true} label={project.data.title} />
+      </Breadcrumbs>
+    </div>
+  </div>
+  <section class="my-12">
+    <div class="container">
+      <h1>{project.data.title}</h1><br />
+      <p>By author: {project.data.author}</p>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="space-content container">
+      <Content />
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+
+    @media (min-width: 550px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+
+    @media (min-width: 950px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

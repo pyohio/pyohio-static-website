@@ -1,0 +1,29 @@
+code: CGT8CL
+content_warnings: null
+description: '<p>Getting from "I''m passionate about this topic" to actually working
+  in (or on) your dream is a wild leap. Lessons learned from traveling this path the
+  hard way, from finding the right niche for your passion project to getting the right
+  collaborators on board, can''t be taught in a classroom.</p>
+
+  <p>These are some of the lessons formed over six years of growing an international
+  charity from two through to 6000 volunteers across the globe. You''ll learn tips
+  on applying Python''s ecosystem of third-party tools to your project''s aim, assembling
+  a diverse team that can assess the needs of a diverse world, and using Python-based
+  tools to build your dream project.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: finding-practical-applications-for-your-passion-projects
+speakers:
+- avatar: https://pretalx.com/media/avatars/VR7BAB_HHqFGHO.jpg
+  code: VR7BAB
+  name: Joe Kaufeld
+  slug: joe-kaufeld
+start_time: TBD
+stream_timestamp: ''
+title: Finding Practical Applications for your Passion Projects
+type: 30 Minute Talk
+youtube_url: null

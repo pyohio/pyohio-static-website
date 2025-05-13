@@ -1,0 +1,23 @@
+code: EASVML
+content_warnings: null
+description: <p>The open-source media player Kodi is designed to play videos and music
+  on your TV, but it also comes with a plugin system that is programmable with Python.
+  This talk will walk through writing a plugin for your set-top-box running Kodi,
+  including packaging, debugging, and dealing with dependencies (there's no pip here).</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: write-apps-for-your-tv-with-kodi-and-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/PWN7XL_rwMmm7g.jpeg
+  code: PWN7XL
+  name: Andrew Kubera
+  slug: andrew-kubera
+start_time: TBD
+stream_timestamp: ''
+title: Write Apps For Your TV With Kodi and Python
+type: 30 Minute Talk
+youtube_url: null

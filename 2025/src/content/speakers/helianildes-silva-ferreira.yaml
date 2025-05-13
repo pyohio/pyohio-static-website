@@ -1,0 +1,39 @@
+avatar: src/content/speakers/img/helianildes-silva-ferreira.jpeg
+avatar_url: https://pretalx.com/media/avatars/XDNUZ7_AmgWTPa.jpeg
+biography: '<p>Helianildes Silva Ferreira is an Associate Professor at the Federal
+  University of Bahia (UFBA), where she has taught in the Institute of Chemistry since
+  2015. She holds a PhD in Chemical Engineering from University of Campinas (Unicamp),
+  and MSc. and BSc. degrees from the Federal University of Bahia (UFBA), with additional
+  specialization in automation, cleaner production technologies (GTZ, Germany), and
+  R&amp;D (Coppe/UFRJ).</p>
+
+  <p>Her work focuses on process modeling and simulation, artificial neural networks,
+  and sustainable innovations in chemical engineering. She is a member of GECIM (Materials
+  Engineering and Science Group) and has led projects on biocomposites from coconut
+  fiber and PVC, as well as environmental initiatives to reduce water use in interdisciplinary
+  labs.</p>
+
+  <p>Beyond the university, Dr. Silva Ferreira served as a course coordinator, research
+  project evaluator, and cleaner production consultant for the São Paulo Research
+  Foundation (FAPESB) and the Brazilian Ministry of Science and Technology. She trained
+  industrial process operators through the National Service for Industrial Training
+  (SENAI-BA) and participated in international leadership training through the American
+  Chemical Society.</p>
+
+  <p>A first-generation high school graduate, she began programming in <em>Fortran</em>
+  using pen, paper, and punch cards, and offers a unique perspective on the evolution
+  of scientific computing — both within Latin America and in the broader global context.</p>'
+code: XDNUZ7
+listed: true
+name: Helianildes Silva Ferreira
+slug: helianildes-silva-ferreira
+social_links:
+- social_link_display: linkedin.com/in/helianildes-ferreira-4890b733/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/helianildes-ferreira-4890b733/
+speaker_type: speaker
+talks:
+- code: UTTY3T
+  slug: from-fortran-to-python-a-conversation-across-generations-of
+  title: 'From Fortran to Python: A Conversation Across Generations of Scientific
+    Computing'

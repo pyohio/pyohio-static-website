@@ -1,0 +1,48 @@
+code: TCRGU8
+content_warnings: null
+description: '<p>Deploying code shouldn’t be stressful. But too often, the journey
+  from local dev to production is fragile, manual, and hard to debug. This talk is
+  about building peace of mind into your pipeline — with GitOps, Kubernetes, and open
+  source tools like Argo CD that make continuous delivery predictable, repeatable,
+  and scalable from the very first release to the 50th.</p>
+
+  <p>We’ll tackle the realities of “day two” DevOps — what happens after the first
+  deploy. From managing rollbacks and coordinating releases to enforcing consistency
+  across dev, staging, and production, you’ll learn how to bring stability and scalability
+  to your delivery pipeline.</p>
+
+  <p>In a live demo, we’ll deploy a full stack Django app from GitHub to production
+  using Argo CD and GitHub Actions — with observability, rollback strategies, and
+  environment parity built in from the start.</p>
+
+  <p><strong>You’ll learn how to:</strong> <br />
+
+  - Set up a GitOps-based CI/CD pipeline that works across all environments<br />
+
+  - Automate rollouts, rollbacks, and version control of infrastructure<br />
+
+  - Understand why Kubernetes is a future-proof platform for Django teams<br />
+
+  - Gain confidence in releasing updates safely, consistently, and at scale<br />
+
+  - Leverage open source tools to eliminate manual deployment headaches</p>
+
+  <p>Whether you''re writing the code or leading the team, you''ll leave with a clear,
+  practical blueprint for shipping faster — and with fewer surprises.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: deploy-django-gitops-kubernetes-made-easy
+speakers:
+- avatar: https://pretalx.com/media/avatars/ME3WGG_2M5BJfB.jpg
+  code: ME3WGG
+  name: Calvin Hendryx-Parker
+  slug: calvin-hendryx-parker
+start_time: TBD
+stream_timestamp: ''
+title: 'Deploy Django: GitOps & Kubernetes Made Easy'
+type: 30 Minute Talk
+youtube_url: null

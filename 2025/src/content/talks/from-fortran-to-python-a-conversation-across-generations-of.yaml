@@ -1,0 +1,37 @@
+code: UTTY3T
+content_warnings: null
+description: '<p>What was it like to write scientific code before personal computers,
+  IDEs, or instant feedback loops? In this talk, a mother and son — one who programmed
+  in <em>Fortran</em> using punch cards and one who writes <em>Python</em> today in
+  modern IDEs — reflect on how programming practices, tools, and mindsets have evolved
+  across generations.</p>
+
+  <p>Through personal stories and a short demo of a scientific simulation, we compare
+  the experience of coding the same computational model decades apart. This talk is
+  less about syntax and more about what has changed (and what hasn’t) in how we approach
+  problem-solving, debugging, and scientific thinking in code.</p>
+
+  <p>Whether you''re a veteran programmer or just getting started, join us for a thoughtful,
+  engaging, and intergenerational exploration of scientific computing — from punch
+  cards to <em>Python</em> notebooks and modern IDEs.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: from-fortran-to-python-a-conversation-across-generations-of
+speakers:
+- avatar: https://pretalx.com/media/avatars/UYRBHX_gusMbKM.png
+  code: UYRBHX
+  name: Rodrigo Silva Ferreira
+  slug: rodrigo-silva-ferreira
+- avatar: https://pretalx.com/media/avatars/XDNUZ7_AmgWTPa.jpeg
+  code: XDNUZ7
+  name: Helianildes Silva Ferreira
+  slug: helianildes-silva-ferreira
+start_time: TBD
+stream_timestamp: ''
+title: 'From Fortran to Python: A Conversation Across Generations of Scientific Computing'
+type: 30 Minute Talk
+youtube_url: null

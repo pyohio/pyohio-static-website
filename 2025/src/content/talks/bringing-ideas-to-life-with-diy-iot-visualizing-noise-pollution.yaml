@@ -1,0 +1,35 @@
+code: PUBEVY
+content_warnings: null
+description: '<p>Discover how to harness the power of IoT to tackle real-world problems
+  using affordable and accessible technology. In this talk, you''ll learn how to build
+  an IoT system from off-the-shelf components, collect data from sensors, and visualize
+  the data to tell compelling stories.</p>
+
+  <p>In this talk I''ll showcase a project where I used a Raspberry Pi, environmental
+  sensor, and Python to measure and monitor noise levels. This project demonstrates
+  how to design and implement an IoT solution from concept to deployment, including
+  using InfluxDB and Grafana for real-time data visualization, all running in Docker.<br
+  />
+
+  By the end of this talk, you''ll have the skills to bring various pieces of technology
+  together to solve real-world problems. Whether you''re an enthusiast, developer,
+  or researcher, this session will inspire you to apply open-source tools and inexpensive
+  hardware in innovative ways to address the challenges in your every day life.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution
+speakers:
+- avatar: https://pretalx.com/media/avatars/88ETSS_7XgZn4w.jpg
+  code: 88ETSS
+  name: Ryan Carroll
+  slug: ryan-carroll
+start_time: TBD
+stream_timestamp: ''
+title: 'Bringing ideas to life with DIY IoT: Visualizing Noise Pollution with a Raspberry
+  Pi and Python'
+type: 30 Minute Talk
+youtube_url: null

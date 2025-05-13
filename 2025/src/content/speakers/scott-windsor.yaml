@@ -1,0 +1,18 @@
+avatar: src/content/speakers/img/scott-windsor.png
+avatar_url: https://pretalx.com/media/avatars/A9WKCF_369Euu7.png
+biography: <p>I have been working for Mack Industries for 10 years engineering precast
+  concrete products. Graduated with a Bachelor's in Civil Engineering from the University
+  of Akron.</p>
+code: A9WKCF
+listed: true
+name: Scott Windsor
+slug: scott-windsor
+social_links:
+- social_link_display: '@windsorwindsor2@mastodon.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://mastodon.social/@windsorwindsor2
+speaker_type: speaker
+talks:
+- code: KCL8TZ
+  slug: using-python-in-the-concrete-industry
+  title: Using Python in the Concrete Industry

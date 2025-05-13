@@ -1,0 +1,38 @@
+code: NXSHT7
+content_warnings: null
+description: '<p>Have you ever been handed a mystery database and told, “You’ll figure
+  it out”... with no documentation, no SME, and no time?</p>
+
+  <p>In this session, I’ll share how I turned a frustrating (and very relatable) real-world
+  problem into a capstone project for Kaggle''s Gen AI 5 Day Intensive Course with
+  Google: building a GenAI-powered Database Documentation Agent using Python, SQLite,
+  and the Gemini API — aka what I like to call my SME Ghost Protocol.</p>
+
+  <p>I’ll walk through how I used GenAI to automatically generate natural language
+  summaries, answer ad-hoc schema questions, and create entity relationship diagrams
+  — even when human help wasn''t available.</p>
+
+  <p>We''ll dive into the challenges of working with GenAI as a "coding partner,"
+  designing prompts like communication plans, and lessons learned the hard way about
+  iteration, hallucination, and debugging when you''re flying solo.</p>
+
+  <p>Expect live demos, practical takeaways, a little workplace sarcasm, and ideas
+  for how you can launch your own SME Ghost Protocol — because sometimes, GenAI is
+  the only teammate who shows up.👻</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: when-your-sme-ghosts-you-using-genai-to-build-a-database-agent
+speakers:
+- avatar: https://pretalx.com/media/avatars/YLFGE3_He4qNzH.jpg
+  code: YLFGE3
+  name: Denise Williams
+  slug: denise-williams
+start_time: TBD
+stream_timestamp: ''
+title: 'When Your SME Ghosts You: Using GenAI to Build a Database Documentation Agent'
+type: 30 Minute Talk
+youtube_url: null

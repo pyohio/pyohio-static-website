@@ -1,0 +1,19 @@
+avatar: src/content/speakers/img/bianca-ploss.jpg
+avatar_url: https://pretalx.com/media/avatars/NYDQLT_ESEqRyP.jpg
+biography: <p>Bianca Ploss is a software developer at the Davey Institute, where she
+  uses Python and JavaScript to create user-friendly applications for i-Tree. With
+  a unique background that includes a bachelor's degree in metalsmithing from the
+  University of Akron and extensive experience in manufacturing, Bianca brings creative
+  problem-solving and a fresh perspective to her work. She is also committed to fostering
+  inclusivity in the workplace, drawing from her experiences in male-dominated industries
+  to empower underrepresented groups and promote equity.</p>
+code: NYDQLT
+listed: true
+name: Bianca Ploss
+slug: bianca-ploss
+social_links: []
+speaker_type: speaker
+talks:
+- code: WLDTLY
+  slug: from-forge-to-keyboard-crafting-a-developer-s-journey
+  title: 'From Forge to Keyboard: Crafting a Developer''s Journey'

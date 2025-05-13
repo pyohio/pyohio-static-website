@@ -1,0 +1,14 @@
+avatar: src/content/speakers/img/anthony.jpg
+avatar_url: https://pretalx.com/media/avatars/3NMPXV_sl2RZpJ.jpg
+biography: <p>An independent researcher with interests in cybersecurity, digital rights,
+  and machine learning.</p>
+code: 3NMPXV
+listed: true
+name: Anthony
+slug: anthony
+social_links: []
+speaker_type: speaker
+talks:
+- code: H3GQP7
+  slug: hyperdimensional-computing-for-hackers
+  title: Hyperdimensional Computing for Hackers

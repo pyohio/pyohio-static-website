@@ -1,0 +1,26 @@
+avatar: src/content/speakers/img/alec-delaney.jpg
+avatar_url: https://pretalx.com/media/avatars/ND3MDZ_6MdqmWo.jpg
+biography: <p>I'm a hardware engineer and software developer from the Boston area.
+  I love creating free and open source projects that others can use. My passion is
+  embedded systems, but I write bad code for all sorts of applications!  I also love
+  playing Dungeons and Dragons, making cocktails, running, and cycling.  I'm also
+  weirdly into parallel ports, for some reason.</p>
+code: ND3MDZ
+listed: true
+name: Alec Delaney
+slug: alec-delaney
+social_links:
+- social_link_display: tekktrik.dev
+  social_link_type: fa:link
+  social_link_url: https://tekktrik.dev
+- social_link_display: github.com/tekktrik
+  social_link_type: fa6-brands:github
+  social_link_url: https://github.com/tekktrik
+- social_link_display: '@tekktrik@techhub.social'
+  social_link_type: fa6-brands:mastodon
+  social_link_url: https://techhub.social/@tekktrik
+speaker_type: speaker
+talks:
+- code: XKSRMQ
+  slug: python-for-hardware-folks
+  title: Python for Hardware Folks

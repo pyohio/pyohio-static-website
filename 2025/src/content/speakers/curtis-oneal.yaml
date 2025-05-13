@@ -1,0 +1,38 @@
+avatar: src/content/speakers/img/curtis-oneal.jpg
+avatar_url: https://pretalx.com/media/avatars/E9SB7Z_9itErGl.jpg
+biography: '<p>Curtis O''Neal is a Data Scientist and AI Solution Architect at BlueSkyAI
+  - an agentic AI startup focussed on conversational agents. He has 10  years of experience
+  working at the intersection of data engineering, healthcare technology, and client
+  solutions, and many more with data and research.  </p>
+
+  <p>Curtis has designed data schemas and algorithms for performance athletes algorithms
+  and led engineering teams for digital marketing and a gamified learning systems.
+  </p>
+
+  <p>He has implemented Python solutions for data pipelines, cloud algorithms, and
+  machine learning applications across multiple organizations including IBM Watson
+  Health, Arkos Health, and Arbormetrics in Ann Arbor MI.  He has led internal training
+  programs that upskilled more than 45 employees in Python and Data Science, and has
+  co-organized a data science hackathon with over 70 participants at IBM in a Shark-tank
+  (tm) like contest to implement the best product ideas. </p>
+
+  <p>Curtis holds an MBA from Case Western Reserve University and a BA in Anthropology
+  from the University of Chicago, bringing a unique human-centered perspective to
+  technical challenges.</p>
+
+  <p>He''s a father, husband, juggler and fire eater, and this is his first python
+  talk at a conference.</p>'
+code: E9SB7Z
+listed: true
+name: Curtis Oneal
+slug: curtis-oneal
+social_links:
+- social_link_display: linkedin.com/in/curtisoneal/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/curtisoneal/
+speaker_type: speaker
+talks:
+- code: 3ZPBJP
+  slug: a-very-brief-overview-of-python-s-lang-ai-tools-and-two-low-code
+  title: 'A very brief overview of python''s "Lang" AI tools and two low-code GUI
+    AI tools: Flowise and n8n'

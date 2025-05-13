@@ -1,0 +1,20 @@
+avatar: src/content/speakers/img/mike-mccaffrey.jpg
+avatar_url: https://pretalx.com/media/avatars/ZGQHWH_RJJkAbF.jpg
+biography: <p>Mike is a mid-career IT guy and software developer.  After a wild 5-year
+  ride with a startup used car retailer, Mike is now looking for his next opportunity.</p>
+code: ZGQHWH
+listed: true
+name: Mike McCaffrey
+slug: mike-mccaffrey
+social_links:
+- social_link_display: linkedin.com/in/mjmccaffreydetroit/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/mjmccaffreydetroit/
+- social_link_display: github.com/mjmccaffrey/
+  social_link_type: fa6-brands:github
+  social_link_url: https://github.com/mjmccaffrey/
+speaker_type: speaker
+talks:
+- code: 7VE98C
+  slug: lights-python-action
+  title: Lights!  Python!  Action!

@@ -1,0 +1,30 @@
+avatar: src/content/speakers/img/cynthia-ukawu.jpg
+avatar_url: https://pretalx.com/media/avatars/VQQNZH_0zfhnUh.JPG
+biography: '<p>Cynthia is a geospatial software engineer with a passion for teaching
+  and making technical concepts approachable. Currently working as a backend software
+  engineer, she develops innovative geospatial solutions that solve real-world problems.
+  Cynthia has a strong background in Python and data science, with experience mentoring
+  students in data analytics at Springboard and teaching Python to beginners at Masterschool.</p>
+
+  <p>In addition to her professional work, Cynthia is an experienced public speaker.
+  She’s presented at PyTexas, PyVirginia, and at Arlington Code-The-Curb on her “Park
+  and Stride” project—a web app that helps commuters integrate walking into their
+  daily routines. Her approachable teaching style combines hands-on learning with
+  practical insights.</p>
+
+  <p>When she’s not coding or mentoring, Cynthia enjoys dancing Samba and blogging
+  about ways beginners can break into tech on her website, cynscode.com.</p>'
+code: VQQNZH
+listed: true
+name: Cynthia Ukawu
+slug: cynthia-ukawu
+social_links:
+- social_link_display: linkedin.com/in/cynthiiaa/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/cynthiiaa/
+speaker_type: speaker
+talks:
+- code: XEVWZV
+  slug: detecting-road-conditions-from-space-using-pytorch-public-data
+  title: Detecting Road Conditions from Space using PyTorch, Public Data, and Free
+    Satellite Imagery

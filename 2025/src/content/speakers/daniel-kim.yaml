@@ -1,0 +1,19 @@
+avatar: src/content/speakers/img/daniel-kim.jpeg
+avatar_url: https://pretalx.com/media/avatars/XCB3TE_xnPYOhl.jpeg
+biography: <p>consultant, coach, aspiring penguin 🐧</p>
+code: XCB3TE
+listed: true
+name: Daniel Kim
+slug: daniel-kim
+social_links:
+- social_link_display: linkedin.com/in/deekim
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://linkedin.com/in/deekim
+- social_link_display: bsky.app/profile/dee.kim
+  social_link_type: fa:link
+  social_link_url: https://bsky.app/profile/dee.kim
+speaker_type: speaker
+talks:
+- code: G3ELVB
+  slug: the-core-values-of-a-successful-startup
+  title: The Core Values of a Successful Startup

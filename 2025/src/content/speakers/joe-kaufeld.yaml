@@ -1,0 +1,18 @@
+avatar: src/content/speakers/img/joe-kaufeld.jpg
+avatar_url: https://pretalx.com/media/avatars/VR7BAB_HHqFGHO.jpg
+biography: <p>Maker, breaker, and professional eater of bread, Joe Kaufeld likes to
+  try and leave the world a little better than he found it. A senior software engineer
+  by day, Joe has worked in everything from fintech to education. Notable projects
+  include TranscribersOfReddit (crowdsourced accessibility, powered by Python), FilamentColors.xyz
+  (the world's largest 3D printing filament archive), or <code>asbestos</code> (a
+  library for testing SnowflakeDB calls). Find him on the fediverse at fosstodon.org/@itsthejoker!</p>
+code: VR7BAB
+listed: true
+name: Joe Kaufeld
+slug: joe-kaufeld
+social_links: []
+speaker_type: speaker
+talks:
+- code: CGT8CL
+  slug: finding-practical-applications-for-your-passion-projects
+  title: Finding Practical Applications for your Passion Projects

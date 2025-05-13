@@ -1,0 +1,20 @@
+avatar: src/content/speakers/img/catherine-devlin.jpg
+avatar_url: https://pretalx.com/media/avatars/DNWR98_qOdjP12.jpg
+biography: <p>Catherine uses Python to herd data cats for Corning's material scientists.  She
+  fell for the Python community at PyConUS 2004, and in 2008 helped found PyOhio.  She
+  created cmd2 and ipython-sql (progenitor of jupysql).  She has keynoted at PyOhio,
+  PyCon US, and PyCon Colombia.  She lives in the woods near Dayton with her wife,
+  3 cats, 2 horses, and she probably has sticks in her hair.</p>
+code: DNWR98
+listed: true
+name: Catherine Devlin
+slug: catherine-devlin
+social_links:
+- social_link_display: bsky.app/profile/catherinedevlin.bsky.social
+  social_link_type: fa:link
+  social_link_url: https://bsky.app/profile/catherinedevlin.bsky.social
+speaker_type: speaker
+talks:
+- code: VNQLAV
+  slug: uv-ultimate-victory-over-installation-and-dependency-chaos
+  title: 'uv: Ultimate Victory over installation and dependency chaos'

@@ -1,0 +1,45 @@
+code: BCR7DQ
+content_warnings: null
+description: '<p>A beginner friendly talk that goes from the manifestation of a bug
+  in production, traces it all the way to its inception, and asks what other than
+  code needs to change to ship faster and NOT break things.</p>
+
+  <p>We open with the support rotation pager going off as customers of a low latency
+  realtime system report an outage. With every second of downtime resulting in revenue
+  loss, it is all hands on deck for the site reliability team, Dev team, data team,
+  product owners are peeling down the stack. We will see the to the commit messages
+  in polyglot systems that caused the failure, the bug getting squashed, hotfix getting
+  shipped and crisis is averted.</p>
+
+  <p>Cut to the blameless postmortem - the real life challenges of issue resolution
+  that is more than changing lines in code, debugging workflows, monitoring gaps,
+  testing limitations, navigating change management processes, team dynamics. for
+  each of these pillars we will see what allowed the teams to shift left, and shorten
+  a bug''s lifecycle.</p>
+
+  <p>What does the audience get out of it:<br />
+
+  Modern software deployments are complex and dynamic ecosystems, an ideal breeding
+  ground for bugs. In a way, the lifecycle of a bug, reveals the truth about the software
+  development lifecycle of a product. <br />
+
+  This talk takes learnings from multiple real life outages and tries to condense
+  it as a shift-left journey by Continuous Questioning how can we catch bugs in lower
+  environments.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: a-bug-s-life
+speakers:
+- avatar: https://pretalx.com/media/avatars/9TGPL7_9Mlit4L.jpg
+  code: 9TGPL7
+  name: Tathagata Dasgupta
+  slug: tathagata-dasgupta
+start_time: TBD
+stream_timestamp: ''
+title: A Bug's Life
+type: 30 Minute Talk
+youtube_url: null

@@ -1,0 +1,19 @@
+avatar: src/content/speakers/img/tyler-riccio.jpg
+avatar_url: https://pretalx.com/media/avatars/YDUP8W_gSNBNEc.jpg
+biography: <p>Data Engineer and Platform Owner at Citizens Bank. Born and raised in
+  Long Island, New York. I have 2 cats, live with my fiance in Columbus and love contributing
+  to open source :)</p>
+code: YDUP8W
+listed: true
+name: Tyler Riccio
+slug: tyler-riccio
+social_links:
+- social_link_display: github.com/tylerriccio33
+  social_link_type: fa6-brands:github
+  social_link_url: https://github.com/tylerriccio33
+speaker_type: speaker
+talks:
+- code: BPQUPL
+  slug: why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and
+  title: 'Why Python Loops Are "Slow": A Gentle Introduction to Interpretation, Bytecode,
+    and Fast Code'

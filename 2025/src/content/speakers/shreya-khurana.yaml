@@ -1,0 +1,22 @@
+avatar: src/content/speakers/img/shreya-khurana.jpg
+avatar_url: https://pretalx.com/media/avatars/L79PHK_OYWNOqR.jpg
+biography: <p>I'm an AI scientist at Intuit in California working on the interesting
+  and ever-changing fraud detection landscape. I have experience working with recommendation
+  systems, deep learning, and anomaly detection. I was previously building NLP models
+  at GoDaddy, but I enjoy working with data in general. I'm a Python enthusiast and
+  enjoy sharing my learnings with the community - I've previously presented at the
+  PyData, Grace Hopper Conference, PyCon US, EuroPython, and GeoPython. When not opposite
+  a screen, I can be found frolicking in nature and exploring new trails.</p>
+code: L79PHK
+listed: true
+name: Shreya Khurana
+slug: shreya-khurana
+social_links:
+- social_link_display: linkedin.com/in/shreya-khurana/
+  social_link_type: fa6-brands:linkedin
+  social_link_url: https://www.linkedin.com/in/shreya-khurana/
+speaker_type: speaker
+talks:
+- code: CAH3YR
+  slug: graph-machine-learning-in-all-its-glory
+  title: Graph Machine Learning in all its Glory!
