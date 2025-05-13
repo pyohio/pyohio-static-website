@@ -31,9 +31,9 @@ except ImportError:
 from extra_data import BREAKS, TALK_EXTRAS
 
 # Configuration constants
-PRETALX_EVENT_ID = "pyohio-2024"
-YEAR = "2024"
-DATA_DIR = Path("./2024/src/content")
+PRETALX_EVENT_ID = "pyohio-2025"
+YEAR = "2025"
+DATA_DIR = Path("./2025/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_AVATAR_PATH = "src/content/speakers/img/no-profile.png"
 DEFAULT_TIME = "TBD"
@@ -265,9 +265,15 @@ class DataProcessor:
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
-            "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME),
-            "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME),
-            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD"),
+            "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME)
+            if talk.get("slot", {}) is not None
+            else DEFAULT_TIME,
+            "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME)
+            if talk.get("slot", {}) is not None
+            else DEFAULT_TIME,
+            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD")
+            if talk.get("slot", {}) is not None
+            else "TBD",
             "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
