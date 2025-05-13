@@ -7,7 +7,14 @@ import icon from 'astro-icon'
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  site: 'https://accessible-astro.netlify.app',
+  site: 'https://www.pyohio.org',
+  base: '/2025',
+  publicDir: './public-src',
+  trailingSlash: 'ignore',
+  image: {
+    domains: ['pyohio.org', 'pretalx.com', 'gravatar.com'],
+  },
+
   integrations: [
     mdx(),
     icon(),
