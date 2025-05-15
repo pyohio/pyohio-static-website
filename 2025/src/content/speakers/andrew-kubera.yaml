@@ -1,0 +1,15 @@
+avatar: andrew-kubera.jpeg
+avatar_url: https://pretalx.com/media/avatars/PWN7XL_rwMmm7g.jpeg
+biography: <p>An Ohio native living in New York, Andrew has been attending PyOhio
+  since 2014. He works as a Software Architect in the telecom industry, using asynchronous
+  Python to solve network automation problems.</p>
+code: PWN7XL
+listed: true
+name: Andrew Kubera
+slug: andrew-kubera
+social_links: []
+speaker_type: speaker
+talks:
+- code: EASVML
+  slug: write-apps-for-your-tv-with-kodi-and-python
+  title: Write Apps For Your TV With Kodi and Python

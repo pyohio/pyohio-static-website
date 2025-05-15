@@ -1,0 +1,46 @@
+code: 8TJMMX
+content_warnings: null
+description: '<p><strong>Ever wondered why your team still uses pip when benchmarks
+  show alternatives are 10x faster?</strong> The answer lies beyond raw performance
+  metrics.</p>
+
+  <p>In this myth-busting session, I''ll reveal surprising insights from analyzing
+  thousands of GitHub repositories and real-world implementation case studies. You''ll
+  discover why technical superiority doesn''t always translate to organizational success,
+  and how to navigate the complex decision landscape of Python dependency management.</p>
+
+  <p>I''ll share:<br />
+
+  - ⚡ Eye-opening performance comparisons between UV, Poetry, Conda, and pip+pyenv<br
+  />
+
+  - 📊 Actual adoption statistics that challenge conventional wisdom<br />
+
+  - 💼 ROI calculations that factor in both technical AND human costs<br />
+
+  - 🛣️ A decision framework for selecting the right tool for YOUR specific context</p>
+
+  <p>Whether you''re contemplating a migration, advocating for better tooling, or
+  simply curious about the evolving Python ecosystem, you''ll leave with actionable
+  insights that balance technical excellence with organizational reality.</p>
+
+  <p>Don''t miss this data-driven exploration of Python''s most underappreciated infrastructure
+  challenge!</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: beyond-the-benchmark-why-the-best-python-dependency-manager-not
+speakers:
+- avatar: https://pretalx.com/media/avatars/V3JQKX_HvSMWwM.jpeg
+  code: V3JQKX
+  name: Keming He
+  slug: keming-he
+start_time: TBD
+stream_timestamp: ''
+title: 'Beyond the Benchmark: Why the "Best" Python Dependency Manager Might Not Be
+  Best for You'
+type: 30 Minute Talk
+youtube_url: null

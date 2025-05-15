@@ -1,0 +1,21 @@
+avatar: temitope-adeniyi.jpg
+avatar_url: https://pretalx.com/media/avatars/SK8CK9_nVofiGu.jpg
+biography: <p>Temitope Adeniyi is a PhD student in Computer Science at Cleveland State
+  University, where her research focuses on the intersection of quantum technologies
+  and artificial intelligence. Beyond academia, she is deeply involved in tech entrepreneurship,
+  helping startups raise funding, build partnerships, and bring cutting-edge ideas,
+  especially in healthcare and education to life. Her work bridges deep science, community
+  empowerment, and innovation and always begins with Python.</p>
+code: SK8CK9
+listed: true
+name: Temitope Adeniyi
+slug: temitope-adeniyi
+social_links:
+- social_link_display: linkedin.com/in/odeyomi-temitope/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/odeyomi-temitope/
+speaker_type: speaker
+talks:
+- code: HKC99U
+  slug: quantum-computing-with-python-from-qubits-to-circuits
+  title: 'Quantum Computing with Python: From Qubits to Circuits'

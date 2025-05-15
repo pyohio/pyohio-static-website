@@ -1,0 +1,46 @@
+code: CAH3YR
+content_warnings: null
+description: '<p>Our world is complex: one approach to understanding and learning
+  more about relationships within the data is to represent it as a network or a graph
+  - with entities as nodes and relations between them as edges. Network applications
+  are abundant - Facebook, knowledge databases like Wikipedia, traffic routes, molecular
+  pathways, and the fun starts when we start thinking of the physical world as graphs.
+  Where there’s data, there’s uncertainty and the need to predict the future to make
+  it a little less uncertain, which is why we need machine learning.</p>
+
+  <p><strong>This talk will be about modeling one such network using a Graph Neural
+  Network (GNN) and making some predictions on it using Deep Graph Library, an efficient
+  and scalable open source framework to train and serve GNNs. While GNNs can be used
+  for any ML task, we’ll focus on building a recommendation model.</strong></p>
+
+  <p><strong>But the transition from traditional data structures to graph-based models
+  is not straightforward. Unlike tabular data, graphs require adapting ML principles
+  to accommodate their topological and relational complexities.</strong></p>
+
+  <p>This talk will help participants gain practical insights into modeling their
+  data as graphs and leveraging GNNs to build a recommendation system. After the talk,
+  the audience should have a good understanding about:<br />
+
+  - How to structure their data as graph components and prepare it for modeling<br
+  />
+
+  - What a GNN is and how do we train, evaluate and serve models in DGL<br />
+
+  - End-to-end ML tasks on graph data: best practices to avoid pitfalls</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: graph-machine-learning-in-all-its-glory
+speakers:
+- avatar: https://pretalx.com/media/avatars/L79PHK_OYWNOqR.jpg
+  code: L79PHK
+  name: Shreya Khurana
+  slug: shreya-khurana
+start_time: TBD
+stream_timestamp: ''
+title: Graph Machine Learning in all its Glory!
+type: 30 Minute Talk
+youtube_url: null

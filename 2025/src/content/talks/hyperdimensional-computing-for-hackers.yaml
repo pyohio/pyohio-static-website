@@ -1,0 +1,31 @@
+code: H3GQP7
+content_warnings: null
+description: '<p>In this session, we will explore the concept of hyperdimensional
+  computing (HDC), a brain-inspired method of computing. We''ll begin by talking about
+  neurons and the brain. Through simple Python examples we’ll dive into HDC and answer:
+  What it is? How does it work? And, how does it learn? We will review how other researchers
+  have applied HDC and demonstrate how it can be used for solving cybersecurity tasks.<br
+  />
+
+  Where deep learning fails, HDC excels. No supercomputer? No problem. HDC offers
+  interpretability, low energy requirements, robustness to errors, online learning,
+  on-device learning, and more. By pushing the difficult calculations into the embedding
+  process, learning becomes a cinch. By the end of this talk, attendees will have
+  everything they need to teach their own hyperdimensional computing models.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: hyperdimensional-computing-for-hackers
+speakers:
+- avatar: https://pretalx.com/media/avatars/3NMPXV_sl2RZpJ.jpg
+  code: 3NMPXV
+  name: Anthony
+  slug: anthony
+start_time: TBD
+stream_timestamp: ''
+title: Hyperdimensional Computing for Hackers
+type: 30 Minute Talk
+youtube_url: null

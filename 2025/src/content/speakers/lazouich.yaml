@@ -1,0 +1,16 @@
+avatar: no-profile.png
+avatar_url: https://www.pyohio.org/no-profile.png
+biography: <p>Lazouich serves as the Regional Executor for North America at Black
+  Python Devs. He work as a software engineer specializing in analyzing and visualizing
+  wildfires and other natural disasters. In his free time, Lazouich enjoys playing
+  with his two dogs and tinkering with his home lab setup.</p>
+code: 3AV3YC
+listed: true
+name: lazouich
+slug: lazouich
+social_links: []
+speaker_type: speaker
+talks:
+- code: LYSGSL
+  slug: wildfires
+  title: Wildfires!

@@ -1,0 +1,52 @@
+code: 7VE98C
+content_warnings: null
+description: '<p><strong>Description</strong><br />
+
+  Intended to be an entertaining overview of challenges faced and lessons learned
+  working on my first big maker project.  Using code snippets, pictures and short
+  demos, I will discuss problems overcome while developing new features and integrating
+  new devices into my humble animated sign, which includes lights along with rhythmic
+  and melodic components.  I promise not to dance; no one wants to see that.</p>
+
+  <p>The intended audience is anyone interested in maker projects.  I will also be
+  touching on introductory-level topics in type hinting; the standard library modules
+  abc, dataclasses, signal, and threading; and the 3rd-party modules aiohttp, gpiozero,
+  and requests.</p>
+
+  <p><code>Note on Photosensitivity:</code><br />
+
+  Based on <a href="https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions">this
+  epilepsy.com article</a>, this presentation should be safe for any photosensitive
+  audience member.  I will include this information in a slide at the beginning of
+  the presentation, and give anyone in the audience the chance to leave or ask questions
+  before proceeding.</p>
+
+  <ul>
+
+  <li>The sign project uses standard 60 watt incandescent bulbs, which are not capable
+  of producing a strobe effect.</li>
+
+  <li>For further safety, during the presentation, bulbs will not cycle on and off
+  more than 3 times per second.</li>
+
+  <li>Additionally, the room’s lighting will not be darkened more than usual for a
+  standard presentation.</li>
+
+  </ul>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: lights-python-action
+speakers:
+- avatar: https://pretalx.com/media/avatars/ZGQHWH_RJJkAbF.jpg
+  code: ZGQHWH
+  name: Mike McCaffrey
+  slug: mike-mccaffrey
+start_time: TBD
+stream_timestamp: ''
+title: Lights!  Python!  Action!
+type: 30 Minute Talk
+youtube_url: null

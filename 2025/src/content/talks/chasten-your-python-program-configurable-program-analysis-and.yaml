@@ -1,0 +1,68 @@
+code: GBBXZJ
+content_warnings: null
+description: '<h2>Abstract</h2>
+
+  <p>Stop wrestling with regular expressions (regex) and complex abstract syntax tree<br
+  />
+
+  (AST)-based frameworks to analyze and lint your Python code! Chasten offers an<br
+  />
+
+  elegant solution by leveraging XPath expressions to search Python''s abstract<br
+  />
+
+  syntax tree, making static code analysis both powerful and accessible. In this<br
+  />
+
+  talk, you''ll discover how to implement custom linting rules, enforce coding<br
+  />
+
+  standards, and perform sophisticated pattern matching in your Python projects<br
+  />
+
+  using a tool designed for both simplicity and flexibility. Whether you''re a<br
+  />
+
+  developer tired of writing fragile regex patterns, an instructor validating<br />
+
+  student code, or a project maintainer who wants to ensure code quality, Chasten<br
+  />
+
+  provides the perfect balance of power and usability for your static analysis<br
+  />
+
+  needs. More details about chasten are available at:<br />
+
+  <a href="https://github.com/AstuteSource/chasten">https://github.com/AstuteSource/chasten</a>.</p>
+
+  <h2>Key Takeaways</h2>
+
+  <ul>
+
+  <li>Create custom linting rules through simple YAML configuration</li>
+
+  <li>Practical examples of enforcing code standards on documentation and code</li>
+
+  <li>Ways to analyze results through interactive dashboards with Datasette</li>
+
+  <li>How to integrate Chasten into development workflow and CI/CD pipelines</li>
+
+  </ul>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: chasten-your-python-program-configurable-program-analysis-and
+speakers:
+- avatar: https://pretalx.com/media/avatars/WUSBZJ_hJj7oDc.png
+  code: WUSBZJ
+  name: Gregory M. Kapfhammer
+  slug: gregory-m-kapfhammer
+start_time: TBD
+stream_timestamp: ''
+title: 'Chasten Your Python Program: Configurable Program Analysis and Linting with
+  XPath'
+type: 30 Minute Talk
+youtube_url: null

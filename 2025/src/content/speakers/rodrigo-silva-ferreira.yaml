@@ -1,0 +1,30 @@
+avatar: rodrigo-silva-ferreira.png
+avatar_url: https://pretalx.com/media/avatars/UYRBHX_gusMbKM.png
+biography: '<p>Rodrigo Silva Ferreira is a QA Engineer at <em>Posit</em>, where he
+  contributes to the quality and usability of open-source tools that empower data
+  scientists working in <em>R</em> and <em>Python</em>. He focuses on both manual
+  and automated testing strategies to ensure reliability, performance, and an excellent
+  user experience.</p>
+
+  <p>Rodrigo holds a BSc. in Chemistry with minors in Applied Math and Arabic from
+  NYU Abu Dhabi and a MSc. in Analytical Chemistry from the University of Pittsburgh.
+  Multilingual and globally minded, he enjoys working at the intersection of data,
+  science, and technology — especially when it means building tools that help people
+  better understand and navigate the world through its increasingly complex data.</p>'
+code: UYRBHX
+listed: true
+name: Rodrigo Silva Ferreira
+slug: rodrigo-silva-ferreira
+social_links:
+- social_link_display: linkedin.com/in/rsf309/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/rsf309/
+- social_link_display: github.com/rodrigosf672
+  social_link_type: mdi:github
+  social_link_url: https://github.com/rodrigosf672
+speaker_type: speaker
+talks:
+- code: UTTY3T
+  slug: from-fortran-to-python-a-conversation-across-generations-of
+  title: 'From Fortran to Python: A Conversation Across Generations of Scientific
+    Computing'

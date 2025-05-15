@@ -1,0 +1,34 @@
+code: MPJU9D
+content_warnings: null
+description: '<p>ML models behave as a black box in most scenarios. Model predicts
+  or provides a certain output but it is very difficult to generate any actionable
+  insights directly. This is mostly because we generally have no idea which features
+  are contributing the most to the model behavior internally. SHAP provides a certain
+  way to explain model predictions, and can act as an important tool in a data scientist’s
+  toolbox.</p>
+
+  <p>In this talk, we will begin by explaining to the audience the need for explainable
+  ML models and why it is important to understand beyond what the model outputs. We
+  will then briefly go over the mathematical intuition behind Shapley values and its
+  origins from game theory. After that we will walk through a couple of case studies
+  of tree based and neural network based models. We will be focusing on interpretation
+  of SHAP through various plots using the shap library in Python. Finally, we will
+  discuss the best practices for interpreting SHAP visualizations, handling large
+  datasets, and common pitfalls to avoid.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: beyond-the-black-box-interpreting-ml-models-with-shap
+speakers:
+- avatar: https://pretalx.com/media/avatars/Z7XLKH_eQXpfE1.jpg
+  code: Z7XLKH
+  name: Avik Basu
+  slug: avik-basu
+start_time: TBD
+stream_timestamp: ''
+title: 'Beyond the Black Box: Interpreting ML models with SHAP'
+type: 30 Minute Talk
+youtube_url: null

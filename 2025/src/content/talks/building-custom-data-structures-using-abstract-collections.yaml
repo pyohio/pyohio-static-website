@@ -1,0 +1,27 @@
+code: SGYYGL
+content_warnings: null
+description: <p>Python’s abstract base classes (ABCs) in the <code>collections.abc</code>
+  module provide a powerful way to create objects that behave like built-in data structures
+  such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract
+  collections work, why they’re useful, and how they enable seamless integration into
+  Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide
+  concrete examples of implementing an abstract collection. This session is perfect
+  for attendees looking to learn more about Python's design philosophy and make their
+  code more Pythonic.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: building-custom-data-structures-using-abstract-collections
+speakers:
+- avatar: https://pretalx.com/media/avatars/NL3RWX_bwKyIfi.jpeg
+  code: NL3RWX
+  name: Daniel Schelkoph
+  slug: daniel-schelkoph
+start_time: TBD
+stream_timestamp: ''
+title: Building Custom Data Structures Using Abstract Collections
+type: 30 Minute Talk
+youtube_url: null

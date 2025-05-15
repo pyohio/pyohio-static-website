@@ -1,0 +1,22 @@
+avatar: denise-williams.jpg
+avatar_url: https://pretalx.com/media/avatars/YLFGE3_He4qNzH.jpg
+biography: <p>Denise N. Williams is a Senior AI &amp; Data Analytics Professional
+  with 7+ years of experience in developing AI solutions for data management and automation.
+  Her expertise includes Generative AI, Python, and SQL. In her work, Denise focuses
+  on building AI-driven tools to streamline data workflows, as demonstrated by her
+  development of a Generative AI-powered Database Documentation Agent. She is passionate
+  about using Python and GenAI to capture and preserve critical knowledge within organizations.</p>
+code: YLFGE3
+listed: true
+name: Denise Williams
+slug: denise-williams
+social_links:
+- social_link_display: linkedin.com/in/denisenwilliams/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/denisenwilliams/
+speaker_type: speaker
+talks:
+- code: NXSHT7
+  slug: when-your-sme-ghosts-you-using-genai-to-build-a-database-agent
+  title: 'When Your SME Ghosts You: Using GenAI to Build a Database Documentation
+    Agent'

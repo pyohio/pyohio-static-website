@@ -31,21 +31,20 @@ except ImportError:
 from extra_data import BREAKS, TALK_EXTRAS
 
 # Configuration constants
-PRETALX_EVENT_ID = "pyohio-2024"
-YEAR = "2024"
-DATA_DIR = Path("./2024/src/content")
+PRETALX_EVENT_ID = "pyohio-2025"
+YEAR = "2025"
+DATA_DIR = Path("./2025/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
-DEFAULT_AVATAR_PATH = "src/content/speakers/img/no-profile.png"
+DEFAULT_AVATAR_PATH = "no-profile.png"
 DEFAULT_TIME = "TBD"
-PLENARY_ROOM = "Orchid Ballroom"
+PLENARY_ROOM = "TBD"
 UNLISTED_SPEAKERS = [
-    "KGVCNV",  # Dave Forgac
     "DCSCPQ",  # Kattni
 ]
 KEYNOTE_SPEAKERS = [
-    "UAVJNC",  # Steph
-    "PTGUYZ",  # Mariatta
-    "UYHZBE",  # Trey
+    "TKWGDL",  # Abigail Mesrenyame Dogbe
+    "QJCEWP",  # Jessica Garson
+    "UVE988",  # Leon Adato
 ]
 
 
@@ -140,7 +139,7 @@ class DataProcessor:
         self.year = year
         self.talks_dir = data_dir / "talks"
         self.speakers_dir = data_dir / "speakers"
-        self.json_dir = data_dir / "json"
+        self.json_dir = data_dir / "jsonData"
         self.images_dir = data_dir / "speakers" / "img"
 
         # Ensure directories exist
@@ -265,9 +264,15 @@ class DataProcessor:
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
-            "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME),
-            "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME),
-            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD"),
+            "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME)
+            if talk.get("slot", {}) is not None
+            else DEFAULT_TIME,
+            "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME)
+            if talk.get("slot", {}) is not None
+            else DEFAULT_TIME,
+            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD")
+            if talk.get("slot", {}) is not None
+            else "TBD",
             "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["en"],
@@ -326,7 +331,7 @@ class DataProcessor:
             # Create image filename
             image_filename = f"{speaker_slug}{extension}"
             image_path = self.images_dir / image_filename
-            relative_path = f"src/content/speakers/img/{image_filename}"
+            relative_path = f"{image_filename}"
 
             # Download the image
             response = httpx.get(avatar_url, follow_redirects=True, timeout=10.0)
@@ -495,7 +500,7 @@ class DataProcessor:
         result = {
             "social_link_url": social_link,
             "social_link_display": social_link.replace("https://", ""),
-            "social_link_type": "fa:link",
+            "social_link_type": "mdi:link-variant",
         }
 
         # Twitter/X
@@ -503,10 +508,10 @@ class DataProcessor:
             result["social_link_display"] = social_link.replace(
                 "https://twitter.com/", "@"
             )
-            result["social_link_type"] = "fa6-brands:twitter"
+            result["social_link_type"] = "mdi:twitter"
         elif social_link.startswith("https://x.com/"):
             result["social_link_display"] = social_link.replace("https://x.com/", "@")
-            result["social_link_type"] = "fa6-brands:x-twitter"
+            result["social_link_type"] = "mdi:twitter"
         # LinkedIn
         elif social_link.startswith(
             "https://linkedin.com/in/"
@@ -514,20 +519,20 @@ class DataProcessor:
             result["social_link_display"] = social_link.replace(
                 "https://www.", ""
             ).replace("https://", "")
-            result["social_link_type"] = "fa6-brands:linkedin"
+            result["social_link_type"] = "mdi:linkedin"
         # Medium
         elif social_link.startswith("https://medium.com/@"):
-            result["social_link_type"] = "fa6-brands:medium"
+            result["social_link_type"] = "mdi:link-variant"
         # GitHub
         elif social_link.startswith("https://github.com"):
-            result["social_link_type"] = "fa6-brands:github"
+            result["social_link_type"] = "mdi:github"
         # Mastodon (matches pattern like https://instance.tld/@username)
         elif re.match(r"https://.*\..*@.*", social_link):
             mastodon_instance, mastodon_username = social_link.replace(
                 "https://", ""
             ).split("/@")
             result["social_link_display"] = f"@{mastodon_username}@{mastodon_instance}"
-            result["social_link_type"] = "fa6-brands:mastodon"
+            result["social_link_type"] = "mdi:mastodon"
 
         return result
 

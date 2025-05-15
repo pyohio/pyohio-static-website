@@ -1,0 +1,24 @@
+avatar: eddie-mitchell.jpeg
+avatar_url: https://pretalx.com/media/avatars/SRKARK_vH0MTYg.jpeg
+biography: <p>Eddie Mitchell is a Search and Data Developer for Summit Racing Equipment
+  and is located near Kent, OH, USA. He has spent nearly 20 years as a general IT
+  Ninja working with various disciplines including infrastructure, networks, development,
+  data, and architecture. His focus and passion shifted to the realm of data and Search
+  in 2015, where Microsoft SQL Server and the ELK Stack (Elasticsearch) became his
+  go-to platforms for creating solutions at scale.  Eddie has built his career on
+  top of the phrases "it depends", "I don't know" and "let's do this" - and is always
+  excited to connect with community members to share his passion for tackling wild
+  challenges.</p>
+code: SRKARK
+listed: true
+name: Eddie Mitchell
+slug: eddie-mitchell
+social_links:
+- social_link_display: linkedin.com/in/emitch/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/emitch/
+speaker_type: speaker
+talks:
+- code: Z3FUZ9
+  slug: tune-up-your-knowledge-a-beginner-s-journey-under-the-hood-of
+  title: 'Tune-Up Your Knowledge: A Beginner''s Journey Under the Hood of Search Engines'

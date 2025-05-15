@@ -1,0 +1,19 @@
+avatar: christopher-neugebauer.jpg
+avatar_url: https://pretalx.com/media/avatars/QWCHX7_x69USba.jpg
+biography: ''
+code: QWCHX7
+listed: true
+name: Christopher Neugebauer
+slug: christopher-neugebauer
+social_links:
+- social_link_display: bsky.app/profile/chrisjrn.fyi
+  social_link_type: mdi:link-variant
+  social_link_url: https://bsky.app/profile/chrisjrn.fyi
+- social_link_display: '@chrisjrn@social.coop'
+  social_link_type: mdi:mastodon
+  social_link_url: https://social.coop/@chrisjrn
+speaker_type: speaker
+talks:
+- code: WJJRQ7
+  slug: guardrails-an-alternative-view-of-safely-working-in-python
+  title: 'Guardrails: An alternative view of safely working in Python'

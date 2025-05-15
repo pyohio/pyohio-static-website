@@ -1,0 +1,20 @@
+code: SUMQSQ
+content_warnings: null
+description: <p>Keynote</p>
+discord_channel_id: ''
+duration: 45
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: jessica-garson-keynote
+speakers:
+- avatar: https://pretalx.com/media/avatars/QJCEWP_7wJgt5h.jpeg
+  code: QJCEWP
+  name: Jessica Garson
+  slug: jessica-garson
+start_time: TBD
+stream_timestamp: ''
+title: Keynote
+type: Keynote
+youtube_url: null

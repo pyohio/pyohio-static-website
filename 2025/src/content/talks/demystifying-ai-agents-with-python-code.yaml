@@ -1,0 +1,34 @@
+code: GFVZHY
+content_warnings: null
+description: '<p>Everyone’s talking about AI Agents! But what are they, and how can
+  you build them? This talk cuts through the hype. Drawing on a year spent developing
+  a GenAI platform, I''ll show you that creating powerful AI Agents is within your
+  reach, no advanced degree required.</p>
+
+  <p>We’ll define agents practically: Large Language Models combined with tools and
+  memory. Moving beyond the abstract definition, I’ll show you how to build your first
+  agent using the OpenAI Python SDK and fundamental Python concepts you’re already
+  familiar with: functions, loops, and conditions. From there, I will demonstrate
+  how you can use the CrewAI framework to abstract away the boilerplate code, allowing
+  for simpler setup of multi-agent systems.</p>
+
+  <p>By the end, you won''t just understand agents; you''ll be equipped and inspired
+  to build your own, ready to tackle custom tasks by integrating the APIs that matter
+  to you.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: demystifying-ai-agents-with-python-code
+speakers:
+- avatar: https://pretalx.com/media/avatars/V73QRP_UIsrld4.jpg
+  code: V73QRP
+  name: William Horton
+  slug: william-horton
+start_time: TBD
+stream_timestamp: ''
+title: Demystifying AI Agents with Python Code
+type: 30 Minute Talk
+youtube_url: null

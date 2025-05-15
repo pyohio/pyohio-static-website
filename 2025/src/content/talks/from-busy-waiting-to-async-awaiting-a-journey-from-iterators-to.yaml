@@ -1,0 +1,44 @@
+code: K9WBAG
+content_warnings: null
+description: '<p><strong>Category:</strong><br />
+
+  Core python / Concurrency</p>
+
+  <p><strong>Description:</strong><br />
+
+  Ever wonder how Python’s iterator protocol connects all the way up to <code>asyncio</code>?</p>
+
+  <p>In this talk, we''ll start with a gentle dive into the fundamentals of iterators,
+  generators, coroutines and async coroutines, including how they work at a high level.
+  From there, we will follow an exciting journey of a humble customer service line
+  — starting with a single agent helping one customer at a time, gradually leveling
+  it up into an efficient, concurrent system using generators, coroutines and asyncio.
+  Through this journey, we''ll explore how each concept builds on top of the previous
+  one, all with clear runnable code.</p>
+
+  <p><strong>Python level:</strong><br />
+
+  Beginner - Intermediate</p>
+
+  <p><strong>Target audience:</strong><br />
+
+  If you are a beginner or an intermediate Python developer curios about Python''s
+  async capabilities, aiming to write more idiomatic python code (or just looking
+  to flex on your teammates with some cool async python), this talk is for you.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to
+speakers:
+- avatar: https://pretalx.com/media/avatars/8ZXJG9_Crovi6g.png
+  code: 8ZXJG9
+  name: Vignesh Iyer
+  slug: vignesh-iyer
+start_time: TBD
+stream_timestamp: ''
+title: 'From Busy Waiting to Async Awaiting: A journey from iterators to asyncio'
+type: 30 Minute Talk
+youtube_url: null

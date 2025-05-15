@@ -1,0 +1,22 @@
+avatar: joseph-guzi.jpg
+avatar_url: https://pretalx.com/media/avatars/3M8HS8_3gvYBvI.jpg
+biography: <p>Joe Guzi has over fifteen years of experience with the Stark County
+  GIS Department. His work focuses on advancing GIS solutions to the next level, by
+  providing application development, automating daily tasks with ArcGIS, and maintaining
+  the overall GIS system. Outside of work, Joe enjoys engaging in GIS side projects
+  for fun. Since 2018, he has also been a part-time Adjunct GIS Instructor and Learning
+  Support Specialist at Columbus State Community College.</p>
+code: 3M8HS8
+listed: true
+name: Joseph Guzi
+slug: joseph-guzi
+social_links:
+- social_link_display: linkedin.com/in/joeguzi/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/joeguzi/
+speaker_type: speaker
+talks:
+- code: WKPPMV
+  slug: developing-a-system-maintenance-plan-and-utilizing-python-to-aid
+  title: Developing a System Maintenance Plan and Utilizing Python to aid in System
+    Maintenance.

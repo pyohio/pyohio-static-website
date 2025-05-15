@@ -1,0 +1,16 @@
+avatar: avik-basu.jpg
+avatar_url: https://pretalx.com/media/avatars/Z7XLKH_eQXpfE1.jpg
+biography: <p>Avik is a seasoned Data Scientist and Machine Learning Engineer. He
+  was first introduced to Python in 2013 during his undergrad, and has been his primary
+  language since then. He views writing elegant Python code as an art, blending creativity
+  with engineering precision.</p>
+code: Z7XLKH
+listed: true
+name: Avik Basu
+slug: avik-basu
+social_links: []
+speaker_type: speaker
+talks:
+- code: MPJU9D
+  slug: beyond-the-black-box-interpreting-ml-models-with-shap
+  title: 'Beyond the Black Box: Interpreting ML models with SHAP'

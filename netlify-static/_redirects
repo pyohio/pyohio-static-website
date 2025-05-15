@@ -8,7 +8,7 @@ https://pyohio.org/_ https://www.pyohio.org/:splat 301!
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 / /2025 302
-/sponsors/prospectus/ /2024 302
+/sponsors/prospectus/ /2025/sponsors/prospectus 302
 
 # Short URLs change year to year:
 
@@ -16,18 +16,21 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /coc /2025/about/code-of-conduct 302
 /code-of-conduct /2025/about/code-of-conduct 302
 /conduct /2025/about/code-of-conduct 302
-/attend /2024/attend/registration 302
-/directions /2024/attend/travel-and-hotels 302
-/events /2024 302
+/attend /2025/attend/registration 302
+/directions /2025/attend/directions-and-parking 302
+/events /2025 302
 /health-and-safety /2025/about/health-and-safety 302
-/hotel /2024/attend/travel-and/hotels 302
-/prospectus /2025 302
-/register /2024/attend/registration 302
-/schedule /2024/program/schedule 302
-/sprints /2024 302
-/volunteer /2024/attend/volunteer 302
-/hackfest /2024 302
-/osu-open-source /2024 302
+/hotel /2025/attend/hotels 302
+/prospectus /2025/sponsorship/prospectus 302
+/register /2025/attend/registration 302
+/schedule /2025/program/schedule 302
+/sprints /2025 302
+/volunteer /2025/attend/volunteer 302
+
+# Defunct but still linked
+
+/hackfest / 302
+/osu-open-source / 302
 
 # Off-site
 
@@ -43,10 +46,10 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # OhPyOh
 
-/ohpyo /2024/about/ohpyo 302
-/opyoh /2024/about/ohpyo 302
-/opyo /2024/about/ohpyo 302
-/ohpy /2024/about/ohpyo 302
+/ohpyo /2025/about/ohpyo 302
+/opyoh /2025/about/ohpyo 302
+/opyo /2025/about/ohpyo 302
+/ohpy /2025/about/ohpyo 302
 
 # 2024 Moved URLs
 
@@ -73,6 +76,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # Custom 404s
 
+/2025/* /2025/404 404
 /2024/* /2024/404 404
 /2023/* /2023/404 404
 /2022/* /2022/404 404

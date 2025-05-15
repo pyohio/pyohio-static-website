@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="call-to-action mb-32 mt-24 flex flex-col items-center gap-12 rounded-xl p-12 md:p-24">
+    <h2 class="text-center text-3xl md:text-5xl">Get this theme on GitHub</h2>
+    <a href="https://github.com/markteekman/accessible-astro-starter" class="text-center text-lg"> Use this theme</a>
+  </div>
+</div>
+
+<style lang="scss">
+  .call-to-action {
+    background-image: linear-gradient(40deg, var(--primary-100), var(--secondary-200));
+    color: var(--neutral-900);
+  }
+
+  .call-to-action a:not(button),
+  .call-to-action a:not(button):visited {
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out;
+    border: 3px solid var(--neutral-900);
+    border-radius: 3px;
+    padding: 1rem;
+    color: var(--neutral-900);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:where(:hover, :focus) {
+      background-color: var(--neutral-900);
+      color: var(--neutral-100);
+      text-decoration: underline;
+    }
+  }
+</style>

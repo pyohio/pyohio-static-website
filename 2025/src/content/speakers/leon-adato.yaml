@@ -1,0 +1,39 @@
+avatar: leon-adato.png
+avatar_url: https://pretalx.com/media/avatars/UVE988_lt2NTQ2.png
+biography: '<p>In his sordid career, Leon Adato has worked as an actor, bug exterminator,
+  wild-animal remover,<br />
+
+  electrician, carpenter, stage-combat instructor, American Sign Language interpreter,
+  and Sunday school<br />
+
+  teacher.</p>
+
+  <p>Oh, and he works with computers, starting back in 1989 (when you could get a
+  free copy of Windows 286 on twelve 5¼” floppies when you bought a copy of Excel
+  1.0). In IT, he’s had jobs as a classroom instructor, course ware designer, desktop
+  support tech, sysadmin, and network engineer.</p>
+
+  <p>Then, about 25 years ago, he got involved with monitoring, working with a wide
+  range of tools: Tivoli,<br />
+
+  Nagios, Patrol, ZenOss, janky perl scripts, OpenView, SiteScope, SolarWinds, Grafana,
+  Zabbix, New Relic, and Kentik. In the course of that work, he''s designed solutions
+  for companies that ranged in size from modest (~10 systems); to significant (1,000
+  - 5,000 systems); to ludicrous (250,000 systems in 5,000 locations).</p>'
+code: UVE988
+keynote_index: 2
+listed: true
+name: Leon Adato
+slug: leon-adato
+social_links:
+- social_link_display: staging.bsky.app/profile/leonadato.bsky.social
+  social_link_type: mdi:link-variant
+  social_link_url: https://staging.bsky.app/profile/leonadato.bsky.social
+- social_link_display: linkedin.com/in/leonadato/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/leonadato/
+speaker_type: keynote
+talks:
+- code: 9EZBGH
+  slug: leon-adato-keynote
+  title: Keynote

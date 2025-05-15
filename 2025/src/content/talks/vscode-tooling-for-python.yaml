@@ -1,0 +1,36 @@
+code: 77MGPC
+content_warnings: null
+description: "<p>Visual Studio Code has become a powerhouse for Python development,\
+  \ offering a lightweight yet robust environment packed with tools to streamline\
+  \ coding, debugging, and testing. In this talk, we’ll dive into the essential VS\
+  \ Code tooling that can turbocharge your Python workflow. From setting up the perfect\
+  \ Python environment to leveraging extensions for linting, debugging, and Git integration,\
+  \ you’ll leave with practical tips to boost productivity and code quality. Whether\
+  \ you’re wrangling data pipelines, building web apps, or just tinkering with scripts,\
+  \ this session will show you how to make VS Code your Python best friend.<br />\n\
+  Key Points:<br />\n    1   Setup Basics: Configuring Python interpreters, virtual\
+  \ environments, and workspace settings in VS Code.<br />\n    2   Extensions That\
+  \ Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion,\
+  \ type checking, and linting.<br />\n    3   Debugging Like a Pro: Using breakpoints,\
+  \ variable inspection, and the debug toolbar for painless bug hunting.<br />\n \
+  \   4   Testing Made Easy: Integrating pytest and unittest directly in VS Code with\
+  \ real-time feedback.<br />\n    5   Git Integration: Streamlining version control\
+  \ without leaving the editor.<br />\n    6   Pro Tips: Custom snippets, Jupyter\
+  \ notebook support, and remote development tricks</p>"
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: vscode-tooling-for-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/C3VJBM_QGMkkV0.jpg
+  code: C3VJBM
+  name: Daniel Segan
+  slug: daniel-segan
+start_time: TBD
+stream_timestamp: ''
+title: VSCode Tooling for Python
+type: 30 Minute Talk
+youtube_url: null

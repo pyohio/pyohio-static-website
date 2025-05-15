@@ -1,0 +1,26 @@
+avatar: jay-miller.jpg
+avatar_url: https://pretalx.com/media/avatars/PFEFTZ_eBO4cb1.jpg
+biography: <p>Jay is a Staff Developer Advocate at Aiven. Jay is also the founder
+  of Black Python Devs where they work to extend the reach of Python communities,
+  projects, and organizations to Black developers around the globe. Jay has served
+  as a keynote speaker in the Python Community and when away from the keyboard can
+  often be found cheering on their favorite baseball team.</p>
+code: PFEFTZ
+listed: true
+name: Jay Miller
+slug: jay-miller
+social_links:
+- social_link_display: linkedin.com/in/kjaymiller
+  social_link_type: mdi:linkedin
+  social_link_url: https://linkedin.com/in/kjaymiller
+- social_link_display: '@kjaymiller@mastodon.social'
+  social_link_type: mdi:mastodon
+  social_link_url: https://mastodon.social/@kjaymiller
+- social_link_display: bsky.app/profile/kjaymiller.com
+  social_link_type: mdi:link-variant
+  social_link_url: https://bsky.app/profile/kjaymiller.com
+speaker_type: speaker
+talks:
+- code: L7HLC9
+  slug: getting-advice-from-myself-using-flatfiles-postgres-and
+  title: Getting advice from Myself using Flatfiles, Postgres, and Frontmatter

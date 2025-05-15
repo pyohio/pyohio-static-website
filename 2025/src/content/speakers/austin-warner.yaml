@@ -1,0 +1,23 @@
+avatar: austin-warner.jpg
+avatar_url: https://pretalx.com/media/avatars/ZFU8DY_Rj4w0Ey.jpg
+biography: '<p>I have been working as a data scientist at <a href="https://8451.com">84.51°</a>
+  since 2020, where I''ve made a habit of creating Python packages to simplify the
+  work for my colleagues, usually with a focus on functional and declarative programming.</p>
+
+  <p>Academically my background is in Math, Statistics, and Physics. At work, I put
+  that background to use on a large recommender system that solves a generalized version
+  of the <a href="https://en.m.wikipedia.org/wiki/Knapsack_problem">knapsack problem</a>.</p>
+
+  <p>I live in Cincinnati with my wife Hannah and our dog Rory. Outside of work I
+  like to go on hikes, experiment in the kitchen, and get my heart broken by the Browns.</p>'
+code: ZFU8DY
+listed: true
+name: Austin Warner
+slug: austin-warner
+social_links: []
+speaker_type: speaker
+talks:
+- code: FJGVAW
+  slug: introducing-labrea-how-embracing-declarative-functional-can-lead
+  title: Introducing Labrea - How Embracing Declarative, Functional Programming Can
+    Lead You Out of the Tar Pit

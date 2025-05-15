@@ -1,0 +1,17 @@
+avatar: daniel-schelkoph.jpeg
+avatar_url: https://pretalx.com/media/avatars/NL3RWX_bwKyIfi.jpeg
+biography: <p>Dan currently works at Tenet3®, a knowledge management company in Dayton,
+  OH. He leads the creation of compelling development environments, machine learning
+  software, and secure computing environments on-premise and in the cloud. Previously,
+  he served 12 years in the Air Force as a Communications Officer, operating and protecting
+  Air Force Networks.</p>
+code: NL3RWX
+listed: true
+name: Daniel Schelkoph
+slug: daniel-schelkoph
+social_links: []
+speaker_type: speaker
+talks:
+- code: SGYYGL
+  slug: building-custom-data-structures-using-abstract-collections
+  title: Building Custom Data Structures Using Abstract Collections

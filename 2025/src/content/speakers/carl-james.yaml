@@ -1,0 +1,20 @@
+avatar: carl-james.jpg
+avatar_url: https://pretalx.com/media/avatars/HAYKJP_tIcjDAC.jpg
+biography: <p>IT-A/V tech in higher education by day, I love working with computers.
+  I discovered I wanted my computers to be more bespoke, do the things I want them
+  to do and discovered Python as an accessible language to allow me, not a professional
+  developer, to create tools for my own needs. I also love college baseball and one
+  of my apps supports this obsession.</p>
+code: HAYKJP
+listed: true
+name: Carl James
+slug: carl-james
+social_links:
+- social_link_display: linkedin.com/in/carl-james-jovian34/ social.linux.pizza/@jovian34
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/carl-james-jovian34/ https://social.linux.pizza/@jovian34
+speaker_type: speaker
+talks:
+- code: YYFDRM
+  slug: how-a-solo-hobbyist-learned-to-love-testing
+  title: How a solo hobbyist learned to love testing

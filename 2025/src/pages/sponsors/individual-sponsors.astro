@@ -1,0 +1,60 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getEntry } from 'astro:content'
+
+const individualSponsors = await getEntry('individualSponsors', 'individual-sponsors')
+---
+
+<DefaultLayout title="Individual Sponsors">
+  <section class="my-12">
+    <div class="container">
+      <h1>Individual Sponsors</h1>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <p class="text-2xl pb-3">Thank you to our individual sponsors for supporting PyOhio!</p>
+      {
+        individualSponsors.data.map((sponsor) => (
+            <span class="sticker">{sponsor}</span>
+          ))
+      }
+      </div>
+    </div>
+  </section>
+
+  <section class="my-12">
+    <div class="container">    
+      <h2>About Individual Sponsorship</h2>
+<p>PyOhio is proud to offer free admission to everyone however the event has significant costs. We need corporate sponsors to cover the bulk of 
+  these costs however we've had individuals ask how they can contribute. If you would like to make a financial contribution to PyOhio and would 
+  like your contribution to be recognized publicly you may indicate so when donating. You may make a donation of any amount at
+  <a href="/register">PyOhio Registration</a>.</p>
+<br/>
+<p><strong>For a $50+ donation, Individual Sponsors get:</strong><p>
+<p>
+<ul>
+<li>Their name listed on the sponsors page (optional)</li>
+<li>A limited edition PyOhio Supporter sticker at badge pickup</li>
+</ul>
+</p>
+<br/>
+<p>If you have already registered for PyOhio, make sure to only select the donation line item. If you would like to keep your donation anonymous,
+  leave the "who should we credit" field blank when checking out.</p>
+<br/>
+<em>Please note:</em>
+<br/>
+<ul>
+  <li>This level is for individuals only.</li>
+<li>Names or nicknames only. We reserve the right to remove company or inappropriate names.</li>
+<li>Donating doesn't automatically include registration. Be sure to also select a registration if you plan on attending PyOhio</li>
+<li>If your company would like to sponsor PyOhio, please see the <a href="/prospectus">Sponsorship Prospectus</a>.</li>
+</ul>
+</p>
+<br/>
+<p>If you'd like to support PyOhio in some other way please email <a href="mailto:info@pyohio.org">info@pyohio.org</a>.</p>
+
+    </div>
+  </section>
+</DefaultLayout>

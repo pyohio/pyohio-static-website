@@ -1,26 +1,33 @@
 {
   "name": "pyohio-static-website",
   "description": "PyOhio website",
-  "version": "2024.0.1",
+  "version": "2025.0.1",
   "private": true,
   "author": "PyOhio",
   "dependencies": {
-    "astro-icon": "^1.1.0"
+    "@iconify-json/fa": "^1.1.8",
+    "@iconify-json/fa6-brands": "^1.1.19",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify/json": "^2.2.217",
+    "@iconify/types": "^2.0.0",
+    "@iconify/utils": "^2.1.24",
+    "astro-icon": "^1.1.5",
+    "luxon": "^3.6.1"
   },
   "devDependencies": {
-    "@onwidget/astrowind": "file:./2024",
+    "@onwidget/astrowind": "file:./2025",
     "prettier": "^2.2.1"
   },
   "keywords": [],
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf public",
-    "dev": "cd 2024 && yarn dev",
+    "dev": "cd 2025 && yarn dev",
     "blog-dev": "cd blog && yarn dev",
-    "build": "cd 2024 && yarn install && yarn build && cd ../blog && yarn install && yarn build",
-    "preview": "cd 2024 && yarn preview",
+    "build": "cd 2025 && yarn install && yarn build && cd ../blog && yarn install && yarn build",
+    "preview": "cd 2025 && yarn preview",
     "blog-preview": "cd blog && yarn preview",
-    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2024/dist ./public/2024 && cp -r ./blog/dist ./public/blog && cp -rv ./netlify-static/* ./public/",
+    "build-prod": "pwd && yarn clean && yarn build && mkdir -p ./public && cp -r ./archive/20* ./public && cp -r ./2025/dist ./public/2025 && cp -r ./blog/dist ./public/blog && cp -rv ./netlify-static/* ./public/",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "repository": {

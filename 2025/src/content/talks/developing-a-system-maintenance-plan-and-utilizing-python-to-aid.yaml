@@ -1,0 +1,26 @@
+code: WKPPMV
+content_warnings: null
+description: <p>Overtime, systems can experience rapid growth and become unstable
+  without proper management. Managing that growth while maintaining the system can
+  become a challenge. We will explore system maintenance in the context of a Geographic
+  Information Systems (GIS) Team’s plan for GIS system maintenance. We will go over
+  the reasons for having a system maintenance plan, the components of our plan, and
+  things to consider when making your own maintenance plan.</p>
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: developing-a-system-maintenance-plan-and-utilizing-python-to-aid
+speakers:
+- avatar: https://pretalx.com/media/avatars/3M8HS8_3gvYBvI.jpg
+  code: 3M8HS8
+  name: Joseph Guzi
+  slug: joseph-guzi
+start_time: TBD
+stream_timestamp: ''
+title: Developing a System Maintenance Plan and Utilizing Python to aid in System
+  Maintenance.
+type: 30 Minute Talk
+youtube_url: null

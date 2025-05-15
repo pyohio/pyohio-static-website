@@ -1,0 +1,26 @@
+code: VNQLAV
+content_warnings: null
+description: '<p>Did you recoil at the news that there''s <em>yet another</em> hot
+  new packaging tool to cram into your poor crowded brain?  </p>
+
+  <p>Take heart, brain!  It will be all right!  uv is splendidly complete and gloriously
+  simple to use.  It''s the single tool that can elegantly and easily replace the
+  whole jumbled toolbox you''ve been using until now.  See the essential simple usages
+  of uv, and you''ll be a believer.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: uv-ultimate-victory-over-installation-and-dependency-chaos
+speakers:
+- avatar: https://pretalx.com/media/avatars/DNWR98_qOdjP12.jpg
+  code: DNWR98
+  name: Catherine Devlin
+  slug: catherine-devlin
+start_time: TBD
+stream_timestamp: ''
+title: 'uv: Ultimate Victory over installation and dependency chaos'
+type: 30 Minute Talk
+youtube_url: null

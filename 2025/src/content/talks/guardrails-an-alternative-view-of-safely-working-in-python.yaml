@@ -1,0 +1,51 @@
+code: WJJRQ7
+content_warnings: null
+description: '<p>Python – like many languages – lets you do things that are completely
+  inadvisable. Many of the features that (left unchecked) allow you to do inadvisable
+  things were used to achieve things that have since become necessary and defining
+  features of Python.</p>
+
+  <p>Python – unlike many languages – discovered that leaving these obvious and necessary
+  features lying around next to inadvisable things was a bad idea, and built guardrails
+  around them.</p>
+
+  <p>In real life, guardrails are structures that make it easier to understand how
+  to be safe in an area where there is otherwise danger. If respected, guardrails
+  make you safer, but unlike walls or fences, guardrails do not block you from danger.</p>
+
+  <p>In Python, features like decorators, context managers, async functions, importlib,
+  and more are all guardrails that let you work with less-safe Python machinery from
+  a much safer distance.</p>
+
+  <p>In this talk, we’re going to explore the idea of guardrails as a design philosophy,
+  and use that to explain Python’s attitude to safely working with the language and
+  its internals.</p>
+
+  <p>We’ll explore features of Python that are guardrails around less-safe features
+  – what features they replaced, how those features could be used incorrectly, and
+  how the newer features allow you to use Python more safely. As a special treat,
+  you may also get to see how Python lets you abuse these features*.</p>
+
+  <p>We’ll conclude with a discussion of how you can use Python’s guardrail philosophy
+  in your own code.</p>
+
+  <hr />
+
+  <p>(* SKILLED OPERATOR ON CLOSED CIRCUIT; DO NOT ATTEMPT)</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: guardrails-an-alternative-view-of-safely-working-in-python
+speakers:
+- avatar: https://pretalx.com/media/avatars/QWCHX7_x69USba.jpg
+  code: QWCHX7
+  name: Christopher Neugebauer
+  slug: christopher-neugebauer
+start_time: TBD
+stream_timestamp: ''
+title: 'Guardrails: An alternative view of safely working in Python'
+type: 30 Minute Talk
+youtube_url: null

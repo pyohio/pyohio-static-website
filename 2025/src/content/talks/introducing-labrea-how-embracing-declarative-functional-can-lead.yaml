@@ -1,0 +1,37 @@
+code: FJGVAW
+content_warnings: null
+description: '<p>As a multi-paradigm language, Python gives its users the freedom
+  to solve problems in a vast number of ways. However, this freedom comes with a cost:
+  we must resist the urge to use quick, unsustainable approaches in order to avoid
+  the plague that is software complexity. For many real world problems, using familiar
+  techniques like mutable state and imperative programming make it easier to complete
+  the task while yielding a more complex codebase. In many cases, functional programming
+  offers a way to write simpler code, but the difficulty of committing to it makes
+  it impractical or unappealing to developers.</p>
+
+  <p>Inspired by the 2006 paper <a href="https://curtclifton.net/papers/MoseleyMarks06a.pdf"><em>Out
+  of the Tar Pit</em></a>, and the 2011 talk <a href="https://www.youtube.com/watch?v=SxdOUGdseq4"><em>Simple
+  Made Easy</em></a> by Rich Hickey, <a href="https://github.com/8451/labrea">Labrea</a>
+  is a Python framework that seeks to make the happy path one that results in a simpler
+  codebase that is functional, declarative, and composable. Learn about how Labrea
+  allowed developers at 84.51º (Kroger) to pull the company''s most complicated coupon
+  recommender system out of the slow death march of software complexity, and how it
+  might help you.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: TBD
+qna: false
+qna_channel: null
+room: TBD
+slug: introducing-labrea-how-embracing-declarative-functional-can-lead
+speakers:
+- avatar: https://pretalx.com/media/avatars/ZFU8DY_Rj4w0Ey.jpg
+  code: ZFU8DY
+  name: Austin Warner
+  slug: austin-warner
+start_time: TBD
+stream_timestamp: ''
+title: Introducing Labrea - How Embracing Declarative, Functional Programming Can
+  Lead You Out of the Tar Pit
+type: 30 Minute Talk
+youtube_url: null

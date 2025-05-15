@@ -1,0 +1,22 @@
+avatar: ryan-carroll.jpg
+avatar_url: https://pretalx.com/media/avatars/88ETSS_7XgZn4w.jpg
+biography: <p>Ryan loves putting software and technology to work solving fun and interesting
+  problems both at work and in his personal life. He believes that tackling problems
+  with technology can be a fun and rewarding experience. Ryan has been a full-stack
+  software engineer for over 8 years working primarily with APIs and web stacks. When
+  he's not coding, Ryan can often be found enjoying the peace and grounding of the
+  great outdoors hiking, camping, and kayaking.</p>
+code: 88ETSS
+listed: true
+name: Ryan Carroll
+slug: ryan-carroll
+social_links:
+- social_link_display: linkedin.com/in/carrollmedia/
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/carrollmedia/
+speaker_type: speaker
+talks:
+- code: PUBEVY
+  slug: bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution
+  title: 'Bringing ideas to life with DIY IoT: Visualizing Noise Pollution with a
+    Raspberry Pi and Python'
