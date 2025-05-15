@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/bianca-ploss.jpg
+avatar: bianca-ploss.jpg
 avatar_url: https://pretalx.com/media/avatars/NYDQLT_ESEqRyP.jpg
 biography: <p>Bianca Ploss is a software developer at the Davey Institute, where she
   uses Python and JavaScript to create user-friendly applications for i-Tree. With
@@ -11,7 +11,10 @@ code: NYDQLT
 listed: true
 name: Bianca Ploss
 slug: bianca-ploss
-social_links: []
+social_links:
+- social_link_display: linkedin.com/in/bianca-ploss
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/bianca-ploss
 speaker_type: speaker
 talks:
 - code: WLDTLY

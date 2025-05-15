@@ -1,14 +1,20 @@
 {
   "name": "pyohio-static-website",
   "description": "PyOhio website",
-  "version": "2024.0.1",
+  "version": "2025.0.1",
   "private": true,
   "author": "PyOhio",
   "dependencies": {
-    "astro-icon": "^1.1.0"
+    "@iconify-json/fa": "^1.1.8",
+    "@iconify-json/fa6-brands": "^1.1.19",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify/json": "^2.2.217",
+    "@iconify/types": "^2.0.0",
+    "@iconify/utils": "^2.1.24",
+    "astro-icon": "^1.1.5"
   },
   "devDependencies": {
-    "@onwidget/astrowind": "file:./2024",
+    "@onwidget/astrowind": "file:./2025",
     "prettier": "^2.2.1"
   },
   "keywords": [],

@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/joseph-guzi.jpg
+avatar: joseph-guzi.jpg
 avatar_url: https://pretalx.com/media/avatars/3M8HS8_3gvYBvI.jpg
 biography: <p>Joe Guzi has over fifteen years of experience with the Stark County
   GIS Department. His work focuses on advancing GIS solutions to the next level, by
@@ -12,7 +12,7 @@ name: Joseph Guzi
 slug: joseph-guzi
 social_links:
 - social_link_display: linkedin.com/in/joeguzi/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/joeguzi/
 speaker_type: speaker
 talks:

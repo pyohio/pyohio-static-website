@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/keming-he.jpeg
+avatar: keming-he.jpeg
 avatar_url: https://pretalx.com/media/avatars/V3JQKX_HvSMWwM.jpeg
 biography: '<p>Hi! I''m Keming He, a Computer Science and Engineering student at The
   Ohio State University with a passion for Python development. As a rising tech builder:</p>
@@ -39,10 +39,10 @@ name: Keming He
 slug: keming-he
 social_links:
 - social_link_display: linkedin.com/in/keminghe
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://linkedin.com/in/keminghe
 - social_link_display: github.com/KemingHe
-  social_link_type: fa6-brands:github
+  social_link_type: mdi:github
   social_link_url: https://github.com/KemingHe
 speaker_type: speaker
 talks:

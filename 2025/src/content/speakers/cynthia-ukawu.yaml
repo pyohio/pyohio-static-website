@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/cynthia-ukawu.jpg
+avatar: cynthia-ukawu.jpg
 avatar_url: https://pretalx.com/media/avatars/VQQNZH_0zfhnUh.JPG
 biography: '<p>Cynthia is a geospatial software engineer with a passion for teaching
   and making technical concepts approachable. Currently working as a backend software
@@ -20,7 +20,7 @@ name: Cynthia Ukawu
 slug: cynthia-ukawu
 social_links:
 - social_link_display: linkedin.com/in/cynthiiaa/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/cynthiiaa/
 speaker_type: speaker
 talks:

@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/gregory-m-kapfhammer.png
+avatar: gregory-m-kapfhammer.png
 avatar_url: https://pretalx.com/media/avatars/WUSBZJ_hJj7oDc.png
 biography: '<p>Innovating in technical areas such as software engineering and software
   testing, Gregory M. Kapfhammer teaches courses, conducts research, writes papers
@@ -18,19 +18,19 @@ name: Gregory M. Kapfhammer
 slug: gregory-m-kapfhammer
 social_links:
 - social_link_display: www.gregorykapfhammer.com/
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://www.gregorykapfhammer.com/
 - social_link_display: github.com/gkapfham
-  social_link_type: fa6-brands:github
+  social_link_type: mdi:github
   social_link_url: https://github.com/gkapfham
 - social_link_display: '@gkapfham@fosstodon.org'
-  social_link_type: fa6-brands:mastodon
+  social_link_type: mdi:mastodon
   social_link_url: https://fosstodon.org/@gkapfham
 - social_link_display: linkedin.com/in/GregKapfhammer/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/GregKapfhammer/
 - social_link_display: scholar.google.com/citations?user=g0eDPjYAAAAJ
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://scholar.google.com/citations?user=g0eDPjYAAAAJ
 speaker_type: speaker
 talks:

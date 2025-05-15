@@ -87,6 +87,35 @@
     "description_youtube": "30 Minute Talk by Mike McCaffrey at PyOhio 2025:\n**Description**  \n\nIntended to be an entertaining overview of challenges faced and lessons learned working on my first big maker project. Using code snippets, pictures and short demos, I will discuss problems overcome while developing new features and integrating new devices into my humble animated sign, which includes lights along with rhythmic and melodic components. I promise not to dance; no one wants to see that.\n\nThe intended audience is anyone interested in maker projects. I will also be touching on introductory\\-level topics in type hinting; the standard library modules abc, dataclasses, signal, and threading; and the 3rd\\-party modules aiohttp, gpiozero, and requests.\n\n`Note on Photosensitivity:`  \n\nBased on [this epilepsy.com article](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions), this presentation should be safe for any photosensitive audience member. I will include this information in a slide at the beginning of the presentation, and give anyone in the audience the chance to leave or ask questions before proceeding.\n\n* The sign project uses standard 60 watt incandescent bulbs, which are not capable of producing a strobe effect.\n* For further safety, during the presentation, bulbs will not cycle on and off more than 3 times per second.\n* Additionally, the room’s lighting will not be darkened more than usual for a standard presentation.\nPyOhio talk listing: https://www.pyohio.org/2025/talks/lights-python-action"
   },
   {
+    "code": "8QUZFM",
+    "title": "Keynote",
+    "slug": "abigail-mesrenyame-dogbe-keynote",
+    "description": "<p>Keynote</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "Orchid Ballroom",
+    "duration": 45,
+    "speakers": [
+      {
+        "name": "Abigail Mesrenyame Dogbe",
+        "avatar": "https://pretalx.com/media/avatars/TKWGDL_qFxqmyY.jpg",
+        "code": "TKWGDL",
+        "slug": "abigail-mesrenyame-dogbe"
+      }
+    ],
+    "type": "Keynote",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Keynote\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/abigail-mesrenyame-dogbe-keynote",
+    "speaker_names": "Abigail Mesrenyame Dogbe",
+    "description_youtube": "Keynote by Abigail Mesrenyame Dogbe at PyOhio 2025:\nKeynote\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/abigail-mesrenyame-dogbe-keynote"
+  },
+  {
     "code": "8TJMMX",
     "title": "Beyond the Benchmark: Why the \"Best\" Python Dependency Manager Might Not Be Best for You",
     "slug": "beyond-the-benchmark-why-the-best-python-dependency-manager-not",
@@ -114,6 +143,35 @@
     "talk_url": "https://www.pyohio.org/2025/talks/beyond-the-benchmark-why-the-best-python-dependency-manager-not",
     "speaker_names": "Keming He",
     "description_youtube": "30 Minute Talk by Keming He at PyOhio 2025:\n**Ever wondered why your team still uses pip when benchmarks show alternatives are 10x faster?** The answer lies beyond raw performance metrics.\n\nIn this myth\\-busting session, I'll reveal surprising insights from analyzing thousands of GitHub repositories and real\\-world implementation case studies. You'll discover why technical superiority doesn't always translate to organizational success, and how to navigate the complex decision landscape of Python dependency management.\n\nI'll share:  \n\n\\- ⚡ Eye\\-opening performance comparisons between UV, Poetry, Conda, and pip\\+pyenv  \n\n\\- 📊 Actual adoption statistics that challenge conventional wisdom  \n\n\\- 💼 ROI calculations that factor in both technical AND human costs  \n\n\\- 🛣️ A decision framework for selecting the right tool for YOUR specific context\n\nWhether you're contemplating a migration, advocating for better tooling, or simply curious about the evolving Python ecosystem, you'll leave with actionable insights that balance technical excellence with organizational reality.\n\nDon't miss this data\\-driven exploration of Python's most underappreciated infrastructure challenge!\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/beyond-the-benchmark-why-the-best-python-dependency-manager-not"
+  },
+  {
+    "code": "9EZBGH",
+    "title": "Keynote",
+    "slug": "leon-adato-keynote",
+    "description": "<p>Keynote</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "Orchid Ballroom",
+    "duration": 45,
+    "speakers": [
+      {
+        "name": "Leon Adato",
+        "avatar": "https://pretalx.com/media/avatars/UVE988_lt2NTQ2.png",
+        "code": "UVE988",
+        "slug": "leon-adato"
+      }
+    ],
+    "type": "Keynote",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Keynote\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/leon-adato-keynote",
+    "speaker_names": "Leon Adato",
+    "description_youtube": "Keynote by Leon Adato at PyOhio 2025:\nKeynote\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/leon-adato-keynote"
   },
   {
     "code": "BCR7DQ",
@@ -723,6 +781,35 @@
     "talk_url": "https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections",
     "speaker_names": "Daniel Schelkoph",
     "description_youtube": "30 Minute Talk by Daniel Schelkoph at PyOhio 2025:\nPython’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built\\-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections"
+  },
+  {
+    "code": "SUMQSQ",
+    "title": "Keynote",
+    "slug": "jessica-garson-keynote",
+    "description": "<p>Keynote</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "Orchid Ballroom",
+    "duration": 45,
+    "speakers": [
+      {
+        "name": "Jessica Garson",
+        "avatar": "https://pretalx.com/media/avatars/QJCEWP_7wJgt5h.jpeg",
+        "code": "QJCEWP",
+        "slug": "jessica-garson"
+      }
+    ],
+    "type": "Keynote",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Keynote\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/jessica-garson-keynote",
+    "speaker_names": "Jessica Garson",
+    "description_youtube": "Keynote by Jessica Garson at PyOhio 2025:\nKeynote\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/jessica-garson-keynote"
   },
   {
     "code": "TCRGU8",

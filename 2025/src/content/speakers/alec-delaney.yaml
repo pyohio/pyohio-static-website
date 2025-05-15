@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/alec-delaney.jpg
+avatar: alec-delaney.jpg
 avatar_url: https://pretalx.com/media/avatars/ND3MDZ_6MdqmWo.jpg
 biography: <p>I'm a hardware engineer and software developer from the Boston area.
   I love creating free and open source projects that others can use. My passion is
@@ -11,13 +11,13 @@ name: Alec Delaney
 slug: alec-delaney
 social_links:
 - social_link_display: tekktrik.dev
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://tekktrik.dev
 - social_link_display: github.com/tekktrik
-  social_link_type: fa6-brands:github
+  social_link_type: mdi:github
   social_link_url: https://github.com/tekktrik
 - social_link_display: '@tekktrik@techhub.social'
-  social_link_type: fa6-brands:mastodon
+  social_link_type: mdi:mastodon
   social_link_url: https://techhub.social/@tekktrik
 speaker_type: speaker
 talks:

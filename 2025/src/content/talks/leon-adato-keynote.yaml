@@ -1,0 +1,20 @@
+code: 9EZBGH
+content_warnings: null
+description: <p>Keynote</p>
+discord_channel_id: ''
+duration: 45
+end_time: TBD
+qna: false
+qna_channel: null
+room: Orchid Ballroom
+slug: leon-adato-keynote
+speakers:
+- avatar: https://pretalx.com/media/avatars/UVE988_lt2NTQ2.png
+  code: UVE988
+  name: Leon Adato
+  slug: leon-adato
+start_time: TBD
+stream_timestamp: ''
+title: Keynote
+type: Keynote
+youtube_url: null

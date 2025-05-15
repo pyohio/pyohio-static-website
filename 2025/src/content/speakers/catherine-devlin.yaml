@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/catherine-devlin.jpg
+avatar: catherine-devlin.jpg
 avatar_url: https://pretalx.com/media/avatars/DNWR98_qOdjP12.jpg
 biography: <p>Catherine uses Python to herd data cats for Corning's material scientists.  She
   fell for the Python community at PyConUS 2004, and in 2008 helped found PyOhio.  She
@@ -11,7 +11,7 @@ name: Catherine Devlin
 slug: catherine-devlin
 social_links:
 - social_link_display: bsky.app/profile/catherinedevlin.bsky.social
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://bsky.app/profile/catherinedevlin.bsky.social
 speaker_type: speaker
 talks:

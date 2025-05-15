@@ -1,0 +1,20 @@
+code: 8QUZFM
+content_warnings: null
+description: <p>Keynote</p>
+discord_channel_id: ''
+duration: 45
+end_time: TBD
+qna: false
+qna_channel: null
+room: Orchid Ballroom
+slug: abigail-mesrenyame-dogbe-keynote
+speakers:
+- avatar: https://pretalx.com/media/avatars/TKWGDL_qFxqmyY.jpg
+  code: TKWGDL
+  name: Abigail Mesrenyame Dogbe
+  slug: abigail-mesrenyame-dogbe
+start_time: TBD
+stream_timestamp: ''
+title: Keynote
+type: Keynote
+youtube_url: null

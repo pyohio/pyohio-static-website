@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/jay-miller.jpg
+avatar: jay-miller.jpg
 avatar_url: https://pretalx.com/media/avatars/PFEFTZ_eBO4cb1.jpg
 biography: <p>Jay is a Staff Developer Advocate at Aiven. Jay is also the founder
   of Black Python Devs where they work to extend the reach of Python communities,
@@ -11,13 +11,13 @@ name: Jay Miller
 slug: jay-miller
 social_links:
 - social_link_display: linkedin.com/in/kjaymiller
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://linkedin.com/in/kjaymiller
 - social_link_display: '@kjaymiller@mastodon.social'
-  social_link_type: fa6-brands:mastodon
+  social_link_type: mdi:mastodon
   social_link_url: https://mastodon.social/@kjaymiller
 - social_link_display: bsky.app/profile/kjaymiller.com
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://bsky.app/profile/kjaymiller.com
 speaker_type: speaker
 talks:

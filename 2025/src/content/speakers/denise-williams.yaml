@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/denise-williams.jpg
+avatar: denise-williams.jpg
 avatar_url: https://pretalx.com/media/avatars/YLFGE3_He4qNzH.jpg
 biography: <p>Denise N. Williams is a Senior AI &amp; Data Analytics Professional
   with 7+ years of experience in developing AI solutions for data management and automation.
@@ -12,7 +12,7 @@ name: Denise Williams
 slug: denise-williams
 social_links:
 - social_link_display: linkedin.com/in/denisenwilliams/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/denisenwilliams/
 speaker_type: speaker
 talks:

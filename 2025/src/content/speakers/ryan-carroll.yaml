@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/ryan-carroll.jpg
+avatar: ryan-carroll.jpg
 avatar_url: https://pretalx.com/media/avatars/88ETSS_7XgZn4w.jpg
 biography: <p>Ryan loves putting software and technology to work solving fun and interesting
   problems both at work and in his personal life. He believes that tackling problems
@@ -12,7 +12,7 @@ name: Ryan Carroll
 slug: ryan-carroll
 social_links:
 - social_link_display: linkedin.com/in/carrollmedia/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/carrollmedia/
 speaker_type: speaker
 talks:

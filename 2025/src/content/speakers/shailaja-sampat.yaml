@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/shailaja-sampat.jpg
+avatar: shailaja-sampat.jpg
 avatar_url: https://pretalx.com/media/avatars/BWLCU3_csf4oYv.jpg
 biography: <p>Shailaja Sampat is a Senior Researcher in the Artificial Intelligence
   (AI) lab at Fujitsu's research division in the USA. She recently earned her Ph.D.
@@ -18,7 +18,7 @@ name: Shailaja Sampat
 slug: shailaja-sampat
 social_links:
 - social_link_display: linkedin.com/in/shailaja-sampat/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/shailaja-sampat/
 speaker_type: speaker
 talks:

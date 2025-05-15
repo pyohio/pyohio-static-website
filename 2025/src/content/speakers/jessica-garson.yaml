@@ -1,0 +1,20 @@
+avatar: jessica-garson.jpeg
+avatar_url: https://pretalx.com/media/avatars/QJCEWP_7wJgt5h.jpeg
+biography: '<p>Jessica Garson is a Python programmer, educator, and artist. She currently
+  works at Elastic as a Senior Developer Advocate. Previously, Jessica was at Twitter
+  for four years, working in Developer Relations. She has spoken at conferences all
+  over the globe, ranging from PyCon to Write the Docs. </p>
+
+  <p>In her spare time, she uses code and modular synthesizers to make music and audio-reactive
+  video art.</p>'
+code: QJCEWP
+keynote_index: 1
+listed: true
+name: Jessica Garson
+slug: jessica-garson
+social_links: []
+speaker_type: keynote
+talks:
+- code: SUMQSQ
+  slug: jessica-garson-keynote
+  title: Keynote

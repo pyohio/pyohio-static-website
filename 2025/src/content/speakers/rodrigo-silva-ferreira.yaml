@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/rodrigo-silva-ferreira.png
+avatar: rodrigo-silva-ferreira.png
 avatar_url: https://pretalx.com/media/avatars/UYRBHX_gusMbKM.png
 biography: '<p>Rodrigo Silva Ferreira is a QA Engineer at <em>Posit</em>, where he
   contributes to the quality and usability of open-source tools that empower data
@@ -17,10 +17,10 @@ name: Rodrigo Silva Ferreira
 slug: rodrigo-silva-ferreira
 social_links:
 - social_link_display: linkedin.com/in/rsf309/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/rsf309/
 - social_link_display: github.com/rodrigosf672
-  social_link_type: fa6-brands:github
+  social_link_type: mdi:github
   social_link_url: https://github.com/rodrigosf672
 speaker_type: speaker
 talks:

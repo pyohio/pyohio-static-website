@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/curtis-oneal.jpg
+avatar: curtis-oneal.jpg
 avatar_url: https://pretalx.com/media/avatars/E9SB7Z_9itErGl.jpg
 biography: '<p>Curtis O''Neal is a Data Scientist and AI Solution Architect at BlueSkyAI
   - an agentic AI startup focussed on conversational agents. He has 10  years of experience
@@ -28,7 +28,7 @@ name: Curtis Oneal
 slug: curtis-oneal
 social_links:
 - social_link_display: linkedin.com/in/curtisoneal/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/curtisoneal/
 speaker_type: speaker
 talks:

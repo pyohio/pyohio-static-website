@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/helianildes-silva-ferreira.jpeg
+avatar: helianildes-silva-ferreira.jpeg
 avatar_url: https://pretalx.com/media/avatars/XDNUZ7_AmgWTPa.jpeg
 biography: '<p>Helianildes Silva Ferreira is an Associate Professor at the Federal
   University of Bahia (UFBA), where she has taught in the Institute of Chemistry since
@@ -29,7 +29,7 @@ name: Helianildes Silva Ferreira
 slug: helianildes-silva-ferreira
 social_links:
 - social_link_display: linkedin.com/in/helianildes-ferreira-4890b733/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/helianildes-ferreira-4890b733/
 speaker_type: speaker
 talks:

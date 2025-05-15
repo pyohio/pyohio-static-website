@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/calvin-hendryx-parker.jpg
+avatar: calvin-hendryx-parker.jpg
 avatar_url: https://pretalx.com/media/avatars/ME3WGG_2M5BJfB.jpg
 biography: '<p>Calvin Hendryx-Parker is the co-founder and CTO of Six Feet Up, the
   premier AI and Python agency in the U.S.</p>
@@ -23,16 +23,16 @@ name: Calvin Hendryx-Parker
 slug: calvin-hendryx-parker
 social_links:
 - social_link_display: linkedin.com/in/calvinhp/
-  social_link_type: fa6-brands:linkedin
+  social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/calvinhp/
 - social_link_display: bsky.app/profile/calvinhp.com
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://bsky.app/profile/calvinhp.com
 - social_link_display: '@calvinhp@fosstodon.org'
-  social_link_type: fa6-brands:mastodon
+  social_link_type: mdi:mastodon
   social_link_url: https://fosstodon.org/@calvinhp
 - social_link_display: http://x.com/calvinhp
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: http://x.com/calvinhp
 speaker_type: speaker
 talks:

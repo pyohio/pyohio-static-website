@@ -1,4 +1,4 @@
-avatar: src/content/speakers/img/christopher-neugebauer.jpg
+avatar: christopher-neugebauer.jpg
 avatar_url: https://pretalx.com/media/avatars/QWCHX7_x69USba.jpg
 biography: ''
 code: QWCHX7
@@ -7,10 +7,10 @@ name: Christopher Neugebauer
 slug: christopher-neugebauer
 social_links:
 - social_link_display: bsky.app/profile/chrisjrn.fyi
-  social_link_type: fa:link
+  social_link_type: mdi:link-variant
   social_link_url: https://bsky.app/profile/chrisjrn.fyi
 - social_link_display: '@chrisjrn@social.coop'
-  social_link_type: fa6-brands:mastodon
+  social_link_type: mdi:mastodon
   social_link_url: https://social.coop/@chrisjrn
 speaker_type: speaker
 talks:

@@ -1,0 +1,1052 @@
+[
+  {
+    "code": "3ZPBJP",
+    "title": "A very brief overview of python's \"Lang\" AI tools and two low-code GUI AI tools: Flowise and n8n",
+    "slug": "a-very-brief-overview-of-python-s-lang-ai-tools-and-two-low-code",
+    "description": "<p>AI is the theme of the moment - and even as a pythonista you might not know where to begin, or you may have started as you had time - and wished to go further. This talk is a guide about where some have gone, and where you might want to go with AI in python. But it is not the last stop. This talk is designed to be a stating guide to move from hobbyist level AI learning to more production-ready coding.</p>\n<p>Often where you begin is with some of the low-code GUI tools - for instance Flowise [ flowiseai.com] - where with a api key and some clicks you can quickly build a chatbot - and then you leant to  add complexity - maybe you pull out some embeddable code -or start to have more than one agent talk to each other, or with some walk-throughs you build a knowledge-base of documents for your bot ( a RAG - Retrieval Augmented Generation ) and now it knows - all your recipes. </p>\n<p>Later you want to give your bot some \"hands\" or rather tools and later you connect to N8N [n8n.io] - which is a flexible workflow automation. You've made your bot reach out into the world to do something (aka made it \"Agentic\"). </p>\n<p>But then you want more control - and stability - so you look to do what you previously did in low-code- directly in python, with a view to production. </p>\n<p>This is when you look to the \"Lang\" flavor tools: Langchain, Langflow, Langraph, and Langsmith. </p>\n<p>Given the time, this will be a very quick tour of these concepts with both images and code shown - so it won't be a line-by line build along. A repo and suggested resources will be provided at the end.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Curtis Oneal",
+        "avatar": "https://pretalx.com/media/avatars/E9SB7Z_9itErGl.jpg",
+        "code": "E9SB7Z",
+        "slug": "curtis-oneal"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "AI is the theme of the moment \\- and even as a pythonista you might not know where to begin, or you may have started as you had time \\- and wished to go further. This talk is a guide about where some have gone, and where you might want to go with AI in python. But it is not the last stop. This talk is designed to be a stating guide to move from hobbyist level AI learning to more production\\-ready coding.\n\nOften where you begin is with some of the low\\-code GUI tools \\- for instance Flowise \\[ flowiseai.com] \\- where with a api key and some clicks you can quickly build a chatbot \\- and then you leant to add complexity \\- maybe you pull out some embeddable code \\-or start to have more than one agent talk to each other, or with some walk\\-throughs you build a knowledge\\-base of documents for your bot ( a RAG \\- Retrieval Augmented Generation ) and now it knows \\- all your recipes. \n\nLater you want to give your bot some \"hands\" or rather tools and later you connect to N8N \\[n8n.io] \\- which is a flexible workflow automation. You've made your bot reach out into the world to do something (aka made it \"Agentic\"). \n\nBut then you want more control \\- and stability \\- so you look to do what you previously did in low\\-code\\- directly in python, with a view to production. \n\nThis is when you look to the \"Lang\" flavor tools: Langchain, Langflow, Langraph, and Langsmith. \n\nGiven the time, this will be a very quick tour of these concepts with both images and code shown \\- so it won't be a line\\-by line build along. A repo and suggested resources will be provided at the end.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/a-very-brief-overview-of-python-s-lang-ai-tools-and-two-low-code",
+    "speaker_names": "Curtis Oneal",
+    "description_youtube": "30 Minute Talk by Curtis Oneal at PyOhio 2025:\nAI is the theme of the moment \\- and even as a pythonista you might not know where to begin, or you may have started as you had time \\- and wished to go further. This talk is a guide about where some have gone, and where you might want to go with AI in python. But it is not the last stop. This talk is designed to be a stating guide to move from hobbyist level AI learning to more production\\-ready coding.\n\nOften where you begin is with some of the low\\-code GUI tools \\- for instance Flowise \\[ flowiseai.com] \\- where with a api key and some clicks you can quickly build a chatbot \\- and then you leant to add complexity \\- maybe you pull out some embeddable code \\-or start to have more than one agent talk to each other, or with some walk\\-throughs you build a knowledge\\-base of documents for your bot ( a RAG \\- Retrieval Augmented Generation ) and now it knows \\- all your recipes. \n\nLater you want to give your bot some \"hands\" or rather tools and later you connect to N8N \\[n8n.io] \\- which is a flexible workflow automation. You've made your bot reach out into the world to do something (aka made it \"Agentic\"). \n\nBut then you want more control \\- and stability \\- so you look to do what you previously did in low\\-code\\- directly in python, with a view to production. \n\nThis is when you look to the \"Lang\" flavor tools: Langchain, Langflow, Langraph, and Langsmith. \n\nGiven the time, this will be a very quick tour of these concepts with both images and code shown \\- so it won't be a line\\-by line build along. A repo and suggested resources will be provided at the end.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/a-very-brief-overview-of-python-s-lang-ai-tools-and-two-low-code"
+  },
+  {
+    "code": "77MGPC",
+    "title": "VSCode Tooling for Python",
+    "slug": "vscode-tooling-for-python",
+    "description": "<p>Visual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.<br />\nKey Points:<br />\n    1   Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.<br />\n    2   Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.<br />\n    3   Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.<br />\n    4   Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.<br />\n    5   Git Integration: Streamlining version control without leaving the editor.<br />\n    6   Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Daniel Segan",
+        "avatar": "https://pretalx.com/media/avatars/C3VJBM_QGMkkV0.jpg",
+        "code": "C3VJBM",
+        "slug": "daniel-segan"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Visual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.  \n\nKey Points:  \n\n 1 Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.  \n\n 2 Extensions That Matter: Must\\-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.  \n\n 3 Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.  \n\n 4 Testing Made Easy: Integrating pytest and unittest directly in VS Code with real\\-time feedback.  \n\n 5 Git Integration: Streamlining version control without leaving the editor.  \n\n 6 Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/vscode-tooling-for-python",
+    "speaker_names": "Daniel Segan",
+    "description_youtube": "30 Minute Talk by Daniel Segan at PyOhio 2025:\nVisual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.  \n\nKey Points:  \n\n 1 Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.  \n\n 2 Extensions That Matter: Must\\-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.  \n\n 3 Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.  \n\n 4 Testing Made Easy: Integrating pytest and unittest directly in VS Code with real\\-time feedback.  \n\n 5 Git Integration: Streamlining version control without leaving the editor.  \n\n 6 Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/vscode-tooling-for-python"
+  },
+  {
+    "code": "7VE98C",
+    "title": "Lights!  Python!  Action!",
+    "slug": "lights-python-action",
+    "description": "<p><strong>Description</strong><br />\nIntended to be an entertaining overview of challenges faced and lessons learned working on my first big maker project.  Using code snippets, pictures and short demos, I will discuss problems overcome while developing new features and integrating new devices into my humble animated sign, which includes lights along with rhythmic and melodic components.  I promise not to dance; no one wants to see that.</p>\n<p>The intended audience is anyone interested in maker projects.  I will also be touching on introductory-level topics in type hinting; the standard library modules abc, dataclasses, signal, and threading; and the 3rd-party modules aiohttp, gpiozero, and requests.</p>\n<p><code>Note on Photosensitivity:</code><br />\nBased on <a href=\"https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions\">this epilepsy.com article</a>, this presentation should be safe for any photosensitive audience member.  I will include this information in a slide at the beginning of the presentation, and give anyone in the audience the chance to leave or ask questions before proceeding.</p>\n<ul>\n<li>The sign project uses standard 60 watt incandescent bulbs, which are not capable of producing a strobe effect.</li>\n<li>For further safety, during the presentation, bulbs will not cycle on and off more than 3 times per second.</li>\n<li>Additionally, the room’s lighting will not be darkened more than usual for a standard presentation.</li>\n</ul>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Mike McCaffrey",
+        "avatar": "https://pretalx.com/media/avatars/ZGQHWH_RJJkAbF.jpg",
+        "code": "ZGQHWH",
+        "slug": "mike-mccaffrey"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "**Description**  \n\nIntended to be an entertaining overview of challenges faced and lessons learned working on my first big maker project. Using code snippets, pictures and short demos, I will discuss problems overcome while developing new features and integrating new devices into my humble animated sign, which includes lights along with rhythmic and melodic components. I promise not to dance; no one wants to see that.\n\nThe intended audience is anyone interested in maker projects. I will also be touching on introductory\\-level topics in type hinting; the standard library modules abc, dataclasses, signal, and threading; and the 3rd\\-party modules aiohttp, gpiozero, and requests.\n\n`Note on Photosensitivity:`  \n\nBased on [this epilepsy.com article](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions), this presentation should be safe for any photosensitive audience member. I will include this information in a slide at the beginning of the presentation, and give anyone in the audience the chance to leave or ask questions before proceeding.\n\n* The sign project uses standard 60 watt incandescent bulbs, which are not capable of producing a strobe effect.\n* For further safety, during the presentation, bulbs will not cycle on and off more than 3 times per second.\n* Additionally, the room’s lighting will not be darkened more than usual for a standard presentation.\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/lights-python-action",
+    "speaker_names": "Mike McCaffrey",
+    "description_youtube": "30 Minute Talk by Mike McCaffrey at PyOhio 2025:\n**Description**  \n\nIntended to be an entertaining overview of challenges faced and lessons learned working on my first big maker project. Using code snippets, pictures and short demos, I will discuss problems overcome while developing new features and integrating new devices into my humble animated sign, which includes lights along with rhythmic and melodic components. I promise not to dance; no one wants to see that.\n\nThe intended audience is anyone interested in maker projects. I will also be touching on introductory\\-level topics in type hinting; the standard library modules abc, dataclasses, signal, and threading; and the 3rd\\-party modules aiohttp, gpiozero, and requests.\n\n`Note on Photosensitivity:`  \n\nBased on [this epilepsy.com article](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions), this presentation should be safe for any photosensitive audience member. I will include this information in a slide at the beginning of the presentation, and give anyone in the audience the chance to leave or ask questions before proceeding.\n\n* The sign project uses standard 60 watt incandescent bulbs, which are not capable of producing a strobe effect.\n* For further safety, during the presentation, bulbs will not cycle on and off more than 3 times per second.\n* Additionally, the room’s lighting will not be darkened more than usual for a standard presentation.\nPyOhio talk listing: https://www.pyohio.org/2025/talks/lights-python-action"
+  },
+  {
+    "code": "8TJMMX",
+    "title": "Beyond the Benchmark: Why the \"Best\" Python Dependency Manager Might Not Be Best for You",
+    "slug": "beyond-the-benchmark-why-the-best-python-dependency-manager-not",
+    "description": "<p><strong>Ever wondered why your team still uses pip when benchmarks show alternatives are 10x faster?</strong> The answer lies beyond raw performance metrics.</p>\n<p>In this myth-busting session, I'll reveal surprising insights from analyzing thousands of GitHub repositories and real-world implementation case studies. You'll discover why technical superiority doesn't always translate to organizational success, and how to navigate the complex decision landscape of Python dependency management.</p>\n<p>I'll share:<br />\n- ⚡ Eye-opening performance comparisons between UV, Poetry, Conda, and pip+pyenv<br />\n- 📊 Actual adoption statistics that challenge conventional wisdom<br />\n- 💼 ROI calculations that factor in both technical AND human costs<br />\n- 🛣️ A decision framework for selecting the right tool for YOUR specific context</p>\n<p>Whether you're contemplating a migration, advocating for better tooling, or simply curious about the evolving Python ecosystem, you'll leave with actionable insights that balance technical excellence with organizational reality.</p>\n<p>Don't miss this data-driven exploration of Python's most underappreciated infrastructure challenge!</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Keming He",
+        "avatar": "https://pretalx.com/media/avatars/V3JQKX_HvSMWwM.jpeg",
+        "code": "V3JQKX",
+        "slug": "keming-he"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "**Ever wondered why your team still uses pip when benchmarks show alternatives are 10x faster?** The answer lies beyond raw performance metrics.\n\nIn this myth\\-busting session, I'll reveal surprising insights from analyzing thousands of GitHub repositories and real\\-world implementation case studies. You'll discover why technical superiority doesn't always translate to organizational success, and how to navigate the complex decision landscape of Python dependency management.\n\nI'll share:  \n\n\\- ⚡ Eye\\-opening performance comparisons between UV, Poetry, Conda, and pip\\+pyenv  \n\n\\- 📊 Actual adoption statistics that challenge conventional wisdom  \n\n\\- 💼 ROI calculations that factor in both technical AND human costs  \n\n\\- 🛣️ A decision framework for selecting the right tool for YOUR specific context\n\nWhether you're contemplating a migration, advocating for better tooling, or simply curious about the evolving Python ecosystem, you'll leave with actionable insights that balance technical excellence with organizational reality.\n\nDon't miss this data\\-driven exploration of Python's most underappreciated infrastructure challenge!\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/beyond-the-benchmark-why-the-best-python-dependency-manager-not",
+    "speaker_names": "Keming He",
+    "description_youtube": "30 Minute Talk by Keming He at PyOhio 2025:\n**Ever wondered why your team still uses pip when benchmarks show alternatives are 10x faster?** The answer lies beyond raw performance metrics.\n\nIn this myth\\-busting session, I'll reveal surprising insights from analyzing thousands of GitHub repositories and real\\-world implementation case studies. You'll discover why technical superiority doesn't always translate to organizational success, and how to navigate the complex decision landscape of Python dependency management.\n\nI'll share:  \n\n\\- ⚡ Eye\\-opening performance comparisons between UV, Poetry, Conda, and pip\\+pyenv  \n\n\\- 📊 Actual adoption statistics that challenge conventional wisdom  \n\n\\- 💼 ROI calculations that factor in both technical AND human costs  \n\n\\- 🛣️ A decision framework for selecting the right tool for YOUR specific context\n\nWhether you're contemplating a migration, advocating for better tooling, or simply curious about the evolving Python ecosystem, you'll leave with actionable insights that balance technical excellence with organizational reality.\n\nDon't miss this data\\-driven exploration of Python's most underappreciated infrastructure challenge!\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/beyond-the-benchmark-why-the-best-python-dependency-manager-not"
+  },
+  {
+    "code": "BCR7DQ",
+    "title": "A Bug's Life",
+    "slug": "a-bug-s-life",
+    "description": "<p>A beginner friendly talk that goes from the manifestation of a bug in production, traces it all the way to its inception, and asks what other than code needs to change to ship faster and NOT break things.</p>\n<p>We open with the support rotation pager going off as customers of a low latency realtime system report an outage. With every second of downtime resulting in revenue loss, it is all hands on deck for the site reliability team, Dev team, data team, product owners are peeling down the stack. We will see the to the commit messages in polyglot systems that caused the failure, the bug getting squashed, hotfix getting shipped and crisis is averted.</p>\n<p>Cut to the blameless postmortem - the real life challenges of issue resolution that is more than changing lines in code, debugging workflows, monitoring gaps, testing limitations, navigating change management processes, team dynamics. for each of these pillars we will see what allowed the teams to shift left, and shorten a bug's lifecycle.</p>\n<p>What does the audience get out of it:<br />\nModern software deployments are complex and dynamic ecosystems, an ideal breeding ground for bugs. In a way, the lifecycle of a bug, reveals the truth about the software development lifecycle of a product. <br />\nThis talk takes learnings from multiple real life outages and tries to condense it as a shift-left journey by Continuous Questioning how can we catch bugs in lower environments.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Tathagata Dasgupta",
+        "avatar": "https://pretalx.com/media/avatars/9TGPL7_9Mlit4L.jpg",
+        "code": "9TGPL7",
+        "slug": "tathagata-dasgupta"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "A beginner friendly talk that goes from the manifestation of a bug in production, traces it all the way to its inception, and asks what other than code needs to change to ship faster and NOT break things.\n\nWe open with the support rotation pager going off as customers of a low latency realtime system report an outage. With every second of downtime resulting in revenue loss, it is all hands on deck for the site reliability team, Dev team, data team, product owners are peeling down the stack. We will see the to the commit messages in polyglot systems that caused the failure, the bug getting squashed, hotfix getting shipped and crisis is averted.\n\nCut to the blameless postmortem \\- the real life challenges of issue resolution that is more than changing lines in code, debugging workflows, monitoring gaps, testing limitations, navigating change management processes, team dynamics. for each of these pillars we will see what allowed the teams to shift left, and shorten a bug's lifecycle.\n\nWhat does the audience get out of it:  \n\nModern software deployments are complex and dynamic ecosystems, an ideal breeding ground for bugs. In a way, the lifecycle of a bug, reveals the truth about the software development lifecycle of a product.   \n\nThis talk takes learnings from multiple real life outages and tries to condense it as a shift\\-left journey by Continuous Questioning how can we catch bugs in lower environments.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/a-bug-s-life",
+    "speaker_names": "Tathagata Dasgupta",
+    "description_youtube": "30 Minute Talk by Tathagata Dasgupta at PyOhio 2025:\nA beginner friendly talk that goes from the manifestation of a bug in production, traces it all the way to its inception, and asks what other than code needs to change to ship faster and NOT break things.\n\nWe open with the support rotation pager going off as customers of a low latency realtime system report an outage. With every second of downtime resulting in revenue loss, it is all hands on deck for the site reliability team, Dev team, data team, product owners are peeling down the stack. We will see the to the commit messages in polyglot systems that caused the failure, the bug getting squashed, hotfix getting shipped and crisis is averted.\n\nCut to the blameless postmortem \\- the real life challenges of issue resolution that is more than changing lines in code, debugging workflows, monitoring gaps, testing limitations, navigating change management processes, team dynamics. for each of these pillars we will see what allowed the teams to shift left, and shorten a bug's lifecycle.\n\nWhat does the audience get out of it:  \n\nModern software deployments are complex and dynamic ecosystems, an ideal breeding ground for bugs. In a way, the lifecycle of a bug, reveals the truth about the software development lifecycle of a product.   \n\nThis talk takes learnings from multiple real life outages and tries to condense it as a shift\\-left journey by Continuous Questioning how can we catch bugs in lower environments.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/a-bug-s-life"
+  },
+  {
+    "code": "BPQUPL",
+    "title": "Why Python Loops Are \"Slow\": A Gentle Introduction to Interpretation, Bytecode, and Fast Code",
+    "slug": "why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and",
+    "description": "<p>Python loops are \"slow\", is a phrase every python programmer has heard. For better or worse, it is partially true. This talk breaks down how Python executes code and why that creates overhead, especially in tight loops. I'll also explore how tools like NumPy, SIMD, and JIT compilation achieve massive speedups by working with the CPU instead of against it.</p>\n<p>You should walk away from this talk with more insight into why loops are slow, how python code is executed at a high level, and what you should do about it if anything.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Tyler Riccio",
+        "avatar": "https://pretalx.com/media/avatars/YDUP8W_gSNBNEc.jpg",
+        "code": "YDUP8W",
+        "slug": "tyler-riccio"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Python loops are \"slow\", is a phrase every python programmer has heard. For better or worse, it is partially true. This talk breaks down how Python executes code and why that creates overhead, especially in tight loops. I'll also explore how tools like NumPy, SIMD, and JIT compilation achieve massive speedups by working with the CPU instead of against it.\n\nYou should walk away from this talk with more insight into why loops are slow, how python code is executed at a high level, and what you should do about it if anything.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and",
+    "speaker_names": "Tyler Riccio",
+    "description_youtube": "30 Minute Talk by Tyler Riccio at PyOhio 2025:\nPython loops are \"slow\", is a phrase every python programmer has heard. For better or worse, it is partially true. This talk breaks down how Python executes code and why that creates overhead, especially in tight loops. I'll also explore how tools like NumPy, SIMD, and JIT compilation achieve massive speedups by working with the CPU instead of against it.\n\nYou should walk away from this talk with more insight into why loops are slow, how python code is executed at a high level, and what you should do about it if anything.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and"
+  },
+  {
+    "code": "CAH3YR",
+    "title": "Graph Machine Learning in all its Glory!",
+    "slug": "graph-machine-learning-in-all-its-glory",
+    "description": "<p>Our world is complex: one approach to understanding and learning more about relationships within the data is to represent it as a network or a graph - with entities as nodes and relations between them as edges. Network applications are abundant - Facebook, knowledge databases like Wikipedia, traffic routes, molecular pathways, and the fun starts when we start thinking of the physical world as graphs. Where there’s data, there’s uncertainty and the need to predict the future to make it a little less uncertain, which is why we need machine learning.</p>\n<p><strong>This talk will be about modeling one such network using a Graph Neural Network (GNN) and making some predictions on it using Deep Graph Library, an efficient and scalable open source framework to train and serve GNNs. While GNNs can be used for any ML task, we’ll focus on building a recommendation model.</strong></p>\n<p><strong>But the transition from traditional data structures to graph-based models is not straightforward. Unlike tabular data, graphs require adapting ML principles to accommodate their topological and relational complexities.</strong></p>\n<p>This talk will help participants gain practical insights into modeling their data as graphs and leveraging GNNs to build a recommendation system. After the talk, the audience should have a good understanding about:<br />\n- How to structure their data as graph components and prepare it for modeling<br />\n- What a GNN is and how do we train, evaluate and serve models in DGL<br />\n- End-to-end ML tasks on graph data: best practices to avoid pitfalls</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Shreya Khurana",
+        "avatar": "https://pretalx.com/media/avatars/L79PHK_OYWNOqR.jpg",
+        "code": "L79PHK",
+        "slug": "shreya-khurana"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Our world is complex: one approach to understanding and learning more about relationships within the data is to represent it as a network or a graph \\- with entities as nodes and relations between them as edges. Network applications are abundant \\- Facebook, knowledge databases like Wikipedia, traffic routes, molecular pathways, and the fun starts when we start thinking of the physical world as graphs. Where there’s data, there’s uncertainty and the need to predict the future to make it a little less uncertain, which is why we need machine learning.\n\n**This talk will be about modeling one such network using a Graph Neural Network (GNN) and making some predictions on it using Deep Graph Library, an efficient and scalable open source framework to train and serve GNNs. While GNNs can be used for any ML task, we’ll focus on building a recommendation model.**\n\n**But the transition from traditional data structures to graph\\-based models is not straightforward. Unlike tabular data, graphs require adapting ML principles to accommodate their topological and relational complexities.**\n\nThis talk will help participants gain practical insights into modeling their data as graphs and leveraging GNNs to build a recommendation system. After the talk, the audience should have a good understanding about:  \n\n\\- How to structure their data as graph components and prepare it for modeling  \n\n\\- What a GNN is and how do we train, evaluate and serve models in DGL  \n\n\\- End\\-to\\-end ML tasks on graph data: best practices to avoid pitfalls\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/graph-machine-learning-in-all-its-glory",
+    "speaker_names": "Shreya Khurana",
+    "description_youtube": "30 Minute Talk by Shreya Khurana at PyOhio 2025:\nOur world is complex: one approach to understanding and learning more about relationships within the data is to represent it as a network or a graph \\- with entities as nodes and relations between them as edges. Network applications are abundant \\- Facebook, knowledge databases like Wikipedia, traffic routes, molecular pathways, and the fun starts when we start thinking of the physical world as graphs. Where there’s data, there’s uncertainty and the need to predict the future to make it a little less uncertain, which is why we need machine learning.\n\n**This talk will be about modeling one such network using a Graph Neural Network (GNN) and making some predictions on it using Deep Graph Library, an efficient and scalable open source framework to train and serve GNNs. While GNNs can be used for any ML task, we’ll focus on building a recommendation model.**\n\n**But the transition from traditional data structures to graph\\-based models is not straightforward. Unlike tabular data, graphs require adapting ML principles to accommodate their topological and relational complexities.**\n\nThis talk will help participants gain practical insights into modeling their data as graphs and leveraging GNNs to build a recommendation system. After the talk, the audience should have a good understanding about:  \n\n\\- How to structure their data as graph components and prepare it for modeling  \n\n\\- What a GNN is and how do we train, evaluate and serve models in DGL  \n\n\\- End\\-to\\-end ML tasks on graph data: best practices to avoid pitfalls\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/graph-machine-learning-in-all-its-glory"
+  },
+  {
+    "code": "CGT8CL",
+    "title": "Finding Practical Applications for your Passion Projects",
+    "slug": "finding-practical-applications-for-your-passion-projects",
+    "description": "<p>Getting from \"I'm passionate about this topic\" to actually working in (or on) your dream is a wild leap. Lessons learned from traveling this path the hard way, from finding the right niche for your passion project to getting the right collaborators on board, can't be taught in a classroom.</p>\n<p>These are some of the lessons formed over six years of growing an international charity from two through to 6000 volunteers across the globe. You'll learn tips on applying Python's ecosystem of third-party tools to your project's aim, assembling a diverse team that can assess the needs of a diverse world, and using Python-based tools to build your dream project.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Joe Kaufeld",
+        "avatar": "https://pretalx.com/media/avatars/VR7BAB_HHqFGHO.jpg",
+        "code": "VR7BAB",
+        "slug": "joe-kaufeld"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Getting from \"I'm passionate about this topic\" to actually working in (or on) your dream is a wild leap. Lessons learned from traveling this path the hard way, from finding the right niche for your passion project to getting the right collaborators on board, can't be taught in a classroom.\n\nThese are some of the lessons formed over six years of growing an international charity from two through to 6000 volunteers across the globe. You'll learn tips on applying Python's ecosystem of third\\-party tools to your project's aim, assembling a diverse team that can assess the needs of a diverse world, and using Python\\-based tools to build your dream project.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/finding-practical-applications-for-your-passion-projects",
+    "speaker_names": "Joe Kaufeld",
+    "description_youtube": "30 Minute Talk by Joe Kaufeld at PyOhio 2025:\nGetting from \"I'm passionate about this topic\" to actually working in (or on) your dream is a wild leap. Lessons learned from traveling this path the hard way, from finding the right niche for your passion project to getting the right collaborators on board, can't be taught in a classroom.\n\nThese are some of the lessons formed over six years of growing an international charity from two through to 6000 volunteers across the globe. You'll learn tips on applying Python's ecosystem of third\\-party tools to your project's aim, assembling a diverse team that can assess the needs of a diverse world, and using Python\\-based tools to build your dream project.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/finding-practical-applications-for-your-passion-projects"
+  },
+  {
+    "code": "EASVML",
+    "title": "Write Apps For Your TV With Kodi and Python",
+    "slug": "write-apps-for-your-tv-with-kodi-and-python",
+    "description": "<p>The open-source media player Kodi is designed to play videos and music on your TV, but it also comes with a plugin system that is programmable with Python. This talk will walk through writing a plugin for your set-top-box running Kodi, including packaging, debugging, and dealing with dependencies (there's no pip here).</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Andrew Kubera",
+        "avatar": "https://pretalx.com/media/avatars/PWN7XL_rwMmm7g.jpeg",
+        "code": "PWN7XL",
+        "slug": "andrew-kubera"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "The open\\-source media player Kodi is designed to play videos and music on your TV, but it also comes with a plugin system that is programmable with Python. This talk will walk through writing a plugin for your set\\-top\\-box running Kodi, including packaging, debugging, and dealing with dependencies (there's no pip here).\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/write-apps-for-your-tv-with-kodi-and-python",
+    "speaker_names": "Andrew Kubera",
+    "description_youtube": "30 Minute Talk by Andrew Kubera at PyOhio 2025:\nThe open\\-source media player Kodi is designed to play videos and music on your TV, but it also comes with a plugin system that is programmable with Python. This talk will walk through writing a plugin for your set\\-top\\-box running Kodi, including packaging, debugging, and dealing with dependencies (there's no pip here).\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/write-apps-for-your-tv-with-kodi-and-python"
+  },
+  {
+    "code": "FJGVAW",
+    "title": "Introducing Labrea - How Embracing Declarative, Functional Programming Can Lead You Out of the Tar Pit",
+    "slug": "introducing-labrea-how-embracing-declarative-functional-can-lead",
+    "description": "<p>As a multi-paradigm language, Python gives its users the freedom to solve problems in a vast number of ways. However, this freedom comes with a cost: we must resist the urge to use quick, unsustainable approaches in order to avoid the plague that is software complexity. For many real world problems, using familiar techniques like mutable state and imperative programming make it easier to complete the task while yielding a more complex codebase. In many cases, functional programming offers a way to write simpler code, but the difficulty of committing to it makes it impractical or unappealing to developers.</p>\n<p>Inspired by the 2006 paper <a href=\"https://curtclifton.net/papers/MoseleyMarks06a.pdf\"><em>Out of the Tar Pit</em></a>, and the 2011 talk <a href=\"https://www.youtube.com/watch?v=SxdOUGdseq4\"><em>Simple Made Easy</em></a> by Rich Hickey, <a href=\"https://github.com/8451/labrea\">Labrea</a> is a Python framework that seeks to make the happy path one that results in a simpler codebase that is functional, declarative, and composable. Learn about how Labrea allowed developers at 84.51º (Kroger) to pull the company's most complicated coupon recommender system out of the slow death march of software complexity, and how it might help you.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Austin Warner",
+        "avatar": "https://pretalx.com/media/avatars/ZFU8DY_Rj4w0Ey.jpg",
+        "code": "ZFU8DY",
+        "slug": "austin-warner"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "As a multi\\-paradigm language, Python gives its users the freedom to solve problems in a vast number of ways. However, this freedom comes with a cost: we must resist the urge to use quick, unsustainable approaches in order to avoid the plague that is software complexity. For many real world problems, using familiar techniques like mutable state and imperative programming make it easier to complete the task while yielding a more complex codebase. In many cases, functional programming offers a way to write simpler code, but the difficulty of committing to it makes it impractical or unappealing to developers.\n\nInspired by the 2006 paper [*Out of the Tar Pit*](https://curtclifton.net/papers/MoseleyMarks06a.pdf), and the 2011 talk [*Simple Made Easy*](https://www.youtube.com/watch?v=SxdOUGdseq4) by Rich Hickey, [Labrea](https://github.com/8451/labrea) is a Python framework that seeks to make the happy path one that results in a simpler codebase that is functional, declarative, and composable. Learn about how Labrea allowed developers at 84\\.51º (Kroger) to pull the company's most complicated coupon recommender system out of the slow death march of software complexity, and how it might help you.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/introducing-labrea-how-embracing-declarative-functional-can-lead",
+    "speaker_names": "Austin Warner",
+    "description_youtube": "30 Minute Talk by Austin Warner at PyOhio 2025:\nAs a multi\\-paradigm language, Python gives its users the freedom to solve problems in a vast number of ways. However, this freedom comes with a cost: we must resist the urge to use quick, unsustainable approaches in order to avoid the plague that is software complexity. For many real world problems, using familiar techniques like mutable state and imperative programming make it easier to complete the task while yielding a more complex codebase. In many cases, functional programming offers a way to write simpler code, but the difficulty of committing to it makes it impractical or unappealing to developers.\n\nInspired by the 2006 paper [*Out of the Tar Pit*](https://curtclifton.net/papers/MoseleyMarks06a.pdf), and the 2011 talk [*Simple Made Easy*](https://www.youtube.com/watch?v=SxdOUGdseq4) by Rich Hickey, [Labrea](https://github.com/8451/labrea) is a Python framework that seeks to make the happy path one that results in a simpler codebase that is functional, declarative, and composable. Learn about how Labrea allowed developers at 84\\.51º (Kroger) to pull the company's most complicated coupon recommender system out of the slow death march of software complexity, and how it might help you.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/introducing-labrea-how-embracing-declarative-functional-can-lead"
+  },
+  {
+    "code": "G3ELVB",
+    "title": "The Core Values of a Successful Startup",
+    "slug": "the-core-values-of-a-successful-startup",
+    "description": "<p>What really makes a startup succeed? It’s not just product-market fit or clever tech—it’s the people and the culture they create together. In this talk, I’ll share lessons from my journey across three startups at different stages, through acquisitions, pivots, and cultural transformations.</p>\n<p>I’ll explore the core values that I’ve seen make the biggest difference—not the ones painted on walls, but the ones that show up in code reviews, standups, hard conversations, and late-night problem solving. We’ll talk about:<br />\n    •   Authenticity over performance<br />\n    •   Love and empathy as engineering virtues<br />\n    •   Presence and trust in high-stakes uncertainty<br />\n    •   Balance, sustainability, and knowing when to push or pause<br />\n    •   Grit, growth, and intentionality—what it really takes to build something that lasts</p>\n<p>This talk is for anyone who wants to build or be part of a values-driven team: engineers, tech leads, future founders, or just curious humans trying to build things that matter.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Daniel Kim",
+        "avatar": "https://pretalx.com/media/avatars/XCB3TE_xnPYOhl.jpeg",
+        "code": "XCB3TE",
+        "slug": "daniel-kim"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "What really makes a startup succeed? It’s not just product\\-market fit or clever tech—it’s the people and the culture they create together. In this talk, I’ll share lessons from my journey across three startups at different stages, through acquisitions, pivots, and cultural transformations.\n\nI’ll explore the core values that I’ve seen make the biggest difference—not the ones painted on walls, but the ones that show up in code reviews, standups, hard conversations, and late\\-night problem solving. We’ll talk about:  \n\n • Authenticity over performance  \n\n • Love and empathy as engineering virtues  \n\n • Presence and trust in high\\-stakes uncertainty  \n\n • Balance, sustainability, and knowing when to push or pause  \n\n • Grit, growth, and intentionality—what it really takes to build something that lasts\n\nThis talk is for anyone who wants to build or be part of a values\\-driven team: engineers, tech leads, future founders, or just curious humans trying to build things that matter.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/the-core-values-of-a-successful-startup",
+    "speaker_names": "Daniel Kim",
+    "description_youtube": "30 Minute Talk by Daniel Kim at PyOhio 2025:\nWhat really makes a startup succeed? It’s not just product\\-market fit or clever tech—it’s the people and the culture they create together. In this talk, I’ll share lessons from my journey across three startups at different stages, through acquisitions, pivots, and cultural transformations.\n\nI’ll explore the core values that I’ve seen make the biggest difference—not the ones painted on walls, but the ones that show up in code reviews, standups, hard conversations, and late\\-night problem solving. We’ll talk about:  \n\n • Authenticity over performance  \n\n • Love and empathy as engineering virtues  \n\n • Presence and trust in high\\-stakes uncertainty  \n\n • Balance, sustainability, and knowing when to push or pause  \n\n • Grit, growth, and intentionality—what it really takes to build something that lasts\n\nThis talk is for anyone who wants to build or be part of a values\\-driven team: engineers, tech leads, future founders, or just curious humans trying to build things that matter.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/the-core-values-of-a-successful-startup"
+  },
+  {
+    "code": "GBBXZJ",
+    "title": "Chasten Your Python Program: Configurable Program Analysis and Linting with XPath",
+    "slug": "chasten-your-python-program-configurable-program-analysis-and",
+    "description": "<h2>Abstract</h2>\n<p>Stop wrestling with regular expressions (regex) and complex abstract syntax tree<br />\n(AST)-based frameworks to analyze and lint your Python code! Chasten offers an<br />\nelegant solution by leveraging XPath expressions to search Python's abstract<br />\nsyntax tree, making static code analysis both powerful and accessible. In this<br />\ntalk, you'll discover how to implement custom linting rules, enforce coding<br />\nstandards, and perform sophisticated pattern matching in your Python projects<br />\nusing a tool designed for both simplicity and flexibility. Whether you're a<br />\ndeveloper tired of writing fragile regex patterns, an instructor validating<br />\nstudent code, or a project maintainer who wants to ensure code quality, Chasten<br />\nprovides the perfect balance of power and usability for your static analysis<br />\nneeds. More details about chasten are available at:<br />\n<a href=\"https://github.com/AstuteSource/chasten\">https://github.com/AstuteSource/chasten</a>.</p>\n<h2>Key Takeaways</h2>\n<ul>\n<li>Create custom linting rules through simple YAML configuration</li>\n<li>Practical examples of enforcing code standards on documentation and code</li>\n<li>Ways to analyze results through interactive dashboards with Datasette</li>\n<li>How to integrate Chasten into development workflow and CI/CD pipelines</li>\n</ul>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Gregory M. Kapfhammer",
+        "avatar": "https://pretalx.com/media/avatars/WUSBZJ_hJj7oDc.png",
+        "code": "WUSBZJ",
+        "slug": "gregory-m-kapfhammer"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Abstract\n--------\n\nStop wrestling with regular expressions (regex) and complex abstract syntax tree  \n\n(AST)\\-based frameworks to analyze and lint your Python code! Chasten offers an  \n\nelegant solution by leveraging XPath expressions to search Python's abstract  \n\nsyntax tree, making static code analysis both powerful and accessible. In this  \n\ntalk, you'll discover how to implement custom linting rules, enforce coding  \n\nstandards, and perform sophisticated pattern matching in your Python projects  \n\nusing a tool designed for both simplicity and flexibility. Whether you're a  \n\ndeveloper tired of writing fragile regex patterns, an instructor validating  \n\nstudent code, or a project maintainer who wants to ensure code quality, Chasten  \n\nprovides the perfect balance of power and usability for your static analysis  \n\nneeds. More details about chasten are available at:  \n\nhttps://github.com/AstuteSource/chasten.\n\nKey Takeaways\n-------------\n\n* Create custom linting rules through simple YAML configuration\n* Practical examples of enforcing code standards on documentation and code\n* Ways to analyze results through interactive dashboards with Datasette\n* How to integrate Chasten into development workflow and CI/CD pipelines\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/chasten-your-python-program-configurable-program-analysis-and",
+    "speaker_names": "Gregory M. Kapfhammer",
+    "description_youtube": "30 Minute Talk by Gregory M. Kapfhammer at PyOhio 2025:\nAbstract\n--------\n\nStop wrestling with regular expressions (regex) and complex abstract syntax tree  \n\n(AST)\\-based frameworks to analyze and lint your Python code! Chasten offers an  \n\nelegant solution by leveraging XPath expressions to search Python's abstract  \n\nsyntax tree, making static code analysis both powerful and accessible. In this  \n\ntalk, you'll discover how to implement custom linting rules, enforce coding  \n\nstandards, and perform sophisticated pattern matching in your Python projects  \n\nusing a tool designed for both simplicity and flexibility. Whether you're a  \n\ndeveloper tired of writing fragile regex patterns, an instructor validating  \n\nstudent code, or a project maintainer who wants to ensure code quality, Chasten  \n\nprovides the perfect balance of power and usability for your static analysis  \n\nneeds. More details about chasten are available at:  \n\nhttps://github.com/AstuteSource/chasten.\n\nKey Takeaways\n-------------\n\n* Create custom linting rules through simple YAML configuration\n* Practical examples of enforcing code standards on documentation and code\n* Ways to analyze results through interactive dashboards with Datasette\n* How to integrate Chasten into development workflow and CI/CD pipelines\nPyOhio talk listing: https://www.pyohio.org/2025/talks/chasten-your-python-program-configurable-program-analysis-and"
+  },
+  {
+    "code": "GFVZHY",
+    "title": "Demystifying AI Agents with Python Code",
+    "slug": "demystifying-ai-agents-with-python-code",
+    "description": "<p>Everyone’s talking about AI Agents! But what are they, and how can you build them? This talk cuts through the hype. Drawing on a year spent developing a GenAI platform, I'll show you that creating powerful AI Agents is within your reach, no advanced degree required.</p>\n<p>We’ll define agents practically: Large Language Models combined with tools and memory. Moving beyond the abstract definition, I’ll show you how to build your first agent using the OpenAI Python SDK and fundamental Python concepts you’re already familiar with: functions, loops, and conditions. From there, I will demonstrate how you can use the CrewAI framework to abstract away the boilerplate code, allowing for simpler setup of multi-agent systems.</p>\n<p>By the end, you won't just understand agents; you'll be equipped and inspired to build your own, ready to tackle custom tasks by integrating the APIs that matter to you.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "William Horton",
+        "avatar": "https://pretalx.com/media/avatars/V73QRP_UIsrld4.jpg",
+        "code": "V73QRP",
+        "slug": "william-horton"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Everyone’s talking about AI Agents! But what are they, and how can you build them? This talk cuts through the hype. Drawing on a year spent developing a GenAI platform, I'll show you that creating powerful AI Agents is within your reach, no advanced degree required.\n\nWe’ll define agents practically: Large Language Models combined with tools and memory. Moving beyond the abstract definition, I’ll show you how to build your first agent using the OpenAI Python SDK and fundamental Python concepts you’re already familiar with: functions, loops, and conditions. From there, I will demonstrate how you can use the CrewAI framework to abstract away the boilerplate code, allowing for simpler setup of multi\\-agent systems.\n\nBy the end, you won't just understand agents; you'll be equipped and inspired to build your own, ready to tackle custom tasks by integrating the APIs that matter to you.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/demystifying-ai-agents-with-python-code",
+    "speaker_names": "William Horton",
+    "description_youtube": "30 Minute Talk by William Horton at PyOhio 2025:\nEveryone’s talking about AI Agents! But what are they, and how can you build them? This talk cuts through the hype. Drawing on a year spent developing a GenAI platform, I'll show you that creating powerful AI Agents is within your reach, no advanced degree required.\n\nWe’ll define agents practically: Large Language Models combined with tools and memory. Moving beyond the abstract definition, I’ll show you how to build your first agent using the OpenAI Python SDK and fundamental Python concepts you’re already familiar with: functions, loops, and conditions. From there, I will demonstrate how you can use the CrewAI framework to abstract away the boilerplate code, allowing for simpler setup of multi\\-agent systems.\n\nBy the end, you won't just understand agents; you'll be equipped and inspired to build your own, ready to tackle custom tasks by integrating the APIs that matter to you.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/demystifying-ai-agents-with-python-code"
+  },
+  {
+    "code": "H3GQP7",
+    "title": "Hyperdimensional Computing for Hackers",
+    "slug": "hyperdimensional-computing-for-hackers",
+    "description": "<p>In this session, we will explore the concept of hyperdimensional computing (HDC), a brain-inspired method of computing. We'll begin by talking about neurons and the brain. Through simple Python examples we’ll dive into HDC and answer: What it is? How does it work? And, how does it learn? We will review how other researchers have applied HDC and demonstrate how it can be used for solving cybersecurity tasks.<br />\nWhere deep learning fails, HDC excels. No supercomputer? No problem. HDC offers interpretability, low energy requirements, robustness to errors, online learning, on-device learning, and more. By pushing the difficult calculations into the embedding process, learning becomes a cinch. By the end of this talk, attendees will have everything they need to teach their own hyperdimensional computing models.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Anthony",
+        "avatar": "https://pretalx.com/media/avatars/3NMPXV_sl2RZpJ.jpg",
+        "code": "3NMPXV",
+        "slug": "anthony"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "In this session, we will explore the concept of hyperdimensional computing (HDC), a brain\\-inspired method of computing. We'll begin by talking about neurons and the brain. Through simple Python examples we’ll dive into HDC and answer: What it is? How does it work? And, how does it learn? We will review how other researchers have applied HDC and demonstrate how it can be used for solving cybersecurity tasks.  \n\nWhere deep learning fails, HDC excels. No supercomputer? No problem. HDC offers interpretability, low energy requirements, robustness to errors, online learning, on\\-device learning, and more. By pushing the difficult calculations into the embedding process, learning becomes a cinch. By the end of this talk, attendees will have everything they need to teach their own hyperdimensional computing models.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/hyperdimensional-computing-for-hackers",
+    "speaker_names": "Anthony",
+    "description_youtube": "30 Minute Talk by Anthony at PyOhio 2025:\nIn this session, we will explore the concept of hyperdimensional computing (HDC), a brain\\-inspired method of computing. We'll begin by talking about neurons and the brain. Through simple Python examples we’ll dive into HDC and answer: What it is? How does it work? And, how does it learn? We will review how other researchers have applied HDC and demonstrate how it can be used for solving cybersecurity tasks.  \n\nWhere deep learning fails, HDC excels. No supercomputer? No problem. HDC offers interpretability, low energy requirements, robustness to errors, online learning, on\\-device learning, and more. By pushing the difficult calculations into the embedding process, learning becomes a cinch. By the end of this talk, attendees will have everything they need to teach their own hyperdimensional computing models.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/hyperdimensional-computing-for-hackers"
+  },
+  {
+    "code": "HKC99U",
+    "title": "Quantum Computing with Python: From Qubits to Circuits",
+    "slug": "quantum-computing-with-python-from-qubits-to-circuits",
+    "description": "<h2>Quantum Computing with Python: From Qubits to Circuits</h2>\n<p>Have you heard the buzz about quantum computing and wondered what it <em>actually</em> means? This beginner-friendly talk introduces the fundamentals of quantum computing using the language we all love; Python.</p>\n<p>We’ll start by breaking down core quantum concepts like <strong>qubits</strong>, <strong>superposition</strong>, <strong>entanglement</strong>, and <strong>quantum gates</strong> in simple terms. Then, we’ll bring those ideas to life with real code using <a href=\"https://qiskit.org/\">Qiskit</a>, a powerful open-source quantum computing framework built in Python.</p>\n<p>You'll learn how to:</p>\n<ul>\n<li>Simulate qubits and quantum circuits</li>\n<li>Visualize quantum states and interference</li>\n<li>Run your own quantum circuits on a real IBM quantum computer (yes, free and live!)</li>\n</ul>\n<p>Along the way, we’ll highlight where quantum computing stands today, where Python fits in the ecosystem, and how you can get involved; whether you're a hobbyist, educator, or software developer.</p>\n<p>No prior knowledge of quantum mechanics is needed. If you can write a 'for' loop, you can build your first quantum circuit.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Temitope Adeniyi",
+        "avatar": "https://pretalx.com/media/avatars/SK8CK9_nVofiGu.jpg",
+        "code": "SK8CK9",
+        "slug": "temitope-adeniyi"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Quantum Computing with Python: From Qubits to Circuits\n------------------------------------------------------\n\nHave you heard the buzz about quantum computing and wondered what it *actually* means? This beginner\\-friendly talk introduces the fundamentals of quantum computing using the language we all love; Python.\n\nWe’ll start by breaking down core quantum concepts like **qubits**, **superposition**, **entanglement**, and **quantum gates** in simple terms. Then, we’ll bring those ideas to life with real code using [Qiskit](https://qiskit.org/), a powerful open\\-source quantum computing framework built in Python.\n\nYou'll learn how to:\n\n* Simulate qubits and quantum circuits\n* Visualize quantum states and interference\n* Run your own quantum circuits on a real IBM quantum computer (yes, free and live!)\n\nAlong the way, we’ll highlight where quantum computing stands today, where Python fits in the ecosystem, and how you can get involved; whether you're a hobbyist, educator, or software developer.\n\nNo prior knowledge of quantum mechanics is needed. If you can write a 'for' loop, you can build your first quantum circuit.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/quantum-computing-with-python-from-qubits-to-circuits",
+    "speaker_names": "Temitope Adeniyi",
+    "description_youtube": "30 Minute Talk by Temitope Adeniyi at PyOhio 2025:\nQuantum Computing with Python: From Qubits to Circuits\n------------------------------------------------------\n\nHave you heard the buzz about quantum computing and wondered what it *actually* means? This beginner\\-friendly talk introduces the fundamentals of quantum computing using the language we all love; Python.\n\nWe’ll start by breaking down core quantum concepts like **qubits**, **superposition**, **entanglement**, and **quantum gates** in simple terms. Then, we’ll bring those ideas to life with real code using [Qiskit](https://qiskit.org/), a powerful open\\-source quantum computing framework built in Python.\n\nYou'll learn how to:\n\n* Simulate qubits and quantum circuits\n* Visualize quantum states and interference\n* Run your own quantum circuits on a real IBM quantum computer (yes, free and live!)\n\nAlong the way, we’ll highlight where quantum computing stands today, where Python fits in the ecosystem, and how you can get involved; whether you're a hobbyist, educator, or software developer.\n\nNo prior knowledge of quantum mechanics is needed. If you can write a 'for' loop, you can build your first quantum circuit.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/quantum-computing-with-python-from-qubits-to-circuits"
+  },
+  {
+    "code": "K9WBAG",
+    "title": "From Busy Waiting to Async Awaiting: A journey from iterators to asyncio",
+    "slug": "from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to",
+    "description": "<p><strong>Category:</strong><br />\nCore python / Concurrency</p>\n<p><strong>Description:</strong><br />\nEver wonder how Python’s iterator protocol connects all the way up to <code>asyncio</code>?</p>\n<p>In this talk, we'll start with a gentle dive into the fundamentals of iterators, generators, coroutines and async coroutines, including how they work at a high level. From there, we will follow an exciting journey of a humble customer service line — starting with a single agent helping one customer at a time, gradually leveling it up into an efficient, concurrent system using generators, coroutines and asyncio. Through this journey, we'll explore how each concept builds on top of the previous one, all with clear runnable code.</p>\n<p><strong>Python level:</strong><br />\nBeginner - Intermediate</p>\n<p><strong>Target audience:</strong><br />\nIf you are a beginner or an intermediate Python developer curios about Python's async capabilities, aiming to write more idiomatic python code (or just looking to flex on your teammates with some cool async python), this talk is for you.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Vignesh Iyer",
+        "avatar": "https://pretalx.com/media/avatars/8ZXJG9_Crovi6g.png",
+        "code": "8ZXJG9",
+        "slug": "vignesh-iyer"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "**Category:**  \n\nCore python / Concurrency\n\n**Description:**  \n\nEver wonder how Python’s iterator protocol connects all the way up to `asyncio`?\n\nIn this talk, we'll start with a gentle dive into the fundamentals of iterators, generators, coroutines and async coroutines, including how they work at a high level. From there, we will follow an exciting journey of a humble customer service line — starting with a single agent helping one customer at a time, gradually leveling it up into an efficient, concurrent system using generators, coroutines and asyncio. Through this journey, we'll explore how each concept builds on top of the previous one, all with clear runnable code.\n\n**Python level:**  \n\nBeginner \\- Intermediate\n\n**Target audience:**  \n\nIf you are a beginner or an intermediate Python developer curios about Python's async capabilities, aiming to write more idiomatic python code (or just looking to flex on your teammates with some cool async python), this talk is for you.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to",
+    "speaker_names": "Vignesh Iyer",
+    "description_youtube": "30 Minute Talk by Vignesh Iyer at PyOhio 2025:\n**Category:**  \n\nCore python / Concurrency\n\n**Description:**  \n\nEver wonder how Python’s iterator protocol connects all the way up to `asyncio`?\n\nIn this talk, we'll start with a gentle dive into the fundamentals of iterators, generators, coroutines and async coroutines, including how they work at a high level. From there, we will follow an exciting journey of a humble customer service line — starting with a single agent helping one customer at a time, gradually leveling it up into an efficient, concurrent system using generators, coroutines and asyncio. Through this journey, we'll explore how each concept builds on top of the previous one, all with clear runnable code.\n\n**Python level:**  \n\nBeginner \\- Intermediate\n\n**Target audience:**  \n\nIf you are a beginner or an intermediate Python developer curios about Python's async capabilities, aiming to write more idiomatic python code (or just looking to flex on your teammates with some cool async python), this talk is for you.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to"
+  },
+  {
+    "code": "KCL8TZ",
+    "title": "Using Python in the Concrete Industry",
+    "slug": "using-python-in-the-concrete-industry",
+    "description": "<p>Working in the concrete industry, I often found myself doing tasks that felt repetitive. Python has been great for automating these tasks, with the goal being to both increase efficiency and remove opportunities for human error, which can be costly in this business. Automating things has also taught me that seemingly simple tasks can be more complicated than they seem.</p>\n<p>As part of this I will discuss libraries that I have found useful, including ezdxf, which can be used for drafting and creating files that can be read by CAD software.</p>\n<p>Python really is a programming language for everyone, and can have a use case in places you might not expect.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Scott Windsor",
+        "avatar": "https://pretalx.com/media/avatars/A9WKCF_369Euu7.png",
+        "code": "A9WKCF",
+        "slug": "scott-windsor"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Working in the concrete industry, I often found myself doing tasks that felt repetitive. Python has been great for automating these tasks, with the goal being to both increase efficiency and remove opportunities for human error, which can be costly in this business. Automating things has also taught me that seemingly simple tasks can be more complicated than they seem.\n\nAs part of this I will discuss libraries that I have found useful, including ezdxf, which can be used for drafting and creating files that can be read by CAD software.\n\nPython really is a programming language for everyone, and can have a use case in places you might not expect.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/using-python-in-the-concrete-industry",
+    "speaker_names": "Scott Windsor",
+    "description_youtube": "30 Minute Talk by Scott Windsor at PyOhio 2025:\nWorking in the concrete industry, I often found myself doing tasks that felt repetitive. Python has been great for automating these tasks, with the goal being to both increase efficiency and remove opportunities for human error, which can be costly in this business. Automating things has also taught me that seemingly simple tasks can be more complicated than they seem.\n\nAs part of this I will discuss libraries that I have found useful, including ezdxf, which can be used for drafting and creating files that can be read by CAD software.\n\nPython really is a programming language for everyone, and can have a use case in places you might not expect.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/using-python-in-the-concrete-industry"
+  },
+  {
+    "code": "L7HLC9",
+    "title": "Getting advice from Myself using Flatfiles, Postgres, and Frontmatter",
+    "slug": "getting-advice-from-myself-using-flatfiles-postgres-and",
+    "description": "<p>Cicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.</p>\n<p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Jay Miller",
+        "avatar": "https://pretalx.com/media/avatars/PFEFTZ_eBO4cb1.jpg",
+        "code": "PFEFTZ",
+        "slug": "jay-miller"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Cicero said \\- there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.\n\nThis talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/getting-advice-from-myself-using-flatfiles-postgres-and",
+    "speaker_names": "Jay Miller",
+    "description_youtube": "30 Minute Talk by Jay Miller at PyOhio 2025:\nCicero said \\- there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.\n\nThis talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/getting-advice-from-myself-using-flatfiles-postgres-and"
+  },
+  {
+    "code": "LP8NKE",
+    "title": "GDIOCSpider - Extracting and Identifying IOCs from the GDriveverse",
+    "slug": "gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse",
+    "description": "<p>Google Drive in recent years has become one of the most abused platforms for threat actors to conduct illegal and malicious activity. Threat actors use Google accounts to launch, store, and log malware, effectively turning Drive into a command and control center. On the side of legal and ethical activity, Google Drive remains a popular platform for security researchers to store these artifacts in summarized write-ups and spreadsheets of malicious and illegal activity observed. Much like an archaeologist looks for artifacts providing clues of the history of civilization, security researchers look for Indicators of Compromise (IOCs), which are clues to what a threat actor has done. Security engineers have worked across decades to build out tooling to analyze hard drives and network resources; however, similar advances to analyze Google Drive resources have remained underdeveloped. Along the same line, tools that aggregate and summarize collections of records on IOCs stored in Google Drive by researchers are also lacking.<br />\n    The GDIOCSpider (Google Drive IOC Spider) provides a tool for both of these use cases. This open-source, configurable, Python tool is capable of crawling through an entire Google Drive, analyzing its file contents, and searching for various defined IOC (Indicators of Compromise) types to extract. This tool outputs a summary of all discovered artifacts across all files, erasing the need for security researchers to manually sift through cloud stores. Supplementing the compromised account use case, the same tool can be used to aggregate IOCs collected in personal or corporate Google Drive accounts in the form of case records gathered by security researchers. This ‘environment agnostic’ approach is how GDIOCSpider enables security researchers to perform efficient IOC research in Google Drive.<br />\n    GDIOCSpider supports capabilities for both user accounts and service accounts through the Google Drive API. It has allowlist and denylist capabilities for both folders and files to prevent access of files with compliance and security restrictions. For those that are very interested in performing local IOC analysis and extraction, GDIOCSpider contains a build abstract tool ‘IOCFlagger’ within the context of the source code. IOCFlagger offers a rich IOC parser that is capable of both loose and strict matching for use cases where it is necessary to search within a string, or simply match a string to an IOC type exactly. The full suite of tools under the GDIOCSpider’s umbrella enables the user or team operating it to enter the “GDriveverse” of Google account incident response, and provide meaningful data for case work and research.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Noah Dunn",
+        "avatar": "https://pretalx.com/media/avatars/UAWQFP_SLWr5ti.jpg",
+        "code": "UAWQFP",
+        "slug": "noah-dunn"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Google Drive in recent years has become one of the most abused platforms for threat actors to conduct illegal and malicious activity. Threat actors use Google accounts to launch, store, and log malware, effectively turning Drive into a command and control center. On the side of legal and ethical activity, Google Drive remains a popular platform for security researchers to store these artifacts in summarized write\\-ups and spreadsheets of malicious and illegal activity observed. Much like an archaeologist looks for artifacts providing clues of the history of civilization, security researchers look for Indicators of Compromise (IOCs), which are clues to what a threat actor has done. Security engineers have worked across decades to build out tooling to analyze hard drives and network resources; however, similar advances to analyze Google Drive resources have remained underdeveloped. Along the same line, tools that aggregate and summarize collections of records on IOCs stored in Google Drive by researchers are also lacking.  \n\n The GDIOCSpider (Google Drive IOC Spider) provides a tool for both of these use cases. This open\\-source, configurable, Python tool is capable of crawling through an entire Google Drive, analyzing its file contents, and searching for various defined IOC (Indicators of Compromise) types to extract. This tool outputs a summary of all discovered artifacts across all files, erasing the need for security researchers to manually sift through cloud stores. Supplementing the compromised account use case, the same tool can be used to aggregate IOCs collected in personal or corporate Google Drive accounts in the form of case records gathered by security researchers. This ‘environment agnostic’ approach is how GDIOCSpider enables security researchers to perform efficient IOC research in Google Drive.  \n\n GDIOCSpider supports capabilities for both user accounts and service accounts through the Google Drive API. It has allowlist and denylist capabilities for both folders and files to prevent access of files with compliance and security restrictions. For those that are very interested in performing local IOC analysis and extraction, GDIOCSpider contains a build abstract tool ‘IOCFlagger’ within the context of the source code. IOCFlagger offers a rich IOC parser that is capable of both loose and strict matching for use cases where it is necessary to search within a string, or simply match a string to an IOC type exactly. The full suite of tools under the GDIOCSpider’s umbrella enables the user or team operating it to enter the “GDriveverse” of Google account incident response, and provide meaningful data for case work and research.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse",
+    "speaker_names": "Noah Dunn",
+    "description_youtube": "30 Minute Talk by Noah Dunn at PyOhio 2025:\nGoogle Drive in recent years has become one of the most abused platforms for threat actors to conduct illegal and malicious activity. Threat actors use Google accounts to launch, store, and log malware, effectively turning Drive into a command and control center. On the side of legal and ethical activity, Google Drive remains a popular platform for security researchers to store these artifacts in summarized write\\-ups and spreadsheets of malicious and illegal activity observed. Much like an archaeologist looks for artifacts providing clues of the history of civilization, security researchers look for Indicators of Compromise (IOCs), which are clues to what a threat actor has done. Security engineers have worked across decades to build out tooling to analyze hard drives and network resources; however, similar advances to analyze Google Drive resources have remained underdeveloped. Along the same line, tools that aggregate and summarize collections of records on IOCs stored in Google Drive by researchers are also lacking.  \n\n The GDIOCSpider (Google Drive IOC Spider) provides a tool for both of these use cases. This open\\-source, configurable, Python tool is capable of crawling through an entire Google Drive, analyzing its file contents, and searching for various defined IOC (Indicators of Compromise) types to extract. This tool outputs a summary of all discovered artifacts across all files, erasing the need for security researchers to manually sift through cloud stores. Supplementing the compromised account use case, the same tool can be used to aggregate IOCs collected in personal or corporate Google Drive accounts in the form of case records gathered by security researchers. This ‘environment agnostic’ approach is how GDIOCSpider enables security researchers to perform efficient IOC research in Google Drive.  \n\n GDIOCSpider supports capabilities for both user accounts and service accounts through the Google Drive API. It has allowlist and denylist capabilities for both folders and files to prevent access of files with compliance and security restrictions. For those that are very interested in performing local IOC analysis and extraction, GDIOCSpider contains a build abstract tool ‘IOCFlagger’ within the context of the source code. IOCFlagger offers a rich IOC parser that is capable of both loose and strict matching for use cases where it is necessary to search within a string, or simply match a string to an IOC type exactly. The full suite of tools under the GDIOCSpider’s umbrella enables the user or team operating it to enter the “GDriveverse” of Google account incident response, and provide meaningful data for case work and research.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse"
+  },
+  {
+    "code": "LYSGSL",
+    "title": "Wildfires!",
+    "slug": "wildfires",
+    "description": "<p>Wildfires have become more frequent nationwide, causing chaos not only within fire zones but also affecting communities far away through smoke and poor air quality. In this talk, we'll explore the world of wildfires, understanding common terminology and clearing up misconceptions. We will explore data sources, potential file formats, and essential data fields using fire perimeter data. By leveraging Python and Geopandas we will clean a dataset, analyze the cleaned dataset, and  finally create compelling visualizations of our wildfire data.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "lazouich",
+        "avatar": null,
+        "code": "3AV3YC",
+        "slug": "lazouich"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Wildfires have become more frequent nationwide, causing chaos not only within fire zones but also affecting communities far away through smoke and poor air quality. In this talk, we'll explore the world of wildfires, understanding common terminology and clearing up misconceptions. We will explore data sources, potential file formats, and essential data fields using fire perimeter data. By leveraging Python and Geopandas we will clean a dataset, analyze the cleaned dataset, and finally create compelling visualizations of our wildfire data.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/wildfires",
+    "speaker_names": "lazouich",
+    "description_youtube": "30 Minute Talk by lazouich at PyOhio 2025:\nWildfires have become more frequent nationwide, causing chaos not only within fire zones but also affecting communities far away through smoke and poor air quality. In this talk, we'll explore the world of wildfires, understanding common terminology and clearing up misconceptions. We will explore data sources, potential file formats, and essential data fields using fire perimeter data. By leveraging Python and Geopandas we will clean a dataset, analyze the cleaned dataset, and finally create compelling visualizations of our wildfire data.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/wildfires"
+  },
+  {
+    "code": "MPJU9D",
+    "title": "Beyond the Black Box: Interpreting ML models with SHAP",
+    "slug": "beyond-the-black-box-interpreting-ml-models-with-shap",
+    "description": "<p>ML models behave as a black box in most scenarios. Model predicts or provides a certain output but it is very difficult to generate any actionable insights directly. This is mostly because we generally have no idea which features are contributing the most to the model behavior internally. SHAP provides a certain way to explain model predictions, and can act as an important tool in a data scientist’s toolbox.</p>\n<p>In this talk, we will begin by explaining to the audience the need for explainable ML models and why it is important to understand beyond what the model outputs. We will then briefly go over the mathematical intuition behind Shapley values and its origins from game theory. After that we will walk through a couple of case studies of tree based and neural network based models. We will be focusing on interpretation of SHAP through various plots using the shap library in Python. Finally, we will discuss the best practices for interpreting SHAP visualizations, handling large datasets, and common pitfalls to avoid.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Avik Basu",
+        "avatar": "https://pretalx.com/media/avatars/Z7XLKH_eQXpfE1.jpg",
+        "code": "Z7XLKH",
+        "slug": "avik-basu"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "ML models behave as a black box in most scenarios. Model predicts or provides a certain output but it is very difficult to generate any actionable insights directly. This is mostly because we generally have no idea which features are contributing the most to the model behavior internally. SHAP provides a certain way to explain model predictions, and can act as an important tool in a data scientist’s toolbox.\n\nIn this talk, we will begin by explaining to the audience the need for explainable ML models and why it is important to understand beyond what the model outputs. We will then briefly go over the mathematical intuition behind Shapley values and its origins from game theory. After that we will walk through a couple of case studies of tree based and neural network based models. We will be focusing on interpretation of SHAP through various plots using the shap library in Python. Finally, we will discuss the best practices for interpreting SHAP visualizations, handling large datasets, and common pitfalls to avoid.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/beyond-the-black-box-interpreting-ml-models-with-shap",
+    "speaker_names": "Avik Basu",
+    "description_youtube": "30 Minute Talk by Avik Basu at PyOhio 2025:\nML models behave as a black box in most scenarios. Model predicts or provides a certain output but it is very difficult to generate any actionable insights directly. This is mostly because we generally have no idea which features are contributing the most to the model behavior internally. SHAP provides a certain way to explain model predictions, and can act as an important tool in a data scientist’s toolbox.\n\nIn this talk, we will begin by explaining to the audience the need for explainable ML models and why it is important to understand beyond what the model outputs. We will then briefly go over the mathematical intuition behind Shapley values and its origins from game theory. After that we will walk through a couple of case studies of tree based and neural network based models. We will be focusing on interpretation of SHAP through various plots using the shap library in Python. Finally, we will discuss the best practices for interpreting SHAP visualizations, handling large datasets, and common pitfalls to avoid.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/beyond-the-black-box-interpreting-ml-models-with-shap"
+  },
+  {
+    "code": "NXSHT7",
+    "title": "When Your SME Ghosts You: Using GenAI to Build a Database Documentation Agent",
+    "slug": "when-your-sme-ghosts-you-using-genai-to-build-a-database-agent",
+    "description": "<p>Have you ever been handed a mystery database and told, “You’ll figure it out”... with no documentation, no SME, and no time?</p>\n<p>In this session, I’ll share how I turned a frustrating (and very relatable) real-world problem into a capstone project for Kaggle's Gen AI 5 Day Intensive Course with Google: building a GenAI-powered Database Documentation Agent using Python, SQLite, and the Gemini API — aka what I like to call my SME Ghost Protocol.</p>\n<p>I’ll walk through how I used GenAI to automatically generate natural language summaries, answer ad-hoc schema questions, and create entity relationship diagrams — even when human help wasn't available.</p>\n<p>We'll dive into the challenges of working with GenAI as a \"coding partner,\" designing prompts like communication plans, and lessons learned the hard way about iteration, hallucination, and debugging when you're flying solo.</p>\n<p>Expect live demos, practical takeaways, a little workplace sarcasm, and ideas for how you can launch your own SME Ghost Protocol — because sometimes, GenAI is the only teammate who shows up.👻</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Denise Williams",
+        "avatar": "https://pretalx.com/media/avatars/YLFGE3_He4qNzH.jpg",
+        "code": "YLFGE3",
+        "slug": "denise-williams"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Have you ever been handed a mystery database and told, “You’ll figure it out”... with no documentation, no SME, and no time?\n\nIn this session, I’ll share how I turned a frustrating (and very relatable) real\\-world problem into a capstone project for Kaggle's Gen AI 5 Day Intensive Course with Google: building a GenAI\\-powered Database Documentation Agent using Python, SQLite, and the Gemini API — aka what I like to call my SME Ghost Protocol.\n\nI’ll walk through how I used GenAI to automatically generate natural language summaries, answer ad\\-hoc schema questions, and create entity relationship diagrams — even when human help wasn't available.\n\nWe'll dive into the challenges of working with GenAI as a \"coding partner,\" designing prompts like communication plans, and lessons learned the hard way about iteration, hallucination, and debugging when you're flying solo.\n\nExpect live demos, practical takeaways, a little workplace sarcasm, and ideas for how you can launch your own SME Ghost Protocol — because sometimes, GenAI is the only teammate who shows up.👻\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/when-your-sme-ghosts-you-using-genai-to-build-a-database-agent",
+    "speaker_names": "Denise Williams",
+    "description_youtube": "30 Minute Talk by Denise Williams at PyOhio 2025:\nHave you ever been handed a mystery database and told, “You’ll figure it out”... with no documentation, no SME, and no time?\n\nIn this session, I’ll share how I turned a frustrating (and very relatable) real\\-world problem into a capstone project for Kaggle's Gen AI 5 Day Intensive Course with Google: building a GenAI\\-powered Database Documentation Agent using Python, SQLite, and the Gemini API — aka what I like to call my SME Ghost Protocol.\n\nI’ll walk through how I used GenAI to automatically generate natural language summaries, answer ad\\-hoc schema questions, and create entity relationship diagrams — even when human help wasn't available.\n\nWe'll dive into the challenges of working with GenAI as a \"coding partner,\" designing prompts like communication plans, and lessons learned the hard way about iteration, hallucination, and debugging when you're flying solo.\n\nExpect live demos, practical takeaways, a little workplace sarcasm, and ideas for how you can launch your own SME Ghost Protocol — because sometimes, GenAI is the only teammate who shows up.👻\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/when-your-sme-ghosts-you-using-genai-to-build-a-database-agent"
+  },
+  {
+    "code": "PUBEVY",
+    "title": "Bringing ideas to life with DIY IoT: Visualizing Noise Pollution with a Raspberry Pi and Python",
+    "slug": "bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution",
+    "description": "<p>Discover how to harness the power of IoT to tackle real-world problems using affordable and accessible technology. In this talk, you'll learn how to build an IoT system from off-the-shelf components, collect data from sensors, and visualize the data to tell compelling stories.</p>\n<p>In this talk I'll showcase a project where I used a Raspberry Pi, environmental sensor, and Python to measure and monitor noise levels. This project demonstrates how to design and implement an IoT solution from concept to deployment, including using InfluxDB and Grafana for real-time data visualization, all running in Docker.<br />\nBy the end of this talk, you'll have the skills to bring various pieces of technology together to solve real-world problems. Whether you're an enthusiast, developer, or researcher, this session will inspire you to apply open-source tools and inexpensive hardware in innovative ways to address the challenges in your every day life.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Ryan Carroll",
+        "avatar": "https://pretalx.com/media/avatars/88ETSS_7XgZn4w.jpg",
+        "code": "88ETSS",
+        "slug": "ryan-carroll"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Discover how to harness the power of IoT to tackle real\\-world problems using affordable and accessible technology. In this talk, you'll learn how to build an IoT system from off\\-the\\-shelf components, collect data from sensors, and visualize the data to tell compelling stories.\n\nIn this talk I'll showcase a project where I used a Raspberry Pi, environmental sensor, and Python to measure and monitor noise levels. This project demonstrates how to design and implement an IoT solution from concept to deployment, including using InfluxDB and Grafana for real\\-time data visualization, all running in Docker.  \n\nBy the end of this talk, you'll have the skills to bring various pieces of technology together to solve real\\-world problems. Whether you're an enthusiast, developer, or researcher, this session will inspire you to apply open\\-source tools and inexpensive hardware in innovative ways to address the challenges in your every day life.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution",
+    "speaker_names": "Ryan Carroll",
+    "description_youtube": "30 Minute Talk by Ryan Carroll at PyOhio 2025:\nDiscover how to harness the power of IoT to tackle real\\-world problems using affordable and accessible technology. In this talk, you'll learn how to build an IoT system from off\\-the\\-shelf components, collect data from sensors, and visualize the data to tell compelling stories.\n\nIn this talk I'll showcase a project where I used a Raspberry Pi, environmental sensor, and Python to measure and monitor noise levels. This project demonstrates how to design and implement an IoT solution from concept to deployment, including using InfluxDB and Grafana for real\\-time data visualization, all running in Docker.  \n\nBy the end of this talk, you'll have the skills to bring various pieces of technology together to solve real\\-world problems. Whether you're an enthusiast, developer, or researcher, this session will inspire you to apply open\\-source tools and inexpensive hardware in innovative ways to address the challenges in your every day life.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution"
+  },
+  {
+    "code": "QTMGPJ",
+    "title": "Organizing and Maintaining Your Code-Scape with Python",
+    "slug": "organizing-and-maintaining-your-code-scape-with-python",
+    "description": "<p>If you're a software engineer, a data scientist, or almost any other type of developer, you're probably familiar with the idea of writing well-organized, reusable code. Principles like DRY (\"Don't Repeat Yourself\") and ETC (\"Easy to Change\") are powerful heuristics at the line-by-line level of code. Design concepts like modularity, decoupling, MVC (\"Model-View-Controller\") and \"Fat Model, Skinny Controller\" can help you make software-level organizing decisions. Resources for project-level organization (code, data, documentation, etc.) are abundant and growing fast. Putting all this together in a useful way can be challenging, but there's no shortage of advice, resources, or templates in any of these areas. By comparison, material related to effective organization at the level of the coder's file system or source tree is sparse, harder to find, or designed for a more general audience. This talk uses \"code-scape\" as an umbrella term to consolidate ideas about organizing files and folders, maintaining your codebase, building a second brain, digital filing systems, etc. and shares examples of how you can use lightweight Python scripts to help keep your code-scape organized, searchable, and safeguarded.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Matt Lavin",
+        "avatar": "https://pretalx.com/media/avatars/XDMC3Z_U53oo54.jpg",
+        "code": "XDMC3Z",
+        "slug": "matt-lavin"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "If you're a software engineer, a data scientist, or almost any other type of developer, you're probably familiar with the idea of writing well\\-organized, reusable code. Principles like DRY (\"Don't Repeat Yourself\") and ETC (\"Easy to Change\") are powerful heuristics at the line\\-by\\-line level of code. Design concepts like modularity, decoupling, MVC (\"Model\\-View\\-Controller\") and \"Fat Model, Skinny Controller\" can help you make software\\-level organizing decisions. Resources for project\\-level organization (code, data, documentation, etc.) are abundant and growing fast. Putting all this together in a useful way can be challenging, but there's no shortage of advice, resources, or templates in any of these areas. By comparison, material related to effective organization at the level of the coder's file system or source tree is sparse, harder to find, or designed for a more general audience. This talk uses \"code\\-scape\" as an umbrella term to consolidate ideas about organizing files and folders, maintaining your codebase, building a second brain, digital filing systems, etc. and shares examples of how you can use lightweight Python scripts to help keep your code\\-scape organized, searchable, and safeguarded.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/organizing-and-maintaining-your-code-scape-with-python",
+    "speaker_names": "Matt Lavin",
+    "description_youtube": "30 Minute Talk by Matt Lavin at PyOhio 2025:\nIf you're a software engineer, a data scientist, or almost any other type of developer, you're probably familiar with the idea of writing well\\-organized, reusable code. Principles like DRY (\"Don't Repeat Yourself\") and ETC (\"Easy to Change\") are powerful heuristics at the line\\-by\\-line level of code. Design concepts like modularity, decoupling, MVC (\"Model\\-View\\-Controller\") and \"Fat Model, Skinny Controller\" can help you make software\\-level organizing decisions. Resources for project\\-level organization (code, data, documentation, etc.) are abundant and growing fast. Putting all this together in a useful way can be challenging, but there's no shortage of advice, resources, or templates in any of these areas. By comparison, material related to effective organization at the level of the coder's file system or source tree is sparse, harder to find, or designed for a more general audience. This talk uses \"code\\-scape\" as an umbrella term to consolidate ideas about organizing files and folders, maintaining your codebase, building a second brain, digital filing systems, etc. and shares examples of how you can use lightweight Python scripts to help keep your code\\-scape organized, searchable, and safeguarded.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/organizing-and-maintaining-your-code-scape-with-python"
+  },
+  {
+    "code": "SGYYGL",
+    "title": "Building Custom Data Structures Using Abstract Collections",
+    "slug": "building-custom-data-structures-using-abstract-collections",
+    "description": "<p>Python’s abstract base classes (ABCs) in the <code>collections.abc</code> module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Daniel Schelkoph",
+        "avatar": "https://pretalx.com/media/avatars/NL3RWX_bwKyIfi.jpeg",
+        "code": "NL3RWX",
+        "slug": "daniel-schelkoph"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Python’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built\\-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections",
+    "speaker_names": "Daniel Schelkoph",
+    "description_youtube": "30 Minute Talk by Daniel Schelkoph at PyOhio 2025:\nPython’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built\\-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections"
+  },
+  {
+    "code": "TCRGU8",
+    "title": "Deploy Django: GitOps & Kubernetes Made Easy",
+    "slug": "deploy-django-gitops-kubernetes-made-easy",
+    "description": "<p>Deploying code shouldn’t be stressful. But too often, the journey from local dev to production is fragile, manual, and hard to debug. This talk is about building peace of mind into your pipeline — with GitOps, Kubernetes, and open source tools like Argo CD that make continuous delivery predictable, repeatable, and scalable from the very first release to the 50th.</p>\n<p>We’ll tackle the realities of “day two” DevOps — what happens after the first deploy. From managing rollbacks and coordinating releases to enforcing consistency across dev, staging, and production, you’ll learn how to bring stability and scalability to your delivery pipeline.</p>\n<p>In a live demo, we’ll deploy a full stack Django app from GitHub to production using Argo CD and GitHub Actions — with observability, rollback strategies, and environment parity built in from the start.</p>\n<p><strong>You’ll learn how to:</strong> <br />\n- Set up a GitOps-based CI/CD pipeline that works across all environments<br />\n- Automate rollouts, rollbacks, and version control of infrastructure<br />\n- Understand why Kubernetes is a future-proof platform for Django teams<br />\n- Gain confidence in releasing updates safely, consistently, and at scale<br />\n- Leverage open source tools to eliminate manual deployment headaches</p>\n<p>Whether you're writing the code or leading the team, you'll leave with a clear, practical blueprint for shipping faster — and with fewer surprises.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Calvin Hendryx-Parker",
+        "avatar": "https://pretalx.com/media/avatars/ME3WGG_2M5BJfB.jpg",
+        "code": "ME3WGG",
+        "slug": "calvin-hendryx-parker"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Deploying code shouldn’t be stressful. But too often, the journey from local dev to production is fragile, manual, and hard to debug. This talk is about building peace of mind into your pipeline — with GitOps, Kubernetes, and open source tools like Argo CD that make continuous delivery predictable, repeatable, and scalable from the very first release to the 50th.\n\nWe’ll tackle the realities of “day two” DevOps — what happens after the first deploy. From managing rollbacks and coordinating releases to enforcing consistency across dev, staging, and production, you’ll learn how to bring stability and scalability to your delivery pipeline.\n\nIn a live demo, we’ll deploy a full stack Django app from GitHub to production using Argo CD and GitHub Actions — with observability, rollback strategies, and environment parity built in from the start.\n\n**You’ll learn how to:**   \n\n\\- Set up a GitOps\\-based CI/CD pipeline that works across all environments  \n\n\\- Automate rollouts, rollbacks, and version control of infrastructure  \n\n\\- Understand why Kubernetes is a future\\-proof platform for Django teams  \n\n\\- Gain confidence in releasing updates safely, consistently, and at scale  \n\n\\- Leverage open source tools to eliminate manual deployment headaches\n\nWhether you're writing the code or leading the team, you'll leave with a clear, practical blueprint for shipping faster — and with fewer surprises.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/deploy-django-gitops-kubernetes-made-easy",
+    "speaker_names": "Calvin Hendryx-Parker",
+    "description_youtube": "30 Minute Talk by Calvin Hendryx-Parker at PyOhio 2025:\nDeploying code shouldn’t be stressful. But too often, the journey from local dev to production is fragile, manual, and hard to debug. This talk is about building peace of mind into your pipeline — with GitOps, Kubernetes, and open source tools like Argo CD that make continuous delivery predictable, repeatable, and scalable from the very first release to the 50th.\n\nWe’ll tackle the realities of “day two” DevOps — what happens after the first deploy. From managing rollbacks and coordinating releases to enforcing consistency across dev, staging, and production, you’ll learn how to bring stability and scalability to your delivery pipeline.\n\nIn a live demo, we’ll deploy a full stack Django app from GitHub to production using Argo CD and GitHub Actions — with observability, rollback strategies, and environment parity built in from the start.\n\n**You’ll learn how to:**   \n\n\\- Set up a GitOps\\-based CI/CD pipeline that works across all environments  \n\n\\- Automate rollouts, rollbacks, and version control of infrastructure  \n\n\\- Understand why Kubernetes is a future\\-proof platform for Django teams  \n\n\\- Gain confidence in releasing updates safely, consistently, and at scale  \n\n\\- Leverage open source tools to eliminate manual deployment headaches\n\nWhether you're writing the code or leading the team, you'll leave with a clear, practical blueprint for shipping faster — and with fewer surprises.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/deploy-django-gitops-kubernetes-made-easy"
+  },
+  {
+    "code": "TN9ZZE",
+    "title": "From Data to Insights in Minutes: Accelerating Predictive Modelling (in Python) with AutoML",
+    "slug": "from-data-to-insights-in-minutes-accelerating-predictive-in-with",
+    "description": "<p>Have you ever wondered how Machine Learning could automate your tasks but hesitated due to time constraints or a lack of specialized coding skills? If so, this session is for you! </p>\n<p>Traditionally, building predictive models required specialized coding abilities and a deep understanding of statistical concepts. However, AutoML simplifies this process and can automatically create machine learning models from your data. This session will empower you to use a simple, open-source AutoML tool to quickly create Python-based machine learning prototypes (using the pandas, NumPy, and scikit-learn frameworks) without writing any code. A live demonstration will show how AutoML seamlessly (i) processes input data, (ii) selects and trains the best algorithms for your specific use case, (iii) generates reproducible Python code for easy integration, and most importantly, (iv) how to interpret the results. </p>\n<p>Discover how AutoML can turn your transform your data into actionable insights!</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Shailaja Sampat",
+        "avatar": "https://pretalx.com/media/avatars/BWLCU3_csf4oYv.jpg",
+        "code": "BWLCU3",
+        "slug": "shailaja-sampat"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Have you ever wondered how Machine Learning could automate your tasks but hesitated due to time constraints or a lack of specialized coding skills? If so, this session is for you! \n\nTraditionally, building predictive models required specialized coding abilities and a deep understanding of statistical concepts. However, AutoML simplifies this process and can automatically create machine learning models from your data. This session will empower you to use a simple, open\\-source AutoML tool to quickly create Python\\-based machine learning prototypes (using the pandas, NumPy, and scikit\\-learn frameworks) without writing any code. A live demonstration will show how AutoML seamlessly (i) processes input data, (ii) selects and trains the best algorithms for your specific use case, (iii) generates reproducible Python code for easy integration, and most importantly, (iv) how to interpret the results. \n\nDiscover how AutoML can turn your transform your data into actionable insights!\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/from-data-to-insights-in-minutes-accelerating-predictive-in-with",
+    "speaker_names": "Shailaja Sampat",
+    "description_youtube": "30 Minute Talk by Shailaja Sampat at PyOhio 2025:\nHave you ever wondered how Machine Learning could automate your tasks but hesitated due to time constraints or a lack of specialized coding skills? If so, this session is for you! \n\nTraditionally, building predictive models required specialized coding abilities and a deep understanding of statistical concepts. However, AutoML simplifies this process and can automatically create machine learning models from your data. This session will empower you to use a simple, open\\-source AutoML tool to quickly create Python\\-based machine learning prototypes (using the pandas, NumPy, and scikit\\-learn frameworks) without writing any code. A live demonstration will show how AutoML seamlessly (i) processes input data, (ii) selects and trains the best algorithms for your specific use case, (iii) generates reproducible Python code for easy integration, and most importantly, (iv) how to interpret the results. \n\nDiscover how AutoML can turn your transform your data into actionable insights!\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/from-data-to-insights-in-minutes-accelerating-predictive-in-with"
+  },
+  {
+    "code": "UTTY3T",
+    "title": "From Fortran to Python: A Conversation Across Generations of Scientific Computing",
+    "slug": "from-fortran-to-python-a-conversation-across-generations-of",
+    "description": "<p>What was it like to write scientific code before personal computers, IDEs, or instant feedback loops? In this talk, a mother and son — one who programmed in <em>Fortran</em> using punch cards and one who writes <em>Python</em> today in modern IDEs — reflect on how programming practices, tools, and mindsets have evolved across generations.</p>\n<p>Through personal stories and a short demo of a scientific simulation, we compare the experience of coding the same computational model decades apart. This talk is less about syntax and more about what has changed (and what hasn’t) in how we approach problem-solving, debugging, and scientific thinking in code.</p>\n<p>Whether you're a veteran programmer or just getting started, join us for a thoughtful, engaging, and intergenerational exploration of scientific computing — from punch cards to <em>Python</em> notebooks and modern IDEs.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Rodrigo Silva Ferreira",
+        "avatar": "https://pretalx.com/media/avatars/UYRBHX_gusMbKM.png",
+        "code": "UYRBHX",
+        "slug": "rodrigo-silva-ferreira"
+      },
+      {
+        "name": "Helianildes Silva Ferreira",
+        "avatar": "https://pretalx.com/media/avatars/XDNUZ7_AmgWTPa.jpeg",
+        "code": "XDNUZ7",
+        "slug": "helianildes-silva-ferreira"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "What was it like to write scientific code before personal computers, IDEs, or instant feedback loops? In this talk, a mother and son — one who programmed in *Fortran* using punch cards and one who writes *Python* today in modern IDEs — reflect on how programming practices, tools, and mindsets have evolved across generations.\n\nThrough personal stories and a short demo of a scientific simulation, we compare the experience of coding the same computational model decades apart. This talk is less about syntax and more about what has changed (and what hasn’t) in how we approach problem\\-solving, debugging, and scientific thinking in code.\n\nWhether you're a veteran programmer or just getting started, join us for a thoughtful, engaging, and intergenerational exploration of scientific computing — from punch cards to *Python* notebooks and modern IDEs.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/from-fortran-to-python-a-conversation-across-generations-of",
+    "speaker_names": "Rodrigo Silva Ferreira, Helianildes Silva Ferreira",
+    "description_youtube": "30 Minute Talk by Rodrigo Silva Ferreira, Helianildes Silva Ferreira at PyOhio 2025:\nWhat was it like to write scientific code before personal computers, IDEs, or instant feedback loops? In this talk, a mother and son — one who programmed in *Fortran* using punch cards and one who writes *Python* today in modern IDEs — reflect on how programming practices, tools, and mindsets have evolved across generations.\n\nThrough personal stories and a short demo of a scientific simulation, we compare the experience of coding the same computational model decades apart. This talk is less about syntax and more about what has changed (and what hasn’t) in how we approach problem\\-solving, debugging, and scientific thinking in code.\n\nWhether you're a veteran programmer or just getting started, join us for a thoughtful, engaging, and intergenerational exploration of scientific computing — from punch cards to *Python* notebooks and modern IDEs.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/from-fortran-to-python-a-conversation-across-generations-of"
+  },
+  {
+    "code": "VNQLAV",
+    "title": "uv: Ultimate Victory over installation and dependency chaos",
+    "slug": "uv-ultimate-victory-over-installation-and-dependency-chaos",
+    "description": "<p>Did you recoil at the news that there's <em>yet another</em> hot new packaging tool to cram into your poor crowded brain?  </p>\n<p>Take heart, brain!  It will be all right!  uv is splendidly complete and gloriously simple to use.  It's the single tool that can elegantly and easily replace the whole jumbled toolbox you've been using until now.  See the essential simple usages of uv, and you'll be a believer.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Catherine Devlin",
+        "avatar": "https://pretalx.com/media/avatars/DNWR98_qOdjP12.jpg",
+        "code": "DNWR98",
+        "slug": "catherine-devlin"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Did you recoil at the news that there's *yet another* hot new packaging tool to cram into your poor crowded brain? \n\nTake heart, brain! It will be all right! uv is splendidly complete and gloriously simple to use. It's the single tool that can elegantly and easily replace the whole jumbled toolbox you've been using until now. See the essential simple usages of uv, and you'll be a believer.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/uv-ultimate-victory-over-installation-and-dependency-chaos",
+    "speaker_names": "Catherine Devlin",
+    "description_youtube": "30 Minute Talk by Catherine Devlin at PyOhio 2025:\nDid you recoil at the news that there's *yet another* hot new packaging tool to cram into your poor crowded brain? \n\nTake heart, brain! It will be all right! uv is splendidly complete and gloriously simple to use. It's the single tool that can elegantly and easily replace the whole jumbled toolbox you've been using until now. See the essential simple usages of uv, and you'll be a believer.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/uv-ultimate-victory-over-installation-and-dependency-chaos"
+  },
+  {
+    "code": "WJJRQ7",
+    "title": "Guardrails: An alternative view of safely working in Python",
+    "slug": "guardrails-an-alternative-view-of-safely-working-in-python",
+    "description": "<p>Python – like many languages – lets you do things that are completely inadvisable. Many of the features that (left unchecked) allow you to do inadvisable things were used to achieve things that have since become necessary and defining features of Python.</p>\n<p>Python – unlike many languages – discovered that leaving these obvious and necessary features lying around next to inadvisable things was a bad idea, and built guardrails around them.</p>\n<p>In real life, guardrails are structures that make it easier to understand how to be safe in an area where there is otherwise danger. If respected, guardrails make you safer, but unlike walls or fences, guardrails do not block you from danger.</p>\n<p>In Python, features like decorators, context managers, async functions, importlib, and more are all guardrails that let you work with less-safe Python machinery from a much safer distance.</p>\n<p>In this talk, we’re going to explore the idea of guardrails as a design philosophy, and use that to explain Python’s attitude to safely working with the language and its internals.</p>\n<p>We’ll explore features of Python that are guardrails around less-safe features – what features they replaced, how those features could be used incorrectly, and how the newer features allow you to use Python more safely. As a special treat, you may also get to see how Python lets you abuse these features*.</p>\n<p>We’ll conclude with a discussion of how you can use Python’s guardrail philosophy in your own code.</p>\n<hr />\n<p>(* SKILLED OPERATOR ON CLOSED CIRCUIT; DO NOT ATTEMPT)</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Christopher Neugebauer",
+        "avatar": "https://pretalx.com/media/avatars/QWCHX7_x69USba.jpg",
+        "code": "QWCHX7",
+        "slug": "christopher-neugebauer"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Python – like many languages – lets you do things that are completely inadvisable. Many of the features that (left unchecked) allow you to do inadvisable things were used to achieve things that have since become necessary and defining features of Python.\n\nPython – unlike many languages – discovered that leaving these obvious and necessary features lying around next to inadvisable things was a bad idea, and built guardrails around them.\n\nIn real life, guardrails are structures that make it easier to understand how to be safe in an area where there is otherwise danger. If respected, guardrails make you safer, but unlike walls or fences, guardrails do not block you from danger.\n\nIn Python, features like decorators, context managers, async functions, importlib, and more are all guardrails that let you work with less\\-safe Python machinery from a much safer distance.\n\nIn this talk, we’re going to explore the idea of guardrails as a design philosophy, and use that to explain Python’s attitude to safely working with the language and its internals.\n\nWe’ll explore features of Python that are guardrails around less\\-safe features – what features they replaced, how those features could be used incorrectly, and how the newer features allow you to use Python more safely. As a special treat, you may also get to see how Python lets you abuse these features\\*.\n\nWe’ll conclude with a discussion of how you can use Python’s guardrail philosophy in your own code.\n\n\n\n---\n\n(\\* SKILLED OPERATOR ON CLOSED CIRCUIT; DO NOT ATTEMPT)\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/guardrails-an-alternative-view-of-safely-working-in-python",
+    "speaker_names": "Christopher Neugebauer",
+    "description_youtube": "30 Minute Talk by Christopher Neugebauer at PyOhio 2025:\nPython – like many languages – lets you do things that are completely inadvisable. Many of the features that (left unchecked) allow you to do inadvisable things were used to achieve things that have since become necessary and defining features of Python.\n\nPython – unlike many languages – discovered that leaving these obvious and necessary features lying around next to inadvisable things was a bad idea, and built guardrails around them.\n\nIn real life, guardrails are structures that make it easier to understand how to be safe in an area where there is otherwise danger. If respected, guardrails make you safer, but unlike walls or fences, guardrails do not block you from danger.\n\nIn Python, features like decorators, context managers, async functions, importlib, and more are all guardrails that let you work with less\\-safe Python machinery from a much safer distance.\n\nIn this talk, we’re going to explore the idea of guardrails as a design philosophy, and use that to explain Python’s attitude to safely working with the language and its internals.\n\nWe’ll explore features of Python that are guardrails around less\\-safe features – what features they replaced, how those features could be used incorrectly, and how the newer features allow you to use Python more safely. As a special treat, you may also get to see how Python lets you abuse these features\\*.\n\nWe’ll conclude with a discussion of how you can use Python’s guardrail philosophy in your own code.\n\n\n\n---\n\n(\\* SKILLED OPERATOR ON CLOSED CIRCUIT; DO NOT ATTEMPT)\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/guardrails-an-alternative-view-of-safely-working-in-python"
+  },
+  {
+    "code": "WKPPMV",
+    "title": "Developing a System Maintenance Plan and Utilizing Python to aid in System Maintenance.",
+    "slug": "developing-a-system-maintenance-plan-and-utilizing-python-to-aid",
+    "description": "<p>Overtime, systems can experience rapid growth and become unstable without proper management. Managing that growth while maintaining the system can become a challenge. We will explore system maintenance in the context of a Geographic Information Systems (GIS) Team’s plan for GIS system maintenance. We will go over the reasons for having a system maintenance plan, the components of our plan, and things to consider when making your own maintenance plan.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Joseph Guzi",
+        "avatar": "https://pretalx.com/media/avatars/3M8HS8_3gvYBvI.jpg",
+        "code": "3M8HS8",
+        "slug": "joseph-guzi"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Overtime, systems can experience rapid growth and become unstable without proper management. Managing that growth while maintaining the system can become a challenge. We will explore system maintenance in the context of a Geographic Information Systems (GIS) Team’s plan for GIS system maintenance. We will go over the reasons for having a system maintenance plan, the components of our plan, and things to consider when making your own maintenance plan.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/developing-a-system-maintenance-plan-and-utilizing-python-to-aid",
+    "speaker_names": "Joseph Guzi",
+    "description_youtube": "30 Minute Talk by Joseph Guzi at PyOhio 2025:\nOvertime, systems can experience rapid growth and become unstable without proper management. Managing that growth while maintaining the system can become a challenge. We will explore system maintenance in the context of a Geographic Information Systems (GIS) Team’s plan for GIS system maintenance. We will go over the reasons for having a system maintenance plan, the components of our plan, and things to consider when making your own maintenance plan.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/developing-a-system-maintenance-plan-and-utilizing-python-to-aid"
+  },
+  {
+    "code": "WLDTLY",
+    "title": "From Forge to Keyboard: Crafting a Developer's Journey",
+    "slug": "from-forge-to-keyboard-crafting-a-developer-s-journey",
+    "description": "<p>What do metalsmithing, managing a manufacturing floor, and raising children have to do with writing code? More than you might think.</p>\n<p>Through stories of precision, adaptability, and resilience, I'll show how non-technical experiences have helped me to thrive in tech. From iteration at my forge, troubleshooting on the manufacturing floor, and to building empathy as a parent I'll share how life's lessons have built transferable skills.</p>\n<p>Whether you're a seasoned professional or a new developer, this session will inspire you to embrace your own journey and discover the hidden strengths you can bring to the table.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Bianca Ploss",
+        "avatar": "https://pretalx.com/media/avatars/NYDQLT_ESEqRyP.jpg",
+        "code": "NYDQLT",
+        "slug": "bianca-ploss"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "What do metalsmithing, managing a manufacturing floor, and raising children have to do with writing code? More than you might think.\n\nThrough stories of precision, adaptability, and resilience, I'll show how non\\-technical experiences have helped me to thrive in tech. From iteration at my forge, troubleshooting on the manufacturing floor, and to building empathy as a parent I'll share how life's lessons have built transferable skills.\n\nWhether you're a seasoned professional or a new developer, this session will inspire you to embrace your own journey and discover the hidden strengths you can bring to the table.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/from-forge-to-keyboard-crafting-a-developer-s-journey",
+    "speaker_names": "Bianca Ploss",
+    "description_youtube": "30 Minute Talk by Bianca Ploss at PyOhio 2025:\nWhat do metalsmithing, managing a manufacturing floor, and raising children have to do with writing code? More than you might think.\n\nThrough stories of precision, adaptability, and resilience, I'll show how non\\-technical experiences have helped me to thrive in tech. From iteration at my forge, troubleshooting on the manufacturing floor, and to building empathy as a parent I'll share how life's lessons have built transferable skills.\n\nWhether you're a seasoned professional or a new developer, this session will inspire you to embrace your own journey and discover the hidden strengths you can bring to the table.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/from-forge-to-keyboard-crafting-a-developer-s-journey"
+  },
+  {
+    "code": "XEVWZV",
+    "title": "Detecting Road Conditions from Space using PyTorch, Public Data, and Free Satellite Imagery",
+    "slug": "detecting-road-conditions-from-space-using-pytorch-public-data",
+    "description": "<p>Monitoring the health of city streets and roadways is expensive, time-consuming, and often reactive. But what if we could automate part of that process using satellite imagery and Python?</p>\n<p>In this talk, we’ll walk through a real-world project that combines transfer learning, PyTorch, and publicly available datasets to classify road segment conditions (good, fair, poor) from aerial imagery. You'll learn how to work with messy real-world geospatial data, fine-tune a deep learning model using only a small training set (~2,000 examples), and overcome common challenges like blurry imagery, inconsistent labels, and overfitting.</p>\n<p>This session is practical and code-driven, aimed at data scientists and analysts working in mobility analytics, urban development, or infrastructure who want to apply machine perception techniques in their work. By the end, you’ll walk away with a reusable workflow for analyzing and predicting urban infrastructure quality — all using free tools and open data.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Cynthia Ukawu",
+        "avatar": "https://pretalx.com/media/avatars/VQQNZH_0zfhnUh.JPG",
+        "code": "VQQNZH",
+        "slug": "cynthia-ukawu"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Monitoring the health of city streets and roadways is expensive, time\\-consuming, and often reactive. But what if we could automate part of that process using satellite imagery and Python?\n\nIn this talk, we’ll walk through a real\\-world project that combines transfer learning, PyTorch, and publicly available datasets to classify road segment conditions (good, fair, poor) from aerial imagery. You'll learn how to work with messy real\\-world geospatial data, fine\\-tune a deep learning model using only a small training set (\\~2,000 examples), and overcome common challenges like blurry imagery, inconsistent labels, and overfitting.\n\nThis session is practical and code\\-driven, aimed at data scientists and analysts working in mobility analytics, urban development, or infrastructure who want to apply machine perception techniques in their work. By the end, you’ll walk away with a reusable workflow for analyzing and predicting urban infrastructure quality — all using free tools and open data.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/detecting-road-conditions-from-space-using-pytorch-public-data",
+    "speaker_names": "Cynthia Ukawu",
+    "description_youtube": "30 Minute Talk by Cynthia Ukawu at PyOhio 2025:\nMonitoring the health of city streets and roadways is expensive, time\\-consuming, and often reactive. But what if we could automate part of that process using satellite imagery and Python?\n\nIn this talk, we’ll walk through a real\\-world project that combines transfer learning, PyTorch, and publicly available datasets to classify road segment conditions (good, fair, poor) from aerial imagery. You'll learn how to work with messy real\\-world geospatial data, fine\\-tune a deep learning model using only a small training set (\\~2,000 examples), and overcome common challenges like blurry imagery, inconsistent labels, and overfitting.\n\nThis session is practical and code\\-driven, aimed at data scientists and analysts working in mobility analytics, urban development, or infrastructure who want to apply machine perception techniques in their work. By the end, you’ll walk away with a reusable workflow for analyzing and predicting urban infrastructure quality — all using free tools and open data.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/detecting-road-conditions-from-space-using-pytorch-public-data"
+  },
+  {
+    "code": "XKSRMQ",
+    "title": "Python for Hardware Folks",
+    "slug": "python-for-hardware-folks",
+    "description": "<p>Python is a versatile language, and it’s often the go-to language for data scientists, machine learning engineers, and web developers, among others.  However, often notably absent from this list are those working on and developing things in the physical world.  Too often is the humble hardware engineer forgotten, doomed to a fate of spreadsheets.  But what if I told you there was a whole world of hardware-focused Python?  This talk will explore various examples of Python in the world of hardware folks, including building test fixtures, data acquisition, and industrial automation.  We’ll also look at other issues, including what are the alternatives and why adoption of Python can be challenging.  This talk is meant for everyone, but especially those you love or want to tinker with hardware.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Alec Delaney",
+        "avatar": "https://pretalx.com/media/avatars/ND3MDZ_6MdqmWo.jpg",
+        "code": "ND3MDZ",
+        "slug": "alec-delaney"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Python is a versatile language, and it’s often the go\\-to language for data scientists, machine learning engineers, and web developers, among others. However, often notably absent from this list are those working on and developing things in the physical world. Too often is the humble hardware engineer forgotten, doomed to a fate of spreadsheets. But what if I told you there was a whole world of hardware\\-focused Python? This talk will explore various examples of Python in the world of hardware folks, including building test fixtures, data acquisition, and industrial automation. We’ll also look at other issues, including what are the alternatives and why adoption of Python can be challenging. This talk is meant for everyone, but especially those you love or want to tinker with hardware.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/python-for-hardware-folks",
+    "speaker_names": "Alec Delaney",
+    "description_youtube": "30 Minute Talk by Alec Delaney at PyOhio 2025:\nPython is a versatile language, and it’s often the go\\-to language for data scientists, machine learning engineers, and web developers, among others. However, often notably absent from this list are those working on and developing things in the physical world. Too often is the humble hardware engineer forgotten, doomed to a fate of spreadsheets. But what if I told you there was a whole world of hardware\\-focused Python? This talk will explore various examples of Python in the world of hardware folks, including building test fixtures, data acquisition, and industrial automation. We’ll also look at other issues, including what are the alternatives and why adoption of Python can be challenging. This talk is meant for everyone, but especially those you love or want to tinker with hardware.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/python-for-hardware-folks"
+  },
+  {
+    "code": "YYFDRM",
+    "title": "How a solo hobbyist learned to love testing",
+    "slug": "how-a-solo-hobbyist-learned-to-love-testing",
+    "description": "<p>I don’t get paid to write code. I have no boss to answer to. I have no partner to work with. Most of the apps I produce are for me to use. When I was learning Python with online videos, I was introduced to testing. I found it interesting, but it felt time consuming.</p>\n<p>Then I went back to an old app I had written and wanted to re-work. I was lost. I couldn’t even figure out where to begin to make it work again. I slowly decided to integrate testing into my personal workflow on projects. Then I came upon an unexpected benefit: by testing my code in a Django app, I was able to better learn what the library was doing to convert a request into a response. I knew the steps, but through writing a test with an expected output and seeing the error messages on failures, I now intuitively understand how this process works. This talk will demonstrate that.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Carl James",
+        "avatar": "https://pretalx.com/media/avatars/HAYKJP_tIcjDAC.jpg",
+        "code": "HAYKJP",
+        "slug": "carl-james"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "I don’t get paid to write code. I have no boss to answer to. I have no partner to work with. Most of the apps I produce are for me to use. When I was learning Python with online videos, I was introduced to testing. I found it interesting, but it felt time consuming.\n\nThen I went back to an old app I had written and wanted to re\\-work. I was lost. I couldn’t even figure out where to begin to make it work again. I slowly decided to integrate testing into my personal workflow on projects. Then I came upon an unexpected benefit: by testing my code in a Django app, I was able to better learn what the library was doing to convert a request into a response. I knew the steps, but through writing a test with an expected output and seeing the error messages on failures, I now intuitively understand how this process works. This talk will demonstrate that.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/how-a-solo-hobbyist-learned-to-love-testing",
+    "speaker_names": "Carl James",
+    "description_youtube": "30 Minute Talk by Carl James at PyOhio 2025:\nI don’t get paid to write code. I have no boss to answer to. I have no partner to work with. Most of the apps I produce are for me to use. When I was learning Python with online videos, I was introduced to testing. I found it interesting, but it felt time consuming.\n\nThen I went back to an old app I had written and wanted to re\\-work. I was lost. I couldn’t even figure out where to begin to make it work again. I slowly decided to integrate testing into my personal workflow on projects. Then I came upon an unexpected benefit: by testing my code in a Django app, I was able to better learn what the library was doing to convert a request into a response. I knew the steps, but through writing a test with an expected output and seeing the error messages on failures, I now intuitively understand how this process works. This talk will demonstrate that.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/how-a-solo-hobbyist-learned-to-love-testing"
+  },
+  {
+    "code": "Z3FUZ9",
+    "title": "Tune-Up Your Knowledge: A Beginner's Journey Under the Hood of Search Engines",
+    "slug": "tune-up-your-knowledge-a-beginner-s-journey-under-the-hood-of",
+    "description": "<p>Many people drive their cars around all day and never look under the hood. Likewise, search is used every day, millions of times, with very little thought for how those results appear on your device. While I can't build a car engine from scratch (yet), I can build a search engine! (mostly).<br />\nIn this talk, we'll take a beginner-friendly approach to discussing how search engines work under the hood while building one from scratch in Python along the way. We'll discuss some history of search, demonstrate common data structures that make search engines fast and effective, and review how we can get results in a meaningful order.<br />\nWe'll also take a high-level look at machine learning models and how vector embeddings can easily understand similarity and influence search results.<br />\nThis talk is for those interested in taking a beginner's peek under the hood to understand some of the techniques used. No prior experience with information retrieval required—just bring your curiosity about what really happens when you type a query into that search bar.</p>",
+    "start_time": "TBD",
+    "end_time": "TBD",
+    "room": "TBD",
+    "duration": 30,
+    "speakers": [
+      {
+        "name": "Eddie Mitchell",
+        "avatar": "https://pretalx.com/media/avatars/SRKARK_vH0MTYg.jpeg",
+        "code": "SRKARK",
+        "slug": "eddie-mitchell"
+      }
+    ],
+    "type": "30 Minute Talk",
+    "qna": false,
+    "qna_channel": null,
+    "youtube_url": null,
+    "content_warnings": null,
+    "discord_channel_id": "",
+    "stream_timestamp": "",
+    "description_text": "Many people drive their cars around all day and never look under the hood. Likewise, search is used every day, millions of times, with very little thought for how those results appear on your device. While I can't build a car engine from scratch (yet), I can build a search engine! (mostly).  \n\nIn this talk, we'll take a beginner\\-friendly approach to discussing how search engines work under the hood while building one from scratch in Python along the way. We'll discuss some history of search, demonstrate common data structures that make search engines fast and effective, and review how we can get results in a meaningful order.  \n\nWe'll also take a high\\-level look at machine learning models and how vector embeddings can easily understand similarity and influence search results.  \n\nThis talk is for those interested in taking a beginner's peek under the hood to understand some of the techniques used. No prior experience with information retrieval required—just bring your curiosity about what really happens when you type a query into that search bar.\n\n",
+    "talk_url": "https://www.pyohio.org/2025/talks/tune-up-your-knowledge-a-beginner-s-journey-under-the-hood-of",
+    "speaker_names": "Eddie Mitchell",
+    "description_youtube": "30 Minute Talk by Eddie Mitchell at PyOhio 2025:\nMany people drive their cars around all day and never look under the hood. Likewise, search is used every day, millions of times, with very little thought for how those results appear on your device. While I can't build a car engine from scratch (yet), I can build a search engine! (mostly).  \n\nIn this talk, we'll take a beginner\\-friendly approach to discussing how search engines work under the hood while building one from scratch in Python along the way. We'll discuss some history of search, demonstrate common data structures that make search engines fast and effective, and review how we can get results in a meaningful order.  \n\nWe'll also take a high\\-level look at machine learning models and how vector embeddings can easily understand similarity and influence search results.  \n\nThis talk is for those interested in taking a beginner's peek under the hood to understand some of the techniques used. No prior experience with information retrieval required—just bring your curiosity about what really happens when you type a query into that search bar.\n\nPyOhio talk listing: https://www.pyohio.org/2025/talks/tune-up-your-knowledge-a-beginner-s-journey-under-the-hood-of"
+  }
+]
