@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions} from 'astro:transitions'
 const { title, description, url, image, author } = Astro.props
 
 const subtitle = 'PyOhio 2025'
@@ -46,3 +47,5 @@ const ogImageURL = 'https://www.pyohio.org/2025/pyohio-2025-logo-og.png'
 </script>
 <!-- page title -->
 <title>{title} - {subtitle}</title>
+
+<ViewTransitions />
