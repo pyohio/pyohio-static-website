@@ -37,7 +37,7 @@ DATA_DIR = Path("./2025/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_AVATAR_PATH = "no-profile.png"
 DEFAULT_TIME = "TBD"
-PLENARY_ROOM = "Orchid Ballroom"
+PLENARY_ROOM = "TBD"
 UNLISTED_SPEAKERS = [
     "DCSCPQ",  # Kattni
 ]
