@@ -1,42 +1,91 @@
 ---
 import Navigation from '../components/Navigation.astro'
 import { SkipLink } from 'accessible-astro-components'
-import { Icon } from 'astro-icon/components'
+const baseUrl = import.meta.env.BASE_URL
 ---
 
 <header>
   <SkipLink />
   <Navigation>
-    <li class="menu-item">
-      <a href="/">Home</a>
-    </li>
-    <li class="menu-item">
-      <a href="/blog/">Blog</a>
-    </li>
-    <li class="menu-item">
-      <a href="/portfolio/">Portfolio</a>
-    </li>
     <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">Example Pages</button>
+      <button aria-haspopup="true" aria-expanded="false">About</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
-          <a href="/mdx-page/">MDX Page</a>
+            <a href={`${baseUrl}/about/`}>About PyOhio</a>
         </li>
         <li class="submenu-item">
-          <a href="/markdown-page/">Markdown Page</a>
+            <a href={`${baseUrl}/about/code-of-conduct`}>Code of Conduct</a>
         </li>
         <li class="submenu-item">
-          <a href="/accessible-components">Accessible Components</a>
+            <a href={`${baseUrl}/about/health-and-safety`}>Health & Safety</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/about/newsletter`}>Newsletter</a>
         </li>
       </ul>
     </li>
-    <li class="menu-item">
-      <a href="https://accessible-astro.incluud.dev/" rel="external">Docs</a>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Attend</button>
+      <ul class="dropdown-menu">
+
+      <li class="submenu-item">
+            <a href={`${baseUrl}/attend/registration`}>Registration</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/attend/venue`}>Venue</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/attend/refreshments-and-meals`}>Refreshments &amp; Meals</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/attend/travel-and-hotels`}>Travel &amp; Hotels</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/attend/volunteer`}>Volunteer</a>
+        </li>
+                <li class="submenu-item">
+            <a href={`${baseUrl}/attend/discord`}>Chat on Discord</a>
+        </li>
+      </ul>
+
     </li>
-    <li class="menu-item type-icon">
-      <a href="https://github.com/markteekman/accessible-astro-starter" title="Go to the GitHub page">
-        <Icon name="ion:logo-github" />
-      </a>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Program</button>
+           <ul class="dropdown-menu">
+
+      <li class="submenu-item">
+            <a href={`${baseUrl}/program/talks`}>Talks</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/program/speakers`}>Speakers</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/program/keynote-speakers`}>Keynote Speakers</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/attend/lightning-talks`}>Lightning Talks</a>
+        </li>
+        <li class="submenu-item">
+            <a href={`${baseUrl}/attend/open-spaces`}>Open Spaces</a>
+        </li>
+        <li class="submenu-item">
+            Schedule TBD
+        </li>
+      </ul>
+    </li>
+        <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Sponsors</button>
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <a href="/sponsors/">Our Sponsors</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/sponsors/prospectus">Prospectus</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/sponsors/individual-sponsors">Individual Sponsors</a>
+        </li>
+      </ul>
     </li>
   </Navigation>
 </header>
