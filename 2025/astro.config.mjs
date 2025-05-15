@@ -9,7 +9,7 @@ export default defineConfig({
   compressHTML: true,
   site: 'https://www.pyohio.org',
   base: '/2025',
-  publicDir: './public-src',
+  publicDir: './public',
   trailingSlash: 'ignore',
   image: {
     domains: ['pyohio.org', 'pretalx.com', 'gravatar.com'],
