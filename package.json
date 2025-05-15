@@ -11,7 +11,8 @@
     "@iconify/json": "^2.2.217",
     "@iconify/types": "^2.0.0",
     "@iconify/utils": "^2.1.24",
-    "astro-icon": "^1.1.5"
+    "astro-icon": "^1.1.5",
+    "luxon": "^3.6.1"
   },
   "devDependencies": {
     "@onwidget/astrowind": "file:./2025",
