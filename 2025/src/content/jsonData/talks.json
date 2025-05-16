@@ -417,7 +417,7 @@
     "speakers": [
       {
         "name": "William Horton",
-        "avatar": "https://pretalx.com/media/avatars/V73QRP_UIsrld4.jpg",
+        "avatar": "https://pretalx.com/media/avatars/V73QRP_OC2OlbX.jpg",
         "code": "V73QRP",
         "slug": "william-horton"
       }
@@ -446,7 +446,7 @@
     "speakers": [
       {
         "name": "Anthony",
-        "avatar": "https://pretalx.com/media/avatars/3NMPXV_sl2RZpJ.jpg",
+        "avatar": null,
         "code": "3NMPXV",
         "slug": "anthony"
       }
@@ -591,7 +591,7 @@
     "speakers": [
       {
         "name": "Noah Dunn",
-        "avatar": "https://pretalx.com/media/avatars/UAWQFP_SLWr5ti.jpg",
+        "avatar": "https://pretalx.com/media/avatars/UAWQFP_roGteQC.jpg",
         "code": "UAWQFP",
         "slug": "noah-dunn"
       }
@@ -1032,7 +1032,7 @@
     "speakers": [
       {
         "name": "Cynthia Ukawu",
-        "avatar": "https://pretalx.com/media/avatars/VQQNZH_0zfhnUh.JPG",
+        "avatar": "https://pretalx.com/media/avatars/VQQNZH_u7QFXyT.JPG",
         "code": "VQQNZH",
         "slug": "cynthia-ukawu"
       }

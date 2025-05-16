@@ -248,9 +248,9 @@ class DataProcessor:
         click.echo("Writing talk data JSON...", err=True)
         self._write_json(talk_data, "talks.json", self.json_dir)
 
-        click.echo("Redirects:", err=True)
-        for redirect in redirects:
-            click.echo(redirect, err=True)
+        # click.echo("Redirects:", err=True)
+        # for redirect in redirects:
+        #     click.echo(redirect, err=True)
 
         return talks_by_code
 
