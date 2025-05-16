@@ -31,7 +31,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to
+slug: from-busy-waiting-to-async-awaiting
 speakers:
 - avatar: https://pretalx.com/media/avatars/8ZXJG9_Crovi6g.png
   code: 8ZXJG9

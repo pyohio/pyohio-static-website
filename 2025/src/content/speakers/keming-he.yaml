@@ -47,6 +47,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: 8TJMMX
-  slug: beyond-the-benchmark-why-the-best-python-dependency-manager-not
+  slug: beyond-the-benchmark
   title: 'Beyond the Benchmark: Why the “Best” Python Dependency Manager Might Not
     Be Best for You'

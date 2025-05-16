@@ -14,6 +14,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: BPQUPL
-  slug: why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and
+  slug: why-python-loops-are-slow
   title: 'Why Python Loops Are "Slow": A Gentle Introduction to Interpretation, Bytecode,
     and Fast Code'

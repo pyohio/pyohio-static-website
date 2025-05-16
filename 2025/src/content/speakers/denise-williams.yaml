@@ -17,6 +17,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: NXSHT7
-  slug: when-your-sme-ghosts-you-using-genai-to-build-a-database-agent
+  slug: when-your-sme-ghosts-you
   title: 'When Your SME Ghosts You: Using GenAI to Build a Database Documentation
     Agent'

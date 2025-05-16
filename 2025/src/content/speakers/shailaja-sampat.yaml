@@ -23,6 +23,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: TN9ZZE
-  slug: from-data-to-insights-in-minutes-accelerating-predictive-in-with
+  slug: from-data-to-insights-in-minutes
   title: 'From Data to Insights in Minutes: Accelerating Predictive Modelling (in
     Python) with AutoML'

@@ -35,7 +35,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: deploy-django-gitops-kubernetes-made-easy
+slug: deploy-django
 speakers:
 - avatar: https://pretalx.com/media/avatars/ME3WGG_2M5BJfB.jpg
   code: ME3WGG

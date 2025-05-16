@@ -1,4 +1,4 @@
-avatar: helianildes-silva-ferreira.jpeg
+avatar: no-profile.png
 avatar_url: https://pretalx.com/media/avatars/XDNUZ7_AmgWTPa.jpeg
 biography: '<p>Helianildes Silva Ferreira is an Associate Professor at the Federal
   University of Bahia (UFBA), where she has taught in the Institute of Chemistry since
@@ -34,6 +34,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: UTTY3T
-  slug: from-fortran-to-python-a-conversation-across-generations-of
+  slug: from-fortran-to-python
   title: 'From Fortran to Python: A Conversation Across Generations of Scientific
     Computing'

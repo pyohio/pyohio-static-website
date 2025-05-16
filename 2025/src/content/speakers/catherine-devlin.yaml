@@ -16,5 +16,5 @@ social_links:
 speaker_type: speaker
 talks:
 - code: VNQLAV
-  slug: uv-ultimate-victory-over-installation-and-dependency-chaos
+  slug: uv
   title: 'uv: Ultimate Victory over Installation and Dependency Chaos'

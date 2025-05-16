@@ -18,5 +18,5 @@ social_links:
 speaker_type: speaker
 talks:
 - code: K9WBAG
-  slug: from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to
+  slug: from-busy-waiting-to-async-awaiting
   title: 'From Busy Waiting to Async Awaiting: A Journey from Iterators to asyncio'

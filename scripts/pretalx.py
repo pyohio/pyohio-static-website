@@ -258,7 +258,9 @@ class DataProcessor:
             "code": talk["code"],
             "title": talk["title"],
             "slug": slugify(
-                re.split(r"\?|\.", talk["title"])[0], word_boundary=True, max_length=64
+                re.split(r"\?|\.|:", talk["title"])[0],
+                word_boundary=True,
+                max_length=64,
             ),
             "description": markdown.markdown(
                 talk["description"],

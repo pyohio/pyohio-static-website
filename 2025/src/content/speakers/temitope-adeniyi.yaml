@@ -17,5 +17,5 @@ social_links:
 speaker_type: speaker
 talks:
 - code: HKC99U
-  slug: quantum-computing-with-python-from-qubits-to-circuits
+  slug: quantum-computing-with-python
   title: 'Quantum Computing with Python: From Qubits to Circuits'
