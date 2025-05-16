@@ -52,23 +52,24 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /ohpy /2025/about/ohpyo 302
 
 # 2025 Shorter Slugs
-/2025/talks/beyond-the-benchmark-why-the-best-python-dependency-manager-not /2025/talks/beyond-the-benchmark
-/2025/talks/why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and /2025/talks/why-python-loops-are-slow
-/2025/talks/introducing-labrea-how-embracing-declarative-functional-can-lead /2025/talks/introducing-labrea
-/2025/talks/chasten-your-python-program-configurable-program-analysis-and /2025/talks/chasten-your-python-program
-/2025/talks/quantum-computing-with-python-from-qubits-to-circuits /2025/talks/quantum-computing-with-python
-/2025/talks/from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to /2025/talks/from-busy-waiting-to-async-awaiting
-/2025/talks/gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse /2025/talks/gdiocspider
-/2025/talks/beyond-the-black-box-interpreting-ml-models-with-shap /2025/talks/beyond-the-black-box
-/2025/talks/when-your-sme-ghosts-you-using-genai-to-build-a-database-agent /2025/talks/when-your-sme-ghosts-you
-/2025/talks/bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution /2025/talks/bringing-ideas-to-life-with-diy-iot
-/2025/talks/deploy-django-gitops-kubernetes-made-easy /2025/talks/deploy-django
-/2025/talks/from-data-to-insights-in-minutes-accelerating-predictive-in-with /2025/talks/from-data-to-insights-in-minutes
-/2025/talks/from-fortran-to-python-a-conversation-across-generations-of /2025/talks/from-fortran-to-python
-/2025/talks/uv-ultimate-victory-over-installation-and-dependency-chaos /2025/talks/uv
-/2025/talks/guardrails-an-alternative-view-of-safely-working-in-python /2025/talks/guardrails
-/2025/talks/from-forge-to-keyboard-crafting-a-developers-journey /2025/talks/from-forge-to-keyboard
-/2025/talks/tune-up-your-knowledge-a-beginner-s-journey-under-the-hood-of /2025/talks/tune-up-your-knowledge
+
+/2025/program/talks/beyond-the-benchmark-why-the-best-python-dependency-manager-not /2025/program/talks/beyond-the-benchmark
+/2025/program/talks/why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and /2025/program/talks/why-python-loops-are-slow
+/2025/program/talks/introducing-labrea-how-embracing-declarative-functional-can-lead /2025/program/talks/introducing-labrea
+/2025/program/talks/chasten-your-python-program-configurable-program-analysis-and /2025/program/talks/chasten-your-python-program
+/2025/program/talks/quantum-computing-with-python-from-qubits-to-circuits /2025/program/talks/quantum-computing-with-python
+/2025/program/talks/from-busy-waiting-to-async-awaiting-a-journey-from-iterators-to /2025/program/talks/from-busy-waiting-to-async-awaiting
+/2025/program/talks/gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse /2025/program/talks/gdiocspider
+/2025/program/talks/beyond-the-black-box-interpreting-ml-models-with-shap /2025/program/talks/beyond-the-black-box
+/2025/program/talks/when-your-sme-ghosts-you-using-genai-to-build-a-database-agent /2025/program/talks/when-your-sme-ghosts-you
+/2025/program/talks/bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution /2025/program/talks/bringing-ideas-to-life-with-diy-iot
+/2025/program/talks/deploy-django-gitops-kubernetes-made-easy /2025/program/talks/deploy-django
+/2025/program/talks/from-data-to-insights-in-minutes-accelerating-predictive-in-with /2025/program/talks/from-data-to-insights-in-minutes
+/2025/program/talks/from-fortran-to-python-a-conversation-across-generations-of /2025/program/talks/from-fortran-to-python
+/2025/program/talks/uv-ultimate-victory-over-installation-and-dependency-chaos /2025/program/talks/uv
+/2025/program/talks/guardrails-an-alternative-view-of-safely-working-in-python /2025/program/talks/guardrails
+/2025/program/talks/from-forge-to-keyboard-crafting-a-developers-journey /2025/program/talks/from-forge-to-keyboard
+/2025/program/talks/tune-up-your-knowledge-a-beginner-s-journey-under-the-hood-of /2025/program/talks/tune-up-your-knowledge
 
 # 2024 Moved URLs
 
