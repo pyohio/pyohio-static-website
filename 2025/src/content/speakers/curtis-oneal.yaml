@@ -33,6 +33,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: 3ZPBJP
-  slug: a-very-brief-overview-of-python-s-lang-ai-tools-and-two-low-code
-  title: 'A very brief overview of python''s "Lang" AI tools and two low-code GUI
-    AI tools: Flowise and n8n'
+  slug: a-very-brief-overview-of-pythons-lang-ai-tools-and-two-low-code
+  title: 'A Very Brief Overview of Python’s “Lang” AI Tools and Two Low-Code GUI AI
+    Tools: Flowise and n8n'

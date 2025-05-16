@@ -17,7 +17,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: from-forge-to-keyboard-crafting-a-developer-s-journey
+slug: from-forge-to-keyboard-crafting-a-developers-journey
 speakers:
 - avatar: https://pretalx.com/media/avatars/NYDQLT_ESEqRyP.jpg
   code: NYDQLT
@@ -25,6 +25,6 @@ speakers:
   slug: bianca-ploss
 start_time: TBD
 stream_timestamp: ''
-title: 'From Forge to Keyboard: Crafting a Developer''s Journey'
+title: 'From Forge to Keyboard: Crafting a Developer’s Journey'
 type: 30 Minute Talk
 youtube_url: null
