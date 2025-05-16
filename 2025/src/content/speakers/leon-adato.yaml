@@ -26,9 +26,9 @@ listed: true
 name: Leon Adato
 slug: leon-adato
 social_links:
-- social_link_display: staging.bsky.app/profile/leonadato.bsky.social
+- social_link_display: bsky.app/profile/leonadato.com
   social_link_type: mdi:link-variant
-  social_link_url: https://staging.bsky.app/profile/leonadato.bsky.social
+  social_link_url: https://bsky.app/profile/leonadato.com
 - social_link_display: linkedin.com/in/leonadato/
   social_link_type: mdi:linkedin
   social_link_url: https://www.linkedin.com/in/leonadato/

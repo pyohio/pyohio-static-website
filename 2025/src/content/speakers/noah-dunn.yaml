@@ -22,4 +22,4 @@ speaker_type: speaker
 talks:
 - code: LP8NKE
   slug: gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse
-  title: GDIOCSpider - Extracting and Identifying IOCs from the GDriveverse
+  title: 'GDIOCSpider: Extracting and Identifying IOCs from the GDriveverse'

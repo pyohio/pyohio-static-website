@@ -33,7 +33,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: a-very-brief-overview-of-python-s-lang-ai-tools-and-two-low-code
+slug: a-very-brief-overview-of-pythons-lang-ai-tools-and-two-low-code
 speakers:
 - avatar: https://pretalx.com/media/avatars/E9SB7Z_9itErGl.jpg
   code: E9SB7Z
@@ -41,7 +41,7 @@ speakers:
   slug: curtis-oneal
 start_time: TBD
 stream_timestamp: ''
-title: 'A very brief overview of python''s "Lang" AI tools and two low-code GUI AI
-  tools: Flowise and n8n'
+title: 'A Very Brief Overview of Python’s “Lang” AI Tools and Two Low-Code GUI AI
+  Tools: Flowise and n8n'
 type: 30 Minute Talk
 youtube_url: null
