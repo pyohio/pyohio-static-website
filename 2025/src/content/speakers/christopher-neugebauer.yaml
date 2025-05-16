@@ -16,4 +16,4 @@ speaker_type: speaker
 talks:
 - code: WJJRQ7
   slug: guardrails-an-alternative-view-of-safely-working-in-python
-  title: 'Guardrails: An alternative view of safely working in Python'
+  title: 'Guardrails: An Alternative View of Safely Working in Python'

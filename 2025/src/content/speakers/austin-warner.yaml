@@ -19,5 +19,5 @@ speaker_type: speaker
 talks:
 - code: FJGVAW
   slug: introducing-labrea-how-embracing-declarative-functional-can-lead
-  title: Introducing Labrea - How Embracing Declarative, Functional Programming Can
-    Lead You Out of the Tar Pit
+  title: 'Introducing Labrea: How Embracing Declarative, Functional Programming Can
+    Lead You Out of the Tar Pit'
