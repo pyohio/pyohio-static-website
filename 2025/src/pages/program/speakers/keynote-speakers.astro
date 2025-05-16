@@ -2,7 +2,8 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 // import { Picture } from 'astro-imagetools/components'
-import { Icon } from 'astro-icon'
+import { Picture } from 'astro:assets'
+
 
 const speakers = await getCollection('speakers', ({ data }) => {
   return data.speaker_type == "keynote"
@@ -22,21 +23,17 @@ speakers.sort((a, b) => a.data.keynote_index - b.data.keynote_index)
         speakers.map((speaker) => (
           <div class="container">
             <h2 id={speaker.data.slug}>{speaker.data.name}</h2>
-            {/* <a href={speaker.data.slug}> */}
-              {/* <Picture
-                src={speaker.data.avatar}
+            <a href={speaker.data.slug}>
+              <Picture
+                src={speaker.data.avatar_url}
                 alt={speaker.data.name + ' profile photo'}
                 height="250"
                 width="250"
                 layout="constrained"
                 fadeInTransition={false}
-                attributes={{
-                  img: {
-                    class: 'rounded-3xl border-4',
-                  },
-                }}
-              /> */}
-            {/* </a> */}
+                class="rounded-3xl border-4"
+              />
+            </a>
             <section class="mt-6 mb-12">
               <Fragment set:html={speaker.data.biography} />
             </section>     
