@@ -133,7 +133,9 @@ class PretalxClient:
 class DataProcessor:
     """Process and save data from Pretalx API."""
 
-    def __init__(self, data_dir: Path = DATA_DIR, year: str = YEAR):
+    def __init__(
+        self, data_dir: Path = DATA_DIR, year: str = YEAR, skip_avatars: bool = False
+    ):
         """Initialize with data directory and year."""
         self.data_dir = data_dir
         self.year = year
@@ -141,6 +143,7 @@ class DataProcessor:
         self.speakers_dir = data_dir / "speakers"
         self.json_dir = data_dir / "jsonData"
         self.images_dir = data_dir / "speakers" / "img"
+        self.skip_avatars = skip_avatars
 
         # Ensure directories exist
         for directory in [
@@ -161,7 +164,7 @@ class DataProcessor:
                 click.echo(f"Error: {f} : {e.strerror}", err=True)
 
         # Clean the images directory if it's a subdirectory of the speakers directory
-        if directory == self.speakers_dir:
+        if directory == self.speakers_dir and not self.skip_avatars:
             # Only clean images directory if it exists
             if self.images_dir.exists():
                 click.echo("Cleaning speaker images directory...", err=True)
@@ -199,10 +202,16 @@ class DataProcessor:
         talks_by_code = {}
         talk_data = []
 
+        # redirects = []
+
         for talk in talks:
             # Process talk data
             processed_talk = self._process_single_talk(talk, qa_by_talk_code)
 
+            # if processed_talk["old_slug"] != processed_talk["slug"]:
+            #     redirects.append(
+            #         f"/2025/talks/{processed_talk['old_slug']} /2025/talks/{processed_talk['slug']}"
+            #     )
             # Save talk to file
             save_filename = self.talks_dir / f"{processed_talk['slug']}.yaml"
             with open(save_filename, "w") as save_file:
@@ -239,6 +248,10 @@ class DataProcessor:
         click.echo("Writing talk data JSON...", err=True)
         self._write_json(talk_data, "talks.json", self.json_dir)
 
+        click.echo("Redirects:", err=True)
+        for redirect in redirects:
+            click.echo(redirect, err=True)
+
         return talks_by_code
 
     def _process_single_talk(self, talk: Dict, qa_by_talk_code: Dict[str, str]) -> Dict:
@@ -258,8 +271,15 @@ class DataProcessor:
             "code": talk["code"],
             "title": talk["title"],
             "slug": slugify(
-                re.split(r"\?|\.", talk["title"])[0], word_boundary=True, max_length=64
+                re.split(r"\?|\.|:", talk["title"])[0],
+                word_boundary=True,
+                max_length=64,
             ),
+            # "old_slug": slugify(
+            #     re.split(r"\?|\.", talk["title"])[0],
+            #     word_boundary=True,
+            #     max_length=64,
+            # ),
             "description": markdown.markdown(
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
@@ -307,6 +327,15 @@ class DataProcessor:
         Download avatar image and save to images directory.
         Returns the relative path to the saved image.
         """
+        if self.skip_avatars:
+            # Check if avatar already exists
+            for ext in [".png", ".jpg", ".jpeg", ".gif", ".webp"]:
+                image_path = self.images_dir / f"{speaker_slug}{ext}"
+                if image_path.exists():
+                    return f"{speaker_slug}{ext}"
+            # If no existing avatar found, return default
+            return DEFAULT_AVATAR_PATH
+
         if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
             return DEFAULT_AVATAR_PATH
 
@@ -573,14 +602,19 @@ def pretalx(ctx):
 
 
 @pretalx.command()
+@click.option(
+    "--skip-avatars",
+    is_flag=True,
+    help="Skip deleting and downloading avatar images",
+)
 @click.pass_context
-def get_event_data(ctx):
+def get_event_data(ctx, skip_avatars):
     """Get session and speaker data from Pretalx"""
     api_key = ctx.obj["api_key"]
 
     # Initialize client and processor
     client = PretalxClient(api_key, PRETALX_EVENT_ID)
-    processor = DataProcessor(DATA_DIR, YEAR)
+    processor = DataProcessor(DATA_DIR, YEAR, skip_avatars=skip_avatars)
 
     # Get questions data
     social_media_question_id, qa_question_id, _ = client.get_question_data()

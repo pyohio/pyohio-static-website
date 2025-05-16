@@ -37,5 +37,5 @@ social_links:
 speaker_type: speaker
 talks:
 - code: TCRGU8
-  slug: deploy-django-gitops-kubernetes-made-easy
+  slug: deploy-django
   title: 'Deploy Django: GitOps & Kubernetes Made Easy'

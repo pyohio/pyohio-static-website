@@ -12,5 +12,5 @@ social_links: []
 speaker_type: speaker
 talks:
 - code: MPJU9D
-  slug: beyond-the-black-box-interpreting-ml-models-with-shap
+  slug: beyond-the-black-box
   title: 'Beyond the Black Box: Interpreting ML Models with SHAP'

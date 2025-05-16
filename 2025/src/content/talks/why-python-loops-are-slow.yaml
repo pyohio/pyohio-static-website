@@ -15,7 +15,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: why-python-loops-are-slow-a-gentle-introduction-to-bytecode-and
+slug: why-python-loops-are-slow
 speakers:
 - avatar: https://pretalx.com/media/avatars/YDUP8W_gSNBNEc.jpg
   code: YDUP8W

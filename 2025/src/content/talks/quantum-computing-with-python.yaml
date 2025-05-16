@@ -37,7 +37,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: quantum-computing-with-python-from-qubits-to-circuits
+slug: quantum-computing-with-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/SK8CK9_nVofiGu.jpg
   code: SK8CK9

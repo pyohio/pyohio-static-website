@@ -38,7 +38,7 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: guardrails-an-alternative-view-of-safely-working-in-python
+slug: guardrails
 speakers:
 - avatar: https://pretalx.com/media/avatars/QWCHX7_x69USba.jpg
   code: QWCHX7
