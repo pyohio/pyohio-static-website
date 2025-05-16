@@ -1,7 +1,7 @@
 ---
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
-// import { Picture } from 'astro-imagetools/components'
+import { Picture } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
 
 const baseUrl = import.meta.env.BASE_URL
@@ -26,19 +26,15 @@ const { speaker } = Astro.props
   <section class="mt-12">
     <div class="container">
       <h1>{speaker.data.name}</h1>
-      <!-- <Picture
-        src={speaker.data.avatar}
+      <Picture
+        src={speaker.data.avatar_url}
         alt={speaker.data.name + ' profile photo'}
         height="300"
         width="300"
         layout="constrained"
         fadeInTransition={false}
-        attributes={{
-          img: {
-            class: 'rounded-3xl border-8 my-2',
-          },
-        }}
-      /> -->
+        class="rounded-3xl border-4 my-2"
+      />
       {
         speaker.data.social_links.map((social_link) => (
           <p>
