@@ -39,6 +39,6 @@ speakers:
   slug: vignesh-iyer
 start_time: TBD
 stream_timestamp: ''
-title: 'From Busy Waiting to Async Awaiting: A journey from iterators to asyncio'
+title: 'From Busy Waiting to Async Awaiting: A Journey from Iterators to asyncio'
 type: 30 Minute Talk
 youtube_url: null

@@ -26,5 +26,5 @@ speaker_type: speaker
 talks:
 - code: XEVWZV
   slug: detecting-road-conditions-from-space-using-pytorch-public-data
-  title: Detecting Road Conditions from Space using PyTorch, Public Data, and Free
+  title: Detecting Road Conditions from Space Using PyTorch, Public Data, and Free
     Satellite Imagery
