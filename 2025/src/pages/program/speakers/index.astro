@@ -2,14 +2,8 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { Picture } from 'astro:assets'
-import type { ImageMetadata } from 'astro'
-import type { Speaker } from '../../../content/speakers'
 
 const baseUrl = import.meta.env.BASE_URL
-
-// const speakerAvatars = import.meta.glob<{ default: ImageMetadata }>(
-//   '/src/content/speakers/img/*.{jpg,jpeg,png,gif}',
-// )
 
 const speakers = await getCollection('speakers', ({ data }) => {
   return data.listed == true
@@ -27,21 +21,17 @@ const speakers = await getCollection('speakers', ({ data }) => {
       {
         speakers.map((speaker) => (
           <div class="mx-6 min-w-[8rem] max-w-[9%] py-3 text-center">
-            {/* <a href={`${baseUrl}/2024/program/speakers/${speaker.data.slug}`}>
+            <a href={`${baseUrl}/program/speakers/${speaker.data.slug}`}>
               <Picture
-                src={speakerAvatars[speaker.data.avatar]()}
+                src={speaker.data.avatar_url}
                 alt={speaker.data.name + ' profile photo'}
                 height="150"
                 width="150"
                 layout="constrained"
                 fadeInTransition={false}
-                attributes={{
-                  img: {
-                    class: 'rounded-3xl border-4',
-                  },
-                }}
-              />
-            </a> */}
+                class="rounded-xl border-2 my-2"
+                />
+            </a>
             <a href={`${baseUrl}/program/speakers/${speaker.data.slug}`}>{speaker.data.name}</a>
           </div>
         ))

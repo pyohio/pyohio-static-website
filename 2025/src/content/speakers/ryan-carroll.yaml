@@ -17,6 +17,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: PUBEVY
-  slug: bringing-ideas-to-life-with-diy-iot-visualizing-noise-pollution
+  slug: bringing-ideas-to-life-with-diy-iot
   title: 'Bringing Ideas to Life with DIY IoT: Visualizing Noise Pollution with a
     Raspberry Pi and Python'

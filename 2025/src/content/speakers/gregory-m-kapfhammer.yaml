@@ -35,6 +35,6 @@ social_links:
 speaker_type: speaker
 talks:
 - code: GBBXZJ
-  slug: chasten-your-python-program-configurable-program-analysis-and
+  slug: chasten-your-python-program
   title: 'Chasten Your Python Program: Configurable Program Analysis and Linting with
     XPath'

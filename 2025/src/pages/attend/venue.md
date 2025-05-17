@@ -9,6 +9,6 @@ PyOhio 2025 will be held at [The Cleveland State University Student Center](http
 
 ## Conference Spaces
 
-- Masks must be worn in all indoor conference spaces. See [Health & Safety Guidelines](/2025/about/health-and-safety) for details.
+**Masks must be worn in all indoor conference spaces. See [Health & Safety Guidelines](/2025/about/health-and-safety) for details.**
 
 More venue information will be available closer to the event.

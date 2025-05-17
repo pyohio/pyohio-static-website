@@ -39,9 +39,9 @@ end_time: TBD
 qna: false
 qna_channel: null
 room: TBD
-slug: gdiocspider-extracting-and-identifying-iocs-from-the-gdriveverse
+slug: gdiocspider
 speakers:
-- avatar: https://pretalx.com/media/avatars/UAWQFP_SLWr5ti.jpg
+- avatar: https://pretalx.com/media/avatars/UAWQFP_roGteQC.jpg
   code: UAWQFP
   name: Noah Dunn
   slug: noah-dunn
