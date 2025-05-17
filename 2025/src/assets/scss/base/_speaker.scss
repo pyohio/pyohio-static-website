@@ -1,0 +1,14 @@
+// | -------------------------------------------------------------
+// | Button
+// | -------------------------------------------------------------
+
+.speaker {
+  border: 5px solid var(--primary-100);
+  border-radius: 20px;
+  // background-color: var(--primary-100);
+  // padding: 0.75rem 1rem;
+}
+
+.speaker.darkmode {
+  border: 5px solid var(--secondary-100);
+}

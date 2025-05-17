@@ -29,7 +29,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
                 width="150"
                 layout="constrained"
                 fadeInTransition={false}
-                class="rounded-xl border-2 my-2"
+                class="speaker"
                 />
             </a>
             <a href={`${baseUrl}/program/speakers/${speaker.data.slug}`}>{speaker.data.name}</a>
