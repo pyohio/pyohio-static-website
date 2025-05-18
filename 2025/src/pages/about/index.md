@@ -33,7 +33,7 @@ Keith Murray
 
 #### Volunteer Chair
 
-TBD
+Laura Hanna
 
 #### Sponsorship
 
@@ -42,3 +42,7 @@ Alex Knill
 #### Web & Tech
 
 Dave Forgac
+
+## The Name?
+
+[Why not OhPyO?](/2025/about/ohpyo)
