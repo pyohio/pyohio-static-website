@@ -22,7 +22,7 @@ The 18th annual PyOhio will be held July 26-27 in Cleveland, OH.
 
 ## Design
 
-The PyOhio 2025 logo snake was designed by Cleveland, OH area artist [Justing Michael Will](https://www.justinmichaelwill.com/).
+The PyOhio 2025 logo snake was designed by Cleveland, OH area artist [Justin Michael Will](https://www.justinmichaelwill.com/).
 
 ## The Name
 
