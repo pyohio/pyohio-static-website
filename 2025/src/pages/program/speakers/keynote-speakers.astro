@@ -2,7 +2,7 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 // import { Picture } from 'astro-imagetools/components'
-import { Picture } from 'astro:assets'
+import { Image} from 'astro:assets'
 
 
 const speakers = await getCollection('speakers', ({ data }) => {
@@ -24,7 +24,7 @@ speakers.sort((a, b) => a.data.keynote_index - b.data.keynote_index)
           <div class="container">
             <h2 id={speaker.data.slug}>{speaker.data.name}</h2>
             <a href={speaker.data.slug}>
-              <Picture
+              <Image
                 src={speaker.data.avatar_url}
                 alt={speaker.data.name + ' profile photo'}
                 height="250"

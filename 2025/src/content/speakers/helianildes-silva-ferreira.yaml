@@ -8,7 +8,7 @@ biography: '<p>Helianildes Silva Ferreira is an Associate Professor at the Feder
   R&amp;D (Coppe/UFRJ).</p>
 
   <p>Her work focuses on process modeling and simulation, artificial neural networks,
-  and sustainable innovations in chemical engineering. She is a member of GECIM (Materials
+  and sustainable innovations in chemical engineering. She was a member of GECIM (Materials
   Engineering and Science Group) and has led projects on biocomposites from coconut
   fiber and PVC, as well as environmental initiatives to reduce water use in interdisciplinary
   labs.</p>
@@ -28,9 +28,9 @@ listed: true
 name: Helianildes Silva Ferreira
 slug: helianildes-silva-ferreira
 social_links:
-- social_link_display: linkedin.com/in/helianildes-ferreira-4890b733/
+- social_link_display: linkedin.com/in/helianildes
   social_link_type: mdi:linkedin
-  social_link_url: https://www.linkedin.com/in/helianildes-ferreira-4890b733/
+  social_link_url: https://www.linkedin.com/in/helianildes
 speaker_type: speaker
 talks:
 - code: UTTY3T
