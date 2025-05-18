@@ -11,38 +11,19 @@ The 18th annual PyOhio will be held July 26-27 in Cleveland, OH.
 
 ## Organizers
 
-#### Conference Chair
+- **Conference Chair:** Kattni
+- **Conferece Co-Chair:** Alex Knill
+- **Program Chair:** Anurag Saxena
+- **Program Co-Chair:** Mike Pirnat
+- **Communications Chair:** Keith Murray
+- **Volunteer Chair:** Laura Hanna
+- **Sponsorship:** Alex Knill
+- **Web & Tech:** Dave Forgac
 
-Kattni
+## Design
 
-#### Conferece Co-Chair
-
-Alex Knill
-
-#### Program Chair
-
-Anurag Saxena
-
-#### Program Co-Chair
-
-Mike Pirnat
-
-#### Communications Chair
-
-Keith Murray
-
-#### Volunteer Chair
-
-Laura Hanna
-
-#### Sponsorship
-
-Alex Knill
-
-#### Web & Tech
-
-Dave Forgac
+The PyOhio 2025 logo snake was designed by Cleveland, OH area artist [Justing Michael Will](https://www.justinmichaelwill.com/).
 
 ## The Name
 
-[Why not OhPyO?](/2025/about/ohpyo)
+[Why isn't the conference named OhPyO?](/2025/about/ohpyo)
