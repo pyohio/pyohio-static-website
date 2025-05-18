@@ -43,6 +43,6 @@ Alex Knill
 
 Dave Forgac
 
-## The Name?
+## The Name
 
 [Why not OhPyO?](/2025/about/ohpyo)
