@@ -1,5 +1,5 @@
 ---
-title: 'Health &amp; Safety'
+title: 'Health & Safety'
 layout: '../../layouts/MarkdownLayout.astro'
 ---
 
