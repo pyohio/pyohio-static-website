@@ -117,7 +117,7 @@ class PretalxClient:
     def get_confirmed_talks(self) -> List[Dict]:
         """Get all confirmed talks/sessions."""
         click.echo("Getting talks...", err=True)
-        sessions_url = f"{self.base_url}/submissions/?state=confirmed"
+        sessions_url = f"{self.base_url}/submissions/?state=confirmed&expand=speakers,submission_type"
         sessions_results = self.get_all_pages(sessions_url)
         click.echo(f"Got {len(sessions_results)} talks", err=True)
         return sessions_results
@@ -256,10 +256,11 @@ class DataProcessor:
 
     def _process_single_talk(self, talk: Dict, qa_by_talk_code: Dict[str, str]) -> Dict:
         """Process a single talk entry."""
+
         speakers = [
             {
                 "name": s["name"],
-                "avatar": s["avatar"],
+                "avatar": s["avatar_url"],
                 "code": s["code"],
                 "slug": slugify(s["name"]),
             }
@@ -295,7 +296,7 @@ class DataProcessor:
             else "TBD",
             "duration": talk["duration"],
             "speakers": speakers,
-            "type": talk["submission_type"]["en"],
+            "type": talk["submission_type"]["name"]["en"],
         }
 
         # Special handling for keynotes and plenary sessions
@@ -417,7 +418,7 @@ class DataProcessor:
         speaker_slug = slugify(speaker["name"])
 
         # Save original avatar URL
-        avatar_url = speaker["avatar"] or PLACEHOLDER_AVATAR
+        avatar_url = speaker["avatar_url"] or PLACEHOLDER_AVATAR
 
         # Download avatar and get relative path
         avatar_path = self.download_avatar(avatar_url, speaker_slug)
