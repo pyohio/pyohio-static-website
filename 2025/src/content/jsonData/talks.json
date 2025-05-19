@@ -446,7 +446,7 @@
     "speakers": [
       {
         "name": "Anthony",
-        "avatar": null,
+        "avatar": "",
         "code": "3NMPXV",
         "slug": "anthony"
       }
@@ -619,10 +619,10 @@
     "duration": 30,
     "speakers": [
       {
-        "name": "lazouich",
-        "avatar": null,
+        "name": "Lazouich Ford",
+        "avatar": "https://pretalx.com/media/avatars/3AV3YC_UG5fg4M.jpeg",
         "code": "3AV3YC",
-        "slug": "lazouich"
+        "slug": "lazouich-ford"
       }
     ],
     "type": "30 Minute Talk",
@@ -634,8 +634,8 @@
     "stream_timestamp": "",
     "description_text": "Wildfires have become more frequent nationwide, causing chaos not only within fire zones but also affecting communities far away through smoke and poor air quality. In this talk, we'll explore the world of wildfires, understanding common terminology and clearing up misconceptions. We will explore data sources, potential file formats, and essential data fields using fire perimeter data. By leveraging Python and Geopandas we will clean a dataset, analyze the cleaned dataset, and finally create compelling visualizations of our wildfire data.",
     "talk_url": "https://www.pyohio.org/2025/talks/wildfires",
-    "speaker_names": "lazouich",
-    "description_youtube": "30 Minute Talk by lazouich at PyOhio 2025:\nWildfires have become more frequent nationwide, causing chaos not only within fire zones but also affecting communities far away through smoke and poor air quality. In this talk, we'll explore the world of wildfires, understanding common terminology and clearing up misconceptions. We will explore data sources, potential file formats, and essential data fields using fire perimeter data. By leveraging Python and Geopandas we will clean a dataset, analyze the cleaned dataset, and finally create compelling visualizations of our wildfire data.PyOhio talk listing: https://www.pyohio.org/2025/talks/wildfires"
+    "speaker_names": "Lazouich Ford",
+    "description_youtube": "30 Minute Talk by Lazouich Ford at PyOhio 2025:\nWildfires have become more frequent nationwide, causing chaos not only within fire zones but also affecting communities far away through smoke and poor air quality. In this talk, we'll explore the world of wildfires, understanding common terminology and clearing up misconceptions. We will explore data sources, potential file formats, and essential data fields using fire perimeter data. By leveraging Python and Geopandas we will clean a dataset, analyze the cleaned dataset, and finally create compelling visualizations of our wildfire data.PyOhio talk listing: https://www.pyohio.org/2025/talks/wildfires"
   },
   {
     "code": "MPJU9D",

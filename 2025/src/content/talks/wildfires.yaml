@@ -15,10 +15,10 @@ qna_channel: null
 room: TBD
 slug: wildfires
 speakers:
-- avatar: null
+- avatar: https://pretalx.com/media/avatars/3AV3YC_UG5fg4M.jpeg
   code: 3AV3YC
-  name: lazouich
-  slug: lazouich
+  name: Lazouich Ford
+  slug: lazouich-ford
 start_time: TBD
 stream_timestamp: ''
 title: Wildfires!
