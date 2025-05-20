@@ -2,13 +2,14 @@
 import ResponsiveToggle from './ResponsiveToggle.astro'
 import { DarkMode } from 'accessible-astro-components'
 import { Image } from 'astro:assets'
-import logo from '../assets/img/pyohio-2025-logo-snake-only-trans.png'
+import logo from '../assets/img/pyohio-2025-logo-trans.png'
+const baseUrl = import.meta.env.BASE_URL
 ---
 
 <div id="main-navigation" class="is-desktop py-8">
   <div class="container">
-    <a href="/" class="flex items-center gap-2 !no-underline">
-      <Image src={logo} alt="Your Logo" width="50" height="75" />
+    <a href={baseUrl} class="flex items-center gap-2 !no-underline">
+      <Image src={logo} alt="PyOhio Logo" width="75" height="75" />
       <span class="text-xl font-bold">PyOhio 2025</span>
     </a>
     <div class="wrapper">
