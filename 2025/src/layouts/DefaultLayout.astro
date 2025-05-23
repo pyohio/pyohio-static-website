@@ -4,6 +4,7 @@ import '../assets/scss/globals.scss'
 import SiteMeta from '../components/SiteMeta.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+const baseUrl = import.meta.env.BASE_URL
 
 const {
   title = 'PyOhio 2025',
@@ -21,7 +22,7 @@ const {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- favicon -->
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href={`${baseUrl}/favicon.ico`} />
 
     <SiteMeta title={title} description={description.substring(0, 100)} url={url} image={image} author={author} />
   </head>
