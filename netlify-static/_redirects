@@ -21,7 +21,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /events /2025 302
 /health-and-safety /2025/about/health-and-safety 302
 /hotel /2025/attend/hotels 302
-/prospectus /2025/sponsorship/prospectus 302
+/prospectus /2025/sponsors/prospectus 302
 /register /2025/attend/registration 302
 /schedule /2025/program/schedule 302
 /sprints /2025 302
