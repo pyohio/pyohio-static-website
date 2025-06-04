@@ -5,7 +5,7 @@ title: Hotels
 
 # Hotels
 
-<!-- The conference will take place at The Westin Cleveland Downtown. The following hotels are all within a short walk of the venue:
+<!-- The conference will take place at Cleveland State University Student Center. The following hotels are all within the downtown area and a short walk of the venue:
 
 - [Comfort Inn Downtown](https://www.choicehotels.com/ohio/cleveland/comfort-inn-hotels/oh167)
   - 2-star hotel
