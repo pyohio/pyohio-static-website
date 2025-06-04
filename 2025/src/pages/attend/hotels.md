@@ -5,14 +5,14 @@ title: Hotels
 
 # Hotels
 
-The conference will take place at Cleveland State University Student Center. The following hotels are all within the downtown area and a short walk of the venue:
+The conference will take place at Cleveland State University Student Center. We do not currently have room block availability. However, the following hotels are all within the downtown area and are a short walk of the venue:
 
+- [Crowne Plaza Cleveland at Playhouse Square](https://www.ihg.com/crowneplaza/hotels/us/en/cleveland/cleps/hoteldetail) **(RECOMMENDED)**
+  - 3-star hotel
+  - Distance from venue: 0.4 miles
 - [Comfort Inn Downtown](https://www.choicehotels.com/ohio/cleveland/comfort-inn-hotels/oh167)
   - 2-star hotel
   - Distance from venue: 0.2 miles
-- [Crowne Plaza Cleveland at Playhouse Square](https://www.ihg.com/crowneplaza/hotels/us/en/cleveland/cleps/hoteldetail)
-  - 3-star hotel
-  - Distance from venue: 0.4 miles
 - [Hilton Garden Inn Cleveland Downtown](https://www.hilton.com/en/hotels/clegwgi-hilton-garden-inn-cleveland-downtown/)
   - 3-star hotel
   - Distance from venue: 0.6 miles
@@ -61,5 +61,3 @@ The conference will take place at Cleveland State University Student Center. The
 - [Hilton Cleveland Downtown](https://www.hilton.com/en/hotels/cledohh-hilton-cleveland-downtown/)
   - 4-star hotel
   - Distance from venue: 1.2 miles
-
-We do not currently have room block availability. More hotel recommendations coming soon.
