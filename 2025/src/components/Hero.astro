@@ -31,7 +31,16 @@ const { src = `${baseUrl}/pyohio-2025-sticker.png`} = Astro.props
         </div>
         <p>PyOhio is FREE to attend thanks to the generous support of our <a href="/2025/sponsors/">sponsors</a> and <a href="/2025/sponsors/individual-sponsors">individual donors</a>.</p>
 
-        <p><a href="https://ti.to/pyohio/2025" class="button color-primary">Register Now</a></p>
+        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+          <a href="https://ti.to/pyohio/2025" class="button has-icon color-primary">
+            <Icon name="mdi:ticket" />
+            Register Now
+          </a>
+          <a href="https://newsletter.pyohio.org/" class="button has-icon color-primary">
+            <Icon name="mdi:email" />
+            Subscribe to Newsletter
+          </a>
+        </div>
 
         <p>T-shirt sales opening soon!</p>
 
