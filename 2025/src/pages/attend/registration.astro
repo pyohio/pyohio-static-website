@@ -1,17 +1,96 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
 ---
 
 <DefaultLayout title="Registration">
   <section class="my-12">
     <div class="container">
       <h1>Registration</h1>
-      <p>
-        Register using the form on this page or via the <a href="https://ti.to/pyohio/2025">PyOhio registration site</a
+
+      <div class="prose prose-lg mb-8 max-w-none">
+        <p>
+          PyOhio is a free annual Python community conference taking place July 26th–27th, 2025 at Cleveland State
+          University Student Center.
+        </p>
+      </div>
+
+      <div class="mb-12 flex justify-center">
+        <a
+          href="https://ti.to/pyohio/2025"
+          class="button has-icon color-primary text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="mdi:ticket" />
+          Register Now
+        </a>
+      </div>
+
+      <div class="mb-8 border-l-4 pl-6">
+        <h2 class="mb-4 text-xl font-semibold">Registration Information</h2>
+        <ul class="space-y-3">
+          <li>
+            <strong>Donations:</strong> While PyOhio is free to attend, donations are welcome to help support the conference
+            and community. With a donation of $50 or more, you can be recognized as an <a
+              href="/2025/sponsors/individual-sponsors"
+              class="text-blue-600 hover:text-blue-800">individual sponsor</a
+            >.
+          </li>
+          <li>
+            <strong>Can't Attend?</strong> If you find you can't attend, please click the "View order" link in your confirmation
+            email, then click "View ticket", and then "Cancel" at the bottom, or contact <a
+              href="mailto:info@pyohio.org"
+              class="text-blue-600 hover:text-blue-800">info@pyohio.org</a
+            > so we don't waste resources on printing your badge.
+          </li>
+          <li>
+            <strong>Questions?</strong> Contact us at <a
+              href="mailto:info@pyohio.org"
+              class="text-blue-600 hover:text-blue-800">info@pyohio.org</a
+            > if you need assistance with registration.
+          </li>
+        </ul>
+      </div>
+
+      <div class="mb-8 grid gap-8 md:grid-cols-2">
+        <div class="border-l-4 pl-6">
+          <h2 class="mb-3 text-xl font-semibold">Health & Safety</h2>
+          <p class="mb-3">
+            <strong>Masks are required</strong> during your time at PyOhio, including talks, Open Spaces, and hallways.
+          </p>
+          <a href="/2025/about/health-and-safety" class="font-medium text-blue-600 hover:text-blue-800">
+            Read full Health & Safety Guidelines →
+          </a>
+        </div>
+
+        <div class="border-l-4 pl-6">
+          <h2 class="mb-3 text-xl font-semibold">Code of Conduct</h2>
+          <p class="mb-3">
+            PyOhio is dedicated to providing a harassment-free conference experience for everyone. Please review our
+            Code of Conduct before attending.
+          </p>
+          <a href="/2025/about/code-of-conduct" class="font-medium text-blue-600 hover:text-blue-800">
+            Read our Code of Conduct →
+          </a>
+        </div>
+      </div>
+      <!-- Alternative registration text -->
+      <p class="text-center text-gray-600">
+        You can register directly at
+        <a
+          href="https://ti.to/pyohio/2025"
+          class="text-blue-600 underline hover:text-blue-800"
+          target="_blank"
+          rel="noopener noreferrer">ti.to/pyohio/2025</a
         >.
       </p>
+
+      <!-- Commented out embedded form -->
+      <!-- 
       <script src="https://js.tito.io/v2" async></script>
       <tito-widget event="pyohio/2025"></tito-widget>
+      -->
     </div>
   </section>
 </DefaultLayout>
