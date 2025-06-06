@@ -10,6 +10,7 @@ The conference will take place at Cleveland State University Student Center in d
 ## Our Recommendation
 
 **[Crowne Plaza Cleveland at Playhouse Square](https://www.ihg.com/crowneplaza/hotels/us/en/cleveland/cleps/hoteldetail)** ⭐⭐⭐ - 0.4 miles
+
 Located in the theater district with easy access to the venue.
 
 ## Other Hotels
