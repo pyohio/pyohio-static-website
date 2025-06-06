@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions} from 'astro:transitions'
+import { ViewTransitions } from 'astro:transitions'
 const { title, description, url, image, author } = Astro.props
 
 const subtitle = 'PyOhio 2025'
@@ -27,23 +27,23 @@ const ogImageURL = 'https://www.pyohio.org/2025/pyohio-2025-logo-og.png'
 
 <!-- event schema -->
 <script type="application/ld+json">
-    {
-        "@context": "http://schema.org/",
-        "@type": "Event",
-        "name": "PyOhio 2025",
-        "description": "Free Python programming language community conference.",
-        "image": "https://www.pyohio.org/2025/pyohio-2025-logo-og.png",
-        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "startDate": "2025-07-26T09:00-04:00",
-        "endDate": "2025-07-27T18:00-04:00",
-        "location": [
-            {
-                "@type": "VirtualLocation",
-                "url": "https://www.pyohio.org/2025"
-            }
-        ]
-    }
+  {
+    "@context": "http://schema.org/",
+    "@type": "Event",
+    "name": "PyOhio 2025",
+    "description": "Free Python programming language community conference.",
+    "image": "https://www.pyohio.org/2025/pyohio-2025-logo-og.png",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "startDate": "2025-07-26T09:00-04:00",
+    "endDate": "2025-07-27T18:00-04:00",
+    "location": [
+      {
+        "@type": "VirtualLocation",
+        "url": "https://www.pyohio.org/2025"
+      }
+    ]
+  }
 </script>
 <!-- page title -->
 <title>{title} - {subtitle}</title>

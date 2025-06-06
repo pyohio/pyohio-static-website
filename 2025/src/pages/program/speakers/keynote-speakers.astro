@@ -2,16 +2,14 @@
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 // import { Picture } from 'astro-imagetools/components'
-import { Image} from 'astro:assets'
+import { Image } from 'astro:assets'
 
 const baseUrl = import.meta.env.BASE_URL
 
-
 const speakers = await getCollection('speakers', ({ data }) => {
-  return data.speaker_type == "keynote"
+  return data.speaker_type == 'keynote'
 })
 speakers.sort((a, b) => a.data.keynote_index - b.data.keynote_index)
-
 ---
 
 <DefaultLayout title="Keynote Speakers">
@@ -21,27 +19,26 @@ speakers.sort((a, b) => a.data.keynote_index - b.data.keynote_index)
     </div>
   </section>
   <section>
-      {
-        speakers.map((speaker) => (
-          <div class="container">
-            <h2 id={speaker.data.slug}>{speaker.data.name}</h2>
-            <a href={`${baseUrl}/program/speakers/${speaker.data.slug}`}>
-              <Image
-                src={speaker.data.avatar_url}
-                alt={speaker.data.name + ' profile photo'}
-                height="250"
-                width="250"
-                layout="constrained"
-                fadeInTransition={false}
-                class="speaker"
-              />
-            </a>
-            <section class="mt-6 mb-12">
-              <Fragment set:html={speaker.data.biography} />
-            </section>     
-          </div>
-        ))
-      }
+    {
+      speakers.map((speaker) => (
+        <div class="container">
+          <h2 id={speaker.data.slug}>{speaker.data.name}</h2>
+          <a href={`${baseUrl}/program/speakers/${speaker.data.slug}`}>
+            <Image
+              src={speaker.data.avatar_url}
+              alt={speaker.data.name + ' profile photo'}
+              height="250"
+              width="250"
+              layout="constrained"
+              fadeInTransition={false}
+              class="speaker"
+            />
+          </a>
+          <section class="mb-12 mt-6">
+            <Fragment set:html={speaker.data.biography} />
+          </section>
+        </div>
+      ))
+    }
   </section>
-
 </DefaultLayout>

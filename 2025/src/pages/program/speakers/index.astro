@@ -17,7 +17,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
     </div>
   </section>
   <section class="my-12">
-    <div class="mx-12 flex flex-wrap container">
+    <div class="container mx-12 flex flex-wrap">
       {
         speakers.map((speaker) => (
           <div class="mx-6 min-w-[8rem] max-w-[9%] py-3 text-center">
@@ -30,7 +30,7 @@ const speakers = await getCollection('speakers', ({ data }) => {
                 layout="constrained"
                 fadeInTransition={false}
                 class="speaker"
-                />
+              />
             </a>
             <a href={`${baseUrl}/program/speakers/${speaker.data.slug}`}>{speaker.data.name}</a>
           </div>

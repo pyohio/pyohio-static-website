@@ -6,7 +6,6 @@ import { Icon } from 'astro-icon/components'
 
 const baseUrl = import.meta.env.BASE_URL
 
-
 export async function getStaticPaths() {
   const speakers = await getCollection('speakers', ({ data }) => {
     return data
@@ -43,8 +42,7 @@ const { speaker } = Astro.props
               {social_link.social_link_display}
             </a>
           </p>
-        )
-        )
+        ))
       }
     </div>
   </section>
