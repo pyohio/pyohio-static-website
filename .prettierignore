@@ -2,6 +2,10 @@
 .vscode/
 archive/
 data/
-package.json
-package-lock.json
 public
+dist/
+node_modules/
+.venv/
+*.lock
+yarn.lock
+.git/

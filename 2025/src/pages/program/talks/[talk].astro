@@ -5,7 +5,6 @@ import { DateTime } from 'luxon'
 
 const baseUrl = import.meta.env.BASE_URL
 
-
 export async function getStaticPaths() {
   const talks = await getCollection('talks', ({ data }) => {
     return !['Break', 'Open'].includes(data.type)
@@ -42,21 +41,26 @@ function formatDay(timeString) {
   <section class="my-12">
     <div class="container">
       <h1>{talk.data.title}</h1>
-      <p class="italic">{talk.data.type}<br/>{formatDay(talk.data.start_time)} at {formatTime(talk.data.start_time)} in {talk.data.room}</p>
+      <p class="italic">
+        {talk.data.type}<br />{formatDay(talk.data.start_time)} at {formatTime(talk.data.start_time)} in {
+          talk.data.room
+        }
+      </p>
     </div>
   </section>
   <section class="container">
-
-    {talk.data.youtube_url && (
-      <iframe
-      class="w-full aspect-video"
-      src={"https://www.youtube.com/embed/"+talk.data.youtube_url.replace("https://youtu.be/", "")}
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-      ></iframe>
-    )}
+    {
+      talk.data.youtube_url && (
+        <iframe
+          class="aspect-video w-full"
+          src={'https://www.youtube.com/embed/' + talk.data.youtube_url.replace('https://youtu.be/', '')}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+      )
+    }
   </section>
   <section class="my-12">
     <div class="space-content container">

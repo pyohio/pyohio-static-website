@@ -4,30 +4,34 @@ import { getCollection } from 'astro:content'
 
 const baseUrl = import.meta.env.BASE_URL
 
-const talks = (await getCollection('talks')).filter(talk => talk.data.type === '30 Minute Talk').sort((a, b) => a.data.title.localeCompare(b.data.title))
+const talks = (await getCollection('talks'))
+  .filter((talk) => talk.data.type === '30 Minute Talk')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title))
 ---
 
 <DefaultLayout title="Talks">
   <section class="my-12">
     <div class="container">
       <h1>Talks</h1>
-      <p class="italic">See the <a href={`${baseUrl}/program/schedule`}>conference schedule</a> for time and room details.</p>
+      <p class="italic">
+        See the <a href={`${baseUrl}/program/schedule`}>conference schedule</a> for time and room details.
+      </p>
     </div>
   </section>
   <section class="my-12">
-    <div class=" container">
-        {
-          talks.map((talk) => (
-            <div>
-              <h2 class="text-2xl">
-                <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
-              </h2>
-              <p class="mb-4">
-                by <span>{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
-              </p>
-            </div>
-          ))
-        }
+    <div class="container">
+      {
+        talks.map((talk) => (
+          <div>
+            <h2 class="text-2xl">
+              <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
+            </h2>
+            <p class="mb-4">
+              by <span>{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
+            </p>
+          </div>
+        ))
+      }
     </div>
   </section>
 </DefaultLayout>
