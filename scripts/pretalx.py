@@ -122,6 +122,27 @@ class PretalxClient:
         click.echo(f"Got {len(sessions_results)} talks", err=True)
         return sessions_results
 
+    def get_schedule_data(self) -> Dict[str, Dict]:
+        """Get schedule data for all talks."""
+        click.echo("Getting schedule data...", err=True)
+        schedule_url = f"{self.base_url}/schedules/latest/"
+        response = httpx.get(schedule_url, headers=self.headers)
+        response.raise_for_status()
+        schedule_data = response.json()
+        
+        # Extract talks from schedule and create lookup by submission code
+        schedule_lookup = {}
+        for talk in schedule_data.get("talks", []):
+            if "submission" in talk:
+                schedule_lookup[talk["submission"]] = {
+                    "start_time": talk.get("start"),
+                    "end_time": talk.get("end"), 
+                    "room": talk.get("room")
+                }
+        
+        click.echo(f"Got schedule data for {len(schedule_lookup)} talks", err=True)
+        return schedule_lookup
+
     def get_speaker_data(self, speaker_code: str) -> Dict:
         """Get detailed data for a specific speaker."""
         speaker_url = f"{self.base_url}/speakers/{speaker_code}/"
@@ -143,6 +164,7 @@ class DataProcessor:
         self.speakers_dir = data_dir / "speakers"
         self.json_dir = data_dir / "jsonData"
         self.images_dir = data_dir / "speakers" / "img"
+        self.avatar_cache_dir = Path("./scripts/avatar_cache")
         self.skip_avatars = skip_avatars
 
         # Ensure directories exist
@@ -151,6 +173,7 @@ class DataProcessor:
             self.speakers_dir,
             self.json_dir,
             self.images_dir,
+            self.avatar_cache_dir,
         ]:
             directory.mkdir(parents=True, exist_ok=True)
 
@@ -193,7 +216,7 @@ class DataProcessor:
                     temp_path.unlink(missing_ok=True)
 
     def process_talks(
-        self, talks: List[Dict], qa_by_talk_code: Dict[str, str]
+        self, talks: List[Dict], qa_by_talk_code: Dict[str, str], schedule_lookup: Dict[str, Dict]
     ) -> Dict[str, Dict]:
         """Process talk data and save to files."""
         self.clean_directory(self.talks_dir)
@@ -206,7 +229,7 @@ class DataProcessor:
 
         for talk in talks:
             # Process talk data
-            processed_talk = self._process_single_talk(talk, qa_by_talk_code)
+            processed_talk = self._process_single_talk(talk, qa_by_talk_code, schedule_lookup)
 
             # if processed_talk["old_slug"] != processed_talk["slug"]:
             #     redirects.append(
@@ -254,7 +277,7 @@ class DataProcessor:
 
         return talks_by_code
 
-    def _process_single_talk(self, talk: Dict, qa_by_talk_code: Dict[str, str]) -> Dict:
+    def _process_single_talk(self, talk: Dict, qa_by_talk_code: Dict[str, str], schedule_lookup: Dict[str, Dict]) -> Dict:
         """Process a single talk entry."""
 
         speakers = [
@@ -285,15 +308,9 @@ class DataProcessor:
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
-            "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME)
-            if talk.get("slot", {}) is not None
-            else DEFAULT_TIME,
-            "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME)
-            if talk.get("slot", {}) is not None
-            else DEFAULT_TIME,
-            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD")
-            if talk.get("slot", {}) is not None
-            else "TBD",
+            "start_time": schedule_lookup.get(talk["code"], {}).get("start_time", DEFAULT_TIME),
+            "end_time": schedule_lookup.get(talk["code"], {}).get("end_time", DEFAULT_TIME),
+            "room": schedule_lookup.get(talk["code"], {}).get("room", "TBD"),
             "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["name"]["en"],
@@ -326,18 +343,19 @@ class DataProcessor:
     def download_avatar(self, avatar_url: str, speaker_slug: str) -> str:
         """
         Download avatar image and save to images directory.
+        Uses a cache directory to avoid re-downloading existing avatars.
         Returns the relative path to the saved image.
         """
+        if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
+            return DEFAULT_AVATAR_PATH
+
         if self.skip_avatars:
-            # Check if avatar already exists
+            # Check if avatar already exists in final location
             for ext in [".png", ".jpg", ".jpeg", ".gif", ".webp"]:
                 image_path = self.images_dir / f"{speaker_slug}{ext}"
                 if image_path.exists():
                     return f"{speaker_slug}{ext}"
             # If no existing avatar found, return default
-            return DEFAULT_AVATAR_PATH
-
-        if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
             return DEFAULT_AVATAR_PATH
 
         # Add size parameter for Gravatar URLs
@@ -360,18 +378,29 @@ class DataProcessor:
 
             # Create image filename
             image_filename = f"{speaker_slug}{extension}"
-            image_path = self.images_dir / image_filename
+            cache_path = self.avatar_cache_dir / image_filename
+            final_path = self.images_dir / image_filename
             relative_path = f"{image_filename}"
 
-            # Download the image
+            # Check if avatar exists in cache
+            if cache_path.exists():
+                click.echo(f"Using cached avatar for {speaker_slug}", err=True)
+                # Copy from cache to final location
+                shutil.copy(cache_path, final_path)
+                return relative_path
+
+            # Download the image to cache
             response = httpx.get(avatar_url, follow_redirects=True, timeout=10.0)
             response.raise_for_status()
 
-            # Save image to file
-            with open(image_path, "wb") as img_file:
+            # Save to cache
+            with open(cache_path, "wb") as img_file:
                 img_file.write(response.content)
 
-            click.echo(f"Downloaded avatar for {speaker_slug}", err=True)
+            # Copy to final location
+            shutil.copy(cache_path, final_path)
+
+            click.echo(f"Downloaded and cached avatar for {speaker_slug}", err=True)
             return relative_path
 
         except Exception as e:
@@ -629,7 +658,8 @@ def get_event_data(ctx, skip_avatars):
 
     # Get and process talks
     talks = client.get_confirmed_talks()
-    talks_by_code = processor.process_talks(talks, qa_by_talk_code)
+    schedule_lookup = client.get_schedule_data()
+    talks_by_code = processor.process_talks(talks, qa_by_talk_code, schedule_lookup)
 
     # Get unique speaker codes
     speaker_codes = set()
