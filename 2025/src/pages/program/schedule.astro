@@ -33,11 +33,12 @@ const talkDataByDate = scheduledTalks.reduce((acc, talk) => {
 
 const talkDataByDateAndTime = Object.keys(talkDataByDate).reduce((acc, date) => {
   acc[date] = talkDataByDate[date].reduce((acc, talk) => {
-    const time = DateTime.fromISO(talk.data.start_time)
-    if (!acc[time]) {
-      acc[time] = []
+    // Use ISO string as key to ensure consistent sorting
+    const timeKey = talk.data.start_time
+    if (!acc[timeKey]) {
+      acc[timeKey] = []
     }
-    acc[time].push(talk)
+    acc[timeKey].push(talk)
     return acc
   }, {})
   return acc
@@ -108,7 +109,7 @@ function formatTime(timeString) {
           <th class="p-2 sticky-heading">Ballroom A</th>
         </thead>
 
-      {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
+      {Object.keys(talkDataByDateAndTime[scheduleDate]).sort().map((scheduleTime) => (
         <tr class="">
           <td class="text-center font-bold time"><p>{formatTime(scheduleTime)}</p></td>
             {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
