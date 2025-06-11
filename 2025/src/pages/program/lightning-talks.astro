@@ -1,0 +1,60 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+const baseUrl = import.meta.env.BASE_URL
+
+// Get the lightning talks data
+const lightningTalks = await getCollection('talks', ({ data }) => {
+  return data.title === 'Lightning Talks'
+})
+
+const lightningTalk = lightningTalks[0]
+
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
+  }
+}
+
+function formatDay(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('cccc')
+  }
+}
+---
+
+<DefaultLayout title="Lightning Talks">
+  <section class="my-12">
+    <div class="container">
+      <h1>Lightning Talks</h1>
+      {lightningTalk && (
+        <p class="italic">
+          {formatDay(lightningTalk.data.start_time)} at {formatTime(lightningTalk.data.start_time)} in {lightningTalk.data.room}
+        </p>
+      )}
+    </div>
+  </section>
+  
+  <section class="my-12">
+    <div class="space-content container">
+      <p>Lightning Talks are quick 5-minute (hard limit!) talks on any topics of interest to the PyOhio community. Anyone can present a Lightning Talk. Yes, even you! Slides are encouraged but not required!</p>
+      
+      <p>A sign-up sheet will be posted in the lobby near registration. Talks will be selected and the order randomized. The talk list will be posted on this page once they are selected.</p>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container">
+      <h2>Talks</h2>
+      <p>TBD</p>
+    </div>
+  </section>
+</DefaultLayout>

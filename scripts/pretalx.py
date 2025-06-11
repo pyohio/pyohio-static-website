@@ -150,8 +150,8 @@ class PretalxClient:
             click.echo(f"Got {len(rooms_lookup)} rooms", err=True)
         return rooms_lookup
 
-    def get_schedule_data(self) -> Dict[str, Dict]:
-        """Get schedule data for all talks."""
+    def get_schedule_data(self) -> Tuple[Dict[str, Dict], List[Dict]]:
+        """Get schedule data for all talks and break/session data."""
         click.echo("Getting schedule data...", err=True)
         schedule_url = f"{self.base_url}/schedules/latest/"
         response = httpx.get(schedule_url, headers=self.headers)
@@ -170,6 +170,7 @@ class PretalxClient:
 
         # Extract schedule data by fetching individual slots
         schedule_lookup = {}
+        break_sessions_raw = []  # Collect all breaks before deduplicating
         slot_ids = schedule_data.get("slots", [])
 
         for i, slot_id in enumerate(slot_ids):
@@ -185,23 +186,23 @@ class PretalxClient:
                 if self.verbose and i < 10:  # Debug first few slots
                     click.echo(f"DEBUG: Slot {slot_id} data: {slot_data}", err=True)
 
-                # Extract submission code and schedule info
+                # Handle room - it might be an ID or an object
+                room_info = slot_data.get("room")
+                if isinstance(room_info, int):
+                    # Room is an ID, look it up in rooms_lookup
+                    room_name = rooms_lookup.get(room_info, f"Room-{room_info}")
+                elif isinstance(room_info, dict):
+                    room_name = (
+                        room_info.get("name", {}).get("en", "TBD")
+                        if room_info.get("name")
+                        else "TBD"
+                    )
+                else:
+                    room_name = "TBD"
+
+                # Extract submission code and schedule info for talks
                 if "submission" in slot_data and slot_data["submission"]:
                     submission_code = slot_data["submission"]
-
-                    # Handle room - it might be an ID or an object
-                    room_info = slot_data.get("room")
-                    if isinstance(room_info, int):
-                        # Room is an ID, look it up in rooms_lookup
-                        room_name = rooms_lookup.get(room_info, f"Room-{room_info}")
-                    elif isinstance(room_info, dict):
-                        room_name = (
-                            room_info.get("name", {}).get("en", "TBD")
-                            if room_info.get("name")
-                            else "TBD"
-                        )
-                    else:
-                        room_name = "TBD"
 
                     schedule_lookup[submission_code] = {
                         "start_time": slot_data.get("start"),
@@ -217,14 +218,118 @@ class PretalxClient:
                             f"DEBUG: Added schedule for submission {submission_code}: {schedule_lookup[submission_code]}",
                             err=True,
                         )
+                
+                # Extract break/session data for slots without submissions
+                elif "description" in slot_data and slot_data["description"]:
+                    description = slot_data["description"]
+                    title = description.get("en", "Break") if isinstance(description, dict) else str(description)
+                    
+                    # Create a break/session entry (will be deduplicated later)
+                    break_entry = {
+                        "title": title,
+                        "start_time": slot_data.get("start"),
+                        "end_time": slot_data.get("end"),
+                        "room": room_name,
+                        "room_id": room_info if isinstance(room_info, int) else None,
+                        "duration": slot_data.get("duration", 15),
+                        "slot_id": slot_data['id']
+                    }
+                    
+                    break_sessions_raw.append(break_entry)
+                    
+                    if self.verbose and i < 10:
+                        click.echo(f"DEBUG: Found break session: {break_entry['title']} at {break_entry['start_time']}", err=True)
 
             except Exception as e:
                 if self.verbose:
                     click.echo(f"DEBUG: Error fetching slot {slot_id}: {e}", err=True)
                 continue
 
-        click.echo(f"Got schedule data for {len(schedule_lookup)} talks", err=True)
-        return schedule_lookup
+        # Deduplicate only actual breaks (not opening/closing remarks)
+        break_groups = {}
+        non_break_sessions = []
+        
+        for break_entry in break_sessions_raw:
+            title = break_entry["title"]
+            # Only deduplicate entries with "break" in the title
+            if "break" in title.lower():
+                key = (title, break_entry["start_time"])
+                if key not in break_groups:
+                    break_groups[key] = break_entry
+                # If multiple rooms have the same break, just keep the first one
+            else:
+                # Keep opening/closing remarks with their actual rooms
+                non_break_sessions.append(break_entry)
+        
+        # Create final break sessions with unique slugs
+        break_sessions = []
+        break_title_counts = {}
+        
+        # Process deduplicated breaks
+        for (title, start_time), break_entry in break_groups.items():
+            # Track duplicate titles and create unique slugs
+            if title in break_title_counts:
+                break_title_counts[title] += 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+            else:
+                break_title_counts[title] = 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+            
+            # Create final break entry
+            final_break = {
+                "title": title,
+                "start_time": start_time,
+                "end_time": break_entry["end_time"],
+                "room": "n/a",  # Breaks span all rooms
+                "room_id": None,
+                "duration": break_entry["duration"],
+                "type": "Break",  # Default type
+                "slug": unique_slug,
+                "code": f"BREAK{break_entry['slot_id']}",
+                "speakers": [],
+                "description": ""
+            }
+            
+            # Determine specific break type
+            if "lunch" in title.lower():
+                final_break["type"] = "Lunch Break"
+            
+            break_sessions.append(final_break)
+        
+        # Process non-break sessions (opening/closing remarks) with their actual rooms
+        for session in non_break_sessions:
+            title = session["title"]
+            
+            # Track duplicate titles and create unique slugs
+            if title in break_title_counts:
+                break_title_counts[title] += 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+            else:
+                break_title_counts[title] = 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+            
+            # Create session entry with actual room
+            final_session = {
+                "title": title,
+                "start_time": session["start_time"],
+                "end_time": session["end_time"],
+                "room": session["room"],  # Keep actual room
+                "room_id": session["room_id"],
+                "duration": session["duration"],
+                "type": "Plenary Session",
+                "slug": unique_slug,
+                "code": f"BREAK{session['slot_id']}",
+                "speakers": [],
+                "description": ""
+            }
+            
+            break_sessions.append(final_session)
+        
+        if self.verbose:
+            click.echo(f"DEBUG: Created {len(break_sessions)} final break/session entries", err=True)
+
+        click.echo(f"Got schedule data for {len(schedule_lookup)} talks and {len(break_sessions)} break sessions", err=True)
+        return schedule_lookup, break_sessions
 
     def get_speaker_data(self, speaker_code: str) -> Dict:
         """Get detailed data for a specific speaker."""
@@ -707,9 +812,18 @@ class DataProcessor:
 
         return result
 
-    def process_breaks(self) -> None:
+    def process_breaks(self, break_sessions: List[Dict] = None) -> None:
         """Process break data and save to files."""
         click.echo("Writing break files...", err=True)
+        
+        # Process breaks from schedule API if provided
+        if break_sessions:
+            for break_session in break_sessions:
+                save_filename = self.talks_dir / f"{break_session['slug']}.yaml"
+                with open(save_filename, "w") as save_file:
+                    yaml.dump(break_session, save_file, allow_unicode=True)
+        
+        # Also process any manually defined breaks from BREAKS constant
         for break_code, break_data in BREAKS.items():
             save_filename = self.talks_dir / f"{break_code.lower()}.yaml"
             with open(save_filename, "w") as save_file:
@@ -776,7 +890,7 @@ def get_event_data(ctx, skip_avatars, verbose):
 
     # Get and process talks
     talks = client.get_confirmed_talks()
-    schedule_lookup = client.get_schedule_data()
+    schedule_lookup, break_sessions = client.get_schedule_data()
     talks_by_code = processor.process_talks(talks, qa_by_talk_code, schedule_lookup)
 
     # Get unique speaker codes
@@ -791,7 +905,7 @@ def get_event_data(ctx, skip_avatars, verbose):
     )
 
     # Process breaks
-    processor.process_breaks()
+    processor.process_breaks(break_sessions)
 
 
 @pretalx.command()
