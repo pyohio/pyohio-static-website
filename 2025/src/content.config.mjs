@@ -17,14 +17,9 @@ const individualSponsors = defineCollection({
   type: 'data',
 })
 
-const jsonData = defineCollection({
-  type: 'data',
-})
-
 export const collections = {
   talks,
   speakers,
   sponsors,
   individualSponsors,
-  jsonData,
 }

@@ -16,7 +16,6 @@ import click
 import httpx
 import markdown
 import yaml
-import orjson
 from markdownify import markdownify
 from mdx_gfm import GithubFlavoredMarkdownExtension
 from slugify import slugify
@@ -363,7 +362,6 @@ class DataProcessor:
         self.year = year
         self.talks_dir = data_dir / "talks"
         self.speakers_dir = data_dir / "speakers"
-        self.json_dir = data_dir / "jsonData"
         self.images_dir = data_dir / "speakers" / "img"
         self.avatar_cache_dir = Path("./scripts/avatar_cache")
         self.skip_avatars = skip_avatars
@@ -372,7 +370,6 @@ class DataProcessor:
         for directory in [
             self.talks_dir,
             self.speakers_dir,
-            self.json_dir,
             self.images_dir,
             self.avatar_cache_dir,
         ]:
@@ -427,7 +424,6 @@ class DataProcessor:
         click.echo("Writing talk files...", err=True)
 
         talks_by_code = {}
-        talk_data = []
 
         # redirects = []
 
@@ -448,34 +444,6 @@ class DataProcessor:
 
             # Add to return collections
             talks_by_code[talk["code"]] = processed_talk
-
-            # Add extra fields for JSON export
-            json_talk = processed_talk.copy()
-            json_talk["description_text"] = (
-                markdownify(json_talk["description"])
-                .replace("<", "")
-                .replace(">", "")
-                .replace("\n\n\n", "\n\n")
-            )
-
-            if talk_slug := json_talk.get("slug"):
-                json_talk["talk_url"] = (
-                    f"https://www.pyohio.org/{self.year}/talks/{talk_slug}"
-                )
-
-            json_talk["speaker_names"] = ", ".join(
-                [s["name"] for s in json_talk["speakers"]]
-            )
-            json_talk["description_youtube"] = (
-                f"{json_talk['type']} by {json_talk['speaker_names']} at PyOhio {self.year}:\n"
-                f"{json_talk['description_text']}PyOhio talk listing: {json_talk['talk_url']}"
-            )
-
-            talk_data.append(json_talk)
-
-        # Write talk data to JSON
-        click.echo("Writing talk data JSON...", err=True)
-        self._write_json(talk_data, "talks.json", self.json_dir)
 
         # click.echo("Redirects:", err=True)
         # for redirect in redirects:
@@ -842,11 +810,6 @@ class DataProcessor:
             with open(save_filename, "w") as save_file:
                 yaml.dump(break_data, save_file, allow_unicode=True)
 
-    def _write_json(self, data: Any, filename: str, path: Path) -> None:
-        """Write data to a JSON file."""
-        outfile_name = path / filename
-        with open(outfile_name, "wb") as outfile:
-            outfile.write(orjson.dumps(data, option=orjson.OPT_INDENT_2))
 
 
 @click.group()
@@ -956,11 +919,9 @@ def make_talk_extras():
         except Exception as e:
             click.echo(f"Error processing {talk_file}: {e}", err=True)
 
-    # Print JSON to stdout using orjson
-    json_bytes = orjson.dumps(
-        talk_extras, option=orjson.OPT_INDENT_2 | orjson.OPT_SORT_KEYS
-    )
-    print(json_bytes.decode("utf-8"))
+    # Print JSON to stdout using json
+    import json
+    print(json.dumps(talk_extras, indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":
