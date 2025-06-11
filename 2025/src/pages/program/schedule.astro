@@ -63,10 +63,10 @@ function formatTime(timeString) {
       <th class="p-2 sticky-heading">Ballroom A</th>
       <tr>
         <td class="text-center font-bold time"><p>TBA</p></td>
-        <td class="align-top p-2 plenary" colspan="2">
+        <td class="align-top p-2 plenary">
           <p class="font-bold">PyOhio Intro & Opening Reception</p>
           <p class="text-xs">Introduction to PyOhio and an informal reception. More info and time TBA.</p>
-        </td><td class="break" colspan="2"></td>
+        </td>
       </tr>
       <tr>
         <td class="text-center font-bold time"><p>7:45 pm</p></td>
@@ -102,26 +102,26 @@ function formatTime(timeString) {
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){
-                    return <td class="align-top p-2 plenary lightning-talks" colspan="2">
+                    return <td class="align-top p-2 plenary lightning-talks">
                       <p class="font-bold"><a href={`${baseUrl}/program/lightning-talks`}>{talk.data.title}</a></p>
                       <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
-                      </td><td class="break" colspan="2"></td>
+                      </td>
                   } else if (talk.data.type === "Keynote") {
-                    return <td class="align-top p-2 plenary talk" colspan="2">
+                    return <td class="align-top p-2 plenary talk">
                       <p class="font-bold">
                         <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
-                      </td><td class="break" colspan="2"></td> 
+                      </td> 
                   } else {
-                    return <td class="font-bold p-2 plenary" colspan="2">
+                    return <td class="font-bold p-2 plenary">
                       <p class="">{talk.data.title}</p>
-                      </td><td class="break" colspan="2"></td>
+                      </td>
                   }
-                } else if (talk.data.type === "Break") {
-                  if (talk.data.title === "Lunch Break"){
+                } else if (talk.data.type === "Break" || talk.data.type === "Lunch Break") {
+                  if (talk.data.type === "Lunch Break"){
                     return <td class="align-top p-2 break lunch" colspan="4">
-                    <p class="font-bold">{talk.data.title}</p>
+                    <p class="font-bold"><a href={`${baseUrl}/program/saturday-lunch-break`}>{talk.data.title}</a></p>
                   </td>
                   } else {
                     return <td class=" p-2 break font-bold" colspan="4">
@@ -150,6 +150,20 @@ function formatTime(timeString) {
 
 <style lang="scss" is:global>
   @use '../../assets/scss/base/color' as *;
+
+  :root {
+    --table-border: var(--neutral-400);
+    --table-heading: var(--neutral-300);
+    --table-background: var(--neutral-100);
+    --table-muted: var(--neutral-200);
+  }
+
+  .darkmode {
+    --table-border: var(--neutral-600);
+    --table-heading: var(--neutral-800);
+    --table-background: var(--neutral-900);
+    --table-muted: var(--neutral-700);
+  }
 
   table {
     border-top: 1px solid var(--table-border);
