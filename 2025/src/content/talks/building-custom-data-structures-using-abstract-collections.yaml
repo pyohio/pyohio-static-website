@@ -10,17 +10,17 @@ description: <p>Python’s abstract base classes (ABCs) in the <code>collections
   code more Pythonic.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T15:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: building-custom-data-structures-using-abstract-collections
 speakers:
 - avatar: https://pretalx.com/media/avatars/NL3RWX_bwKyIfi.jpeg
   code: NL3RWX
   name: Daniel Schelkoph
   slug: daniel-schelkoph
-start_time: TBD
+start_time: '2025-07-26T15:00:00-04:00'
 stream_timestamp: ''
 title: Building Custom Data Structures Using Abstract Collections
 type: 30 Minute Talk

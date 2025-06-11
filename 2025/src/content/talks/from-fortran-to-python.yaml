@@ -16,10 +16,10 @@ description: '<p>What was it like to write scientific code before personal compu
   cards to <em>Python</em> notebooks and modern IDEs.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T13:00:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: from-fortran-to-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/UYRBHX_gusMbKM.png
@@ -30,7 +30,7 @@ speakers:
   code: XDNUZ7
   name: Helianildes Silva Ferreira
   slug: helianildes-silva-ferreira
-start_time: TBD
+start_time: '2025-07-27T12:30:00-04:00'
 stream_timestamp: ''
 title: 'From Fortran to Python: A Conversation Across Generations of Scientific Computing'
 type: 30 Minute Talk

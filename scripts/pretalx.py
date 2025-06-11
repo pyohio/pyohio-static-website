@@ -123,6 +123,31 @@ class PretalxClient:
         click.echo(f"Got {len(sessions_results)} talks", err=True)
         return sessions_results
 
+    def get_rooms(self) -> Dict[int, str]:
+        """Get room data and return a lookup dict of room_id -> room_name."""
+        if self.verbose:
+            click.echo("Getting room data...", err=True)
+        rooms_url = f"{self.base_url}/rooms/"
+        rooms_results = self.get_all_pages(rooms_url)
+        
+        rooms_lookup = {}
+        for room in rooms_results:
+            room_id = room["id"]
+            # Handle room name - it might be a string or a dict with language keys
+            room_name = room.get("name")
+            if isinstance(room_name, dict):
+                room_name = room_name.get("en", f"Room-{room_id}")
+            elif not room_name:
+                room_name = f"Room-{room_id}"
+            
+            rooms_lookup[room_id] = room_name
+            if self.verbose:
+                click.echo(f"DEBUG: Room {room_id}: {room_name}", err=True)
+        
+        if self.verbose:
+            click.echo(f"Got {len(rooms_lookup)} rooms", err=True)
+        return rooms_lookup
+
     def get_schedule_data(self) -> Dict[str, Dict]:
         """Get schedule data for all talks."""
         click.echo("Getting schedule data...", err=True)
@@ -130,6 +155,9 @@ class PretalxClient:
         response = httpx.get(schedule_url, headers=self.headers)
         response.raise_for_status()
         schedule_data = response.json()
+        
+        # Get room data for name lookup
+        rooms_lookup = self.get_rooms()
         
         # Debug: Print the structure of the response
         if self.verbose:
@@ -159,9 +187,8 @@ class PretalxClient:
                     # Handle room - it might be an ID or an object
                     room_info = slot_data.get("room")
                     if isinstance(room_info, int):
-                        # Room is an ID, we'd need to fetch room details separately
-                        # For now, use the room ID as a placeholder
-                        room_name = f"Room-{room_info}"
+                        # Room is an ID, look it up in rooms_lookup
+                        room_name = rooms_lookup.get(room_info, f"Room-{room_info}")
                     elif isinstance(room_info, dict):
                         room_name = room_info.get("name", {}).get("en", "TBD") if room_info.get("name") else "TBD"
                     else:
@@ -170,7 +197,8 @@ class PretalxClient:
                     schedule_lookup[submission_code] = {
                         "start_time": slot_data.get("start"),
                         "end_time": slot_data.get("end"),
-                        "room": room_name
+                        "room": room_name,
+                        "room_id": room_info if isinstance(room_info, int) else None
                     }
                     
                     if self.verbose and i < 10:  # Debug first few successful submissions

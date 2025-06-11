@@ -11,17 +11,17 @@ description: '<p>Python loops are "slow", is a phrase every python programmer ha
   anything.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T14:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: why-python-loops-are-slow
 speakers:
 - avatar: https://pretalx.com/media/avatars/YDUP8W_gSNBNEc.jpg
   code: YDUP8W
   name: Tyler Riccio
   slug: tyler-riccio
-start_time: TBD
+start_time: '2025-07-27T14:00:00-04:00'
 stream_timestamp: ''
 title: 'Why Python Loops Are "Slow": A Gentle Introduction to Interpretation, Bytecode,
   and Fast Code'

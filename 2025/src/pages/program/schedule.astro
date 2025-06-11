@@ -44,12 +44,12 @@ function formatTime(timeString) {
   <section class="my-6">
     <div class="container">
       <h1>Schedule</h1>
-      <p><em><a href={`${baseUrl}program/open-spaces/`}>Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
+      <p><em><a href={`${baseUrl}/program/open-spaces/`}>Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
     </div>
   </section>
 
   <section class="container text-s">
-    <h2 class="my-6">Friday, July 26</h2>
+    <h2 class="my-6">Friday, July 25</h2>
     <table class="table-auto text-sm">
     <thead class="text-center">
       <th class="w-32 p-2 heading">Start Time</th>
@@ -103,13 +103,13 @@ function formatTime(timeString) {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){
                     return <td class="align-top p-2 plenary lightning-talks" colspan="2">
-                      <p class="font-bold"><a href={`${baseUrl}program/lightning-talks`}>{talk.data.title}</a></p>
+                      <p class="font-bold"><a href={`${baseUrl}/program/lightning-talks`}>{talk.data.title}</a></p>
                       <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
                       </td><td class="break" colspan="2"></td>
                   } else if (talk.data.type === "Keynote") {
                     return <td class="align-top p-2 plenary talk" colspan="2">
                       <p class="font-bold">
-                        <a href={`${baseUrl}program/talks/${talk.data.slug}`}>{talk.data.title}</a>
+                        <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
                       </td><td class="break" colspan="2"></td> 
@@ -133,7 +133,7 @@ function formatTime(timeString) {
                 } else {
               return <td class="align-top p-2 talk">
                 <p class="font-bold">
-                  <a href={`${baseUrl}program/talks/${talk.data.slug}`}>{talk.data.title}</a>
+                  <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                 </p>
                 <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
               </td>

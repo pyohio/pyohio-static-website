@@ -34,17 +34,17 @@ description: '<p>Python – like many languages – lets you do things that are 
   <p>(* SKILLED OPERATOR ON CLOSED CIRCUIT; DO NOT ATTEMPT)</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T14:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: guardrails
 speakers:
 - avatar: https://pretalx.com/media/avatars/QWCHX7_x69USba.jpg
   code: QWCHX7
   name: Christopher Neugebauer
   slug: christopher-neugebauer
-start_time: TBD
+start_time: '2025-07-26T14:15:00-04:00'
 stream_timestamp: ''
 title: 'Guardrails: An Alternative View of Safely Working in Python'
 type: 30 Minute Talk

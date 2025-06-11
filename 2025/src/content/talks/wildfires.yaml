@@ -9,17 +9,17 @@ description: <p>Wildfires have become more frequent nationwide, causing chaos no
   and  finally create compelling visualizations of our wildfire data.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T14:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: wildfires
 speakers:
 - avatar: https://pretalx.com/media/avatars/3AV3YC_UG5fg4M.jpeg
   code: 3AV3YC
   name: Lazouich Ford
   slug: lazouich-ford
-start_time: TBD
+start_time: '2025-07-26T14:15:00-04:00'
 stream_timestamp: ''
 title: Wildfires!
 type: 30 Minute Talk

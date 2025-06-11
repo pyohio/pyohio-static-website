@@ -12,17 +12,17 @@ description: '<p>Getting from "I''m passionate about this topic" to actually wor
   tools to build your dream project.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T13:00:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: finding-practical-applications-for-your-passion-projects
 speakers:
 - avatar: https://pretalx.com/media/avatars/VR7BAB_HHqFGHO.jpg
   code: VR7BAB
   name: Joe Kaufeld
   slug: joe-kaufeld
-start_time: TBD
+start_time: '2025-07-27T12:30:00-04:00'
 stream_timestamp: ''
 title: Finding Practical Applications for Your Passion Projects
 type: 30 Minute Talk

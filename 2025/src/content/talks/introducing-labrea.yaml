@@ -19,17 +19,17 @@ description: '<p>As a multi-paradigm language, Python gives its users the freedo
   might help you.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T14:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: introducing-labrea
 speakers:
 - avatar: https://pretalx.com/media/avatars/ZFU8DY_Rj4w0Ey.jpg
   code: ZFU8DY
   name: Austin Warner
   slug: austin-warner
-start_time: TBD
+start_time: '2025-07-27T14:00:00-04:00'
 stream_timestamp: ''
 title: 'Introducing Labrea: How Embracing Declarative, Functional Programming Can
   Lead You Out of the Tar Pit'

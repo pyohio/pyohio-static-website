@@ -29,17 +29,17 @@ description: '<p>Our world is complex: one approach to understanding and learnin
   - End-to-end ML tasks on graph data: best practices to avoid pitfalls</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T12:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: graph-machine-learning-in-all-its-glory
 speakers:
 - avatar: https://pretalx.com/media/avatars/L79PHK_OYWNOqR.jpg
   code: L79PHK
   name: Shreya Khurana
   slug: shreya-khurana
-start_time: TBD
+start_time: '2025-07-26T11:45:00-04:00'
 stream_timestamp: ''
 title: Graph Machine Learning in All Its Glory!
 type: 30 Minute Talk
