@@ -51,7 +51,9 @@ KEYNOTE_SPEAKERS = [
 class PretalxClient:
     """Handle Pretalx API requests and data processing."""
 
-    def __init__(self, api_key: str, event_id: str = PRETALX_EVENT_ID, verbose: bool = False):
+    def __init__(
+        self, api_key: str, event_id: str = PRETALX_EVENT_ID, verbose: bool = False
+    ):
         """Initialize with API key and event ID."""
         self.api_key = api_key
         self.event_id = event_id
@@ -129,7 +131,7 @@ class PretalxClient:
             click.echo("Getting room data...", err=True)
         rooms_url = f"{self.base_url}/rooms/"
         rooms_results = self.get_all_pages(rooms_url)
-        
+
         rooms_lookup = {}
         for room in rooms_results:
             room_id = room["id"]
@@ -139,11 +141,11 @@ class PretalxClient:
                 room_name = room_name.get("en", f"Room-{room_id}")
             elif not room_name:
                 room_name = f"Room-{room_id}"
-            
+
             rooms_lookup[room_id] = room_name
             if self.verbose:
                 click.echo(f"DEBUG: Room {room_id}: {room_name}", err=True)
-        
+
         if self.verbose:
             click.echo(f"Got {len(rooms_lookup)} rooms", err=True)
         return rooms_lookup
@@ -155,60 +157,72 @@ class PretalxClient:
         response = httpx.get(schedule_url, headers=self.headers)
         response.raise_for_status()
         schedule_data = response.json()
-        
+
         # Get room data for name lookup
         rooms_lookup = self.get_rooms()
-        
+
         # Debug: Print the structure of the response
         if self.verbose:
-            click.echo(f"DEBUG: Schedule has {len(schedule_data.get('slots', []))} slots", err=True)
-        
+            click.echo(
+                f"DEBUG: Schedule has {len(schedule_data.get('slots', []))} slots",
+                err=True,
+            )
+
         # Extract schedule data by fetching individual slots
         schedule_lookup = {}
         slot_ids = schedule_data.get("slots", [])
-        
+
         for i, slot_id in enumerate(slot_ids):
             if self.verbose and i < 10:  # Debug first few slots
                 click.echo(f"DEBUG: Fetching slot {slot_id}...", err=True)
-            
+
             try:
                 slot_url = f"{self.base_url}/slots/{slot_id}/"
                 slot_response = httpx.get(slot_url, headers=self.headers)
                 slot_response.raise_for_status()
                 slot_data = slot_response.json()
-                
+
                 if self.verbose and i < 10:  # Debug first few slots
                     click.echo(f"DEBUG: Slot {slot_id} data: {slot_data}", err=True)
-                
+
                 # Extract submission code and schedule info
                 if "submission" in slot_data and slot_data["submission"]:
                     submission_code = slot_data["submission"]
-                    
+
                     # Handle room - it might be an ID or an object
                     room_info = slot_data.get("room")
                     if isinstance(room_info, int):
                         # Room is an ID, look it up in rooms_lookup
                         room_name = rooms_lookup.get(room_info, f"Room-{room_info}")
                     elif isinstance(room_info, dict):
-                        room_name = room_info.get("name", {}).get("en", "TBD") if room_info.get("name") else "TBD"
+                        room_name = (
+                            room_info.get("name", {}).get("en", "TBD")
+                            if room_info.get("name")
+                            else "TBD"
+                        )
                     else:
                         room_name = "TBD"
-                    
+
                     schedule_lookup[submission_code] = {
                         "start_time": slot_data.get("start"),
                         "end_time": slot_data.get("end"),
                         "room": room_name,
-                        "room_id": room_info if isinstance(room_info, int) else None
+                        "room_id": room_info if isinstance(room_info, int) else None,
                     }
-                    
-                    if self.verbose and i < 10:  # Debug first few successful submissions
-                        click.echo(f"DEBUG: Added schedule for submission {submission_code}: {schedule_lookup[submission_code]}", err=True)
-                        
+
+                    if (
+                        self.verbose and i < 10
+                    ):  # Debug first few successful submissions
+                        click.echo(
+                            f"DEBUG: Added schedule for submission {submission_code}: {schedule_lookup[submission_code]}",
+                            err=True,
+                        )
+
             except Exception as e:
                 if self.verbose:
                     click.echo(f"DEBUG: Error fetching slot {slot_id}: {e}", err=True)
                 continue
-        
+
         click.echo(f"Got schedule data for {len(schedule_lookup)} talks", err=True)
         return schedule_lookup
 
@@ -285,7 +299,10 @@ class DataProcessor:
                     temp_path.unlink(missing_ok=True)
 
     def process_talks(
-        self, talks: List[Dict], qa_by_talk_code: Dict[str, str], schedule_lookup: Dict[str, Dict]
+        self,
+        talks: List[Dict],
+        qa_by_talk_code: Dict[str, str],
+        schedule_lookup: Dict[str, Dict],
     ) -> Dict[str, Dict]:
         """Process talk data and save to files."""
         self.clean_directory(self.talks_dir)
@@ -298,7 +315,9 @@ class DataProcessor:
 
         for talk in talks:
             # Process talk data
-            processed_talk = self._process_single_talk(talk, qa_by_talk_code, schedule_lookup)
+            processed_talk = self._process_single_talk(
+                talk, qa_by_talk_code, schedule_lookup
+            )
 
             # if processed_talk["old_slug"] != processed_talk["slug"]:
             #     redirects.append(
@@ -346,7 +365,12 @@ class DataProcessor:
 
         return talks_by_code
 
-    def _process_single_talk(self, talk: Dict, qa_by_talk_code: Dict[str, str], schedule_lookup: Dict[str, Dict]) -> Dict:
+    def _process_single_talk(
+        self,
+        talk: Dict,
+        qa_by_talk_code: Dict[str, str],
+        schedule_lookup: Dict[str, Dict],
+    ) -> Dict:
         """Process a single talk entry."""
 
         speakers = [
@@ -377,8 +401,12 @@ class DataProcessor:
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
-            "start_time": schedule_lookup.get(talk["code"], {}).get("start_time", DEFAULT_TIME),
-            "end_time": schedule_lookup.get(talk["code"], {}).get("end_time", DEFAULT_TIME),
+            "start_time": schedule_lookup.get(talk["code"], {}).get(
+                "start_time", DEFAULT_TIME
+            ),
+            "end_time": schedule_lookup.get(talk["code"], {}).get(
+                "end_time", DEFAULT_TIME
+            ),
             "room": schedule_lookup.get(talk["code"], {}).get("room", "TBD"),
             "duration": talk["duration"],
             "speakers": speakers,
@@ -412,7 +440,7 @@ class DataProcessor:
     def download_avatar(self, avatar_url: str, speaker_slug: str) -> str:
         """
         Download avatar image and save to images directory.
-        Uses a cache directory to avoid re-downloading existing avatars.
+        Uses a cache directory with original filenames to detect avatar changes.
         Returns the relative path to the saved image.
         """
         if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
@@ -432,10 +460,13 @@ class DataProcessor:
             avatar_url = f"{avatar_url}?s=300"
 
         try:
-            # Get file extension from URL or default to .png
+            # Parse URL to get original filename for caching
             parsed_url = urlparse(avatar_url)
-            path = parsed_url.path
-            extension = os.path.splitext(path)[1].lower()
+            original_path = parsed_url.path
+            original_filename = os.path.basename(original_path)
+
+            # Get file extension from URL or default to .png
+            extension = os.path.splitext(original_path)[1].lower()
             if not extension or extension not in [
                 ".jpg",
                 ".jpeg",
@@ -445,28 +476,40 @@ class DataProcessor:
             ]:
                 extension = ".png"
 
-            # Create image filename
-            image_filename = f"{speaker_slug}{extension}"
-            cache_path = self.avatar_cache_dir / image_filename
-            final_path = self.images_dir / image_filename
-            relative_path = f"{image_filename}"
+            # If no original filename, create one from URL hash
+            if not original_filename or original_filename == "/":
+                # Use a hash of the URL for cache filename
+                import hashlib
 
-            # Check if avatar exists in cache
+                url_hash = hashlib.md5(avatar_url.encode()).hexdigest()[:12]
+                original_filename = f"{url_hash}{extension}"
+            elif not original_filename.endswith(extension):
+                original_filename += extension
+
+            # Cache using original filename, final using speaker slug
+            cache_filename = original_filename
+            final_filename = f"{speaker_slug}{extension}"
+
+            cache_path = self.avatar_cache_dir / cache_filename
+            final_path = self.images_dir / final_filename
+            relative_path = final_filename
+
+            # Check if avatar exists in cache using original filename
             if cache_path.exists():
                 click.echo(f"Using cached avatar for {speaker_slug}", err=True)
-                # Copy from cache to final location
+                # Copy from cache to final location with speaker slug name
                 shutil.copy(cache_path, final_path)
                 return relative_path
 
-            # Download the image to cache
+            # Download the image to cache with original filename
             response = httpx.get(avatar_url, follow_redirects=True, timeout=10.0)
             response.raise_for_status()
 
-            # Save to cache
+            # Save to cache with original filename
             with open(cache_path, "wb") as img_file:
                 img_file.write(response.content)
 
-            # Copy to final location
+            # Copy to final location with speaker slug filename
             shutil.copy(cache_path, final_path)
 
             click.echo(f"Downloaded and cached avatar for {speaker_slug}", err=True)
@@ -707,7 +750,8 @@ def pretalx(ctx):
     help="Skip deleting and downloading avatar images",
 )
 @click.option(
-    "-v", "--verbose",
+    "-v",
+    "--verbose",
     is_flag=True,
     help="Enable verbose debug output",
 )

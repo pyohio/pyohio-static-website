@@ -139,6 +139,3 @@ cython_debug/
 
 #Jupyter Notebooks (for now)
 *.ipynb
-
-# Avatar cache directory
-avatar_cache/
