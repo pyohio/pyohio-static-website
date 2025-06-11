@@ -2,6 +2,7 @@
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
+const baseUrl = import.meta.env.BASE_URL
 
 const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattleya"]
 const talks = (await getCollection("talks")).sort(
@@ -43,7 +44,7 @@ function formatTime(timeString) {
   <section class="my-6">
     <div class="container">
       <h1>Schedule</h1>
-      <p><em><a href="/2024/program/open-spaces/">Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
+      <p><em><a href={`${baseUrl}program/open-spaces/`}>Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
     </div>
   </section>
 
@@ -63,7 +64,7 @@ function formatTime(timeString) {
       <tr>
         <td class="text-center font-bold time"><p>6:00 pm</p></td>
         <td class="align-top p-2 plenary" colspan="2">
-          <p class="font-bold"><a href="/2024/program/friday-tutorial">Beginner Tutorial: Learn Python with Your Face</a></p>
+          <p class="font-bold"><a href={`${baseUrl}program/friday-tutorial`}>Beginner Tutorial: Learn Python with Your Face</a></p>
           <p class="text-xs">Space is limited and separate registration is required.</p>
         </td><td class="break" colspan="2"></td>
       </tr>
@@ -102,13 +103,13 @@ function formatTime(timeString) {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){
                     return <td class="align-top p-2 plenary lightning-talks" colspan="2">
-                      <p class="font-bold"><a href="/2024/program/lightning-talks">{talk.data.title}</a></p>
+                      <p class="font-bold"><a href={`${baseUrl}program/lightning-talks`}>{talk.data.title}</a></p>
                       <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
                       </td><td class="break" colspan="2"></td>
                   } else if (talk.data.type === "Keynote") {
                     return <td class="align-top p-2 plenary talk" colspan="2">
                       <p class="font-bold">
-                        <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
+                        <a href={`${baseUrl}program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
                       </td><td class="break" colspan="2"></td> 
@@ -132,7 +133,7 @@ function formatTime(timeString) {
                 } else {
               return <td class="align-top p-2 talk">
                 <p class="font-bold">
-                  <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
+                  <a href={`${baseUrl}program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                 </p>
                 <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
               </td>
