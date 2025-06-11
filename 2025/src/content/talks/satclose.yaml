@@ -1,5 +1,10 @@
 code: SATCLOSE
-end_time: '2024-07-27T19:00:00-04:00'
-start_time: '2024-07-27T18:30:00-04:00'
+description: ''
+duration: 0
+end_time: '2025-07-26T19:45:00-04:00'
+room: n/a
+slug: satclose
+speakers: []
+start_time: '2025-07-26T19:45:00-04:00'
 title: Conference Space Closes
 type: Break

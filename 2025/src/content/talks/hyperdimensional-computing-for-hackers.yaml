@@ -14,17 +14,17 @@ description: '<p>In this session, we will explore the concept of hyperdimensiona
   everything they need to teach their own hyperdimensional computing models.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T15:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: hyperdimensional-computing-for-hackers
 speakers:
 - avatar: ''
   code: 3NMPXV
   name: Anthony
   slug: anthony
-start_time: TBD
+start_time: '2025-07-26T15:00:00-04:00'
 stream_timestamp: ''
 title: Hyperdimensional Computing for Hackers
 type: 30 Minute Talk

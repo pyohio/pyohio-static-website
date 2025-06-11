@@ -33,17 +33,17 @@ description: '<h2>Quantum Computing with Python: From Qubits to Circuits</h2>
   loop, you can build your first quantum circuit.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T14:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: quantum-computing-with-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/SK8CK9_nVofiGu.jpg
   code: SK8CK9
   name: Temitope Adeniyi
   slug: temitope-adeniyi
-start_time: TBD
+start_time: '2025-07-27T14:00:00-04:00'
 stream_timestamp: ''
 title: 'Quantum Computing with Python: From Qubits to Circuits'
 type: 30 Minute Talk

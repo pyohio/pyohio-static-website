@@ -51,12 +51,15 @@ KEYNOTE_SPEAKERS = [
 class PretalxClient:
     """Handle Pretalx API requests and data processing."""
 
-    def __init__(self, api_key: str, event_id: str = PRETALX_EVENT_ID):
+    def __init__(
+        self, api_key: str, event_id: str = PRETALX_EVENT_ID, verbose: bool = False
+    ):
         """Initialize with API key and event ID."""
         self.api_key = api_key
         self.event_id = event_id
         self.headers = {"Authorization": f"Token {api_key}"}
         self.base_url = f"https://pretalx.com/api/events/{event_id}"
+        self.verbose = verbose
 
     def get_all_pages(self, url: str) -> List[Dict]:
         """Get all paginated results from an API endpoint."""
@@ -122,6 +125,225 @@ class PretalxClient:
         click.echo(f"Got {len(sessions_results)} talks", err=True)
         return sessions_results
 
+    def get_rooms(self) -> Dict[int, str]:
+        """Get room data and return a lookup dict of room_id -> room_name."""
+        if self.verbose:
+            click.echo("Getting room data...", err=True)
+        rooms_url = f"{self.base_url}/rooms/"
+        rooms_results = self.get_all_pages(rooms_url)
+
+        rooms_lookup = {}
+        for room in rooms_results:
+            room_id = room["id"]
+            # Handle room name - it might be a string or a dict with language keys
+            room_name = room.get("name")
+            if isinstance(room_name, dict):
+                room_name = room_name.get("en", f"Room-{room_id}")
+            elif not room_name:
+                room_name = f"Room-{room_id}"
+
+            rooms_lookup[room_id] = room_name
+            if self.verbose:
+                click.echo(f"DEBUG: Room {room_id}: {room_name}", err=True)
+
+        if self.verbose:
+            click.echo(f"Got {len(rooms_lookup)} rooms", err=True)
+        return rooms_lookup
+
+    def get_schedule_data(self) -> Tuple[Dict[str, Dict], List[Dict]]:
+        """Get schedule data for all talks and break/session data."""
+        click.echo("Getting schedule data...", err=True)
+        schedule_url = f"{self.base_url}/schedules/latest/"
+        response = httpx.get(schedule_url, headers=self.headers)
+        response.raise_for_status()
+        schedule_data = response.json()
+
+        # Get room data for name lookup
+        rooms_lookup = self.get_rooms()
+
+        # Debug: Print the structure of the response
+        if self.verbose:
+            click.echo(
+                f"DEBUG: Schedule has {len(schedule_data.get('slots', []))} slots",
+                err=True,
+            )
+
+        # Extract schedule data by fetching individual slots
+        schedule_lookup = {}
+        break_sessions_raw = []  # Collect all breaks before deduplicating
+        slot_ids = schedule_data.get("slots", [])
+
+        for i, slot_id in enumerate(slot_ids):
+            if self.verbose and i < 10:  # Debug first few slots
+                click.echo(f"DEBUG: Fetching slot {slot_id}...", err=True)
+
+            try:
+                slot_url = f"{self.base_url}/slots/{slot_id}/"
+                slot_response = httpx.get(slot_url, headers=self.headers)
+                slot_response.raise_for_status()
+                slot_data = slot_response.json()
+
+                if self.verbose and i < 10:  # Debug first few slots
+                    click.echo(f"DEBUG: Slot {slot_id} data: {slot_data}", err=True)
+
+                # Handle room - it might be an ID or an object
+                room_info = slot_data.get("room")
+                if isinstance(room_info, int):
+                    # Room is an ID, look it up in rooms_lookup
+                    room_name = rooms_lookup.get(room_info, f"Room-{room_info}")
+                elif isinstance(room_info, dict):
+                    room_name = (
+                        room_info.get("name", {}).get("en", "TBD")
+                        if room_info.get("name")
+                        else "TBD"
+                    )
+                else:
+                    room_name = "TBD"
+
+                # Extract submission code and schedule info for talks
+                if "submission" in slot_data and slot_data["submission"]:
+                    submission_code = slot_data["submission"]
+
+                    schedule_lookup[submission_code] = {
+                        "start_time": slot_data.get("start"),
+                        "end_time": slot_data.get("end"),
+                        "room": room_name,
+                        "room_id": room_info if isinstance(room_info, int) else None,
+                    }
+
+                    if (
+                        self.verbose and i < 10
+                    ):  # Debug first few successful submissions
+                        click.echo(
+                            f"DEBUG: Added schedule for submission {submission_code}: {schedule_lookup[submission_code]}",
+                            err=True,
+                        )
+
+                # Extract break/session data for slots without submissions
+                elif "description" in slot_data and slot_data["description"]:
+                    description = slot_data["description"]
+                    title = (
+                        description.get("en", "Break")
+                        if isinstance(description, dict)
+                        else str(description)
+                    )
+
+                    # Create a break/session entry (will be deduplicated later)
+                    break_entry = {
+                        "title": title,
+                        "start_time": slot_data.get("start"),
+                        "end_time": slot_data.get("end"),
+                        "room": room_name,
+                        "room_id": room_info if isinstance(room_info, int) else None,
+                        "duration": slot_data.get("duration", 15),
+                        "slot_id": slot_data["id"],
+                    }
+
+                    break_sessions_raw.append(break_entry)
+
+                    if self.verbose and i < 10:
+                        click.echo(
+                            f"DEBUG: Found break session: {break_entry['title']} at {break_entry['start_time']}",
+                            err=True,
+                        )
+
+            except Exception as e:
+                if self.verbose:
+                    click.echo(f"DEBUG: Error fetching slot {slot_id}: {e}", err=True)
+                continue
+
+        # Deduplicate only actual breaks (not opening/closing remarks)
+        break_groups = {}
+        non_break_sessions = []
+
+        for break_entry in break_sessions_raw:
+            title = break_entry["title"]
+            # Only deduplicate entries with "break" in the title
+            if "break" in title.lower():
+                key = (title, break_entry["start_time"])
+                if key not in break_groups:
+                    break_groups[key] = break_entry
+                # If multiple rooms have the same break, just keep the first one
+            else:
+                # Keep opening/closing remarks with their actual rooms
+                non_break_sessions.append(break_entry)
+
+        # Create final break sessions with unique slugs
+        break_sessions = []
+        break_title_counts = {}
+
+        # Process deduplicated breaks
+        for (title, start_time), break_entry in break_groups.items():
+            # Track duplicate titles and create unique slugs
+            if title in break_title_counts:
+                break_title_counts[title] += 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+            else:
+                break_title_counts[title] = 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+
+            # Create final break entry
+            final_break = {
+                "title": title,
+                "start_time": start_time,
+                "end_time": break_entry["end_time"],
+                "room": "n/a",  # Breaks span all rooms
+                "room_id": None,
+                "duration": break_entry["duration"],
+                "type": "Break",  # Default type
+                "slug": unique_slug,
+                "code": f"BREAK{break_entry['slot_id']}",
+                "speakers": [],
+                "description": "",
+            }
+
+            # Determine specific break type
+            if "lunch" in title.lower():
+                final_break["type"] = "Lunch Break"
+
+            break_sessions.append(final_break)
+
+        # Process non-break sessions (opening/closing remarks) with their actual rooms
+        for session in non_break_sessions:
+            title = session["title"]
+
+            # Track duplicate titles and create unique slugs
+            if title in break_title_counts:
+                break_title_counts[title] += 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+            else:
+                break_title_counts[title] = 1
+                unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
+
+            # Create session entry with actual room
+            final_session = {
+                "title": title,
+                "start_time": session["start_time"],
+                "end_time": session["end_time"],
+                "room": session["room"],  # Keep actual room
+                "room_id": session["room_id"],
+                "duration": session["duration"],
+                "type": "Plenary Session",
+                "slug": unique_slug,
+                "code": f"BREAK{session['slot_id']}",
+                "speakers": [],
+                "description": "",
+            }
+
+            break_sessions.append(final_session)
+
+        if self.verbose:
+            click.echo(
+                f"DEBUG: Created {len(break_sessions)} final break/session entries",
+                err=True,
+            )
+
+        click.echo(
+            f"Got schedule data for {len(schedule_lookup)} talks and {len(break_sessions)} break sessions",
+            err=True,
+        )
+        return schedule_lookup, break_sessions
+
     def get_speaker_data(self, speaker_code: str) -> Dict:
         """Get detailed data for a specific speaker."""
         speaker_url = f"{self.base_url}/speakers/{speaker_code}/"
@@ -143,6 +365,7 @@ class DataProcessor:
         self.speakers_dir = data_dir / "speakers"
         self.json_dir = data_dir / "jsonData"
         self.images_dir = data_dir / "speakers" / "img"
+        self.avatar_cache_dir = Path("./scripts/avatar_cache")
         self.skip_avatars = skip_avatars
 
         # Ensure directories exist
@@ -151,6 +374,7 @@ class DataProcessor:
             self.speakers_dir,
             self.json_dir,
             self.images_dir,
+            self.avatar_cache_dir,
         ]:
             directory.mkdir(parents=True, exist_ok=True)
 
@@ -193,7 +417,10 @@ class DataProcessor:
                     temp_path.unlink(missing_ok=True)
 
     def process_talks(
-        self, talks: List[Dict], qa_by_talk_code: Dict[str, str]
+        self,
+        talks: List[Dict],
+        qa_by_talk_code: Dict[str, str],
+        schedule_lookup: Dict[str, Dict],
     ) -> Dict[str, Dict]:
         """Process talk data and save to files."""
         self.clean_directory(self.talks_dir)
@@ -206,7 +433,9 @@ class DataProcessor:
 
         for talk in talks:
             # Process talk data
-            processed_talk = self._process_single_talk(talk, qa_by_talk_code)
+            processed_talk = self._process_single_talk(
+                talk, qa_by_talk_code, schedule_lookup
+            )
 
             # if processed_talk["old_slug"] != processed_talk["slug"]:
             #     redirects.append(
@@ -254,7 +483,12 @@ class DataProcessor:
 
         return talks_by_code
 
-    def _process_single_talk(self, talk: Dict, qa_by_talk_code: Dict[str, str]) -> Dict:
+    def _process_single_talk(
+        self,
+        talk: Dict,
+        qa_by_talk_code: Dict[str, str],
+        schedule_lookup: Dict[str, Dict],
+    ) -> Dict:
         """Process a single talk entry."""
 
         speakers = [
@@ -285,15 +519,13 @@ class DataProcessor:
                 talk["description"],
                 extensions=[GithubFlavoredMarkdownExtension(), "footnotes"],
             ),
-            "start_time": talk.get("slot", {}).get("start", DEFAULT_TIME)
-            if talk.get("slot", {}) is not None
-            else DEFAULT_TIME,
-            "end_time": talk.get("slot", {}).get("end", DEFAULT_TIME)
-            if talk.get("slot", {}) is not None
-            else DEFAULT_TIME,
-            "room": talk.get("slot", {}).get("room", {}).get("en", "TBD")
-            if talk.get("slot", {}) is not None
-            else "TBD",
+            "start_time": schedule_lookup.get(talk["code"], {}).get(
+                "start_time", DEFAULT_TIME
+            ),
+            "end_time": schedule_lookup.get(talk["code"], {}).get(
+                "end_time", DEFAULT_TIME
+            ),
+            "room": schedule_lookup.get(talk["code"], {}).get("room", "TBD"),
             "duration": talk["duration"],
             "speakers": speakers,
             "type": talk["submission_type"]["name"]["en"],
@@ -326,10 +558,14 @@ class DataProcessor:
     def download_avatar(self, avatar_url: str, speaker_slug: str) -> str:
         """
         Download avatar image and save to images directory.
+        Uses a cache directory with original filenames to detect avatar changes.
         Returns the relative path to the saved image.
         """
+        if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
+            return DEFAULT_AVATAR_PATH
+
         if self.skip_avatars:
-            # Check if avatar already exists
+            # Check if avatar already exists in final location
             for ext in [".png", ".jpg", ".jpeg", ".gif", ".webp"]:
                 image_path = self.images_dir / f"{speaker_slug}{ext}"
                 if image_path.exists():
@@ -337,18 +573,18 @@ class DataProcessor:
             # If no existing avatar found, return default
             return DEFAULT_AVATAR_PATH
 
-        if not avatar_url or avatar_url == PLACEHOLDER_AVATAR:
-            return DEFAULT_AVATAR_PATH
-
         # Add size parameter for Gravatar URLs
         if avatar_url.startswith("https://www.gravatar.com/avatar"):
             avatar_url = f"{avatar_url}?s=300"
 
         try:
-            # Get file extension from URL or default to .png
+            # Parse URL to get original filename for caching
             parsed_url = urlparse(avatar_url)
-            path = parsed_url.path
-            extension = os.path.splitext(path)[1].lower()
+            original_path = parsed_url.path
+            original_filename = os.path.basename(original_path)
+
+            # Get file extension from URL or default to .png
+            extension = os.path.splitext(original_path)[1].lower()
             if not extension or extension not in [
                 ".jpg",
                 ".jpeg",
@@ -358,20 +594,43 @@ class DataProcessor:
             ]:
                 extension = ".png"
 
-            # Create image filename
-            image_filename = f"{speaker_slug}{extension}"
-            image_path = self.images_dir / image_filename
-            relative_path = f"{image_filename}"
+            # If no original filename, create one from URL hash
+            if not original_filename or original_filename == "/":
+                # Use a hash of the URL for cache filename
+                import hashlib
 
-            # Download the image
+                url_hash = hashlib.md5(avatar_url.encode()).hexdigest()[:12]
+                original_filename = f"{url_hash}{extension}"
+            elif not original_filename.endswith(extension):
+                original_filename += extension
+
+            # Cache using original filename, final using speaker slug
+            cache_filename = original_filename
+            final_filename = f"{speaker_slug}{extension}"
+
+            cache_path = self.avatar_cache_dir / cache_filename
+            final_path = self.images_dir / final_filename
+            relative_path = final_filename
+
+            # Check if avatar exists in cache using original filename
+            if cache_path.exists():
+                click.echo(f"Using cached avatar for {speaker_slug}", err=True)
+                # Copy from cache to final location with speaker slug name
+                shutil.copy(cache_path, final_path)
+                return relative_path
+
+            # Download the image to cache with original filename
             response = httpx.get(avatar_url, follow_redirects=True, timeout=10.0)
             response.raise_for_status()
 
-            # Save image to file
-            with open(image_path, "wb") as img_file:
+            # Save to cache with original filename
+            with open(cache_path, "wb") as img_file:
                 img_file.write(response.content)
 
-            click.echo(f"Downloaded avatar for {speaker_slug}", err=True)
+            # Copy to final location with speaker slug filename
+            shutil.copy(cache_path, final_path)
+
+            click.echo(f"Downloaded and cached avatar for {speaker_slug}", err=True)
             return relative_path
 
         except Exception as e:
@@ -566,9 +825,18 @@ class DataProcessor:
 
         return result
 
-    def process_breaks(self) -> None:
+    def process_breaks(self, break_sessions: List[Dict] = None) -> None:
         """Process break data and save to files."""
         click.echo("Writing break files...", err=True)
+
+        # Process breaks from schedule API if provided
+        if break_sessions:
+            for break_session in break_sessions:
+                save_filename = self.talks_dir / f"{break_session['slug']}.yaml"
+                with open(save_filename, "w") as save_file:
+                    yaml.dump(break_session, save_file, allow_unicode=True)
+
+        # Also process any manually defined breaks from BREAKS constant
         for break_code, break_data in BREAKS.items():
             save_filename = self.talks_dir / f"{break_code.lower()}.yaml"
             with open(save_filename, "w") as save_file:
@@ -608,13 +876,19 @@ def pretalx(ctx):
     is_flag=True,
     help="Skip deleting and downloading avatar images",
 )
+@click.option(
+    "-v",
+    "--verbose",
+    is_flag=True,
+    help="Enable verbose debug output",
+)
 @click.pass_context
-def get_event_data(ctx, skip_avatars):
+def get_event_data(ctx, skip_avatars, verbose):
     """Get session and speaker data from Pretalx"""
     api_key = ctx.obj["api_key"]
 
     # Initialize client and processor
-    client = PretalxClient(api_key, PRETALX_EVENT_ID)
+    client = PretalxClient(api_key, PRETALX_EVENT_ID, verbose=verbose)
     processor = DataProcessor(DATA_DIR, YEAR, skip_avatars=skip_avatars)
 
     # Get questions data
@@ -629,7 +903,8 @@ def get_event_data(ctx, skip_avatars):
 
     # Get and process talks
     talks = client.get_confirmed_talks()
-    talks_by_code = processor.process_talks(talks, qa_by_talk_code)
+    schedule_lookup, break_sessions = client.get_schedule_data()
+    talks_by_code = processor.process_talks(talks, qa_by_talk_code, schedule_lookup)
 
     # Get unique speaker codes
     speaker_codes = set()
@@ -643,7 +918,7 @@ def get_event_data(ctx, skip_avatars):
     )
 
     # Process breaks
-    processor.process_breaks()
+    processor.process_breaks(break_sessions)
 
 
 @pretalx.command()

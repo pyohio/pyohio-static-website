@@ -18,17 +18,17 @@ description: '<p>Monitoring the health of city streets and roadways is expensive
   — all using free tools and open data.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T10:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: detecting-road-conditions-from-space-using-pytorch-public-data
 speakers:
 - avatar: https://pretalx.com/media/avatars/VQQNZH_u7QFXyT.JPG
   code: VQQNZH
   name: Cynthia Ukawu
   slug: cynthia-ukawu
-start_time: TBD
+start_time: '2025-07-26T10:15:00-04:00'
 stream_timestamp: ''
 title: Detecting Road Conditions from Space Using PyTorch, Public Data, and Free Satellite
   Imagery

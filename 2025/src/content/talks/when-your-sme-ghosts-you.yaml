@@ -21,17 +21,17 @@ description: '<p>Have you ever been handed a mystery database and told, “You�
   the only teammate who shows up.👻</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T13:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: when-your-sme-ghosts-you
 speakers:
 - avatar: https://pretalx.com/media/avatars/YLFGE3_He4qNzH.jpg
   code: YLFGE3
   name: Denise Williams
   slug: denise-williams
-start_time: TBD
+start_time: '2025-07-27T13:15:00-04:00'
 stream_timestamp: ''
 title: 'When Your SME Ghosts You: Using GenAI to Build a Database Documentation Agent'
 type: 30 Minute Talk

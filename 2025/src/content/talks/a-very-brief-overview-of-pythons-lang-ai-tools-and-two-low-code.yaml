@@ -29,17 +29,17 @@ description: '<p>AI is the theme of the moment - and even as a pythonista you mi
   resources will be provided at the end.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T15:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: a-very-brief-overview-of-pythons-lang-ai-tools-and-two-low-code
 speakers:
 - avatar: https://pretalx.com/media/avatars/E9SB7Z_9itErGl.jpg
   code: E9SB7Z
   name: Curtis Oneal
   slug: curtis-oneal
-start_time: TBD
+start_time: '2025-07-27T14:45:00-04:00'
 stream_timestamp: ''
 title: 'A Very Brief Overview of Python’s “Lang” AI Tools and Two Low-Code GUI AI
   Tools: Flowise and n8n'

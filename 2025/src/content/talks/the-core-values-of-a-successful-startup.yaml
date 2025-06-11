@@ -15,17 +15,17 @@ description: "<p>What really makes a startup succeed? It’s not just product-ma
   \ future founders, or just curious humans trying to build things that matter.</p>"
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T14:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: the-core-values-of-a-successful-startup
 speakers:
 - avatar: https://pretalx.com/media/avatars/XCB3TE_xnPYOhl.jpeg
   code: XCB3TE
   name: Daniel Kim
   slug: daniel-kim
-start_time: TBD
+start_time: '2025-07-26T14:15:00-04:00'
 stream_timestamp: ''
 title: The Core Values of a Successful Startup
 type: 30 Minute Talk

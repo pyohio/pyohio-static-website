@@ -12,17 +12,17 @@ description: <p>Python is a versatile language, and it’s often the go-to langu
   you love or want to tinker with hardware.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T10:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: python-for-hardware-folks
 speakers:
 - avatar: https://pretalx.com/media/avatars/ND3MDZ_6MdqmWo.jpg
   code: ND3MDZ
   name: Alec Delaney
   slug: alec-delaney
-start_time: TBD
+start_time: '2025-07-26T10:15:00-04:00'
 stream_timestamp: ''
 title: Python for Hardware Folks
 type: 30 Minute Talk

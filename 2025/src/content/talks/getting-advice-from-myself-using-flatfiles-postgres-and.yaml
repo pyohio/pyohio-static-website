@@ -10,17 +10,17 @@ description: '<p>Cicero said - there is no one who can give you wiser advice tha
   AI Agents.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T10:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: getting-advice-from-myself-using-flatfiles-postgres-and
 speakers:
 - avatar: https://pretalx.com/media/avatars/PFEFTZ_eBO4cb1.jpg
   code: PFEFTZ
   name: Jay Miller
   slug: jay-miller
-start_time: TBD
+start_time: '2025-07-26T10:15:00-04:00'
 stream_timestamp: ''
 title: Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter
 type: 30 Minute Talk

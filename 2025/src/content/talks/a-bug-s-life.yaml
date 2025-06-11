@@ -28,17 +28,17 @@ description: '<p>A beginner friendly talk that goes from the manifestation of a 
   environments.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T12:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: a-bug-s-life
 speakers:
 - avatar: https://pretalx.com/media/avatars/9TGPL7_9Mlit4L.jpg
   code: 9TGPL7
   name: Tathagata Dasgupta
   slug: tathagata-dasgupta
-start_time: TBD
+start_time: '2025-07-26T11:45:00-04:00'
 stream_timestamp: ''
 title: A Bug's Life
 type: 30 Minute Talk

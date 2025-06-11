@@ -1,5 +1,11 @@
-code: BREAK11
-end_time: '2024-07-28T15:30:00-04:00'
-start_time: '2024-07-28T15:15:00-04:00'
+code: BREAK1217497
+description: ''
+duration: 15
+end_time: '2025-07-27T15:30:00-04:00'
+room: n/a
+room_id: null
+slug: break10
+speakers: []
+start_time: '2025-07-27T15:15:00-04:00'
 title: Break
 type: Break

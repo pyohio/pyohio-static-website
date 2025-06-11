@@ -35,17 +35,17 @@ description: "<p>Google Drive in recent years has become one of the most abused 
   \ account incident response, and provide meaningful data for case work and research.</p>"
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T14:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: gdiocspider
 speakers:
 - avatar: https://pretalx.com/media/avatars/UAWQFP_roGteQC.jpg
   code: UAWQFP
   name: Noah Dunn
   slug: noah-dunn
-start_time: TBD
+start_time: '2025-07-27T14:00:00-04:00'
 stream_timestamp: ''
 title: 'GDIOCSpider: Extracting and Identifying IOCs from the GDriveverse'
 type: 30 Minute Talk

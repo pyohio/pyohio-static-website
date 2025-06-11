@@ -50,17 +50,17 @@ description: '<h2>Abstract</h2>
   </ul>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T11:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: chasten-your-python-program
 speakers:
 - avatar: https://pretalx.com/media/avatars/WUSBZJ_hJj7oDc.png
   code: WUSBZJ
   name: Gregory M. Kapfhammer
   slug: gregory-m-kapfhammer
-start_time: TBD
+start_time: '2025-07-26T11:00:00-04:00'
 stream_timestamp: ''
 title: 'Chasten Your Python Program: Configurable Program Analysis and Linting with
   XPath'

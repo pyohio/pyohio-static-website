@@ -35,17 +35,17 @@ description: '<p><strong>Description</strong><br />
   </ul>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T11:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: lights-python-action
 speakers:
 - avatar: https://pretalx.com/media/avatars/ZGQHWH_RJJkAbF.jpg
   code: ZGQHWH
   name: Mike McCaffrey
   slug: mike-mccaffrey
-start_time: TBD
+start_time: '2025-07-26T11:00:00-04:00'
 stream_timestamp: ''
 title: Lights!  Python!  Action!
 type: 30 Minute Talk

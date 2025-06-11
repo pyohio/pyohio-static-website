@@ -17,17 +17,17 @@ description: '<p>Have you ever wondered how Machine Learning could automate your
   <p>Discover how AutoML can turn your transform your data into actionable insights!</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T15:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: from-data-to-insights-in-minutes
 speakers:
 - avatar: https://pretalx.com/media/avatars/BWLCU3_csf4oYv.jpg
   code: BWLCU3
   name: Shailaja Sampat
   slug: shailaja-sampat
-start_time: TBD
+start_time: '2025-07-26T15:00:00-04:00'
 stream_timestamp: ''
 title: 'From Data to Insights in Minutes: Accelerating Predictive Modelling (in Python)
   with AutoML'

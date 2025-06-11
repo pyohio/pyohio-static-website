@@ -8,17 +8,17 @@ description: <p>Overtime, systems can experience rapid growth and become unstabl
   things to consider when making your own maintenance plan.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T15:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: developing-a-system-maintenance-plan-and-utilizing-python-to-aid
 speakers:
 - avatar: https://pretalx.com/media/avatars/3M8HS8_XwI0bRz.jpg
   code: 3M8HS8
   name: Joseph Guzi
   slug: joseph-guzi
-start_time: TBD
+start_time: '2025-07-27T14:45:00-04:00'
 stream_timestamp: ''
 title: Developing a System Maintenance Plan and Utilizing Python to Aid in System
   Maintenance

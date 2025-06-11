@@ -13,17 +13,17 @@ description: '<p>What do metalsmithing, managing a manufacturing floor, and rais
   bring to the table.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T11:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: from-forge-to-keyboard
 speakers:
 - avatar: https://pretalx.com/media/avatars/NYDQLT_ESEqRyP.jpg
   code: NYDQLT
   name: Bianca Ploss
   slug: bianca-ploss
-start_time: TBD
+start_time: '2025-07-26T11:00:00-04:00'
 stream_timestamp: ''
 title: 'From Forge to Keyboard: Crafting a Developer’s Journey'
 type: 30 Minute Talk

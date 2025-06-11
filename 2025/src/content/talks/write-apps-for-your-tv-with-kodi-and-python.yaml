@@ -6,17 +6,17 @@ description: <p>The open-source media player Kodi is designed to play videos and
   including packaging, debugging, and dealing with dependencies (there's no pip here).</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T13:00:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: write-apps-for-your-tv-with-kodi-and-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/PWN7XL_rwMmm7g.jpeg
   code: PWN7XL
   name: Andrew Kubera
   slug: andrew-kubera
-start_time: TBD
+start_time: '2025-07-27T12:30:00-04:00'
 stream_timestamp: ''
 title: Write Apps for Your TV with Kodi and Python
 type: 30 Minute Talk

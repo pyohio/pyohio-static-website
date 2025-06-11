@@ -27,17 +27,17 @@ description: '<p><strong>Category:</strong><br />
   to flex on your teammates with some cool async python), this talk is for you.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T13:00:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: from-busy-waiting-to-async-awaiting
 speakers:
 - avatar: https://pretalx.com/media/avatars/8ZXJG9_Crovi6g.png
   code: 8ZXJG9
   name: Vignesh Iyer
   slug: vignesh-iyer
-start_time: TBD
+start_time: '2025-07-27T12:30:00-04:00'
 stream_timestamp: ''
 title: 'From Busy Waiting to Async Awaiting: A Journey from Iterators to asyncio'
 type: 30 Minute Talk

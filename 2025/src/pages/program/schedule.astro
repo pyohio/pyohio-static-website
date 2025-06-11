@@ -2,13 +2,27 @@
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
+const baseUrl = import.meta.env.BASE_URL
 
-const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattleya"]
+const roomOrder = ["Ballroom D", "Ballroom C", "Ballroom B", "Ballroom A"]
 const talks = (await getCollection("talks")).sort(
   (a, b) => Date.parse(a.data.start_time) - Date.parse(b.data.start_time) || roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)
 );
 
-const talkDataByDate = talks.reduce((acc, talk) => {
+// Separate scheduled and unscheduled talks
+const unscheduledTalks = []
+const scheduledTalks = []
+
+talks.forEach(talk => {
+  const dateTime = DateTime.fromISO(talk.data.start_time)
+  if (dateTime.isValid) {
+    scheduledTalks.push(talk)
+  } else {
+    unscheduledTalks.push(talk)
+  }
+})
+
+const talkDataByDate = scheduledTalks.reduce((acc, talk) => {
   const date = DateTime.fromISO(talk.data.start_time).toISODate()
   if (!acc[date]) {
     acc[date] = []
@@ -19,11 +33,12 @@ const talkDataByDate = talks.reduce((acc, talk) => {
 
 const talkDataByDateAndTime = Object.keys(talkDataByDate).reduce((acc, date) => {
   acc[date] = talkDataByDate[date].reduce((acc, talk) => {
-    const time = DateTime.fromISO(talk.data.start_time)
-    if (!acc[time]) {
-      acc[time] = []
+    // Use ISO string as key to ensure consistent sorting
+    const timeKey = talk.data.start_time
+    if (!acc[timeKey]) {
+      acc[timeKey] = []
     }
-    acc[time].push(talk)
+    acc[timeKey].push(talk)
     return acc
   }, {})
   return acc
@@ -43,12 +58,12 @@ function formatTime(timeString) {
   <section class="my-6">
     <div class="container">
       <h1>Schedule</h1>
-      <p><em><a href="/2024/program/open-spaces/">Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
+      <p><em><a href={`${baseUrl}/program/open-spaces/`}>Open Spaces</a> rooms are available during the Sat &amp; Sun talks. All times EDT.</em></p>
     </div>
   </section>
 
   <section class="container text-s">
-    <h2 class="my-6">Friday, July 26</h2>
+    <h2 class="my-6">Friday, July 25</h2>
     <table class="table-auto text-sm">
     <thead class="text-center">
       <th class="w-32 p-2 heading">Start Time</th>
@@ -56,19 +71,20 @@ function formatTime(timeString) {
     </thead>
     <thead class="text-center">
       <th class="p-2 time-heading">Fri</th>
-      <th class="p-2 sticky-heading">Orchid Ballroom West</th>
-      <th class="p-2 sticky-heading">Orchid Ballroom East</th>
-      <th class="p-2 sticky-heading">Calypso</th>
-      <th class="p-2 sticky-heading">Cattleya</th>
+      <th class="p-2 sticky-heading">Ballroom D</th>
+      <th class="p-2 sticky-heading">Ballroom C</th>
+      <th class="p-2 sticky-heading">Ballroom B</th>
+      <th class="p-2 sticky-heading">Ballroom A</th>
       <tr>
-        <td class="text-center font-bold time"><p>6:00 pm</p></td>
-        <td class="align-top p-2 plenary" colspan="2">
-          <p class="font-bold"><a href="/2024/program/friday-tutorial">Beginner Tutorial: Learn Python with Your Face</a></p>
-          <p class="text-xs">Space is limited and separate registration is required.</p>
-        </td><td class="break" colspan="2"></td>
+        <td class="text-center font-bold time"><p>TBA</p></td>
+        <td class="align-top p-2 plenary">
+          <p class="font-bold">PyOhio Intro & Opening Reception</p>
+          <p class="text-xs">Introduction to PyOhio and an informal reception. More info and time TBA.</p>
+        </td>
+        <td class="break" colspan="3"></td>
       </tr>
       <tr>
-        <td class="text-center font-bold time"><p>8:00 pm</p></td>
+        <td class="text-center font-bold time"><p>7:45 pm</p></td>
         <td class="align-top p-2 break" colspan="4">
           <p class="font-bold">Conference Space Closes</p>
         </td>
@@ -88,39 +104,40 @@ function formatTime(timeString) {
         </thead>
         <thead class="text-center">
           <th class="p-2 time-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
-          <th class="p-2 sticky-heading">Orchid Ballroom West</th>
-          <th class="p-2 sticky-heading">Orchid Ballroom East</th>
-          <th class="p-2 sticky-heading">Calypso</th>
-          <th class="p-2 sticky-heading">Cattleya</th>
+          <th class="p-2 sticky-heading">Ballroom D</th>
+          <th class="p-2 sticky-heading">Ballroom C</th>
+          <th class="p-2 sticky-heading">Ballroom B</th>
+          <th class="p-2 sticky-heading">Ballroom A</th>
         </thead>
 
-      {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
+      {Object.keys(talkDataByDateAndTime[scheduleDate]).sort().map((scheduleTime) => (
         <tr class="">
           <td class="text-center font-bold time"><p>{formatTime(scheduleTime)}</p></td>
-            {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
+            {talkDataByDateAndTime[scheduleDate][scheduleTime].sort((a, b) => roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)).map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){
-                    return <td class="align-top p-2 plenary lightning-talks" colspan="2">
-                      <p class="font-bold"><a href="/2024/program/lightning-talks">{talk.data.title}</a></p>
+                    return <td class="align-top p-2 plenary lightning-talks">
+                      <p class="font-bold"><a href={`${baseUrl}/program/lightning-talks`}>{talk.data.title}</a></p>
                       <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
-                      </td><td class="break" colspan="2"></td>
+                      </td><td class="break" colspan="3"></td>
                   } else if (talk.data.type === "Keynote") {
-                    return <td class="align-top p-2 plenary talk" colspan="2">
+                    return <td class="align-top p-2 plenary talk">
                       <p class="font-bold">
-                        <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
+                        <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
-                      </td><td class="break" colspan="2"></td> 
+                      </td><td class="break" colspan="3"></td> 
                   } else {
-                    return <td class="font-bold p-2 plenary" colspan="2">
+                    return <td class="font-bold p-2 plenary">
                       <p class="">{talk.data.title}</p>
-                      </td><td class="break" colspan="2"></td>
+                      </td><td class="break" colspan="3"></td>
                   }
-                } else if (talk.data.type === "Break") {
-                  if (talk.data.title === "Lunch Break"){
+                } else if (talk.data.type === "Break" || talk.data.type === "Lunch Break") {
+                  if (talk.data.type === "Lunch Break"){
                     return <td class="align-top p-2 break lunch" colspan="4">
-                    <p class="font-bold">{talk.data.title}</p>
+                    <p class="font-bold"><a href={`${baseUrl}/program/saturday-lunch-break`}>{talk.data.title}</a></p>
+                    <p class="text-xs">Lunch is on your own. Check the link for local recommendations!</p>
                   </td>
                   } else {
                     return <td class=" p-2 break font-bold" colspan="4">
@@ -132,7 +149,7 @@ function formatTime(timeString) {
                 } else {
               return <td class="align-top p-2 talk">
                 <p class="font-bold">
-                  <a href={"/2024/program/talks/" + talk.data.slug}>{talk.data.title}</a>
+                  <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                 </p>
                 <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
               </td>
@@ -145,10 +162,43 @@ function formatTime(timeString) {
   </section>
 )))}
 
+{unscheduledTalks.length > 0 && (
+  <section class="container">
+    <h2 class="my-6">Not Yet Scheduled</h2>
+    <div class="space-content">
+      <p>Schedule for these talks to be announced:</p>
+      <ul>
+        {unscheduledTalks.filter(talk => !['Break', 'Open'].includes(talk.data.type)).map(talk => (
+          <li>
+            <strong><a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a></strong>
+            {talk.data.speakers.length > 0 && (
+              <span> by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+
 
 
 <style lang="scss" is:global>
   @use '../../assets/scss/base/color' as *;
+
+  :root {
+    --table-border: var(--neutral-400);
+    --table-heading: var(--neutral-300);
+    --table-background: var(--neutral-100);
+    --table-muted: var(--neutral-200);
+  }
+
+  .darkmode {
+    --table-border: var(--neutral-600);
+    --table-heading: var(--neutral-800);
+    --table-background: var(--neutral-900);
+    --table-muted: var(--neutral-700);
+  }
 
   table {
     border-top: 1px solid var(--table-border);

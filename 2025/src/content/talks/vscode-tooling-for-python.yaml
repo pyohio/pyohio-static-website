@@ -19,17 +19,17 @@ description: "<p>Visual Studio Code has become a powerhouse for Python developme
   \ notebook support, and remote development tricks</p>"
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-26T10:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom C
 slug: vscode-tooling-for-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/C3VJBM_QGMkkV0.jpg
   code: C3VJBM
   name: Daniel Segan
   slug: daniel-segan
-start_time: TBD
+start_time: '2025-07-26T10:15:00-04:00'
 stream_timestamp: ''
 title: VSCode Tooling for Python
 type: 30 Minute Talk

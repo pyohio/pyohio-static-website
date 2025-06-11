@@ -28,17 +28,17 @@ description: '<p><strong>Ever wondered why your team still uses pip when benchma
   challenge!</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T15:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom A
 slug: beyond-the-benchmark
 speakers:
 - avatar: https://pretalx.com/media/avatars/V3JQKX_HvSMWwM.jpeg
   code: V3JQKX
   name: Keming He
   slug: keming-he
-start_time: TBD
+start_time: '2025-07-27T14:45:00-04:00'
 stream_timestamp: ''
 title: 'Beyond the Benchmark: Why the “Best” Python Dependency Manager Might Not Be
   Best for You'

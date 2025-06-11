@@ -14,17 +14,17 @@ description: '<p>Working in the concrete industry, I often found myself doing ta
   in places you might not expect.</p>'
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T13:45:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom B
 slug: using-python-in-the-concrete-industry
 speakers:
 - avatar: https://pretalx.com/media/avatars/A9WKCF_369Euu7.png
   code: A9WKCF
   name: Scott Windsor
   slug: scott-windsor
-start_time: TBD
+start_time: '2025-07-27T13:15:00-04:00'
 stream_timestamp: ''
 title: Using Python in the Concrete Industry
 type: 30 Minute Talk

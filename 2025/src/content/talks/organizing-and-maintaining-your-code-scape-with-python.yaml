@@ -17,17 +17,17 @@ description: <p>If you're a software engineer, a data scientist, or almost any o
   your code-scape organized, searchable, and safeguarded.</p>
 discord_channel_id: ''
 duration: 30
-end_time: TBD
+end_time: '2025-07-27T15:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: organizing-and-maintaining-your-code-scape-with-python
 speakers:
 - avatar: https://pretalx.com/media/avatars/XDMC3Z_U53oo54.jpg
   code: XDMC3Z
   name: Matt Lavin
   slug: matt-lavin
-start_time: TBD
+start_time: '2025-07-27T14:45:00-04:00'
 stream_timestamp: ''
 title: Organizing and Maintaining Your Code-Scape with Python
 type: 30 Minute Talk

@@ -1,0 +1,56 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+const baseUrl = import.meta.env.BASE_URL
+
+// Get the lunch break data for Saturday
+const lunchBreaks = await getCollection('talks', ({ data }) => {
+  return data.type === 'Lunch Break' && data.start_time && data.start_time.includes('2025-07-26')
+})
+
+const lunchBreak = lunchBreaks[0]
+
+function formatTime(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
+  }
+}
+
+function formatDay(timeString) {
+  const talkTime = DateTime.fromISO(timeString)
+  if (isNaN(talkTime)) {
+    return 'TBD'
+  } else {
+    return talkTime.setZone('America/New_York').toFormat('cccc')
+  }
+}
+---
+
+<DefaultLayout title="Saturday Lunch Break">
+  <section class="my-12">
+    <div class="container">
+      <h1>Saturday Lunch Break</h1>
+      {lunchBreak && (
+        <p class="italic">
+          {formatDay(lunchBreak.data.start_time)} • {formatTime(lunchBreak.data.start_time)} - {formatTime(lunchBreak.data.end_time)}
+        </p>
+      )}
+    </div>
+  </section>
+  
+  <section class="my-12">
+    <div class="space-content container">
+      <p>Lunch is on your own during this break. Take this time to explore the local dining options and network with fellow attendees!</p>
+      
+      <h2>Local Recommendations</h2>
+      <p>This page will be updated with a list of recommended restaurants and cafes within walking distance of the venue.</p>
+      
+      <p><em>Check back soon for our curated list of local dining options!</em></p>
+    </div>
+  </section>
+</DefaultLayout>
