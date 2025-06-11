@@ -51,12 +51,13 @@ KEYNOTE_SPEAKERS = [
 class PretalxClient:
     """Handle Pretalx API requests and data processing."""
 
-    def __init__(self, api_key: str, event_id: str = PRETALX_EVENT_ID):
+    def __init__(self, api_key: str, event_id: str = PRETALX_EVENT_ID, verbose: bool = False):
         """Initialize with API key and event ID."""
         self.api_key = api_key
         self.event_id = event_id
         self.headers = {"Authorization": f"Token {api_key}"}
         self.base_url = f"https://pretalx.com/api/events/{event_id}"
+        self.verbose = verbose
 
     def get_all_pages(self, url: str) -> List[Dict]:
         """Get all paginated results from an API endpoint."""
@@ -130,15 +131,55 @@ class PretalxClient:
         response.raise_for_status()
         schedule_data = response.json()
         
-        # Extract talks from schedule and create lookup by submission code
+        # Debug: Print the structure of the response
+        if self.verbose:
+            click.echo(f"DEBUG: Schedule has {len(schedule_data.get('slots', []))} slots", err=True)
+        
+        # Extract schedule data by fetching individual slots
         schedule_lookup = {}
-        for talk in schedule_data.get("talks", []):
-            if "submission" in talk:
-                schedule_lookup[talk["submission"]] = {
-                    "start_time": talk.get("start"),
-                    "end_time": talk.get("end"), 
-                    "room": talk.get("room")
-                }
+        slot_ids = schedule_data.get("slots", [])
+        
+        for i, slot_id in enumerate(slot_ids):
+            if self.verbose and i < 10:  # Debug first few slots
+                click.echo(f"DEBUG: Fetching slot {slot_id}...", err=True)
+            
+            try:
+                slot_url = f"{self.base_url}/slots/{slot_id}/"
+                slot_response = httpx.get(slot_url, headers=self.headers)
+                slot_response.raise_for_status()
+                slot_data = slot_response.json()
+                
+                if self.verbose and i < 10:  # Debug first few slots
+                    click.echo(f"DEBUG: Slot {slot_id} data: {slot_data}", err=True)
+                
+                # Extract submission code and schedule info
+                if "submission" in slot_data and slot_data["submission"]:
+                    submission_code = slot_data["submission"]
+                    
+                    # Handle room - it might be an ID or an object
+                    room_info = slot_data.get("room")
+                    if isinstance(room_info, int):
+                        # Room is an ID, we'd need to fetch room details separately
+                        # For now, use the room ID as a placeholder
+                        room_name = f"Room-{room_info}"
+                    elif isinstance(room_info, dict):
+                        room_name = room_info.get("name", {}).get("en", "TBD") if room_info.get("name") else "TBD"
+                    else:
+                        room_name = "TBD"
+                    
+                    schedule_lookup[submission_code] = {
+                        "start_time": slot_data.get("start"),
+                        "end_time": slot_data.get("end"),
+                        "room": room_name
+                    }
+                    
+                    if self.verbose and i < 10:  # Debug first few successful submissions
+                        click.echo(f"DEBUG: Added schedule for submission {submission_code}: {schedule_lookup[submission_code]}", err=True)
+                        
+            except Exception as e:
+                if self.verbose:
+                    click.echo(f"DEBUG: Error fetching slot {slot_id}: {e}", err=True)
+                continue
         
         click.echo(f"Got schedule data for {len(schedule_lookup)} talks", err=True)
         return schedule_lookup
@@ -637,13 +678,18 @@ def pretalx(ctx):
     is_flag=True,
     help="Skip deleting and downloading avatar images",
 )
+@click.option(
+    "-v", "--verbose",
+    is_flag=True,
+    help="Enable verbose debug output",
+)
 @click.pass_context
-def get_event_data(ctx, skip_avatars):
+def get_event_data(ctx, skip_avatars, verbose):
     """Get session and speaker data from Pretalx"""
     api_key = ctx.obj["api_key"]
 
     # Initialize client and processor
-    client = PretalxClient(api_key, PRETALX_EVENT_ID)
+    client = PretalxClient(api_key, PRETALX_EVENT_ID, verbose=verbose)
     processor = DataProcessor(DATA_DIR, YEAR, skip_avatars=skip_avatars)
 
     # Get questions data
