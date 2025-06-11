@@ -9,14 +9,13 @@ import os
 import re
 import shutil
 from pathlib import Path
-from typing import Dict, List, Optional, Any, Tuple
+from typing import Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
 import click
 import httpx
 import markdown
 import yaml
-from markdownify import markdownify
 from mdx_gfm import GithubFlavoredMarkdownExtension
 from slugify import slugify
 
@@ -811,7 +810,6 @@ class DataProcessor:
                 yaml.dump(break_data, save_file, allow_unicode=True)
 
 
-
 @click.group()
 @click.pass_context
 def pretalx(ctx):
@@ -921,6 +919,7 @@ def make_talk_extras():
 
     # Print JSON to stdout using json
     import json
+
     print(json.dumps(talk_extras, indent=2, sort_keys=True))
 
 
