@@ -112,7 +112,7 @@ function formatTime(timeString) {
       {Object.keys(talkDataByDateAndTime[scheduleDate]).sort().map((scheduleTime) => (
         <tr class="">
           <td class="text-center font-bold time"><p>{formatTime(scheduleTime)}</p></td>
-            {talkDataByDateAndTime[scheduleDate][scheduleTime].map((talk) => (
+            {talkDataByDateAndTime[scheduleDate][scheduleTime].sort((a, b) => roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)).map((talk) => (
               () => {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){

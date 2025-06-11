@@ -218,12 +218,16 @@ class PretalxClient:
                             f"DEBUG: Added schedule for submission {submission_code}: {schedule_lookup[submission_code]}",
                             err=True,
                         )
-                
+
                 # Extract break/session data for slots without submissions
                 elif "description" in slot_data and slot_data["description"]:
                     description = slot_data["description"]
-                    title = description.get("en", "Break") if isinstance(description, dict) else str(description)
-                    
+                    title = (
+                        description.get("en", "Break")
+                        if isinstance(description, dict)
+                        else str(description)
+                    )
+
                     # Create a break/session entry (will be deduplicated later)
                     break_entry = {
                         "title": title,
@@ -232,13 +236,16 @@ class PretalxClient:
                         "room": room_name,
                         "room_id": room_info if isinstance(room_info, int) else None,
                         "duration": slot_data.get("duration", 15),
-                        "slot_id": slot_data['id']
+                        "slot_id": slot_data["id"],
                     }
-                    
+
                     break_sessions_raw.append(break_entry)
-                    
+
                     if self.verbose and i < 10:
-                        click.echo(f"DEBUG: Found break session: {break_entry['title']} at {break_entry['start_time']}", err=True)
+                        click.echo(
+                            f"DEBUG: Found break session: {break_entry['title']} at {break_entry['start_time']}",
+                            err=True,
+                        )
 
             except Exception as e:
                 if self.verbose:
@@ -248,7 +255,7 @@ class PretalxClient:
         # Deduplicate only actual breaks (not opening/closing remarks)
         break_groups = {}
         non_break_sessions = []
-        
+
         for break_entry in break_sessions_raw:
             title = break_entry["title"]
             # Only deduplicate entries with "break" in the title
@@ -260,11 +267,11 @@ class PretalxClient:
             else:
                 # Keep opening/closing remarks with their actual rooms
                 non_break_sessions.append(break_entry)
-        
+
         # Create final break sessions with unique slugs
         break_sessions = []
         break_title_counts = {}
-        
+
         # Process deduplicated breaks
         for (title, start_time), break_entry in break_groups.items():
             # Track duplicate titles and create unique slugs
@@ -274,7 +281,7 @@ class PretalxClient:
             else:
                 break_title_counts[title] = 1
                 unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
-            
+
             # Create final break entry
             final_break = {
                 "title": title,
@@ -287,19 +294,19 @@ class PretalxClient:
                 "slug": unique_slug,
                 "code": f"BREAK{break_entry['slot_id']}",
                 "speakers": [],
-                "description": ""
+                "description": "",
             }
-            
+
             # Determine specific break type
             if "lunch" in title.lower():
                 final_break["type"] = "Lunch Break"
-            
+
             break_sessions.append(final_break)
-        
+
         # Process non-break sessions (opening/closing remarks) with their actual rooms
         for session in non_break_sessions:
             title = session["title"]
-            
+
             # Track duplicate titles and create unique slugs
             if title in break_title_counts:
                 break_title_counts[title] += 1
@@ -307,7 +314,7 @@ class PretalxClient:
             else:
                 break_title_counts[title] = 1
                 unique_slug = f"{slugify(title.lower())}{break_title_counts[title]}"
-            
+
             # Create session entry with actual room
             final_session = {
                 "title": title,
@@ -320,15 +327,21 @@ class PretalxClient:
                 "slug": unique_slug,
                 "code": f"BREAK{session['slot_id']}",
                 "speakers": [],
-                "description": ""
+                "description": "",
             }
-            
-            break_sessions.append(final_session)
-        
-        if self.verbose:
-            click.echo(f"DEBUG: Created {len(break_sessions)} final break/session entries", err=True)
 
-        click.echo(f"Got schedule data for {len(schedule_lookup)} talks and {len(break_sessions)} break sessions", err=True)
+            break_sessions.append(final_session)
+
+        if self.verbose:
+            click.echo(
+                f"DEBUG: Created {len(break_sessions)} final break/session entries",
+                err=True,
+            )
+
+        click.echo(
+            f"Got schedule data for {len(schedule_lookup)} talks and {len(break_sessions)} break sessions",
+            err=True,
+        )
         return schedule_lookup, break_sessions
 
     def get_speaker_data(self, speaker_code: str) -> Dict:
@@ -815,14 +828,14 @@ class DataProcessor:
     def process_breaks(self, break_sessions: List[Dict] = None) -> None:
         """Process break data and save to files."""
         click.echo("Writing break files...", err=True)
-        
+
         # Process breaks from schedule API if provided
         if break_sessions:
             for break_session in break_sessions:
                 save_filename = self.talks_dir / f"{break_session['slug']}.yaml"
                 with open(save_filename, "w") as save_file:
                     yaml.dump(break_session, save_file, allow_unicode=True)
-        
+
         # Also process any manually defined breaks from BREAKS constant
         for break_code, break_data in BREAKS.items():
             save_filename = self.talks_dir / f"{break_code.lower()}.yaml"
