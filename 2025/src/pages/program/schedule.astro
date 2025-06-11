@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
 const baseUrl = import.meta.env.BASE_URL
 
-const roomOrder = ["Orchid Ballroom", "Orchid Ballroom West", "Orchid Ballroom East", "Calypso", "Cattleya"]
+const roomOrder = ["Ballroom D", "Ballroom C", "Ballroom B", "Ballroom A"]
 const talks = (await getCollection("talks")).sort(
   (a, b) => Date.parse(a.data.start_time) - Date.parse(b.data.start_time) || roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)
 );
@@ -57,10 +57,10 @@ function formatTime(timeString) {
     </thead>
     <thead class="text-center">
       <th class="p-2 time-heading">Fri</th>
-      <th class="p-2 sticky-heading">Orchid Ballroom West</th>
-      <th class="p-2 sticky-heading">Orchid Ballroom East</th>
-      <th class="p-2 sticky-heading">Calypso</th>
-      <th class="p-2 sticky-heading">Cattleya</th>
+      <th class="p-2 sticky-heading">Ballroom D</th>
+      <th class="p-2 sticky-heading">Ballroom C</th>
+      <th class="p-2 sticky-heading">Ballroom B</th>
+      <th class="p-2 sticky-heading">Ballroom A</th>
       <tr>
         <td class="text-center font-bold time"><p>TBA</p></td>
         <td class="align-top p-2 plenary" colspan="2">
@@ -89,10 +89,10 @@ function formatTime(timeString) {
         </thead>
         <thead class="text-center">
           <th class="p-2 time-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
-          <th class="p-2 sticky-heading">Orchid Ballroom West</th>
-          <th class="p-2 sticky-heading">Orchid Ballroom East</th>
-          <th class="p-2 sticky-heading">Calypso</th>
-          <th class="p-2 sticky-heading">Cattleya</th>
+          <th class="p-2 sticky-heading">Ballroom D</th>
+          <th class="p-2 sticky-heading">Ballroom C</th>
+          <th class="p-2 sticky-heading">Ballroom B</th>
+          <th class="p-2 sticky-heading">Ballroom A</th>
         </thead>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).map((scheduleTime) => (
