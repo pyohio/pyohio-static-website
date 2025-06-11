@@ -81,6 +81,7 @@ function formatTime(timeString) {
           <p class="font-bold">PyOhio Intro & Opening Reception</p>
           <p class="text-xs">Introduction to PyOhio and an informal reception. More info and time TBA.</p>
         </td>
+        <td class="break" colspan="3"></td>
       </tr>
       <tr>
         <td class="text-center font-bold time"><p>7:45 pm</p></td>
@@ -119,18 +120,18 @@ function formatTime(timeString) {
                     return <td class="align-top p-2 plenary lightning-talks">
                       <p class="font-bold"><a href={`${baseUrl}/program/lightning-talks`}>{talk.data.title}</a></p>
                       <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
-                      </td>
+                      </td><td class="break" colspan="3"></td>
                   } else if (talk.data.type === "Keynote") {
                     return <td class="align-top p-2 plenary talk">
                       <p class="font-bold">
                         <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
-                      </td> 
+                      </td><td class="break" colspan="3"></td> 
                   } else {
                     return <td class="font-bold p-2 plenary">
                       <p class="">{talk.data.title}</p>
-                      </td>
+                      </td><td class="break" colspan="3"></td>
                   }
                 } else if (talk.data.type === "Break" || talk.data.type === "Lunch Break") {
                   if (talk.data.type === "Lunch Break"){
