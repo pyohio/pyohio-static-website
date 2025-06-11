@@ -9,7 +9,20 @@ const talks = (await getCollection("talks")).sort(
   (a, b) => Date.parse(a.data.start_time) - Date.parse(b.data.start_time) || roomOrder.indexOf(a.data.room) - roomOrder.indexOf(b.data.room)
 );
 
-const talkDataByDate = talks.reduce((acc, talk) => {
+// Separate scheduled and unscheduled talks
+const unscheduledTalks = []
+const scheduledTalks = []
+
+talks.forEach(talk => {
+  const dateTime = DateTime.fromISO(talk.data.start_time)
+  if (dateTime.isValid) {
+    scheduledTalks.push(talk)
+  } else {
+    unscheduledTalks.push(talk)
+  }
+})
+
+const talkDataByDate = scheduledTalks.reduce((acc, talk) => {
   const date = DateTime.fromISO(talk.data.start_time).toISODate()
   if (!acc[date]) {
     acc[date] = []
@@ -146,6 +159,25 @@ function formatTime(timeString) {
       </table></div>
   </section>
 )))}
+
+{unscheduledTalks.length > 0 && (
+  <section class="container">
+    <h2 class="my-6">Not Yet Scheduled</h2>
+    <div class="space-content">
+      <p>Schedule for these talks to be announced:</p>
+      <ul>
+        {unscheduledTalks.filter(talk => !['Break', 'Open'].includes(talk.data.type)).map(talk => (
+          <li>
+            <strong><a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a></strong>
+            {talk.data.speakers.length > 0 && (
+              <span> by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
 
 
 
