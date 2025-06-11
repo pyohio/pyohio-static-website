@@ -1,0 +1,40 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="T-Shirts">
+  <section class="my-12">
+    <div class="container">
+      <h1>PyOhio 2025 T-Shirts</h1>
+
+      <div class="prose prose-lg mb-8 max-w-none">
+        <h2>Support PyOhio with a T-Shirt Purchase!</h2>
+        
+        <p>
+          Since PyOhio registration is free, unlike many other conferences, we make our t-shirts optional and use the sale as a fundraiser.
+        </p>
+        
+        <p>
+          Our t-shirts are designed without any sponsor logos, keeping them clean and timeless. <strong>100% of the proceeds from t-shirt sales are donated to the Python Software Foundation</strong> to support future PyOhio events and the broader Python community.
+        </p>
+      </div>
+
+      <div class="mb-12 flex justify-center">
+        <a
+          href="https://www.customink.com/fundraising/pyohio-2025"
+          class="button has-icon color-primary text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="mdi:tshirt-crew" />
+          Order Your PyOhio 2025 T-Shirt
+        </a>
+      </div>
+
+      <p class="text-center text-gray-600">
+        Thank you for supporting PyOhio and the Python Software Foundation!
+      </p>
+    </div>
+  </section>
+</DefaultLayout>
