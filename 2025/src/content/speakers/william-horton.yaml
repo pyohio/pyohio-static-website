@@ -7,7 +7,13 @@ code: V73QRP
 listed: true
 name: William Horton
 slug: william-horton
-social_links: []
+social_links:
+- social_link_display: linkedin.com/in/wdhorton
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/wdhorton
+- social_link_display: '@hortonhearsafoo'
+  social_link_type: mdi:twitter
+  social_link_url: https://x.com/hortonhearsafoo
 speaker_type: speaker
 talks:
 - code: GFVZHY
