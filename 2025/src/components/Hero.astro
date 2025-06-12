@@ -23,11 +23,10 @@ const { src = `${baseUrl}/pyohio-2025-sticker.png` } = Astro.props
             Read the Docs
           </a> -->
           <p class="mb-2 text-xl">
-            Saturday &amp; Sunday July 26 &amp; 27, 2025<br />at the Cleveland State University Student Center<br /> in Cleveland,
-            OH
+            The 18th annual PyOhio is Sat &amp; Sun July 26 &amp; 27<br />at the Cleveland State University Student
+            Center<br /> in Cleveland, OH
           </p>
         </div>
-   
 
         <p>
           PyOhio is FREE to attend thanks to the generous support of our <a href="/2025/sponsors/">sponsors</a> and <a
@@ -35,17 +34,19 @@ const { src = `${baseUrl}/pyohio-2025-sticker.png` } = Astro.props
           >.
         </p>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a href="/2025/attend/registration" class="button has-icon color-primary">
+          <a href="/2025/attend/registration" class="button has-icon color-primary hero-button leading-tight">
             <Icon name="mdi:ticket" />
             Register Now
           </a>
-          <a href="https://newsletter.pyohio.org/" class="button has-icon color-primary">
+          <a href="/2025/attend/shirts" class="button has-icon color-primary hero-button leading-tight">
+            <Icon name="mdi:tshirt-crew" />
+            Order Shirts
+          </a>
+          <a href="https://newsletter.pyohio.org/" class="button has-icon color-primary hero-button leading-tight">
             <Icon name="mdi:email" />
             Get Newsletter
           </a>
         </div>
-
-        <p>T-shirt sales opening soon!</p>
       </div>
       <img class="hidden lg:block" width="400" src={src} alt="" decoding="async" />
     </div>
@@ -72,5 +73,11 @@ const { src = `${baseUrl}/pyohio-2025-sticker.png` } = Astro.props
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  :global(.hero-button) {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    white-space: nowrap !important;
   }
 </style>

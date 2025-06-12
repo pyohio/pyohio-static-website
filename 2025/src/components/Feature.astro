@@ -1,10 +1,18 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
+const { icon = 'mdi:rocket', title = 'Title', href } = Astro.props
+const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'))
+const baseUrl = import.meta.env.BASE_URL
+
+const Tag = href ? 'a' : 'div'
+const props = href ? {
+  href: isExternal ? href : `${baseUrl}${href}`,
+  ...(isExternal && { target: '_blank', rel: 'noopener noreferrer' })
+} : {}
 ---
 
-<div class="feature flex flex-col gap-4">
+<Tag class="feature flex flex-col gap-3" {...props}>
   <Icon name={icon} />
   <div class="content">
     <h3>{title}</h3>
@@ -12,15 +20,25 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
       <slot>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
     </p>
   </div>
-</div>
+</Tag>
 
 <style lang="scss">
   @use '../assets/scss/base/breakpoint' as *;
 
   .feature {
     position: relative;
-    padding: 2rem;
+    padding: 1.5rem;
     width: calc(100% - 0.5rem);
+    text-decoration: none !important;
+    color: inherit !important;
+    display: flex;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      text-decoration: none !important;
+      color: inherit !important;
+    }
 
     > * {
       position: relative;
@@ -55,13 +73,37 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
   }
 
   :global(.feature [data-icon]) {
-    width: 4rem;
+    width: 3rem;
     height: auto;
     color: var(--action-color);
+  }
+
+  :global(.feature h3) {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  :global(.feature p) {
+    font-size: 0.875rem;
+    line-height: 1.4;
   }
 
   :global(.darkmode .feature::before) {
     box-shadow: 0 0 0 6px var(--dark-100);
     background-color: var(--dark-100);
+  }
+
+  :global(.feature h3) {
+    color: inherit !important;
+  }
+
+  :global(.feature p) {
+    color: inherit !important;
+  }
+
+  :global(a.feature:hover h3),
+  :global(a.feature:hover p) {
+    color: inherit !important;
   }
 </style>

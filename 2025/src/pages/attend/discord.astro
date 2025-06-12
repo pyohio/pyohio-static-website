@@ -1,0 +1,30 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="PyOhio Discord">
+  <section class="my-12">
+    <div class="container">
+      <h1>PyOhio Discord</h1>
+
+      <div class="prose prose-lg mb-8 max-w-none">
+        <p>
+          Join the PyOhio community in conversation on Discord before, during, and after the event! Announcements, talk links, and some speaker Q&A will all be there. Join us now:
+        </p>
+      </div>
+
+      <div class="mb-12 flex justify-center">
+        <a
+          href="https://discord.gg/agA4D7Mmdn"
+          class="button has-icon color-primary text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="mdi:forum" />
+          Join PyOhio Discord!
+        </a>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
