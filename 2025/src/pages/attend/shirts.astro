@@ -1,0 +1,116 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import mensShirt from '../../assets/img/shirts/front_large_extended1.png'
+import mensRaglan from '../../assets/img/shirts/front_large_extended2.png'
+import womensRaglan from '../../assets/img/shirts/front_large_extended3.png'
+import womensVneck from '../../assets/img/shirts/front_large_extended4.png'
+import womensCrew from '../../assets/img/shirts/front_large_extended5.png'
+---
+
+<DefaultLayout title="T-Shirts">
+  <section class="my-12">
+    <div class="container">
+      <h1>PyOhio 2025 Shirts</h1>
+
+      <p class="mb-6 italic">Support PyOhio with a Shirt Purchase!</p>
+
+      <div class="mb-8">
+        <p class="mb-4 text-lg">
+          Since PyOhio registration is free, we make our shirts optional and use the sale as a fundraiser.
+        </p>
+
+        <p class="mb-4 text-lg">
+          Our shirts are designed without any sponsor logos and 100% of the proceeds from shirt sales go to the Python
+          Software Foundation to support future PyOhio events.
+        </p>
+      </div>
+
+      <div class="mb-12 flex justify-center">
+        <a
+          href="https://www.customink.com/fundraising/pyohio-2025"
+          class="button has-icon color-primary text-xl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="mdi:tshirt-crew" />
+          Order Your PyOhio 2025 Shirt
+        </a>
+      </div>
+
+      <div class="mb-12">
+        <h3 class="mb-6 text-center text-2xl font-semibold">Available Styles</h3>
+        <div class="mx-auto grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+          <a
+            href="https://www.customink.com/fundraising/pyohio-2025"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-opacity hover:opacity-80"
+          >
+            <Image
+              src={womensCrew}
+              alt="PyOhio fitted crew"
+              class="w-full cursor-pointer rounded-lg shadow-md"
+              width={200}
+            />
+          </a>
+          <a
+            href="https://www.customink.com/fundraising/pyohio-2025"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-opacity hover:opacity-80"
+          >
+            <Image
+              src={womensVneck}
+              alt="PyOhio fitted v-neck shirt"
+              class="w-full cursor-pointer rounded-lg shadow-md"
+              width={200}
+            />
+          </a>
+          <a
+            href="https://www.customink.com/fundraising/pyohio-2025"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-opacity hover:opacity-80"
+          >
+            <Image
+              src={womensRaglan}
+              alt="PyOhio fitted raglan shirt"
+              class="w-full cursor-pointer rounded-lg shadow-md"
+              width={200}
+            />
+          </a>
+          <a
+            href="https://www.customink.com/fundraising/pyohio-2025"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-opacity hover:opacity-80"
+          >
+            <Image
+              src={mensRaglan}
+              alt="PyOhio raglan shirt"
+              class="w-full cursor-pointer rounded-lg shadow-md"
+              width={200}
+            />
+          </a>
+          <a
+            href="https://www.customink.com/fundraising/pyohio-2025"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-opacity hover:opacity-80"
+          >
+            <Image
+              src={mensShirt}
+              alt="PyOhio t-shirt"
+              class="w-full cursor-pointer rounded-lg shadow-md"
+              width={200}
+            />
+          </a>
+        </div>
+      </div>
+
+      <p class="text-center text-gray-600">Thank you for supporting PyOhio!</p>
+    </div>
+  </section>
+</DefaultLayout>

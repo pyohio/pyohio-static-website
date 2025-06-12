@@ -8,43 +8,68 @@ import Feature from '../components/Feature.astro'
   <Hero />
   <section class="my-24">
     <div class="container">
-      <!-- <h2 class="mb-16 text-6xl">Features</h2> -->
-      <!-- <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:ticket" title="Register">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <Feature icon="mdi:information" title="About PyOhio" href="/about/">
+          Learn about Ohio's annual Python conference, now in its 18th year.
         </Feature>
-        <Feature icon="mdi:information" title="About PyOhio">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:ticket" title="Register" href="/attend/registration">
+          Join us for a free weekend of Python talks and community at Cleveland State University.
         </Feature>
-        <Feature icon="mdi:face-mask" title="Health & Safety Guidelines">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:calendar-clock" title="Schedule" href="/program/schedule">
+          View the full conference schedule for both days of PyOhio 2025.
         </Feature>
-        <Feature icon="mdi:hotel" title="Hotels">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
+        <Feature icon="mdi:presentation" title="Talks" href="/program/talks/">
+          Browse the full schedule of talks covering everything from beginner to advanced Python topics.
         </Feature>
-        <Feature icon="mdi:account-voice" title="Speakers">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
+        <Feature icon="mdi:lectern" title="Speakers" href="/program/speakers/">
+          Meet our lineup of speakers sharing their Python expertise and experiences.
         </Feature>
-        <Feature icon="mdi:account-star" title="Keynote Speakers">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
+        <Feature icon="mdi:account-star" title="Keynote Speakers" href="/program/speakers/keynote-speakers">
+          Discover our keynote speakers who will set the tone for PyOhio 2025.
         </Feature>
-        <Feature icon="mdi:presentation" title="Talks">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
+        <Feature icon="mdi:directions" title="Travel & Parking" href="/attend/directions-and-parking">
+          Get directions to the venue and find parking options at Cleveland State University.
         </Feature>
-        <Feature icon="mdi:car-multiple" title="Travel & Parking">
-          The theme offers some very handy utilities to help you build your website faster.
+        <Feature icon="mdi:hotel" title="Hotels" href="/attend/hotels">
+          Find recommended hotels near Cleveland State University.
         </Feature>
-        <Feature icon="mdi:gift" title="Donate">Buy a shirt</Feature>
-        <Feature icon="mdi:file-document-edit" title="CFP">Buy a shirt</Feature>
-        <Feature icon="mdi:email-newsletter" title="Newsletter">Buy a shirt</Feature>
-        <Feature icon="mdi:tshirt-crew" title="T-Shirts">Buy a shirt</Feature>
-        <Feature icon="mdi:hand-heart" title="Volunteer">Buy a shirt</Feature>
-        <Feature icon="mdi:handshake" title="Code of Conduct">Buy a shirt</Feature>
-        <Feature icon="mdi:food-fork-drink" title="Refreshments & Meals">Buy a shirt</Feature>
-        <Feature icon="mdi:forum" title="Discord Chat">Buy a shirt</Feature>
-        <Feature icon="mdi:medal" title="Sponsors">Buy a shirt</Feature>
-        <Feature icon="mdi:cash-multiple" title="Sponsorship Prospectus">Buy a shirt</Feature>
-      </div> -->
+        <Feature icon="mdi:face-mask" title="Health & Safety Guidelines" href="/about/health-and-safety">
+          Review our health protocols including mask requirements to keep our community safe.
+        </Feature>
+        <Feature icon="mdi:handshake" title="Code of Conduct" href="/about/code-of-conduct">
+          Read our Code of Conduct to help ensure PyOhio is welcoming and safe for everyone.
+        </Feature>
+        <Feature icon="mdi:food-fork-drink" title="Refreshments & Meals" href="/attend/refreshments-and-meals">
+          Learn about refreshments available and suggestions for meals in the area.
+        </Feature>
+        <Feature icon="mdi:lightning-bolt" title="Lightning Talks" href="/program/lightning-talks">
+          Sign up to give a 5-minute lightning talk or watch others share quick insights.
+        </Feature>
+        <Feature icon="mdi:account-group" title="Open Spaces" href="/program/open-spaces">
+          Join or propose informal discussion groups on topics that interest you.
+        </Feature>
+        <Feature icon="mdi:forum" title="Discord Chat" href="/attend/discord">
+          Join our Discord server to connect with other attendees before, during, and after PyOhio.
+        </Feature>
+        <Feature icon="mdi:tshirt-crew" title="T-Shirts" href="/attend/shirts">
+          Order your PyOhio 2025 shirt and help sustain PyOhio.
+        </Feature>
+        <Feature icon="mdi:email-newsletter" title="Newsletter" href="/about/newsletter">
+          Stay updated with PyOhio news and announcements by subscribing to our newsletter.
+        </Feature>
+        <Feature icon="mdi:hand-heart" title="Volunteer" href="/attend/volunteer">
+          PyOhio only happens with the help of volunteers - join us to make the conference amazing!
+        </Feature>
+        <Feature icon="mdi:gift" title="Donate" href="/sponsors/individual-sponsors">
+          Support PyOhio with a donation and become an individual sponsor of the conference.
+        </Feature>
+        <Feature icon="mdi:medal" title="Sponsors" href="/sponsors/">
+          Thank our generous sponsors who make this free conference possible.
+        </Feature>
+        <Feature icon="mdi:cash-multiple" title="Sponsorship Prospectus" href="/sponsors/prospectus">
+          Become a PyOhio sponsor and connect with Ohio's Python community.
+        </Feature>
+      </div>
     </div>
   </section>
 </DefaultLayout>
