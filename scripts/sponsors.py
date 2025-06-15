@@ -13,9 +13,9 @@ except ImportError:
     pass
 
 
-INDIVIDUAL_SPONSORS_URL = "https://admin.pyohio.org/api/individual-sponsors"
-SPONSORS_URL = "https://admin.pyohio.org/api/sponsors"
-DATA_DIR = Path("./2024/src/content")
+INDIVIDUAL_SPONSORS_URL = "https://dashboard.pyohio.org/public/events/2025/individual-sponsors"
+SPONSORS_URL = "https://dashboard.pyohio.org/public/events/2025/sponsors"
+DATA_DIR = Path("./2025/src/content")
 
 
 @click.group()
@@ -40,10 +40,15 @@ def get_individual_sponsors(ctx):
     sponsor_list.raise_for_status()
 
     sponsors = sponsor_list.json()
+    
+    # The new endpoint returns a simple list of strings in order
+    # Convert to the format expected by the site
+    sponsors_data = {"sponsors": sponsors}
 
     save_filename = Path(f"{DATA_DIR}/individualSponsors/individual-sponsors.yaml")
+    save_filename.parent.mkdir(parents=True, exist_ok=True)
     with open(save_filename, "w") as save_file:
-        yaml.dump(sponsors, save_file, allow_unicode=True)
+        yaml.dump(sponsors_data, save_file, allow_unicode=True)
 
 
 @sponsors.command()
@@ -56,9 +61,12 @@ def get_sponsors(ctx):
 
     sponsors = sponsor_list.json()
 
+    sponsors_dir = Path(f"{DATA_DIR}/sponsors")
+    sponsors_dir.mkdir(parents=True, exist_ok=True)
+
     for sponsor in sponsors:
         sponsor["slug"] = slugify(sponsor["name"])
-        save_filename = Path(f"{DATA_DIR}/sponsors/{sponsor['slug']}.yaml")
+        save_filename = sponsors_dir / f"{sponsor['slug']}.yaml"
         with open(save_filename, "w") as save_file:
             yaml.dump(sponsor, save_file, allow_unicode=True)
 
