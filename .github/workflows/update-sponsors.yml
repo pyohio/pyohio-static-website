@@ -1,0 +1,49 @@
+name: Update Sponsors
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-and-pr:
+    name: Update Sponsors and PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Timestamp
+        run: date
+
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+
+      - name: Install deps
+        run: |
+          # hack: https://github.com/astral-sh/uv/issues/1386#issuecomment-1947801083
+          pip install uv
+          uv venv .venv
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+          uv pip install -r ./scripts/requirements.txt
+
+      - name: Get Corporate Sponsor Data
+        run: ./scripts/sponsors.py get-sponsors
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Update sponsor data
+          title: Update Sponsor Data
+          author: PyOhio Automation <noreply@pyohio.org>
+          committer: PyOhio Automation <noreply@pyohio.org>
+          body: |
+            This is an automatic sponsor data update from the PyOhio Admin API.
+            - Review changes to ensure they are appropriate to publish.
+            - If so, merge.
+            - If not, update data in the PyOhio Admin and re-run this workflow.
+          labels: |
+            automated-pr
+            sponsors
+          branch: automatic-updates-for-sponsors
+          delete-branch: true

@@ -1,15 +1,16 @@
-name: Update Sponsors
+name: Update Individual Sponsors
 
 on:
-  #schedule:
-  #  - cron: "30 3,13,22 * * *"
+  schedule:
+    # Daily at noon Eastern (4 PM UTC during EDT)
+    - cron: "0 16 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   update-and-pr:
-    name: Update and PR
+    name: Update Individual Sponsors and PR
     runs-on: ubuntu-latest
 
     steps:
@@ -30,25 +31,23 @@ jobs:
           echo "$PWD/.venv/bin" >> $GITHUB_PATH
           uv pip install -r ./scripts/requirements.txt
 
-      - name: Get Corporate Sponsor Data
-        run: ./scripts/sponsors.py get-sponsors
-
       - name: Get Individual Sponsor Data
         run: ./scripts/sponsors.py get-individual-sponsors
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: Update sponsor data
-          title: Update Sponsor Data
+          commit-message: Update individual sponsor data
+          title: Update Individual Sponsor Data
           author: PyOhio Automation <noreply@pyohio.org>
           committer: PyOhio Automation <noreply@pyohio.org>
           body: |
-            This is an automatic data update from the PyOhio Admin API.
+            This is an automatic individual sponsor data update from the PyOhio Admin API.
             - Review changes to ensure they are appropriate to publish.
             - If so, merge.
             - If not, update data in the PyOhio Admin and re-run this workflow.
           labels: |
             automated-pr
-          branch: automatic-updates-for-sponsors
+            individual-sponsors
+          branch: automatic-updates-for-individual-sponsors
           delete-branch: true

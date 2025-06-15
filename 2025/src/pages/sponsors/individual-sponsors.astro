@@ -7,20 +7,20 @@ const individualSponsors = await getEntry('individualSponsors', 'individual-spon
 
 <DefaultLayout title="Individual Sponsors">
   <section class="my-12">
-    <div class="container">
-      <h1>Individual Sponsors</h1>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="text-center">
-        <p class="pb-3 text-3xl">Thank you to the following individual sponsors for supporting PyOhio!</p>
-        {individualSponsors.data.map((sponsor) => <span class="sticker">{sponsor}</span>)}
-        <p class="m-4">
-          <strong>Want to become an individual sponsor?</strong> Make a donation of $50 or more at the <a
-            href="https://ti.to/pyohio/2025"
-            class="text-primary-500 hover:underline">registration site</a
-          > to be recognized here!
+    <div class="container text-center">
+      <h1 class="mb-4">Individual Sponsors</h1>
+      <p class="mx-auto mb-6 max-w-2xl text-xl text-gray-600 dark:text-gray-300">
+        Thank you to our generous individual supporters who help make PyOhio free for everyone to attend.
+      </p>
+      <div class="from-secondary-50 to-secondary-100 rounded-lg bg-gradient-to-r p-4">
+        {individualSponsors.data.sponsors.map((sponsor) => <span class="sponsor-pill">{sponsor}</span>)}
+      </div>
+      <div class="mx-auto max-w-lg rounded-lg p-6">
+        <p class="mb-2 font-semibold">Want to become an Individual Sponsor?</p>
+        <p class="text-sm text-gray-500">
+          Donate $50+ on our <a href="https://ti.to/pyohio/2025" class="text-primary-500 hover:underline"
+            >registration site</a
+          > to join this list!
         </p>
       </div>
     </div>
@@ -77,3 +77,23 @@ const individualSponsors = await getEntry('individualSponsors', 'individual-spon
     </div>
   </section>
 </DefaultLayout>
+
+<style>
+  .sponsor-pill {
+    display: inline-block;
+    cursor: default;
+    margin: 0.375rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, var(--secondary-50), var(--secondary-100));
+    padding: 0.75rem 1.5rem;
+    min-width: 120px;
+    max-width: 300px;
+    overflow: hidden;
+    color: var(--neutral-900);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
