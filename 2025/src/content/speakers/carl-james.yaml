@@ -10,9 +10,12 @@ listed: true
 name: Carl James
 slug: carl-james
 social_links:
-- social_link_display: linkedin.com/in/carl-james-jovian34/ social.linux.pizza/@jovian34
+- social_link_display: linkedin.com/in/carl-james-jovian34/
   social_link_type: mdi:linkedin
-  social_link_url: https://www.linkedin.com/in/carl-james-jovian34/ https://social.linux.pizza/@jovian34
+  social_link_url: https://www.linkedin.com/in/carl-james-jovian34/
+- social_link_display: '@jovian34@social.linux.pizza'
+  social_link_type: mdi:mastodon
+  social_link_url: https://social.linux.pizza/@jovian34
 speaker_type: speaker
 talks:
 - code: YYFDRM
