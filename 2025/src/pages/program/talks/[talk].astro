@@ -20,6 +20,13 @@ export async function getStaticPaths() {
 }
 const { talk } = Astro.props
 
+// Clean description by removing HTML tags for meta description
+const cleanDescription = talk.data.description.replace(/<[^>]*>/g, '').trim()
+
+// Create title with speaker names
+const speakerNames = talk.data.speakers.map(s => s.name).join(', ')
+const fullTitle = `${talk.data.title} by ${speakerNames}`
+
 function formatTime(timeString) {
   const talkTime = DateTime.fromISO(timeString)
   if (isNaN(talkTime)) {
@@ -38,7 +45,7 @@ function formatDay(timeString) {
 }
 ---
 
-<DefaultLayout title="Talks">
+<DefaultLayout title={fullTitle} description={cleanDescription}>
   <TalkStructuredData talk={talk} slot="head" />
   <section class="my-12">
     <div class="container">
