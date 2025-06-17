@@ -2,12 +2,15 @@
 export const SITE_CONFIG = {
   // Event details
   eventName: 'PyOhio 2025',
-  eventDescription: 'Free Python programming language community conference.',
   organizationName: 'PyOhio',
   
   // Event dates (ISO format with timezone)
   startDate: '2025-07-26T09:00-04:00',
   endDate: '2025-07-27T18:00-04:00',
+  
+  // Venue information
+  venue: 'The Cleveland State University Student Center',
+  city: 'Cleveland',
   
   // Social media
   twitterHandle: '@pyohio',
@@ -21,6 +24,12 @@ export const SITE_CONFIG = {
   // Educational level
   educationalLevel: 'Beginner to Advanced'
 } as const
+
+// Dynamic event description using constants
+export const getEventDescription = () => {
+  const dateInfo = getEventDateInfo()
+  return `The free Python community conference based in Ohio. ${SITE_CONFIG.eventName} is ${dateInfo.longRange} at ${SITE_CONFIG.venue} in ${SITE_CONFIG.city}, OH.`
+}
 
 // Helper function to get full site URL using Astro's built-in values
 export function getFullSiteUrl(site?: URL, baseUrl?: string): string {
@@ -43,6 +52,7 @@ export function getSiteMetadata(site?: URL, baseUrl?: string) {
   
   return {
     ...SITE_CONFIG,
+    eventDescription: getEventDescription(),
     fullSiteUrl,
     siteUrl: siteUrl.replace(/\/$/, ''),
     ogImageUrl: getOGImageUrl(fullSiteUrl)
