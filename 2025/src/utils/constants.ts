@@ -48,3 +48,31 @@ export function getSiteMetadata(site?: URL, baseUrl?: string) {
     ogImageUrl: getOGImageUrl(fullSiteUrl)
   }
 }
+
+// Helper function to format event dates
+export function getEventDateInfo() {
+  const startDate = new Date(SITE_CONFIG.startDate)
+  const endDate = new Date(SITE_CONFIG.endDate)
+  
+  const monthFormatter = new Intl.DateTimeFormat('en-US', { month: 'long' })
+  const dayFormatter = new Intl.DateTimeFormat('en-US', { day: 'numeric' })
+  const yearFormatter = new Intl.DateTimeFormat('en-US', { year: 'numeric' })
+  
+  const month = monthFormatter.format(startDate)
+  const startDay = dayFormatter.format(startDate)
+  const endDay = dayFormatter.format(endDate)
+  const year = yearFormatter.format(startDate)
+  
+  return {
+    month,
+    startDay,
+    endDay,
+    year,
+    // Common date formats
+    shortRange: `${month} ${startDay}-${endDay}`, // "July 26-27"
+    longRange: `${month} ${startDay}-${endDay}, ${year}`, // "July 26-27, 2025"
+    ampersandRange: `${month} ${startDay} & ${endDay}`, // "July 26 & 27"
+    separateDates: `${month} ${startDay}th–${endDay}th, ${year}`, // "July 26th–27th, 2025"
+    currentYear: `18th` // This could be calculated or stored in config
+  }
+}

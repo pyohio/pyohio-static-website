@@ -2,6 +2,9 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
+import { SITE_CONFIG, getEventDateInfo } from '../utils/constants'
+
+const dateInfo = getEventDateInfo()
 ---
 
 <DefaultLayout title="Home">
@@ -10,13 +13,13 @@ import Feature from '../components/Feature.astro'
     <div class="container">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <Feature icon="mdi:information" title="About PyOhio" href="/about/">
-          Learn about Ohio's annual Python conference, now in its 18th year.
+          Learn about Ohio's annual Python conference, now in its {dateInfo.currentYear} year.
         </Feature>
         <Feature icon="mdi:ticket" title="Register" href="/attend/registration">
           Join us for a free weekend of Python talks and community at Cleveland State University.
         </Feature>
         <Feature icon="mdi:calendar-clock" title="Schedule" href="/program/schedule">
-          View the full conference schedule for both days of PyOhio 2025.
+          View the full conference schedule for both days of {SITE_CONFIG.eventName}.
         </Feature>
         <Feature icon="mdi:presentation" title="Talks" href="/program/talks/">
           Browse the full schedule of talks covering everything from beginner to advanced Python topics.
@@ -25,7 +28,7 @@ import Feature from '../components/Feature.astro'
           Meet our lineup of speakers sharing their Python expertise and experiences.
         </Feature>
         <Feature icon="mdi:account-star" title="Keynote Speakers" href="/program/speakers/keynote-speakers">
-          Discover our keynote speakers who will set the tone for PyOhio 2025.
+          Discover our keynote speakers who will set the tone for {SITE_CONFIG.eventName}.
         </Feature>
         <Feature icon="mdi:directions" title="Travel & Parking" href="/attend/directions-and-parking">
           Get directions to the venue and find parking options at Cleveland State University.

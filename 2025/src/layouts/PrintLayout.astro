@@ -2,15 +2,16 @@
 import '@astrojs/tailwind/base.css'
 import '../assets/scss/globals.scss'
 import SiteMeta from '../components/SiteMeta.astro'
+import { SITE_CONFIG } from '../utils/constants'
 
 const baseUrl = import.meta.env.BASE_URL
 
 const {
-  title = 'PyOhio 2024',
-  description = 'The free Python community conference based in Ohio. Saturday &amp; Sunday July 27-28, 2024.',
-  image = '/pyohio-2024-logo-og.png',
+  title = SITE_CONFIG.eventName,
+  description = SITE_CONFIG.eventDescription,
+  image = '/pyohio-2025-logo-og.png',
   author = 'PyOhio Organizers',
-  url = Astro.site + Astro.url.pathname.replace('/2024/', '2024/'),
+  url = Astro.site + Astro.url.pathname.replace('/2025/', '2025/'),
 } = Astro.props
 ---
 
