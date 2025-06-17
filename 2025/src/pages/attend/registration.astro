@@ -1,6 +1,9 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { Icon } from 'astro-icon/components'
+import { SITE_CONFIG, getEventDateInfo } from '../../utils/constants'
+
+const dateInfo = getEventDateInfo()
 ---
 
 <DefaultLayout title="Registration">
@@ -10,7 +13,7 @@ import { Icon } from 'astro-icon/components'
 
       <div class="prose prose-lg mb-8 max-w-none">
         <p>
-          PyOhio is a free annual Python community conference taking place July 26th–27th, 2025 at Cleveland State
+          PyOhio is a free annual Python community conference taking place {dateInfo.separateDates} at Cleveland State
           University Student Center.
         </p>
       </div>

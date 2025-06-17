@@ -11,6 +11,7 @@ export default defineConfig({
   base: '/2025',
   publicDir: './public',
   trailingSlash: 'ignore',
+  
   image: {
     domains: ['pyohio.org', 'pretalx.com', 'gravatar.com'],
   },
