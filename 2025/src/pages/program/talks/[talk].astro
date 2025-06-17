@@ -3,6 +3,7 @@ import DefaultLayout from '../../../layouts/DefaultLayout.astro'
 import TalkStructuredData from '../../../components/TalkStructuredData.astro'
 import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
+import { SITE_CONFIG } from '../../../utils/constants'
 
 const baseUrl = import.meta.env.BASE_URL
 
@@ -22,6 +23,7 @@ const { talk } = Astro.props
 
 // Clean description by removing HTML tags for meta description
 const cleanDescription = talk.data.description.replace(/<[^>]*>/g, '').trim()
+const prefixedDescription = `Talk at ${SITE_CONFIG.eventName}: ${cleanDescription}`
 
 // Create title with speaker names
 const speakerNames = talk.data.speakers.map(s => s.name).join(', ')
@@ -45,7 +47,7 @@ function formatDay(timeString) {
 }
 ---
 
-<DefaultLayout title={fullTitle} description={cleanDescription}>
+<DefaultLayout title={fullTitle} description={prefixedDescription}>
   <TalkStructuredData talk={talk} slot="head" />
   <section class="my-12">
     <div class="container">
