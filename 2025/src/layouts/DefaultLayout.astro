@@ -4,13 +4,13 @@ import '../assets/scss/globals.scss'
 import SiteMeta from '../components/SiteMeta.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import { SITE_CONFIG } from '../utils/constants'
+import { SITE_CONFIG, getEventDescription } from '../utils/constants'
 
 const baseUrl = import.meta.env.BASE_URL
 
 const {
   title = SITE_CONFIG.eventName,
-  description = SITE_CONFIG.eventDescription,
+  description = getEventDescription(),
   url = Astro.site,
   image = 'pyohio-2025-logo-og.png',
   author = 'PyOhio Organizers',
