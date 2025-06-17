@@ -1,12 +1,11 @@
 code: 7VE98C
 content_warnings: null
-description: '<p><strong>Description</strong><br />
-
-  Intended to be an entertaining overview of challenges faced and lessons learned
-  working on my first big maker project.  Using code snippets, pictures and short
-  demos, I will discuss problems overcome while developing new features and integrating
-  new devices into my humble animated sign, which includes lights along with rhythmic
-  and melodic components.  I promise not to dance; no one wants to see that.</p>
+description: '<p>Intended to be an entertaining overview of challenges faced and lessons
+  learned working on my first big maker project.  Using code snippets, pictures and
+  short demos, I will discuss problems overcome while developing new features and
+  integrating new devices into my humble animated sign, which includes lights along
+  with rhythmic and melodic components.  I promise not to dance; no one wants to see
+  that.</p>
 
   <p>The intended audience is anyone interested in maker projects.  I will also be
   touching on introductory-level topics in type hinting; the standard library modules
