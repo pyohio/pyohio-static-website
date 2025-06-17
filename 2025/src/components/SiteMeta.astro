@@ -1,51 +1,72 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
+import { getSiteMetadata } from '../utils/constants'
+
 const { title, description, url, image, author } = Astro.props
 
-const subtitle = 'PyOhio 2025'
-const ogImageURL = 'https://www.pyohio.org/2025/pyohio-2025-logo-og.png'
+// Get all site metadata using Astro's built-in config values
+const metadata = getSiteMetadata(Astro.site, import.meta.env.BASE_URL)
+const { eventName, eventDescription, organizationName, fullSiteUrl, siteUrl, ogImageUrl, startDate, endDate, twitterHandle, keywords } = metadata
 ---
 
 <!-- general meta -->
-<meta name="title" content={`${title} - ${subtitle}`} />
+<meta name="title" content={`${title} - ${eventName}`} />
 <meta name="description" content={description} />
 <meta name="author" content={author} />
 
 <!-- open graph -->
-<meta property="og:title" content={`${title} - ${subtitle}`} />
+<meta property="og:title" content={`${title} - ${eventName}`} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={url} />
-<meta property="og:image" content={ogImageURL} />
+<meta property="og:image" content={ogImageUrl} />
 
 <!-- twitter card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={`${title} - ${subtitle}`} />
+<meta name="twitter:title" content={`${title} - ${eventName}`} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={ogImageURL} />
-<meta name="twitter:site" content="@pyohio" />
+<meta name="twitter:image" content={ogImageUrl} />
+<meta name="twitter:site" content={twitterHandle} />
 
 <!-- event schema -->
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org/",
-    "@type": "Event",
-    "name": "PyOhio 2025",
-    "description": "Free Python programming language community conference.",
-    "image": "https://www.pyohio.org/2025/pyohio-2025-logo-og.png",
-    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "startDate": "2025-07-26T09:00-04:00",
-    "endDate": "2025-07-27T18:00-04:00",
-    "location": [
-      {
-        "@type": "VirtualLocation",
-        "url": "https://www.pyohio.org/2025"
-      }
-    ]
-  }
-</script>
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "@id": `${fullSiteUrl}#event`,
+  "name": eventName,
+  "description": eventDescription,
+  "image": ogImageUrl,
+  "url": fullSiteUrl,
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "startDate": startDate,
+  "endDate": endDate,
+  "location": {
+    "@type": "VirtualLocation",
+    "url": fullSiteUrl
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": organizationName,
+    "url": siteUrl,
+    "logo": ogImageUrl
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": fullSiteUrl
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": metadata.audience
+  },
+  "about": ["Python", "Programming", "Software Development", "Conference"],
+  "keywords": keywords,
+  "inLanguage": "en-US"
+})} />
 <!-- page title -->
-<title>{title} - {subtitle}</title>
+<title>{title} - {eventName}</title>
 
 <ViewTransitions />

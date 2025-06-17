@@ -1,5 +1,6 @@
 ---
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
+import TalkStructuredData from '../../../components/TalkStructuredData.astro'
 import { getCollection } from 'astro:content'
 import { DateTime } from 'luxon'
 
@@ -38,6 +39,7 @@ function formatDay(timeString) {
 ---
 
 <DefaultLayout title="Talks">
+  <TalkStructuredData talk={talk} slot="head" />
   <section class="my-12">
     <div class="container">
       <h1>{talk.data.title}</h1>

@@ -1,5 +1,6 @@
 ---
 import DefaultLayout from '../../../layouts/DefaultLayout.astro'
+import SpeakerStructuredData from '../../../components/SpeakerStructuredData.astro'
 import { getCollection } from 'astro:content'
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
@@ -22,6 +23,7 @@ const { speaker } = Astro.props
 ---
 
 <DefaultLayout title={speaker.data.name}>
+  <SpeakerStructuredData speaker={speaker} slot="head" />
   <section class="mt-12">
     <div class="container">
       <h1>{speaker.data.name}</h1>
