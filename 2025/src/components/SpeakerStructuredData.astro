@@ -11,47 +11,49 @@ const { eventName, organizationName, fullSiteUrl, siteUrl } = metadata
 const cleanBio = speaker.data.biography ? speaker.data.biography.replace(/<[^>]*>/g, '').trim() : ''
 
 const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": speaker.data.name,
-  "description": cleanBio.substring(0, 200) + (cleanBio.length > 200 ? '...' : ''),
-  "url": `${fullSiteUrl}/program/speakers/${speaker.data.slug}`,
-  "image": speaker.data.avatar_url,
-  "jobTitle": "Speaker",
-  "memberOf": {
-    "@type": "Event",
-    "@id": `${fullSiteUrl}#event`,
-    "name": eventName
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: speaker.data.name,
+  description: cleanBio.substring(0, 200) + (cleanBio.length > 200 ? '...' : ''),
+  url: `${fullSiteUrl}/program/speakers/${speaker.data.slug}`,
+  image: speaker.data.avatar_url,
+  jobTitle: 'Speaker',
+  memberOf: {
+    '@type': 'Event',
+    '@id': `${fullSiteUrl}#event`,
+    name: eventName,
   },
-  "performerIn": speaker.data.talks.map(talk => ({
-    "@type": "EducationalEvent",
-    "name": talk.title,
-    "url": `${fullSiteUrl}/program/talks/${talk.slug}`,
-    "isPartOf": {
-      "@type": "Event",
-      "@id": `${fullSiteUrl}#event`,
-      "name": eventName
-    }
+  performerIn: speaker.data.talks.map((talk) => ({
+    '@type': 'EducationalEvent',
+    name: talk.title,
+    url: `${fullSiteUrl}/program/talks/${talk.slug}`,
+    isPartOf: {
+      '@type': 'Event',
+      '@id': `${fullSiteUrl}#event`,
+      name: eventName,
+    },
   })),
-  "affiliation": {
-    "@type": "Organization",
-    "name": organizationName,
-    "url": siteUrl
-  }
+  affiliation: {
+    '@type': 'Organization',
+    name: organizationName,
+    url: siteUrl,
+  },
 }
 
 // Add social media profiles if available
 if (speaker.data.social_links && speaker.data.social_links.length > 0) {
-  structuredData.sameAs = speaker.data.social_links.map(link => link.social_link_url).filter(url => url)
+  structuredData.sameAs = speaker.data.social_links.map((link) => link.social_link_url).filter((url) => url)
 }
 
 // Add contact points for social links
 if (speaker.data.social_links && speaker.data.social_links.length > 0) {
-  structuredData.contactPoint = speaker.data.social_links.map(link => ({
-    "@type": "ContactPoint",
-    "contactType": "social media",
-    "url": link.social_link_url
-  })).filter(contact => contact.url)
+  structuredData.contactPoint = speaker.data.social_links
+    .map((link) => ({
+      '@type': 'ContactPoint',
+      contactType: 'social media',
+      url: link.social_link_url,
+    }))
+    .filter((contact) => contact.url)
 }
 ---
 
