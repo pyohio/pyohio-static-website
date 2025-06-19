@@ -26,7 +26,7 @@ const cleanDescription = talk.data.description.replace(/<[^>]*>/g, '').trim()
 const prefixedDescription = `Talk at ${SITE_CONFIG.eventName}: ${cleanDescription}`
 
 // Create title with speaker names
-const speakerNames = talk.data.speakers.map(s => s.name).join(', ')
+const speakerNames = talk.data.speakers.map((s) => s.name).join(', ')
 const fullTitle = `${talk.data.title} by ${speakerNames}`
 
 function formatTime(timeString) {

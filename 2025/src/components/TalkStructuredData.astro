@@ -20,83 +20,83 @@ function formatISO(timeString) {
 const cleanDescription = talk.data.description.replace(/<[^>]*>/g, '').trim()
 
 const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "PresentationDigitalDocument",
-  "name": talk.data.title,
-  "description": cleanDescription.substring(0, 200) + (cleanDescription.length > 200 ? '...' : ''),
-  "url": `${fullSiteUrl}/program/talks/${talk.data.slug}`,
-  "inLanguage": "en-US",
-  "about": {
-    "@type": "Event",
-    "@id": `${fullSiteUrl}#event`,
-    "name": eventName,
-    "url": fullSiteUrl
+  '@context': 'https://schema.org',
+  '@type': 'PresentationDigitalDocument',
+  name: talk.data.title,
+  description: cleanDescription.substring(0, 200) + (cleanDescription.length > 200 ? '...' : ''),
+  url: `${fullSiteUrl}/program/talks/${talk.data.slug}`,
+  inLanguage: 'en-US',
+  about: {
+    '@type': 'Event',
+    '@id': `${fullSiteUrl}#event`,
+    name: eventName,
+    url: fullSiteUrl,
   },
-  "author": talk.data.speakers.map(speaker => ({
-    "@type": "Person",
-    "name": speaker.name,
-    "url": `${fullSiteUrl}/program/speakers/${speaker.slug}`
+  author: talk.data.speakers.map((speaker) => ({
+    '@type': 'Person',
+    name: speaker.name,
+    url: `${fullSiteUrl}/program/speakers/${speaker.slug}`,
   })),
-  "datePublished": formatISO(talk.data.start_time),
-  "duration": `PT${talk.data.duration}M`,
-  "keywords": keywords,
-  "audience": {
-    "@type": "Audience",
-    "audienceType": audience
-  }
+  datePublished: formatISO(talk.data.start_time),
+  duration: `PT${talk.data.duration}M`,
+  keywords: keywords,
+  audience: {
+    '@type': 'Audience',
+    audienceType: audience,
+  },
 }
 
 // Add video if available
 if (talk.data.youtube_url) {
   const videoId = talk.data.youtube_url.replace('https://youtu.be/', '')
   structuredData.video = {
-    "@type": "VideoObject",
-    "name": talk.data.title,
-    "description": cleanDescription.substring(0, 200) + (cleanDescription.length > 200 ? '...' : ''),
-    "thumbnailUrl": `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
-    "uploadDate": formatISO(talk.data.start_time),
-    "duration": `PT${talk.data.duration}M`,
-    "embedUrl": `https://www.youtube.com/embed/${videoId}`,
-    "url": talk.data.youtube_url
+    '@type': 'VideoObject',
+    name: talk.data.title,
+    description: cleanDescription.substring(0, 200) + (cleanDescription.length > 200 ? '...' : ''),
+    thumbnailUrl: `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
+    uploadDate: formatISO(talk.data.start_time),
+    duration: `PT${talk.data.duration}M`,
+    embedUrl: `https://www.youtube.com/embed/${videoId}`,
+    url: talk.data.youtube_url,
   }
 }
 
 // Add event-specific data
 const eventData = {
-  "@context": "https://schema.org",
-  "@type": "EducationalEvent",
-  "name": talk.data.title,
-  "description": cleanDescription.substring(0, 200) + (cleanDescription.length > 200 ? '...' : ''),
-  "startDate": formatISO(talk.data.start_time),
-  "endDate": formatISO(talk.data.end_time),
-  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "location": {
-    "@type": "VirtualLocation",
-    "url": fullSiteUrl
+  '@context': 'https://schema.org',
+  '@type': 'EducationalEvent',
+  name: talk.data.title,
+  description: cleanDescription.substring(0, 200) + (cleanDescription.length > 200 ? '...' : ''),
+  startDate: formatISO(talk.data.start_time),
+  endDate: formatISO(talk.data.end_time),
+  eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventScheduled',
+  location: {
+    '@type': 'VirtualLocation',
+    url: fullSiteUrl,
   },
-  "organizer": {
-    "@type": "Organization",
-    "name": organizationName,
-    "url": siteUrl
+  organizer: {
+    '@type': 'Organization',
+    name: organizationName,
+    url: siteUrl,
   },
-  "performer": talk.data.speakers.map(speaker => ({
-    "@type": "Person",
-    "name": speaker.name,
-    "url": `${fullSiteUrl}/program/speakers/${speaker.slug}`
+  performer: talk.data.speakers.map((speaker) => ({
+    '@type': 'Person',
+    name: speaker.name,
+    url: `${fullSiteUrl}/program/speakers/${speaker.slug}`,
   })),
-  "isPartOf": {
-    "@type": "Event",
-    "@id": `${fullSiteUrl}#event`,
-    "name": eventName
+  isPartOf: {
+    '@type': 'Event',
+    '@id': `${fullSiteUrl}#event`,
+    name: eventName,
   },
-  "audience": {
-    "@type": "Audience",
-    "audienceType": audience
+  audience: {
+    '@type': 'Audience',
+    audienceType: audience,
   },
-  "about": ["Python", "Programming", "Software Development"],
-  "educationalLevel": metadata.educationalLevel,
-  "teaches": cleanDescription.substring(0, 100) + (cleanDescription.length > 100 ? '...' : '')
+  about: ['Python', 'Programming', 'Software Development'],
+  educationalLevel: metadata.educationalLevel,
+  teaches: cleanDescription.substring(0, 100) + (cleanDescription.length > 100 ? '...' : ''),
 }
 ---
 

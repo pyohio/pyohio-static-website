@@ -6,7 +6,18 @@ const { title, description, url, image, author } = Astro.props
 
 // Get all site metadata using Astro's built-in config values
 const metadata = getSiteMetadata(Astro.site, import.meta.env.BASE_URL)
-const { eventName, eventDescription, organizationName, fullSiteUrl, siteUrl, ogImageUrl, startDate, endDate, twitterHandle, keywords } = metadata
+const {
+  eventName,
+  eventDescription,
+  organizationName,
+  fullSiteUrl,
+  siteUrl,
+  ogImageUrl,
+  startDate,
+  endDate,
+  twitterHandle,
+  keywords,
+} = metadata
 ---
 
 <!-- general meta -->
@@ -29,43 +40,46 @@ const { eventName, eventDescription, organizationName, fullSiteUrl, siteUrl, ogI
 <meta name="twitter:site" content={twitterHandle} />
 
 <!-- event schema -->
-<script type="application/ld+json" set:html={JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "@id": `${fullSiteUrl}#event`,
-  "name": eventName,
-  "description": eventDescription,
-  "image": ogImageUrl,
-  "url": fullSiteUrl,
-  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "startDate": startDate,
-  "endDate": endDate,
-  "location": {
-    "@type": "VirtualLocation",
-    "url": fullSiteUrl
-  },
-  "organizer": {
-    "@type": "Organization",
-    "name": organizationName,
-    "url": siteUrl,
-    "logo": ogImageUrl
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": fullSiteUrl
-  },
-  "audience": {
-    "@type": "Audience",
-    "audienceType": metadata.audience
-  },
-  "about": ["Python", "Programming", "Software Development", "Conference"],
-  "keywords": keywords,
-  "inLanguage": "en-US"
-})} />
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    '@id': `${fullSiteUrl}#event`,
+    name: eventName,
+    description: eventDescription,
+    image: ogImageUrl,
+    url: fullSiteUrl,
+    eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
+    startDate: startDate,
+    endDate: endDate,
+    location: {
+      '@type': 'VirtualLocation',
+      url: fullSiteUrl,
+    },
+    organizer: {
+      '@type': 'Organization',
+      name: organizationName,
+      url: siteUrl,
+      logo: ogImageUrl,
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: fullSiteUrl,
+    },
+    audience: {
+      '@type': 'Audience',
+      audienceType: metadata.audience,
+    },
+    about: ['Python', 'Programming', 'Software Development', 'Conference'],
+    keywords: keywords,
+    inLanguage: 'en-US',
+  })}
+/>
 <!-- page title -->
 <title>{title} - {eventName}</title>
 
