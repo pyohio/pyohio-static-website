@@ -3,17 +3,17 @@ content_warnings: null
 description: <p>Keynote</p>
 discord_channel_id: ''
 duration: 45
-end_time: null
+end_time: '2025-07-26T16:30:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: jessica-garson-keynote
 speakers:
 - avatar: https://pretalx.com/media/avatars/QJCEWP_7wJgt5h.jpeg
   code: QJCEWP
   name: Jessica Garson
   slug: jessica-garson
-start_time: null
+start_time: '2025-07-26T15:45:00-04:00'
 stream_timestamp: ''
 title: Keynote
 type: Keynote
