@@ -3,17 +3,17 @@ content_warnings: null
 description: <p>Keynote</p>
 discord_channel_id: ''
 duration: 45
-end_time: null
+end_time: '2025-07-27T16:15:00-04:00'
 qna: false
 qna_channel: null
-room: TBD
+room: Ballroom D
 slug: leon-adato-keynote
 speakers:
 - avatar: https://pretalx.com/media/avatars/UVE988_lt2NTQ2.png
   code: UVE988
   name: Leon Adato
   slug: leon-adato
-start_time: null
+start_time: '2025-07-27T15:30:00-04:00'
 stream_timestamp: ''
 title: Keynote
 type: Keynote
