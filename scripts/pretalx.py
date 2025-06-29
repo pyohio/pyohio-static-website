@@ -35,7 +35,6 @@ DATA_DIR = Path("./2025/src/content")
 PLACEHOLDER_AVATAR = "https://www.pyohio.org/no-profile.png"
 DEFAULT_AVATAR_PATH = "no-profile.png"
 DEFAULT_TIME = "TBD"
-PLENARY_ROOM = "TBD"
 UNLISTED_SPEAKERS = [
     "DCSCPQ",  # Kattni
 ]
@@ -55,7 +54,10 @@ class PretalxClient:
         """Initialize with API key and event ID."""
         self.api_key = api_key
         self.event_id = event_id
-        self.headers = {"Authorization": f"Token {api_key}"}
+        self.headers = {
+            "Authorization": f"Token {api_key}",
+            "Pretalx-Version": "v1"
+        }
         self.base_url = f"https://pretalx.com/api/events/{event_id}"
         self.verbose = verbose
 
@@ -63,7 +65,11 @@ class PretalxClient:
         """Get all paginated results from an API endpoint."""
         results = []
         response = httpx.get(url, headers=self.headers)
-        response.raise_for_status()
+        try:
+            response.raise_for_status()
+        except httpx.HTTPStatusError as e:
+            click.echo(f"HTTP Error {response.status_code}: {response.text}", err=True)
+            raise
         response_json = response.json()
         results.extend(response_json["results"])
 
@@ -498,10 +504,7 @@ class DataProcessor:
             "type": talk["submission_type"]["name"]["en"],
         }
 
-        # Special handling for keynotes and plenary sessions
-        if processed_talk["type"] in ["Keynote", "Plenary Session"]:
-            processed_talk["room"] = PLENARY_ROOM
-
+        # Special handling for keynote slugs
         if processed_talk["type"] == "Keynote":
             processed_talk["slug"] = f"{processed_talk['speakers'][0]['slug']}-keynote"
 
