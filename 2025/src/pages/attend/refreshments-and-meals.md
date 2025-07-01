@@ -43,7 +43,7 @@ There are a number of great coffee shops in and around the downtown area. Here i
 - [Milk + Honey](https://maps.app.goo.gl/CYGNQYa2uofGeczg9)
 - [Lion Heart Coffee](https://maps.app.goo.gl/Z1R1v6HScvgg7bDP8)
 - [Rising Star Coffee Roaster](https://maps.app.goo.gl/HoRA823tjyTxJTVw6)
-- [REBOL] (https://maps.app.goo.gl/yCQA2MesAXjEPFi3A)
+- [REBOL](https://maps.app.goo.gl/yCQA2MesAXjEPFi3A)
 - [Starbucks](https://maps.app.goo.gl/EckfpRLr4K9VFNcZ8)
 
 <!-- While coffee will be available throughout the day if you're looking for specialty coffee we recommend [Rising Star Coffee](https://risingstarcoffee.com/locations/) at 412 Superior Ave (Inside the Hyatt Arcade). -->
