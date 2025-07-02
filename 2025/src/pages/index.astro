@@ -99,9 +99,12 @@ function getSponsorImage(localPath) {
           </p>
         </div>
         
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8 justify-items-center max-w-2xl mx-auto">
+        <div class="flex flex-wrap gap-8 justify-center mb-8">
           {sponsors.map((sponsor) => (
-            <div class="text-center p-6 sponsor-preview-card">
+            <a 
+              href={`${baseUrl}/sponsors/`}
+              class="text-center p-6 sponsor-preview-card w-80"
+            >
               <div class="mb-3 flex justify-center items-center min-h-16">
                 <Image
                   src={getSponsorImage(sponsor.data.logo_light?.local_path)}
@@ -112,7 +115,7 @@ function getSponsorImage(localPath) {
                 />
               </div>
               <h3 class="text-lg font-semibold">{sponsor.data.name}</h3>
-            </div>
+            </a>
           ))}
         </div>
         
@@ -179,7 +182,16 @@ function getSponsorImage(localPath) {
 
   .sponsor-preview-card {
     position: relative;
-    width: calc(100% - 0.5rem);
+    width: 20rem;
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      color: inherit !important;
+      text-decoration: none !important;
+    }
 
     > * {
       position: relative;
@@ -207,6 +219,10 @@ function getSponsorImage(localPath) {
       border-radius: 1rem;
       background-color: var(--action-color);
     }
+  }
+
+  :global(.sponsor-preview-card h3) {
+    color: inherit !important;
   }
 
   :global(.darkmode) .sponsor-preview-card::before {
