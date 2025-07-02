@@ -1,21 +1,142 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
+
+const sponsors = await getCollection('sponsors')
+
+const sponsorsByTier = sponsors.reduce((acc, sponsor) => {
+  const tierName = sponsor.data.tier.name
+  if (!acc[tierName]) {
+    acc[tierName] = {
+      tier: sponsor.data.tier,
+      sponsors: [],
+    }
+  }
+  acc[tierName].sponsors.push(sponsor)
+  return acc
+}, {})
+
+const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_order - b.tier.display_order)
+
+const getSponsorLogo = (sponsor, theme = 'light') => {
+  const logoData = sponsor.data[`logo_${theme}`]
+
+  // Use local path if available, otherwise fall back to remote URL
+  if (logoData?.local_path) {
+    return logoData.local_path
+  }
+  return logoData?.file_url
+}
 ---
 
-<DefaultLayout title="Sponsor">
+<DefaultLayout title="Sponsors">
   <section class="my-12">
     <div class="container">
       <h1>Sponsors</h1>
-      <p>Sponsors will be posted soon!</p>
+      <p class="text-xl text-gray-600 dark:text-gray-300">Thank you to our sponsors for making PyOhio possible!</p>
     </div>
   </section>
+
+  {
+    sortedTiers.map(({ tier, sponsors }) => (
+      <section class="my-12">
+        <div class="container">
+          <h2 class="mb-6 text-3xl font-bold">{tier.name} Sponsors</h2>
+
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {sponsors.map((sponsor) => (
+              <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-shadow hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
+                <div class="mb-6 flex items-center justify-center">
+                  <a
+                    href={sponsor.data.website_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block transition-opacity hover:opacity-80"
+                  >
+                    {sponsor.data.logo_light?.local_path ? (
+                      <Image
+                        src={import(`../../assets/${sponsor.data.logo_light.local_path}`)}
+                        alt={`${sponsor.data.name} logo`}
+                        height={64}
+                        width={100}
+                        class="block max-h-16 w-auto object-contain dark:hidden"
+                      />
+                    ) : (
+                      <img
+                        src={sponsor.data.logo_light?.file_url}
+                        alt={`${sponsor.data.name} logo`}
+                        class="block max-h-16 w-auto object-contain dark:hidden"
+                      />
+                    )}
+                    {sponsor.data.logo_dark?.local_path ? (
+                      <Image
+                        src={import(`../../assets/${sponsor.data.logo_dark.local_path}`)}
+                        alt={`${sponsor.data.name} logo`}
+                        height={64}
+                        width={100}
+                        class="hidden max-h-16 w-auto object-contain dark:block"
+                      />
+                    ) : (
+                      <img
+                        src={sponsor.data.logo_dark?.file_url}
+                        alt={`${sponsor.data.name} logo`}
+                        class="hidden max-h-16 w-auto object-contain dark:block"
+                      />
+                    )}
+                  </a>
+                </div>
+
+                <h3 class="mb-4 text-center text-xl font-semibold">{sponsor.data.name}</h3>
+
+                <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">{sponsor.data.description}</p>
+
+                <div class="flex flex-wrap justify-center gap-2">
+                  <a
+                    href={sponsor.data.website_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button color-primary"
+                  >
+                    Website
+                  </a>
+
+                  {sponsor.data.linkedin_url && (
+                    <a
+                      href={sponsor.data.linkedin_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="button color-secondary"
+                    >
+                      LinkedIn
+                    </a>
+                  )}
+
+                  {sponsor.data.job_listings && sponsor.data.job_listings.length > 0 && (
+                    <a
+                      href={sponsor.data.job_listings[0].application_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="button color-secondary"
+                    >
+                      Jobs
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
   <section class="my-12">
     <div class="container">
       <h2>Interested in sponsoring?</h2>
       <p>
-        If you'd like to sponsor PyOhio, please see our <a href="https://pyohio.org/prospectus/"
-          >Sponsorship Prospectus</a
-        > or email sponsorship@pyohio.org for more information.
+        If you'd like to sponsor PyOhio, please see our <a href="/sponsors/prospectus/">Sponsorship Prospectus</a> or email
+        sponsorship@pyohio.org for more information.
       </p>
     </div>
   </section>

@@ -1,0 +1,35 @@
+bluesky_handle: ''
+description: Our mission is to give people the power to build community and bring
+  the world closer together. Our products empower more than 3 billion people around
+  the world to share ideas, offer support and make a difference. We are constantly
+  iterating, solving problems and working together to connect people all over the
+  world. At Meta Open Source, we aim to empower diverse communities through open source
+  technology.
+id: d90cdf2f-101b-4096-a682-5235d04b42b1
+job_listings:
+- application_email: ''
+  application_link: https://opensource.fb.com/careers/
+  job_description: Meta Open Source Jobs
+  job_title: Meta Open Source Jobs
+  posting_date: '2025-07-02T20:19:19.168Z'
+linkedin_url: https://www.linkedin.com/showcase/78457036
+logo_dark:
+  asset_type: logo_dark
+  file_format: svg
+  file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/06/30/Meta_Symbol_PositivePrimary_RGB_Ll2aoBw.svg
+  local_path: img/sponsors/meta-dark.svg
+logo_light:
+  asset_type: logo_light
+  file_format: svg
+  file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/06/30/Meta_Symbol_PositivePrimary_RGB.svg
+  local_path: img/sponsors/meta-light.svg
+mastodon_handle: '@metaopensource@threads.net'
+name: Meta
+registration_date: '2025-06-30T01:16:59.549Z'
+slug: meta
+tier:
+  description: Premium sponsorship with excellent visibility (2 available)
+  display_order: 2
+  name: Platinum
+  tier_type: platinum
+website_url: https://www.meta.com/

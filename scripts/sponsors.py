@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from pathlib import Path
+import os
 
 import click
 import httpx
@@ -16,6 +17,28 @@ except ImportError:
 INDIVIDUAL_SPONSORS_URL = "https://dashboard.pyohio.org/public/events/2025/individual-sponsors"
 SPONSORS_URL = "https://dashboard.pyohio.org/public/events/2025/sponsors"
 DATA_DIR = Path("./2025/src/content")
+LOGOS_DIR = Path("./2025/src/assets/img/sponsors")
+
+
+def download_logo(logo_url, filename):
+    """Download a logo file from URL and save it locally"""
+    if not logo_url:
+        return None
+    
+    try:
+        response = httpx.get(logo_url)
+        response.raise_for_status()
+        
+        LOGOS_DIR.mkdir(parents=True, exist_ok=True)
+        filepath = LOGOS_DIR / filename
+        
+        with open(filepath, "wb") as f:
+            f.write(response.content)
+        
+        return str(filepath.relative_to(Path("./2025/src/assets")))
+    except Exception as e:
+        click.echo(f"Failed to download logo {logo_url}: {e}")
+        return None
 
 
 @click.group()
@@ -66,6 +89,22 @@ def get_sponsors(ctx):
 
     for sponsor in sponsors:
         sponsor["slug"] = slugify(sponsor["name"])
+        
+        # Download logos locally
+        if sponsor.get("logo_light", {}).get("file_url"):
+            light_ext = sponsor["logo_light"]["file_format"]
+            light_filename = f"{sponsor['slug']}-light.{light_ext}"
+            local_light_path = download_logo(sponsor["logo_light"]["file_url"], light_filename)
+            if local_light_path:
+                sponsor["logo_light"]["local_path"] = local_light_path
+        
+        if sponsor.get("logo_dark", {}).get("file_url"):
+            dark_ext = sponsor["logo_dark"]["file_format"]
+            dark_filename = f"{sponsor['slug']}-dark.{dark_ext}"
+            local_dark_path = download_logo(sponsor["logo_dark"]["file_url"], dark_filename)
+            if local_dark_path:
+                sponsor["logo_dark"]["local_path"] = local_dark_path
+        
         save_filename = sponsors_dir / f"{sponsor['slug']}.yaml"
         with open(save_filename, "w") as save_file:
             yaml.dump(sponsor, save_file, allow_unicode=True)
