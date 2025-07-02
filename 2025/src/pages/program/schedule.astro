@@ -62,37 +62,6 @@ function formatTime(timeString) {
     </div>
   </section>
 
-  <section class="container text-s">
-    <h2 class="my-6">Friday, July 25</h2>
-    <table class="table-auto text-sm">
-    <thead class="text-center">
-      <th class="w-32 p-2 heading">Start Time</th>
-      <th class="p-x2 heading" colspan="4">Room</th>
-    </thead>
-    <thead class="text-center">
-      <th class="p-2 time-heading">Fri</th>
-      <th class="p-2 sticky-heading">Ballroom D</th>
-      <th class="p-2 sticky-heading">Ballroom C</th>
-      <th class="p-2 sticky-heading">Ballroom B</th>
-      <th class="p-2 sticky-heading">Ballroom A</th>
-      <tr>
-        <td class="text-center font-bold time"><p>6:00 pm</p></td>
-        <td class="align-top p-2 plenary">
-          <p class="font-bold"><a href={`${baseUrl}/program/opening-reception`}>PyOhio Intro & Opening Reception</a></p>
-          <p class="text-xs">Introduction to PyOhio and an informal reception. Performance by keynote speaker Jessica Garson.</p>
-        </td>
-        <td class="break" colspan="3"></td>
-      </tr>
-      <tr>
-        <td class="text-center font-bold time"><p>7:45 pm</p></td>
-        <td class="align-top p-2 break" colspan="4">
-          <p class="font-bold">Conference Space Closes</p>
-        </td>
-      </tr>
-    </thead>
-  </table>
-  </section>
-
 {( Object.keys(talkDataByDateAndTime).map((scheduleDate) => (
   <section class="container pagebreak">
       <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
@@ -128,6 +97,11 @@ function formatTime(timeString) {
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
                       </td><td class="break" colspan="3"></td> 
+                  } else if (talk.data.slug === "friday-opening-reception") {
+                    return <td class="align-top p-2 plenary">
+                      <p class="font-bold"><a href={`${baseUrl}/program/opening-reception`}>{talk.data.title}</a></p>
+                      <p class="text-xs">{talk.data.description}</p>
+                      </td><td class="break" colspan="3"></td>
                   } else {
                     return <td class="font-bold p-2 plenary">
                       <p class="">{talk.data.title}</p>
@@ -240,7 +214,7 @@ function formatTime(timeString) {
     }
   }
   .talk {
-    min-width: 14em;
+    min-width: 12em;
     height: 9em;
     background-color: var(--table-background);
     border-bottom: 1px solid var(--table-border);
@@ -248,7 +222,7 @@ function formatTime(timeString) {
     text-align: left;
   }
   .plenary {
-    min-width: 14em;
+    min-width: 12em;
     background-color: var(--table-background) ;
     border-bottom: 1px solid var(--table-border);
     border-right: 1px solid var(--table-border);
