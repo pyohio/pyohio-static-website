@@ -5,13 +5,13 @@ import { Image } from 'astro:assets'
 
 const sponsors = await getCollection('sponsors')
 
-// Import all sponsor images
-const images = import.meta.glob('../../assets/img/sponsors/*.{png,jpg,jpeg,svg}', { eager: true })
+// Dynamically import all sponsor images
+const sponsorImages = import.meta.glob('../../assets/img/sponsors/*', { eager: true })
 
-function getSponsorImage(path) {
-  if (!path) return null
-  const fullPath = `../../assets/${path}`
-  return images[fullPath] || null
+function getSponsorImage(localPath) {
+  if (!localPath) return null
+  const imagePath = `../../assets/${localPath}`
+  return sponsorImages[imagePath]?.default || null
 }
 
 const sponsorsByTier = sponsors.reduce((acc, sponsor) => {
@@ -27,16 +27,6 @@ const sponsorsByTier = sponsors.reduce((acc, sponsor) => {
 }, {})
 
 const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_order - b.tier.display_order)
-
-const getSponsorLogo = (sponsor, theme = 'light') => {
-  const logoData = sponsor.data[`logo_${theme}`]
-
-  // Use local path if available, otherwise fall back to remote URL
-  if (logoData?.local_path) {
-    return logoData.local_path
-  }
-  return logoData?.file_url
-}
 ---
 
 <DefaultLayout title="Sponsors">
@@ -53,84 +43,55 @@ const getSponsorLogo = (sponsor, theme = 'light') => {
         <div class="container">
           <h2 class="mb-6 text-3xl font-bold">{tier.name} Sponsors</h2>
 
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="grid gap-8 lg:grid-cols-2">
             {sponsors.map((sponsor) => (
-              <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-shadow hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
-                <div class="mb-6 flex items-center justify-center">
-                  <a
-                    href={sponsor.data.website_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="block transition-opacity hover:opacity-80"
-                  >
-                    {sponsor.data.logo_light?.local_path && getSponsorImage(sponsor.data.logo_light.local_path) ? (
-                      <Image
-                        src={getSponsorImage(sponsor.data.logo_light.local_path).default || getSponsorImage(sponsor.data.logo_light.local_path)}
-                        alt={`${sponsor.data.name} logo`}
-                        height={64}
-                        width={100}
-                        class="block max-h-16 w-auto object-contain dark:hidden"
-                      />
-                    ) : (
-                      <img
-                        src={sponsor.data.logo_light?.file_url}
-                        alt={`${sponsor.data.name} logo`}
-                        class="block max-h-16 w-auto object-contain dark:hidden"
-                      />
-                    )}
-                    {sponsor.data.logo_dark?.local_path && getSponsorImage(sponsor.data.logo_dark.local_path) ? (
-                      <Image
-                        src={getSponsorImage(sponsor.data.logo_dark.local_path).default || getSponsorImage(sponsor.data.logo_dark.local_path)}
-                        alt={`${sponsor.data.name} logo`}
-                        height={64}
-                        width={100}
-                        class="hidden max-h-16 w-auto object-contain dark:block"
-                      />
-                    ) : (
-                      <img
-                        src={sponsor.data.logo_dark?.file_url}
-                        alt={`${sponsor.data.name} logo`}
-                        class="hidden max-h-16 w-auto object-contain dark:block"
-                      />
-                    )}
-                  </a>
-                </div>
+              <div class="sponsor-card">
+                <div class="sponsor-content">
+                  <h3>{sponsor.data.name}</h3>
+                  
+                  <div class="sponsor-logo">
+                    <Image
+                      src={getSponsorImage(sponsor.data.logo_light?.local_path)}
+                      alt={`${sponsor.data.name} logo`}
+                      height="64"
+                      width="200"
+                    />
+                  </div>
 
-                <h3 class="mb-4 text-center text-xl font-semibold">{sponsor.data.name}</h3>
+                  <p>{sponsor.data.description}</p>
 
-                <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">{sponsor.data.description}</p>
-
-                <div class="flex flex-wrap justify-center gap-2">
-                  <a
-                    href={sponsor.data.website_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="button color-primary"
-                  >
-                    Website
-                  </a>
-
-                  {sponsor.data.linkedin_url && (
+                  <div class="sponsor-links">
                     <a
-                      href={sponsor.data.linkedin_url}
+                      href={sponsor.data.website_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="button color-secondary"
+                      class="button color-primary"
                     >
-                      LinkedIn
+                      Website
                     </a>
-                  )}
 
-                  {sponsor.data.job_listings && sponsor.data.job_listings.length > 0 && (
-                    <a
-                      href={sponsor.data.job_listings[0].application_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="button color-secondary"
-                    >
-                      Jobs
-                    </a>
-                  )}
+                    {sponsor.data.linkedin_url && (
+                      <a
+                        href={sponsor.data.linkedin_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button color-secondary"
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+
+                    {sponsor.data.job_listings && sponsor.data.job_listings.length > 0 && (
+                      <a
+                        href={sponsor.data.job_listings[0].application_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button color-secondary"
+                      >
+                        Jobs
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
@@ -150,3 +111,97 @@ const getSponsorLogo = (sponsor, theme = 'light') => {
     </div>
   </section>
 </DefaultLayout>
+
+<style lang="scss">
+  .sponsor-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid var(--neutral-200);
+    background-color: var(--neutral-100);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -3px rgb(0 0 0 / 0.1);
+    }
+  }
+
+  .sponsor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    min-height: 6rem;
+    padding: 0.125rem;
+
+    :global(img) {
+      max-height: 100%;
+      max-width: 65%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+
+    &:hover:not(.disabled) {
+      opacity: 0.8;
+    }
+
+    &.disabled {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  .sponsor-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--neutral-900);
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--neutral-600);
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+  }
+
+  .sponsor-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  :global(.darkmode) .sponsor-card {
+    border-color: var(--dark-200);
+    background-color: var(--dark-100);
+
+    h3 {
+      color: var(--dark-900);
+    }
+
+    p {
+      color: var(--dark-600);
+    }
+  }
+</style>
