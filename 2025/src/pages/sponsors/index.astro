@@ -5,6 +5,15 @@ import { Image } from 'astro:assets'
 
 const sponsors = await getCollection('sponsors')
 
+// Import all sponsor images
+const images = import.meta.glob('../../assets/img/sponsors/*.{png,jpg,jpeg,svg}', { eager: true })
+
+function getSponsorImage(path) {
+  if (!path) return null
+  const fullPath = `../../assets/${path}`
+  return images[fullPath] || null
+}
+
 const sponsorsByTier = sponsors.reduce((acc, sponsor) => {
   const tierName = sponsor.data.tier.name
   if (!acc[tierName]) {
@@ -54,9 +63,9 @@ const getSponsorLogo = (sponsor, theme = 'light') => {
                     rel="noopener noreferrer"
                     class="block transition-opacity hover:opacity-80"
                   >
-                    {sponsor.data.logo_light?.local_path ? (
+                    {sponsor.data.logo_light?.local_path && getSponsorImage(sponsor.data.logo_light.local_path) ? (
                       <Image
-                        src={import(`../../assets/${sponsor.data.logo_light.local_path}`)}
+                        src={getSponsorImage(sponsor.data.logo_light.local_path).default || getSponsorImage(sponsor.data.logo_light.local_path)}
                         alt={`${sponsor.data.name} logo`}
                         height={64}
                         width={100}
@@ -69,9 +78,9 @@ const getSponsorLogo = (sponsor, theme = 'light') => {
                         class="block max-h-16 w-auto object-contain dark:hidden"
                       />
                     )}
-                    {sponsor.data.logo_dark?.local_path ? (
+                    {sponsor.data.logo_dark?.local_path && getSponsorImage(sponsor.data.logo_dark.local_path) ? (
                       <Image
-                        src={import(`../../assets/${sponsor.data.logo_dark.local_path}`)}
+                        src={getSponsorImage(sponsor.data.logo_dark.local_path).default || getSponsorImage(sponsor.data.logo_dark.local_path)}
                         alt={`${sponsor.data.name} logo`}
                         height={64}
                         width={100}
