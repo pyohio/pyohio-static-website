@@ -45,7 +45,7 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
 
           <div class="grid gap-8 lg:grid-cols-2">
             {sponsors.map((sponsor) => (
-              <div class="sponsor-card">
+              <div class={sponsor.data.website_url ? "sponsor-card clickable" : "sponsor-card"} data-url={sponsor.data.website_url || ''}>
                 <div class="sponsor-content">
                   <h3>{sponsor.data.name}</h3>
                   
@@ -192,6 +192,15 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
     gap: 0.5rem;
   }
 
+  .sponsor-card.clickable {
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px -3px rgb(0 0 0 / 0.15);
+    }
+  }
+
   :global(.darkmode) .sponsor-card {
     border-color: var(--dark-200);
     background-color: var(--dark-100);
@@ -205,3 +214,18 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const clickableCards = document.querySelectorAll('.sponsor-card.clickable');
+    
+    clickableCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      });
+    });
+  });
+</script>
