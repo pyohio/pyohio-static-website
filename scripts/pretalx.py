@@ -45,6 +45,23 @@ KEYNOTE_SPEAKERS = [
 ]
 
 
+def generate_deterministic_break_code(start_time: str, title: str) -> str:
+    """
+    Generate a deterministic break code based on start time and title.
+    Format: BREAK_DAY_HHMM (e.g., BREAK_SAT_1030)
+    """
+    from datetime import datetime
+    
+    # Parse the ISO datetime
+    dt = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
+    
+    # Get day abbreviation and time
+    day_abbr = dt.strftime('%a').upper()
+    time_str = dt.strftime("%H%M")
+    
+    return f"BREAK_{day_abbr}_{time_str}"
+
+
 class PretalxClient:
     """Handle Pretalx API requests and data processing."""
 
@@ -296,7 +313,7 @@ class PretalxClient:
                 "duration": break_entry["duration"],
                 "type": "Break",  # Default type
                 "slug": unique_slug,
-                "code": f"BREAK{break_entry['slot_id']}",
+                "code": generate_deterministic_break_code(start_time, title),
                 "speakers": [],
                 "description": "",
             }
@@ -329,7 +346,7 @@ class PretalxClient:
                 "duration": session["duration"],
                 "type": "Plenary Session",
                 "slug": unique_slug,
-                "code": f"BREAK{session['slot_id']}",
+                "code": generate_deterministic_break_code(session["start_time"], title),
                 "speakers": [],
                 "description": "",
             }
@@ -418,6 +435,21 @@ class DataProcessor:
                     shutil.copy(temp_path, no_profile)
                     temp_path.unlink(missing_ok=True)
 
+    def copy_extra_content(self) -> None:
+        """Copy extra YAML content files from extra_content/talks to talks directory."""
+        extra_content_dir = Path(__file__).parent / "extra_content" / "talks"
+        
+        if not extra_content_dir.exists():
+            click.echo(f"Extra content directory not found: {extra_content_dir}", err=True)
+            return
+        
+        click.echo("Copying extra content files...", err=True)
+        
+        for yaml_file in extra_content_dir.glob("*.yaml"):
+            target_file = self.talks_dir / yaml_file.name
+            shutil.copy2(yaml_file, target_file)
+            click.echo(f"  Copied: {yaml_file.name}", err=True)
+
     def process_talks(
         self,
         talks: List[Dict],
@@ -426,6 +458,7 @@ class DataProcessor:
     ) -> Dict[str, Dict]:
         """Process talk data and save to files."""
         self.clean_directory(self.talks_dir)
+        self.copy_extra_content()
         click.echo("Writing talk files...", err=True)
 
         talks_by_code = {}

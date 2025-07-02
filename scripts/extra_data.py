@@ -337,32 +337,7 @@ TALK_EXTRAS = {}
 #         "youtube_url": "https://youtu.be/_51o1CK_3_0",
 #     },
 # }
-BREAKS = {
-    "SATCLOSE": {
-        "code": "SATCLOSE",
-        "title": "Conference Space Closes",
-        "start_time": "2025-07-26T19:45:00-04:00",
-        "end_time": "2025-07-26T19:45:00-04:00",
-        "type": "Break",
-        "room": "n/a",
-        "duration": 0,
-        "speakers": [],
-        "description": "",
-        "slug": "satclose",
-    },
-    "SUNCLOSE": {
-        "code": "SUNCLOSE",
-        "title": "Conference Space Closes",
-        "start_time": "2025-07-27T17:00:00-04:00",
-        "end_time": "2025-07-27T17:00:00-04:00",
-        "type": "Break",
-        "room": "n/a",
-        "duration": 0,
-        "speakers": [],
-        "description": "",
-        "slug": "sunclose",
-    },
-}
+BREAKS = {}
 # BREAKS = {
 #     "SATREG": {
 #         "code": "SATREG",
