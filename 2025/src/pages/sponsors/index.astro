@@ -1,22 +1,254 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
+
+const sponsors = await getCollection('sponsors')
+
+// Dynamically import all sponsor images
+const sponsorImages = import.meta.glob('../../assets/img/sponsors/*', { eager: true })
+
+function getSponsorImage(localPath) {
+  if (!localPath) return null
+  const imagePath = `../../assets/${localPath}`
+  return sponsorImages[imagePath]?.default || null
+}
+
+const sponsorsByTier = sponsors.reduce((acc, sponsor) => {
+  const tierName = sponsor.data.tier.name
+  if (!acc[tierName]) {
+    acc[tierName] = {
+      tier: sponsor.data.tier,
+      sponsors: [],
+    }
+  }
+  acc[tierName].sponsors.push(sponsor)
+  return acc
+}, {})
+
+const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_order - b.tier.display_order)
 ---
 
-<DefaultLayout title="Sponsor">
+<DefaultLayout title="Sponsors">
   <section class="my-12">
     <div class="container">
       <h1>Sponsors</h1>
-      <p>Sponsors will be posted soon!</p>
+      <p class="text-xl text-gray-600 dark:text-gray-300">Thank you to our sponsors for making PyOhio possible!</p>
     </div>
   </section>
+
+  {
+    sortedTiers.map(({ tier, sponsors }) => (
+      <section class="my-12">
+        <div class="container">
+          <h2 class="mb-6 text-3xl font-bold">{tier.name} Sponsors</h2>
+
+          <div class="grid gap-8 lg:grid-cols-2">
+            {sponsors.map((sponsor) => (
+              <div class={sponsor.data.website_url ? "sponsor-card clickable" : "sponsor-card"} data-url={sponsor.data.website_url || ''}>
+                <div class="sponsor-content">
+                  <h3>{sponsor.data.name}</h3>
+                  
+                  <div class="sponsor-logo">
+                    <Image
+                      src={getSponsorImage(sponsor.data.logo_light?.local_path)}
+                      alt={`${sponsor.data.name} logo`}
+                      height="64"
+                      width="200"
+                    />
+                  </div>
+
+                  <p>{sponsor.data.description}</p>
+
+                  <div class="sponsor-links">
+                    <a
+                      href={sponsor.data.website_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="button color-primary"
+                    >
+                      Website
+                    </a>
+
+                    {sponsor.data.linkedin_url && (
+                      <a
+                        href={sponsor.data.linkedin_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button color-secondary"
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+
+                    {sponsor.data.job_listings && sponsor.data.job_listings.length > 0 && (
+                      <a
+                        href={sponsor.data.job_listings[0].application_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button color-secondary"
+                      >
+                        Jobs
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
   <section class="my-12">
     <div class="container">
       <h2>Interested in sponsoring?</h2>
       <p>
-        If you'd like to sponsor PyOhio, please see our <a href="https://pyohio.org/prospectus/"
-          >Sponsorship Prospectus</a
-        > or email sponsorship@pyohio.org for more information.
+        If you'd like to sponsor PyOhio, please see our <a href="/sponsors/prospectus/">Sponsorship Prospectus</a> or email
+        sponsorship@pyohio.org for more information.
       </p>
     </div>
   </section>
 </DefaultLayout>
+
+<style lang="scss">
+  .sponsor-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1.5rem;
+    width: calc(100% - 0.5rem);
+    transition: all 0.2s ease;
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      z-index: 1;
+      inset: 0;
+      box-shadow: 0 0 0 6px var(--neutral-100);
+      border: 3px solid var(--neutral-700);
+      border-radius: 1rem;
+      background-color: var(--neutral-100);
+    }
+
+    &::after {
+      z-index: 0;
+      inset: 1rem -0.85rem -0.85rem 1rem;
+      border-radius: 1rem;
+      background-color: var(--action-color);
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  .sponsor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    min-height: 6rem;
+    padding: 0.125rem;
+
+    :global(img) {
+      max-height: 100%;
+      max-width: 65%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+
+    &:hover:not(.disabled) {
+      opacity: 0.8;
+    }
+
+    &.disabled {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  .sponsor-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--neutral-900);
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--neutral-600);
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+  }
+
+  .sponsor-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .sponsor-card.clickable {
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px -3px rgb(0 0 0 / 0.15);
+    }
+  }
+
+  :global(.sponsor-card h3) {
+    color: inherit !important;
+  }
+
+  :global(.sponsor-card p) {
+    color: inherit !important;
+  }
+
+  :global(.darkmode) .sponsor-card::before {
+    box-shadow: 0 0 0 6px var(--dark-100);
+    background-color: var(--dark-100);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const clickableCards = document.querySelectorAll('.sponsor-card.clickable');
+    
+    clickableCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      });
+    });
+  });
+</script>
