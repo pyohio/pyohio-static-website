@@ -45,6 +45,23 @@ KEYNOTE_SPEAKERS = [
 ]
 
 
+def generate_deterministic_break_code(start_time: str, title: str) -> str:
+    """
+    Generate a deterministic break code based on start time and title.
+    Format: BREAK_DAY_HHMM (e.g., BREAK_SAT_1030)
+    """
+    from datetime import datetime
+    
+    # Parse the ISO datetime
+    dt = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
+    
+    # Get day abbreviation and time
+    day_abbr = dt.strftime('%a').upper()
+    time_str = dt.strftime("%H%M")
+    
+    return f"BREAK_{day_abbr}_{time_str}"
+
+
 class PretalxClient:
     """Handle Pretalx API requests and data processing."""
 
@@ -296,7 +313,7 @@ class PretalxClient:
                 "duration": break_entry["duration"],
                 "type": "Break",  # Default type
                 "slug": unique_slug,
-                "code": f"BREAK{break_entry['slot_id']}",
+                "code": generate_deterministic_break_code(start_time, title),
                 "speakers": [],
                 "description": "",
             }
@@ -329,7 +346,7 @@ class PretalxClient:
                 "duration": session["duration"],
                 "type": "Plenary Session",
                 "slug": unique_slug,
-                "code": f"BREAK{session['slot_id']}",
+                "code": generate_deterministic_break_code(session["start_time"], title),
                 "speakers": [],
                 "description": "",
             }
