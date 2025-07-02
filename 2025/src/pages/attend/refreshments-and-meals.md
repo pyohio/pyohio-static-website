@@ -35,4 +35,12 @@ Restaurant recommendations will be posted closer to the event.
 
 ## Coffee
 
-While coffee will be available throughout the day if you're looking for specialty coffee we recommend [Rising Star Coffee](https://risingstarcoffee.com/locations/) at 412 Superior Ave (Inside the Hyatt Arcade).
+There are a number of great coffee shops in and around the downtown area. Here is a list of some of our favorites within a short walk of the hotel and venue.
+
+- [Cafe Ah-Roma](https://maps.app.goo.gl/sK2s8G2uCvjEBPft6)
+- [Brass Moon Espresso Bar](https://maps.app.goo.gl/zpt4UkadGVs9V7y87)
+- [Phoenix Coffee Company](https://maps.app.goo.gl/TysZSmHgusYkqAGd9)
+- [Milk + Honey](https://maps.app.goo.gl/CYGNQYa2uofGeczg9)
+- [Lion Heart Coffee](https://maps.app.goo.gl/Z1R1v6HScvgg7bDP8)
+- [Rising Star Coffee Roaster](https://maps.app.goo.gl/HoRA823tjyTxJTVw6)
+- [Starbucks](https://maps.app.goo.gl/EckfpRLr4K9VFNcZ8)
