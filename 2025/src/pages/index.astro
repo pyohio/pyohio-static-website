@@ -2,9 +2,22 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
+import { Image } from 'astro:assets'
+import { getCollection } from 'astro:content'
 import { SITE_CONFIG, getEventDateInfo } from '../utils/constants'
 
 const dateInfo = getEventDateInfo()
+const sponsors = await getCollection('sponsors')
+const baseUrl = import.meta.env.BASE_URL
+
+// Dynamically import all sponsor images
+const sponsorImages = import.meta.glob('../assets/img/sponsors/*', { eager: true })
+
+function getSponsorImage(localPath) {
+  if (!localPath) return null
+  const imagePath = `../assets/${localPath}`
+  return sponsorImages[imagePath]?.default || null
+}
 ---
 
 <DefaultLayout title="Home">
@@ -75,4 +88,129 @@ const dateInfo = getEventDateInfo()
       </div>
     </div>
   </section>
+
+  {sponsors.length > 0 && (
+    <section class="my-24">
+      <div class="container">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">Our Sponsors</h2>
+          <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+            Thank you to our generous sponsors who make PyOhio possible!
+          </p>
+        </div>
+        
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8 justify-items-center max-w-2xl mx-auto">
+          {sponsors.map((sponsor) => (
+            <div class="text-center p-6 sponsor-preview-card">
+              <div class="mb-3 flex justify-center items-center min-h-16">
+                <Image
+                  src={getSponsorImage(sponsor.data.logo_light?.local_path)}
+                  alt={`${sponsor.data.name} logo`}
+                  height="64"
+                  width="200"
+                  class="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <h3 class="text-lg font-semibold">{sponsor.data.name}</h3>
+            </div>
+          ))}
+        </div>
+        
+        <div class="text-center">
+          <a href={`${baseUrl}/sponsors/`} class="button color-primary">
+            View All Sponsors
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
 </DefaultLayout>
+
+<style lang="scss">
+  .sponsor-preview-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--neutral-200);
+    background-color: var(--neutral-100);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -3px rgb(0 0 0 / 0.1);
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--neutral-900);
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .sponsor-preview-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    min-height: 3rem;
+    padding: 0.5rem;
+
+    :global(img) {
+      max-height: 3rem;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .sponsor-preview-link {
+    font-size: 0.875rem;
+    color: var(--action-color);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sponsor-preview-card {
+    position: relative;
+    width: calc(100% - 0.5rem);
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      z-index: 1;
+      inset: 0;
+      box-shadow: 0 0 0 6px var(--neutral-100);
+      border: 3px solid var(--neutral-700);
+      border-radius: 1rem;
+      background-color: var(--neutral-100);
+    }
+
+    &::after {
+      z-index: 0;
+      inset: 1rem -0.85rem -0.85rem 1rem;
+      border-radius: 1rem;
+      background-color: var(--action-color);
+    }
+  }
+
+  :global(.darkmode) .sponsor-preview-card::before {
+    box-shadow: 0 0 0 6px var(--dark-100);
+    background-color: var(--dark-100);
+  }
+</style>

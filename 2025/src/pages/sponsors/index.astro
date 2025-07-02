@@ -118,15 +118,38 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
     flex-direction: column;
     position: relative;
     padding: 1.5rem;
-    border-radius: 1rem;
-    border: 2px solid var(--neutral-200);
-    background-color: var(--neutral-100);
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    width: calc(100% - 0.5rem);
     transition: all 0.2s ease;
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      z-index: 1;
+      inset: 0;
+      box-shadow: 0 0 0 6px var(--neutral-100);
+      border: 3px solid var(--neutral-700);
+      border-radius: 1rem;
+      background-color: var(--neutral-100);
+    }
+
+    &::after {
+      z-index: 0;
+      inset: 1rem -0.85rem -0.85rem 1rem;
+      border-radius: 1rem;
+      background-color: var(--action-color);
+    }
 
     &:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px -3px rgb(0 0 0 / 0.1);
     }
   }
 
@@ -201,17 +224,17 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
     }
   }
 
-  :global(.darkmode) .sponsor-card {
-    border-color: var(--dark-200);
+  :global(.sponsor-card h3) {
+    color: inherit !important;
+  }
+
+  :global(.sponsor-card p) {
+    color: inherit !important;
+  }
+
+  :global(.darkmode) .sponsor-card::before {
+    box-shadow: 0 0 0 6px var(--dark-100);
     background-color: var(--dark-100);
-
-    h3 {
-      color: var(--dark-900);
-    }
-
-    p {
-      color: var(--dark-600);
-    }
   }
 </style>
 
