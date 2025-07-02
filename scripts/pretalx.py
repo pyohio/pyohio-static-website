@@ -418,6 +418,21 @@ class DataProcessor:
                     shutil.copy(temp_path, no_profile)
                     temp_path.unlink(missing_ok=True)
 
+    def copy_extra_content(self) -> None:
+        """Copy extra YAML content files from extra_content/talks to talks directory."""
+        extra_content_dir = Path(__file__).parent / "extra_content" / "talks"
+        
+        if not extra_content_dir.exists():
+            click.echo(f"Extra content directory not found: {extra_content_dir}", err=True)
+            return
+        
+        click.echo("Copying extra content files...", err=True)
+        
+        for yaml_file in extra_content_dir.glob("*.yaml"):
+            target_file = self.talks_dir / yaml_file.name
+            shutil.copy2(yaml_file, target_file)
+            click.echo(f"  Copied: {yaml_file.name}", err=True)
+
     def process_talks(
         self,
         talks: List[Dict],
@@ -426,6 +441,7 @@ class DataProcessor:
     ) -> Dict[str, Dict]:
         """Process talk data and save to files."""
         self.clean_directory(self.talks_dir)
+        self.copy_extra_content()
         click.echo("Writing talk files...", err=True)
 
         talks_by_code = {}
