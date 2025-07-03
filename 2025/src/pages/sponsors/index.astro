@@ -169,12 +169,12 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
 
   .sponsor-logo {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
     padding: 0.125rem;
     min-height: 6rem;
-    position: relative;
 
     :global(img) {
       width: auto;
@@ -276,7 +276,12 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
     const clickableCards = document.querySelectorAll('.sponsor-card.clickable')
 
     clickableCards.forEach((card) => {
-      card.addEventListener('click', () => {
+      card.addEventListener('click', (e) => {
+        // Don't trigger card click if a button/link was clicked
+        if (e.target.closest('a, button')) {
+          return
+        }
+
         const url = card.getAttribute('data-url')
         if (url) {
           window.open(url, '_blank', 'noopener,noreferrer')
