@@ -15,12 +15,12 @@ job_listings:
 linkedin_url: https://www.linkedin.com/showcase/78457036
 logo_dark:
   asset_type: logo_dark
-  file_format: svg
+  file_name: Meta_Symbol_PositivePrimary_RGB.svg
   file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/06/30/Meta_Symbol_PositivePrimary_RGB_Ll2aoBw.svg
   local_path: img/sponsors/meta-dark.svg
 logo_light:
   asset_type: logo_light
-  file_format: svg
+  file_name: meta-symbol-positive-primary.svg
   file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/06/30/Meta_Symbol_PositivePrimary_RGB.svg
   local_path: img/sponsors/meta-light.svg
 mastodon_handle: '@metaopensource@threads.net'
@@ -31,5 +31,4 @@ tier:
   description: Premium sponsorship with excellent visibility (2 available)
   display_order: 2
   name: Platinum
-  tier_type: platinum
 website_url: https://www.meta.com/
