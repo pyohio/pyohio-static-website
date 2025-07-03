@@ -29,11 +29,10 @@ const sponsorsByTier = sponsors.reduce((acc, sponsor) => {
 const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_order - b.tier.display_order)
 ---
 
-<DefaultLayout title="Sponsors">
+<DefaultLayout title="2025 Sponsors">
   <section class="my-12">
     <div class="container">
-      <h1>Sponsors</h1>
-      <p class="text-xl text-gray-600 dark:text-gray-300">Thank you to our sponsors for making PyOhio possible!</p>
+      <h1>PyOhio 2025 Sponsors</h1>
     </div>
   </section>
 
@@ -41,21 +40,36 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
     sortedTiers.map(({ tier, sponsors }) => (
       <section class="my-12">
         <div class="container">
-          <h2 class="mb-6 text-3xl font-bold">{tier.name} Sponsors</h2>
+          <h2 class="mb-6 text-3xl font-bold">{tier.name}</h2>
 
           <div class="grid gap-8 lg:grid-cols-2">
             {sponsors.map((sponsor) => (
-              <div class={sponsor.data.website_url ? "sponsor-card clickable" : "sponsor-card"} data-url={sponsor.data.website_url || ''}>
+              <div
+                class={sponsor.data.website_url ? 'sponsor-card clickable' : 'sponsor-card'}
+                data-url={sponsor.data.website_url || ''}
+              >
                 <div class="sponsor-content">
                   <h3>{sponsor.data.name}</h3>
-                  
+
                   <div class="sponsor-logo">
-                    <Image
-                      src={getSponsorImage(sponsor.data.logo_light?.local_path)}
-                      alt={`${sponsor.data.name} logo`}
-                      height="64"
-                      width="200"
-                    />
+                    {getSponsorImage(sponsor.data.logo_light?.local_path) && (
+                      <Image
+                        src={getSponsorImage(sponsor.data.logo_light.local_path)}
+                        alt={`${sponsor.data.name} logo`}
+                        height="64"
+                        width="200"
+                        class="logo-light"
+                      />
+                    )}
+                    {getSponsorImage(sponsor.data.logo_dark?.local_path) && (
+                      <Image
+                        src={getSponsorImage(sponsor.data.logo_dark.local_path)}
+                        alt={`${sponsor.data.name} logo`}
+                        height="64"
+                        width="200"
+                        class="logo-dark"
+                      />
+                    )}
                   </div>
 
                   <p>{sponsor.data.description}</p>
@@ -115,11 +129,11 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
 <style lang="scss">
   .sponsor-card {
     display: flex;
-    flex-direction: column;
     position: relative;
+    flex-direction: column;
+    transition: all 0.2s ease;
     padding: 1.5rem;
     width: calc(100% - 0.5rem);
-    transition: all 0.2s ease;
 
     > * {
       position: relative;
@@ -155,25 +169,44 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
 
   .sponsor-logo {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
-    min-height: 6rem;
     padding: 0.125rem;
+    min-height: 6rem;
+    position: relative;
 
     :global(img) {
-      max-height: 100%;
-      max-width: 65%;
       width: auto;
+      max-width: 65%;
       height: auto;
+      max-height: 100%;
       object-fit: contain;
+    }
+
+    :global(.logo-light) {
+      display: block;
+    }
+
+    :global(.logo-dark) {
+      display: none;
+    }
+  }
+
+  :global(.darkmode) .sponsor-logo {
+    :global(.logo-light) {
+      display: none;
+    }
+
+    :global(.logo-dark) {
+      display: block;
     }
   }
 
   .logo-link {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     transition: opacity 0.2s ease;
 
     &:hover:not(.disabled) {
@@ -187,24 +220,24 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
   }
 
   .sponsor-content {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     text-align: center;
 
     h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
       margin-bottom: 1rem;
       color: var(--neutral-900);
+      font-weight: 600;
+      font-size: 1.5rem;
     }
 
     p {
+      flex: 1;
+      margin-bottom: 1.5rem;
+      color: var(--neutral-600);
       font-size: 0.875rem;
       line-height: 1.5;
-      color: var(--neutral-600);
-      margin-bottom: 1.5rem;
-      flex: 1;
     }
   }
 
@@ -240,15 +273,15 @@ const sortedTiers = Object.values(sponsorsByTier).sort((a, b) => a.tier.display_
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const clickableCards = document.querySelectorAll('.sponsor-card.clickable');
-    
-    clickableCards.forEach(card => {
+    const clickableCards = document.querySelectorAll('.sponsor-card.clickable')
+
+    clickableCards.forEach((card) => {
       card.addEventListener('click', () => {
-        const url = card.getAttribute('data-url');
+        const url = card.getAttribute('data-url')
         if (url) {
-          window.open(url, '_blank', 'noopener,noreferrer');
+          window.open(url, '_blank', 'noopener,noreferrer')
         }
-      });
-    });
-  });
+      })
+    })
+  })
 </script>

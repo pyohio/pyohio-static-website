@@ -103,18 +103,29 @@ function getSponsorImage(localPath) {
           {sponsors.map((sponsor) => (
             <a 
               href={`${baseUrl}/sponsors/`}
-              class="text-center p-6 sponsor-preview-card w-80"
+              class="text-center p-6 sponsor-preview-card w-80 h-72"
             >
-              <div class="mb-3 flex justify-center items-center min-h-16">
-                <Image
-                  src={getSponsorImage(sponsor.data.logo_light?.local_path)}
-                  alt={`${sponsor.data.name} logo`}
-                  height="64"
-                  width="200"
-                  class="max-h-16 w-auto object-contain"
-                />
+              <div class="flex justify-center items-center sponsor-logo-container w-48 h-48 mx-auto">
+                {getSponsorImage(sponsor.data.logo_light?.local_path) && (
+                  <Image
+                    src={getSponsorImage(sponsor.data.logo_light.local_path)}
+                    alt={`${sponsor.data.name} logo`}
+                    height="200"
+                    width="200"
+                    class="max-h-full max-w-full w-auto h-auto object-contain logo-light"
+                  />
+                )}
+                {getSponsorImage(sponsor.data.logo_dark?.local_path) && (
+                  <Image
+                    src={getSponsorImage(sponsor.data.logo_dark.local_path)}
+                    alt={`${sponsor.data.name} logo`}
+                    height="200"
+                    width="200"
+                    class="max-h-full max-w-full w-auto h-auto object-contain logo-dark"
+                  />
+                )}
               </div>
-              <h3 class="text-lg font-semibold">{sponsor.data.name}</h3>
+              <h3 class="text-lg font-semibold mt-1">{sponsor.data.name}</h3>
             </a>
           ))}
         </div>
@@ -183,9 +194,13 @@ function getSponsorImage(localPath) {
   .sponsor-preview-card {
     position: relative;
     width: 20rem;
+    height: 18rem;
     color: inherit !important;
     text-decoration: none !important;
     transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &:hover {
       transform: translateY(-4px);
@@ -223,6 +238,26 @@ function getSponsorImage(localPath) {
 
   :global(.sponsor-preview-card h3) {
     color: inherit !important;
+  }
+
+  .sponsor-logo-container {
+    :global(.logo-light) {
+      display: block;
+    }
+
+    :global(.logo-dark) {
+      display: none;
+    }
+  }
+
+  :global(.darkmode) .sponsor-logo-container {
+    :global(.logo-light) {
+      display: none;
+    }
+
+    :global(.logo-dark) {
+      display: block;
+    }
   }
 
   :global(.darkmode) .sponsor-preview-card::before {
