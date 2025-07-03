@@ -1,0 +1,33 @@
+bluesky_handle: ''
+description: The mission of the Python Software Foundation is to promote, protect,
+  and advance the Python programming language, and to support and facilitate the growth
+  of a diverse and international community of Python programmers. The majority of
+  the PSF's work is focused on empowering and supporting people within the Python
+  community. The PSF has active grant programs that support sprints, conferences,
+  meet ups, user groups, and Python development efforts all over the world. In addition,
+  the PSF underwrites and runs PyCon US, the primary Python community conference.
+  Being part of the PSF means being part of the Python community. Recently we changed
+  the PSF to an open membership organization, so that everyone who uses and supports
+  Python can join. To learn more, visit our website.
+id: 36064e7c-f396-41e4-8039-e0cf1311a95c
+job_listings: []
+linkedin_url: ''
+logo_dark:
+  asset_type: logo_dark
+  file_name: python-logo-only.svg
+  file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/07/03/python-logo-only.svg
+  local_path: img/sponsors/python-software-foundation-dark.svg
+logo_light:
+  asset_type: logo_light
+  file_name: psf-logo.svg
+  file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/07/03/psf-logo.bf05b398_QaAC0.svg
+  local_path: img/sponsors/python-software-foundation-light.svg
+mastodon_handle: ''
+name: Python Software Foundation
+registration_date: '2025-07-03T05:04:31.111Z'
+slug: python-software-foundation
+tier:
+  description: ''
+  display_order: 10
+  name: Python Software Foundation Grant
+website_url: https://www.python.org/psf/membership
