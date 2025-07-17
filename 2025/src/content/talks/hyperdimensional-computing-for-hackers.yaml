@@ -20,7 +20,7 @@ qna_channel: null
 room: Ballroom B
 slug: hyperdimensional-computing-for-hackers
 speakers:
-- avatar: ''
+- avatar: https://pretalx.com/media/avatars/3NMPXV_ZWZkYXw.jpeg
   code: 3NMPXV
   name: Anthony
   slug: anthony
