@@ -1,0 +1,31 @@
+bluesky_handle: ''
+description: Intellovations turns the world’s weather data into actionable business
+  intelligence. Our flagship platform, ForecastWatch, continuously ingests and verifies
+  millions of forecasts from providers such as The Weather Company, UK MetOffice,
+  Foreca, Microsoft, and dozens of others, offering the industry’s most trusted accuracy
+  benchmarking and performance analytics and insights. Complemented by ForecastAdvisor
+  for consumer-facing U.S. location-based weather forecast accuracy and ClimateWatch
+  for long-range climate insight, our solutions power critical decisions in energy,
+  agriculture, transportation, and media.
+id: 24399e95-ce9a-4727-a283-d39377335d1f
+job_listings: []
+linkedin_url: ''
+logo_dark:
+  asset_type: logo_dark
+  file_name: intellovations-color-white.png
+  file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/07/19/Intellovations-vertical-white.png
+  local_path: img/sponsors/intellovations-dark.png
+logo_light:
+  asset_type: logo_light
+  file_name: intellovations-color.png
+  file_url: https://dashboard.pyohio.org/media/sponsor_assets/2025/07/19/Intellovations-vertical-color.png
+  local_path: img/sponsors/intellovations-light.png
+mastodon_handle: ''
+name: Intellovations
+registration_date: '2025-07-07T02:53:00.644Z'
+slug: intellovations
+tier:
+  description: Base-level sponsorship package
+  display_order: 5
+  name: Bronze + Coffee
+website_url: https://intellovations.com/
