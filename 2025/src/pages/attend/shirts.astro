@@ -7,6 +7,7 @@ import mensRaglan from '../../assets/img/shirts/front_large_extended2.png'
 import womensRaglan from '../../assets/img/shirts/front_large_extended3.png'
 import womensVneck from '../../assets/img/shirts/front_large_extended4.png'
 import womensCrew from '../../assets/img/shirts/front_large_extended5.png'
+import hoodie from '../../assets/img/shirts/2025-hoodie.png'
 ---
 
 <DefaultLayout title="T-Shirts">
@@ -41,7 +42,7 @@ import womensCrew from '../../assets/img/shirts/front_large_extended5.png'
 
       <div class="mb-12">
         <h3 class="mb-6 text-center text-2xl font-semibold">Available Styles</h3>
-        <div class="mx-auto grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+        <div class="mx-auto grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
           <a
             href="https://www.customink.com/fundraising/pyohio"
             target="_blank"
@@ -103,6 +104,19 @@ import womensCrew from '../../assets/img/shirts/front_large_extended5.png'
             <Image
               src={mensShirt}
               alt="PyOhio t-shirt"
+              class="w-full cursor-pointer rounded-lg shadow-md"
+              width={200}
+            />
+          </a>
+          <a
+            href="https://www.customink.com/fundraising/pyohio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition-opacity hover:opacity-80"
+          >
+            <Image
+              src={hoodie}
+              alt="PyOhio hoodie"
               class="w-full cursor-pointer rounded-lg shadow-md"
               width={200}
             />
