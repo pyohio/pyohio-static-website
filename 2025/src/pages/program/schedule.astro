@@ -52,6 +52,16 @@ function formatTime(timeString) {
     return talkTime.setZone('America/New_York').toFormat('h:mm a').toLowerCase()
   }
 }
+
+// Utility function to handle canceled talk titles with strikethrough
+function renderCanceledTitle(title) {
+  const isCanceled = title.toLowerCase().startsWith('canceled:')
+  if (isCanceled) {
+    const titleWithoutPrefix = title.replace(/^canceled:\s*/i, '').trim()
+    return `CANCELED: <span class="line-through">${titleWithoutPrefix}</span>`
+  }
+  return title
+}
 ---
 
 <DefaultLayout title="Schedule">
@@ -87,13 +97,13 @@ function formatTime(timeString) {
                 if (["Keynote", "Plenary Session"].includes(talk.data.type)) {
                   if (talk.data.title === "Lightning Talks"){
                     return <td class="align-top p-2 plenary lightning-talks">
-                      <p class="font-bold"><a href={`${baseUrl}/program/lightning-talks`}>{talk.data.title}</a></p>
+                      <p class="font-bold"><a href={`${baseUrl}/program/lightning-talks`}><span set:html={renderCanceledTitle(talk.data.title)}></span></a></p>
                       <p class="text-xs">Any attendee can sign up to give a lightning talk!</p>
                       </td><td class="break" colspan="3"></td>
                   } else if (talk.data.type === "Keynote") {
                     return <td class="align-top p-2 plenary talk">
                       <p class="font-bold">
-                        <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
+                        <a href={`${baseUrl}/program/talks/${talk.data.slug}`}><span set:html={renderCanceledTitle(talk.data.title)}></span></a>
                       </p>
                       <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
                       </td><td class="break" colspan="3"></td> 
@@ -123,7 +133,7 @@ function formatTime(timeString) {
                 } else {
               return <td class="align-top p-2 talk">
                 <p class="font-bold">
-                  <a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a>
+                  <a href={`${baseUrl}/program/talks/${talk.data.slug}`}><span set:html={renderCanceledTitle(talk.data.title)}></span></a>
                 </p>
                 <p class="text-xs">by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</p>
               </td>
@@ -144,7 +154,7 @@ function formatTime(timeString) {
       <ul>
         {unscheduledTalks.filter(talk => !['Break', 'Open'].includes(talk.data.type)).map(talk => (
           <li>
-            <strong><a href={`${baseUrl}/program/talks/${talk.data.slug}`}>{talk.data.title}</a></strong>
+            <strong><a href={`${baseUrl}/program/talks/${talk.data.slug}`}><span set:html={renderCanceledTitle(talk.data.title)}></span></a></strong>
             {talk.data.speakers.length > 0 && (
               <span> by {talk.data.speakers.map((speaker) => speaker.name).join(', ')}</span>
             )}
