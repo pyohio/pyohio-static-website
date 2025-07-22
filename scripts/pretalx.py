@@ -53,14 +53,14 @@ def generate_deterministic_break_code(start_time: str, title: str) -> str:
     Format: BREAK_DAY_HHMM (e.g., BREAK_SAT_1030)
     """
     from datetime import datetime
-    
+
     # Parse the ISO datetime
-    dt = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
-    
+    dt = datetime.fromisoformat(start_time.replace("Z", "+00:00"))
+
     # Get day abbreviation and time
-    day_abbr = dt.strftime('%a').upper()
+    day_abbr = dt.strftime("%a").upper()
     time_str = dt.strftime("%H%M")
-    
+
     return f"BREAK_{day_abbr}_{time_str}"
 
 
@@ -73,10 +73,7 @@ class PretalxClient:
         """Initialize with API key and event ID."""
         self.api_key = api_key
         self.event_id = event_id
-        self.headers = {
-            "Authorization": f"Token {api_key}",
-            "Pretalx-Version": "v1"
-        }
+        self.headers = {"Authorization": f"Token {api_key}", "Pretalx-Version": "v1"}
         self.base_url = f"https://pretalx.com/api/events/{event_id}"
         self.verbose = verbose
 
@@ -442,13 +439,15 @@ class DataProcessor:
     def copy_extra_content(self) -> None:
         """Copy extra YAML content files from extra_content/talks to talks directory."""
         extra_content_dir = Path(__file__).parent / "extra_content" / "talks"
-        
+
         if not extra_content_dir.exists():
-            click.echo(f"Extra content directory not found: {extra_content_dir}", err=True)
+            click.echo(
+                f"Extra content directory not found: {extra_content_dir}", err=True
+            )
             return
-        
+
         click.echo("Copying extra content files...", err=True)
-        
+
         for yaml_file in extra_content_dir.glob("*.yaml"):
             target_file = self.talks_dir / yaml_file.name
             shutil.copy2(yaml_file, target_file)
@@ -541,14 +540,32 @@ class DataProcessor:
         ]
 
         # Get basic talk data
-        processed_talk = {
-            "code": talk["code"],
-            "title": talk["title"],
-            "slug": slugify(
+        # Check if talk is canceled to preserve original slug (case-insensitive)
+        is_canceled = talk["title"].lower().startswith("canceled:")
+
+        if is_canceled:
+            # For canceled talks, generate slug from title without "canceled:" prefix
+            # Use regex to remove the prefix case-insensitively
+            title_without_prefix = re.sub(
+                r"^canceled:\s*", "", talk["title"], flags=re.IGNORECASE
+            ).strip()
+            slug = slugify(
+                re.split(r"\?|\.|:", title_without_prefix)[0],
+                word_boundary=True,
+                max_length=64,
+            )
+        else:
+            # Normal slug generation
+            slug = slugify(
                 re.split(r"\?|\.|:", talk["title"])[0],
                 word_boundary=True,
                 max_length=64,
-            ),
+            )
+
+        processed_talk = {
+            "code": talk["code"],
+            "title": talk["title"],
+            "slug": slug,
             # "old_slug": slugify(
             #     re.split(r"\?|\.", talk["title"])[0],
             #     word_boundary=True,
