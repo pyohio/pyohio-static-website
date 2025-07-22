@@ -1,9 +1,16 @@
 code: L7HLC9
 content_warnings: null
-description: '<p>Cicero said - there is no one who can give you wiser advice than
-  you can give yourself. That''s why when I started generating transcripts from my
-  productivity podcast, I decided to start using it to give myself productivity advice
-  using ALL of my content.</p>
+description: '<blockquote>
+
+  <p>Unfortunately the speaker is unable to attend PyOhio and this session has been
+  cancelled.</p>
+
+  </blockquote>
+
+  <p>Cicero said - there is no one who can give you wiser advice than you can give
+  yourself. That''s why when I started generating transcripts from my productivity
+  podcast, I decided to start using it to give myself productivity advice using ALL
+  of my content.</p>
 
   <p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search
   as the base for using personal transcriptions, blog posts, and more for RAG and
@@ -22,6 +29,6 @@ speakers:
   slug: jay-miller
 start_time: '2025-07-26T10:15:00-04:00'
 stream_timestamp: ''
-title: Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter
+title: 'CANCELED: Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter'
 type: 30 Minute Talk
 youtube_url: null
