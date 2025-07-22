@@ -552,9 +552,9 @@
   },
   {
     "code": "L7HLC9",
-    "title": "Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter",
+    "title": "CANCELED: Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter",
     "slug": "getting-advice-from-myself-using-flatfiles-postgres-and",
-    "description": "<p>Cicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.</p>\n<p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.</p>",
+    "description": "<blockquote>\n<p>Unfortunately the speaker is unable to attend PyOhio and this session has been cancelled.</p>\n</blockquote>\n<p>Cicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.</p>\n<p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.</p>",
     "start_time": "2025-07-26T10:15:00-04:00",
     "end_time": "2025-07-26T10:45:00-04:00",
     "room": "Ballroom D",
@@ -574,10 +574,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Cicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.\n\nThis talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.",
+    "description_text": " Unfortunately the speaker is unable to attend PyOhio and this session has been cancelled.\n\nCicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.\n\nThis talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.",
     "talk_url": "https://www.pyohio.org/2025/talks/getting-advice-from-myself-using-flatfiles-postgres-and",
     "speaker_names": "Jay Miller",
-    "description_youtube": "30 Minute Talk by Jay Miller at PyOhio 2025:\nCicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.\n\nThis talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.PyOhio talk listing: https://www.pyohio.org/2025/talks/getting-advice-from-myself-using-flatfiles-postgres-and"
+    "description_youtube": "30 Minute Talk by Jay Miller at PyOhio 2025:\n Unfortunately the speaker is unable to attend PyOhio and this session has been cancelled.\n\nCicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.\n\nThis talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.PyOhio talk listing: https://www.pyohio.org/2025/talks/getting-advice-from-myself-using-flatfiles-postgres-and"
   },
   {
     "code": "LP8NKE",
