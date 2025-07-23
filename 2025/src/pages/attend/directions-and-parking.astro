@@ -198,51 +198,92 @@ import campusMap from '../../assets/img/venue/csu-campus-map.png'
 <script>
   // Wait for the page to fully load
   window.addEventListener('load', () => {
+    console.log('Page loaded, setting up image click handlers');
+    
     // Try to find the image element
     const setupImageClick = () => {
-      const image =
-        document.querySelector('.venue-map img') || (document.querySelector('.venue-map') as HTMLImageElement)
-
+      // Try multiple selectors to find the image
+      const image = document.querySelector('.venue-map img') || 
+                   document.querySelector('.venue-map') || 
+                   document.querySelector('img[alt*="Campus Map"]');
+      
+      console.log('Looking for image, found:', image);
+      
       if (image) {
-        console.log('Image found, setting up click handler')
-
-        image.addEventListener('click', (e) => {
-          e.preventDefault()
-          e.stopPropagation()
-
-          const overlay = document.createElement('div')
-          overlay.className = 'image-overlay'
-
-          const fullImage = document.createElement('img')
-          fullImage.src = image.currentSrc || image.src
-          fullImage.alt = image.alt
-
-          overlay.appendChild(fullImage)
-          document.body.appendChild(overlay)
-          document.body.style.overflow = 'hidden'
-
-          overlay.addEventListener('click', () => {
-            document.body.removeChild(overlay)
-            document.body.style.overflow = ''
-          })
-
-          // Close on escape key
-          const handleEscape = (e: KeyboardEvent) => {
-            if (e.key === 'Escape' && document.body.contains(overlay)) {
-              document.body.removeChild(overlay)
-              document.body.style.overflow = ''
-              document.removeEventListener('keydown', handleEscape)
-            }
+        console.log('Image found, setting up click handler', image.src || image.currentSrc);
+        
+        // Remove any existing listeners
+        const newImage = image.cloneNode(true);
+        image.parentNode?.replaceChild(newImage, image);
+        
+        newImage.addEventListener('click', (e) => {
+          console.log('Image clicked!');
+          e.preventDefault();
+          e.stopPropagation();
+          
+          try {
+            const overlay = document.createElement('div');
+            overlay.className = 'image-overlay';
+            overlay.style.cssText = `
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100vw;
+              height: 100vh;
+              background-color: rgba(0, 0, 0, 0.9);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 9999;
+              cursor: zoom-out;
+              padding: 2rem;
+            `;
+            
+            const fullImage = document.createElement('img');
+            fullImage.src = newImage.currentSrc || newImage.src;
+            fullImage.alt = newImage.alt;
+            fullImage.style.cssText = `
+              max-width: 90vw;
+              max-height: 90vh;
+              object-fit: contain;
+            `;
+            
+            overlay.appendChild(fullImage);
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+            
+            console.log('Overlay created and added');
+            
+            overlay.addEventListener('click', () => {
+              console.log('Overlay clicked, closing');
+              if (document.body.contains(overlay)) {
+                document.body.removeChild(overlay);
+                document.body.style.overflow = '';
+              }
+            });
+            
+            // Close on escape key
+            const handleEscape = (e) => {
+              if (e.key === 'Escape' && document.body.contains(overlay)) {
+                console.log('Escape pressed, closing overlay');
+                document.body.removeChild(overlay);
+                document.body.style.overflow = '';
+                document.removeEventListener('keydown', handleEscape);
+              }
+            };
+            document.addEventListener('keydown', handleEscape);
+          } catch (error) {
+            console.error('Error creating overlay:', error);
           }
-          document.addEventListener('keydown', handleEscape)
-        })
+        });
       } else {
-        console.log('Image not found, retrying...')
-        // If image not found, try again after a short delay
-        setTimeout(setupImageClick, 100)
+        console.log('Image not found, retrying in 100ms...');
+        setTimeout(setupImageClick, 100);
       }
-    }
-
-    setupImageClick()
-  })
+    };
+    
+    // Try immediately and also with a delay
+    setupImageClick();
+    setTimeout(setupImageClick, 500);
+  });
 </script>
