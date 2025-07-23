@@ -1,0 +1,289 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+import campusMap from '../../assets/img/venue/csu-campus-map.png'
+---
+
+<DefaultLayout title="Directions & Parking">
+  <section class="my-12">
+    <div class="container">
+      <h1>Directions & Parking</h1>
+    </div>
+  </section>
+
+  <section class="my-12">
+    <div class="space-content container">
+      <h2>Driving</h2>
+      <p>
+        Navigate to the venue at The Cleveland State University Student Center, <a
+          href="https://maps.google.com/?q=2121+Euclid+Avenue,+Cleveland,+Ohio+44115"
+          target="_blank"
+          rel="noopener noreferrer">2121 Euclid Avenue, Cleveland, Ohio 44115</a
+        >
+      </p>
+
+      <h2>Parking</h2>
+
+      <h3>Off Campus Parking</h3>
+      <ul>
+        <li>
+          <strong>Private lots:</strong> Many <a
+            href="https://www.bestparking.com/cleveland-parking/neighborhoods/cleveland-state-university-parking/?daily=1"
+            target="_blank"
+            rel="noopener noreferrer">affordable options</a
+          > are located near the venue
+        </li>
+        <li>
+          <strong>Street parking:</strong> Available throughout the area. Pay at kiosks or with the <a
+            href="https://parkmobile.io/"
+            target="_blank"
+            rel="noopener noreferrer">ParkMobile app</a
+          >. Check signs for time limits and payment requirements.
+        </li>
+      </ul>
+
+      <h3>CSU Campus Parking</h3>
+
+      <blockquote>
+        <p>
+          <strong><Icon name="mdi:alert" class="warning-icon" />Campus Parking Requirements:</strong><br />Parking on
+          campus requires following specific instructions or you are likely to get ticketed, booted, or towed. Please
+          review the <a
+            href="https://www.csuohio.edu/parking/general-information-visitor-parking-information"
+            target="_blank"
+            rel="noopener noreferrer">campus visitor parking information</a
+          > carefully.
+        </p>
+
+        <p><strong>Important:</strong></p>
+        <ul>
+          <li>Entry ticket or prepaid parking receipt must be displayed while parked</li>
+          <li>Park with your license plate facing the driving lane and unobstructed</li>
+        </ul>
+      </blockquote>
+
+      <p><strong>Recommended Campus Parking:</strong></p>
+      <ul>
+        <li><strong>Central Garage</strong> (1900 E21st St) - Pay-on-exit lot</li>
+        <li><strong>South Garage</strong> (2101 E21st St) - Pay-on-exit lot</li>
+      </ul>
+
+      <p>The parking garage under the Student Center (Lot 22) is available but is prepaid with a 4-hour maximum.</p>
+
+      <div class="image-container">
+        <Image
+          src={campusMap}
+          alt="Cleveland State University Campus Map"
+          class="venue-map"
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 768px) 100vw, 800px"
+        />
+        <p class="image-caption">Click image to enlarge</p>
+      </div>
+
+      <h2>Walking from Crowne Plaza</h2>
+      <p>
+        From the Crowne Plaza Cleveland at Playhouse Square, 1260 Euclid Ave, it's approximately a <a
+          href="https://www.google.com/maps/dir/Crowne+Plaza+Cleveland+at+Playhouse+Square,+an+IHG+Hotel,+Euclid+Avenue,+Cleveland,+OH/Cleveland+State+University+Student+Center,+Euclid+Avenue,+Cleveland,+OH/@41.5013616,-81.681979,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8830fa7d9b766ea7:0x5528ae812403d45f!2m2!1d-81.6832932!2d41.5004894!1m5!1m1!1s0x8830fa63d06f6fe9:0x41481103aae37d91!2m2!1d-81.675356!2d41.5022338!3e2?entry=ttu&g_ep=EgoyMDI1MDcyMC4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer">10-minute / 0.5mi walk</a
+        > east along Euclid Avenue to the Cleveland State University Student Center.
+      </p>
+
+      <h2>Flying</h2>
+      <p>
+        Cleveland Hopkins International airport is located about a 15-20 minute drive southwest of downtown Cleveland.
+      </p>
+
+      <h2>Public Transit from Airport</h2>
+      <p>
+        The <a href="https://www.riderta.com/routes/redline">Greater Cleveland RTA Red Line</a> form the airport is a 30
+        minute ride plus a short bus ride or 25 minute walk from the Tower City Center station to the venue.
+      </p>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .image-container {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .venue-map {
+    transition: transform 0.2s ease;
+    cursor: zoom-in;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .venue-map:hover {
+    transform: scale(1.02);
+  }
+
+  .image-caption {
+    margin-top: 0.5rem;
+    color: var(--neutral-600);
+    font-style: italic;
+    font-size: 0.875rem;
+  }
+
+  :global(.image-overlay) {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: zoom-out;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  :global(.image-overlay img) {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  /* Ensure list bullets are visible in blockquotes and regular lists */
+  blockquote ul {
+    margin-left: 1.5rem;
+    padding-left: 0;
+    list-style-type: disc;
+  }
+
+  blockquote ul li {
+    display: list-item;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+    padding-left: 0;
+    list-style-type: disc;
+  }
+
+  ul li {
+    display: list-item;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Warning icon styling */
+  :global(.warning-icon) {
+    display: inline-block;
+    flex-shrink: 0;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    width: 1.2em;
+    height: 1.2em;
+    color: #f59e0b; /* warning yellow color */
+  }
+
+  /* Ensure the strong element with icon stays inline */
+  blockquote p strong {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+</style>
+
+<script>
+  // Wait for the page to fully load
+  window.addEventListener('load', () => {
+    console.log('Page loaded, setting up image click handlers');
+    
+    // Try to find the image element
+    const setupImageClick = () => {
+      // Try multiple selectors to find the image
+      const image = document.querySelector('.venue-map img') || 
+                   document.querySelector('.venue-map') || 
+                   document.querySelector('img[alt*="Campus Map"]');
+      
+      console.log('Looking for image, found:', image);
+      
+      if (image) {
+        console.log('Image found, setting up click handler', image.src || image.currentSrc);
+        
+        // Remove any existing listeners
+        const newImage = image.cloneNode(true);
+        image.parentNode?.replaceChild(newImage, image);
+        
+        newImage.addEventListener('click', (e) => {
+          console.log('Image clicked!');
+          e.preventDefault();
+          e.stopPropagation();
+          
+          try {
+            const overlay = document.createElement('div');
+            overlay.className = 'image-overlay';
+            overlay.style.cssText = `
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100vw;
+              height: 100vh;
+              background-color: rgba(0, 0, 0, 0.9);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 9999;
+              cursor: zoom-out;
+              padding: 2rem;
+            `;
+            
+            const fullImage = document.createElement('img');
+            fullImage.src = newImage.currentSrc || newImage.src;
+            fullImage.alt = newImage.alt;
+            fullImage.style.cssText = `
+              max-width: 90vw;
+              max-height: 90vh;
+              object-fit: contain;
+            `;
+            
+            overlay.appendChild(fullImage);
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+            
+            console.log('Overlay created and added');
+            
+            overlay.addEventListener('click', () => {
+              console.log('Overlay clicked, closing');
+              if (document.body.contains(overlay)) {
+                document.body.removeChild(overlay);
+                document.body.style.overflow = '';
+              }
+            });
+            
+            // Close on escape key
+            const handleEscape = (e) => {
+              if (e.key === 'Escape' && document.body.contains(overlay)) {
+                console.log('Escape pressed, closing overlay');
+                document.body.removeChild(overlay);
+                document.body.style.overflow = '';
+                document.removeEventListener('keydown', handleEscape);
+              }
+            };
+            document.addEventListener('keydown', handleEscape);
+          } catch (error) {
+            console.error('Error creating overlay:', error);
+          }
+        });
+      } else {
+        console.log('Image not found, retrying in 100ms...');
+        setTimeout(setupImageClick, 100);
+      }
+    };
+    
+    // Try immediately and also with a delay
+    setupImageClick();
+    setTimeout(setupImageClick, 500);
+  });
+</script>

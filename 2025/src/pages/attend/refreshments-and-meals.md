@@ -9,29 +9,26 @@ PyOhio will provide limited refeshments during the event. All meals are on your 
 
 ## Conference Refreshments
 
-<!-- Coffee and water will be provided durng the main conference hours. Bring a water bottle if you'd like!
+- **Coffee** (regular and decaf)
+- **Hot water** with assorted tea bags
+- **Ice water**
 
-Light snacks will be provided Saturday morning.
+Set out at the following times:
 
-Cold soft drinks will be provided Saturday and Sunday afternoons. -->
+- **Saturday:** 7:30am and 1:30pm
+- **Sunday:** 11:15am
 
-More details coming soon.
+In addition, there are [water fill stations](https://www.csuohio.edu/sustainability/water-refill-stations) located near the restrooms on the 1st, 2nd, and 3rd floors. We suggest bringing your own water bottle!
 
 ## Meal Suggestions
 
-<!-- The following are near the venue and should be available during the lunch break on Saturday. Sorted by distance:
+There are many places to find food in the area but here are some organizer recommendations:
 
-- [The Winking Lizard Downtown Cleveland](https://www.winkinglizard.com/) at 1300 E 9th St - Regional chain pub.
-- [Phở Thắng Café](https://pho-thang-cafe.com/) at 815 Superior Ave - Vietnamese noodle soups, sandwiches & stir-fries.
-- [Masthead Brewing Co.](http://mastheadbrewingco.com/) at 1261 Superior Ave - Brewery & taproom with wood-fired pizza and sandwiches. Picnic table seating which is good for large groups.
-- [Pizza 216](https://www.pizza216menu.com/) at 401 Euclid Ave - Pizza, pasta, and sandwiches.
-- [Butcher and the Brewer](https://www.butcherandthebrewer.com/) at 2043 E 4th St
-- [Mabel's BBQ](http://www.mabelsbbq.com/) at 2050 E 4th St
-- [Otani Noodle](https://www.otaninoodle.com/) at 234 Euclid Ave - Noodles, rice dishes, and bubble tea.
-
-This is just a sampling of what's available in the area and there are many other options. Explore and share your finds in the `#lets-get-food` channel in the [PyOhio Discord](/2024/attend/discord). -->
-
-Restaurant recommendations will be posted closer to the event.
+- **Masthead** - Brewery with pizzas and sandwiches. Great for larger groups because of picnic table seating and individual payment at order time
+- **Bombay Chaat** - Casual Indian street fare
+- **Sittoo's** - Lebanese dine-in and take-out
+- **Mabel's BBQ** - Michael Symon BBQ restaurant on E4th
+- **Southern Tier Brewery** - Craft beer and pub fare
 
 ## Coffee
 

@@ -1,0 +1,202 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+import venueMap from '../../assets/img/venue/csu-venue-space.png'
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<DefaultLayout title="Venue">
+  <section class="my-12">
+    <div class="container">
+      <h1>CSU Student Center</h1>
+    </div>
+  </section>
+
+  <section class="my-12">
+    <div class="space-content container">
+      <p>PyOhio 2025 will be held on the 3rd floor of <a href="https://csuohio.edu/student-center">The Cleveland State University Student Center</a> located at 2121 Euclid Avenue, Cleveland, OH 44115.</p>
+      
+      <a class="button has-icon" style="display: inline-flex; width: auto;" href={`${baseUrl}/attend/directions-and-parking`}>
+        <Icon name="mdi:directions" />
+        Directions & Parking
+      </a>
+      
+      <h2>Conference Spaces</h2>
+      
+      <blockquote>
+        <p><strong>Health & Safety:</strong> Masks must be worn in all indoor conference spaces. See <a href={`${baseUrl}/about/health-and-safety`}>Health & Safety Guidelines</a> for details.</p>
+      </blockquote>
+      
+      <h3>3rd Floor Rooms</h3>
+      <ul>
+        <li><strong>Welcome, Lightning Talks, & Closing:</strong> Ballroom D</li>
+        <li><strong>Talks:</strong> Ballroom A, Ballroom B, Ballroom C, Ballroom D</li>
+        <li><strong>Open Spaces:</strong> Room 313 - attendees can organize informal discussions and activities. Sign up on the board outside the room. <a href={`${baseUrl}/program/open-spaces`}>Learn more about Open Spaces</a>.</li>
+        <li><strong>Registration & T-Shirt Pickup:</strong> Room 301 - Viking Lounge</li>
+        <li><strong>Staff & Speaker Lounge:</strong> Room 315 - staff and speakers are welcome at any time during the conference</li>
+        <li><strong>Restrooms:</strong> Rooms 316 and 317</li>
+        <li><strong>Gender Inclusive Restrooms:</strong>
+          <ul>
+            <li><strong>1st Floor:</strong> SC 121 - near the women's restroom by the north entrance</li>
+            <li><strong>2nd Floor:</strong> SC 203 - near the men's restroom, turn left at the Viking Marketplace</li>
+          </ul>
+        </li>
+        <li><strong>Water Fill Stations:</strong> Near restrooms on every floor</li>
+      </ul>
+      
+      <div class="image-container">
+        <Image 
+          src={venueMap} 
+          alt="Cleveland State University Student Center venue map showing conference spaces" 
+          class="venue-map"
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 768px) 100vw, 800px"
+        />
+        <p class="image-caption">Click image to enlarge</p>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .image-container {
+    position: relative;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .venue-map {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+  }
+
+  .venue-map:hover {
+    transform: scale(1.02);
+  }
+
+  .image-caption {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  :global(.image-overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+    padding: 2rem;
+  }
+
+  :global(.image-overlay img) {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+</style>
+
+<script>
+  // Wait for the page to fully load
+  window.addEventListener('load', () => {
+    console.log('Page loaded, setting up image click handlers');
+    
+    // Try to find the image element
+    const setupImageClick = () => {
+      // Try multiple selectors to find the image
+      const image = document.querySelector('.venue-map img') || 
+                   document.querySelector('.venue-map') || 
+                   document.querySelector('img[alt*="venue map"]');
+      
+      console.log('Looking for image, found:', image);
+      
+      if (image) {
+        console.log('Image found, setting up click handler', image.src || image.currentSrc);
+        
+        // Remove any existing listeners
+        const newImage = image.cloneNode(true);
+        image.parentNode?.replaceChild(newImage, image);
+        
+        newImage.addEventListener('click', (e) => {
+          console.log('Image clicked!');
+          e.preventDefault();
+          e.stopPropagation();
+          
+          try {
+            const overlay = document.createElement('div');
+            overlay.className = 'image-overlay';
+            overlay.style.cssText = `
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100vw;
+              height: 100vh;
+              background-color: rgba(0, 0, 0, 0.9);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 9999;
+              cursor: zoom-out;
+              padding: 2rem;
+            `;
+            
+            const fullImage = document.createElement('img');
+            fullImage.src = newImage.currentSrc || newImage.src;
+            fullImage.alt = newImage.alt;
+            fullImage.style.cssText = `
+              max-width: 90vw;
+              max-height: 90vh;
+              object-fit: contain;
+            `;
+            
+            overlay.appendChild(fullImage);
+            document.body.appendChild(overlay);
+            document.body.style.overflow = 'hidden';
+            
+            console.log('Overlay created and added');
+            
+            overlay.addEventListener('click', () => {
+              console.log('Overlay clicked, closing');
+              if (document.body.contains(overlay)) {
+                document.body.removeChild(overlay);
+                document.body.style.overflow = '';
+              }
+            });
+            
+            // Close on escape key
+            const handleEscape = (e) => {
+              if (e.key === 'Escape' && document.body.contains(overlay)) {
+                console.log('Escape pressed, closing overlay');
+                document.body.removeChild(overlay);
+                document.body.style.overflow = '';
+                document.removeEventListener('keydown', handleEscape);
+              }
+            };
+            document.addEventListener('keydown', handleEscape);
+          } catch (error) {
+            console.error('Error creating overlay:', error);
+          }
+        });
+      } else {
+        console.log('Image not found, retrying in 100ms...');
+        setTimeout(setupImageClick, 100);
+      }
+    };
+    
+    // Try immediately and also with a delay
+    setupImageClick();
+    setTimeout(setupImageClick, 500);
+  });
+</script>
