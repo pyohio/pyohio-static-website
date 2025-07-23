@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from '../../layouts/DefaultLayout.astro'
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
 import venueMap from '../../assets/img/venue/csu-venue-space.png'
 const baseUrl = import.meta.env.BASE_URL
 ---
@@ -8,17 +9,40 @@ const baseUrl = import.meta.env.BASE_URL
 <DefaultLayout title="Venue">
   <section class="my-12">
     <div class="container">
-      <h1>PyOhio 2025 Venue</h1>
+      <h1>CSU Student Center</h1>
     </div>
   </section>
 
   <section class="my-12">
     <div class="space-content container">
-      <p>PyOhio 2025 will be held at <a href="https://csuohio.edu/student-center">The Cleveland State University Student Center</a> located at 2121 Euclid Avenue, Cleveland, OH 44115. <a href={`${baseUrl}/attend/directions-and-parking`}>Directions & Parking</a></p>
+      <p>PyOhio 2025 will be held on the 3rd floor of <a href="https://csuohio.edu/student-center">The Cleveland State University Student Center</a> located at 2121 Euclid Avenue, Cleveland, OH 44115.</p>
+      
+      <a class="button has-icon" style="display: inline-flex; width: auto;" href={`${baseUrl}/attend/directions-and-parking`}>
+        <Icon name="mdi:directions" />
+        Directions & Parking
+      </a>
       
       <h2>Conference Spaces</h2>
       
-      <p><strong>Masks must be worn in all indoor conference spaces. See <a href={`${baseUrl}/about/health-and-safety`}>Health & Safety Guidelines</a> for details.</strong></p>
+      <blockquote>
+        <p><strong>Health & Safety:</strong> Masks must be worn in all indoor conference spaces. See <a href={`${baseUrl}/about/health-and-safety`}>Health & Safety Guidelines</a> for details.</p>
+      </blockquote>
+      
+      <h3>3rd Floor Rooms</h3>
+      <ul>
+        <li><strong>Welcome, Lightning Talks, & Closing:</strong> Ballroom D</li>
+        <li><strong>Talks:</strong> Ballroom A, Ballroom B, Ballroom C, Ballroom D</li>
+        <li><strong>Open Spaces:</strong> Room 313 - for attendees to organize informal discussions and activities. Sign-ups are on a board outside the room and anyone can sign up for a slot. <a href={`${baseUrl}/program/open-spaces`}>Learn more about Open Spaces</a>.</li>
+        <li><strong>Registration & T-Shirt Pickup:</strong> Room 301 - Viking Lounge</li>
+        <li><strong>Staff & Speaker Lounge:</strong> Room 315 - for official conference staff business and speakers are welcome at any time during the conference</li>
+        <li><strong>Restrooms:</strong> Rooms 316 and 317</li>
+        <li><strong>Gender Inclusive Restrooms:</strong>
+          <ul>
+            <li><strong>1st Floor:</strong> SC 121 - off the entrance to the women's restroom by north entrance</li>
+            <li><strong>2nd Floor:</strong> SC 203 - off the entrance to the men's restroom, turn left at the Viking Marketplace</li>
+          </ul>
+        </li>
+      </ul>
       
       <div class="image-container">
         <Image 
@@ -30,10 +54,6 @@ const baseUrl = import.meta.env.BASE_URL
         />
         <p class="image-caption">Click image to enlarge</p>
       </div>
-      
-      <p>Cleveland State University has <a href="https://www.csuohio.edu/sustainability/water-refill-stations" target="_blank" rel="noopener noreferrer">water refill stations</a> throughout campus for your convenience.</p>
-      
-      <p>More venue information will be available closer to the event.</p>
     </div>
   </section>
 </DefaultLayout>
