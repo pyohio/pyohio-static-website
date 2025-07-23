@@ -1,17 +1,24 @@
 ---
 import DefaultLayout from '../layouts/DefaultLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { SITE_CONFIG } from '../utils/constants'
+
+const baseUrl = import.meta.env.BASE_URL
 ---
 
 <DefaultLayout title="404">
   <section class="my-12">
     <div class="container">
-      <h1>404</h1>
+      <h1>404 - Not Found</h1>
     </div>
   </section>
   <section class="my-12">
     <div class="space-content container">
-      <p class="text-2xl">This page does not exist. Don't worry though, we got you.</p>
-      <a class="button" href="/">Let's get you home Astronout 🚀</a>
+      <p class="text-2xl">This page does not exist. See if you can find what you're looking for from the home page.</p>
+      <a class="button has-icon" style="display: inline-flex; width: auto;" href={baseUrl}>
+        <Icon name="mdi:home" />
+        {SITE_CONFIG.eventName} Home
+      </a>
     </div>
   </section>
 </DefaultLayout>
