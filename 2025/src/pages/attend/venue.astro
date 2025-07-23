@@ -1,0 +1,137 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Image } from 'astro:assets'
+import venueMap from '../../assets/img/venue/csu-venue-space.png'
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<DefaultLayout title="Venue">
+  <section class="my-12">
+    <div class="container">
+      <h1>PyOhio 2025 Venue</h1>
+    </div>
+  </section>
+
+  <section class="my-12">
+    <div class="space-content container">
+      <p>PyOhio 2025 will be held at <a href="https://csuohio.edu/student-center">The Cleveland State University Student Center</a> located at 2121 Euclid Avenue, Cleveland, OH 44115. <a href={`${baseUrl}/attend/directions-and-parking`}>Directions & Parking</a></p>
+      
+      <h2>Conference Spaces</h2>
+      
+      <p><strong>Masks must be worn in all indoor conference spaces. See <a href={`${baseUrl}/about/health-and-safety`}>Health & Safety Guidelines</a> for details.</strong></p>
+      
+      <div class="image-container">
+        <Image 
+          src={venueMap} 
+          alt="Cleveland State University Student Center venue map showing conference spaces" 
+          class="venue-map"
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 768px) 100vw, 800px"
+        />
+        <p class="image-caption">Click image to enlarge</p>
+      </div>
+      
+      <p>More venue information will be available closer to the event.</p>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .image-container {
+    position: relative;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .venue-map {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+  }
+
+  .venue-map:hover {
+    transform: scale(1.02);
+  }
+
+  .image-caption {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  :global(.image-overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+    padding: 2rem;
+  }
+
+  :global(.image-overlay img) {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+</style>
+
+<script>
+  // Wait for the page to fully load
+  window.addEventListener('load', () => {
+    // Try to find the image element
+    const setupImageClick = () => {
+      const image = document.querySelector('.venue-map img') || document.querySelector('.venue-map') as HTMLImageElement;
+      
+      if (image) {
+        console.log('Image found, setting up click handler');
+        
+        image.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const overlay = document.createElement('div');
+          overlay.className = 'image-overlay';
+          
+          const fullImage = document.createElement('img');
+          fullImage.src = image.currentSrc || image.src;
+          fullImage.alt = image.alt;
+          
+          overlay.appendChild(fullImage);
+          document.body.appendChild(overlay);
+          document.body.style.overflow = 'hidden';
+          
+          overlay.addEventListener('click', () => {
+            document.body.removeChild(overlay);
+            document.body.style.overflow = '';
+          });
+          
+          // Close on escape key
+          const handleEscape = (e: KeyboardEvent) => {
+            if (e.key === 'Escape' && document.body.contains(overlay)) {
+              document.body.removeChild(overlay);
+              document.body.style.overflow = '';
+              document.removeEventListener('keydown', handleEscape);
+            }
+          };
+          document.addEventListener('keydown', handleEscape);
+        });
+      } else {
+        console.log('Image not found, retrying...');
+        // If image not found, try again after a short delay
+        setTimeout(setupImageClick, 100);
+      }
+    };
+    
+    setupImageClick();
+  });
+</script>

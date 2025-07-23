@@ -1,0 +1,142 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { Image } from 'astro:assets'
+import campusMap from '../../assets/img/venue/csu-campus-map.png'
+---
+
+<DefaultLayout title="Directions & Parking">
+  <section class="my-12">
+    <div class="container">
+      <h1>Directions & Parking</h1>
+    </div>
+  </section>
+
+  <section class="my-12">
+    <div class="space-content container">
+      <h2>Travel</h2>
+      
+      <h3>Driving</h3>
+      <p>Navigate to the venue at The Cleveland State University Student Center, 2121 Euclid Avenue, Cleveland, Ohio 44115</p>
+      
+      <div class="image-container">
+        <Image 
+          src={campusMap} 
+          alt="Cleveland State University Campus Map" 
+          class="venue-map"
+          widths={[400, 800, 1200]}
+          sizes="(max-width: 768px) 100vw, 800px"
+        />
+        <p class="image-caption">Click image to enlarge</p>
+      </div>
+      
+      <h3>Parking</h3>
+      <p>More parking info closer to the event.</p>
+      
+      <h3>Flying</h3>
+      <p>Cleveland Hopkins International airport is located about a 15-20 minute drive southwest of downtown Cleveland.</p>
+      
+      <h3>Public Transit from Airport</h3>
+      <p>The <a href="https://www.riderta.com/routes/redline">Greater Cleveland RTA Red Line</a> form the airport is a 30 minute ride plus a short bus ride or 15 minute walk from the Tower City Center station to the venue.</p>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .image-container {
+    position: relative;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .venue-map {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+  }
+
+  .venue-map:hover {
+    transform: scale(1.02);
+  }
+
+  .image-caption {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  :global(.image-overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+    padding: 2rem;
+  }
+
+  :global(.image-overlay img) {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+</style>
+
+<script>
+  // Wait for the page to fully load
+  window.addEventListener('load', () => {
+    // Try to find the image element
+    const setupImageClick = () => {
+      const image = document.querySelector('.venue-map img') || document.querySelector('.venue-map') as HTMLImageElement;
+      
+      if (image) {
+        console.log('Image found, setting up click handler');
+        
+        image.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const overlay = document.createElement('div');
+          overlay.className = 'image-overlay';
+          
+          const fullImage = document.createElement('img');
+          fullImage.src = image.currentSrc || image.src;
+          fullImage.alt = image.alt;
+          
+          overlay.appendChild(fullImage);
+          document.body.appendChild(overlay);
+          document.body.style.overflow = 'hidden';
+          
+          overlay.addEventListener('click', () => {
+            document.body.removeChild(overlay);
+            document.body.style.overflow = '';
+          });
+          
+          // Close on escape key
+          const handleEscape = (e: KeyboardEvent) => {
+            if (e.key === 'Escape' && document.body.contains(overlay)) {
+              document.body.removeChild(overlay);
+              document.body.style.overflow = '';
+              document.removeEventListener('keydown', handleEscape);
+            }
+          };
+          document.addEventListener('keydown', handleEscape);
+        });
+      } else {
+        console.log('Image not found, retrying...');
+        // If image not found, try again after a short delay
+        setTimeout(setupImageClick, 100);
+      }
+    };
+    
+    setupImageClick();
+  });
+</script>
