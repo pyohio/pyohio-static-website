@@ -10,18 +10,19 @@ PyOhio will provide limited refeshments during the event. All meals are on your 
 ## Conference Refreshments
 
 - **Coffee** (regular and decaf)
-- **Hot water** with assorted tea bags  
+- **Hot water** with assorted tea bags
 - **Ice water**
 
-Available at the following times:
+Set out at the following times:
+
 - **Saturday:** 7:30am and 1:30pm
 - **Sunday:** 11:15am
 
-In addition, there are [water refill stations](https://www.csuohio.edu/sustainability/water-refill-stations) located near the restrooms on the 1st, 2nd, and 3rd floors. We suggest bringing your own water bottle!
+In addition, there are [water fill stations](https://www.csuohio.edu/sustainability/water-refill-stations) located near the restrooms on the 1st, 2nd, and 3rd floors. We suggest bringing your own water bottle!
 
 ## Meal Suggestions
 
-There are *many* places to find food in the area - here are some organizer recommendations:
+There are many places to find food in the area but here are some organizer recommendations:
 
 - **Masthead** - Brewery with pizzas and sandwiches. Great for larger groups because of picnic table seating and individual payment at order time
 - **Bombay Chaat** - Casual Indian street fare
