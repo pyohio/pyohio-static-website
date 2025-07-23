@@ -21,23 +21,23 @@ const {
 ---
 
 <!-- general meta -->
-<meta name="title" content={`${title} - ${eventName}`} />
-<meta name="description" content={description} />
-<meta name="author" content={author} />
+<meta name="title" set:html={`content="${title} - ${eventName}"`} />
+<meta name="description" set:html={`content="${description}"`} />
+<meta name="author" set:html={`content="${author}"`} />
 
 <!-- open graph -->
-<meta property="og:title" content={`${title} - ${eventName}`} />
-<meta property="og:description" content={description} />
+<meta property="og:title" set:html={`content="${title} - ${eventName}"`} />
+<meta property="og:description" set:html={`content="${description}"`} />
 <meta property="og:type" content="website" />
-<meta property="og:url" content={url} />
-<meta property="og:image" content={ogImageUrl} />
+<meta property="og:url" set:html={`content="${url}"`} />
+<meta property="og:image" set:html={`content="${ogImageUrl}"`} />
 
 <!-- twitter card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={`${title} - ${eventName}`} />
-<meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={ogImageUrl} />
-<meta name="twitter:site" content={twitterHandle} />
+<meta name="twitter:title" set:html={`content="${title} - ${eventName}"`} />
+<meta name="twitter:description" set:html={`content="${description}"`} />
+<meta name="twitter:image" set:html={`content="${ogImageUrl}"`} />
+<meta name="twitter:site" set:html={`content="${twitterHandle}"`} />
 
 <!-- event schema -->
 <script
