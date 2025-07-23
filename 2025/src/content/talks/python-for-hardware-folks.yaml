@@ -9,7 +9,7 @@ description: <p>Python is a versatile language, and it’s often the go-to langu
   folks, including building test fixtures, data acquisition, and industrial automation.  We’ll
   also look at other issues, including what are the alternatives and why adoption
   of Python can be challenging.  This talk is meant for everyone, but especially those
-  you love or want to tinker with hardware.</p>
+  who love or want to tinker with hardware.</p>
 discord_channel_id: ''
 duration: 30
 end_time: '2025-07-26T10:45:00-04:00'

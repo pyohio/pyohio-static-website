@@ -1,6 +1,12 @@
 avatar: christopher-neugebauer.jpg
 avatar_url: https://pretalx.com/media/avatars/QWCHX7_htdjasv.jpg
-biography: <p>.</p>
+biography: '<p>Christopher Neugebauer is an Australian developer, speaker, and serial
+  community conference organiser, who presently lives in the United States.</p>
+
+  <p>He serves as a Director of the Python Software Foundation, and is co-organiser
+  of the acclaimed North Bay Python conference, a boutique one-track conference run
+  in unusual venues — include an old vaudeville theatre, and more recently a barn
+  on a farm — in Petaluma, California.</p>'
 code: QWCHX7
 listed: true
 name: Christopher Neugebauer
