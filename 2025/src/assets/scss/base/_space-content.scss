@@ -12,22 +12,14 @@
   }
 
   > h2 {
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     @include breakpoint(large) {
-      margin-top: 4rem;
+      margin-top: 2.5rem;
     }
   }
 
   > h3 {
-    margin-top: 2rem;
-
-    @include breakpoint(large) {
-      margin-top: 3rem;
-    }
-  }
-
-  > h4 {
     margin-top: 1.5rem;
 
     @include breakpoint(large) {
@@ -35,7 +27,7 @@
     }
   }
 
-  > h5 {
+  > h4 {
     margin-top: 1rem;
 
     @include breakpoint(large) {
@@ -43,11 +35,19 @@
     }
   }
 
+  > h5 {
+    margin-top: 1rem;
+
+    @include breakpoint(large) {
+      margin-top: 1rem;
+    }
+  }
+
   > h6 {
     margin-top: 1rem;
 
     @include breakpoint(large) {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
   }
 
