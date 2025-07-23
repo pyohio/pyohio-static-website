@@ -110,7 +110,7 @@ function renderCanceledTitle(title) {
                   } else if (talk.data.slug === "friday-opening-reception") {
                     return <td class="align-top p-2 plenary">
                       <p class="font-bold"><a href={`${baseUrl}/program/opening-reception`}>{talk.data.title}</a></p>
-                      <p class="text-xs">{talk.data.description}</p>
+                      <p class="text-xs" set:html={talk.data.description.replace(/\n/g, '<br>')}></p>
                       </td><td class="break" colspan="3"></td>
                   } else {
                     return <td class="font-bold p-2 plenary">
