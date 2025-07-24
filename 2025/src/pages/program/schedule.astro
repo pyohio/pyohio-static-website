@@ -156,7 +156,6 @@ function renderCanceledTitle(title) {
   <section class="container">
     <h2 class="my-6">Not Scheduled</h2>
     <div class="space-content">
-      <p>Check back here for schedule updates:</p>
       <ul>
         {unscheduledTalks.filter(talk => !['Break', 'Open'].includes(talk.data.type)).map(talk => (
           <li>
