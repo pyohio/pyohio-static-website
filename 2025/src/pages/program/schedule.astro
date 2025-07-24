@@ -130,6 +130,12 @@ function renderCanceledTitle(title) {
                   }
                 } else if (talk.data.type === "Open"){
                   return <td class="talk"></td>
+                } else if (talk.data.type === "Open Space") {
+                  return <td class="align-top p-2 talk">
+                    <p class="font-bold">
+                      <a href={`${baseUrl}/program/open-spaces/`}><span set:html={renderCanceledTitle(talk.data.title)}></span></a>
+                    </p>
+                  </td>
                 } else {
               return <td class="align-top p-2 talk">
                 <p class="font-bold">
