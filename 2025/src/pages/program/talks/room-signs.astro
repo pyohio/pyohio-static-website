@@ -1,0 +1,158 @@
+---
+import PrintLayout from '../../../layouts/PrintLayout.astro'
+import { getCollection } from 'astro:content'
+import { DateTime } from 'luxon'
+
+const talks = (await getCollection('talks'))
+  .filter((talk) => {
+    // Include regular talks, keynotes, plenary sessions, and lunch breaks
+    if (talk.data.type === '30 Minute Talk' || ['Keynote', 'Plenary Session', 'Lunch Break'].includes(talk.data.type)) {
+      // Exclude registration and conference space items
+      const title = talk.data.title.toLowerCase()
+      return !title.includes('registration') && !title.includes('conference space')
+    }
+    return false
+  })
+  .sort((a, b) => DateTime.fromISO(a.data.start_time) - DateTime.fromISO(b.data.start_time))
+
+// Get all unique room names from regular talks
+const uniqueRooms = [...new Set(talks
+  .filter(talk => talk.data.type === '30 Minute Talk')
+  .map(talk => talk.data.room))]
+
+// Group talks by day first
+const talksByDay = talks.reduce((acc, talk) => {
+  const talkTime = DateTime.fromISO(talk.data.start_time)
+  const day = talkTime.toFormat('cccc, LLLL d')
+  
+  if (!acc[day]) {
+    acc[day] = []
+  }
+  acc[day].push(talk)
+  return acc
+}, {})
+
+// Create room/day groups for all rooms including breaks
+const roomDayGroups = []
+
+Object.entries(talksByDay).forEach(([day, dayTalks]) => {
+  uniqueRooms.forEach(room => {
+    const roomTalks = dayTalks.filter(talk => {
+      // Lunch breaks go to all rooms
+      if (talk.data.type === 'Lunch Break') return true
+      // Plenary sessions go to Ballroom D only
+      if (['Keynote', 'Plenary Session'].includes(talk.data.type)) return room === 'Ballroom D'
+      // Regular talks go to their assigned room
+      return talk.data.room === room
+    })
+    
+    if (roomTalks.length > 0) {
+      roomDayGroups.push({
+        room,
+        day,
+        talks: roomTalks
+      })
+    }
+  })
+})
+
+// Sort by day first, then by room name
+const sortedGroups = roomDayGroups.sort((a, b) => {
+  // First compare days
+  const dayA = DateTime.fromFormat(a.day, 'cccc, LLLL d')
+  const dayB = DateTime.fromFormat(b.day, 'cccc, LLLL d')
+  const dayCompare = dayA - dayB
+  
+  // If same day, compare rooms
+  if (dayCompare === 0) {
+    return a.room.localeCompare(b.room)
+  }
+  return dayCompare
+})
+
+function formatTimeRange(startTime, endTime) {
+  const start = DateTime.fromISO(startTime)
+  const end = DateTime.fromISO(endTime)
+  
+  if (isNaN(start) || isNaN(end)) {
+    return 'TBD'
+  }
+  
+  const startFormatted = start.setZone('America/New_York').toFormat('h:mma').toLowerCase()
+  const endFormatted = end.setZone('America/New_York').toFormat('h:mma').toLowerCase()
+  
+  return `${startFormatted} - ${endFormatted}`
+}
+---
+
+<PrintLayout title="Room Signs">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 2px solid #333;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      vertical-align: top;
+    }
+    .time-col {
+      width: 200px;
+      font-weight: bold;
+      font-size: 1.2em;
+      white-space: nowrap;
+    }
+    .title {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .speakers {
+      font-size: 1.1em;
+    }
+    .plenary {
+      border: 2px solid #000;
+    }
+    .break {
+      font-style: italic;
+    }
+  </style>
+  <section>
+    {
+      sortedGroups.map((group) => (
+        <div class="pagebreak">
+          <h1 class="text-5xl font-bold mt-8 mb-4 text-center">{group.room}</h1>
+          <h2 class="text-3xl mb-8 text-center">{group.day}</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="time-col">Time</th>
+                <th>Session</th>
+              </tr>
+            </thead>
+            <tbody>
+              {group.talks.map((talk) => (
+                <tr class={['Keynote', 'Plenary Session'].includes(talk.data.type) ? 'plenary' : talk.data.type === 'Lunch Break' ? 'break' : ''}>
+                  <td class="time-col">{formatTimeRange(talk.data.start_time, talk.data.end_time)}</td>
+                  <td>
+                    <div class="title">{talk.data.title}</div>
+                    {talk.data.type !== 'Lunch Break' && talk.data.speakers.length > 0 && (
+                      <div class="speakers">{['Keynote', 'Plenary Session'].includes(talk.data.type) ? '' : 'by '}{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</div>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))
+    }
+  </section>
+</PrintLayout>
