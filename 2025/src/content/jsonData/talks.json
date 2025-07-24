@@ -30,12 +30,12 @@
   },
   {
     "code": "77MGPC",
-    "title": "VSCode Tooling for Python",
+    "title": "CANCELED: VSCode Tooling for Python",
     "slug": "vscode-tooling-for-python",
-    "description": "<p>Visual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.<br />\nKey Points:<br />\n    1   Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.<br />\n    2   Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.<br />\n    3   Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.<br />\n    4   Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.<br />\n    5   Git Integration: Streamlining version control without leaving the editor.<br />\n    6   Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks</p>",
-    "start_time": "2025-07-26T10:15:00-04:00",
-    "end_time": "2025-07-26T10:45:00-04:00",
-    "room": "Ballroom C",
+    "description": "<blockquote>\n<p>Unfortunately Daniel is unable to attend PyOhio and this session has been canceled</p>\n</blockquote>\n<p>Visual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.<br />\nKey Points:<br />\n    1   Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.<br />\n    2   Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.<br />\n    3   Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.<br />\n    4   Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.<br />\n    5   Git Integration: Streamlining version control without leaving the editor.<br />\n    6   Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks</p>",
+    "start_time": null,
+    "end_time": null,
+    "room": "TBD",
     "duration": 30,
     "speakers": [
       {
@@ -52,10 +52,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Visual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.  \nKey Points:  \n1 Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.  \n2 Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.  \n3 Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.  \n4 Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.  \n5 Git Integration: Streamlining version control without leaving the editor.  \n6 Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks",
+    "description_text": " Unfortunately Daniel is unable to attend PyOhio and this session has been canceled\n\nVisual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.  \nKey Points:  \n1 Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.  \n2 Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.  \n3 Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.  \n4 Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.  \n5 Git Integration: Streamlining version control without leaving the editor.  \n6 Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricks",
     "talk_url": "https://www.pyohio.org/2025/talks/vscode-tooling-for-python",
     "speaker_names": "Daniel Segan",
-    "description_youtube": "30 Minute Talk by Daniel Segan at PyOhio 2025:\nVisual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.  \nKey Points:  \n1 Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.  \n2 Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.  \n3 Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.  \n4 Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.  \n5 Git Integration: Streamlining version control without leaving the editor.  \n6 Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricksPyOhio talk listing: https://www.pyohio.org/2025/talks/vscode-tooling-for-python"
+    "description_youtube": "30 Minute Talk by Daniel Segan at PyOhio 2025:\n Unfortunately Daniel is unable to attend PyOhio and this session has been canceled\n\nVisual Studio Code has become a powerhouse for Python development, offering a lightweight yet robust environment packed with tools to streamline coding, debugging, and testing. In this talk, we’ll dive into the essential VS Code tooling that can turbocharge your Python workflow. From setting up the perfect Python environment to leveraging extensions for linting, debugging, and Git integration, you’ll leave with practical tips to boost productivity and code quality. Whether you’re wrangling data pipelines, building web apps, or just tinkering with scripts, this session will show you how to make VS Code your Python best friend.  \nKey Points:  \n1 Setup Basics: Configuring Python interpreters, virtual environments, and workspace settings in VS Code.  \n2 Extensions That Matter: Must-haves like Python (by Microsoft), Pylance, and Flake8 for autocompletion, type checking, and linting.  \n3 Debugging Like a Pro: Using breakpoints, variable inspection, and the debug toolbar for painless bug hunting.  \n4 Testing Made Easy: Integrating pytest and unittest directly in VS Code with real-time feedback.  \n5 Git Integration: Streamlining version control without leaving the editor.  \n6 Pro Tips: Custom snippets, Jupyter notebook support, and remote development tricksPyOhio talk listing: https://www.pyohio.org/2025/talks/vscode-tooling-for-python"
   },
   {
     "code": "7VE98C",
@@ -410,9 +410,9 @@
     "title": "Demystifying AI Agents with Python Code",
     "slug": "demystifying-ai-agents-with-python-code",
     "description": "<p>Everyone’s talking about AI Agents! But what are they, and how can you build them? This talk cuts through the hype. Drawing on a year spent developing a GenAI platform, I'll show you that creating powerful AI Agents is within your reach, no advanced degree required.</p>\n<p>We’ll define agents practically: Large Language Models combined with tools and memory. Moving beyond the abstract definition, I’ll show you how to build your first agent using the OpenAI Python SDK and fundamental Python concepts you’re already familiar with: functions, loops, and conditions. From there, I will demonstrate how you can use the CrewAI framework to abstract away the boilerplate code, allowing for simpler setup of multi-agent systems.</p>\n<p>By the end, you won't just understand agents; you'll be equipped and inspired to build your own, ready to tackle custom tasks by integrating the APIs that matter to you.</p>",
-    "start_time": "2025-07-26T11:00:00-04:00",
-    "end_time": "2025-07-26T11:30:00-04:00",
-    "room": "Ballroom A",
+    "start_time": "2025-07-26T10:15:00-04:00",
+    "end_time": "2025-07-26T10:45:00-04:00",
+    "room": "Ballroom C",
     "duration": 30,
     "speakers": [
       {
@@ -555,9 +555,9 @@
     "title": "CANCELED: Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter",
     "slug": "getting-advice-from-myself-using-flatfiles-postgres-and",
     "description": "<blockquote>\n<p>Unfortunately Jay is unable to attend PyOhio and this session has been canceled</p>\n</blockquote>\n<p>Cicero said - there is no one who can give you wiser advice than you can give yourself. That's why when I started generating transcripts from my productivity podcast, I decided to start using it to give myself productivity advice using ALL of my content.</p>\n<p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search as the base for using personal transcriptions, blog posts, and more for RAG and AI Agents.</p>",
-    "start_time": "2025-07-26T10:15:00-04:00",
-    "end_time": "2025-07-26T10:45:00-04:00",
-    "room": "Ballroom D",
+    "start_time": null,
+    "end_time": null,
+    "room": "TBD",
     "duration": 30,
     "speakers": [
       {
@@ -755,12 +755,12 @@
   },
   {
     "code": "SGYYGL",
-    "title": "Building Custom Data Structures Using Abstract Collections",
+    "title": "CANCELED: Building Custom Data Structures Using Abstract Collections",
     "slug": "building-custom-data-structures-using-abstract-collections",
-    "description": "<p>Python’s abstract base classes (ABCs) in the <code>collections.abc</code> module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.</p>",
-    "start_time": "2025-07-26T15:00:00-04:00",
-    "end_time": "2025-07-26T15:30:00-04:00",
-    "room": "Ballroom C",
+    "description": "<blockquote>\n<p>Unfortunately Daniel is unable to attend PyOhio and this session has been canceled </p>\n</blockquote>\n<p>Python’s abstract base classes (ABCs) in the <code>collections.abc</code> module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.</p>",
+    "start_time": null,
+    "end_time": null,
+    "room": "TBD",
     "duration": 30,
     "speakers": [
       {
@@ -777,10 +777,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Python’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.",
+    "description_text": " Unfortunately Daniel is unable to attend PyOhio and this session has been canceled\n\nPython’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.",
     "talk_url": "https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections",
     "speaker_names": "Daniel Schelkoph",
-    "description_youtube": "30 Minute Talk by Daniel Schelkoph at PyOhio 2025:\nPython’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.PyOhio talk listing: https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections"
+    "description_youtube": "30 Minute Talk by Daniel Schelkoph at PyOhio 2025:\n Unfortunately Daniel is unable to attend PyOhio and this session has been canceled\n\nPython’s abstract base classes (ABCs) in the `collections.abc` module provide a powerful way to create objects that behave like built-in data structures such as dictionaries, lists, and sets. In this talk, we’ll explore how these abstract collections work, why they’re useful, and how they enable seamless integration into Python’s ecosystem. Additionally, we will explain the Mixin design pattern and provide concrete examples of implementing an abstract collection. This session is perfect for attendees looking to learn more about Python's design philosophy and make their code more Pythonic.PyOhio talk listing: https://www.pyohio.org/2025/talks/building-custom-data-structures-using-abstract-collections"
   },
   {
     "code": "SUMQSQ",
@@ -1027,7 +1027,7 @@
     "description": "<p>Monitoring the health of city streets and roadways is expensive, time-consuming, and often reactive. But what if we could automate part of that process using satellite imagery and Python?</p>\n<p>In this talk, we’ll walk through a real-world project that combines transfer learning, PyTorch, and publicly available datasets to classify road segment conditions (good, fair, poor) from aerial imagery. You'll learn how to work with messy real-world geospatial data, fine-tune a deep learning model using only a small training set (~2,000 examples), and overcome common challenges like blurry imagery, inconsistent labels, and overfitting.</p>\n<p>This session is practical and code-driven, aimed at data scientists and analysts working in mobility analytics, urban development, or infrastructure who want to apply machine perception techniques in their work. By the end, you’ll walk away with a reusable workflow for analyzing and predicting urban infrastructure quality — all using free tools and open data.</p>",
     "start_time": "2025-07-26T10:15:00-04:00",
     "end_time": "2025-07-26T10:45:00-04:00",
-    "room": "Ballroom A",
+    "room": "Ballroom B",
     "duration": 30,
     "speakers": [
       {
@@ -1056,7 +1056,7 @@
     "description": "<p>Python is a versatile language, and it’s often the go-to language for data scientists, machine learning engineers, and web developers, among others.  However, often notably absent from this list are those working on and developing things in the physical world.  Too often is the humble hardware engineer forgotten, doomed to a fate of spreadsheets.  But what if I told you there was a whole world of hardware-focused Python?  This talk will explore various examples of Python in the world of hardware folks, including building test fixtures, data acquisition, and industrial automation.  We’ll also look at other issues, including what are the alternatives and why adoption of Python can be challenging.  This talk is meant for everyone, but especially those who love or want to tinker with hardware.</p>",
     "start_time": "2025-07-26T10:15:00-04:00",
     "end_time": "2025-07-26T10:45:00-04:00",
-    "room": "Ballroom B",
+    "room": "Ballroom D",
     "duration": 30,
     "speakers": [
       {
