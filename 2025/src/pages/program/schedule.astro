@@ -148,9 +148,9 @@ function renderCanceledTitle(title) {
 
 {unscheduledTalks.length > 0 && (
   <section class="container">
-    <h2 class="my-6">Not Yet Scheduled</h2>
+    <h2 class="my-6">Not Scheduled</h2>
     <div class="space-content">
-      <p>Schedule for these talks to be announced:</p>
+      <p>Check back here for schedule updates:</p>
       <ul>
         {unscheduledTalks.filter(talk => !['Break', 'Open'].includes(talk.data.type)).map(talk => (
           <li>
