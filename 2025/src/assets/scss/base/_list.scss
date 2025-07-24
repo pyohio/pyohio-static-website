@@ -25,6 +25,30 @@ ul:not([class]) {
   }
 }
 
+// Ensure list bullets are visible for all lists (but not navigation)
+ul:not(.header-menu):not(.nav-menu):not([role="menubar"]):not([class*="nav"]):not([class*="menu"]) {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 0;
+
+  li {
+    display: list-item;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Also ensure blockquote lists have proper bullets
+blockquote ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 0;
+
+  li {
+    display: list-item;
+    margin-bottom: 0.5rem;
+  }
+}
+
 ol.incremented {
   counter-reset: item;
 
