@@ -27,16 +27,20 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
       <table class="table-auto text-sm">
         <thead class="text-center">
           <th class="w-32 p-2 heading">Start Time</th>
-          <th class="p-x2 heading" colspan="2">Room</th>
+          <th class="p-x2 heading" colspan="3">Room</th>
         </thead>
         <thead class="text-center">
           <th class="p-2 time-heading">Sat</th>
           <th class="p-2 sticky-heading">313 L</th>
           <th class="p-2 sticky-heading">313 R</th>
+          <th class="p-2 sticky-heading">Ballroom A</th>
         </thead>
         
         <tr>
           <td class="text-center font-bold time"><p>10:15 am</p></td>
+          <td class="align-top p-2 talk">
+            <p class="font-bold">Open Space</p>
+          </td>
           <td class="align-top p-2 talk">
             <p class="font-bold">Open Space</p>
           </td>
@@ -53,10 +57,16 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
           <td class="align-top p-2 talk">
             <p class="font-bold">Open Space</p>
           </td>
+          <td class="align-top p-2 talk">
+            <p class="font-bold">Open Space</p>
+          </td>
         </tr>
         
         <tr>
           <td class="text-center font-bold time"><p>11:45 am</p></td>
+          <td class="align-top p-2 talk">
+            <p class="font-bold">Open Space</p>
+          </td>
           <td class="align-top p-2 talk">
             <p class="font-bold">Open Space</p>
           </td>
@@ -75,6 +85,9 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
             <p class="font-bold">Open Space</p>
             <p class="text-xs">(during lunch break)</p>
           </td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Closed</p>
+          </td>
         </tr>
         
         <tr>
@@ -87,6 +100,9 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
             <p class="font-bold">Open Space</p>
             <p class="text-xs">(during lunch break)</p>
           </td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Closed</p>
+          </td>
         </tr>
         
         <tr>
@@ -96,6 +112,9 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
           </td>
           <td class="align-top p-2 talk">
             <p class="font-bold">Open Space</p>
+          </td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Scheduled Talk</p>
           </td>
         </tr>
         
@@ -107,10 +126,16 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
           <td class="align-top p-2 talk">
             <p class="font-bold">Open Space</p>
           </td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Scheduled Talk</p>
+          </td>
         </tr>
         
         <tr>
           <td class="text-center font-bold time"><p>3:45 pm</p></td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Closed</p>
+          </td>
           <td class="align-top p-2 break">
             <p class="font-bold">Closed</p>
           </td>
@@ -129,6 +154,9 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
             <p class="font-bold">Open Space</p>
             <p class="text-xs">(during lightning talks)</p>
           </td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Scheduled Talk</p>
+          </td>
         </tr>
         
         <tr>
@@ -141,10 +169,16 @@ import DefaultLayout from '../../layouts/DefaultLayout.astro'
             <p class="font-bold">Open Space</p>
             <p class="text-xs">(during lightning talks)</p>
           </td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Scheduled Talk</p>
+          </td>
         </tr>
         
         <tr>
           <td class="text-center font-bold time"><p>6:00 pm</p></td>
+          <td class="align-top p-2 break">
+            <p class="font-bold">Closed</p>
+          </td>
           <td class="align-top p-2 break">
             <p class="font-bold">Closed</p>
           </td>
