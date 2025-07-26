@@ -5,8 +5,8 @@ import { DateTime } from 'luxon'
 
 const talks = (await getCollection('talks'))
   .filter((talk) => {
-    // Include regular talks, keynotes, plenary sessions, and lunch breaks
-    if (talk.data.type === '30 Minute Talk' || ['Keynote', 'Plenary Session', 'Lunch Break'].includes(talk.data.type)) {
+    // Include regular talks, keynotes, plenary sessions, open spaces, and lunch breaks
+    if (talk.data.type === '30 Minute Talk' || ['Keynote', 'Plenary Session', 'Lunch Break', 'Open Space'].includes(talk.data.type)) {
       // Exclude registration and conference space items
       const title = talk.data.title.toLowerCase()
       return !title.includes('registration') && !title.includes('conference space')
@@ -15,14 +15,17 @@ const talks = (await getCollection('talks'))
   })
   .sort((a, b) => DateTime.fromISO(a.data.start_time) - DateTime.fromISO(b.data.start_time))
 
-// Get all unique room names from regular talks
+// Get all unique room names from regular talks and open spaces
 const uniqueRooms = [...new Set(talks
-  .filter(talk => talk.data.type === '30 Minute Talk')
+  .filter(talk => talk.data.type === '30 Minute Talk' || talk.data.type === 'Open Space')
   .map(talk => talk.data.room))]
 
 // Group talks by day first
 const talksByDay = talks.reduce((acc, talk) => {
   const talkTime = DateTime.fromISO(talk.data.start_time)
+  // Skip talks with invalid dates (canceled talks)
+  if (!talkTime.isValid) return acc
+  
   const day = talkTime.toFormat('cccc, LLLL d')
   
   if (!acc[day]) {
@@ -42,7 +45,7 @@ Object.entries(talksByDay).forEach(([day, dayTalks]) => {
       if (talk.data.type === 'Lunch Break') return true
       // Plenary sessions go to Ballroom D only
       if (['Keynote', 'Plenary Session'].includes(talk.data.type)) return room === 'Ballroom D'
-      // Regular talks go to their assigned room
+      // Regular talks and open spaces go to their assigned room
       return talk.data.room === room
     })
     
@@ -69,6 +72,30 @@ const sortedGroups = roomDayGroups.sort((a, b) => {
   }
   return dayCompare
 })
+
+// Create Open Space room 313 schedule
+const openSpaceSchedule = {
+  saturday: [
+    { time: '10:15am - 10:45am', session: 'Open Spaces' },
+    { time: '11:00am - 11:30am', session: 'Open Spaces' },
+    { time: '11:45am - 12:15pm', session: 'Open Spaces' },
+    { time: '12:30pm - 1:00pm', session: 'Open Spaces', note: '(during lunch break)' },
+    { time: '1:30pm - 2:00pm', session: 'Open Spaces', note: '(during lunch break)' },
+    { time: '2:15pm - 2:45pm', session: 'Open Spaces' },
+    { time: '3:00pm - 3:30pm', session: 'Open Spaces' },
+    { time: '3:45pm - 4:15pm', session: 'Closed' },
+    { time: '4:30pm - 5:00pm', session: 'Open Spaces', note: '(during lightning talks)' },
+    { time: '5:15pm - 5:45pm', session: 'Open Spaces', note: '(during lightning talks)' },
+    { time: '6:00pm', session: 'Closed' }
+  ],
+  sunday: [
+    { time: '12:30pm - 1:00pm', session: 'Open Spaces' },
+    { time: '1:15pm - 1:45pm', session: 'Open Spaces' },
+    { time: '2:00pm - 2:30pm', session: 'Open Spaces' },
+    { time: '2:45pm - 3:15pm', session: 'Open Spaces' },
+    { time: '3:30pm', session: 'Closed' }
+  ]
+}
 
 function formatTimeRange(startTime, endTime) {
   const start = DateTime.fromISO(startTime)
@@ -143,7 +170,10 @@ function formatTimeRange(startTime, endTime) {
                   <td class="time-col">{formatTimeRange(talk.data.start_time, talk.data.end_time)}</td>
                   <td>
                     <div class="title">{talk.data.title}</div>
-                    {talk.data.type !== 'Lunch Break' && talk.data.speakers.length > 0 && (
+                    {talk.data.type === 'Open Space' && (
+                      <div class="speakers">Sign up on board outside room 313</div>
+                    )}
+                    {talk.data.type !== 'Lunch Break' && talk.data.type !== 'Open Space' && talk.data.speakers.length > 0 && (
                       <div class="speakers">{['Keynote', 'Plenary Session'].includes(talk.data.type) ? '' : 'by '}{talk.data.speakers.map((speaker) => speaker.name).join(', ')}</div>
                     )}
                   </td>
@@ -154,5 +184,60 @@ function formatTimeRange(startTime, endTime) {
         </div>
       ))
     }
+    
+    {/* Open Space Room 313 Signs */}
+    <div class="pagebreak">
+      <h1 class="text-5xl font-bold mt-8 mb-4 text-center">Room 313 - Open Spaces</h1>
+      <h2 class="text-3xl mb-8 text-center">Saturday, July 26</h2>
+      <p class="text-center text-3xl font-bold mb-8">See board to sign up or view topics</p>
+      <table>
+        <thead>
+          <tr>
+            <th class="time-col">Time</th>
+            <th>Session</th>
+          </tr>
+        </thead>
+        <tbody>
+          {openSpaceSchedule.saturday.map((slot) => (
+            <tr class={slot.session === 'Closed' ? 'break' : ''}>
+              <td class="time-col">{slot.time}</td>
+              <td>
+                <div class="title">{slot.session}</div>
+                {slot.note && (
+                  <div class="speakers">{slot.note}</div>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="pagebreak">
+      <h1 class="text-5xl font-bold mt-8 mb-4 text-center">Room 313 - Open Spaces</h1>
+      <h2 class="text-3xl mb-8 text-center">Sunday, July 27</h2>
+      <p class="text-center text-3xl font-bold mb-8">See board to sign up or view topics</p>
+      <table>
+        <thead>
+          <tr>
+            <th class="time-col">Time</th>
+            <th>Session</th>
+          </tr>
+        </thead>
+        <tbody>
+          {openSpaceSchedule.sunday.map((slot) => (
+            <tr class={slot.session === 'Closed' ? 'break' : ''}>
+              <td class="time-col">{slot.time}</td>
+              <td>
+                <div class="title">{slot.session}</div>
+                {slot.note && (
+                  <div class="speakers">{slot.note}</div>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   </section>
 </PrintLayout>
