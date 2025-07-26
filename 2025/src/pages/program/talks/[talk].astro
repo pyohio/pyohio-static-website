@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 const { talk } = Astro.props
 
 // Clean description by removing HTML tags for meta description
-const cleanDescription = talk.data.description.replace(/<[^>]*>/g, '').trim()
+const cleanDescription = talk.data.description ? talk.data.description.replace(/<[^>]*>/g, '').trim() : ''
 const prefixedDescription = `Talk at ${SITE_CONFIG.eventName}: ${cleanDescription}`
 
 // Create title with speaker names
