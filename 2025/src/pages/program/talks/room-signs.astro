@@ -50,10 +50,13 @@ Object.entries(talksByDay).forEach(([day, dayTalks]) => {
     })
     
     if (roomTalks.length > 0) {
+      // Sort talks by start time within each room/day group
+      const sortedRoomTalks = roomTalks.sort((a, b) => DateTime.fromISO(a.data.start_time) - DateTime.fromISO(b.data.start_time))
+      
       roomDayGroups.push({
         room,
         day,
-        talks: roomTalks
+        talks: sortedRoomTalks
       })
     }
   })
