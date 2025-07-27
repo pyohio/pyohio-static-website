@@ -12,10 +12,19 @@ const { src = `${baseUrl}/pyohio-2025-sticker.png` } = Astro.props
   <div class="container">
     <div class="items-top grid grid-cols-1 gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
+        <!-- Mobile-only Schedule button at very top -->
+        <div class="flex justify-center md:hidden w-full">
+          <a href="/2025/program/schedule" class="button has-icon color-primary hero-button leading-tight">
+            <Icon name="mdi:calendar-clock" />
+            View Schedule
+          </a>
+        </div>
+        
         <h1 class="text-center text-6xl md:text-left lg:text-7xl">
-          <slot><span class="text-gradientx">{SITE_CONFIG.eventName}</span></slot>
+          <slot><span class="text-gradient">{SITE_CONFIG.eventName}</span></slot>
         </h1>
         <h2 class="text-center text-3xl md:text-left">The Python Community Conference Based in Ohio</h2>
+        
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <!-- <a class="button has-icon" href="https://github.com/incluud/accessible-astro-starter">
             <Icon name="ion:star-outline" />
@@ -36,10 +45,14 @@ const { src = `${baseUrl}/pyohio-2025-sticker.png` } = Astro.props
             href="/2025/sponsors/individual-sponsors">individual donors</a
           >.
         </p>
-        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+        <div class="grid grid-cols-1 gap-3 min-[500px]:grid-cols-2 max-w-md">
           <a href="/2025/attend/registration" class="button has-icon color-primary hero-button leading-tight">
             <Icon name="mdi:ticket" />
             Register Now
+          </a>
+          <a href="/2025/program/schedule" class="button has-icon color-primary hero-button leading-tight hidden md:block">
+            <Icon name="mdi:calendar-clock" />
+            View Schedule
           </a>
           <a href="/2025/attend/shirts" class="button has-icon color-primary hero-button leading-tight">
             <Icon name="mdi:tshirt-crew" />
