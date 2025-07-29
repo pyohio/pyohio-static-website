@@ -75,19 +75,22 @@ function renderCanceledTitle(title) {
 {( Object.keys(talkDataByDateAndTime).map((scheduleDate) => (
   <section class="container pagebreak">
       <h2 class="my-6">{DateTime.fromISO(scheduleDate).toFormat('cccc, LLLL d')}</h2>
-      <div class="">
+      <div class="table-container">
       <table class="table-auto text-sm">
         <thead class="text-center">
-          <th class="w-32 p-2 heading">Start Time</th>
-          <th class="p-x2 heading" colspan="4">Room</th>
+          <tr>
+            <th class="w-32 p-2 heading">Start Time</th>
+            <th class="p-x2 heading" colspan="4">Room</th>
+          </tr>
+          <tr>
+            <th class="p-2 time-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
+            <th class="p-2 sticky-heading">Ballroom D</th>
+            <th class="p-2 sticky-heading">Ballroom C</th>
+            <th class="p-2 sticky-heading">Ballroom B</th>
+            <th class="p-2 sticky-heading">Ballroom A</th>
+          </tr>
         </thead>
-        <thead class="text-center">
-          <th class="p-2 time-heading">{DateTime.fromISO(scheduleDate).toFormat('ccc')}</th>
-          <th class="p-2 sticky-heading">Ballroom D</th>
-          <th class="p-2 sticky-heading">Ballroom C</th>
-          <th class="p-2 sticky-heading">Ballroom B</th>
-          <th class="p-2 sticky-heading">Ballroom A</th>
-        </thead>
+        <tbody>
 
       {Object.keys(talkDataByDateAndTime[scheduleDate]).sort().map((scheduleTime) => (
         <tr class="">
@@ -148,6 +151,7 @@ function renderCanceledTitle(title) {
           ))}
         </tr>
       ))}
+      </tbody>
       </table></div>
   </section>
 )))}
@@ -188,6 +192,7 @@ function renderCanceledTitle(title) {
     --table-background: var(--neutral-900);
     --table-muted: var(--neutral-700);
   }
+
 
   table {
     border-top: 1px solid var(--table-border);
