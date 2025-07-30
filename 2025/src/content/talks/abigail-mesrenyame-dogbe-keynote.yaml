@@ -1,6 +1,15 @@
 code: 8QUZFM
 content_warnings: null
-description: <p>Keynote</p>
+description: <p>In the world of open source, community work often begins with passion,
+  but to make it sustainable and impactful, we must begin with the end in mind. In
+  this keynote, I will reflect on my journey from contributing to Django Girls to
+  leading PyLadies Ghana and building inclusive tech communities across Africa. Drawing
+  lessons from open source leadership, cultural identity, and personal growth, we
+  will explore what it truly means to build communities that outlast us. This talk
+  challenges attendees to rethink community involvement not just as volunteering,
+  but as systems-building, infused with purpose, clarity, and intention. Through storytelling,
+  reflection, and real-world examples, we will experience how every contribution can
+  create ripple effects of confidence, leadership, and global impact.</p>
 discord_channel_id: ''
 duration: 45
 end_time: '2025-07-26T10:00:00-04:00'
@@ -15,6 +24,6 @@ speakers:
   slug: abigail-mesrenyame-dogbe
 start_time: '2025-07-26T09:15:00-04:00'
 stream_timestamp: ''
-title: Keynote
+title: 'Keynote: Begin with the End in Mind: Why Your Community Work Matters'
 type: Keynote
 youtube_url: null

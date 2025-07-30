@@ -1,6 +1,10 @@
 code: SUMQSQ
 content_warnings: null
-description: <p>Keynote</p>
+description: <p>This talk explores the evolution of coding to the current trend of
+  vibe coding, where one allows AI to take the wheel of programmatic decisions. Using
+  an AI assistant, Windsurf, the audience will experience vibe coding in action and
+  learn about the opportunities and challenges that exist in this new paradigm, as
+  well as how they might impact programming communities such as PyOhio,</p>
 discord_channel_id: ''
 duration: 45
 end_time: '2025-07-26T16:30:00-04:00'
@@ -15,6 +19,6 @@ speakers:
   slug: jessica-garson
 start_time: '2025-07-26T15:45:00-04:00'
 stream_timestamp: ''
-title: Keynote
+title: 'Keynote: The Right Vibe: The Role of Community in the Age of AI'
 type: Keynote
 youtube_url: null
