@@ -88,9 +88,9 @@
   },
   {
     "code": "8QUZFM",
-    "title": "Keynote",
+    "title": "Keynote: Begin with the End in Mind: Why Your Community Work Matters",
     "slug": "abigail-mesrenyame-dogbe-keynote",
-    "description": "<p>Keynote</p>",
+    "description": "<p>In the world of open source, community work often begins with passion, but to make it sustainable and impactful, we must begin with the end in mind. In this keynote, I will reflect on my journey from contributing to Django Girls to leading PyLadies Ghana and building inclusive tech communities across Africa. Drawing lessons from open source leadership, cultural identity, and personal growth, we will explore what it truly means to build communities that outlast us. This talk challenges attendees to rethink community involvement not just as volunteering, but as systems-building, infused with purpose, clarity, and intention. Through storytelling, reflection, and real-world examples, we will experience how every contribution can create ripple effects of confidence, leadership, and global impact.</p>",
     "start_time": "2025-07-26T09:15:00-04:00",
     "end_time": "2025-07-26T10:00:00-04:00",
     "room": "Ballroom D",
@@ -110,10 +110,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Keynote",
+    "description_text": "In the world of open source, community work often begins with passion, but to make it sustainable and impactful, we must begin with the end in mind. In this keynote, I will reflect on my journey from contributing to Django Girls to leading PyLadies Ghana and building inclusive tech communities across Africa. Drawing lessons from open source leadership, cultural identity, and personal growth, we will explore what it truly means to build communities that outlast us. This talk challenges attendees to rethink community involvement not just as volunteering, but as systems-building, infused with purpose, clarity, and intention. Through storytelling, reflection, and real-world examples, we will experience how every contribution can create ripple effects of confidence, leadership, and global impact.",
     "talk_url": "https://www.pyohio.org/2025/talks/abigail-mesrenyame-dogbe-keynote",
     "speaker_names": "Abigail Mesrenyame Dogbe",
-    "description_youtube": "Keynote by Abigail Mesrenyame Dogbe at PyOhio 2025:\nKeynotePyOhio talk listing: https://www.pyohio.org/2025/talks/abigail-mesrenyame-dogbe-keynote"
+    "description_youtube": "Keynote by Abigail Mesrenyame Dogbe at PyOhio 2025:\nIn the world of open source, community work often begins with passion, but to make it sustainable and impactful, we must begin with the end in mind. In this keynote, I will reflect on my journey from contributing to Django Girls to leading PyLadies Ghana and building inclusive tech communities across Africa. Drawing lessons from open source leadership, cultural identity, and personal growth, we will explore what it truly means to build communities that outlast us. This talk challenges attendees to rethink community involvement not just as volunteering, but as systems-building, infused with purpose, clarity, and intention. Through storytelling, reflection, and real-world examples, we will experience how every contribution can create ripple effects of confidence, leadership, and global impact.PyOhio talk listing: https://www.pyohio.org/2025/talks/abigail-mesrenyame-dogbe-keynote"
   },
   {
     "code": "8TJMMX",
@@ -146,9 +146,9 @@
   },
   {
     "code": "9EZBGH",
-    "title": "Keynote",
+    "title": "Keynote: Looking Back at a Lifetime of Poor Tech Choices",
     "slug": "leon-adato-keynote",
-    "description": "<p>Keynote</p>",
+    "description": "<p>Working in tech is a never-ending stream of choices: from the language, platform, and framework we use to the vendors we put our trust (and money) in. Many of us live in fear that our next choice will turn sour, and will end up being a resume-generating event for us. </p>\n<p>In reality, there is often a lot more good than you'd expect from those seemingly bad tech choices. In this session, I'll look back on several failed implementations, poor calls, and wasted weekends to see, with the benefit of hindsight, how they turned out to be decent decisions after all.</p>",
     "start_time": "2025-07-27T15:30:00-04:00",
     "end_time": "2025-07-27T16:15:00-04:00",
     "room": "Ballroom D",
@@ -168,10 +168,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Keynote",
+    "description_text": "Working in tech is a never-ending stream of choices: from the language, platform, and framework we use to the vendors we put our trust (and money) in. Many of us live in fear that our next choice will turn sour, and will end up being a resume-generating event for us.\n\nIn reality, there is often a lot more good than you'd expect from those seemingly bad tech choices. In this session, I'll look back on several failed implementations, poor calls, and wasted weekends to see, with the benefit of hindsight, how they turned out to be decent decisions after all.",
     "talk_url": "https://www.pyohio.org/2025/talks/leon-adato-keynote",
     "speaker_names": "Leon Adato",
-    "description_youtube": "Keynote by Leon Adato at PyOhio 2025:\nKeynotePyOhio talk listing: https://www.pyohio.org/2025/talks/leon-adato-keynote"
+    "description_youtube": "Keynote by Leon Adato at PyOhio 2025:\nWorking in tech is a never-ending stream of choices: from the language, platform, and framework we use to the vendors we put our trust (and money) in. Many of us live in fear that our next choice will turn sour, and will end up being a resume-generating event for us.\n\nIn reality, there is often a lot more good than you'd expect from those seemingly bad tech choices. In this session, I'll look back on several failed implementations, poor calls, and wasted weekends to see, with the benefit of hindsight, how they turned out to be decent decisions after all.PyOhio talk listing: https://www.pyohio.org/2025/talks/leon-adato-keynote"
   },
   {
     "code": "BCR7DQ",
@@ -784,9 +784,9 @@
   },
   {
     "code": "SUMQSQ",
-    "title": "Keynote",
+    "title": "Keynote: The Right Vibe: The Role of Community in the Age of AI",
     "slug": "jessica-garson-keynote",
-    "description": "<p>Keynote</p>",
+    "description": "<p>This talk explores the evolution of coding to the current trend of vibe coding, where one allows AI to take the wheel of programmatic decisions. Using an AI assistant, Windsurf, the audience will experience vibe coding in action and learn about the opportunities and challenges that exist in this new paradigm, as well as how they might impact programming communities such as PyOhio,</p>",
     "start_time": "2025-07-26T15:45:00-04:00",
     "end_time": "2025-07-26T16:30:00-04:00",
     "room": "Ballroom D",
@@ -806,10 +806,10 @@
     "content_warnings": null,
     "discord_channel_id": "",
     "stream_timestamp": "",
-    "description_text": "Keynote",
+    "description_text": "This talk explores the evolution of coding to the current trend of vibe coding, where one allows AI to take the wheel of programmatic decisions. Using an AI assistant, Windsurf, the audience will experience vibe coding in action and learn about the opportunities and challenges that exist in this new paradigm, as well as how they might impact programming communities such as PyOhio,",
     "talk_url": "https://www.pyohio.org/2025/talks/jessica-garson-keynote",
     "speaker_names": "Jessica Garson",
-    "description_youtube": "Keynote by Jessica Garson at PyOhio 2025:\nKeynotePyOhio talk listing: https://www.pyohio.org/2025/talks/jessica-garson-keynote"
+    "description_youtube": "Keynote by Jessica Garson at PyOhio 2025:\nThis talk explores the evolution of coding to the current trend of vibe coding, where one allows AI to take the wheel of programmatic decisions. Using an AI assistant, Windsurf, the audience will experience vibe coding in action and learn about the opportunities and challenges that exist in this new paradigm, as well as how they might impact programming communities such as PyOhio,PyOhio talk listing: https://www.pyohio.org/2025/talks/jessica-garson-keynote"
   },
   {
     "code": "TCRGU8",
