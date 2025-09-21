@@ -6,3 +6,4 @@ py-gfm
 pyyaml
 orjson
 markdownify
+yt-dlp
