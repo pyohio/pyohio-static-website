@@ -85,7 +85,7 @@ TALK_EXTRAS = {
         "content_warnings": None,
         "title": "Write Apps for Your TV with Kodi and Python",
         "video_start_time": "",
-        "youtube_url": None,
+        "youtube_url": "https://www.youtube.com/watch?v=LB0Pj41nMwI",
     },
     "FJGVAW": {
         "channel_id": "",
