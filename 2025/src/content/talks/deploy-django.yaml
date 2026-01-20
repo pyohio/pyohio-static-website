@@ -37,7 +37,7 @@ qna_channel: null
 room: Ballroom D
 slug: deploy-django
 speakers:
-- avatar: https://pretalx.com/media/avatars/ME3WGG_2M5BJfB.jpg
+- avatar: https://pretalx.com/media/avatars/ME3WGG_7N5IJMh.webp
   code: ME3WGG
   name: Calvin Hendryx-Parker
   slug: calvin-hendryx-parker
