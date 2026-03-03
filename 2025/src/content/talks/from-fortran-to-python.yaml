@@ -22,11 +22,11 @@ qna_channel: null
 room: Ballroom D
 slug: from-fortran-to-python
 speakers:
-- avatar: https://pretalx.com/media/avatars/UYRBHX_gusMbKM.png
+- avatar: https://pretalx.com/media/avatars/UYRBHX_h8grDy9.webp
   code: UYRBHX
   name: Rodrigo Silva Ferreira
   slug: rodrigo-silva-ferreira
-- avatar: https://pretalx.com/media/avatars/XDNUZ7_AmgWTPa.jpeg
+- avatar: https://pretalx.com/media/avatars/XDNUZ7_ZEKhuZz.webp
   code: XDNUZ7
   name: Helianildes Silva Ferreira
   slug: helianildes-silva-ferreira
