@@ -192,18 +192,15 @@
                 .then(function(data) {
                     data.forEach(function(doc) { documents[doc.url] = doc; });
 
-                    var shortStopWords = lunr.generateStopWordFilter([
-                        'a', 'an', 'and', 'are', 'as', 'at', 'be', 'but', 'by',
-                        'for', 'if', 'in', 'into', 'is', 'it', 'no', 'not', 'of',
-                        'on', 'or', 'such', 'that', 'the', 'their', 'then',
-                        'there', 'these', 'they', 'this', 'to', 'was', 'will', 'with'
-                    ]);
+                    var stopWords = {
+                        'a':1, 'an':1, 'and':1, 'are':1, 'as':1, 'at':1, 'be':1, 'but':1, 'by':1,
+                        'for':1, 'if':1, 'in':1, 'into':1, 'is':1, 'it':1, 'no':1, 'not':1, 'of':1,
+                        'on':1, 'or':1, 'such':1, 'that':1, 'the':1, 'their':1, 'then':1,
+                        'there':1, 'these':1, 'they':1, 'this':1, 'to':1, 'was':1, 'will':1, 'with':1
+                    };
 
                     searchIndex = lunr(function() {
                         this.pipeline.remove(lunr.stopWordFilter);
-                        this.pipeline.add(shortStopWords);
-                        this.searchPipeline.remove(lunr.stopWordFilter);
-                        this.searchPipeline.add(shortStopWords);
                         this.ref('url');
                         this.field('title', { boost: 10 });
                         this.field('tags', { boost: 5 });
@@ -334,13 +331,24 @@
 
                     if (!searchIndex) return;
 
+                    var filteredTerms = query.toLowerCase().split(/\s+/).filter(function(w) {
+                        return !stopWords[w];
+                    });
+                    if (filteredTerms.length === 0) {
+                        searchOverlay.classList.add('hidden');
+                        searchResults.textContent = '';
+                        if (searchCount) searchCount.textContent = '';
+                        return;
+                    }
+                    var filteredQuery = filteredTerms.join(' ');
+
                     searchOverlay.classList.remove('hidden');
 
                     var results = [];
                     try {
-                        var exactResults = searchIndex.search(query);
-                        var wildcardResults = searchIndex.search(query + '*');
-                        var fuzzyResults = searchIndex.search(query + '~1');
+                        var exactResults = searchIndex.search(filteredQuery);
+                        var wildcardResults = searchIndex.search(filteredTerms.map(function(t) { return t + '*'; }).join(' '));
+                        var fuzzyResults = searchIndex.search(filteredTerms.map(function(t) { return t + '~1'; }).join(' '));
 
                         var seen = {};
                         [exactResults, wildcardResults, fuzzyResults].forEach(function(resultSet) {
