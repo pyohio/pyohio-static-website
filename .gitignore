@@ -18,5 +18,8 @@ public/
 2026/_site/
 2026/.rockgarden/
 
+# Theme build artifacts
+2026/_themes/*/node_modules/
+
 # Mac files
 .DS_Store

@@ -15,6 +15,10 @@ build-prod: clean build
     cp -r ./2026/_site ./public/next
     cp -rv ./netlify-static/* ./public/
 
+# Rebuild theme CSS
+theme-css:
+    cd 2026/_themes/pyohio && npm run build:css
+
 # Clean build output
 clean:
     rm -rf public

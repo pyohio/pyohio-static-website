@@ -1,0 +1,28 @@
+{% extends layout_template %}
+
+{% block title %}#{{ tag }}{% if site.title %} - {{ site.title }}{% endif %}{% endblock %}
+
+{% block content %}
+<div class="flex gap-8">
+    <div class="flex-1 min-w-0">
+        <nav aria-label="Breadcrumb" class="text-sm breadcrumbs mb-4">
+            <ul>
+                <li><a href="{{ site.base_path }}/">Home</a></li>
+                <li><a href="{{ tags_root_url }}">Tags</a></li>
+                <li>#{{ tag }}</li>
+            </ul>
+        </nav>
+        <article>
+            <h1 class="text-3xl font-bold mb-6">#{{ tag }}</h1>
+            <p class="text-base-content/60 mb-6">{{ pages | length }} {{ "item" if pages | length == 1 else "items" }}</p>
+            {% if pages %}
+            <div>
+                {% for entry in pages %}
+                {% include "components/page_list_item.html" %}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </article>
+    </div>
+</div>
+{% endblock %}

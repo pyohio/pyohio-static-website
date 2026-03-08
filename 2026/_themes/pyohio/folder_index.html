@@ -1,0 +1,69 @@
+{% extends layout_template %}
+
+{% block title %}{{ folder.title }}{% if site.title %} - {{ site.title }}{% endif %}{% endblock %}
+
+{% block content %}
+{% block breadcrumbs %}
+{% if breadcrumbs and breadcrumbs|length > 1 %}
+{% include "components/breadcrumbs.html" %}
+{% endif %}
+{% endblock %}
+<article>
+  {% block before_heading %}{% endblock %}
+  {% block heading %}<h1 class="text-3xl font-bold mb-6">{{ folder.title }}</h1>{% endblock %}
+  {% block after_heading %}{% endblock %}
+
+  {% if folder.custom_content %}
+  <div class="prose prose-base max-w-none leading-tight mb-8 prose-a:text-primary">
+    {{ folder.custom_content | safe }}
+  </div>
+  {% endif %}
+
+  {% if folder.children %}
+  <div class="overflow-x-auto">
+    <table class="table table-zebra">
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Modified</th>
+          <th scope="col">Tags</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for child in folder.children %}
+        <tr class="hover">
+          <td>
+            {% if child.is_folder %}
+            <span class="inline-flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+              </svg>
+              <a href="{{ child.path }}" class="link link-hover link-primary">{{ child.title }}</a>
+            </span>
+            {% else %}
+            <a href="{{ child.path }}" class="link link-hover link-primary">{{ child.title }}</a>
+            {% endif %}
+          </td>
+          <td class="text-base-content/60 text-sm">{{ child.modified | format_datetime }}</td>
+          <td>
+            {% if child.tags %}
+            <div class="flex flex-wrap gap-1">
+              {% for tag in child.tags %}
+              {% set tag_slug = normalize_tag(tag) %}
+              {% if site.tag_index %}
+              <a href="{{ tag_url(tag_slug) }}" class="badge badge-sm badge-soft badge-primary">{{ tag.lstrip('#') }}</a>
+              {% else %}
+              <span class="badge badge-sm badge-soft badge-primary">{{ tag.lstrip('#') }}</span>
+              {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+</article>
+{% endblock %}

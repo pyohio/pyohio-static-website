@@ -1,0 +1,34 @@
+{% if backlinks and backlinks.children %}
+{# Recursive macro for rendering backlink tree nodes #}
+{% macro render_backlink_node(node) %}
+<li>
+  {% if node.is_folder and node.children %}
+  <details open>
+    <summary class="font-medium text-sm">
+      {%- if node.index_path -%}
+      <a href="{{ node.index_path }}" class="hover:underline">{{ node.label }}</a>
+      {%- else -%}
+      {{ node.label }}
+      {%- endif -%}
+    </summary>
+    <ul class="ml-3 mt-1 space-y-1">
+      {% for child in node.children %}
+        {{ render_backlink_node(child) }}
+      {% endfor %}
+    </ul>
+  </details>
+  {% else %}
+  <a href="{{ node.path }}" class="text-sm hover:underline">{{ node.label }}</a>
+  {% endif %}
+</li>
+{% endmacro %}
+
+<div class="backlinks mt-6 pt-6 border-t border-base-content/20">
+  <h2 class="text-lg font-semibold mb-3">Backlinks</h2>
+  <ul class="space-y-2">
+    {% for node in backlinks.children %}
+      {{ render_backlink_node(node) }}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

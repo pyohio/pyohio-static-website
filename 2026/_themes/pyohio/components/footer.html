@@ -1,0 +1,13 @@
+<footer class="footer footer-center p-6 bg-base-200 text-base-content border-t border-base-300">
+    <nav class="flex gap-4">
+        <a href="https://www.linkedin.com/company/pyohio" target="_blank" rel="noopener noreferrer" class="link link-hover">LinkedIn</a>
+        <a href="https://fosstodon.org/@pyohio" target="_blank" rel="noopener noreferrer" class="link link-hover">Mastodon</a>
+        <a href="https://www.facebook.com/pyohio/" target="_blank" rel="noopener noreferrer" class="link link-hover">Facebook</a>
+    </nav>
+    <div class="flex flex-col items-center gap-2 text-xs text-base-content/40">
+        <a href="https://www.netlify.com"><img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" class="h-8" /></a>
+        {% if site.build_info %}
+        <div>Site built with <a href="https://rockgarden.build/" class="link link-hover">Rockgarden</a></div>
+        {% endif %}
+    </div>
+</footer>

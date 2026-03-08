@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block layout_body %}
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Top navbar -->
+    <div class="navbar bg-base-200 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                    {% if site.nav and site.nav.children %}
+                    {% for node in site.nav.children %}
+                    <li>
+                        {% if node.is_folder and node.children %}
+                        <details>
+                            <summary>
+                                {%- if node.index_path -%}
+                                <a href="{{ node.index_path }}">{{ node.label }}</a>
+                                {%- else -%}
+                                {{ node.label }}
+                                {%- endif -%}
+                            </summary>
+                            <ul>
+                                {% for child in node.children %}
+                                <li><a href="{{ child.path }}">{{ child.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                        {% else %}
+                        <a href="{{ node.path }}">{{ node.label }}</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+            <a href="{{ site.base_path }}/" class="btn btn-ghost text-xl font-bold">{{ site.title or 'Home' }}</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                {% if site.nav and site.nav.children %}
+                {% for node in site.nav.children %}
+                <li>
+                    {% if node.is_folder and node.children %}
+                    <details>
+                        <summary>
+                            {%- if node.index_path -%}
+                            <a href="{{ node.index_path }}">{{ node.label }}</a>
+                            {%- else -%}
+                            {{ node.label }}
+                            {%- endif -%}
+                        </summary>
+                        <ul class="bg-base-200 rounded-t-none p-2 z-[1]">
+                            {% for child in node.children %}
+                            <li><a href="{{ child.path }}">{{ child.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </details>
+                    {% else %}
+                    <a href="{{ node.path }}">{{ node.label }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+        <div class="navbar-end">
+            {% include "components/theme_toggle.html" %}
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <main id="main-content" class="flex-1 p-4 lg:p-8">
+        <div class="max-w-4xl mx-auto">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    {% include "components/footer.html" %}
+
+    <script>
+        (function() {
+            document.querySelectorAll('.theme-controller').forEach(function(el) {
+                el.addEventListener('change', function() {
+                    const theme = this.checked ? 'pyohio-dark' : 'pyohio-light';
+                    document.documentElement.setAttribute('data-theme', theme);
+                    localStorage.setItem('theme', theme);
+                    document.querySelectorAll('.theme-controller').forEach(function(toggle) {
+                        toggle.checked = theme === 'pyohio-dark';
+                    });
+                });
+            });
+
+            const theme = document.documentElement.getAttribute('data-theme');
+            document.querySelectorAll('.theme-controller').forEach(function(el) {
+                el.checked = theme === 'pyohio-dark';
+            });
+        })();
+    </script>
+    {% for script in site.user_scripts %}
+    <script src="{{ site.base_path }}/scripts/{{ script }}"></script>
+    {% endfor %}
+{% endblock %}

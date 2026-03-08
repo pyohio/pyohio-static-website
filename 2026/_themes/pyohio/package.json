@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i static-src/input.css -o static/rockgarden.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i static-src/input.css -o static/rockgarden.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "daisyui": "^5.5.19",
+    "tailwindcss": "^4.1.0"
+  }
+}
