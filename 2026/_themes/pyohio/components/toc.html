@@ -1,0 +1,21 @@
+{% if toc %}
+{% macro render_toc_entries(entries) %}
+<ul class="space-y-1">
+  {% for entry in entries %}
+  <li>
+    <a href="#{{ entry.id }}" class="text-sm hover:underline">{{ entry.text }}</a>
+    {% if entry.children %}
+    <div class="ml-3 mt-1">
+      {{ render_toc_entries(entry.children) }}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+<nav class="toc" aria-label="Table of contents">
+  <h2 class="text-lg font-semibold mb-3">Table of Contents</h2>
+  {{ render_toc_entries(toc) }}
+</nav>
+{% endif %}

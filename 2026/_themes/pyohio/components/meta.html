@@ -1,0 +1,51 @@
+{% if page is defined %}
+  {% set _title = page.title %}
+  {% set _slug = page.slug %}
+  {% set _fm = page.frontmatter %}
+{% elif folder is defined %}
+  {% set _title = folder.title %}
+  {% set _slug = folder.slug %}
+  {% set _fm = folder.frontmatter %}
+{% endif %}
+{% if _title is defined %}
+{% set description = _fm.get("description") or site.description %}
+{% set og_image = _fm.get("og_image") or site.og_image %}
+{% set _kw = _fm.get("keywords") %}
+{% if _kw is string %}{% set keywords = _kw %}{% elif _kw %}{% set keywords = _kw | join(", ") %}{% endif %}
+
+{% if description %}
+<meta name="description" content="{{ description }}">
+{% endif %}
+{% if keywords %}
+<meta name="keywords" content="{{ keywords }}">
+{% endif %}
+
+<meta property="og:title" content="{{ _title }}{% if site.title %} - {{ site.title }}{% endif %}">
+<meta property="og:type" content="article">
+{% if description %}
+<meta property="og:description" content="{{ description }}">
+{% endif %}
+{% if og_image %}
+<meta property="og:image" content="{{ og_image }}">
+{% endif %}
+{% if site.base_url %}
+{% set _slug_parts = _slug.split('/') %}
+{% if _slug_parts[-1] == 'index' %}
+  {% set _page_path = ('/' + '/'.join(_slug_parts[:-1]) + '/') if _slug_parts | length > 1 else '/' %}
+{% elif site.clean_urls %}
+  {% set _page_path = '/' + _slug + '/' %}
+{% else %}
+  {% set _page_path = '/' + _slug + '.html' %}
+{% endif %}
+<meta property="og:url" content="{{ site.base_url }}{{ _page_path }}">
+{% endif %}
+
+<meta name="twitter:card" content="{% if og_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:title" content="{{ _title }}{% if site.title %} - {{ site.title }}{% endif %}">
+{% if description %}
+<meta name="twitter:description" content="{{ description }}">
+{% endif %}
+{% if og_image %}
+<meta name="twitter:image" content="{{ og_image }}">
+{% endif %}
+{% endif %}
