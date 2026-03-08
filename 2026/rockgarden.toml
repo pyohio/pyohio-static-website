@@ -8,5 +8,5 @@ base_path = "/next"
 
 [theme]
 name = "pyohio"
-search = false
+search = true
 show_build_info = false

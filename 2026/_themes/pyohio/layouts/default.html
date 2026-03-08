@@ -6,8 +6,8 @@
     <div class="flex flex-col min-h-screen">
     <!-- Top navbar -->
     <div class="bg-base-200 shadow-sm">
-        <div class="max-w-5xl mx-auto navbar px-4 lg:px-8">
-            <div class="navbar-start">
+        <div class="max-w-5xl mx-auto flex items-center justify-between px-4 lg:px-8 py-2">
+            <div class="flex items-center">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,7 +42,7 @@
                     <img src="{{ site.base_path }}/img/logo.svg" alt="" class="h-8 w-8" />
                     {{ site.title or 'Home' }}
                 </a>
-                <div class="hidden lg:flex items-center gap-1 ml-6">
+                <div class="hidden lg:flex items-center gap-1 ml-6 whitespace-nowrap">
                     {% if site.nav and site.nav.children %}
                     {% for node in site.nav.children %}
                         {% if node.is_folder and node.children %}
@@ -69,7 +69,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="navbar-end gap-2">
+            <div class="flex items-center gap-2">
                 {% if site.search %}
                 <button class="btn btn-ghost btn-sm btn-circle" onclick="document.getElementById('search-modal').showModal()" aria-label="Search">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
