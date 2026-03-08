@@ -83,15 +83,18 @@
         (function() {
             var navDetails = document.querySelectorAll('.navbar details');
 
+            // Close other dropdowns when one is opened
             navDetails.forEach(function(det) {
-                det.addEventListener('toggle', function() {
-                    if (!this.open) return;
+                var summary = det.querySelector('summary');
+                if (!summary) return;
+                summary.addEventListener('click', function(e) {
                     navDetails.forEach(function(other) {
                         if (other !== det) other.removeAttribute('open');
                     });
                 });
             });
 
+            // Close all dropdowns when clicking outside
             document.addEventListener('click', function(e) {
                 if (!e.target.closest('.navbar details')) {
                     navDetails.forEach(function(det) {
