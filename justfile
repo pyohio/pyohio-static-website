@@ -12,7 +12,7 @@ build:
 build-prod: clean build
     mkdir -p ./public
     cp -r ./archive/20* ./public
-    cp -r ./2026/_site ./public/2026preview
+    cp -r ./2026/_site ./public/next
     cp -rv ./netlify-static/* ./public/
 
 # Clean build output
