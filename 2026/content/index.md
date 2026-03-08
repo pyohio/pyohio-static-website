@@ -4,7 +4,7 @@ hide_title: true
 ---
 
 <h1 class="text-center text-5xl md:text-left lg:text-7xl mb-4">
-<span class="text-gradient">PyOhio 2026</span>
+<span class="text-primary">PyOhio 2026</span>
 </h1>
 
 <h2 class="text-center text-2xl md:text-left mb-6">The Python Community Conference Based in Ohio</h2>
