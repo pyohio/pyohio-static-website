@@ -1,62 +1,41 @@
 {% extends layout_template %}
 
 {% block content %}
-<div class="flex gap-8">
-    <!-- Main content -->
-    <div class="flex-1 min-w-0">
-        {% block breadcrumbs %}
-        {% if breadcrumbs and breadcrumbs|length > 1 %}
-        {% include "components/breadcrumbs.html" %}
-        {% endif %}
-        {% endblock %}
-        <article class="prose prose-base max-w-none leading-tight prose-headings:scroll-mt-20 prose-a:text-primary prose-code:before:content-none prose-code:after:content-none">
-            {% block before_heading %}{% endblock %}
-            {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1>{{ page.title }}</h1>{% endif %}{% endblock %}
-            {% block after_heading %}
-            {% set tags = page.frontmatter.get('tags', []) %}
-            {% if page.created or page.modified or tags %}
-            <div class="text-sm text-base-content/50 -mt-4 mb-4 flex flex-wrap items-center gap-2">
-                {% if page.created and page.modified %}
-                <span>Created <time datetime="{{ page.created | format_datetime }}">{{ page.created | format_datetime }}</time> · Updated <time datetime="{{ page.modified | format_datetime }}">{{ page.modified | format_datetime }}</time></span>
-                {% elif page.modified %}
-                <time datetime="{{ page.modified | format_datetime }}">{{ page.modified | format_datetime }}</time>
-                {% elif page.created %}
-                <span>Created <time datetime="{{ page.created | format_datetime }}">{{ page.created | format_datetime }}</time></span>
+    {% block breadcrumbs %}
+    {% if breadcrumbs and breadcrumbs|length > 1 %}
+    {% include "components/breadcrumbs.html" %}
+    {% endif %}
+    {% endblock %}
+    <article class="prose prose-lg max-w-none prose-headings:scroll-mt-20 prose-a:text-primary prose-code:before:content-none prose-code:after:content-none">
+        {% block before_heading %}{% endblock %}
+        {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1>{{ page.title }}</h1>{% endif %}{% endblock %}
+        {% block after_heading %}
+        {% set tags = page.frontmatter.get('tags', []) %}
+        {% if page.created or page.modified or tags %}
+        <div class="text-sm text-base-content/50 -mt-4 mb-4 flex flex-wrap items-center gap-2">
+            {% if page.created and page.modified %}
+            <span>Created <time datetime="{{ page.created | format_datetime }}">{{ page.created | format_datetime }}</time> · Updated <time datetime="{{ page.modified | format_datetime }}">{{ page.modified | format_datetime }}</time></span>
+            {% elif page.modified %}
+            <time datetime="{{ page.modified | format_datetime }}">{{ page.modified | format_datetime }}</time>
+            {% elif page.created %}
+            <span>Created <time datetime="{{ page.created | format_datetime }}">{{ page.created | format_datetime }}</time></span>
+            {% endif %}
+            {% if tags %}
+            <div class="flex flex-wrap gap-1">
+                {% for tag in tags %}
+                {% set tag_slug = normalize_tag(tag) %}
+                {% if site.tag_index %}
+                <a href="{{ tag_url(tag_slug) }}" class="badge badge-sm badge-soft badge-primary">{{ tag.lstrip('#') }}</a>
+                {% else %}
+                <span class="badge badge-sm badge-soft badge-primary">{{ tag.lstrip('#') }}</span>
                 {% endif %}
-                {% if tags %}
-                <div class="flex flex-wrap gap-1">
-                    {% for tag in tags %}
-                    {% set tag_slug = normalize_tag(tag) %}
-                    {% if site.tag_index %}
-                    <a href="{{ tag_url(tag_slug) }}" class="badge badge-sm badge-soft badge-primary">{{ tag.lstrip('#') }}</a>
-                    {% else %}
-                    <span class="badge badge-sm badge-soft badge-primary">{{ tag.lstrip('#') }}</span>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-                {% endif %}
+                {% endfor %}
             </div>
             {% endif %}
-            {% endblock %}
-            {% block body %}{{ page.html | safe }}{% endblock %}
-            {% block after_body %}{% endblock %}
-        </article>
-    </div>
-
-    <!-- Right sidebar (desktop only) -->
-    <aside aria-label="Page sidebar" class="hidden xl:block w-64 flex-shrink-0">
-        {% block right_sidebar %}
-        {% block toc %}
-        {% if toc %}
-        {% include "components/toc.html" %}
+        </div>
         {% endif %}
         {% endblock %}
-        {% block backlinks %}
-        {% if backlinks %}
-        {% include "components/backlinks.html" %}
-        {% endif %}
-        {% endblock %}
-        {% endblock %}
-    </aside>
-</div>
+        {% block body %}{{ page.html | safe }}{% endblock %}
+        {% block after_body %}{% endblock %}
+    </article>
 {% endblock %}
