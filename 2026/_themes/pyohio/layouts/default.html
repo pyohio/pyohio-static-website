@@ -229,8 +229,8 @@
                     var index = lowerText.indexOf(lowerQuery, lastIndex);
                     if (index === -1) break;
 
-                    var start = Math.max(0, index - 60);
-                    var end = Math.min(text.length, index + query.length + 120);
+                    var start = Math.max(0, index - 120);
+                    var end = Math.min(text.length, index + query.length + 300);
                     var excerpt = text.substring(start, end);
 
                     if (start > 0) excerpt = '...' + excerpt;
@@ -241,8 +241,8 @@
                 }
 
                 if (excerpts.length === 0) {
-                    var excerpt = text.substring(0, 180);
-                    excerpts.push(excerpt + (text.length > 180 ? '...' : ''));
+                    var excerpt = text.substring(0, 400);
+                    excerpts.push(excerpt + (text.length > 400 ? '...' : ''));
                 }
 
                 return excerpts;
@@ -270,7 +270,7 @@
                     if (!doc) return;
 
                     var resultCard = document.createElement('div');
-                    resultCard.className = 'mb-8 pb-8 border-b border-base-300 last:border-0';
+                    resultCard.className = 'mb-3 pb-3 border-b border-base-300 last:border-0';
 
                     var titleLink = document.createElement('a');
                     titleLink.href = doc.url;
