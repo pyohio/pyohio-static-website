@@ -37,7 +37,10 @@
                     {% endif %}
                 </ul>
             </div>
-            <a href="{{ site.base_path }}/" class="btn btn-ghost text-xl font-bold">{{ site.title or 'Home' }}</a>
+            <a href="{{ site.base_path }}/" class="btn btn-ghost text-xl font-bold gap-2">
+                <img src="{{ site.base_path }}/img/logo.svg" alt="" class="h-8 w-8" />
+                {{ site.title or 'Home' }}
+            </a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
