@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pyohio-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ page.title }}{% if site.title %} - {{ site.title }}{% endif %}{% endblock %}</title>
+    <link rel="icon" href="{{ site.base_path }}/favicon.ico" />
+    {% include "components/meta.html" %}
+    <link href="{{ site.base_path }}/{{ site.assets_dir }}/rockgarden.css{% if site.cache_hash %}?v={{ site.cache_hash }}{% endif %}" rel="stylesheet" type="text/css" />
+    {% if site.search_enabled %}
+    <script src="{{ site.base_path }}/{{ site.assets_dir }}/lunr.min.js{% if site.cache_hash %}?v={{ site.cache_hash }}{% endif %}"></script>
+    {% endif %}
+    {% for style in site.user_styles %}
+    <link rel="stylesheet" href="{{ site.base_path }}/styles/{{ style }}" />
+    {% endfor %}
+    {% if site.feed_enabled %}
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.base_url }}{{ site.base_path }}{{ site.feed_path }}">
+    {% endif %}
+    {% block head %}{% endblock %}
+    <script>
+        (function() {
+            const defaultTheme = 'pyohio-light';
+            const theme = localStorage.getItem('theme') || defaultTheme;
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+<body class="min-h-screen bg-base-100">
+    {% block layout_body %}{% endblock %}
+</body>
+</html>

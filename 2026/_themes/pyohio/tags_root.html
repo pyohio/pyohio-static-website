@@ -1,0 +1,32 @@
+{% extends layout_template %}
+
+{% block title %}Tags{% if site.title %} - {{ site.title }}{% endif %}{% endblock %}
+
+{% block content %}
+<div class="flex gap-8">
+    <div class="flex-1 min-w-0">
+        <nav aria-label="Breadcrumb" class="text-sm breadcrumbs mb-4">
+            <ul>
+                <li><a href="{{ site.base_path }}/">Home</a></li>
+                <li>Tags</li>
+            </ul>
+        </nav>
+        <article>
+            <h1 class="text-3xl font-bold mb-6">Tags</h1>
+            <p class="text-base-content/60 mb-8">{{ tags | length }} {{ "tag" if tags | length == 1 else "tags" }}</p>
+            {% for tag_slug, entries in tags.items() %}
+            <section class="mb-10" id="{{ tag_slug }}">
+                <h2 class="text-xl font-bold mb-3">
+                    <a href="{{ tag_url(tag_slug) }}" class="badge badge-lg badge-soft badge-primary gap-2 -ml-3.5">#{{ tag_slug }} <span class="badge badge-xs badge-primary">{{ entries | length }}</span></a>
+                </h2>
+                <div>
+                    {% for entry in entries %}
+                    {% include "components/page_list_item.html" %}
+                    {% endfor %}
+                </div>
+            </section>
+            {% endfor %}
+        </article>
+    </div>
+</div>
+{% endblock %}

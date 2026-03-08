@@ -1,0 +1,4 @@
+[theme]
+name = "pyohio"
+description = "Custom PyOhio conference theme — Tailwind CSS + DaisyUI"
+rockgarden_version = "0.6.1"

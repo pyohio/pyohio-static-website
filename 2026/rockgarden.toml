@@ -1,9 +1,12 @@
 [site]
 title = "PyOhio 2026"
 description = "PyOhio 2026 — The Python Community Conference Based in Ohio"
+og_image = "https://www.pyohio.org/next/img/og-image.png"
+source = "content"
 #base_url = "https://www.pyohio.org"
 base_path = "/next"
 
 [theme]
-search = false
-build_info = true
+name = "pyohio"
+search = true
+show_build_info = false

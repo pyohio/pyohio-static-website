@@ -1,0 +1,391 @@
+{% extends "base.html" %}
+
+{% block layout_body %}
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <div class="flex flex-col min-h-screen">
+    <!-- Top navbar -->
+    <div id="site-navbar" class="bg-base-200 shadow-sm px-4 lg:px-8">
+        <div class="max-w-5xl mx-auto flex items-center justify-between py-2">
+            <div class="flex items-center">
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                        {% if site.nav and site.nav.children %}
+                        {% for node in site.nav.children %}
+                        <li>
+                            {% if node.is_folder and node.children %}
+                            <details>
+                                <summary>{{ node.label }}</summary>
+                                <ul>
+                                    {% if node.index_path %}
+                                    <li><a href="{{ node.index_path }}">{{ node.label }}</a></li>
+                                    {% endif %}
+                                    {% for child in node.children %}
+                                    <li><a href="{{ child.path }}">{{ child.label }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </details>
+                            {% else %}
+                            <a href="{{ node.path }}">{{ node.label }}</a>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+                <a href="{{ site.base_path }}/" class="flex items-center gap-2 text-xl font-bold hover:opacity-80 transition-opacity">
+                    <img src="{{ site.base_path }}/img/logo.svg" alt="" class="h-8 w-8" />
+                    {{ site.title or 'Home' }}
+                </a>
+                <div class="hidden lg:flex items-center gap-1 ml-6 whitespace-nowrap">
+                    {% if site.nav and site.nav.children %}
+                    {% for node in site.nav.children %}
+                        {% if node.is_folder and node.children %}
+                        <div class="nav-dropdown relative">
+                            <button class="nav-dropdown-btn flex items-center gap-1 rounded-field px-3 py-1.5 hover:bg-base-content/10 transition-colors">
+                                {{ node.label }}
+                                <svg class="nav-dropdown-arrow w-3 h-3 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <ul class="nav-dropdown-menu hidden absolute top-full mt-2 z-50 min-w-48 p-2 shadow-lg bg-base-200 rounded-box">
+                                {% if node.index_path %}
+                                <li><a href="{{ node.index_path }}" class="block px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a></li>
+                                {% endif %}
+                                {% for child in node.children %}
+                                <li><a href="{{ child.path }}" class="block px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ child.label }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% else %}
+                        <a href="{{ node.path }}" class="px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                {% if site.search_enabled %}
+                <div class="w-36 lg:w-48">
+                    {% include "components/search.html" %}
+                </div>
+                {% endif %}
+                {% include "components/theme_toggle.html" %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <main id="main-content" class="flex-1 p-4 lg:p-8">
+        <div class="max-w-5xl mx-auto">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    {% include "components/footer.html" %}
+    </div>
+
+    <!-- Search results overlay -->
+    {% if site.search_enabled %}
+    <div id="search-overlay" class="hidden fixed left-0 right-0 bottom-0 z-50" style="top: var(--navbar-height, 3.5rem)">
+        <div class="search-backdrop absolute inset-0 bg-base-300/80 backdrop-blur-sm"></div>
+        <div class="search-results-panel relative max-w-5xl mx-auto mt-4 mx-4 lg:mx-auto p-4 bg-base-100 rounded-lg shadow-2xl max-h-[calc(100vh-6rem)] overflow-hidden">
+            <div class="search-count px-6 py-3 text-sm text-base-content/60 border-b border-base-300"></div>
+            <div class="search-results p-6 overflow-y-auto max-h-[calc(100vh-10rem)]"></div>
+        </div>
+    </div>
+    {% endif %}
+
+    <script>
+        (function() {
+            var navbar = document.getElementById('site-navbar');
+            if (navbar) {
+                document.documentElement.style.setProperty('--navbar-height', navbar.offsetHeight + 'px');
+                window.addEventListener('resize', function() {
+                    document.documentElement.style.setProperty('--navbar-height', navbar.offsetHeight + 'px');
+                });
+            }
+        })();
+
+        (function() {
+            var dropdowns = document.querySelectorAll('.nav-dropdown');
+
+            dropdowns.forEach(function(dropdown) {
+                var btn = dropdown.querySelector('.nav-dropdown-btn');
+                var menu = dropdown.querySelector('.nav-dropdown-menu');
+                var arrow = dropdown.querySelector('.nav-dropdown-arrow');
+
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    var isOpen = !menu.classList.contains('hidden');
+
+                    // Close all dropdowns first
+                    dropdowns.forEach(function(other) {
+                        other.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                        other.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
+                    });
+
+                    // Toggle this one
+                    if (!isOpen) {
+                        menu.classList.remove('hidden');
+                        arrow.classList.add('rotate-180');
+                    }
+                });
+            });
+
+            // Close all on click outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-dropdown')) {
+                    dropdowns.forEach(function(dropdown) {
+                        dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                        dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
+                    });
+                }
+            });
+
+            // Close on Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    dropdowns.forEach(function(dropdown) {
+                        dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                        dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
+                    });
+                }
+            });
+        })();
+
+        (function() {
+            document.querySelectorAll('.theme-controller').forEach(function(el) {
+                el.addEventListener('change', function() {
+                    var theme = this.checked ? 'pyohio-dark' : 'pyohio-light';
+                    document.documentElement.setAttribute('data-theme', theme);
+                    localStorage.setItem('theme', theme);
+                    document.querySelectorAll('.theme-controller').forEach(function(toggle) {
+                        toggle.checked = theme === 'pyohio-dark';
+                    });
+                });
+            });
+
+            var theme = document.documentElement.getAttribute('data-theme');
+            document.querySelectorAll('.theme-controller').forEach(function(el) {
+                el.checked = theme === 'pyohio-dark';
+            });
+        })();
+
+        {% if site.search_enabled %}
+        (function() {
+            if (!window.lunr) return;
+
+            var searchContainers = document.querySelectorAll('.search-container');
+            if (searchContainers.length === 0) return;
+
+            var searchIndex = null;
+            var documents = {};
+
+            fetch('{{ site.base_path }}/search-index.json')
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    data.forEach(function(doc) { documents[doc.url] = doc; });
+
+                    var shortStopWords = lunr.generateStopWordFilter([
+                        'a', 'an', 'and', 'are', 'as', 'at', 'be', 'but', 'by',
+                        'for', 'if', 'in', 'into', 'is', 'it', 'no', 'not', 'of',
+                        'on', 'or', 'the', 'to', 'was', 'with'
+                    ]);
+
+                    searchIndex = lunr(function() {
+                        this.pipeline.remove(lunr.stopWordFilter);
+                        this.pipeline.add(shortStopWords);
+                        this.ref('url');
+                        this.field('title', { boost: 10 });
+                        this.field('tags', { boost: 5 });
+                        this.field('content');
+
+                        data.forEach(function(doc) {
+                            this.add({
+                                url: doc.url,
+                                title: doc.title,
+                                tags: doc.tags ? doc.tags.join(' ') : '',
+                                content: doc.content || ''
+                            });
+                        }.bind(this));
+                    });
+                })
+                .catch(function(err) { console.error('Failed to load search index:', err); });
+
+            function highlightMatches(text, query) {
+                if (!text || !query) return text;
+                var escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                var regex = new RegExp('(\\b' + escapedQuery + '\\w*)', 'gi');
+                return text.replace(regex, '<mark>$1</mark>');
+            }
+
+            function getExcerpts(text, query, maxExcerpts) {
+                maxExcerpts = maxExcerpts || 3;
+                if (!text) return [];
+                var lowerText = text.toLowerCase();
+                var lowerQuery = query.toLowerCase();
+                var excerpts = [];
+                var lastIndex = 0;
+
+                while (excerpts.length < maxExcerpts && lastIndex < text.length) {
+                    var index = lowerText.indexOf(lowerQuery, lastIndex);
+                    if (index === -1) break;
+
+                    var start = Math.max(0, index - 120);
+                    var end = Math.min(text.length, index + query.length + 300);
+                    var excerpt = text.substring(start, end);
+
+                    if (start > 0) excerpt = '...' + excerpt;
+                    if (end < text.length) excerpt = excerpt + '...';
+
+                    excerpts.push(excerpt);
+                    lastIndex = end;
+                }
+
+                if (excerpts.length === 0) {
+                    var excerpt = text.substring(0, 400);
+                    excerpts.push(excerpt + (text.length > 400 ? '...' : ''));
+                }
+
+                return excerpts;
+            }
+
+            function renderResults(results, searchResults, searchCount, query) {
+                if (searchCount) {
+                    searchCount.textContent = results.length === 0 ?
+                        'No results found' :
+                        results.length + ' matching ' + (results.length === 1 ? 'page' : 'pages');
+                }
+
+                searchResults.textContent = '';
+
+                if (results.length === 0) {
+                    var noResultsDiv = document.createElement('div');
+                    noResultsDiv.className = 'text-center py-12 text-base-content/60';
+                    noResultsDiv.textContent = 'No pages found';
+                    searchResults.appendChild(noResultsDiv);
+                    return;
+                }
+
+                results.forEach(function(result) {
+                    var doc = documents[result.ref];
+                    if (!doc) return;
+
+                    var resultCard = document.createElement('div');
+                    resultCard.className = 'mb-3 pb-3 border-b border-base-300 last:border-0';
+
+                    var titleLink = document.createElement('a');
+                    titleLink.href = doc.url;
+                    titleLink.className = 'flex items-start gap-3 group mb-3';
+
+                    var titleText = document.createElement('div');
+                    titleText.className = 'text-lg font-semibold group-hover:text-primary transition-colors';
+                    titleText.textContent = doc.title;
+                    titleLink.appendChild(titleText);
+
+                    resultCard.appendChild(titleLink);
+
+                    if (doc.content) {
+                        var excerpts = getExcerpts(doc.content, query, 2);
+                        excerpts.forEach(function(excerpt) {
+                            var excerptDiv = document.createElement('div');
+                            excerptDiv.className = 'text-sm text-base-content/80 leading-relaxed mb-2';
+                            excerptDiv.innerHTML = highlightMatches(excerpt, query);
+                            resultCard.appendChild(excerptDiv);
+                        });
+                    }
+
+                    searchResults.appendChild(resultCard);
+                });
+            }
+
+            var searchOverlay = document.getElementById('search-overlay');
+            var searchBackdrop = searchOverlay ? searchOverlay.querySelector('.search-backdrop') : null;
+            var searchResults = searchOverlay ? searchOverlay.querySelector('.search-results') : null;
+            var searchCount = searchOverlay ? searchOverlay.querySelector('.search-count') : null;
+
+            if (!searchOverlay || !searchResults) return;
+
+            var activeSearchInput = null;
+
+            searchContainers.forEach(function(container) {
+                var searchInput = container.querySelector('.search-input');
+                if (!searchInput) return;
+
+                searchInput.addEventListener('input', function(e) {
+                    activeSearchInput = searchInput;
+                    var query = e.target.value.trim();
+
+                    if (!query || query.length < 2) {
+                        searchOverlay.classList.add('hidden');
+                        searchResults.textContent = '';
+                        if (searchCount) searchCount.textContent = '';
+                        return;
+                    }
+
+                    if (!searchIndex) return;
+
+                    searchOverlay.classList.remove('hidden');
+
+                    var results = [];
+                    try {
+                        var exactResults = searchIndex.search(query);
+                        var wildcardResults = searchIndex.search(query + '*');
+                        var fuzzyResults = searchIndex.search(query + '~1');
+
+                        var seen = {};
+                        [exactResults, wildcardResults, fuzzyResults].forEach(function(resultSet) {
+                            resultSet.forEach(function(result) {
+                                if (!seen[result.ref]) {
+                                    seen[result.ref] = true;
+                                    results.push(result);
+                                }
+                            });
+                        });
+
+                        results = results.slice(0, 20);
+                    } catch (e) {
+                        results = searchIndex.search(query + '*').slice(0, 20);
+                    }
+
+                    renderResults(results, searchResults, searchCount, query);
+                });
+
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        searchOverlay.classList.add('hidden');
+                        searchInput.blur();
+                    }
+                });
+            });
+
+            if (searchBackdrop) {
+                searchBackdrop.addEventListener('click', function() {
+                    searchOverlay.classList.add('hidden');
+                    if (activeSearchInput) {
+                        activeSearchInput.blur();
+                    }
+                });
+            }
+
+            document.addEventListener('click', function(e) {
+                var clickedSearchContainer = e.target.closest('.search-container');
+                var clickedOverlay = e.target.closest('#search-overlay');
+
+                if (!clickedSearchContainer && !clickedOverlay) {
+                    searchOverlay.classList.add('hidden');
+                }
+            });
+        })();
+        {% endif %}
+    </script>
+    {% for script in site.user_scripts %}
+    <script src="{{ site.base_path }}/scripts/{{ script }}"></script>
+    {% endfor %}
+{% endblock %}
