@@ -8,8 +8,8 @@
     <div class="bg-base-200 shadow-sm">
         <div class="max-w-5xl mx-auto flex items-center justify-between px-4 lg:px-8 py-2">
             <div class="flex items-center">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -38,7 +38,7 @@
                         {% endif %}
                     </ul>
                 </div>
-                <a href="{{ site.base_path }}/" class="btn btn-ghost text-xl font-bold gap-2 pl-0">
+                <a href="{{ site.base_path }}/" class="flex items-center gap-2 text-xl font-bold hover:opacity-80 transition-opacity">
                     <img src="{{ site.base_path }}/img/logo.svg" alt="" class="h-8 w-8" />
                     {{ site.title or 'Home' }}
                 </a>
@@ -71,9 +71,9 @@
             </div>
             <div class="flex items-center gap-2">
                 {% if site.search_enabled %}
-                <button class="btn btn-ghost btn-sm btn-circle" onclick="document.getElementById('search-modal').showModal()" aria-label="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </button>
+                <div class="hidden lg:block w-48">
+                    {% include "components/search.html" %}
+                </div>
                 {% endif %}
                 {% include "components/theme_toggle.html" %}
             </div>
@@ -89,6 +89,17 @@
 
     {% include "components/footer.html" %}
     </div>
+
+    <!-- Search results overlay -->
+    {% if site.search_enabled %}
+    <div id="search-overlay" class="hidden fixed inset-0 z-50">
+        <div class="search-backdrop absolute inset-0 bg-base-300/80 backdrop-blur-sm"></div>
+        <div class="search-results-panel relative max-w-5xl mx-auto mt-4 p-4 bg-base-100 rounded-lg shadow-2xl max-h-[calc(100vh-2rem)] overflow-hidden">
+            <div class="search-count px-6 py-3 text-sm text-base-content/60 border-b border-base-300"></div>
+            <div class="search-results p-6 overflow-y-auto max-h-[calc(100vh-8rem)]"></div>
+        </div>
+    </div>
+    {% endif %}
 
     <script>
         (function() {
@@ -155,6 +166,206 @@
                 el.checked = theme === 'pyohio-dark';
             });
         })();
+
+        {% if site.search_enabled %}
+        (function() {
+            if (!window.lunr) return;
+
+            var searchContainers = document.querySelectorAll('.search-container');
+            if (searchContainers.length === 0) return;
+
+            var searchIndex = null;
+            var documents = {};
+
+            fetch('{{ site.base_path }}/search-index.json')
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    data.forEach(function(doc) { documents[doc.url] = doc; });
+
+                    searchIndex = lunr(function() {
+                        this.ref('url');
+                        this.field('title', { boost: 10 });
+                        this.field('tags', { boost: 5 });
+                        this.field('content');
+
+                        data.forEach(function(doc) {
+                            this.add({
+                                url: doc.url,
+                                title: doc.title,
+                                tags: doc.tags ? doc.tags.join(' ') : '',
+                                content: doc.content || ''
+                            });
+                        }.bind(this));
+                    });
+                })
+                .catch(function(err) { console.error('Failed to load search index:', err); });
+
+            function highlightMatches(text, query) {
+                if (!text || !query) return text;
+                var escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                var regex = new RegExp('(\\b' + escapedQuery + '\\w*)', 'gi');
+                return text.replace(regex, '<mark>$1</mark>');
+            }
+
+            function getExcerpts(text, query, maxExcerpts) {
+                maxExcerpts = maxExcerpts || 3;
+                if (!text) return [];
+                var lowerText = text.toLowerCase();
+                var lowerQuery = query.toLowerCase();
+                var excerpts = [];
+                var lastIndex = 0;
+
+                while (excerpts.length < maxExcerpts && lastIndex < text.length) {
+                    var index = lowerText.indexOf(lowerQuery, lastIndex);
+                    if (index === -1) break;
+
+                    var start = Math.max(0, index - 60);
+                    var end = Math.min(text.length, index + query.length + 120);
+                    var excerpt = text.substring(start, end);
+
+                    if (start > 0) excerpt = '...' + excerpt;
+                    if (end < text.length) excerpt = excerpt + '...';
+
+                    excerpts.push(excerpt);
+                    lastIndex = end;
+                }
+
+                if (excerpts.length === 0) {
+                    var excerpt = text.substring(0, 180);
+                    excerpts.push(excerpt + (text.length > 180 ? '...' : ''));
+                }
+
+                return excerpts;
+            }
+
+            function renderResults(results, searchResults, searchCount, query) {
+                if (searchCount) {
+                    searchCount.textContent = results.length === 0 ?
+                        'No results found' :
+                        results.length + ' matching ' + (results.length === 1 ? 'page' : 'pages');
+                }
+
+                searchResults.textContent = '';
+
+                if (results.length === 0) {
+                    var noResultsDiv = document.createElement('div');
+                    noResultsDiv.className = 'text-center py-12 text-base-content/60';
+                    noResultsDiv.textContent = 'No pages found';
+                    searchResults.appendChild(noResultsDiv);
+                    return;
+                }
+
+                results.forEach(function(result) {
+                    var doc = documents[result.ref];
+                    if (!doc) return;
+
+                    var resultCard = document.createElement('div');
+                    resultCard.className = 'mb-8 pb-8 border-b border-base-300 last:border-0';
+
+                    var titleLink = document.createElement('a');
+                    titleLink.href = doc.url;
+                    titleLink.className = 'flex items-start gap-3 group mb-3';
+
+                    var titleText = document.createElement('div');
+                    titleText.className = 'text-lg font-semibold group-hover:text-primary transition-colors';
+                    titleText.textContent = doc.title;
+                    titleLink.appendChild(titleText);
+
+                    resultCard.appendChild(titleLink);
+
+                    if (doc.content) {
+                        var excerpts = getExcerpts(doc.content, query, 2);
+                        excerpts.forEach(function(excerpt) {
+                            var excerptDiv = document.createElement('div');
+                            excerptDiv.className = 'text-sm text-base-content/80 leading-relaxed mb-2';
+                            excerptDiv.innerHTML = highlightMatches(excerpt, query);
+                            resultCard.appendChild(excerptDiv);
+                        });
+                    }
+
+                    searchResults.appendChild(resultCard);
+                });
+            }
+
+            var searchOverlay = document.getElementById('search-overlay');
+            var searchBackdrop = searchOverlay ? searchOverlay.querySelector('.search-backdrop') : null;
+            var searchResults = searchOverlay ? searchOverlay.querySelector('.search-results') : null;
+            var searchCount = searchOverlay ? searchOverlay.querySelector('.search-count') : null;
+
+            if (!searchOverlay || !searchResults) return;
+
+            var activeSearchInput = null;
+
+            searchContainers.forEach(function(container) {
+                var searchInput = container.querySelector('.search-input');
+                if (!searchInput) return;
+
+                searchInput.addEventListener('input', function(e) {
+                    activeSearchInput = searchInput;
+                    var query = e.target.value.trim();
+
+                    if (!query || query.length < 2) {
+                        searchOverlay.classList.add('hidden');
+                        searchResults.textContent = '';
+                        if (searchCount) searchCount.textContent = '';
+                        return;
+                    }
+
+                    if (!searchIndex) return;
+
+                    searchOverlay.classList.remove('hidden');
+
+                    var results = [];
+                    try {
+                        var exactResults = searchIndex.search(query);
+                        var wildcardResults = searchIndex.search(query + '*');
+                        var fuzzyResults = searchIndex.search(query + '~1');
+
+                        var seen = {};
+                        [exactResults, wildcardResults, fuzzyResults].forEach(function(resultSet) {
+                            resultSet.forEach(function(result) {
+                                if (!seen[result.ref]) {
+                                    seen[result.ref] = true;
+                                    results.push(result);
+                                }
+                            });
+                        });
+
+                        results = results.slice(0, 20);
+                    } catch (e) {
+                        results = searchIndex.search(query + '*').slice(0, 20);
+                    }
+
+                    renderResults(results, searchResults, searchCount, query);
+                });
+
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        searchOverlay.classList.add('hidden');
+                        searchInput.blur();
+                    }
+                });
+            });
+
+            if (searchBackdrop) {
+                searchBackdrop.addEventListener('click', function() {
+                    searchOverlay.classList.add('hidden');
+                    if (activeSearchInput) {
+                        activeSearchInput.blur();
+                    }
+                });
+            }
+
+            document.addEventListener('click', function(e) {
+                var clickedSearchContainer = e.target.closest('.search-container');
+                var clickedOverlay = e.target.closest('#search-overlay');
+
+                if (!clickedSearchContainer && !clickedOverlay) {
+                    searchOverlay.classList.add('hidden');
+                }
+            });
+        })();
+        {% endif %}
     </script>
     {% for script in site.user_scripts %}
     <script src="{{ site.base_path }}/scripts/{{ script }}"></script>
