@@ -37,7 +37,7 @@ The 2026 site uses a custom theme at `2026/_themes/pyohio/` built with Tailwind 
 To modify the theme:
 
 1. Edit CSS in `2026/_themes/pyohio/static-src/input.css`
-2. Edit templates in `2026/_themes/pyohio/templates/` (Jinja2)
+2. Edit templates in `2026/_themes/pyohio/` (Jinja2)
 3. Rebuild CSS: `just theme-css`
 4. Rebuild site: `just build` or `just dev`
 
@@ -46,7 +46,7 @@ Theme CSS must be rebuilt after changing templates (Tailwind scans them for clas
 ## Project Structure
 
 - `/2026/` — Current year's site (Rockgarden)
-  - `*.md` — Content pages (Markdown + YAML frontmatter)
+  - `content/` — Markdown content pages (YAML frontmatter)
   - `_themes/pyohio/` — Custom theme (templates, CSS, static assets)
   - `rockgarden.toml` — Site configuration
 - `/2025/` — Previous year's site (Astro, kept as reference)
