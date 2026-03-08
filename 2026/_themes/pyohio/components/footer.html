@@ -1,9 +1,9 @@
 <footer class="bg-base-200 text-base-content border-t border-base-300">
     <div class="max-w-5xl mx-auto px-4 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <nav class="flex gap-4">
-            <a href="https://www.linkedin.com/company/pyohio" target="_blank" rel="noopener noreferrer" class="link link-hover">LinkedIn</a>
-            <a href="https://fosstodon.org/@pyohio" target="_blank" rel="noopener noreferrer" class="link link-hover">Mastodon</a>
-            <a href="https://www.facebook.com/pyohio/" target="_blank" rel="noopener noreferrer" class="link link-hover">Facebook</a>
+            <a href="https://www.linkedin.com/company/pyohio" target="_blank" rel="noopener noreferrer" class="link link-hover flex items-center gap-1.5"><span class="w-4 h-4">{{ icon("linkedin") }}</span>LinkedIn</a>
+            <a href="https://fosstodon.org/@pyohio" target="_blank" rel="noopener noreferrer" class="link link-hover flex items-center gap-1.5"><span class="w-4 h-4">{{ icon("globe") }}</span>Mastodon</a>
+            <a href="https://www.facebook.com/pyohio/" target="_blank" rel="noopener noreferrer" class="link link-hover flex items-center gap-1.5"><span class="w-4 h-4">{{ icon("facebook") }}</span>Facebook</a>
         </nav>
         <div class="flex items-center gap-3 text-xs text-base-content/40">
             {% if site.build_info %}

@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "pip install 'rockgarden>=0.6.1' && curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /opt/build/repo/bin && PATH=\"$PATH:/opt/build/repo/bin\" just build-prod"
+  command = "pip install 'rockgarden>=0.6.2' && curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /opt/build/repo/bin && PATH=\"$PATH:/opt/build/repo/bin\" just build-prod"
 
 [build.environment]
   PYTHON_VERSION = "3.13"
