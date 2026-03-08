@@ -75,6 +75,21 @@ h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+/* Text gradient for hero heading */
+.text-gradient {
+    background: linear-gradient(315deg, var(--color-pyohio-primary-200) 25%, var(--color-pyohio-secondary-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="pyohio-dark"] .text-gradient {
+    background: linear-gradient(315deg, var(--color-pyohio-primary-200) 25%, var(--color-pyohio-secondary-300));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Skip link */
 .skip-link {
     position: absolute;

@@ -11,7 +11,7 @@
         {% endblock %}
         <article class="prose prose-base max-w-none leading-tight prose-headings:scroll-mt-20 prose-a:text-primary prose-code:before:content-none prose-code:after:content-none">
             {% block before_heading %}{% endblock %}
-            {% block heading %}<h1>{{ page.title }}</h1>{% endblock %}
+            {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1>{{ page.title }}</h1>{% endif %}{% endblock %}
             {% block after_heading %}
             {% set tags = page.frontmatter.get('tags', []) %}
             {% if page.created or page.modified or tags %}

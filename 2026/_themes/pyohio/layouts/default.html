@@ -3,6 +3,7 @@
 {% block layout_body %}
     <a href="#main-content" class="skip-link">Skip to content</a>
 
+    <div class="flex flex-col min-h-screen">
     <!-- Top navbar -->
     <div class="navbar bg-base-200 shadow-sm">
         <div class="navbar-start">
@@ -18,14 +19,11 @@
                     <li>
                         {% if node.is_folder and node.children %}
                         <details>
-                            <summary>
-                                {%- if node.index_path -%}
-                                <a href="{{ node.index_path }}">{{ node.label }}</a>
-                                {%- else -%}
-                                {{ node.label }}
-                                {%- endif -%}
-                            </summary>
+                            <summary>{{ node.label }}</summary>
                             <ul>
+                                {% if node.index_path %}
+                                <li><a href="{{ node.index_path }}">{{ node.label }}</a></li>
+                                {% endif %}
                                 {% for child in node.children %}
                                 <li><a href="{{ child.path }}">{{ child.label }}</a></li>
                                 {% endfor %}
@@ -48,14 +46,11 @@
                 <li>
                     {% if node.is_folder and node.children %}
                     <details>
-                        <summary>
-                            {%- if node.index_path -%}
-                            <a href="{{ node.index_path }}">{{ node.label }}</a>
-                            {%- else -%}
-                            {{ node.label }}
-                            {%- endif -%}
-                        </summary>
+                        <summary>{{ node.label }}</summary>
                         <ul class="bg-base-200 rounded-t-none p-2 z-[1]">
+                            {% if node.index_path %}
+                            <li><a href="{{ node.index_path }}">{{ node.label }}</a></li>
+                            {% endif %}
                             {% for child in node.children %}
                             <li><a href="{{ child.path }}">{{ child.label }}</a></li>
                             {% endfor %}
@@ -82,6 +77,7 @@
     </main>
 
     {% include "components/footer.html" %}
+    </div>
 
     <script>
         (function() {
