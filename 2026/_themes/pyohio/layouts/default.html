@@ -45,17 +45,22 @@
                 {% for node in site.nav.children %}
                 <li>
                     {% if node.is_folder and node.children %}
-                    <details>
-                        <summary>{{ node.label }}</summary>
-                        <ul class="bg-base-200 rounded-t-none p-2 z-[1]">
+                    <div class="nav-dropdown relative">
+                        <button class="nav-dropdown-btn flex items-center gap-1 rounded-field px-3 py-1.5 hover:bg-base-content/10 transition-colors">
+                            {{ node.label }}
+                            <svg class="nav-dropdown-arrow w-3 h-3 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <ul class="nav-dropdown-menu hidden absolute top-full mt-2 z-50 min-w-48 p-2 shadow-lg bg-base-200 rounded-box">
                             {% if node.index_path %}
-                            <li><a href="{{ node.index_path }}">{{ node.label }}</a></li>
+                            <li><a href="{{ node.index_path }}" class="block px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a></li>
                             {% endif %}
                             {% for child in node.children %}
-                            <li><a href="{{ child.path }}">{{ child.label }}</a></li>
+                            <li><a href="{{ child.path }}" class="block px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ child.label }}</a></li>
                             {% endfor %}
                         </ul>
-                    </details>
+                    </div>
                     {% else %}
                     <a href="{{ node.path }}">{{ node.label }}</a>
                     {% endif %}
@@ -81,24 +86,47 @@
 
     <script>
         (function() {
-            var navDetails = document.querySelectorAll('.navbar details');
+            var dropdowns = document.querySelectorAll('.nav-dropdown');
 
-            // Close other dropdowns when one is opened
-            navDetails.forEach(function(det) {
-                var summary = det.querySelector('summary');
-                if (!summary) return;
-                summary.addEventListener('click', function(e) {
-                    navDetails.forEach(function(other) {
-                        if (other !== det) other.removeAttribute('open');
+            dropdowns.forEach(function(dropdown) {
+                var btn = dropdown.querySelector('.nav-dropdown-btn');
+                var menu = dropdown.querySelector('.nav-dropdown-menu');
+                var arrow = dropdown.querySelector('.nav-dropdown-arrow');
+
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    var isOpen = !menu.classList.contains('hidden');
+
+                    // Close all dropdowns first
+                    dropdowns.forEach(function(other) {
+                        other.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                        other.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
                     });
+
+                    // Toggle this one
+                    if (!isOpen) {
+                        menu.classList.remove('hidden');
+                        arrow.classList.add('rotate-180');
+                    }
                 });
             });
 
-            // Close all dropdowns when clicking outside
+            // Close all on click outside
             document.addEventListener('click', function(e) {
-                if (!e.target.closest('.navbar details')) {
-                    navDetails.forEach(function(det) {
-                        det.removeAttribute('open');
+                if (!e.target.closest('.nav-dropdown')) {
+                    dropdowns.forEach(function(dropdown) {
+                        dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                        dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
+                    });
+                }
+            });
+
+            // Close on Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    dropdowns.forEach(function(dropdown) {
+                        dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                        dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
                     });
                 }
             });
@@ -107,7 +135,7 @@
         (function() {
             document.querySelectorAll('.theme-controller').forEach(function(el) {
                 el.addEventListener('change', function() {
-                    const theme = this.checked ? 'pyohio-dark' : 'pyohio-light';
+                    var theme = this.checked ? 'pyohio-dark' : 'pyohio-light';
                     document.documentElement.setAttribute('data-theme', theme);
                     localStorage.setItem('theme', theme);
                     document.querySelectorAll('.theme-controller').forEach(function(toggle) {
@@ -116,7 +144,7 @@
                 });
             });
 
-            const theme = document.documentElement.getAttribute('data-theme');
+            var theme = document.documentElement.getAttribute('data-theme');
             document.querySelectorAll('.theme-controller').forEach(function(el) {
                 el.checked = theme === 'pyohio-dark';
             });
