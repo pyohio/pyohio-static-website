@@ -43,10 +43,9 @@
             </a>
         </div>
         <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <div class="flex items-center gap-1">
                 {% if site.nav and site.nav.children %}
                 {% for node in site.nav.children %}
-                <li>
                     {% if node.is_folder and node.children %}
                     <div class="nav-dropdown relative">
                         <button class="nav-dropdown-btn flex items-center gap-1 rounded-field px-3 py-1.5 hover:bg-base-content/10 transition-colors">
@@ -65,12 +64,11 @@
                         </ul>
                     </div>
                     {% else %}
-                    <a href="{{ node.path }}">{{ node.label }}</a>
+                    <a href="{{ node.path }}" class="px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a>
                     {% endif %}
-                </li>
                 {% endfor %}
                 {% endif %}
-            </ul>
+            </div>
         </div>
         <div class="navbar-end">
             {% include "components/theme_toggle.html" %}
