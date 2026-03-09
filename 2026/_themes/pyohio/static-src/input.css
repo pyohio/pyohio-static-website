@@ -20,10 +20,10 @@
   --color-base-content: oklch(25% 0.02 277);
   --color-primary: oklch(38% 0.118 297);
   --color-primary-content: oklch(98% 0.005 297);
-  --color-secondary: oklch(29% 0.073 252);
-  --color-secondary-content: oklch(98% 0.005 252);
-  --color-accent: oklch(61% 0.158 138);
-  --color-accent-content: oklch(98% 0.005 138);
+  --color-secondary: oklch(61% 0.158 138);
+  --color-secondary-content: oklch(98% 0.005 138);
+  --color-accent: oklch(29% 0.073 252);
+  --color-accent-content: oklch(98% 0.005 252);
   --color-neutral: oklch(42% 0.018 277);
   --color-neutral-content: oklch(95% 0.003 277);
   --color-info: oklch(55% 0.12 252);
@@ -42,10 +42,10 @@
   --color-base-content: oklch(90% 0.003 277);
   --color-primary: oklch(62% 0.118 297);
   --color-primary-content: oklch(15% 0.02 297);
-  --color-secondary: oklch(60% 0.073 252);
-  --color-secondary-content: oklch(15% 0.015 252);
-  --color-accent: oklch(68% 0.158 138);
-  --color-accent-content: oklch(15% 0.02 138);
+  --color-secondary: oklch(68% 0.158 138);
+  --color-secondary-content: oklch(15% 0.02 138);
+  --color-accent: oklch(60% 0.073 252);
+  --color-accent-content: oklch(15% 0.015 252);
   --color-neutral: oklch(70% 0.01 277);
   --color-neutral-content: oklch(17% 0.009 277);
   --color-info: oklch(65% 0.12 252);
@@ -136,7 +136,7 @@ h3, h4, h5, h6 {
     z-index: 0;
     inset: 1rem -0.85rem -0.85rem 1rem;
     border-radius: 1rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent);
 }
 
 .feature-card-icon {
@@ -144,7 +144,7 @@ h3, h4, h5, h6 {
     align-items: center;
     width: 2rem;
     height: 2rem;
-    color: var(--color-accent);
+    color: var(--color-secondary);
 }
 
 .feature-card-icon svg {

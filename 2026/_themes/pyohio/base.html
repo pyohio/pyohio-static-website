@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ page.title }}{% if site.title %} - {{ site.title }}{% endif %}{% endblock %}</title>
-    <link rel="icon" href="{{ site.base_path }}/favicon.ico" />
+    <link rel="icon" type="image/png" href="{{ site.base_path }}/img/pyohio-square-primary.png" />
     {% include "components/meta.html" %}
     <link href="{{ site.base_path }}/{{ site.assets_dir }}/rockgarden.css{% if site.cache_hash %}?v={{ site.cache_hash }}{% endif %}" rel="stylesheet" type="text/css" />
     {% if site.search_enabled %}
