@@ -127,7 +127,7 @@ h3, h4, h5, h6 {
     z-index: 1;
     inset: 0;
     box-shadow: 0 0 0 6px var(--color-base-100);
-    border: 3px solid var(--color-neutral);
+    border: 3px solid var(--color-primary);
     border-radius: 1rem;
     background-color: var(--color-base-100);
 }
@@ -144,7 +144,7 @@ h3, h4, h5, h6 {
     align-items: center;
     width: 2rem;
     height: 2rem;
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 .feature-card-icon svg {
