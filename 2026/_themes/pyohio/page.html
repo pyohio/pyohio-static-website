@@ -6,7 +6,7 @@
     {% include "components/breadcrumbs.html" %}
     {% endif %}
     {% endblock %}
-    <article class="prose prose-lg max-w-none prose-headings:scroll-mt-20 prose-a:text-primary prose-code:before:content-none prose-code:after:content-none">
+    <article class="prose prose-lg max-w-none prose-headings:scroll-mt-20 prose-headings:text-primary prose-a:text-primary prose-code:before:content-none prose-code:after:content-none">
         {% block before_heading %}{% endblock %}
         {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1>{{ page.title }}</h1>{% endif %}{% endblock %}
         {% block after_heading %}

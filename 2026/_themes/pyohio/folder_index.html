@@ -10,11 +10,11 @@
 {% endblock %}
 <article>
   {% block before_heading %}{% endblock %}
-  {% block heading %}<h1 class="text-3xl font-bold mb-6">{{ folder.title }}</h1>{% endblock %}
+  {% block heading %}<h1 class="text-3xl font-bold mb-6 text-primary">{{ folder.title }}</h1>{% endblock %}
   {% block after_heading %}{% endblock %}
 
   {% if folder.custom_content %}
-  <div class="prose prose-base max-w-none leading-tight mb-8 prose-a:text-primary">
+  <div class="prose prose-base max-w-none leading-tight mb-8 prose-headings:text-primary prose-a:text-primary">
     {{ folder.custom_content | safe }}
   </div>
   {% endif %}
