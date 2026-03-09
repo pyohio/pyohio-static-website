@@ -156,6 +156,7 @@ h3, h4, h5, h6 {
     font-size: 1.25rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
+    color: var(--color-primary);
 }
 
 .feature-card p {
