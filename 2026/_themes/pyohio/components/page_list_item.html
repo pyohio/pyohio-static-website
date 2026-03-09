@@ -1,5 +1,5 @@
 <div class="flex items-baseline gap-4 py-2 px-3 -mx-3 rounded-box hover:outline hover:outline-1 hover:outline-base-content/20 transition-all">
-  <a href="{{ entry.url }}" class="font-bold link link-hover link-primary flex-1 min-w-0">{{ entry.title }}</a>
+  <a href="{{ entry.url }}" class="font-bold link link-hover link-accent flex-1 min-w-0">{{ entry.title }}</a>
   <div class="flex flex-wrap gap-1 justify-end">
     {% for tag_slug in entry.tags %}
     <a href="{{ tag_url(tag_slug) }}" class="badge badge-sm badge-soft badge-primary">#{{ tag_slug }}</a>
