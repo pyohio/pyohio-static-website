@@ -15,7 +15,7 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/next/
 
 <div class="flex flex-wrap gap-3 my-6 not-prose">
 <a href="https://pretalx.com/pyohio-2026/cfp" class="btn btn-secondary">Submit a Talk</a>
-<a href="https://newsletter.pyohio.org/" class="btn btn-secondary btn-outline">Get Newsletter</a>
+<a href="https://newsletter.pyohio.org/" class="btn btn-secondary">Get Newsletter</a>
 </div>
 
 Please review our [Health & Safety Guidelines](/next/about/health-and-safety/) and [Code of Conduct](/next/about/code-of-conduct/).
