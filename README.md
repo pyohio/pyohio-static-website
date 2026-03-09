@@ -54,7 +54,7 @@ Theme CSS must be rebuilt after changing templates (Tailwind scans them for clas
 - `/archive/` — Previous years (git submodule)
 - `/scripts/` — Python scripts for PreTalx data import
 
-## Year Links
+## Archives of Previous Years
 
 - [2025](https://www.pyohio.org/2025)
 - [2024](https://www.pyohio.org/2024)
