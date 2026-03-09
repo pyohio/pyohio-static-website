@@ -203,7 +203,7 @@ h3, h4, h5, h6 {
 }
 
 .callout-content {
-    margin-left: 2rem;
+    margin-left: 0;
 }
 
 .callout-content > *:first-child {
