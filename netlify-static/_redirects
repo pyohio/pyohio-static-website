@@ -94,6 +94,10 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2021/code-of-conduct /2021/about/code-of-conduct
 /2021/conduct /2021/about/code-of-conduct
 
+# 2026 Moved URLs
+
+/2026/about/health-and-safety /2026/health-and-safety 301
+
 # Custom 404s
 
 /2025/* /2025/404 404
