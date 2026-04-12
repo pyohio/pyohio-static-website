@@ -39,7 +39,7 @@
                     </ul>
                 </div>
                 <a href="{{ site.base_path }}/" class="flex items-center gap-2 text-xl font-bold hover:opacity-80 transition-opacity">
-                    <img src="{{ site.base_path }}/img/pyohio-square-primary.png" alt="" class="h-8 w-8" />
+                    <img src="{{ site.base_path }}/img/logo-white-sq.png" alt="" class="h-8 w-8" />
                     {{ site.title or 'Home' }}
                 </a>
                 <div class="hidden lg:flex items-center gap-1 ml-6 whitespace-nowrap">
@@ -83,7 +83,7 @@
     <main id="main-content" class="flex-1 p-4 lg:p-8">
         <div class="max-w-5xl mx-auto">
             {% block page_header %}{% endblock %}
-            <div class="bg-base-100 text-base-content rounded-box p-6 lg:p-10">
+            <div class="bg-base-100 text-base-content rounded-box p-6 lg:p-10 shadow-lg">
                 {% block content %}{% endblock %}
             </div>
         </div>
