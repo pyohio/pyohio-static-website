@@ -1,13 +1,10 @@
 ---
 title: PyOhio 2026
 hide_title: true
+hero_image: /next/img/pyohio-2026-transparent.png
 ---
 
-<div class="flex justify-center mb-6">
-<img src="/next/img/pyohio-2026-transparent.png" alt="PyOhio '26" class="max-w-md w-full">
-</div>
-
-<h2 class="text-center text-2xl mb-6">The Python Community Conference Based in Ohio</h2>
+## The Python Community Conference Based in Ohio
 
 The 19th annual PyOhio is **Sat & Sun July 25–26, 2026** at the Cleveland State University Student Center in Cleveland, OH.
 
