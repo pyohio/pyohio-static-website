@@ -1,14 +1,17 @@
 {% extends layout_template %}
 
-{% block content %}
+{% block page_header %}
     {% block breadcrumbs %}
     {% if breadcrumbs and breadcrumbs|length > 1 %}
     {% include "components/breadcrumbs.html" %}
     {% endif %}
     {% endblock %}
+    {% block before_heading %}{% endblock %}
+    {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1 class="text-3xl lg:text-4xl font-extrabold text-primary-content mb-6">{{ page.title }}</h1>{% endif %}{% endblock %}
+{% endblock %}
+
+{% block content %}
     <article class="prose prose-lg max-w-none prose-headings:scroll-mt-20 prose-headings:text-primary prose-a:text-secondary prose-code:before:content-none prose-code:after:content-none">
-        {% block before_heading %}{% endblock %}
-        {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1>{{ page.title }}</h1>{% endif %}{% endblock %}
         {% block after_heading %}
         {% set tags = page.frontmatter.get('tags', []) %}
         {% if page.created or page.modified or tags %}

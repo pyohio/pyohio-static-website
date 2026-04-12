@@ -83,7 +83,10 @@
     <!-- Main content -->
     <main id="main-content" class="flex-1 p-4 lg:p-8">
         <div class="max-w-5xl mx-auto">
-            {% block content %}{% endblock %}
+            {% block page_header %}{% endblock %}
+            <div class="bg-base-100 text-base-content rounded-box p-6 lg:p-10">
+                {% block content %}{% endblock %}
+            </div>
         </div>
     </main>
 
