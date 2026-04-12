@@ -34,27 +34,6 @@
   --radius-box: 1rem;
 }
 
-/* DaisyUI custom theme: pyohio-dark */
-[data-theme="pyohio-dark"] {
-  --color-base-100: oklch(17% 0.009 277);
-  --color-base-200: oklch(14% 0.007 277);
-  --color-base-300: oklch(21% 0.011 277);
-  --color-base-content: oklch(90% 0.003 277);
-  --color-primary: oklch(62% 0.118 297);
-  --color-primary-content: oklch(15% 0.02 297);
-  --color-secondary: oklch(68% 0.158 138);
-  --color-secondary-content: oklch(15% 0.02 138);
-  --color-accent: oklch(60% 0.073 252);
-  --color-accent-content: oklch(15% 0.015 252);
-  --color-neutral: oklch(70% 0.01 277);
-  --color-neutral-content: oklch(17% 0.009 277);
-  --color-info: oklch(65% 0.12 252);
-  --color-success: oklch(68% 0.158 138);
-  --color-warning: oklch(78% 0.15 75);
-  --color-error: oklch(65% 0.2 25);
-  --radius-btn: 0.5rem;
-  --radius-box: 1rem;
-}
 
 /* Typography */
 body {

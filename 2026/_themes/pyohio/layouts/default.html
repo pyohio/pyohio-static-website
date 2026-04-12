@@ -75,7 +75,6 @@
                     {% include "components/search.html" %}
                 </div>
                 {% endif %}
-                {% include "components/theme_toggle.html" %}
             </div>
         </div>
     </div>
@@ -159,24 +158,6 @@
                         dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
                     });
                 }
-            });
-        })();
-
-        (function() {
-            document.querySelectorAll('.theme-controller').forEach(function(el) {
-                el.addEventListener('change', function() {
-                    var theme = this.checked ? 'pyohio-dark' : 'pyohio-light';
-                    document.documentElement.setAttribute('data-theme', theme);
-                    localStorage.setItem('theme', theme);
-                    document.querySelectorAll('.theme-controller').forEach(function(toggle) {
-                        toggle.checked = theme === 'pyohio-dark';
-                    });
-                });
-            });
-
-            var theme = document.documentElement.getAttribute('data-theme');
-            document.querySelectorAll('.theme-controller').forEach(function(el) {
-                el.checked = theme === 'pyohio-dark';
             });
         })();
 
