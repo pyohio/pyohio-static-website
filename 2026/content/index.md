@@ -40,7 +40,7 @@ Please review our [Health & Safety Guidelines](/next/about/health-and-safety/) a
 </a>
 
 <a href="/next/attend/directions-and-parking/" class="feature-card">
-<span class="feature-card-icon">:lucide-car:</span>
+<span class="feature-card-icon">:lucide-signpost:</span>
 <h3>Travel &amp; Parking</h3>
 <p>Get directions to the venue and find parking options at Cleveland State University.</p>
 </a>
@@ -58,13 +58,13 @@ Please review our [Health & Safety Guidelines](/next/about/health-and-safety/) a
 </a>
 
 <a href="/next/about/code-of-conduct/" class="feature-card">
-<span class="feature-card-icon">:lucide-shield-check:</span>
+<span class="feature-card-icon">:lucide-handshake:</span>
 <h3>Code of Conduct</h3>
 <p>Read our Code of Conduct to help ensure PyOhio is welcoming and safe for everyone.</p>
 </a>
 
 <a href="/next/attend/volunteer/" class="feature-card">
-<span class="feature-card-icon">:lucide-handshake:</span>
+<span class="feature-card-icon">:lucide-heart-handshake:</span>
 <h3>Volunteer</h3>
 <p>PyOhio only happens with the help of volunteers — join us to make the conference amazing!</p>
 </a>
