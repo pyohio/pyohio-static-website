@@ -341,6 +341,15 @@ details.callout .callout-content {
     backdrop-filter: blur(4px);
 }
 
+.search-input {
+    color: var(--color-base-content);
+    background-color: var(--color-base-100);
+}
+
+.search-input::placeholder {
+    color: color-mix(in oklch, var(--color-base-content) 50%, transparent);
+}
+
 .search-results mark {
     background-color: color-mix(in oklch, var(--color-primary) 20%, transparent);
     color: var(--color-primary);
