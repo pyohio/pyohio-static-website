@@ -1,5 +1,6 @@
 ---
 title: Hotels
+nav_order: 4
 ---
 
 # Hotels

@@ -8,24 +8,24 @@ https://pyohio.org/_ https://www.pyohio.org/:splat 301!
 https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 / /2026 302
-/sponsors/prospectus/ /2026 302
+/sponsors/prospectus/ /2026/sponsors/prospectus 302
 
 # Short URLs change year to year:
 
-/about /2026 302
-/coc /2026/code-of-conduct 302
-/code-of-conduct /2026/code-of-conduct 302
-/conduct /2026/code-of-conduct 302
-/attend /2025/attend/registration 302
-/directions /2025/attend/directions-and-parking 302
+/about /2026/about 302
+/coc /2026/about/code-of-conduct 302
+/code-of-conduct /2026/about/code-of-conduct 302
+/conduct /2026/about/code-of-conduct 302
+/attend /2026/attend/registration 302
+/directions /2026/attend/directions-and-parking 302
 /events /2026 302
-/health-and-safety /2026/health-and-safety 302
-/hotel /2025/attend/hotels 302
-/prospectus /2025/sponsors/prospectus 302
-/register /2025/attend/registration 302
-/schedule /2025/program/schedule 302
-/sprints /2025 302
-/volunteer /2025/attend/volunteer 302
+/health-and-safety /2026/about/health-and-safety 302
+/hotel /2026/attend/hotels 302
+/prospectus /2026/sponsors/prospectus 302
+/register /2026/attend/registration 302
+/schedule /2026/program/schedule 302
+/sprints /2026 302
+/volunteer /2026/attend/volunteer 302
 
 # Defunct but still linked
 
@@ -35,8 +35,8 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 # Off-site
 
 /shirts https://www.customink.com/fundraising/pyohio 302
-/cfp https://pretalx.com/pyohio-2025/cfp 302
-/call-for-proposals https://pretalx.com/pyohio-2025/cfp 302
+/cfp https://pretalx.com/pyohio-2026/cfp 302
+/call-for-proposals https://pretalx.com/pyohio-2026/cfp 302
 /video https://www.youtube.com/c/PyOhio 302
 /info-list https://newsletter.pyohio.org/ 302
 /mailing-list https://newsletter.pyohio.org/ 302
@@ -46,10 +46,10 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 
 # OhPyOh
 
-/ohpyo /2025/about/ohpyo 302
-/opyoh /2025/about/ohpyo 302
-/opyo /2025/about/ohpyo 302
-/ohpy /2025/about/ohpyo 302
+/ohpyo /2026/about/ohpyo 302
+/opyoh /2026/about/ohpyo 302
+/opyo /2026/about/ohpyo 302
+/ohpy /2026/about/ohpyo 302
 
 # 2025 Shorter Slugs
 
@@ -94,9 +94,11 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /2021/code-of-conduct /2021/about/code-of-conduct
 /2021/conduct /2021/about/code-of-conduct
 
-# 2026 Moved URLs
+# 2026 Moved URLs (from initial placeholder)
 
-/2026/about/health-and-safety /2026/health-and-safety 301
+/2026/health-and-safety /2026/about/health-and-safety 301
+/2026/code-of-conduct /2026/about/code-of-conduct 301
+/2026/PyOhio-2026-Sponsorship-Prospectus.pdf /2026/files/PyOhio-2026-Sponsorship-Prospectus.pdf 301
 
 # Custom 404s
 

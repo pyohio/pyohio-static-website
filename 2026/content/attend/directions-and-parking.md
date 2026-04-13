@@ -1,5 +1,6 @@
 ---
 title: Directions & Parking
+nav_order: 3
 ---
 
 # Directions & Parking

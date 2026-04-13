@@ -1,5 +1,6 @@
 ---
 title: Health and Safety Guidelines
+nav_order: 4
 ---
 
 # Health and Safety Guidelines
