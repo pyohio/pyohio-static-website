@@ -8,11 +8,11 @@ dev:
 build:
     cd 2026 && rockgarden build --clean
 
-# Full production build (all years + 2026 preview)
+# Full production build (all years + 2026)
 build-prod: clean build
     mkdir -p ./public
     cp -r ./archive/20* ./public
-    cp -r ./2026/_site ./public/next
+    cp -r ./2026/_site ./public/2026
     cp -rv ./netlify-static/* ./public/
 
 # Rebuild theme CSS

@@ -2,16 +2,19 @@
 
 {% block title %}{{ folder.title }}{% if site.title %} - {{ site.title }}{% endif %}{% endblock %}
 
-{% block content %}
+{% block page_header %}
 {% block breadcrumbs %}
 {% if breadcrumbs and breadcrumbs|length > 1 %}
 {% include "components/breadcrumbs.html" %}
 {% endif %}
 {% endblock %}
+{% block before_heading %}{% endblock %}
+{% block heading %}<h1 class="text-3xl lg:text-4xl font-extrabold text-primary-content mb-6">{{ folder.title }}</h1>{% endblock %}
+{% block after_heading %}{% endblock %}
+{% endblock %}
+
+{% block content %}
 <article>
-  {% block before_heading %}{% endblock %}
-  {% block heading %}<h1 class="text-3xl font-bold mb-6 text-primary">{{ folder.title }}</h1>{% endblock %}
-  {% block after_heading %}{% endblock %}
 
   {% if folder.custom_content %}
   <div class="prose prose-base max-w-none leading-tight mb-8 prose-headings:text-primary prose-a:text-secondary">

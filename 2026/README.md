@@ -7,10 +7,8 @@ This directory contains the 2026 conference site built with [Rockgarden](https:/
 The following assets are copied from the 2025 site and need to be replaced with 2026 versions when available:
 
 - [ ] `_static/favicon.ico` — Browser tab icon
-- [ ] `_static/img/logo.svg` — Navbar logo (small, currently the generic PyOhio mark)
-- [ ] `_static/img/logo.png` — Full logo with text (currently 2025 snake logo, 2263x2804)
 - [ ] `_static/img/logo-white-sq.png` — White logo on transparent background for dark headers (currently 1050x1050)
-- [ ] `_static/img/og-image.png` — Social sharing preview image (currently 2025 branded, 1200x630)
+- [x] `_static/img/og-image.png` — Social sharing preview image (1200x630, generated via `og-preview.html`)
 - [ ] `rockgarden.toml` `og_image` URL — Update if the OG image filename changes
 
 ## Content to Update When Ready
