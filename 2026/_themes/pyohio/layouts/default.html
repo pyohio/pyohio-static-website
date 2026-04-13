@@ -22,9 +22,6 @@
                             <details>
                                 <summary>{{ node.label }}</summary>
                                 <ul>
-                                    {% if node.index_path %}
-                                    <li><a href="{{ node.index_path }}">{{ node.label }}</a></li>
-                                    {% endif %}
                                     {% for child in node.children %}
                                     <li><a href="{{ child.path }}">{{ child.label }}</a></li>
                                     {% endfor %}
@@ -54,9 +51,6 @@
                                 </svg>
                             </button>
                             <ul class="nav-dropdown-menu hidden absolute top-full mt-2 z-50 min-w-48 p-2 shadow-lg bg-pyohio-green rounded-b-box border border-white">
-                                {% if node.index_path %}
-                                <li><a href="{{ node.index_path }}" class="block px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a></li>
-                                {% endif %}
                                 {% for child in node.children %}
                                 <li><a href="{{ child.path }}" class="block px-3 py-1.5 rounded-field hover:bg-base-content/10 transition-colors">{{ child.label }}</a></li>
                                 {% endfor %}

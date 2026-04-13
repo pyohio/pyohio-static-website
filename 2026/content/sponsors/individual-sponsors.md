@@ -1,5 +1,6 @@
 ---
 title: Individual Sponsors
+nav_order: 3
 ---
 
 Thank you to our generous individual supporters who help make PyOhio free for everyone to attend.

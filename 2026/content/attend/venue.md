@@ -1,5 +1,6 @@
 ---
 title: Venue
+nav_order: 2
 ---
 
 # Venue

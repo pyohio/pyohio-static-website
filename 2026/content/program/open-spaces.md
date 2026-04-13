@@ -1,5 +1,6 @@
 ---
 title: Open Spaces
+nav_order: 6
 ---
 
 Open Spaces are self-organized meetups that take place in dedicated rooms during the conference. Topics are defined and discussion is facilitated by attendees rather than conference organizers.

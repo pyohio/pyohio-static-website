@@ -1,5 +1,6 @@
 ---
 title: Attend
+unlisted: true
 ---
 
 # Attend PyOhio 2026
