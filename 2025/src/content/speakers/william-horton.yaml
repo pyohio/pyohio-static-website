@@ -1,0 +1,21 @@
+avatar: william-horton.webp
+avatar_url: https://pretalx.com/media/avatars/V73QRP_xB5DuDK.webp
+biography: <p>I’m a Staff Machine Learning Engineer at Maven Clinic. Over the past
+  year I have been working on GenAI in healthcare, including deploying AI agents to
+  production.</p>
+code: V73QRP
+listed: true
+name: William Horton
+slug: william-horton
+social_links:
+- social_link_display: linkedin.com/in/wdhorton
+  social_link_type: mdi:linkedin
+  social_link_url: https://www.linkedin.com/in/wdhorton
+- social_link_display: '@hortonhearsafoo'
+  social_link_type: mdi:twitter
+  social_link_url: https://x.com/hortonhearsafoo
+speaker_type: speaker
+talks:
+- code: GFVZHY
+  slug: demystifying-ai-agents-with-python-code
+  title: Demystifying AI Agents with Python Code

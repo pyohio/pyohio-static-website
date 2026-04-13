@@ -1,0 +1,33 @@
+code: L7HLC9
+content_warnings: null
+description: '<blockquote>
+
+  <p>Unfortunately Jay is unable to attend PyOhio and this session has been canceled</p>
+
+  </blockquote>
+
+  <p>Cicero said - there is no one who can give you wiser advice than you can give
+  yourself. That''s why when I started generating transcripts from my productivity
+  podcast, I decided to start using it to give myself productivity advice using ALL
+  of my content.</p>
+
+  <p>This talk dives into a journey using PostgreSQL with pgvector for hybrid search
+  as the base for using personal transcriptions, blog posts, and more for RAG and
+  AI Agents.</p>'
+discord_channel_id: ''
+duration: 30
+end_time: null
+qna: false
+qna_channel: null
+room: TBD
+slug: getting-advice-from-myself-using-flatfiles-postgres-and
+speakers:
+- avatar: https://pretalx.com/media/avatars/PFEFTZ_glsD2Ih.webp
+  code: PFEFTZ
+  name: Jay Miller
+  slug: jay-miller
+start_time: null
+stream_timestamp: ''
+title: 'CANCELED: Getting Advice from Myself Using Flatfiles, Postgres, and Frontmatter'
+type: 30 Minute Talk
+youtube_url: null
