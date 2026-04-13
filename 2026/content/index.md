@@ -27,10 +27,52 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <p>Learn about Ohio's annual Python conference, now in its 19th year.</p>
 </a>
 
+<a href="https://pretalx.com/pyohio-2026/cfp" class="feature-card">
+<span class="feature-card-icon">:lucide-megaphone:</span>
+<h3>CFP is Open</h3>
+<p>The Call for Proposals for 2026 is now open! We'd love to hear from <em>you</em>!</p>
+</a>
+
+<a href="/2026/sponsors/prospectus/" class="feature-card">
+<span class="feature-card-icon">:lucide-file-text:</span>
+<h3>Sponsorship Prospectus</h3>
+<p>Become a PyOhio sponsor and connect with Ohio's Python community.</p>
+</a>
+
+<a href="https://newsletter.pyohio.org/" class="feature-card">
+<span class="feature-card-icon">:lucide-mail:</span>
+<h3>Newsletter</h3>
+<p>Stay updated with PyOhio news and announcements by subscribing to our newsletter.</p>
+</a>
+
+<a href="/2026/attend/volunteer/" class="feature-card">
+<span class="feature-card-icon">:lucide-heart-handshake:</span>
+<h3>Volunteer</h3>
+<p>PyOhio only happens with the help of volunteers — join us to make the conference amazing!</p>
+</a>
+
 <a href="/2026/attend/" class="feature-card">
 <span class="feature-card-icon">:lucide-ticket:</span>
 <h3>Attend</h3>
 <p>Join us for a free weekend of Python talks and community at Cleveland State University.</p>
+</a>
+
+<a href="/2026/about/code-of-conduct/" class="feature-card">
+<span class="feature-card-icon">:lucide-handshake:</span>
+<h3>Code of Conduct</h3>
+<p>Read our Code of Conduct to help ensure PyOhio is welcoming and safe for everyone.</p>
+</a>
+
+<a href="/2026/about/health-and-safety/" class="feature-card">
+<span class="feature-card-icon">:lucide-heart-pulse:</span>
+<h3>Health &amp; Safety</h3>
+<p>Review our health guidelines to keep our community safe.</p>
+</a>
+
+<a href="/2026/sponsors/" class="feature-card">
+<span class="feature-card-icon">:lucide-sparkles:</span>
+<h3>Sponsors</h3>
+<p>Thank our generous sponsors who make this free conference possible.</p>
 </a>
 
 <a href="/2026/attend/venue/" class="feature-card">
@@ -49,48 +91,6 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <span class="feature-card-icon">:lucide-hotel:</span>
 <h3>Hotels</h3>
 <p>Find recommended hotels near Cleveland State University.</p>
-</a>
-
-<a href="/2026/about/health-and-safety/" class="feature-card">
-<span class="feature-card-icon">:lucide-heart-pulse:</span>
-<h3>Health &amp; Safety</h3>
-<p>Review our health guidelines to keep our community safe.</p>
-</a>
-
-<a href="/2026/about/code-of-conduct/" class="feature-card">
-<span class="feature-card-icon">:lucide-handshake:</span>
-<h3>Code of Conduct</h3>
-<p>Read our Code of Conduct to help ensure PyOhio is welcoming and safe for everyone.</p>
-</a>
-
-<a href="/2026/attend/volunteer/" class="feature-card">
-<span class="feature-card-icon">:lucide-heart-handshake:</span>
-<h3>Volunteer</h3>
-<p>PyOhio only happens with the help of volunteers — join us to make the conference amazing!</p>
-</a>
-
-<a href="/2026/sponsors/" class="feature-card">
-<span class="feature-card-icon">:lucide-sparkles:</span>
-<h3>Sponsors</h3>
-<p>Thank our generous sponsors who make this free conference possible.</p>
-</a>
-
-<a href="/2026/sponsors/prospectus/" class="feature-card">
-<span class="feature-card-icon">:lucide-file-text:</span>
-<h3>Sponsorship Prospectus</h3>
-<p>Become a PyOhio sponsor and connect with Ohio's Python community.</p>
-</a>
-
-<a href="https://newsletter.pyohio.org/" class="feature-card">
-<span class="feature-card-icon">:lucide-mail:</span>
-<h3>Newsletter</h3>
-<p>Stay updated with PyOhio news and announcements by subscribing to our newsletter.</p>
-</a>
-
-<a href="https://pretalx.com/pyohio-2026/cfp" class="feature-card">
-<span class="feature-card-icon">:lucide-megaphone:</span>
-<h3>CFP is Open</h3>
-<p>The Call for Proposals for 2026 is now open! We'd love to hear from <em>you</em>!</p>
 </a>
 
 </div>
