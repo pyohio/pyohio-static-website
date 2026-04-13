@@ -5,7 +5,7 @@ nav_order: 2
 
 # Sponsorship Prospectus
 
-[PyOhio 2026 Sponsorship Prospectus PDF](/next/files/PyOhio-2026-Sponsorship-Prospectus.pdf)
+[PyOhio 2026 Sponsorship Prospectus PDF](/2026/files/PyOhio-2026-Sponsorship-Prospectus.pdf)
 
 ## About the Conference
 

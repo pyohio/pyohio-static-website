@@ -21,6 +21,6 @@ Details on how to make an individual sponsorship donation for PyOhio 2026 will b
 - This level is for individuals only.
 - Names or nicknames only. We reserve the right to remove company or inappropriate names.
 - Donating doesn't automatically include registration. Be sure to also register if you plan on attending PyOhio.
-- If your company would like to sponsor PyOhio, please see the [Sponsorship Prospectus](/next/sponsors/prospectus/).
+- If your company would like to sponsor PyOhio, please see the [Sponsorship Prospectus](/2026/sponsors/prospectus/).
 
 If you'd like to support PyOhio in some other way please email [info@pyohio.org](mailto:info@pyohio.org).
