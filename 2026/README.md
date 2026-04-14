@@ -1,23 +1,24 @@
 # PyOhio 2026 Site
 
-This directory contains the 2026 conference site built with [Rockgarden](https://rockgarden.build/).
+The 2026 conference site, built with [Rockgarden](https://rockgarden.build/) (a Python static site generator using Markdown and Jinja2).
 
-## Placeholder Assets (from 2025)
+## Structure
 
-The following assets are copied from the 2025 site and need to be replaced with 2026 versions when available:
+- `content/` — Markdown pages with YAML frontmatter
+- `_themes/pyohio/` — Custom theme (templates, components, layouts)
+  - `static-src/input.css` — Tailwind v4 + DaisyUI theme source
+  - `static/rockgarden.css` — Compiled CSS output
+- `_static/` — Images, favicon, and other static assets
+- `rockgarden.toml` — Site configuration
 
-- [ ] `_static/favicon.ico` — Browser tab icon
-- [ ] `_static/img/logo-white-sq.png` — White logo on transparent background for dark headers (currently 1050x1050)
-- [x] `_static/img/og-image.png` — Social sharing preview image (1200x630, generated via `og-preview.html`)
-- [ ] `rockgarden.toml` `og_image` URL — Update if the OG image filename changes
+## Development
 
-## Content to Update When Ready
+Run these from the repo root:
 
-- [ ] `content/about/index.md` — Update organizer list when finalized
-- [ ] `content/about/code-of-conduct.md` — Update Response Team member names if changed
-- [ ] `content/about/health-and-safety.md` — Review policy for 2026 (currently references 2025 CO2 data)
-- [ ] `content/attend/venue.md` — Add room details, venue map image
-- [ ] `content/attend/directions-and-parking.md` — Verify parking info is current
-- [ ] `content/attend/hotels.md` — Add booking link for official hotel block, verify hotel list
-- [ ] `content/sponsors/prospectus.md` — Link to 2026 PDF (currently no embedded viewer)
-- [ ] Home page feature cards — Update links as program pages (schedule, talks, speakers) are added
+```bash
+just dev         # Start the 2026 dev server
+just build       # Build the 2026 site
+just theme-css   # Rebuild theme CSS after editing input.css or templates
+```
+
+See the top-level `CLAUDE.md` for more on the theme and multi-year setup.
