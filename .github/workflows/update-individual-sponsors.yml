@@ -1,9 +1,10 @@
 name: Update Individual Sponsors
 
 on:
-  schedule:
-    # Daily at noon Eastern (4 PM UTC during EDT)
-    - cron: "0 16 * * *"
+  # Scheduled runs disabled for now
+  # schedule:
+  #   # Daily at noon Eastern (4 PM UTC during EDT)
+  #   - cron: "0 16 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
