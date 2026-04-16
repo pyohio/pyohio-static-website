@@ -8,7 +8,7 @@
     {% endblock %}
     {% block before_heading %}{% endblock %}
     {% if page.frontmatter.get('hero_image') %}
-    <div class="flex justify-center mb-6">
+    <div class="flex justify-center -mt-2 lg:-mt-4 mb-1 lg:mb-2">
         <img src="{{ page.frontmatter.hero_image }}" alt="{{ page.title }}" class="max-w-md w-full" style="filter: drop-shadow(0 2px 8px rgba(200,200,210,0.5));">
     </div>
     {% endif %}
