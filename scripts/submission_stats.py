@@ -31,7 +31,7 @@ EVENT_SLUGS = [
     "pyohio-2019",
 ]
 
-COLUMNS = ["event", "date", "submissions", "submitters", "cumul_submissions", "cumul_submitters"]
+COLUMNS = ["event", "date", "submissions", "submitters", "new_submitters", "cumul_submissions", "cumul_submitters"]
 
 
 def get_all_pages(url: str, headers: dict) -> list[dict]:
@@ -80,12 +80,14 @@ def compute_rows(event_slug: str, submissions: list[dict]) -> list[dict]:
     for day in sorted(by_day.keys()):
         stats = by_day[day]
         cumul_subs += stats["submissions"]
+        new_submitters = stats["submitters"] - cumul_submitters
         cumul_submitters.update(stats["submitters"])
         rows.append({
             "event": event_slug,
             "date": day.isoformat(),
             "submissions": stats["submissions"],
             "submitters": len(stats["submitters"]),
+            "new_submitters": len(new_submitters),
             "cumul_submissions": cumul_subs,
             "cumul_submitters": len(cumul_submitters),
         })
@@ -101,12 +103,12 @@ def print_event_table(event_slug: str, rows: list[dict]):
     total_submitters = rows[-1]["cumul_submitters"]
 
     click.echo(f"  Total: {total_subs} submissions, {total_submitters} unique submitters\n")
-    click.echo(f"  {'Date':<12} {'Submissions':>12} {'Submitters':>12}  {'Cumul. Subs':>12}  {'Cumul. Submitters':>18}")
-    click.echo(f"  {'-'*12} {'-'*12} {'-'*12}  {'-'*12}  {'-'*18}")
+    click.echo(f"  {'Date':<12} {'Submissions':>12} {'Submitters':>12} {'New Submitters':>15}  {'Cumul. Subs':>12}  {'Cumul. Submitters':>18}")
+    click.echo(f"  {'-'*12} {'-'*12} {'-'*12} {'-'*15}  {'-'*12}  {'-'*18}")
 
     for row in rows:
         click.echo(
-            f"  {row['date']:<12} {row['submissions']:>12} {row['submitters']:>12}"
+            f"  {row['date']:<12} {row['submissions']:>12} {row['submitters']:>12} {row['new_submitters']:>15}"
             f"  {row['cumul_submissions']:>12}  {row['cumul_submitters']:>18}"
         )
     click.echo()
