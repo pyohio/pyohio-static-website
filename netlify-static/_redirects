@@ -35,6 +35,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 # Off-site
 
 /shirts https://www.customink.com/fundraising/pyohio 302
+/donate https://psfmember.org/civicrm/contribute/transact/?reset=1&id=45 302
 /cfp https://pretalx.com/pyohio-2026/cfp 302
 /call-for-proposals https://pretalx.com/pyohio-2026/cfp 302
 /video https://www.youtube.com/c/PyOhio 302
