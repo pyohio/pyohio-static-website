@@ -17,9 +17,13 @@ pids
 public/
 2026/_site/
 2026/.rockgarden/
+_site/
 
 # Dependencies
 node_modules/
 
 # Mac files
 .DS_Store
+
+# Local sheet exports / contribution reports
+*.xlsx

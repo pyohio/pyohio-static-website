@@ -1,6 +1,12 @@
 ---
 title: Individual Sponsors
 nav_order: 3
+sponsors:
+  - Mike McCaffrey
+  - Anonymous
+  - Curtis Oneal
+  - Eddie Cosma
+  - Anonymous
 ---
 
 Thank you to our generous individual supporters who help make PyOhio free for everyone to attend.
@@ -9,7 +15,7 @@ Thank you to our generous individual supporters who help make PyOhio free for ev
 
 PyOhio is proud to offer free admission to everyone however the event has significant costs. We need corporate sponsors to cover the bulk of these costs however we've had individuals ask how they can contribute.
 
-Details on how to make an individual sponsorship donation for PyOhio 2026 will be announced soon.
+To make an individual sponsorship donation for PyOhio 2026, [donate via the PSF](/donate). Donations are processed by the Python Software Foundation on PyOhio's behalf.
 
 **For a $50+ donation, Individual Sponsors get:**
 
