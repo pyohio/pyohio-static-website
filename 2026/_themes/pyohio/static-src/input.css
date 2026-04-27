@@ -341,9 +341,9 @@ details.callout .callout-content {
     margin: 1.5rem 0;
     padding: 1rem;
     border-radius: 1rem;
-    background: linear-gradient(to right,
-        color-mix(in oklch, var(--color-secondary) 8%, var(--color-base-100)),
-        color-mix(in oklch, var(--color-secondary) 16%, var(--color-base-100)));
+    background: linear-gradient(135deg,
+        color-mix(in oklch, var(--color-primary) 10%, var(--color-base-100)),
+        color-mix(in oklch, var(--color-secondary) 12%, var(--color-base-100)));
     text-align: center;
 }
 
@@ -357,15 +357,16 @@ details.callout .callout-content {
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
-    color: var(--color-base-content);
+    color: var(--color-primary-content);
     background: linear-gradient(135deg,
-        color-mix(in oklch, var(--color-secondary) 28%, var(--color-base-100)) 0%,
-        color-mix(in oklch, var(--color-secondary) 14%, var(--color-base-100)) 100%);
-    border: 1px solid color-mix(in oklch, var(--color-secondary) 35%, transparent);
+        var(--color-primary) 0%,
+        color-mix(in oklch, var(--color-primary) 70%, var(--color-secondary)) 100%);
+    border: 1px solid color-mix(in oklch, var(--color-primary) 80%, black);
     border-radius: 9999px;
     cursor: default;
+    box-shadow: 0 1px 3px color-mix(in oklch, var(--color-primary) 30%, transparent);
 }
 
 .sponsor-cta {
