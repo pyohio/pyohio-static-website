@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import io
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -62,12 +62,18 @@ def sponsors():
     is_flag=True,
     help="Print sorted names to stdout without writing.",
 )
+@click.option(
+    "--summary-file",
+    type=click.Path(dir_okay=False, path_type=Path),
+    help="Append a markdown run summary to this file (e.g. $GITHUB_STEP_SUMMARY).",
+)
 def update_individual(
     sheet_url: str | None,
     xlsx_file: Path | None,
     page: Path,
     min_amount: float,
     dry_run: bool,
+    summary_file: Path | None,
 ):
     """Refresh the individual sponsors list from the PSF contributions sheet."""
     if not xlsx_file and not sheet_url:
@@ -99,16 +105,32 @@ def update_individual(
 
     names = [d.name for d in eligible]
 
+    existing_names = _read_existing_sponsors(page) if page.exists() else []
+    new_count = sum((Counter(names) - Counter(existing_names)).values())
+    removed_count = sum((Counter(existing_names) - Counter(names)).values())
+
     if dry_run:
         for d in eligible:
             click.echo(f"  ${d.total:>8.2f}  {d.first_date.date()}  {d.name}")
-        return
+    else:
+        if not page.exists():
+            raise click.UsageError(f"Page file not found: {page}")
+        _write_sponsors_frontmatter(page, names)
+        click.echo(f"Wrote {len(names)} sponsors to {page}", err=True)
 
-    if not page.exists():
-        raise click.UsageError(f"Page file not found: {page}")
-
-    _write_sponsors_frontmatter(page, names)
-    click.echo(f"Wrote {len(names)} sponsors to {page}", err=True)
+    if summary_file:
+        _write_summary(
+            summary_file,
+            rows_count=len(rows),
+            donors_count=len(donors),
+            eligible_count=len(eligible),
+            below_threshold_count=len(donors) - len(eligible),
+            min_amount=min_amount,
+            previous_count=len(existing_names),
+            new_count=new_count,
+            removed_count=removed_count,
+            dry_run=dry_run,
+        )
 
 
 def _build_export_url(sheet_url: str) -> str:
@@ -178,6 +200,20 @@ def _aggregate_by_contact(rows: list[dict]) -> list[DonorAggregate]:
     ]
 
 
+def _read_existing_sponsors(page: Path) -> list[str]:
+    """Return the current `sponsors:` list from a page's frontmatter, or []."""
+    text = page.read_text()
+    if not text.startswith("---\n"):
+        return []
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return []
+    yaml = YAML()
+    data = yaml.load(text[4:end]) or {}
+    existing = data.get("sponsors") or []
+    return [str(n) for n in existing]
+
+
 def _write_sponsors_frontmatter(page: Path, names: list[str]) -> None:
     """Rewrite the `sponsors:` key in the page's YAML frontmatter, preserving body."""
     text = page.read_text()
@@ -203,3 +239,36 @@ def _write_sponsors_frontmatter(page: Path, names: list[str]) -> None:
         new_frontmatter += "\n"
 
     page.write_text(f"---\n{new_frontmatter}---\n{body}")
+
+
+def _write_summary(
+    summary_file: Path,
+    *,
+    rows_count: int,
+    donors_count: int,
+    eligible_count: int,
+    below_threshold_count: int,
+    min_amount: float,
+    previous_count: int,
+    new_count: int,
+    removed_count: int,
+    dry_run: bool,
+) -> None:
+    """Append a markdown summary block (counts only — no donor names)."""
+    title_suffix = " (dry run)" if dry_run else ""
+    lines = [
+        f"## Individual sponsors update{title_suffix}",
+        "",
+        "| Metric | Count |",
+        "| --- | ---: |",
+        f"| Contribution rows in sheet | {rows_count} |",
+        f"| Unique donors (aggregated) | {donors_count} |",
+        f"| Eligible (≥ ${min_amount:.0f}) | {eligible_count} |",
+        f"| Below threshold (filtered out) | {below_threshold_count} |",
+        f"| Previously listed | {previous_count} |",
+        f"| Newly added vs previous | {new_count} |",
+        f"| Removed vs previous | {removed_count} |",
+        "",
+    ]
+    with summary_file.open("a") as f:
+        f.write("\n".join(lines) + "\n")
