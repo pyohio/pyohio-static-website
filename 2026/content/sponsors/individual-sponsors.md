@@ -11,6 +11,8 @@ sponsors:
 
 Thank you to our generous individual supporters who help make PyOhio free for everyone to attend.
 
+<!-- sponsors -->
+
 ## About Individual Sponsorship
 
 PyOhio is proud to offer free admission to everyone however the event has significant costs. We need corporate sponsors to cover the bulk of these costs however we've had individuals ask how they can contribute.

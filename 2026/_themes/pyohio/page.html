@@ -43,19 +43,27 @@
         </div>
         {% endif %}
         {% endblock %}
-        {% block body %}{{ page.html | safe }}{% endblock %}
-        {% block after_body %}
-        {% if page.frontmatter.get('sponsors') %}
-        <div class="sponsor-pill-grid not-prose">
-            {% for name in page.frontmatter.sponsors %}
-            <span class="sponsor-pill">{{ name }}</span>
-            {% endfor %}
-        </div>
-        <div class="sponsor-cta not-prose">
-            <p class="font-semibold mb-2">Want to become an Individual Sponsor?</p>
-            <p class="text-base-content/70 text-sm">Donate $50+ via the <a href="/donate" class="link link-primary">PSF donation page</a> to join this list!</p>
-        </div>
-        {% endif %}
+        {% block body %}
+        {%- set _sponsor_marker = '<!-- sponsors -->' -%}
+        {%- if page.frontmatter.get('sponsors') is not none and _sponsor_marker in page.html -%}
+            {%- set _parts = page.html.split(_sponsor_marker, 1) -%}
+            {{ _parts[0] | safe }}
+            {% if page.frontmatter.sponsors %}
+            <div class="sponsor-pill-grid not-prose">
+                {% for name in page.frontmatter.sponsors %}
+                <span class="sponsor-pill">{{ name }}</span>
+                {% endfor %}
+            </div>
+            <div class="sponsor-cta not-prose">
+                <p class="font-semibold mb-2">Want to become an Individual Sponsor?</p>
+                <p class="text-base-content/70 text-sm">Donate $50+ via the <a href="/donate" class="link link-primary">PSF donation page</a> to join this list!</p>
+            </div>
+            {% endif %}
+            {{ _parts[1] | safe }}
+        {%- else -%}
+            {{ page.html | safe }}
+        {%- endif -%}
         {% endblock %}
+        {% block after_body %}{% endblock %}
     </article>
 {% endblock %}
