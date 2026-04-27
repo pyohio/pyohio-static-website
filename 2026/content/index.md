@@ -11,7 +11,6 @@ The 19th annual PyOhio is **Sat & Sun July 25–26, 2026**<br>at the Cleveland S
 PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/sponsors/) and individual donors.
 
 <div class="flex flex-wrap gap-3 my-6 not-prose">
-<a href="https://pretalx.com/pyohio-2026/cfp" class="btn btn-secondary">Submit a Talk</a>
 <a href="https://newsletter.pyohio.org/" class="btn btn-secondary">Get Newsletter</a>
 </div>
 
@@ -25,12 +24,6 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <span class="feature-card-icon">:lucide-info:</span>
 <h3>About PyOhio</h3>
 <p>Learn about Ohio's annual Python conference, now in its 19th year.</p>
-</a>
-
-<a href="https://pretalx.com/pyohio-2026/cfp" class="feature-card">
-<span class="feature-card-icon">:lucide-megaphone:</span>
-<h3>CFP is Open</h3>
-<p>The Call for Proposals for 2026 is now open! We'd love to hear from <em>you</em>!</p>
 </a>
 
 <a href="/2026/sponsors/prospectus/" class="feature-card">
