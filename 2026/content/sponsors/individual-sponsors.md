@@ -5,6 +5,7 @@ sponsors:
   - Mike McCaffrey
   - Anonymous
   - Curtis Oneal
+  - Derek Zoladz
   - Eddie Cosma
   - Anonymous
 ---
