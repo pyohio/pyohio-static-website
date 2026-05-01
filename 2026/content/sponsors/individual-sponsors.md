@@ -3,8 +3,10 @@ title: Individual Sponsors
 nav_order: 3
 sponsors:
   - Mike McCaffrey
+  - tylerdave
   - Anonymous
   - Curtis Oneal
+  - Dan Shernicoff
   - Derek Zoladz
   - Eddie Cosma
   - Anonymous
