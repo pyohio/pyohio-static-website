@@ -18,7 +18,7 @@
     {% if site.feed_enabled %}
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.base_url }}{{ site.base_path }}{{ site.feed_path }}">
     {% endif %}
-    {% block head %}{% endblock %}
+    {% block head %}{% include "components/jsonld.html" ignore missing %}{% endblock %}
 </head>
 <body class="min-h-screen bg-primary text-primary-content">
     {% block layout_body %}{% endblock %}

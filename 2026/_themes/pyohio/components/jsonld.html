@@ -1,0 +1,125 @@
+{% if page is defined %}
+  {% set _fm = page.frontmatter %}
+{% elif folder is defined %}
+  {% set _fm = folder.frontmatter %}
+{% else %}
+  {% set _fm = {} %}
+{% endif %}
+{% set _types = _fm.get("schema_types") or [] %}
+
+{% if _types %}
+{% set _event_id = site.base_url ~ site.base_path ~ "/#event" %}
+{% set _org_id   = site.base_url ~ "/#organization" %}
+{% set _place_id = site.base_url ~ site.base_path ~ "/attend/venue/#place" %}
+
+{% set place_data = {
+  "@type": "Place",
+  "@id": _place_id,
+  "name": "Cleveland State University Student Center",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2121 Euclid Avenue",
+    "addressLocality": "Cleveland",
+    "addressRegion": "OH",
+    "postalCode": "44115",
+    "addressCountry": "US"
+  }
+} %}
+
+{% set org_data = {
+  "@type": "Organization",
+  "@id": _org_id,
+  "name": "PyOhio",
+  "url": site.base_url ~ "/",
+  "logo": site.base_url ~ site.base_path ~ "/img/pyohio-square-primary.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/pyohio",
+    "https://fosstodon.org/@pyohio",
+    "https://www.facebook.com/pyohio/"
+  ]
+} %}
+
+{% set event_data = {
+  "@type": "Event",
+  "@id": _event_id,
+  "name": "PyOhio 2026",
+  "startDate": "2026-07-25",
+  "endDate": "2026-07-26",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "url": site.base_url ~ site.base_path ~ "/",
+  "image": site.og_image,
+  "description": site.description,
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": site.base_url ~ site.base_path ~ "/attend/registration/",
+    "validFrom": "2026-01-01"
+  },
+  "location": {"@id": _place_id},
+  "organizer": {"@id": _org_id}
+} %}
+
+{% set _ns = namespace(graph=[]) %}
+
+{% if "Event" in _types %}{% set _ns.graph = _ns.graph + [event_data] %}{% endif %}
+{% if "Place" in _types %}{% set _ns.graph = _ns.graph + [place_data] %}{% endif %}
+{% if "Organization" in _types %}{% set _ns.graph = _ns.graph + [org_data] %}{% endif %}
+
+{% if "SpeakerList" in _types %}
+  {% set _items_ns = namespace(items=[]) %}
+  {% for s in _fm.get("speakers") or [] %}
+    {% set _items_ns.items = _items_ns.items + [{
+      "@type": "ListItem",
+      "position": loop.index,
+      "item": {"@type": "Person", "name": s.name}
+    }] %}
+  {% endfor %}
+  {% set _ns.graph = _ns.graph + [{
+    "@type": "ItemList",
+    "name": _fm.get("title"),
+    "itemListElement": _items_ns.items
+  }] %}
+{% endif %}
+
+{% if "TalkList" in _types %}
+  {% set _talks_ns = namespace(items=[]) %}
+  {% for t in _fm.get("talks") or [] %}
+    {% set _talks_ns.items = _talks_ns.items + [{
+      "@type": "ListItem",
+      "position": loop.index,
+      "item": {"@type": "Event", "name": t.name}
+    }] %}
+  {% endfor %}
+  {% set _ns.graph = _ns.graph + [{
+    "@type": "ItemList",
+    "name": _fm.get("title"),
+    "itemListElement": _talks_ns.items
+  }] %}
+{% endif %}
+
+{% if "SponsorList" in _types and _fm.get("sponsor_tiers") %}
+  {% set _orgs_ns = namespace(items=[]) %}
+  {% for tier in _fm.sponsor_tiers %}
+    {% for s in tier.sponsors %}
+      {% set _orgs_ns.items = _orgs_ns.items + [{
+        "@type": "Organization",
+        "name": s.name,
+        "logo": site.base_url ~ s.logo,
+        "description": s.description,
+        "sameAs": s.links | map(attribute="url") | list
+      }] %}
+    {% endfor %}
+  {% endfor %}
+  {% set _ns.graph = _ns.graph + _orgs_ns.items %}
+{% endif %}
+
+{% if _ns.graph %}
+<script type="application/ld+json">
+{{ {"@context": "https://schema.org", "@graph": _ns.graph} | tojson }}
+</script>
+{% endif %}
+{% endif %}

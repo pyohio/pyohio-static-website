@@ -1,5 +1,6 @@
 ---
 title: Sponsors
+schema_types: [SponsorList]
 sponsor_tiers:
   - name: Bronze
     sponsors:
