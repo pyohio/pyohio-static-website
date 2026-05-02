@@ -10,6 +10,7 @@
 {% if _title is defined %}
 {% set description = _fm.get("description") or site.description %}
 {% set og_image = _fm.get("og_image") or site.og_image %}
+{% set og_logo = _fm.get("og_logo") or (site.base_url ~ site.base_path ~ "/img/pyohio-square-primary.png" if site.base_url) %}
 {% set _kw = _fm.get("keywords") %}
 {% if _kw is string %}{% set keywords = _kw %}{% elif _kw %}{% set keywords = _kw | join(", ") %}{% endif %}
 
@@ -28,6 +29,9 @@
 {% if og_image %}
 <meta property="og:image" content="{{ og_image }}">
 {% endif %}
+{% if og_logo %}
+<meta property="og:logo" content="{{ og_logo }}">
+{% endif %}
 {% if site.base_url %}
 {% set _slug_parts = _slug.split('/') %}
 {% if _slug_parts[-1] == 'index' %}
@@ -37,7 +41,7 @@
 {% else %}
   {% set _page_path = '/' + _slug + '.html' %}
 {% endif %}
-<meta property="og:url" content="{{ site.base_url }}{{ _page_path }}">
+<meta property="og:url" content="{{ site.base_url }}{{ site.base_path }}{{ _page_path }}">
 {% endif %}
 
 <meta name="twitter:card" content="{% if og_image %}summary_large_image{% else %}summary{% endif %}">
