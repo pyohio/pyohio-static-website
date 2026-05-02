@@ -21,4 +21,4 @@ just build       # Build the 2026 site
 just theme-css   # Rebuild theme CSS after editing input.css or templates
 ```
 
-See the top-level `CLAUDE.md` for more on the theme and multi-year setup.
+See the top-level `README.md` for more on the theme and multi-year setup.
