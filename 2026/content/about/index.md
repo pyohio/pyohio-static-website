@@ -1,5 +1,6 @@
 ---
 title: About PyOhio
+schema_types: [Organization]
 ---
 
 # About PyOhio

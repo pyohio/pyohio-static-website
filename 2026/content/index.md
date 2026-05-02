@@ -2,6 +2,7 @@
 title: PyOhio 2026
 hide_title: true
 hero_image: /2026/img/pyohio-2026-transparent.png
+schema_types: [Event, Organization]
 ---
 
 ## The Python Community Conference Based in Ohio
