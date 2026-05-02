@@ -8,7 +8,7 @@
 
 @theme {
   --color-pyohio-purple: #4A3078;
-  --color-pyohio-green: #4D972D;
+  --color-pyohio-green: #3F7D24;
   --color-pyohio-navy: #0B2C4E;
 }
 
@@ -20,7 +20,7 @@
   --color-base-content: oklch(25% 0.02 277);
   --color-primary: oklch(38% 0.118 297);
   --color-primary-content: oklch(98% 0.005 297);
-  --color-secondary: oklch(61% 0.158 138);
+  --color-secondary: oklch(45% 0.158 138);
   --color-secondary-content: oklch(98% 0.005 138);
   --color-accent: oklch(29% 0.073 252);
   --color-accent-content: oklch(98% 0.005 252);
@@ -53,13 +53,21 @@ h3, h4, h5, h6 {
     position: absolute;
     left: -9999px;
     z-index: 50;
-    padding: 1rem;
+    padding: 1rem 1.25rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     background-color: var(--color-base-100);
     color: var(--color-primary);
 }
 
 .skip-link:focus {
     left: 0;
+}
+
+/* Ensure mobile drawer menu items meet minimum 24px touch target (WCAG 2.5.8) */
+#site-navbar .menu li > a,
+#site-navbar .menu summary {
+    min-height: 1.5rem;
 }
 
 /* Focus styles */
