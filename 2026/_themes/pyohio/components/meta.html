@@ -41,6 +41,7 @@
 {% else %}
   {% set _page_path = '/' + _slug + '.html' %}
 {% endif %}
+<link rel="canonical" href="{{ site.base_url }}{{ site.base_path }}{{ _page_path }}">
 <meta property="og:url" content="{{ site.base_url }}{{ site.base_path }}{{ _page_path }}">
 {% endif %}
 
