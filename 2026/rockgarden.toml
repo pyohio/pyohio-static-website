@@ -3,7 +3,7 @@ title = "PyOhio 2026"
 description = "PyOhio 2026 — The Python Community Conference Based in Ohio"
 og_image = "https://www.pyohio.org/2026/img/og-image.png"
 source = "content"
-#base_url = "https://www.pyohio.org"
+base_url = "https://www.pyohio.org"
 base_path = "/2026"
 
 [theme]
