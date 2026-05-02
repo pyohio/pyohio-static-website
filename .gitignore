@@ -18,6 +18,7 @@ public/
 2026/_site/
 2026/.rockgarden/
 _site/
+.rockgarden/
 
 # Dependencies
 node_modules/

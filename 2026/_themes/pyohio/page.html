@@ -12,7 +12,7 @@
         <img src="{{ page.frontmatter.hero_image }}" alt="{{ page.title }}" class="max-w-md w-full" style="filter: drop-shadow(0 2px 8px rgba(200,200,210,0.5));">
     </div>
     {% endif %}
-    {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1 class="text-3xl lg:text-4xl font-extrabold text-primary-content mb-6">{{ page.title }}</h1>{% endif %}{% endblock %}
+    {% block heading %}{% if not page.frontmatter.get('hide_title') %}<h1 class="text-3xl lg:text-4xl font-extrabold text-primary-content mb-6">{{ page.title }}</h1>{% else %}<h1 class="sr-only">{{ page.title }}</h1>{% endif %}{% endblock %}
 {% endblock %}
 
 {% block content %}
