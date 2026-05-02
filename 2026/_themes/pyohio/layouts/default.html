@@ -47,23 +47,23 @@
                     {% for node in site.nav.children %}
                         {% if node.is_folder and node.children %}
                         <div class="nav-dropdown relative">
-                            <button class="nav-dropdown-btn flex items-center gap-1 rounded-field px-3 py-2 hover:bg-base-content/10 transition-colors">
+                            <button class="nav-dropdown-btn menu-trigger flex items-center gap-1 rounded-field px-3 py-2">
                                 {{ node.label }}
                                 <svg class="nav-dropdown-arrow w-3 h-3 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                                 </svg>
                             </button>
-                            <ul class="nav-dropdown-menu hidden absolute top-full mt-2 z-50 min-w-48 p-2 shadow-lg bg-pyohio-green rounded-b-box border border-white">
+                            <ul class="nav-dropdown-menu menu-panel hidden absolute top-full mt-2 z-50 min-w-48">
                                 {% if node.index_path %}
-                                <li><a href="{{ node.index_path }}" class="block px-3 py-2 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a></li>
+                                <li><a href="{{ node.index_path }}" class="menu-link">{{ node.label }}</a></li>
                                 {% endif %}
                                 {% for child in node.children %}
-                                <li><a href="{{ child.path }}" class="block px-3 py-2 rounded-field hover:bg-base-content/10 transition-colors">{{ child.label }}</a></li>
+                                <li><a href="{{ child.path }}" class="menu-link">{{ child.label }}</a></li>
                                 {% endfor %}
                             </ul>
                         </div>
                         {% else %}
-                        <a href="{{ node.path }}" class="px-3 py-2 rounded-field hover:bg-base-content/10 transition-colors">{{ node.label }}</a>
+                        <a href="{{ node.path }}" class="menu-trigger rounded-field px-3 py-2">{{ node.label }}</a>
                         {% endif %}
                     {% endfor %}
                     {% endif %}
@@ -75,6 +75,7 @@
                     {% include "components/search.html" %}
                 </div>
                 {% endif %}
+                {% with variant='quick' %}{% include "components/theme-switcher.html" %}{% endwith %}
             </div>
         </div>
     </header>

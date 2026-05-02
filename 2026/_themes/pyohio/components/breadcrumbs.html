@@ -6,7 +6,7 @@
         {% if not loop.last %}
         <a href="{{ crumb.path }}" class="hover:text-primary-content/70">{{ crumb.label }}</a>
         {% else %}
-        <span class="text-primary-content/70">{{ crumb.label }}</span>
+        <span aria-current="page">{{ crumb.label }}</span>
         {% endif %}
       </li>
       {% endfor %}

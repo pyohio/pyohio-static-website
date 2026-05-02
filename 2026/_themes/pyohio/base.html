@@ -7,8 +7,20 @@
     <link rel="icon" href="{{ site.base_path }}/favicon.ico" sizes="48x48">
     <link rel="icon" type="image/png" href="{{ site.base_path }}/favicon.png" sizes="180x180">
     <link rel="apple-touch-icon" href="{{ site.base_path }}/favicon.png">
+    <script>
+    (function(){
+      try {
+        var s = localStorage.getItem('pyohio-theme') || 'system';
+        var hc = (s === 'system')
+          ? matchMedia('(prefers-contrast: more)').matches
+          : (s === 'high-contrast');
+        document.documentElement.setAttribute('data-theme', hc ? 'pyohio-high-contrast' : 'pyohio-light');
+      } catch(e) {}
+    })();
+    </script>
     {% include "components/meta.html" %}
     <link href="{{ site.base_path }}/{{ site.assets_dir }}/rockgarden.css{% if site.cache_hash %}?v={{ site.cache_hash }}{% endif %}" rel="stylesheet" type="text/css" />
+    <script src="{{ site.base_path }}/{{ site.assets_dir }}/theme-switcher.js{% if site.cache_hash %}?v={{ site.cache_hash }}{% endif %}" defer></script>
     {% if site.search_enabled %}
     <script src="{{ site.base_path }}/{{ site.assets_dir }}/lunr.min.js{% if site.cache_hash %}?v={{ site.cache_hash }}{% endif %}"></script>
     {% endif %}

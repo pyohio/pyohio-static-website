@@ -1,9 +1,9 @@
 ---
-title: Health and Safety Guidelines
+title: Health & Safety Guidelines
 nav_order: 4
 ---
 
-# Health and Safety Guidelines
+# Health & Safety Guidelines
 
 These guidelines apply to all PyOhio attendees, within the PyOhio event space. PyOhio is being held on the third floor of the Cleveland State University Student Center. Everything outlined here should be followed when in any indoor space on the third floor. This includes attending talks and Open Spaces, and any time spent in the hallways. Please ensure you act in accordance with these guidelines at all times while attending PyOhio.
 
