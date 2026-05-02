@@ -1,7 +1,6 @@
 ---
 title: Venue
 nav_order: 2
-schema_types: [Place]
 ---
 
 # Venue
