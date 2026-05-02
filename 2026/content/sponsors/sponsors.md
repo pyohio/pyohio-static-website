@@ -4,7 +4,6 @@ sponsor_tiers:
   - name: Bronze
     sponsors:
       - name: Six Feet Up
-        url: http://sixfeetup.com/?utm_source=pyohio2026
         logo: /2026/img/sponsors/six-feet-up.svg
         description: >-
           Six Feet Up helps impactful tech leaders solve hard problems by
@@ -18,6 +17,15 @@ sponsor_tiers:
           on Clutch.co. Trusted by leading organizations such as Capital One,
           NASA, Purdue University, and UNEP since 1999, we are eager to help
           our clients make an impact. More info is at sixfeetup.com.
+        links:
+          - label: Website
+            url: http://sixfeetup.com/?utm_source=pyohio2026
+          - label: LinkedIn
+            url: https://www.linkedin.com/company/sixfeetup/
+          - label: Bluesky
+            url: https://bsky.app/profile/sixfeetup.com
+          - label: Mastodon
+            url: https://mastodon.social/@sixfeetup@sixfeetup.social
 ---
 
 # Sponsors

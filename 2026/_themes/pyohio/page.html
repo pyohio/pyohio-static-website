@@ -67,27 +67,26 @@
             {% if page.frontmatter.sponsor_tiers %}
             <div class="not-prose">
                 {% for tier in page.frontmatter.sponsor_tiers %}
-                <section class="sponsor-tier-section">
-                    <h2 class="sponsor-tier-heading">{{ tier.name }}</h2>
-                    <div class="sponsor-card-grid">
-                        {% for sponsor in tier.sponsors %}
-                        <div class="sponsor-card">
-                            <div class="sponsor-card-inner">
-                                <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" class="sponsor-logo-link" aria-label="{{ sponsor.name }} website">
-                                    <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="sponsor-logo">
-                                </a>
-                                <h3 class="sponsor-name">
-                                    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">{{ sponsor.name }}</a>
-                                </h3>
-                                <p class="sponsor-description">{{ sponsor.description }}</p>
-                                <div class="sponsor-links">
-                                    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Website</a>
-                                </div>
-                            </div>
+                <h2 class="sponsor-tier-heading">{{ tier.name }}</h2>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 my-8">
+                    {% for sponsor in tier.sponsors %}
+                    {% set sponsor_slug = sponsor.name | lower | replace(' ', '-') %}
+                    <div id="{{ sponsor_slug }}" class="feature-card scroll-mt-20">
+                        <div class="sponsor-card-logo">
+                            <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo">
                         </div>
-                        {% endfor %}
+                        <h3>{{ sponsor.name }}</h3>
+                        <p>{{ sponsor.description }}</p>
+                        {% if sponsor.links %}
+                        <div class="sponsor-links">
+                            {% for link in sponsor.links %}
+                            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm {{ 'btn-primary' if loop.first else 'btn-secondary' }}">{{ link.label }}</a>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
                     </div>
-                </section>
+                    {% endfor %}
+                </div>
                 {% endfor %}
             </div>
             {% endif %}

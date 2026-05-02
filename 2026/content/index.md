@@ -16,24 +16,6 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 
 Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) and [Code of Conduct](/2026/about/code-of-conduct/).
 
-<section class="sponsors-preview not-prose my-12">
-<h2 class="sponsors-preview-heading">Our Sponsors</h2>
-<p class="sponsors-preview-subheading">Thank you to the sponsors who make PyOhio possible!</p>
-<div class="sponsors-preview-grid">
-<a href="/2026/sponsors/" class="sponsor-preview-card">
-<div class="sponsor-logo-container">
-<img src="/2026/img/sponsors/six-feet-up.svg" alt="Six Feet Up logo">
-</div>
-<p class="sponsor-preview-name">Six Feet Up</p>
-</a>
-</div>
-<div class="sponsors-preview-cta">
-<a href="/2026/sponsors/" class="btn btn-primary">View All Sponsors</a>
-</div>
-</section>
-
----
-
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 my-8 not-prose">
 
 <a href="/2026/about/" class="feature-card">
@@ -96,4 +78,23 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <p>Find recommended hotels near Cleveland State University.</p>
 </a>
 
+</div>
+
+## Our Sponsors
+
+Thank you to the sponsors who make PyOhio possible!
+
+<div class="flex flex-wrap justify-center gap-8 my-8 not-prose">
+
+<a href="/2026/sponsors/&#35;six-feet-up" class="feature-card text-center w-80">
+<div class="sponsor-card-logo">
+<img src="/2026/img/sponsors/six-feet-up.svg" alt="Six Feet Up logo">
+</div>
+<h3>Six Feet Up</h3>
+</a>
+
+</div>
+
+<div class="flex justify-center my-6 not-prose">
+<a href="/2026/sponsors/" class="btn btn-primary">View All Sponsors</a>
 </div>
