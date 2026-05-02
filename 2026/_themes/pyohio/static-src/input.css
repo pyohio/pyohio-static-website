@@ -375,6 +375,38 @@ details.callout .callout-content {
     text-align: center;
 }
 
+/* Corporate sponsors */
+.sponsor-tier-heading {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sponsor-card-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    margin-bottom: 0.25rem;
+}
+
+.sponsor-card-logo img {
+    max-width: 90%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.sponsor-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 /* Search */
 .search-modal {
     backdrop-filter: blur(4px);
