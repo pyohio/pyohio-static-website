@@ -104,7 +104,7 @@
       });
     });
 
-    // Escape closes the popover
+    // Escape closes the popover and refocuses the trigger
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         document.querySelectorAll('details.theme-switcher-quick[open]').forEach(function (d) {
@@ -113,6 +113,15 @@
           if (trigger) trigger.focus();
         });
       }
+    });
+
+    // Close popover when focus leaves the details (covers Tab forward / Shift+Tab backward)
+    document.querySelectorAll('details.theme-switcher-quick').forEach(function (d) {
+      d.addEventListener('focusout', function (e) {
+        if (!e.relatedTarget || !d.contains(e.relatedTarget)) {
+          d.open = false;
+        }
+      });
     });
 
     // Re-resolve theme if OS contrast changes and we're in 'system' mode

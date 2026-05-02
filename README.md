@@ -49,10 +49,31 @@ Theme CSS must be rebuilt after changing templates (Tailwind scans them for clas
   - `content/` — Markdown content pages (YAML frontmatter)
   - `_themes/pyohio/` — Custom theme (templates, CSS, static assets)
   - `rockgarden.toml` — Site configuration
-- `/2025/` — Previous year's site (Astro, kept as reference)
-- `/netlify-static/` — Static files copied directly to production build
-- `/archive/` — Previous years (git submodule)
+- `/netlify-static/` — Static files copied directly to production build (e.g. `_redirects`, `robots.txt`)
+- `/archive/` — All previous years' built sites (git submodule → [pyohio/pyohio-website-archive](https://github.com/pyohio/pyohio-website-archive))
 - `/scripts/` — Python scripts for PreTalx data import
+
+## Archiving a Year
+
+Each year's site is built with whatever tooling that year used (Astro, Rockgarden, etc.) and only the **static build output** is preserved long-term — not the source. The archive lives in a separate repo (`pyohio/pyohio-website-archive`) that's pulled in here as a submodule at `/archive/`.
+
+When a year wraps up:
+
+1. Build a final production copy of the year's site (e.g. `just build` for 2026).
+2. Push the resulting static output (the `_site/` contents, renamed to `<YEAR>/`) to the archive repo.
+3. Update the submodule pointer here: `git submodule update --remote archive`, then commit the new pointer.
+4. Remove the year's source directory from this repo (it's no longer needed; the archive is canonical).
+
+The Netlify production build (`just build-prod`) copies `archive/20*` into `public/` alongside the current year's build, so all archived years are deployed together.
+
+## Adding a New Current Year
+
+When rolling over to a new year (e.g. archiving 2026 and starting 2027), several things need updating beyond just the year directory:
+
+- **`justfile`** — `dev`, `build`, and `build-prod` recipes hardcode the current year's directory.
+- **`netlify.toml`** — the build command may reference the current year if anything year-specific is needed; double-check.
+- **`netlify-static/_redirects`** — the `/ /2026 302` rule and any year-agnostic short URLs (`/about`, `/coc`, etc.) point at the current year and must be bumped.
+- **`netlify-static/sitemap.xml`** — the root sitemap index. Add a `<sitemap>` entry for the new year's sitemap (e.g. `https://www.pyohio.org/2027/sitemap.xml`) and keep the now-archived previous year listed. If the new year's tooling doesn't generate a sitemap, add its root URL to `netlify-static/sitemap-archives.xml` instead.
 
 ## Archives of Previous Years
 

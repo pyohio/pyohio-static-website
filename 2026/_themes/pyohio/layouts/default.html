@@ -118,6 +118,15 @@
         (function() {
             var dropdowns = document.querySelectorAll('.nav-dropdown');
 
+            function closeDropdown(dropdown) {
+                dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
+                dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
+            }
+
+            function closeAll() {
+                dropdowns.forEach(closeDropdown);
+            }
+
             dropdowns.forEach(function(dropdown) {
                 var btn = dropdown.querySelector('.nav-dropdown-btn');
                 var menu = dropdown.querySelector('.nav-dropdown-menu');
@@ -128,10 +137,7 @@
                     var isOpen = !menu.classList.contains('hidden');
 
                     // Close all dropdowns first
-                    dropdowns.forEach(function(other) {
-                        other.querySelector('.nav-dropdown-menu').classList.add('hidden');
-                        other.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
-                    });
+                    closeAll();
 
                     // Toggle this one
                     if (!isOpen) {
@@ -139,25 +145,31 @@
                         arrow.classList.add('rotate-180');
                     }
                 });
+
+                // Close when focus leaves the dropdown (covers Tab forward and Shift+Tab backward)
+                dropdown.addEventListener('focusout', function(e) {
+                    if (!e.relatedTarget || !dropdown.contains(e.relatedTarget)) {
+                        closeDropdown(dropdown);
+                    }
+                });
             });
 
             // Close all on click outside
             document.addEventListener('click', function(e) {
                 if (!e.target.closest('.nav-dropdown')) {
-                    dropdowns.forEach(function(dropdown) {
-                        dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
-                        dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
-                    });
+                    closeAll();
                 }
             });
 
-            // Close on Escape
+            // Escape closes the open dropdown and returns focus to its trigger button
             document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    dropdowns.forEach(function(dropdown) {
-                        dropdown.querySelector('.nav-dropdown-menu').classList.add('hidden');
-                        dropdown.querySelector('.nav-dropdown-arrow').classList.remove('rotate-180');
-                    });
+                if (e.key !== 'Escape') return;
+                var focused = document.activeElement;
+                var focusedDropdown = focused && focused.closest && focused.closest('.nav-dropdown');
+                closeAll();
+                if (focusedDropdown) {
+                    var btn = focusedDropdown.querySelector('.nav-dropdown-btn');
+                    if (btn) btn.focus();
                 }
             });
         })();
