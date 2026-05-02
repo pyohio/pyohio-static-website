@@ -45,6 +45,7 @@
         {% endblock %}
         {% block body %}
         {%- set _sponsor_marker = '<!-- sponsors -->' -%}
+        {%- set _corp_marker = '<!-- corporate-sponsors -->' -%}
         {%- if page.frontmatter.get('sponsors') is not none and _sponsor_marker in page.html -%}
             {%- set _parts = page.html.split(_sponsor_marker, 1) -%}
             {{ _parts[0] | safe }}
@@ -57,6 +58,37 @@
             <div class="sponsor-cta not-prose">
                 <p class="font-semibold mb-2">Want to become an Individual Sponsor?</p>
                 <p class="text-base-content/70 text-sm">Donate $50+ via the <a href="/donate" class="link link-primary">PSF donation page</a> to join this list!</p>
+            </div>
+            {% endif %}
+            {{ _parts[1] | safe }}
+        {%- elif page.frontmatter.get('sponsor_tiers') is not none and _corp_marker in page.html -%}
+            {%- set _parts = page.html.split(_corp_marker, 1) -%}
+            {{ _parts[0] | safe }}
+            {% if page.frontmatter.sponsor_tiers %}
+            <div class="not-prose">
+                {% for tier in page.frontmatter.sponsor_tiers %}
+                <section class="sponsor-tier-section">
+                    <h2 class="sponsor-tier-heading">{{ tier.name }}</h2>
+                    <div class="sponsor-card-grid">
+                        {% for sponsor in tier.sponsors %}
+                        <div class="sponsor-card">
+                            <div class="sponsor-card-inner">
+                                <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" class="sponsor-logo-link" aria-label="{{ sponsor.name }} website">
+                                    <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="sponsor-logo">
+                                </a>
+                                <h3 class="sponsor-name">
+                                    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">{{ sponsor.name }}</a>
+                                </h3>
+                                <p class="sponsor-description">{{ sponsor.description }}</p>
+                                <div class="sponsor-links">
+                                    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                {% endfor %}
             </div>
             {% endif %}
             {{ _parts[1] | safe }}

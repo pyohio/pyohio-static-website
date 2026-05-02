@@ -16,6 +16,22 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 
 Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) and [Code of Conduct](/2026/about/code-of-conduct/).
 
+<section class="sponsors-preview not-prose my-12">
+<h2 class="sponsors-preview-heading">Our Sponsors</h2>
+<p class="sponsors-preview-subheading">Thank you to the sponsors who make PyOhio possible!</p>
+<div class="sponsors-preview-grid">
+<a href="/2026/sponsors/" class="sponsor-preview-card">
+<div class="sponsor-logo-container">
+<img src="/2026/img/sponsors/six-feet-up.svg" alt="Six Feet Up logo">
+</div>
+<p class="sponsor-preview-name">Six Feet Up</p>
+</a>
+</div>
+<div class="sponsors-preview-cta">
+<a href="/2026/sponsors/" class="btn btn-primary">View All Sponsors</a>
+</div>
+</section>
+
 ---
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 my-8 not-prose">
@@ -60,12 +76,6 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <span class="feature-card-icon">:lucide-heart-pulse:</span>
 <h3>Health &amp; Safety</h3>
 <p>Review our health guidelines to keep our community safe.</p>
-</a>
-
-<a href="/2026/sponsors/" class="feature-card">
-<span class="feature-card-icon">:lucide-sparkles:</span>
-<h3>Sponsors</h3>
-<p>Thank our generous sponsors who make this free conference possible.</p>
 </a>
 
 <a href="/2026/attend/venue/" class="feature-card">
