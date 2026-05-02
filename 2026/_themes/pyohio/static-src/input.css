@@ -31,6 +31,7 @@
   --color-warning: oklch(75% 0.15 75);
   --color-error: oklch(60% 0.2 25);
   --radius-btn: 0.5rem;
+  --radius-field: 0.5rem;
   --radius-box: 1rem;
   --color-pyohio-green: #3F7D24;
 }
@@ -54,6 +55,7 @@
   --color-warning: oklch(60% 0.15 75);
   --color-error: oklch(50% 0.2 25);
   --radius-btn: 0.5rem;
+  --radius-field: 0.5rem;
   --radius-box: 1rem;
   --color-pyohio-green: #2E5C1A;
 }
@@ -105,18 +107,26 @@ h3, h4, h5, h6 {
     outline-offset: 3px;
 }
 
-/* Shared menu link style — used by nav dropdown links and as the base hover for theme-switcher options */
-.menu-link {
-    display: block;
-    padding: 0.375rem 0.75rem;
-    border-radius: var(--radius-field, 0.375rem);
+/* Shared menu item style — used by nav dropdown links AND theme-switcher popover option labels.
+   Full-width clickable row with hover/focus and selected treatment. */
+.menu-link,
+.theme-switcher-quick .theme-switcher-options label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-field);
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
     transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .menu-link:hover,
-.menu-link:focus-visible {
+.menu-link:focus-visible,
+.theme-switcher-quick .theme-switcher-options label:hover,
+.theme-switcher-quick .theme-switcher-options label:has(input[type="radio"]:checked),
+.theme-switcher-quick .theme-switcher-options label:has(input[type="radio"]:focus-visible) {
     background-color: var(--color-base-100);
     color: var(--color-primary);
     text-decoration: none;
@@ -152,9 +162,9 @@ h3, h4, h5, h6 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-field, 0.5rem);
     background: transparent;
     color: inherit;
     cursor: pointer;
@@ -187,36 +197,22 @@ h3, h4, h5, h6 {
     margin: 0;
 }
 
-.theme-switcher-options-vertical {
-    flex-direction: column;
-    gap: 0.125rem;
-    border: 0;
-    padding: 0;
-}
-
-.theme-switcher-options-vertical label {
-    width: 100%;
-    justify-content: flex-start;
-}
-
 .theme-switcher-detailed {
     border: 0;
     padding: 0;
     margin: 0;
 }
 
-.theme-switcher-options {
+.theme-switcher-detailed .theme-switcher-options {
     display: inline-flex;
     gap: 0.25rem;
     padding: 0.25rem;
     border-radius: 0.5rem;
-}
-
-.theme-switcher-detailed .theme-switcher-options {
     border: 1px solid var(--color-base-100);
 }
 
-.theme-switcher-options label {
+/* Footer detailed switcher: horizontal compact pills */
+.theme-switcher-detailed .theme-switcher-options label {
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
@@ -230,21 +226,21 @@ h3, h4, h5, h6 {
     transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.theme-switcher-options label:hover:not(:has(input[type="radio"]:checked)) {
+.theme-switcher-detailed .theme-switcher-options label:hover,
+.theme-switcher-detailed .theme-switcher-options label:has(input[type="radio"]:checked),
+.theme-switcher-detailed .theme-switcher-options label:has(input[type="radio"]:focus-visible) {
     background-color: var(--color-base-100);
     color: var(--color-primary);
 }
 
-.theme-switcher-options input[type="radio"]:focus-visible + span {
-    outline: 2px solid currentColor;
-    outline-offset: 2px;
-    border-radius: 0.25rem;
-}
-
-.theme-switcher-options label:has(input[type="radio"]:checked) {
-    background-color: var(--color-base-100);
-    color: var(--color-primary);
-    font-weight: 700;
+/* Navbar popover options: stack vertically, full-width rows */
+.theme-switcher-quick .theme-switcher-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.125rem;
+    padding: 0;
+    border: 0;
 }
 
 /* Nav tree */
