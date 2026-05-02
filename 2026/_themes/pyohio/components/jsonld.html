@@ -6,6 +6,7 @@
   {% set _fm = {} %}
 {% endif %}
 {% set _types = _fm.get("schema_types") or [] %}
+{% set _ctx = "https://schema.org" %}
 
 {% if _types %}
 {% set _event_id = site.base_url ~ site.base_path ~ "/#event" %}
@@ -27,6 +28,7 @@
 } %}
 
 {% set org_data = {
+  "@context": _ctx,
   "@type": "Organization",
   "@id": _org_id,
   "name": "PyOhio",
@@ -40,6 +42,7 @@
 } %}
 
 {% set event_data = {
+  "@context": _ctx,
   "@type": "Event",
   "@id": _event_id,
   "name": "PyOhio 2026",
@@ -59,67 +62,33 @@
     "url": site.base_url ~ site.base_path ~ "/attend/registration/",
     "validFrom": "2026-01-01"
   },
-  "location": {"@id": _place_id},
-  "organizer": {"@id": _org_id}
+  "location": place_data,
+  "organizer": org_data
 } %}
 
-{% set _ns = namespace(graph=[]) %}
-
-{% if "Event" in _types %}{% set _ns.graph = _ns.graph + [event_data] %}{% endif %}
-{% if "Place" in _types %}{% set _ns.graph = _ns.graph + [place_data] %}{% endif %}
-{% if "Organization" in _types %}{% set _ns.graph = _ns.graph + [org_data] %}{% endif %}
-
-{% if "SpeakerList" in _types %}
-  {% set _items_ns = namespace(items=[]) %}
-  {% for s in _fm.get("speakers") or [] %}
-    {% set _items_ns.items = _items_ns.items + [{
-      "@type": "ListItem",
-      "position": loop.index,
-      "item": {"@type": "Person", "name": s.name}
-    }] %}
-  {% endfor %}
-  {% set _ns.graph = _ns.graph + [{
-    "@type": "ItemList",
-    "name": _fm.get("title"),
-    "itemListElement": _items_ns.items
-  }] %}
-{% endif %}
-
-{% if "TalkList" in _types %}
-  {% set _talks_ns = namespace(items=[]) %}
-  {% for t in _fm.get("talks") or [] %}
-    {% set _talks_ns.items = _talks_ns.items + [{
-      "@type": "ListItem",
-      "position": loop.index,
-      "item": {"@type": "Event", "name": t.name}
-    }] %}
-  {% endfor %}
-  {% set _ns.graph = _ns.graph + [{
-    "@type": "ItemList",
-    "name": _fm.get("title"),
-    "itemListElement": _talks_ns.items
-  }] %}
-{% endif %}
-
-{% if "SponsorList" in _types and _fm.get("sponsor_tiers") %}
-  {% set _orgs_ns = namespace(items=[]) %}
-  {% for tier in _fm.sponsor_tiers %}
-    {% for s in tier.sponsors %}
-      {% set _orgs_ns.items = _orgs_ns.items + [{
-        "@type": "Organization",
-        "name": s.name,
-        "logo": site.base_url ~ s.logo,
-        "description": s.description,
-        "sameAs": s.links | map(attribute="url") | list
-      }] %}
-    {% endfor %}
-  {% endfor %}
-  {% set _ns.graph = _ns.graph + _orgs_ns.items %}
-{% endif %}
-
-{% if _ns.graph %}
+{% if "Event" in _types %}
 <script type="application/ld+json">
-{{ {"@context": "https://schema.org", "@graph": _ns.graph} | tojson }}
+{{ event_data | tojson }}
 </script>
 {% endif %}
+{% if "Organization" in _types %}
+<script type="application/ld+json">
+{{ org_data | tojson }}
+</script>
+{% endif %}
+{% endif %}
+
+{% if breadcrumbs is defined and breadcrumbs|length > 1 %}
+  {% set _crumbs_ns = namespace(items=[]) %}
+  {% for crumb in breadcrumbs %}
+    {% set _crumbs_ns.items = _crumbs_ns.items + [{
+      "@type": "ListItem",
+      "position": loop.index,
+      "name": crumb.label,
+      "item": site.base_url ~ crumb.path
+    }] %}
+  {% endfor %}
+<script type="application/ld+json">
+{{ {"@context": _ctx, "@type": "BreadcrumbList", "itemListElement": _crumbs_ns.items} | tojson }}
+</script>
 {% endif %}
