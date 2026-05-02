@@ -1,0 +1,58 @@
+{# Theme switcher. variant=quick (navbar popover) or variant=detailed (footer inline). #}
+{% set _variant = variant | default('quick') %}
+{% set _name = 'pyohio-theme-' ~ _variant %}
+
+{% if _variant == 'quick' %}
+<details class="theme-switcher-quick">
+  <summary class="theme-switcher-quick-trigger" aria-label="Display contrast settings" aria-haspopup="menu">
+    <svg data-theme-icon="system" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <path d="M3 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3v2h2a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2h2v-2H5a2 2 0 0 1-2-2zm2 0v8h10V4z"/>
+    </svg>
+    <svg data-theme-icon="standard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" hidden>
+      <path d="M10 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1m4.243 1.757a1 1 0 0 1 0 1.414l-.707.708a1 1 0 1 1-1.415-1.415l.708-.707a1 1 0 0 1 1.414 0M17 9a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2zm-1.464 5.536a1 1 0 0 1 0 1.414 1 1 0 0 1-1.415 0l-.707-.707a1 1 0 0 1 1.414-1.415zM10 16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1m-4.95-1.464a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 1 1-1.414-1.414zM4 10a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1m1.464-4.95a1 1 0 0 1 0 1.414L4.757 7.17A1 1 0 0 1 3.343 5.757l.707-.707a1 1 0 0 1 1.414 0M10 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8"/>
+    </svg>
+    <svg data-theme-icon="high-contrast" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" hidden>
+      <path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16m0 2v12a6 6 0 1 1 0-12"/>
+    </svg>
+  </summary>
+  <div class="theme-switcher-quick-popover" role="menu" aria-label="Display contrast">
+    <fieldset>
+      <legend class="sr-only">Display contrast</legend>
+      <div role="radiogroup" aria-label="Display contrast" class="theme-switcher-options theme-switcher-options-vertical">
+        <label>
+          <input type="radio" name="{{ _name }}" value="system" data-theme-control="quick" class="sr-only">
+          <span>System (auto)</span>
+        </label>
+        <label>
+          <input type="radio" name="{{ _name }}" value="standard" data-theme-control="quick" class="sr-only">
+          <span>Standard</span>
+        </label>
+        <label>
+          <input type="radio" name="{{ _name }}" value="high-contrast" data-theme-control="quick" class="sr-only">
+          <span>High contrast</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</details>
+{% endif %}
+
+{% if _variant == 'detailed' %}
+<fieldset class="theme-switcher-detailed">
+  <legend class="sr-only">Display contrast</legend>
+  <div class="theme-switcher-options" role="radiogroup" aria-label="Display contrast">
+    <label>
+      <input type="radio" name="{{ _name }}" value="system" data-theme-control="detailed" class="sr-only">
+      <span>System</span>
+    </label>
+    <label>
+      <input type="radio" name="{{ _name }}" value="standard" data-theme-control="detailed" class="sr-only">
+      <span>Standard</span>
+    </label>
+    <label>
+      <input type="radio" name="{{ _name }}" value="high-contrast" data-theme-control="detailed" class="sr-only">
+      <span>High contrast</span>
+    </label>
+  </div>
+</fieldset>
+{% endif %}
