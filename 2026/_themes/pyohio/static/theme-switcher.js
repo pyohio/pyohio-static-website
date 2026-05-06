@@ -79,6 +79,22 @@
   function init() {
     applyTheme(getSaved());
 
+    // Safari/WebKit doesn't fire `click` on the absolutely-positioned overlay
+    // input (mousedown lands but click never completes), so the radio never
+    // toggles. Handle the click at the label level and drive the radio +
+    // change event ourselves. Other browsers fire change natively, in which
+    // case our `radio.checked` short-circuit makes this a no-op.
+    document.addEventListener('click', function (e) {
+      var label = e.target.closest('label');
+      if (!label) return;
+      var radio = label.querySelector('input[type="radio"][data-theme-control]');
+      if (!radio || radio.checked) return;
+      document.querySelectorAll('input[type="radio"][name="' + radio.name + '"]').forEach(function (r) {
+        r.checked = (r === radio);
+      });
+      radio.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+
     // Radio group changes (covers both navbar popover and footer)
     document.addEventListener('change', function (e) {
       var radio = e.target.closest('[data-theme-control]');
@@ -115,10 +131,14 @@
       }
     });
 
-    // Close popover when focus leaves the details (covers Tab forward / Shift+Tab backward)
+    // Close popover when focus leaves the details (covers Tab forward / Shift+Tab backward).
+    // Require an actual relatedTarget so we don't close on transient mouse-induced
+    // blurs — Safari blurs the summary when mousedown lands on the radio with no
+    // immediate focus destination, which would otherwise hide the popover before
+    // mouseup fires and make the click land on the wrong element.
     document.querySelectorAll('details.theme-switcher-quick').forEach(function (d) {
       d.addEventListener('focusout', function (e) {
-        if (!e.relatedTarget || !d.contains(e.relatedTarget)) {
+        if (e.relatedTarget && !d.contains(e.relatedTarget)) {
           d.open = false;
         }
       });
