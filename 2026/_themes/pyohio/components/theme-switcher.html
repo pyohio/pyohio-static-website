@@ -15,20 +15,20 @@
       <path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16m0 2v12a6 6 0 1 1 0-12"/>
     </svg>
   </summary>
-  <div class="theme-switcher-quick-popover menu-panel" role="menu" aria-label="Display contrast">
+  <div class="theme-switcher-quick-popover menu-panel" aria-label="Display contrast">
     <fieldset>
       <legend class="sr-only">Display contrast</legend>
       <div role="radiogroup" aria-label="Display contrast" class="theme-switcher-options theme-switcher-options-vertical">
-        <label>
-          <input type="radio" name="{{ _name }}" value="system" data-theme-control="quick" class="sr-only">
+        <label for="{{ _name }}-system">
+          <input id="{{ _name }}-system" type="radio" name="{{ _name }}" value="system" data-theme-control="quick" class="sr-only">
           <span>System (auto)</span>
         </label>
-        <label>
-          <input type="radio" name="{{ _name }}" value="standard" data-theme-control="quick" class="sr-only">
+        <label for="{{ _name }}-standard">
+          <input id="{{ _name }}-standard" type="radio" name="{{ _name }}" value="standard" data-theme-control="quick" class="sr-only">
           <span>Standard</span>
         </label>
-        <label>
-          <input type="radio" name="{{ _name }}" value="high-contrast" data-theme-control="quick" class="sr-only">
+        <label for="{{ _name }}-high-contrast">
+          <input id="{{ _name }}-high-contrast" type="radio" name="{{ _name }}" value="high-contrast" data-theme-control="quick" class="sr-only">
           <span>High contrast</span>
         </label>
       </div>
