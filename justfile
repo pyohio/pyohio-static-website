@@ -24,3 +24,6 @@ clean:
     rm -rf public
     rm -rf 2026/_site
 
+# Fetch talks/speakers from PreTalx into 2026 content
+pretalx-fetch *ARGS:
+    uv run --project pyohio-cli pyohio pretalx fetch {{ARGS}}

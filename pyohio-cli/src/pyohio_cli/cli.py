@@ -1,5 +1,6 @@
 import click
 
+from pyohio_cli.pretalx import pretalx
 from pyohio_cli.sponsors import sponsors
 
 
@@ -9,6 +10,7 @@ def cli():
 
 
 cli.add_command(sponsors)
+cli.add_command(pretalx)
 
 
 if __name__ == "__main__":

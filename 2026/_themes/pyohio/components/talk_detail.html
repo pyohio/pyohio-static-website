@@ -1,0 +1,20 @@
+<div class="not-prose mb-6 text-base-content/70">
+    <span class="badge badge-soft badge-primary">{{ page.frontmatter.get('type', 'Talk') }}</span>
+    {% if page.frontmatter.get('duration') %}
+    <span class="ml-2 text-sm">{{ page.frontmatter.duration }} min</span>
+    {% endif %}
+</div>
+
+{{ page.html | safe }}
+
+{% set speakers = page.frontmatter.get('speakers') or [] %}
+{% if speakers %}
+<h2>Presented by</h2>
+<ul class="list-none pl-0">
+    {% for speaker in speakers %}
+    <li>
+        <a href="{{ site.base_path }}/program/speakers/{{ speaker.slug }}/" class="link link-secondary">{{ speaker.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}

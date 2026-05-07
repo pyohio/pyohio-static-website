@@ -1,0 +1,24 @@
+{% set keynoters = page.frontmatter.get('keynoters') or [] %}
+{% if keynoters %}
+{% for k in keynoters %}
+<section class="mb-12">
+    <div class="flex flex-col sm:flex-row gap-6 not-prose mb-4">
+        {% if k.avatar %}
+        <a href="{{ site.base_path }}/program/speakers/{{ k.slug }}/" class="flex-shrink-0">
+            <img src="{{ k.avatar }}" alt="{{ k.name }} profile photo" class="w-40 h-40 rounded-box object-cover" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="flex-1">
+            <h2 class="text-2xl font-bold text-primary mb-2">
+                <a href="{{ site.base_path }}/program/speakers/{{ k.slug }}/" class="link link-secondary no-underline hover:underline">{{ k.name }}</a>
+            </h2>
+        </div>
+    </div>
+    {% if k.biography_html %}
+    <div>{{ k.biography_html | safe }}</div>
+    {% endif %}
+</section>
+{% endfor %}
+{% else %}
+{{ page.html | safe }}
+{% endif %}

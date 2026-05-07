@@ -1,0 +1,31 @@
+{% set avatar = page.frontmatter.get('avatar') %}
+{% if avatar %}
+<div class="not-prose mb-6 flex justify-center">
+    <img src="{{ avatar }}" alt="{{ page.title }} profile photo" class="rounded-box max-w-xs w-full" loading="lazy">
+</div>
+{% endif %}
+
+{{ page.html | safe }}
+
+{% set talks = page.frontmatter.get('talks') or [] %}
+{% if talks %}
+<h2>Presenting</h2>
+<ul class="list-none pl-0">
+    {% for talk in talks %}
+    <li>
+        <a href="{{ site.base_path }}/program/talks/{{ talk.slug }}/" class="link link-secondary">{{ talk.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% set social_links = page.frontmatter.get('social_links') or [] %}
+{% if social_links %}
+<div class="not-prose mt-6 flex flex-wrap gap-2">
+    {% for link in social_links %}
+    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-soft">
+        {{ link.display }}
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
