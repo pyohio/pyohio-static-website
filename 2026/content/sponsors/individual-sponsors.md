@@ -8,6 +8,7 @@ sponsors:
   - Curtis Oneal
   - Dan Shernicoff
   - Derek Zoladz
+  - David Alexander
   - Eddie Cosma
   - Anonymous
 ---
