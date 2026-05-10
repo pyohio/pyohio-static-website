@@ -9,9 +9,9 @@ from pathlib import Path
 import click
 import markdown as md
 from mdx_gfm import GithubFlavoredMarkdownExtension
-from ruamel.yaml import YAML
 from slugify import slugify
 
+from pyohio_cli._frontmatter import update_frontmatter_key, yaml_loader
 from pyohio_cli.pretalx.avatars import AvatarDownloader
 from pyohio_cli.pretalx.client import PretalxClient
 from pyohio_cli.pretalx.config import PretalxConfig
@@ -21,14 +21,6 @@ KEEP_FILES = {"index.md", "_folder.md"}
 
 def _md_to_html(text: str) -> str:
     return md.markdown(text or "", extensions=[GithubFlavoredMarkdownExtension(), "footnotes"])
-
-
-def _yaml() -> YAML:
-    y = YAML()
-    y.preserve_quotes = True
-    y.indent(mapping=2, sequence=4, offset=2)
-    y.width = 4096
-    return y
 
 
 def _talk_slug(title: str) -> str:
@@ -215,7 +207,7 @@ class DataProcessor:
             }
             for r in ordered
         ]
-        self._update_frontmatter_key(self.keynote_page, "keynoters", keynoters)
+        update_frontmatter_key(self.keynote_page, "keynoters", keynoters)
 
     def update_talks_index(
         self,
@@ -243,7 +235,7 @@ class DataProcessor:
                 }
             )
         entries.sort(key=lambda e: e["title"].lower())
-        self._update_frontmatter_key(self.talks_index, "talks", entries)
+        update_frontmatter_key(self.talks_index, "talks", entries)
 
     def update_speakers_index(self, speaker_records: list[dict]) -> None:
         """Populate `speakers:` list on speakers/index.md for listing rendering."""
@@ -259,31 +251,11 @@ class DataProcessor:
                 }
             )
         entries.sort(key=lambda e: e["name"].lower())
-        self._update_frontmatter_key(self.speakers_index, "speakers", entries)
-
-    def _update_frontmatter_key(self, path: Path, key: str, value) -> None:
-        text = path.read_text()
-        if not text.startswith("---\n"):
-            raise click.UsageError(f"{path} missing frontmatter")
-        end = text.find("\n---\n", 4)
-        if end == -1:
-            raise click.UsageError(f"{path} has no closing frontmatter delimiter")
-
-        body = text[end + len("\n---\n") :]
-        yaml = _yaml()
-        data = yaml.load(text[4:end]) or {}
-        data[key] = value
-
-        buf = io.StringIO()
-        yaml.dump(data, buf)
-        new_fm = buf.getvalue()
-        if not new_fm.endswith("\n"):
-            new_fm += "\n"
-        path.write_text(f"---\n{new_fm}---\n{body}")
+        update_frontmatter_key(self.speakers_index, "speakers", entries)
 
     def _write_markdown(self, path: Path, frontmatter: dict, body: str) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
-        yaml = _yaml()
+        yaml = yaml_loader()
         buf = io.StringIO()
         yaml.dump(frontmatter, buf)
         fm_text = buf.getvalue()

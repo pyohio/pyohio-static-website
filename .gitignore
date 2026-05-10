@@ -36,3 +36,7 @@ plans/
 # PreTalx avatar cache (contents are regenerated on each fetch)
 pyohio-cli/avatar_cache/*
 !pyohio-cli/avatar_cache/.gitkeep
+
+# OG card preview output
+2026/_og-templates/_preview.html
+2026/_og-templates/_preview.png
