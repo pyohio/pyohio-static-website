@@ -15,6 +15,27 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 <a href="https://newsletter.pyohio.org/" class="btn btn-secondary">Get Newsletter</a>
 </div>
 
+## Event Overview
+
+<div class="grid grid-cols-1 gap-8 md:grid-cols-3 my-8 not-prose">
+
+<a href="/2026/program/black-python-devs-leadership-summit/" class="feature-card">
+<h3>Friday, July 24 (Pre-Conference)</h3>
+<p>Co-hosted <strong>Black Python Devs Leadership Summit</strong>, a single-day workshop for Python community leaders. Separate ticket required.</p>
+</a>
+
+<a href="/2026/program/" class="feature-card">
+<h3>Saturday, July 25</h3>
+<p>Keynote, a full day of talks, Open Spaces, and Lightning Talks.</p>
+</a>
+
+<a href="/2026/program/" class="feature-card">
+<h3>Sunday, July 26</h3>
+<p>Keynote, talks, and Open Spaces.</p>
+</a>
+
+</div>
+
 Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) and [Code of Conduct](/2026/about/code-of-conduct/).
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 my-8 not-prose">
