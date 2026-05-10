@@ -16,11 +16,11 @@ The summit is a single-day workshop for current and aspiring leaders and organiz
 
 ## Schedule at a Glance
 
-- **8:00 AM** — Registration & mingling
-- **9:00 AM** — Welcome and morning program (keynote, group discussion)
-- **11:30 AM – 1:00 PM** — Lunch break
-- **1:00 PM** — Afternoon program (keynote, community talks)
-- **4:15 PM** — Closing remarks
+- **8:00 AM**: Registration & mingling
+- **9:00 AM**: Welcome and morning program (keynote, group discussion)
+- **11:30 AM – 1:00 PM**: Lunch break
+- **1:00 PM**: Afternoon program (keynote, community talks)
+- **4:15 PM**: Closing remarks
 
 See the [full agenda](https://blackpythondevs.com/bpd-events/black-python-devs-leadership-summit-2026-ohio.html) on the Black Python Devs site.
 
