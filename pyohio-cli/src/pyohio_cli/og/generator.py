@@ -12,6 +12,7 @@ from pyohio_cli._frontmatter import read_frontmatter, update_frontmatter_key
 from pyohio_cli.og.renderer import OGRenderer
 
 KEEP_FILES = {"index.md", "_folder.md"}
+SQUARE_SIZE = 630  # OG cards are designed with a 630×630 safe-square in the center.
 
 
 def _file_url(path: Path) -> str:
@@ -396,3 +397,101 @@ def _prune_orphans(output: Path, keep_slugs: set[str]) -> None:
         if p.stem not in keep_slugs:
             p.unlink()
             click.echo(f"  pruned orphan {p.name}", err=True)
+
+
+def _center_crop_square(src: Path, dst: Path, size: int = SQUARE_SIZE) -> None:
+    """Crop the center square out of a wide OG card."""
+    from PIL import Image  # imported lazily so the dep only loads when used
+
+    with Image.open(src) as img:
+        w, h = img.size
+        left = max(0, (w - size) // 2)
+        top = max(0, (h - size) // 2)
+        right = left + size
+        bottom = top + size
+        cropped = img.crop((left, top, right, bottom))
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        cropped.save(dst)
+
+
+def square_crop(
+    *,
+    content_dir: Path,
+    og_source_dir: Path,
+    output_dir: Path,
+    only: str = "keynotes",
+) -> int:
+    """Crop existing OG cards into 630×630 squares.
+
+    only:
+        "keynotes" — only keynote talks (type: Keynote) and the speakers
+                     who present them. A speaker is treated as a keynoter
+                     if their `speaker_type` is "keynote" OR if their slug
+                     appears in the speakers list of any keynote talk
+                     (so this works even when keynote_speaker_codes is
+                     unset in pretalx.toml). [default]
+        "all"      — every talk and speaker that has an OG card.
+    Returns the number of squares written.
+    """
+    talks_dir = content_dir / "program" / "talks"
+    speakers_dir = content_dir / "program" / "speakers"
+    talks_src = og_source_dir / "talks"
+    speakers_src = og_source_dir / "speakers"
+    talks_dst = output_dir / "talks"
+    speakers_dst = output_dir / "speakers"
+
+    # First pass: figure out which speakers count as keynoters via the
+    # keynote talks' speaker lists.
+    keynote_speaker_slugs: set[str] = set()
+    if talks_dir.exists():
+        for md in talks_dir.glob("*.md"):
+            if md.name in KEEP_FILES:
+                continue
+            fm = read_frontmatter(md)
+            if str(fm.get("type", "")).lower() == "keynote":
+                for s in fm.get("speakers") or []:
+                    if slug := s.get("slug"):
+                        keynote_speaker_slugs.add(slug)
+
+    count = 0
+
+    if speakers_dir.exists():
+        for md in sorted(speakers_dir.glob("*.md")):
+            if md.name in KEEP_FILES:
+                continue
+            fm = read_frontmatter(md)
+            slug = md.stem
+            if only == "keynotes":
+                is_keynote = (
+                    str(fm.get("speaker_type", "")).lower() == "keynote"
+                    or slug in keynote_speaker_slugs
+                )
+                if not is_keynote:
+                    continue
+            src = speakers_src / f"{slug}.png"
+            if not src.exists():
+                click.echo(f"  no OG for speaker {slug} (run `og generate` first)", err=True)
+                continue
+            dst = speakers_dst / f"{slug}.png"
+            _center_crop_square(src, dst)
+            click.echo(f"  squared speaker {slug}", err=True)
+            count += 1
+
+    if talks_dir.exists():
+        for md in sorted(talks_dir.glob("*.md")):
+            if md.name in KEEP_FILES:
+                continue
+            fm = read_frontmatter(md)
+            if only == "keynotes" and str(fm.get("type", "")).lower() != "keynote":
+                continue
+            slug = md.stem
+            src = talks_src / f"{slug}.png"
+            if not src.exists():
+                click.echo(f"  no OG for talk {slug} (run `og generate` first)", err=True)
+                continue
+            dst = talks_dst / f"{slug}.png"
+            _center_crop_square(src, dst)
+            click.echo(f"  squared talk {slug}", err=True)
+            count += 1
+
+    return count
