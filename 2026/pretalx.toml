@@ -1,0 +1,8 @@
+event_id = "pyohio-2026"
+year = "2026"
+
+# PreTalx speaker codes for this year's keynoters, in display order.
+keynote_speaker_codes = []
+
+# Speaker codes hidden from the regular speakers listing (organizers, etc.).
+unlisted_speaker_codes = []

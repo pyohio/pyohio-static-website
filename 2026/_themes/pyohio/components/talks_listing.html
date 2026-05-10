@@ -1,0 +1,17 @@
+{% set talks = page.frontmatter.get('talks') or [] %}
+{% if talks %}
+<ul class="list-none pl-0">
+    {% for talk in talks %}
+    <li class="mb-4">
+        <a href="{{ site.base_path }}/program/talks/{{ talk.slug }}/" class="link link-secondary font-semibold">{{ talk.title }}</a>
+        {% if talk.speakers %}
+        <div class="text-sm text-base-content/70">
+            {% for s in talk.speakers %}{{ s.name }}{% if not loop.last %}, {% endif %}{% endfor %}
+        </div>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+{{ page.html | safe }}
+{% endif %}

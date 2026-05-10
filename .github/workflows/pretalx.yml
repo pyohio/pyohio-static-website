@@ -1,11 +1,12 @@
 name: Update from PreTalx
 
 on:
-  # Scheduled runs disabled for now
+  # Scheduled runs disabled until after the announcement.
+  # Uncomment the cron block below to start auto-fetching on a schedule.
   # schedule:
-  #  - cron: "30 3,13,22 * * *"
+  #   - cron: "30 3,13,22 * * *"
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows manual runs from the Actions tab.
   workflow_dispatch:
 
 jobs:
@@ -19,22 +20,30 @@ jobs:
 
       - uses: actions/checkout@v4
 
+      - name: Restore avatar cache
+        uses: actions/cache@v4
+        with:
+          path: pyohio-cli/avatar_cache
+          # Unique per-run key so each run saves an updated cache; restore-keys
+          # picks up the most recent prior cache.
+          key: pretalx-avatar-cache-${{ github.run_id }}
+          restore-keys: |
+            pretalx-avatar-cache-
+
       - name: Setup Python
         uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
 
-      - name: Install deps
+      - name: Install pyohio-cli
         run: |
-          # hack: https://github.com/astral-sh/uv/issues/1386#issuecomment-1947801083
           pip install uv
-          uv venv .venv
-          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH
-          uv pip install -r ./scripts/requirements.txt
+          uv tool install ./pyohio-cli
 
-      - name: Get PreTalx Data
-        run: ./scripts/pretalx.py get-event-data
+      - name: Fetch from PreTalx
         env:
           PRETALX_API_KEY: ${{ secrets.PRETALX_API_KEY }}
+        run: pyohio pretalx fetch
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
