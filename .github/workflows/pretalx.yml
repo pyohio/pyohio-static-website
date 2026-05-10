@@ -40,23 +40,43 @@ jobs:
           pip install uv
           uv tool install ./pyohio-cli
 
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}
+
+      - name: Install Playwright Chromium
+        run: |
+          # Install the playwright CLI matching pyohio-cli's bundled version
+          # so `playwright install` drops the browser into the standard cache
+          # used by pyohio-cli's playwright at render time.
+          uv tool install playwright
+          playwright install chromium --with-deps
+
       - name: Fetch from PreTalx
         env:
           PRETALX_API_KEY: ${{ secrets.PRETALX_API_KEY }}
         run: pyohio pretalx fetch
 
+      - name: Generate OG images
+        run: pyohio og generate
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: Update data from PreTalx
-          title: Update data from PreTalx
+          commit-message: Update data and OG images from PreTalx
+          title: Update data and OG images from PreTalx
           author: PyOhio Automation <noreply@pyohio.org>
           committer: PyOhio Automation <noreply@pyohio.org>
           body: |
-            This is an automatic data update from PreTalx.
-            - Review changes to ensure they are appropriate to publish.
-            - If so, merge.
-            - If not, update data in PreTalx and re-run this workflow.
+            Automatic update from PreTalx. Includes:
+
+            - Talk + speaker frontmatter under `2026/content/program/`
+            - Cached speaker avatars under `2026/_static/img/speakers/`
+            - Per-page OpenGraph cards under `2026/_static/img/og/`
+
+            Review changes to ensure they're appropriate to publish, then merge. If something is wrong, fix the source in PreTalx and re-run this workflow.
           labels: |
             automated-pr
           branch: automatic-updates-from-pretalx

@@ -30,3 +30,11 @@ clean:
 # Fetch talks/speakers from PreTalx into 2026 content
 pretalx-fetch *ARGS:
     uv run --project pyohio-cli pyohio pretalx fetch {{ARGS}}
+
+# Generate per-page OpenGraph images for talks and speakers
+og-generate *ARGS:
+    uv run --project pyohio-cli pyohio og generate {{ARGS}}
+
+# Render a single talk/speaker OG card to _og-templates/_preview.html
+og-preview SLUG *ARGS:
+    uv run --project pyohio-cli pyohio og preview {{SLUG}} {{ARGS}}
