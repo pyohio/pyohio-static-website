@@ -1,8 +1,5 @@
 <div class="not-prose mb-6 text-base-content/70">
     <span class="badge badge-soft badge-primary">{{ page.frontmatter.get('type', 'Talk') }}</span>
-    {% if page.frontmatter.get('duration') %}
-    <span class="ml-2 text-sm">{{ page.frontmatter.duration }} min</span>
-    {% endif %}
 </div>
 
 {{ page.html | safe }}
@@ -10,11 +7,12 @@
 {% set speakers = page.frontmatter.get('speakers') or [] %}
 {% if speakers %}
 <h2>Presented by</h2>
-<ul class="list-none pl-0">
+<div class="not-prose grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
     {% for speaker in speakers %}
-    <li>
-        <a href="{{ site.base_path }}/program/speakers/{{ speaker.slug }}/" class="link link-secondary">{{ speaker.name }}</a>
-    </li>
+    <a href="{{ site.base_path }}/program/speakers/{{ speaker.slug }}/" class="flex flex-col items-start group">
+        <img src="{{ speaker.avatar or (site.base_path ~ '/img/speakers/no-profile.png') }}" alt="{{ speaker.name }} profile photo" class="w-40 h-40 rounded-box border-4 border-primary object-cover mb-2" loading="lazy">
+        <span class="w-40 text-center font-semibold link-secondary group-hover:underline">{{ speaker.name }}</span>
+    </a>
     {% endfor %}
-</ul>
+</div>
 {% endif %}

@@ -1,8 +1,11 @@
 # PyOhio static website
 
-# Start 2026 dev server
+_default:
+    @just --list
+
+# Start 2026 dev server with live reload
 dev:
-    cd 2026 && rockgarden build --clean && rockgarden serve
+    cd 2026 && rockgarden dev
 
 # Build the 2026 site
 build:

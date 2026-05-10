@@ -1,7 +1,6 @@
 ---
 title: Keynote Speakers
 page_type: keynoters_listing
-unlisted: true
 nav_order: 3
 keynoters: []
 ---

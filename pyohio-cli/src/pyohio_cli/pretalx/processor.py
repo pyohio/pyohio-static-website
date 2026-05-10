@@ -99,14 +99,18 @@ class DataProcessor:
         else:
             slug = _talk_slug(title)
 
-        speakers_data = [
-            {
+        speakers_data = []
+        for s in talk["speakers"]:
+            speaker_slug = slugify(s["name"])
+            entry = {
                 "name": s["name"],
-                "slug": slugify(s["name"]),
+                "slug": speaker_slug,
                 "code": s["code"],
             }
-            for s in talk["speakers"]
-        ]
+            avatar_path = self.avatars.fetch(s.get("avatar_url"), speaker_slug)
+            if avatar_path:
+                entry["avatar"] = avatar_path
+            speakers_data.append(entry)
 
         qa_answer = qa_by_code.get(talk["code"], "False")
         qna = qa_answer not in ("False", "false", "", None)
@@ -219,9 +223,14 @@ class DataProcessor:
         talks_by_code: dict[str, dict],
         speakers_by_code: dict[str, dict],
     ) -> None:
-        """Populate `talks:` list on talks/index.md for listing rendering."""
+        """Populate `talks:` list on talks/index.md for listing rendering.
+
+        Keynotes are excluded; they're surfaced on the keynote-speakers page.
+        """
         entries = []
         for record in talk_records:
+            if record.get("type") == "Keynote":
+                continue
             speakers = []
             for s in record.get("speakers", []):
                 speakers.append({"name": s["name"], "slug": s["slug"]})
