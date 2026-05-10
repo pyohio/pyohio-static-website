@@ -21,7 +21,7 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 
 <a href="/2026/program/black-python-devs-leadership-summit/" class="feature-card">
 <h3>Friday, July 24 (Pre-Conference)</h3>
-<p>Co-hosted <strong>Black Python Devs Leadership Summit</strong>, a single-day workshop for Python community leaders. Separate ticket required.</p>
+<p>Co-hosted <strong>Black Python Devs Leadership Summit</strong>, a single-day workshop for Python community leaders. Separate free registration required.</p>
 </a>
 
 <a href="/2026/program/" class="feature-card">
