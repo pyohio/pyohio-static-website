@@ -5,7 +5,7 @@ nav_order: 5
 
 PyOhio is proud to co-host the **[Black Python Devs Leadership Summit 2026](https://blackpythondevs.com/bpd-events/black-python-devs-leadership-summit-2026-ohio.html)** the day before PyOhio at the same venue.
 
-The summit is a single-day workshop where leaders in the Python community are invited to connect, grow, and learn with one another. It's open to anyone in leadership, or interested in getting into leadership, at the local, regional, or global level of the Python community.
+The summit is a single-day workshop for current and aspiring leaders and organizers in the Python community to connect, grow, and learn with one another. It's open to anyone serving, or hoping to serve, in those roles at the local, regional, or global level.
 
 ## Event Details
 
