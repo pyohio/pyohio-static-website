@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    /* Outer frame: 1200×630 purple. Inside, a square white card sized
+       to fit the center 630×630 safe area so square-cropped previews
+       still show the full card. */
+    .og-frame {
+        width: 1200px;
+        height: 630px;
+        background: #4A3078;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card {
+        width: 590px;
+        height: 590px;
+        background: #f7f7f8;
+        color: #363944;
+        border-radius: 24px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        padding: 20px 36px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .brand-row { margin-bottom: 24px; }
+    .avatar { margin-bottom: 4px; }
+    .name { margin-bottom: 6px; }
+    .brand-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+    .brand-row img {
+        width: 44px;
+        height: 44px;
+    }
+    .brand-row .label {
+        font-weight: 800;
+        font-size: 26px;
+        color: #4A3078;
+        letter-spacing: -0.5px;
+    }
+    .avatar {
+        width: 280px;
+        height: 280px;
+        border-radius: 24px;
+        border: 6px solid #3F7D24;
+        object-fit: cover;
+        background: #ddd;
+        flex-shrink: 0;
+    }
+    .name {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        color: #4A3078;
+    }
+    .name.long  { font-size: 30px; }
+    .name.xlong { font-size: 26px; }
+    .sticker {
+        width: 180px;
+        height: 180px;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="og-frame">
+    <div class="card">
+        <div class="brand-row">
+            <img src="{{ logo_path }}" alt="">
+            <div class="label">{{ brand_label }}</div>
+        </div>
+        <img class="avatar" src="{{ avatar_path }}" alt="">
+        {% set nlen = name|length %}
+        {% set ncls = 'xlong' if nlen > 28 else ('long' if nlen > 18 else '') %}
+        <div class="name {{ ncls }}">{{ name }}</div>
+        <img class="sticker" src="{{ sticker_path }}" alt="">
+    </div>
+</div>
+</body>
+</html>
