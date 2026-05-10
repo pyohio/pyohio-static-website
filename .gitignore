@@ -40,3 +40,6 @@ pyohio-cli/avatar_cache/*
 # OG card preview output
 2026/_og-templates/_preview.html
 2026/_og-templates/_preview.png
+
+# Local square OG crops (for social posting; not deployed)
+og-square/

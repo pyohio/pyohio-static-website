@@ -38,3 +38,7 @@ og-generate *ARGS:
 # Render a single talk/speaker OG card to _og-templates/_preview.html
 og-preview SLUG *ARGS:
     uv run --project pyohio-cli pyohio og preview {{SLUG}} {{ARGS}}
+
+# Crop existing OG cards to 630x630 squares for social media (local-only)
+og-square *ARGS:
+    uv run --project pyohio-cli pyohio og square {{ARGS}}

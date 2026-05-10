@@ -6,13 +6,14 @@ from pathlib import Path
 
 import click
 
-from pyohio_cli.og.generator import generate, preview
+from pyohio_cli.og.generator import generate, preview, square_crop
 
 DEFAULT_CONTENT_DIR = Path("2026/content")
 DEFAULT_TEMPLATES_DIR = Path("2026/_og-templates")
 DEFAULT_OUTPUT_DIR = Path("2026/_static/img/og")
 DEFAULT_STATIC_DIR = Path("2026/_static")
 DEFAULT_PUBLIC_URL_BASE = "https://www.pyohio.org/2026/img/og"
+DEFAULT_SQUARE_OUTPUT_DIR = Path("og-square")
 
 
 @click.group()
@@ -135,3 +136,46 @@ def preview_cmd(
     click.echo(f"HTML: {html_path.resolve().as_uri()}")
     if png_path:
         click.echo(f"PNG:  {png_path}")
+
+
+@og.command("square")
+@click.option(
+    "--content-dir",
+    type=click.Path(file_okay=False, path_type=Path),
+    default=DEFAULT_CONTENT_DIR,
+    show_default=True,
+)
+@click.option(
+    "--source-dir",
+    "og_source_dir",
+    type=click.Path(file_okay=False, path_type=Path),
+    default=DEFAULT_OUTPUT_DIR,
+    show_default=True,
+    help="Directory holding the existing 1200x630 OG cards.",
+)
+@click.option(
+    "--output-dir",
+    type=click.Path(file_okay=False, path_type=Path),
+    default=DEFAULT_SQUARE_OUTPUT_DIR,
+    show_default=True,
+    help="Where to write the cropped 630x630 squares (gitignored by default).",
+)
+@click.option(
+    "--only",
+    type=click.Choice(["keynotes", "all"]),
+    default="keynotes",
+    show_default=True,
+)
+def square_cmd(content_dir: Path, og_source_dir: Path, output_dir: Path, only: str):
+    """Center-crop existing OG cards into 630x630 squares for social media.
+
+    Defaults to keynote-only output for the pre-announcement teaser flow.
+    Run `pyohio og generate` first so the source PNGs exist.
+    """
+    count = square_crop(
+        content_dir=content_dir,
+        og_source_dir=og_source_dir,
+        output_dir=output_dir,
+        only=only,
+    )
+    click.echo(f"Wrote {count} square(s) to {output_dir}", err=True)
