@@ -1,6 +1,6 @@
 ---
 title: Lightning Talks
-nav_order: 5
+nav_order: 6
 ---
 
 Lightning Talks are quick 5-minute (hard limit!) talks on any topics of interest to the PyOhio community. Anyone can present a Lightning Talk. Yes, even you! Slides are encouraged but not required!
