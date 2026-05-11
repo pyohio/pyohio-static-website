@@ -1,10 +1,9 @@
 name: Update from PreTalx
 
 on:
-  # Scheduled runs disabled until after the announcement.
-  # Uncomment the cron block below to start auto-fetching on a schedule.
-  # schedule:
-  #   - cron: "30 3,13,22 * * *"
+  schedule:
+    # ~9am and 9pm ET (13:00 and 01:00 UTC during EDT).
+    - cron: "0 1,13 * * *"
 
   # Allows manual runs from the Actions tab.
   workflow_dispatch:
