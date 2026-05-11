@@ -13,11 +13,13 @@ talks:
       - name: Dan Shernicoff
         slug: dan-shernicoff
         code: W9M3TF
+        avatar: /2026/img/speakers/dan-shernicoff.webp
 social_links:
   - url: https://twit.social/@brass75
     display: '@brass75@twit.social'
     icon: mdi:mastodon
+avatar: /2026/img/speakers/dan-shernicoff.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/dan-shernicoff.png
 ---
 
-For the past 20 years I have been working in software development, the last 10 in cybersecurity. I live in Maryland with my wife and our 3 kids.
+For the past 20 years I have been working in software development, the last 10 in cybersecurity. I live in Maryland with my wife and our 3 kids. You can find me on Mastodon at https://twit.social/@brass75

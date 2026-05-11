@@ -10,6 +10,7 @@ speakers:
   - name: Tim Schilling
     slug: tim-schilling
     code: MABJWY
+    avatar: /2026/img/speakers/tim-schilling.webp
 og_image: https://www.pyohio.org/2026/img/og/talks/10-dazzling-joyful-astounding-nifty-glorious-outstanding-in.png
 ---
 

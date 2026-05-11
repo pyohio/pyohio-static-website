@@ -38,7 +38,7 @@ speakers:
     avatar:
   - name: Dan Shernicoff
     slug: dan-shernicoff
-    avatar:
+    avatar: /2026/img/speakers/dan-shernicoff.webp
   - name: Dinky Mishra
     slug: dinky-mishra
     avatar: /2026/img/speakers/dinky-mishra.webp
@@ -92,7 +92,7 @@ speakers:
     avatar: /2026/img/speakers/terry-howald.webp
   - name: Tim Schilling
     slug: tim-schilling
-    avatar:
+    avatar: /2026/img/speakers/tim-schilling.webp
   - name: Veronica k McNeece
     slug: veronica-k-mcneece
     avatar: /2026/img/speakers/veronica-k-mcneece.webp

@@ -13,6 +13,7 @@ talks:
       - name: Tim Schilling
         slug: tim-schilling
         code: MABJWY
+        avatar: /2026/img/speakers/tim-schilling.webp
 social_links:
   - url: https://mastodon.social/@CodenameTim
     display: '@CodenameTim@mastodon.social'
@@ -23,6 +24,7 @@ social_links:
   - url: https://www.linkedin.com/in/tim-schilling-5b365a15/
     display: linkedin.com/in/tim-schilling-5b365a15/
     icon: mdi:linkedin
+avatar: /2026/img/speakers/tim-schilling.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/tim-schilling.png
 ---
 
