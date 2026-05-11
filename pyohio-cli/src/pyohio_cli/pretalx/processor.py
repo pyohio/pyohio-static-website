@@ -48,6 +48,9 @@ def _parse_social_link(link: str) -> dict:
         result["icon"] = "mdi:linkedin"
     elif link.startswith("https://github.com"):
         result["icon"] = "mdi:github"
+    elif link.startswith("https://bsky.app/profile/"):
+        result["display"] = link.replace("https://bsky.app/profile/", "@")
+        result["icon"] = "mdi:bluesky"
     elif re.match(r"https://[^/]+/@[^/]+$", link):
         host, username = link.replace("https://", "").split("/@", 1)
         result["display"] = f"@{username}@{host}"
@@ -291,6 +294,25 @@ def run_fetch(
     qa_by_code = client.get_answers_by_question(qa_q)
 
     submissions = client.get_confirmed_submissions()
+
+    allowed_keynoters = set(config.keynote_speaker_codes)
+    filtered_submissions = []
+    skipped_keynotes = 0
+    for sub in submissions:
+        is_keynote = sub["submission_type"]["name"]["en"] == "Keynote"
+        if is_keynote:
+            speaker_codes_on_talk = {s["code"] for s in sub["speakers"]}
+            if not (speaker_codes_on_talk & allowed_keynoters):
+                skipped_keynotes += 1
+                continue
+        filtered_submissions.append(sub)
+    if skipped_keynotes:
+        click.echo(
+            f"Skipped {skipped_keynotes} unannounced keynote(s); "
+            "add speaker codes to keynote_speaker_codes to publish.",
+            err=True,
+        )
+    submissions = filtered_submissions
 
     processor.clean_generated_pages()
 

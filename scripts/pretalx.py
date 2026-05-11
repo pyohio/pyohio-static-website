@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 """
+DEPRECATED: This script is no longer used. The current PreTalx importer lives
+in the pyohio-cli package (see pyohio-cli/src/pyohio_cli/pretalx/). Make
+changes there, not here.
+
 Utilities for getting data from Pretalx API for PyOhio conference website.
 This script fetches talk and speaker data from Pretalx and saves it as YAML and JSON files.
 It also downloads speaker avatar images to local storage.
