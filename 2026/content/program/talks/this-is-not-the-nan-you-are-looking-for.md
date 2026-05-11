@@ -10,6 +10,7 @@ speakers:
   - name: Dan Shernicoff
     slug: dan-shernicoff
     code: W9M3TF
+    avatar: /2026/img/speakers/dan-shernicoff.webp
 og_image: https://www.pyohio.org/2026/img/og/talks/this-is-not-the-nan-you-are-looking-for.png
 ---
 
