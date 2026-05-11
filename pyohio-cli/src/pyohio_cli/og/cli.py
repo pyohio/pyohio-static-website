@@ -65,6 +65,11 @@ def og():
     is_flag=True,
     help="Render PNGs only; don't touch markdown frontmatter.",
 )
+@click.option(
+    "--force",
+    is_flag=True,
+    help="Re-render every PNG even if inputs are unchanged.",
+)
 def generate_cmd(
     content_dir: Path,
     templates_dir: Path,
@@ -73,6 +78,7 @@ def generate_cmd(
     public_url_base: str,
     only: str,
     skip_frontmatter_update: bool,
+    force: bool,
 ):
     """Render OG cards for talks and speakers and update frontmatter."""
     generate(
@@ -83,6 +89,7 @@ def generate_cmd(
         public_url_base=public_url_base,
         only=only,
         skip_frontmatter_update=skip_frontmatter_update,
+        force=force,
     )
     click.echo("Done.", err=True)
 

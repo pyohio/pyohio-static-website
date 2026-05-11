@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
+import json
+import re
 import tempfile
 from pathlib import Path
 
@@ -13,6 +16,12 @@ from pyohio_cli.og.renderer import OGRenderer
 
 KEEP_FILES = {"index.md", "_folder.md"}
 SQUARE_SIZE = 630  # OG cards are designed with a 630×630 safe-square in the center.
+MANIFEST_NAME = ".input-hashes.json"
+
+# Chromium's screenshot output is not pixel-perfect deterministic across runs
+# (font rendering, antialiasing). We hash the rendered HTML + every referenced
+# asset's bytes and only re-render when that hash changes. Manifest is committed
+# alongside the PNGs so CI runs can compare against the prior state.
 
 
 def _file_url(path: Path) -> str:
@@ -35,11 +44,50 @@ def _avatar_to_fs(avatar_url: str | None, static_dir: Path) -> Path | None:
     return candidate if candidate.exists() else None
 
 
-def _resolve_avatar(avatar_url: str | None, static_dir: Path, fallback: Path) -> str:
+def _resolve_avatar_fs(avatar_url: str | None, static_dir: Path, fallback: Path) -> Path:
     fs = _avatar_to_fs(avatar_url, static_dir)
-    if fs:
-        return _file_url(fs)
-    return _file_url(fallback)
+    return fs if fs else fallback
+
+
+def _resolve_avatar(avatar_url: str | None, static_dir: Path, fallback: Path) -> str:
+    return _file_url(_resolve_avatar_fs(avatar_url, static_dir, fallback))
+
+
+def _strip_file_paths(html: str) -> str:
+    """Reduce absolute file:// URIs to just their basename so hashes don't
+    depend on where the repo lives on disk."""
+    return re.sub(r'file://[^\s"\'>]+/', "file:///", html)
+
+
+def _compute_input_hash(html: str, assets: list[Path]) -> str:
+    h = hashlib.sha256()
+    h.update(_strip_file_paths(html).encode("utf-8"))
+    for p in sorted(set(assets), key=str):
+        h.update(b"\0")
+        h.update(p.name.encode("utf-8"))
+        h.update(b"\0")
+        try:
+            h.update(p.read_bytes())
+        except OSError:
+            h.update(b"<missing>")
+    return h.hexdigest()
+
+
+def _load_manifest(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return {str(k): str(v) for k, v in data.items()} if isinstance(data, dict) else {}
+
+
+def _save_manifest(path: Path, data: dict[str, str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
+    tmp.replace(path)
 
 
 def _truncate(text: str, max_chars: int = 80) -> str:
@@ -80,6 +128,7 @@ def generate(
     public_url_base: str,
     only: str = "all",
     skip_frontmatter_update: bool = False,
+    force: bool = False,
 ) -> None:
     talks_dir = content_dir / "program" / "talks"
     speakers_dir = content_dir / "program" / "speakers"
@@ -104,6 +153,9 @@ def generate(
 
     env = _jinja_env(templates_dir)
 
+    manifest_path = output_dir / MANIFEST_NAME
+    manifest = _load_manifest(manifest_path)
+
     with OGRenderer() as renderer, tempfile.TemporaryDirectory() as tmpdir_str:
         tmpdir = Path(tmpdir_str)
 
@@ -121,6 +173,8 @@ def generate(
                 static_dir=static_dir,
                 public_url_base=public_url_base,
                 skip_frontmatter_update=skip_frontmatter_update,
+                manifest=manifest,
+                force=force,
             )
 
         if only in ("all", "speakers"):
@@ -137,7 +191,11 @@ def generate(
                 static_dir=static_dir,
                 public_url_base=public_url_base,
                 skip_frontmatter_update=skip_frontmatter_update,
+                manifest=manifest,
+                force=force,
             )
+
+    _save_manifest(manifest_path, manifest)
 
 
 def _build_talk_context(
@@ -145,18 +203,19 @@ def _build_talk_context(
     *,
     static_dir: Path,
     no_profile: Path,
-    logo_url: str,
-    hero_logo_url: str,
-    sticker_url: str,
-) -> dict:
+    logo_path: Path,
+    hero_logo_path: Path,
+    sticker_path: Path,
+) -> tuple[dict, list[Path]]:
     fm = read_frontmatter(md_path)
     speakers_fm = fm.get("speakers") or []
-    speaker_ctx = [
-        {
-            "name": s.get("name", ""),
-            "avatar": _resolve_avatar(s.get("avatar"), static_dir, no_profile),
-        }
+    speaker_avatar_fs = [
+        _resolve_avatar_fs(s.get("avatar"), static_dir, no_profile)
         for s in speakers_fm
+    ]
+    speaker_ctx = [
+        {"name": s.get("name", ""), "avatar": _file_url(p)}
+        for s, p in zip(speakers_fm, speaker_avatar_fs)
     ]
 
     is_keynote = str(fm.get("type", "")).lower() == "keynote"
@@ -169,16 +228,18 @@ def _build_talk_context(
         title = str(fm.get("title") or md_path.stem)
         brand_label = "PyOhio 2026 Talk"
 
-    return {
+    ctx = {
         "title": title,
         "title_prefix": title_prefix,
         "brand_label": brand_label,
         "speakers": speaker_ctx,
         "names": _join_names([s.get("name", "") for s in speakers_fm]),
-        "logo_path": logo_url,
-        "hero_logo_path": hero_logo_url,
-        "sticker_path": sticker_url,
+        "logo_path": _file_url(logo_path),
+        "hero_logo_path": _file_url(hero_logo_path),
+        "sticker_path": _file_url(sticker_path),
     }
+    assets = [logo_path, hero_logo_path, sticker_path, *speaker_avatar_fs]
+    return ctx, assets
 
 
 def _build_speaker_context(
@@ -186,23 +247,26 @@ def _build_speaker_context(
     *,
     static_dir: Path,
     no_profile: Path,
-    logo_url: str,
-    hero_logo_url: str,
-    sticker_url: str,
-) -> dict:
+    logo_path: Path,
+    hero_logo_path: Path,
+    sticker_path: Path,
+) -> tuple[dict, list[Path]]:
     fm = read_frontmatter(md_path)
     is_keynote = str(fm.get("speaker_type", "")).lower() == "keynote"
     brand_label = (
         "PyOhio 2026 Keynote Speaker" if is_keynote else "PyOhio 2026 Speaker"
     )
-    return {
+    avatar_fs = _resolve_avatar_fs(fm.get("avatar"), static_dir, no_profile)
+    ctx = {
         "name": str(fm.get("title") or md_path.stem),
         "brand_label": brand_label,
-        "avatar_path": _resolve_avatar(fm.get("avatar"), static_dir, no_profile),
-        "logo_path": logo_url,
-        "hero_logo_path": hero_logo_url,
-        "sticker_path": sticker_url,
+        "avatar_path": _file_url(avatar_fs),
+        "logo_path": _file_url(logo_path),
+        "hero_logo_path": _file_url(hero_logo_path),
+        "sticker_path": _file_url(sticker_path),
     }
+    assets = [logo_path, hero_logo_path, sticker_path, avatar_fs]
+    return ctx, assets
 
 
 def _process_talks(
@@ -219,6 +283,8 @@ def _process_talks(
     static_dir: Path,
     public_url_base: str,
     skip_frontmatter_update: bool,
+    manifest: dict[str, str],
+    force: bool,
 ) -> None:
     if not talks_dir.exists():
         return
@@ -227,35 +293,39 @@ def _process_talks(
         p for p in talks_dir.glob("*.md") if p.name not in KEEP_FILES
     ]
     seen_slugs: set[str] = set()
-    logo_url = _file_url(logo_path)
-
-    hero_logo_url = _file_url(hero_logo_path)
-    sticker_url = _file_url(sticker_path)
+    template = env.get_template("talk.html")
 
     for md_path in sorted(talk_md_files):
         slug = md_path.stem
         seen_slugs.add(slug)
-        ctx = _build_talk_context(
+        ctx, assets = _build_talk_context(
             md_path,
             static_dir=static_dir,
             no_profile=no_profile,
-            logo_url=logo_url,
-            hero_logo_url=hero_logo_url,
-            sticker_url=sticker_url,
+            logo_path=logo_path,
+            hero_logo_path=hero_logo_path,
+            sticker_path=sticker_path,
         )
 
-        html_path = tmpdir / f"talk-{slug}.html"
-        _render_html(env, "talk.html", ctx, html_path)
-
+        html = template.render(**ctx)
+        input_hash = _compute_input_hash(html, assets)
         out_png = output / f"{slug}.png"
-        renderer.render(html_path, out_png)
-        click.echo(f"  rendered talk {slug}", err=True)
+        key = f"talks/{slug}.png"
+
+        if not force and manifest.get(key) == input_hash and out_png.exists():
+            click.echo(f"  skip talk {slug} (unchanged)", err=True)
+        else:
+            html_path = tmpdir / f"talk-{slug}.html"
+            html_path.write_text(html)
+            renderer.render(html_path, out_png)
+            manifest[key] = input_hash
+            click.echo(f"  rendered talk {slug}", err=True)
 
         if not skip_frontmatter_update:
             og_url = f"{public_url_base.rstrip('/')}/talks/{slug}.png"
             update_frontmatter_key(md_path, "og_image", og_url)
 
-    _prune_orphans(output, seen_slugs)
+    _prune_orphans(output, seen_slugs, manifest=manifest, prefix="talks/")
 
 
 def _process_speakers(
@@ -272,6 +342,8 @@ def _process_speakers(
     static_dir: Path,
     public_url_base: str,
     skip_frontmatter_update: bool,
+    manifest: dict[str, str],
+    force: bool,
 ) -> None:
     if not speakers_dir.exists():
         return
@@ -280,35 +352,39 @@ def _process_speakers(
         p for p in speakers_dir.glob("*.md") if p.name not in KEEP_FILES
     ]
     seen_slugs: set[str] = set()
-    logo_url = _file_url(logo_path)
-
-    hero_logo_url = _file_url(hero_logo_path)
-    sticker_url = _file_url(sticker_path)
+    template = env.get_template("speaker.html")
 
     for md_path in sorted(speaker_md_files):
         slug = md_path.stem
         seen_slugs.add(slug)
-        ctx = _build_speaker_context(
+        ctx, assets = _build_speaker_context(
             md_path,
             static_dir=static_dir,
             no_profile=no_profile,
-            logo_url=logo_url,
-            hero_logo_url=hero_logo_url,
-            sticker_url=sticker_url,
+            logo_path=logo_path,
+            hero_logo_path=hero_logo_path,
+            sticker_path=sticker_path,
         )
 
-        html_path = tmpdir / f"speaker-{slug}.html"
-        _render_html(env, "speaker.html", ctx, html_path)
-
+        html = template.render(**ctx)
+        input_hash = _compute_input_hash(html, assets)
         out_png = output / f"{slug}.png"
-        renderer.render(html_path, out_png)
-        click.echo(f"  rendered speaker {slug}", err=True)
+        key = f"speakers/{slug}.png"
+
+        if not force and manifest.get(key) == input_hash and out_png.exists():
+            click.echo(f"  skip speaker {slug} (unchanged)", err=True)
+        else:
+            html_path = tmpdir / f"speaker-{slug}.html"
+            html_path.write_text(html)
+            renderer.render(html_path, out_png)
+            manifest[key] = input_hash
+            click.echo(f"  rendered speaker {slug}", err=True)
 
         if not skip_frontmatter_update:
             og_url = f"{public_url_base.rstrip('/')}/speakers/{slug}.png"
             update_frontmatter_key(md_path, "og_image", og_url)
 
-    _prune_orphans(output, seen_slugs)
+    _prune_orphans(output, seen_slugs, manifest=manifest, prefix="speakers/")
 
 
 def preview(
@@ -346,30 +422,27 @@ def preview(
         raise click.UsageError(f"Placeholder avatar not found at {no_profile}")
 
     env = _jinja_env(templates_dir)
-    logo_url = _file_url(logo_path)
-    hero_logo_url = _file_url(hero_logo_path)
-    sticker_url = _file_url(sticker_path)
 
     if talks_md.exists():
         kind = "talk"
-        ctx = _build_talk_context(
+        ctx, _ = _build_talk_context(
             talks_md,
             static_dir=static_dir,
             no_profile=no_profile,
-            logo_url=logo_url,
-            hero_logo_url=hero_logo_url,
-            sticker_url=sticker_url,
+            logo_path=logo_path,
+            hero_logo_path=hero_logo_path,
+            sticker_path=sticker_path,
         )
         template_name = "talk.html"
     elif speakers_md.exists():
         kind = "speaker"
-        ctx = _build_speaker_context(
+        ctx, _ = _build_speaker_context(
             speakers_md,
             static_dir=static_dir,
             no_profile=no_profile,
-            logo_url=logo_url,
-            hero_logo_url=hero_logo_url,
-            sticker_url=sticker_url,
+            logo_path=logo_path,
+            hero_logo_path=hero_logo_path,
+            sticker_path=sticker_path,
         )
         template_name = "speaker.html"
     else:
@@ -392,11 +465,19 @@ def preview(
     return html_path, png_path
 
 
-def _prune_orphans(output: Path, keep_slugs: set[str]) -> None:
+def _prune_orphans(
+    output: Path,
+    keep_slugs: set[str],
+    *,
+    manifest: dict[str, str] | None = None,
+    prefix: str = "",
+) -> None:
     for p in output.glob("*.png"):
         if p.stem not in keep_slugs:
             p.unlink()
             click.echo(f"  pruned orphan {p.name}", err=True)
+            if manifest is not None:
+                manifest.pop(f"{prefix}{p.name}", None)
 
 
 def _center_crop_square(src: Path, dst: Path, size: int = SQUARE_SIZE) -> None:
