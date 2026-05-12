@@ -13,6 +13,7 @@ talks:
       - name: Mike McCaffrey
         slug: mike-mccaffrey
         code: JDWXU7
+        avatar: /2026/img/speakers/mike-mccaffrey.webp
 social_links:
   - url: https://github.com/mjmccaffrey/marquee#readme
     display: github.com/mjmccaffrey/marquee#readme
@@ -23,6 +24,7 @@ social_links:
   - url: https://mastodon.social/@mikemccaffrey
     display: '@mikemccaffrey@mastodon.social'
     icon: mdi:mastodon
+avatar: /2026/img/speakers/mike-mccaffrey.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/mike-mccaffrey.png
 ---
 

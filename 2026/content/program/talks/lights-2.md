@@ -10,10 +10,11 @@ speakers:
   - name: Mike McCaffrey
     slug: mike-mccaffrey
     code: JDWXU7
+    avatar: /2026/img/speakers/mike-mccaffrey.webp
 og_image: https://www.pyohio.org/2026/img/og/talks/lights-2.png
 ---
 
-An entertaining overview of challenges faced and lessons earned during my second and final year working on my first big maker project. With code snippets, diagrams, photos and short demos, discuss problems overcome while developing new features and integrating new devices into my humble animated sign, which now includes color LED lights, new sound and input devices, some machine vision, and some surprises.
+A hopefully entertaining overview of challenges faced and lessons learned during the second and final year working on my first big maker project. With code snippets, diagrams, photos and short demos, discuss problems overcome while developing new features and integrating new devices into my humble animated sign, which now includes color LED lights, new sound and input devices, various interactivity, and some surprises.
 
 <u>Note on Photosensitivity:</u>
 Based on this [epilepsy.com](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions) article, this presentation should be safe for any photosensitive audience member. I will include the following information in a slide at the beginning of the presentation, and give anyone in the audience the chance to leave or ask questions before proceeding.
