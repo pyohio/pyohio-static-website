@@ -27,6 +27,9 @@ speakers:
   - name: Calvin Hendryx-Parker
     slug: calvin-hendryx-parker
     avatar: /2026/img/speakers/calvin-hendryx-parker.webp
+  - name: Carol Willing
+    slug: carol-willing
+    avatar: /2026/img/speakers/carol-willing.webp
   - name: Carrie Minerich
     slug: carrie-minerich
     avatar: /2026/img/speakers/carrie-minerich.webp
