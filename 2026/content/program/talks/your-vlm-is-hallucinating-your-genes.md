@@ -10,6 +10,7 @@ speakers:
   - name: Ethan Hill
     slug: ethan-hill
     code: 7WDJH8
+    avatar: /2026/img/speakers/ethan-hill.webp
 og_image: https://www.pyohio.org/2026/img/og/talks/your-vlm-is-hallucinating-your-genes.png
 ---
 

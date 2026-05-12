@@ -19,16 +19,14 @@ avatar: /2026/img/speakers/kamal-singh-bisht.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/kamal-singh-bisht.png
 ---
 
-Kamal Singh Bisht is a Principal Application Engineer with 18+ years of 
-experience building production AI and observability systems at Capital One, 
-Discover Financial Services, JPMorgan Chase, and Zillow.
+Kamal Singh Bisht has nearly two decades of experience building production systems across financial services and technology, with a focus on AI/GenAI and observability.
 
 He is the creator of **[genai-telemetry](https://pypi.org/project/genai-telemetry/)**, 
 an open-source Python SDK for LLM observability, and the 
-**[GenAI Observability App](https://splunkbase.splunk.com/app/8308)** 
-(Splunkbase #8308) — a production-grade monitoring platform for AI pipelines.
+**[GenAI Observability Splunk App](https://splunkbase.splunk.com/app/8308)** 
+— a production-grade monitoring platform for AI pipelines.
 
-Kamal has spoken at **Splunk .conf 2024**, **MLOps World GenAI Summit 2025**, 
-and **OSMC Germany 2025** on GenAI, RAG systems, and agentic AI in production. 
+Kamal has spoken at **Splunk conf24**, **MLOps World GenAI Summit 2025**, 
+and **OSMC Germany 2025** on AI/GenAI and has published research papers on AI-driven systems.
 He holds IEEE Senior Member and IETE Fellow credentials and actively contributes 
 to the open-source Python and AI communities.

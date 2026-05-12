@@ -47,7 +47,7 @@ speakers:
     avatar: /2026/img/speakers/eddie-cosma.webp
   - name: Ethan Hill
     slug: ethan-hill
-    avatar:
+    avatar: /2026/img/speakers/ethan-hill.webp
   - name: Gregory M. Kapfhammer
     slug: gregory-m-kapfhammer
     avatar: /2026/img/speakers/gregory-m-kapfhammer.webp
@@ -77,7 +77,7 @@ speakers:
     avatar:
   - name: Mike McCaffrey
     slug: mike-mccaffrey
-    avatar:
+    avatar: /2026/img/speakers/mike-mccaffrey.webp
   - name: Morgan Willis
     slug: morgan-willis
     avatar: /2026/img/speakers/morgan-willis.webp
