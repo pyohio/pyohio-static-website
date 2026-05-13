@@ -33,6 +33,9 @@ speakers:
   - name: Carrie Minerich
     slug: carrie-minerich
     avatar: /2026/img/speakers/carrie-minerich.webp
+  - name: Christopher Neugebauer
+    slug: christopher-neugebauer
+    avatar: /2026/img/speakers/christopher-neugebauer.webp
   - name: Cliff Jenkins
     slug: cliff-jenkins
     avatar: /2026/img/speakers/cliff-jenkins.webp
