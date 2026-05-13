@@ -6,6 +6,7 @@ year = "2026"
 # import. Add codes here one at a time to publish keynoters incrementally.
 keynote_speaker_codes = [
     "TXY7EW",  # Carol Willing
+    "MAZJYZ",  # Christopher Neugebauer
 ]
 
 # Speaker codes hidden from the regular speakers listing (organizers, etc.).
