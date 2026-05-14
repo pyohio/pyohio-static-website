@@ -7,6 +7,7 @@ year = "2026"
 keynote_speaker_codes = [
     "TXY7EW",  # Carol Willing
     "MAZJYZ",  # Christopher Neugebauer
+    "8VNBKY",  # Dr. Juliana Novic
 ]
 
 # Speaker codes hidden from the regular speakers listing (organizers, etc.).
