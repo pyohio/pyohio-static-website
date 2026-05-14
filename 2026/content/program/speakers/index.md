@@ -48,6 +48,9 @@ speakers:
   - name: Dinky Mishra
     slug: dinky-mishra
     avatar: /2026/img/speakers/dinky-mishra.webp
+  - name: Dr. Juliana Novic
+    slug: dr-juliana-novic
+    avatar: /2026/img/speakers/dr-juliana-novic.webp
   - name: Eddie Cosma
     slug: eddie-cosma
     avatar: /2026/img/speakers/eddie-cosma.webp

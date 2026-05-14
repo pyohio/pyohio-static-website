@@ -27,6 +27,6 @@ an open-source Python SDK for LLM observability, and the
 — a production-grade monitoring platform for AI pipelines.
 
 Kamal has spoken at **Splunk conf24**, **MLOps World GenAI Summit 2025**, 
-and **OSMC Germany 2025** on AI/GenAI and has published research papers on AI-driven systems.
+and **OSMC Germany 2025** on AI/GenAI and observability and has published research papers on AI-driven systems.
 He holds IEEE Senior Member and IETE Fellow credentials and actively contributes 
 to the open-source Python and AI communities.
