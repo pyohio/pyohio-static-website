@@ -7,11 +7,11 @@ PyOhio 2026 features a full weekend of Python talks, lightning talks, and commun
 
 ## Talks
 
-Our talk lineup will feature sessions covering a wide range of Python topics, from beginner to advanced. See the [full talk list](/2026/program/talks/) when announced.
+Our talk lineup features sessions covering a wide range of Python topics, from beginner to advanced. See the [full talk list](/2026/program/talks/).
 
 ## Keynote Speakers
 
-Our [keynote speakers](/2026/program/keynote-speakers/) will be announced closer to the event.
+Meet our [keynote speakers](/2026/program/keynote-speakers/) for PyOhio 2026.
 
 ## Lightning Talks
 

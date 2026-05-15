@@ -12,7 +12,8 @@ The 19th annual PyOhio is **Sat & Sun July 25–26, 2026**<br>at the Cleveland S
 PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/sponsors/) and individual donors.
 
 <div class="flex flex-wrap gap-3 my-6 not-prose">
-<a href="https://newsletter.pyohio.org/" class="btn btn-secondary">Get Newsletter</a>
+<a href="/2026/attend/registration/" class="btn btn-secondary">:lucide-ticket: Register Now</a>
+<a href="/2026/about/newsletter/" class="btn btn-secondary">:lucide-mail: Get Newsletter</a>
 </div>
 
 ## Event Overview
@@ -124,5 +125,5 @@ Thank you to the sponsors who make PyOhio possible!
 </div>
 
 <div class="flex justify-center my-6 not-prose">
-<a href="/2026/sponsors/" class="btn btn-primary">View All Sponsors</a>
+<a href="/2026/sponsors/" class="btn btn-secondary">:lucide-medal: View All Sponsors</a>
 </div>

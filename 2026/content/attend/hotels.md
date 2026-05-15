@@ -9,7 +9,7 @@ nav_order: 4
 
 **Crowne Plaza Cleveland at Playhouse Square** — 0.4 miles from venue.
 
-The Crowne Plaza is our official conference hotel. More information will be available as registration opens and will be announced via our [newsletter](https://newsletter.pyohio.org/).
+The Crowne Plaza is our official conference hotel. Additional details will be announced via our [newsletter](https://newsletter.pyohio.org/). [Register for PyOhio 2026](/2026/attend/registration/).
 
 ## Other Nearby Hotels
 
