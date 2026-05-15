@@ -14,11 +14,9 @@ speakers:
 og_image: https://www.pyohio.org/2026/img/og/talks/in-defense-of-thoughtful-testing.png
 ---
 
-AI can now generate working code in seconds, often complete with tests. But something subtle is breaking: passing tests is no longer a strong signal of correctness.
+AI can now generate working code in seconds, often complete with tests. But something subtle is breaking: passing tests is no longer a strong signal of correctness. 
 
-For decades, software development has relied on a simple assumption: writing code is hard, but verifying it is relatively easy. In computational terms, we have treated correctness like a problem where solutions may be difficult to find, but easy to check.
-
-Sudoku is the canonical example. Solving a difficult grid can take significant effort, but once a solution is produced, verifying it is trivial. Every row, column, and box either satisfies the constraints or it does not.
+For decades, software development relied on a simple assumption: creating solutions is hard, but verifying them is relatively easy. Sudoku is the canonical example. Solving a difficult puzzle can take significant effort, but once a solution is produced, verifying it is trivial.
 
 ```
 +-------+-------+-------+
@@ -36,25 +34,8 @@ Sudoku is the canonical example. Solving a difficult grid can take significant e
 +-------+-------+-------+
 ```
 
-In Sudoku, correctness is explicit and checkable.
+AI changes that model. In Python workflows especially, it is now common to generate code, generate tests for that code, run CI, and receive a green checkmark without ever meaningfully challenging the underlying assumptions. The result is often not correctness. It is self consistency.
 
-This talk argues that AI breaks that model. Generating code is becoming trivial, while *meaningfully verifying it is becoming the hardest part of software development*.
+This talk argues that as code generation becomes abundant, judgment becomes the bottleneck. We already see systems that pass every automated test while still failing users, APIs that return the correct shape but the wrong meaning, and data pipelines that produce valid outputs but incorrect conclusions. These failures emerge from closed loops of validation that never step outside themselves.
 
-In Python workflows, this shift is already visible. It is now common to generate a function, generate a pytest suite for it, run CI, and get a green checkmark without ever meaningfully challenging the underlying assumptions. The result is not necessarily correctness. It is **self-consistency**.
-
-We will look at how these closed-loop validation patterns emerge in practice:
-- APIs that return the correct shape but the wrong meaning  
-- data pipelines that produce valid outputs but incorrect conclusions  
-- systems that pass every test and still fail in real usage  
-
-These failures do not come from broken code. They come from unchallenged assumptions.
-
-This is where thoughtful, independent testing becomes essential. Not as a fallback, but as an external perspective. A way to step outside the system and ask whether it actually makes sense.
-
-We will explore why intuition, that sense that “this feels wrong”, is not guesswork, but a form of expertise built from exposure to real systems, real failures, and real users.
-
-This is not a nostalgic defense of manual QA. It is a reframing. In a world where code is abundant, **good judgment becomes the bottleneck**.
-
-Python is not unique here. It amplifies the problem. Its central role in AI workflows, combined with low friction and weakly specified correctness in data and ML systems, makes it especially easy to produce code that is internally consistent but externally wrong. It is less an exception than a preview of where software is heading.
-
-Correctness didn’t get easier to prove — we just made it easier to agree on. As expectations rise, we risk mistaking consensus for correctness.
+Thoughtful, independent testing therefore becomes more important, not less. AI did not make correctness easier to establish. It simply made agreement easier to produce.
