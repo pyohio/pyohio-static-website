@@ -4,4 +4,4 @@ unlisted: true
 nav_order: 5
 ---
 
-Details about refreshments and meals for PyOhio 2026 will be announced closer to the event. Check back soon!
+Details about refreshments and meals for PyOhio 2026 will be shared via our [newsletter](https://newsletter.pyohio.org/) closer to the event.

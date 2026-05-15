@@ -3,4 +3,4 @@ title: Opening Reception
 unlisted: true
 ---
 
-Details about the PyOhio 2026 opening reception are TBD. Check back closer to the event for more information.
+Details about the PyOhio 2026 opening reception will be shared via our [newsletter](https://newsletter.pyohio.org/) closer to the event.
