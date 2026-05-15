@@ -25,6 +25,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /register /2026/attend/registration 302
 /schedule /2026/program/schedule 302
 /sprints /2026 302
+/support /2026/support 302
 /volunteer /2026/attend/volunteer 302
 
 # Defunct but still linked

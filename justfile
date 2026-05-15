@@ -3,9 +3,9 @@
 _default:
     @just --list
 
-# Start 2026 dev server with live reload
-dev:
-    cd 2026 && rockgarden dev
+# Start 2026 dev server with live reload (extra args passed to rockgarden, e.g. `just dev -p 8001`)
+dev *ARGS:
+    cd 2026 && rockgarden dev {{ARGS}}
 
 # Build the 2026 site
 build:
