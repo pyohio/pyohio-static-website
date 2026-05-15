@@ -26,7 +26,11 @@ See the [full agenda](https://blackpythondevs.com/bpd-events/black-python-devs-l
 
 ## Registration
 
-The summit requires a separate ticket from PyOhio registration. When PyOhio 2026 registration opens, you'll be able to add a summit ticket alongside your PyOhio registration. [Subscribe to our newsletter](https://newsletter.pyohio.org/) to be notified when registration opens.
+The summit requires a separate ticket from PyOhio registration. You can add a summit ticket alongside your PyOhio registration.
+
+<div class="flex flex-wrap gap-3 my-6 not-prose">
+<a href="https://ti.to/pyohio/2026" class="btn btn-primary">:lucide-ticket: Register for PyOhio 2026</a>
+</div>
 
 ## Code of Conduct
 
