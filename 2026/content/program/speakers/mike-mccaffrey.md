@@ -28,4 +28,4 @@ avatar: /2026/img/speakers/mike-mccaffrey.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/mike-mccaffrey.png
 ---
 
-I am a mid-career software developer and IT manager.  I have been working in Python for 12 years, mostly involving data integration and process automation.  I enjoy attending PyOhio and PyCon.
+I am a mid-career software developer and IT manager.  I have been working in Python for 12 years, mostly involving data integration and process automation.  I enjoy attending PyOhio and PyCon.  I am seeking an opportunity to collaborate with others, either in a commercial setting or on an open-source project.  Please contact me if you would like to discuss.
