@@ -64,6 +64,12 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <p>PyOhio only happens with the help of volunteers — join us to make the conference amazing!</p>
 </a>
 
+<a href="/2026/sponsors/individual-sponsors/" class="feature-card">
+<span class="feature-card-icon">:lucide-hand-coins:</span>
+<h3>Donate</h3>
+<p>Individual donations through the Python Software Foundation help keep PyOhio free to attend.</p>
+</a>
+
 <a href="/2026/attend/" class="feature-card">
 <span class="feature-card-icon">:lucide-ticket:</span>
 <h3>Attend</h3>
