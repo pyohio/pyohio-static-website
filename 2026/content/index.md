@@ -13,6 +13,7 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 
 <div class="flex flex-wrap gap-3 my-6 not-prose">
 <a href="/2026/attend/registration/" class="btn btn-secondary">:lucide-ticket: Register Now</a>
+<a href="/2026/attend/shirts/" class="btn btn-secondary">:lucide-shirt: Order Shirts</a>
 <a href="/2026/about/newsletter/" class="btn btn-secondary">:lucide-mail: Get Newsletter</a>
 </div>
 
@@ -62,13 +63,19 @@ Please review our [Health & Safety Guidelines](/2026/about/health-and-safety/) a
 <a href="/2026/attend/volunteer/" class="feature-card">
 <span class="feature-card-icon">:lucide-heart-handshake:</span>
 <h3>Volunteer</h3>
-<p>PyOhio only happens with the help of volunteers — join us to make the conference amazing!</p>
+<p>PyOhio only happens with the help of volunteers. Join us to make the conference amazing!</p>
 </a>
 
 <a href="/2026/sponsors/individual-sponsors/" class="feature-card">
 <span class="feature-card-icon">:lucide-hand-coins:</span>
 <h3>Donate</h3>
 <p>Individual donations through the Python Software Foundation help keep PyOhio free to attend.</p>
+</a>
+
+<a href="/2026/attend/shirts/" class="feature-card">
+<span class="feature-card-icon">:lucide-shirt:</span>
+<h3>Order Shirts</h3>
+<p>Pick up an optional PyOhio 2026 shirt. Proceeds support future PyOhio events.</p>
 </a>
 
 <a href="/2026/attend/" class="feature-card">
