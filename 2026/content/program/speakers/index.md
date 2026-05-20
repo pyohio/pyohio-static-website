@@ -41,7 +41,7 @@ speakers:
     avatar: /2026/img/speakers/cliff-jenkins.webp
   - name: Cole Sutyak
     slug: cole-sutyak
-    avatar:
+    avatar: /2026/img/speakers/cole-sutyak.webp
   - name: Dan Shernicoff
     slug: dan-shernicoff
     avatar: /2026/img/speakers/dan-shernicoff.webp
