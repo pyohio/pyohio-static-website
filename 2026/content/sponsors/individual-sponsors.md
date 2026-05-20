@@ -2,11 +2,17 @@
 title: Individual Sponsors
 nav_order: 3
 sponsors:
+  - Jeff Epler
+  - joshuag
   - Mike McCaffrey
   - tylerdave
+  - CF+AB
+  - Kate Ambush
   - Anonymous
   - Curtis Oneal
   - Dan Shernicoff
+  - 😺 Mike Pirnat’s cats
+  - Anurag Saxena
   - Derek Zoladz
   - David Alexander
   - Eddie Cosma
