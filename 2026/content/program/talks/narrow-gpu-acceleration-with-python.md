@@ -10,6 +10,7 @@ speakers:
   - name: Cole Sutyak
     slug: cole-sutyak
     code: 77LLQP
+    avatar: /2026/img/speakers/cole-sutyak.webp
 og_image: https://www.pyohio.org/2026/img/og/talks/narrow-gpu-acceleration-with-python.png
 ---
 
