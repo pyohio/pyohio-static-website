@@ -5,15 +5,11 @@ nav_order: 5
 
 # Hotels
 
-## Official PyOhio Hotel
+We don't have a hotel block or conference rate this year, but there are many hotels within walking distance of the Cleveland State University Student Center.
 
-**Crowne Plaza Cleveland at Playhouse Square** — 0.4 miles from venue.
+Many PyOhio attendees stay at the **Crowne Plaza Cleveland at Playhouse Square** (0.4 miles from the venue), so it's a good option if you'd like to be near other attendees.
 
-The Crowne Plaza is our official conference hotel. Additional details will be announced via our [newsletter](https://newsletter.pyohio.org/). [Register for PyOhio 2026](/2026/attend/registration/).
-
-## Other Nearby Hotels
-
-There are many hotels within walking distance of the Cleveland State University Student Center. Some options include:
+Other nearby options:
 
 - Comfort Inn Downtown Cleveland
 - Hilton Garden Inn Cleveland Downtown
