@@ -14,7 +14,16 @@ talks:
         slug: advait-patel
         code: JPGSST
         avatar: /2026/img/speakers/advait-patel.webp
-social_links: []
+social_links:
+  - url: https://www.linkedin.com/in/advaitpatel93/
+    display: linkedin.com/in/advaitpatel93/
+    icon: mdi:linkedin
+  - url: https://github.com/OWASP/DockSec
+    display: github.com/OWASP/DockSec
+    icon: mdi:github
+  - url: https://owasp.org/DockSec/
+    display: owasp.org/DockSec/
+    icon: mdi:link-variant
 avatar: /2026/img/speakers/advait-patel.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/advait-patel.png
 ---
