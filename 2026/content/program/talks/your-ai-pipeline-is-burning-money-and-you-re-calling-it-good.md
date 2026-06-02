@@ -1,11 +1,11 @@
 ---
-title: Your AI Pipeline Is Burning Money and You're Calling It "Good Enough"
+title: Your AI Pipeline Is Burning Money and You're Calling It ‟Good Enough”
 page_type: talk
 code: RZ78NR
 duration: 30
 type: 30 Minute Talk
 qna: true
-qna_channel: Your AI Pipeline Is Burning Money and You're Calling It "Good Enough"
+qna_channel: Your AI Pipeline Is Burning Money and You're Calling It ‟Good Enough”
 speakers:
   - name: Andrew Plassard
     slug: andrew-plassard
