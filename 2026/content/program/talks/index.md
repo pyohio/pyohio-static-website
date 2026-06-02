@@ -164,7 +164,7 @@ talks:
       - name: Krishna Mridha
         slug: krishna-mridha
   - slug: your-ai-pipeline-is-burning-money-and-you-re-calling-it-good
-    title: Your AI Pipeline Is Burning Money and You're Calling It "Good Enough"
+    title: Your AI Pipeline Is Burning Money and You're Calling It ‟Good Enough”
     type: 30 Minute Talk
     speakers:
       - name: Andrew Plassard
