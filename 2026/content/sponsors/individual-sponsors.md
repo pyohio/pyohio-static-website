@@ -3,6 +3,7 @@ title: Individual Sponsors
 nav_order: 3
 sponsors:
   - Jeff Epler
+  - Albert Sweigart
   - joshuag
   - Mike McCaffrey
   - tylerdave
@@ -13,10 +14,12 @@ sponsors:
   - Dan Shernicoff
   - 😺 Mike Pirnat’s cats
   - Anurag Saxena
+  - Barbara Shaurette
   - Derek Zoladz
   - David Alexander
   - Eddie Cosma
   - Anonymous
+  - Carol Willing
 ---
 
 Thank you to our generous individual supporters who help make PyOhio free for everyone to attend.
