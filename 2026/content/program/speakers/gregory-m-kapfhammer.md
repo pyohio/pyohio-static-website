@@ -38,9 +38,9 @@ social_links:
   - url: https://fosstodon.org/@gkapfham
     display: '@gkapfham@fosstodon.org'
     icon: mdi:mastodon
-  - url: http://www.linkedin.com/in/GregKapfhammer
-    display: www.linkedin.com/in/GregKapfhammer
-    icon: mdi:link-variant
+  - url: https://linkedin.com/in/GregKapfhammer
+    display: linkedin.com/in/GregKapfhammer
+    icon: mdi:linkedin
 avatar: /2026/img/speakers/gregory-m-kapfhammer.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/gregory-m-kapfhammer.png
 ---
