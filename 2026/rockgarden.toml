@@ -10,3 +10,7 @@ base_path = "/2026"
 name = "pyohio"
 search = true
 show_build_info = false
+
+[hooks]
+# Emit program/speakers/speakers.csv into the build output for the comms team.
+post_collect = ["uv run --project ../pyohio-cli pyohio csv generate"]
