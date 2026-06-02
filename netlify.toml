@@ -4,3 +4,13 @@
 
 [build.environment]
   PYTHON_VERSION = "3.13"
+
+# Serve the speakers export as inline plain text so it opens in the browser
+# instead of downloading. Netlify serves .csv as text/csv, which browsers
+# force-download; text/plain renders inline. The *.csv wildcard scopes to CSVs
+# in this dir without affecting the speakers index HTML page.
+[[headers]]
+  for = "/2026/program/speakers/*.csv"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Content-Disposition = "inline"
