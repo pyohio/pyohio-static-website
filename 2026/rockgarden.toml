@@ -13,4 +13,6 @@ show_build_info = false
 
 [hooks]
 # Emit program/speakers/speakers.csv into the build output for the comms team.
-post_collect = ["uv run --project ../pyohio-cli pyohio csv generate"]
+# Runs under plain python3 (stdlib only) so it works in the Netlify build,
+# which has no uv. cwd is this 2026/ dir.
+post_collect = ["PYTHONPATH=../pyohio-cli/src python3 -m pyohio_cli.csv_export"]

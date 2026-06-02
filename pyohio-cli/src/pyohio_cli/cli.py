@@ -1,6 +1,6 @@
 import click
 
-from pyohio_cli.csv_export import csv
+from pyohio_cli.csv_export.cli import csv
 from pyohio_cli.og import og
 from pyohio_cli.pretalx import pretalx
 from pyohio_cli.sponsors import sponsors
