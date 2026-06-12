@@ -34,4 +34,4 @@ avatar: /2026/img/speakers/jamal-hansen.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/jamal-hansen.png
 ---
 
-I am a data scientist, and I write to work through ideas. Most of what I publish comes from something I built, a gap in my own understanding, or a question I keep answering. I enjoy building things and showing others what I've learned. Right now, I am exploring what happens when you vibe-code twenty-plus local AI tools, and I am writing a series that shows why learning SQL will help you be a better Python developer. I live in San Antonio, Texas, with my family and our dog, Butterscotch.
+I am a data scientist who writes to work through ideas. I enjoy building things and showing others what I've learned. Right now, I am exploring what happens when you vibe-code twenty-plus local AI tools, and I am writing a series that shows why learning SQL will help you be a better Python developer. I live in San Antonio, Texas, with my family and our dog, Butterscotch.

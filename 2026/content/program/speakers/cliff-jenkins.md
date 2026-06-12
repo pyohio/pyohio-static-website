@@ -5,6 +5,15 @@ code: CYDAQ9
 speaker_type: speaker
 listed: true
 talks:
+  - code: 9T8F9K
+    slug: python-on-cubesatsim
+    title: 'Python on CubeSatSim: Real Spacecraft Telemetry with a Raspberry Pi'
+    type: 30 Minute Talk
+    speakers:
+      - name: Cliff Jenkins
+        slug: cliff-jenkins
+        code: CYDAQ9
+        avatar: /2026/img/speakers/cliff-jenkins.webp
   - code: ZJREFR
     slug: what-if-voyager-launched-in-2026-and-ran-python
     title: What If Voyager Launched in 2026 — and Ran Python?
