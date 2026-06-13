@@ -11,6 +11,10 @@ speakers:
     slug: terry-howald
     code: LZEZSB
     avatar: /2026/img/speakers/terry-howald.webp
+start: '2026-07-25T15:00:00-04:00'
+end: '2026-07-25T15:30:00-04:00'
+room: Ballroom B
+slot_label: Saturday at 3:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/atoms-to-ai.png
 ---
 

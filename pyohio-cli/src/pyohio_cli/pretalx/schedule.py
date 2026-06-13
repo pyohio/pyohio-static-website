@@ -23,7 +23,7 @@ from datetime import datetime
 BREAK_WORDS = ("break", "lunch")
 
 
-def _room_name(slot: dict) -> str | None:
+def room_name(slot: dict) -> str | None:
     room = slot.get("room") or {}
     name = room.get("name")
     if isinstance(name, dict):
@@ -42,6 +42,11 @@ def _fmt_time(iso: str) -> str:
     return datetime.fromisoformat(iso).strftime("%-I:%M %p")
 
 
+def slot_label(iso: str) -> str:
+    """Human-readable day + time for a talk page, e.g. 'Saturday at 3:00 PM'."""
+    return datetime.fromisoformat(iso).strftime("%A at %-I:%M %p")
+
+
 def _day_label(date: str) -> str:
     return datetime.fromisoformat(date).strftime("%A, %B %-d")
 
@@ -55,7 +60,7 @@ def _speaker_names(record: dict | None) -> str:
 def _ordered_rooms(slots: list[dict]) -> list[str]:
     positions: dict[str, int] = {}
     for slot in slots:
-        name = _room_name(slot)
+        name = room_name(slot)
         if not name:
             continue
         room = slot.get("room") or {}
@@ -91,7 +96,7 @@ def _build_row(
         by_room: dict[str, dict] = {}
         for slot in talk_slots:
             record = talks_by_code.get(slot["submission"])
-            name = _room_name(slot)
+            name = room_name(slot)
             if record and name:
                 by_room[name] = {
                     "title": record["title"],

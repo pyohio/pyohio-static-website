@@ -11,6 +11,10 @@ speakers:
     slug: carrie-minerich
     code: PQJUA7
     avatar: /2026/img/speakers/carrie-minerich.webp
+start: '2026-07-25T11:00:00-04:00'
+end: '2026-07-25T11:30:00-04:00'
+room: Ballroom A
+slot_label: Saturday at 11:00 AM
 og_image: https://www.pyohio.org/2026/img/og/talks/the-missing-import.png
 ---
 

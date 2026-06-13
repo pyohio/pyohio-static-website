@@ -15,7 +15,7 @@ from pyohio_cli._frontmatter import update_frontmatter_key, yaml_loader
 from pyohio_cli.pretalx.avatars import AvatarDownloader
 from pyohio_cli.pretalx.client import PretalxClient
 from pyohio_cli.pretalx.config import PretalxConfig
-from pyohio_cli.pretalx.schedule import build_schedule
+from pyohio_cli.pretalx.schedule import build_schedule, room_name, slot_label
 
 KEEP_FILES = {"index.md", "_folder.md"}
 
@@ -86,7 +86,12 @@ class DataProcessor:
                 if path.name not in KEEP_FILES:
                     path.unlink()
 
-    def write_talk(self, talk: dict, qa_by_code: dict[str, str]) -> dict:
+    def write_talk(
+        self,
+        talk: dict,
+        qa_by_code: dict[str, str],
+        slot_by_code: dict[str, dict],
+    ) -> dict:
         title = talk["title"]
         is_keynote = talk["submission_type"]["name"]["en"] == "Keynote"
 
@@ -122,6 +127,13 @@ class DataProcessor:
             "qna_channel": re.split(r":|\?|\.", title)[0] if qna else None,
             "speakers": speakers_data,
         }
+
+        slot = slot_by_code.get(talk["code"])
+        if slot and slot.get("start"):
+            frontmatter["start"] = slot["start"]
+            frontmatter["end"] = slot.get("end")
+            frontmatter["room"] = room_name(slot)
+            frontmatter["slot_label"] = slot_label(slot["start"])
 
         body = (talk.get("description") or "").strip()
         self._write_markdown(self.talks_dir / f"{slug}.md", frontmatter, body)
@@ -325,12 +337,15 @@ def run_fetch(
         )
     submissions = filtered_submissions
 
+    slots = client.get_slots()
+    slot_by_code = {s["submission"]: s for s in slots if s.get("submission")}
+
     processor.clean_generated_pages()
 
     click.echo("Writing talk pages...", err=True)
     talks_by_code: dict[str, dict] = {}
     for talk in submissions:
-        record = processor.write_talk(talk, qa_by_code)
+        record = processor.write_talk(talk, qa_by_code, slot_by_code)
         talks_by_code[record["code"]] = record
 
     speaker_codes: list[str] = []
@@ -363,5 +378,4 @@ def run_fetch(
     processor.update_keynote_page(keynote_records)
 
     click.echo("Updating schedule grid...", err=True)
-    slots = client.get_slots()
     processor.update_schedule_page(slots, talks_by_code)

@@ -10,6 +10,10 @@ speakers:
   - name: Michael James Robellard
     slug: michael-james-robellard
     code: 93D97P
+start: '2026-07-25T10:15:00-04:00'
+end: '2026-07-25T10:45:00-04:00'
+room: Ballroom C
+slot_label: Saturday at 10:15 AM
 og_image: https://www.pyohio.org/2026/img/og/talks/python-and-s3-vector-store-for-inexpensive-search.png
 ---
 

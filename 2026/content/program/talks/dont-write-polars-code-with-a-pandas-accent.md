@@ -11,6 +11,10 @@ speakers:
     slug: joram-mutenge
     code: ATUL7J
     avatar: /2026/img/speakers/joram-mutenge.webp
+start: '2026-07-25T14:15:00-04:00'
+end: '2026-07-25T14:45:00-04:00'
+room: Ballroom B
+slot_label: Saturday at 2:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/dont-write-polars-code-with-a-pandas-accent.png
 ---
 

@@ -11,6 +11,10 @@ speakers:
     slug: ross-katz
     code: SZ79EQ
     avatar: /2026/img/speakers/ross-katz.webp
+start: '2026-07-26T14:45:00-04:00'
+end: '2026-07-26T15:15:00-04:00'
+room: Ballroom C
+slot_label: Sunday at 2:45 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/your-data-is-too-sensitive-for-an-api.png
 ---
 

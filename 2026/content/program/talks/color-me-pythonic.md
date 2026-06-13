@@ -11,6 +11,10 @@ speakers:
     slug: veronica-k-mcneece
     code: RASH7A
     avatar: /2026/img/speakers/veronica-k-mcneece.webp
+start: '2026-07-26T14:00:00-04:00'
+end: '2026-07-26T14:30:00-04:00'
+room: Ballroom D
+slot_label: Sunday at 2:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/color-me-pythonic.png
 ---
 
