@@ -6,9 +6,6 @@ speakers:
   - name: Abraham Owodunni
     slug: abraham-owodunni
     avatar: /2026/img/speakers/abraham-owodunni.webp
-  - name: Advait Patel
-    slug: advait-patel
-    avatar: /2026/img/speakers/advait-patel.webp
   - name: Al Sweigart
     slug: al-sweigart
     avatar: /2026/img/speakers/al-sweigart.webp
@@ -90,6 +87,9 @@ speakers:
   - name: Morgan Willis
     slug: morgan-willis
     avatar: /2026/img/speakers/morgan-willis.webp
+  - name: Rachell Calhoun
+    slug: rachell-calhoun
+    avatar: /2026/img/speakers/rachell-calhoun.webp
   - name: Rodrigo Silva Ferreira
     slug: rodrigo-silva-ferreira
     avatar: /2026/img/speakers/rodrigo-silva-ferreira.webp

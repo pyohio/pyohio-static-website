@@ -5,6 +5,19 @@ code: MABJWY
 speaker_type: speaker
 listed: true
 talks:
+  - code: K7CX9S
+    slug: djangonaut-space
+    title: 'Djangonaut Space: Mentoring Contributors, Empowering Leaders'
+    type: 30 Minute Talk
+    speakers:
+      - name: Tim Schilling
+        slug: tim-schilling
+        code: MABJWY
+        avatar: /2026/img/speakers/tim-schilling.webp
+      - name: Rachell Calhoun
+        slug: rachell-calhoun
+        code: QXMC9E
+        avatar: /2026/img/speakers/rachell-calhoun.webp
   - code: Q8TUKB
     slug: 10-dazzling-joyful-astounding-nifty-glorious-outstanding-in
     title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django

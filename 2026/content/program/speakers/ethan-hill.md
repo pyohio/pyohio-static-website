@@ -15,8 +15,8 @@ talks:
         code: 7WDJH8
         avatar: /2026/img/speakers/ethan-hill.webp
 social_links:
-  - url: https://linktr.ee/medevhill
-    display: linktr.ee/medevhill
+  - url: https://linktr.ee/indoorhill
+    display: linktr.ee/indoorhill
     icon: mdi:link-variant
 avatar: /2026/img/speakers/ethan-hill.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/ethan-hill.png

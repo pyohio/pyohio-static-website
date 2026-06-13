@@ -27,12 +27,6 @@ talks:
     speakers:
       - name: Benjamin Patch
         slug: benjamin-patch
-  - slug: building-agents-that-do-not-give-attackers-a-free-ride-through
-    title: Building Agents That Do Not Give Attackers a Free Ride Through Your Infrastructure
-    type: 30 Minute Talk
-    speakers:
-      - name: Advait Patel
-        slug: advait-patel
   - slug: building-ai-agents-in-python
     title: 'Building AI Agents in Python: A Step-by-Step Guide with Strands Agents'
     type: 30 Minute Talk
@@ -45,6 +39,14 @@ talks:
     speakers:
       - name: Veronica k McNeece
         slug: veronica-k-mcneece
+  - slug: djangonaut-space
+    title: 'Djangonaut Space: Mentoring Contributors, Empowering Leaders'
+    type: 30 Minute Talk
+    speakers:
+      - name: Tim Schilling
+        slug: tim-schilling
+      - name: Rachell Calhoun
+        slug: rachell-calhoun
   - slug: don-t-blame-the-type-checker
     title: "Don't Blame the Type Checker: Finding Who Is Right When Python Type Checkers Disagree"
     type: 30 Minute Talk
@@ -107,6 +109,12 @@ talks:
     speakers:
       - name: Michael James Robellard
         slug: michael-james-robellard
+  - slug: python-on-cubesatsim
+    title: 'Python on CubeSatSim: Real Spacecraft Telemetry with a Raspberry Pi'
+    type: 30 Minute Talk
+    speakers:
+      - name: Cliff Jenkins
+        slug: cliff-jenkins
   - slug: root-access
     title: 'Root Access: Using Python to Keep My Garden Alive'
     type: 30 Minute Talk
