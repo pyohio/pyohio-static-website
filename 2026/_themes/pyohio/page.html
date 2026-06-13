@@ -57,6 +57,8 @@
             {% include "components/speakers_listing.html" %}
         {%- elif _page_type == 'keynoters_listing' -%}
             {% include "components/keynoters_listing.html" %}
+        {%- elif _page_type == 'schedule_grid' -%}
+            {% include "components/schedule_grid.html" %}
         {%- elif page.frontmatter.get('sponsors') is not none and _sponsor_marker in page.html -%}
             {%- set _parts = page.html.split(_sponsor_marker, 1) -%}
             {{ _parts[0] | safe }}

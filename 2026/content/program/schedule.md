@@ -1,12 +1,210 @@
 ---
 title: Schedule
+page_type: schedule_grid
 nav_order: 1
 schema_types: [Event]
+schedule:
+  - day: Saturday, July 25
+    date: '2026-07-25'
+    rooms:
+      - Ballroom D
+      - Ballroom C
+      - Ballroom B
+      - Ballroom A
+    rows:
+      - time: 9:00 AM
+        kind: plenary
+        title: Opening Remarks
+      - time: 9:15 AM
+        kind: plenary
+        title: Keynote
+        slug: dr-juliana-novic-keynote
+        speakers: Dr. Juliana Novic
+      - time: 10:00 AM
+        kind: break
+        title: Break
+      - time: 10:15 AM
+        kind: talks
+        cells:
+          - title: What If Voyager Launched in 2026 — and Ran Python?
+            slug: what-if-voyager-launched-in-2026-and-ran-python
+            speakers: Cliff Jenkins
+          - title: Python and S3 Vector Store for Inexpensive Search
+            slug: python-and-s3-vector-store-for-inexpensive-search
+            speakers: Michael James Robellard
+          - title: Your VLM Is Hallucinating Your Genes
+            slug: your-vlm-is-hallucinating-your-genes
+            speakers: Ethan Hill
+          - title: "Don't Blame the Type Checker: Finding Who Is Right When Python Type Checkers Disagree"
+            slug: don-t-blame-the-type-checker
+            speakers: Benedek Kaibas, Gregory M. Kapfhammer
+      - time: 10:45 AM
+        kind: break
+        title: Break
+      - time: 11:00 AM
+        kind: talks
+        cells:
+          - title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django
+            slug: 10-dazzling-joyful-astounding-nifty-glorious-outstanding-in
+            speakers: Tim Schilling
+          - title: Failed Experiments in Vibe Coding
+            slug: failed-experiments-in-vibe-coding
+            speakers: Al Sweigart
+          - title: Narrow GPU Acceleration With Python​
+            slug: narrow-gpu-acceleration-with-python
+            speakers: Cole Sutyak
+          - title: 'The Missing Import: Building Data Models with dbt'
+            slug: the-missing-import
+            speakers: Carrie Minerich
+      - time: 11:30 AM
+        kind: break
+        title: Break
+      - time: 11:45 AM
+        kind: talks
+        cells:
+          - title: 'Textual Healing: Building Real-World Terminal UIs with Python'
+            slug: textual-healing
+            speakers: Eddie Cosma
+          - title: '“Oh, You’re Right” Is Not a Review: Orchestrating Agentic AI That Proves What It Checked'
+            slug: oh-youre-right-is-not-a-review
+            speakers: Calvin Hendryx-Parker
+          - title: My Model Works Locally. Why Is Production Lying to Me?
+            slug: my-model-works-locally
+            speakers: Dinky Mishra
+          - title: This Is Not the NaN You Are Looking For
+            slug: this-is-not-the-nan-you-are-looking-for
+            speakers: Dan Shernicoff
+      - time: 12:15 PM
+        kind: break
+        title: Lunch
+      - time: 2:15 PM
+        kind: talks
+        cells:
+          - title: 'Lights! 2: Electric Boogaloo'
+            slug: lights-2
+            speakers: Mike McCaffrey
+          - title: 'In Defense of Thoughtful Testing: Rethinking Quality in the Age of AI-Generated Code'
+            slug: in-defense-of-thoughtful-testing
+            speakers: Rodrigo Silva Ferreira
+          - title: Don’t Write Polars Code with a Pandas Accent
+            slug: dont-write-polars-code-with-a-pandas-accent
+            speakers: Joram Mutenge
+          - 
+      - time: 2:45 PM
+        kind: break
+        title: Break
+      - time: 3:00 PM
+        kind: talks
+        cells:
+          - title: 'Djangonaut Space: Mentoring Contributors, Empowering Leaders'
+            slug: djangonaut-space
+            speakers: Tim Schilling, Rachell Calhoun
+          - title: Go Hybrid - Find the Results LIKE Can't
+            slug: go-hybrid-find-the-results-like-can-t
+            speakers: Jamal Hansen
+          - title: 'Atoms to AI: Building a Quantum Capacitor Surrogate with Python and GNNs'
+            slug: atoms-to-ai
+            speakers: Terry Howald
+          - 
+      - time: 3:30 PM
+        kind: break
+        title: Break
+      - time: 3:45 PM
+        kind: plenary
+        title: Keynote
+        slug: carol-willing-keynote
+        speakers: Carol Willing
+      - time: 4:30 PM
+        kind: plenary
+        title: Lightning Talks
+  - day: Sunday, July 26
+    date: '2026-07-26'
+    rooms:
+      - Ballroom D
+      - Ballroom C
+      - Ballroom B
+      - Ballroom A
+    rows:
+      - time: 12:00 PM
+        kind: plenary
+        title: Re-opening Talk
+      - time: 12:15 PM
+        kind: break
+        title: Break
+      - time: 12:30 PM
+        kind: talks
+        cells:
+          - title: 'Root Access: Using Python to Keep My Garden Alive'
+            slug: root-access
+            speakers: Bianca Ploss
+          - title: 'The LangGraph Trap: Why Your Agentic Python App Will Fail in Production'
+            slug: the-langgraph-trap
+            speakers: Kamal Singh Bisht
+          - title: Speeding Up Clinical Trial Analysis with Python
+            slug: speeding-up-clinical-trial-analysis-with-python
+            speakers: James Austrow
+          - title: 'Beyond Vibe Coding: A Spec-Driven AI Workflow for Serious Development'
+            slug: beyond-vibe-coding
+            speakers: Benjamin Patch
+      - time: 1:00 PM
+        kind: break
+        title: Break
+      - time: 1:15 PM
+        kind: talks
+        cells:
+          - title: 'Python on CubeSatSim: Real Spacecraft Telemetry with a Raspberry Pi'
+            slug: python-on-cubesatsim
+            speakers: Cliff Jenkins
+          - title: Anonymous Functions (and Other Ways to Annoy Your Coworkers)
+            slug: anonymous-functions-and-other-ways-to-annoy-your-coworkers
+            speakers: Joe Kaufeld
+          - title: 'Why Your AI Model Lies: Debugging Healthcare Predictions with SHAP and Python'
+            slug: why-your-ai-model-lies
+            speakers: Krishna Mridha
+          - title: 'Building AI Agents in Python: A Step-by-Step Guide with Strands Agents'
+            slug: building-ai-agents-in-python
+            speakers: Morgan Willis
+      - time: 1:45 PM
+        kind: break
+        title: Break
+      - time: 2:00 PM
+        kind: talks
+        cells:
+          - title: 'Color Me Pythonic: Extracting Dominant Colors from Images with PIL and K-Means'
+            slug: color-me-pythonic
+            speakers: Veronica k McNeece
+          - title: 'LLM Token Healing and Regex: Free Gains You Leave on the Table'
+            slug: llm-token-healing-and-regex
+            speakers: Abraham Owodunni
+          - title: Your AI Pipeline Is Burning Money and You're Calling It ‟Good Enough”
+            slug: your-ai-pipeline-is-burning-money-and-you-re-calling-it-good
+            speakers: Andrew Plassard
+          - 
+      - time: 2:30 PM
+        kind: break
+        title: Break
+      - time: 2:45 PM
+        kind: talks
+        cells:
+          - title: 'Testing the Parts You Don’t See: Pseudo-Tested Native Code in Python Libraries'
+            slug: testing-the-parts-you-dont-see
+            speakers: Issei Hasegawa, Gregory M. Kapfhammer
+          - title: 'Your Data Is Too Sensitive for an API: Fine-Tuning an Open-Source LLM for Production Document Parsing'
+            slug: your-data-is-too-sensitive-for-an-api
+            speakers: Ross Katz
+          - 
+          - 
+      - time: 3:15 PM
+        kind: break
+        title: Break
+      - time: 3:30 PM
+        kind: plenary
+        title: Keynote
+        slug: christopher-neugebauer-keynote
+        speakers: Christopher Neugebauer
+      - time: 4:15 PM
+        kind: plenary
+        title: Closing Remarks
 ---
 
-The PyOhio 2026 schedule will be announced closer to the event. [Subscribe to our newsletter](https://newsletter.pyohio.org/) to be notified when the schedule is published.
-
-In the meantime, you can browse:
-
-- [Talks](/2026/program/talks/)
-- [Speakers](/2026/program/speakers/)
+All times are Eastern (EDT). The schedule is subject to change.

@@ -15,6 +15,7 @@ from pyohio_cli._frontmatter import update_frontmatter_key, yaml_loader
 from pyohio_cli.pretalx.avatars import AvatarDownloader
 from pyohio_cli.pretalx.client import PretalxClient
 from pyohio_cli.pretalx.config import PretalxConfig
+from pyohio_cli.pretalx.schedule import build_schedule
 
 KEEP_FILES = {"index.md", "_folder.md"}
 
@@ -74,6 +75,7 @@ class DataProcessor:
         self.talks_index = self.talks_dir / "index.md"
         self.speakers_index = self.speakers_dir / "index.md"
         self.keynote_page = content_dir / "program" / "keynote-speakers.md"
+        self.schedule_page = content_dir / "program" / "schedule.md"
 
     def clean_generated_pages(self) -> None:
         """Remove previously generated talk/speaker markdown files (keep index/folder)."""
@@ -211,6 +213,15 @@ class DataProcessor:
             for r in ordered
         ]
         update_frontmatter_key(self.keynote_page, "keynoters", keynoters)
+
+    def update_schedule_page(
+        self,
+        slots: list[dict],
+        talks_by_code: dict[str, dict],
+    ) -> None:
+        """Populate the `schedule:` grid on schedule.md from PreTalx slots."""
+        days = build_schedule(slots, talks_by_code)
+        update_frontmatter_key(self.schedule_page, "schedule", days)
 
     def update_talks_index(
         self,
@@ -350,3 +361,7 @@ def run_fetch(
     )
     processor.update_speakers_index(speaker_records)
     processor.update_keynote_page(keynote_records)
+
+    click.echo("Updating schedule grid...", err=True)
+    slots = client.get_slots()
+    processor.update_schedule_page(slots, talks_by_code)

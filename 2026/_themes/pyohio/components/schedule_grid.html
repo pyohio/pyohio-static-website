@@ -1,0 +1,64 @@
+{# Schedule grid: per-day tables of time rows x room columns.
+   Data comes from the `schedule:` frontmatter populated by `pyohio pretalx fetch`. #}
+{% set schedule = page.frontmatter.get('schedule') or [] %}
+
+{{ page.html | safe }}
+
+{% if schedule %}
+{# Known non-talk rows that have their own content page. #}
+{% set page_links = {
+    'Lightning Talks': site.base_path ~ '/program/lightning-talks/',
+    'Lunch': site.base_path ~ '/program/saturday-lunch-break/',
+} %}
+<div class="not-prose mt-8 space-y-12">
+    {% for day in schedule %}
+    <section>
+        <h2 class="text-2xl font-extrabold text-primary mb-4">{{ day.day }}</h2>
+        <div class="overflow-x-auto rounded-box border border-base-300">
+            <table class="min-w-full border-separate border-spacing-0 text-sm">
+                <thead>
+                    <tr>
+                        <th scope="col" class="sticky left-0 z-20 bg-primary text-primary-content font-bold p-2 text-left">Start</th>
+                        {% for room in day.rooms %}
+                        <th scope="col" class="bg-primary text-primary-content font-bold p-2 text-center min-w-[11rem] border-l border-primary-content/20">{{ room }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in day.rows %}
+                    <tr>
+                        <th scope="row" class="sticky left-0 z-10 bg-base-300 text-base-content font-bold text-center p-2 whitespace-nowrap border-t border-base-300">{{ row.time }}</th>
+                        {% if row.kind == 'talks' %}
+                            {% for cell in row.cells %}
+                            <td class="align-top p-2 border-t border-l border-base-300 {{ 'bg-base-100' if cell else 'bg-base-200/50' }}">
+                                {% if cell %}
+                                <a href="{{ site.base_path }}/program/talks/{{ cell.slug }}/" class="link link-secondary font-semibold">{{ cell.title }}</a>
+                                {% if cell.speakers %}<div class="text-xs text-base-content/70 mt-1">{{ cell.speakers }}</div>{% endif %}
+                                {% endif %}
+                            </td>
+                            {% endfor %}
+                        {% elif row.kind == 'plenary' %}
+                            {% if row.slug %}
+                                {% set url = site.base_path ~ '/program/talks/' ~ row.slug ~ '/' %}
+                            {% else %}
+                                {% set url = page_links.get(row.title) %}
+                            {% endif %}
+                            <td colspan="{{ day.rooms | length }}" class="align-top p-2 border-t border-l border-base-300 bg-secondary/10 font-semibold">
+                                {% if url %}<a href="{{ url }}" class="link link-secondary">{{ row.title }}</a>{% else %}{{ row.title }}{% endif %}
+                                {% if row.speakers %}<div class="text-xs font-normal text-base-content/70 mt-1">{{ row.speakers }}</div>{% endif %}
+                            </td>
+                        {% else %}{# break #}
+                            {% set url = page_links.get(row.title) %}
+                            <td colspan="{{ day.rooms | length }}" class="p-2 border-t border-l border-base-300 bg-base-200 text-center font-semibold text-base-content/80">
+                                {% if url %}<a href="{{ url }}" class="link link-secondary">{{ row.title }}</a>{% else %}{{ row.title }}{% endif %}
+                            </td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    {% endfor %}
+</div>
+{% endif %}
