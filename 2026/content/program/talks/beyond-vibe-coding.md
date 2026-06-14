@@ -11,6 +11,10 @@ speakers:
     slug: benjamin-patch
     code: ZXL3CY
     avatar: /2026/img/speakers/benjamin-patch.webp
+start: '2026-07-26T12:30:00-04:00'
+end: '2026-07-26T13:00:00-04:00'
+room: Ballroom A
+slot_label: Sunday at 12:30 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/beyond-vibe-coding.png
 ---
 

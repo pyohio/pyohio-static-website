@@ -15,6 +15,10 @@ speakers:
     slug: rachell-calhoun
     code: QXMC9E
     avatar: /2026/img/speakers/rachell-calhoun.webp
+start: '2026-07-25T15:00:00-04:00'
+end: '2026-07-25T15:30:00-04:00'
+room: Ballroom D
+slot_label: Saturday at 3:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/djangonaut-space.png
 ---
 

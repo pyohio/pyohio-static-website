@@ -11,6 +11,10 @@ speakers:
     slug: eddie-cosma
     code: B8BWPU
     avatar: /2026/img/speakers/eddie-cosma.webp
+start: '2026-07-25T11:45:00-04:00'
+end: '2026-07-25T12:15:00-04:00'
+room: Ballroom D
+slot_label: Saturday at 11:45 AM
 og_image: https://www.pyohio.org/2026/img/og/talks/textual-healing.png
 ---
 

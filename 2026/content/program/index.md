@@ -23,4 +23,4 @@ Meet our [keynote speakers](/2026/program/keynote-speakers/) for PyOhio 2026.
 
 ## Schedule
 
-The [full schedule](/2026/program/schedule/) will be published closer to the event.
+See the [full schedule](/2026/program/schedule/) of talks, keynotes, and breaks for both days.

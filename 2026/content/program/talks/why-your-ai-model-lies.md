@@ -11,6 +11,10 @@ speakers:
     slug: krishna-mridha
     code: ESL97T
     avatar: /2026/img/speakers/krishna-mridha.webp
+start: '2026-07-26T13:15:00-04:00'
+end: '2026-07-26T13:45:00-04:00'
+room: Ballroom B
+slot_label: Sunday at 1:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/why-your-ai-model-lies.png
 ---
 
