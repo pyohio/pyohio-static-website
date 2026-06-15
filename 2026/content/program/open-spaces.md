@@ -9,4 +9,4 @@ Anyone can participate in an Open Space and anyone can host one! A sign-up board
 
 ## Schedule
 
-Open Spaces rooms and times will be included in the [full schedule](/2026/program/schedule/) when it's published.
+The [full schedule](/2026/program/schedule/) is now published. Open Spaces room availability will be posted soon.

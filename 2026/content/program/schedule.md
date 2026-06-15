@@ -233,4 +233,4 @@ schedule:
         title: Conference Space Closes
 ---
 
-All times are Eastern (EDT). The schedule is subject to change.
+*[Open Spaces](/2026/program/open-spaces/) rooms are available during the Sat & Sun talks. All times EDT.*
