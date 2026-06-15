@@ -10,7 +10,7 @@
 {# Known non-talk rows that have their own content page. #}
 {% set page_links = {
     'Lightning Talks': site.base_path ~ '/program/lightning-talks/',
-    'Lunch': site.base_path ~ '/program/saturday-lunch-break/',
+    'Lunch Break': site.base_path ~ '/program/saturday-lunch-break/',
 } %}
 <div class="not-prose mt-8 space-y-12">
     {% if pre_conference %}
@@ -72,7 +72,7 @@
                             {% if rest > 0 %}<td colspan="{{ rest }}" class="border-t border-l border-base-300 bg-base-200/50"></td>{% endif %}
                         {% else %}{# break #}
                             {% set url = page_links.get(row.title) %}
-                            <td colspan="{{ day.rooms | length }}" class="p-2 border-t border-l border-base-300 bg-base-200 text-center font-semibold text-base-content/80">
+                            <td colspan="{{ day.rooms | length }}" class="p-2 border-t border-l border-base-300 bg-base-200 text-left font-semibold text-base-content/80">
                                 {% if url %}<a href="{{ url }}" class="link link-secondary">{{ row.title }}</a>{% else %}{{ row.title }}{% endif %}
                             </td>
                         {% endif %}
