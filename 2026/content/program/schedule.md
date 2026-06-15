@@ -179,12 +179,10 @@ schedule:
           - title: Anonymous Functions (and Other Ways to Annoy Your Coworkers)
             slug: anonymous-functions-and-other-ways-to-annoy-your-coworkers
             speakers: Joe Kaufeld
-          - title: 'Why Your AI Model Lies: Debugging Healthcare Predictions with SHAP and Python'
-            slug: why-your-ai-model-lies
-            speakers: Krishna Mridha
           - title: 'Building AI Agents in Python: A Step-by-Step Guide with Strands Agents'
             slug: building-ai-agents-in-python
             speakers: Morgan Willis
+          - 
       - time: 1:45 PM
         kind: break
         title: Break
@@ -213,7 +211,9 @@ schedule:
           - title: 'Your Data Is Too Sensitive for an API: Fine-Tuning an Open-Source LLM for Production Document Parsing'
             slug: your-data-is-too-sensitive-for-an-api
             speakers: Ross Katz
-          - 
+          - title: 'Why Your AI Model Lies: Debugging Healthcare Predictions with SHAP and Python'
+            slug: why-your-ai-model-lies
+            speakers: Krishna Mridha
           - 
       - time: 3:15 PM
         kind: break
