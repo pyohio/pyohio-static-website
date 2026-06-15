@@ -62,10 +62,14 @@
                             {% else %}
                                 {% set url = page_links.get(row.title) %}
                             {% endif %}
-                            <td colspan="{{ day.rooms | length }}" class="align-top p-2 border-t border-l border-base-300 bg-base-100">
+                            {% set idx = day.rooms.index(row.room) if row.room in day.rooms else 0 %}
+                            {% if idx > 0 %}<td colspan="{{ idx }}" class="border-t border-l border-base-300 bg-base-200/50"></td>{% endif %}
+                            <td class="align-top p-2 border-t border-l border-base-300 bg-base-100">
                                 {% if url %}<a href="{{ url }}" class="link link-secondary font-semibold">{{ row.title }}</a>{% else %}<span class="font-semibold">{{ row.title }}</span>{% endif %}
                                 {% if row.speakers %}<div class="text-xs text-base-content/70 mt-1">{{ row.speakers }}</div>{% endif %}
                             </td>
+                            {% set rest = (day.rooms | length) - idx - 1 %}
+                            {% if rest > 0 %}<td colspan="{{ rest }}" class="border-t border-l border-base-300 bg-base-200/50"></td>{% endif %}
                         {% else %}{# break #}
                             {% set url = page_links.get(row.title) %}
                             <td colspan="{{ day.rooms | length }}" class="p-2 border-t border-l border-base-300 bg-base-200 text-center font-semibold text-base-content/80">

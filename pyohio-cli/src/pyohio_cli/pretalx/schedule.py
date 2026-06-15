@@ -94,6 +94,7 @@ def _build_row(
                 "title": record.get("title", "Keynote"),
                 "slug": record.get("slug"),
                 "speakers": _speaker_names(record),
+                "room": room_name(talk_slots[0]),
             }
 
         by_room: dict[str, dict] = {}
@@ -110,8 +111,11 @@ def _build_row(
         return {"time": time, "kind": "talks", "cells": cells}
 
     title = _desc_text(group[0])
-    kind = "break" if any(w in title.lower() for w in BREAK_WORDS) else "plenary"
-    return {"time": time, "kind": kind, "title": title}
+    if any(w in title.lower() for w in BREAK_WORDS):
+        return {"time": time, "kind": "break", "title": title}
+    # Plenary sessions (welcome, closing remarks, lightning talks) occupy a
+    # single room; the rest of the row is empty.
+    return {"time": time, "kind": "plenary", "title": title, "room": room_name(group[0])}
 
 
 def build_schedule(

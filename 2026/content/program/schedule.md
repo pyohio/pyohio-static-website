@@ -25,11 +25,13 @@ schedule:
       - time: 9:00 AM
         kind: plenary
         title: Saturday Welcome
+        room: Ballroom D
       - time: 9:15 AM
         kind: plenary
         title: Keynote
         slug: dr-juliana-novic-keynote
         speakers: Dr. Juliana Novic
+        room: Ballroom D
       - time: 10:00 AM
         kind: break
         title: Break
@@ -124,9 +126,11 @@ schedule:
         title: Keynote
         slug: carol-willing-keynote
         speakers: Carol Willing
+        room: Ballroom D
       - time: 4:30 PM
         kind: plenary
         title: Lightning Talks
+        room: Ballroom D
       - time: 6:00 PM
         kind: break
         title: Conference Space Closes
@@ -144,6 +148,7 @@ schedule:
       - time: 12:00 PM
         kind: plenary
         title: Sunday Welcome
+        room: Ballroom D
       - time: 12:15 PM
         kind: break
         title: Break
@@ -218,9 +223,11 @@ schedule:
         title: Keynote
         slug: christopher-neugebauer-keynote
         speakers: Christopher Neugebauer
+        room: Ballroom D
       - time: 4:15 PM
         kind: plenary
         title: Closing Remarks
+        room: Ballroom D
       - time: 4:30 PM
         kind: break
         title: Conference Space Closes
