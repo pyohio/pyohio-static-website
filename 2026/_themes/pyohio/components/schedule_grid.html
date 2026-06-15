@@ -62,9 +62,9 @@
                             {% else %}
                                 {% set url = page_links.get(row.title) %}
                             {% endif %}
-                            <td colspan="{{ day.rooms | length }}" class="align-top p-2 border-t border-l border-base-300 bg-secondary/10 font-semibold">
-                                {% if url %}<a href="{{ url }}" class="link link-secondary">{{ row.title }}</a>{% else %}{{ row.title }}{% endif %}
-                                {% if row.speakers %}<div class="text-xs font-normal text-base-content/70 mt-1">{{ row.speakers }}</div>{% endif %}
+                            <td colspan="{{ day.rooms | length }}" class="align-top p-2 border-t border-l border-base-300 bg-base-100">
+                                {% if url %}<a href="{{ url }}" class="link link-secondary font-semibold">{{ row.title }}</a>{% else %}<span class="font-semibold">{{ row.title }}</span>{% endif %}
+                                {% if row.speakers %}<div class="text-xs text-base-content/70 mt-1">{{ row.speakers }}</div>{% endif %}
                             </td>
                         {% else %}{# break #}
                             {% set url = page_links.get(row.title) %}

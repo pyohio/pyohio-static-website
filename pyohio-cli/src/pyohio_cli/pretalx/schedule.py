@@ -18,9 +18,12 @@ from __future__ import annotations
 from datetime import datetime
 
 # Description-slot titles containing one of these words render as a muted
-# break row spanning all rooms; anything else (Opening Remarks, Lightning
-# Talks, Closing Remarks, ...) renders as a full-width plenary row.
-BREAK_WORDS = ("break", "lunch")
+# break row spanning all rooms (logistics: Break, Lunch Break, Registration
+# Opens, Conference Space Closes). Anything else (Saturday Welcome, Closing
+# Remarks, Lightning Talks, ...) renders as a full-width, talk-styled plenary
+# row. Note "closes" matches "Conference Space Closes" but NOT "Closing
+# Remarks" (which stays a plenary).
+BREAK_WORDS = ("break", "lunch", "registration", "closes")
 
 
 def room_name(slot: dict) -> str | None:

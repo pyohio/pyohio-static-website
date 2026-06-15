@@ -19,6 +19,9 @@ schedule:
       - Ballroom B
       - Ballroom A
     rows:
+      - time: 8:00 AM
+        kind: break
+        title: Registration Opens
       - time: 9:00 AM
         kind: plenary
         title: Saturday Welcome
@@ -83,7 +86,7 @@ schedule:
             speakers: Dan Shernicoff
       - time: 12:15 PM
         kind: break
-        title: Lunch
+        title: Lunch Break
       - time: 2:15 PM
         kind: talks
         cells:
@@ -124,6 +127,9 @@ schedule:
       - time: 4:30 PM
         kind: plenary
         title: Lightning Talks
+      - time: 6:00 PM
+        kind: break
+        title: Conference Space Closes
   - day: Sunday, July 26
     date: '2026-07-26'
     rooms:
@@ -132,6 +138,9 @@ schedule:
       - Ballroom B
       - Ballroom A
     rows:
+      - time: 11:30 AM
+        kind: break
+        title: Registration Opens
       - time: 12:00 PM
         kind: plenary
         title: Sunday Welcome
@@ -212,6 +221,9 @@ schedule:
       - time: 4:15 PM
         kind: plenary
         title: Closing Remarks
+      - time: 4:30 PM
+        kind: break
+        title: Conference Space Closes
 ---
 
 All times are Eastern (EDT). The schedule is subject to change.
