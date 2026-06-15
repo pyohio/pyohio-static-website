@@ -11,6 +11,10 @@ speakers:
     slug: kamal-singh-bisht
     code: ADA8K8
     avatar: /2026/img/speakers/kamal-singh-bisht.webp
+start: '2026-07-26T12:30:00-04:00'
+end: '2026-07-26T13:00:00-04:00'
+room: Ballroom C
+slot_label: Sunday at 12:30 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/the-langgraph-trap.png
 ---
 

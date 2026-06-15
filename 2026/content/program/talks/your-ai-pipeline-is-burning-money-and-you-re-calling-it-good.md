@@ -10,6 +10,10 @@ speakers:
   - name: Andrew Plassard
     slug: andrew-plassard
     code: 3UTRPJ
+start: '2026-07-26T14:00:00-04:00'
+end: '2026-07-26T14:30:00-04:00'
+room: Ballroom B
+slot_label: Sunday at 2:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/your-ai-pipeline-is-burning-money-and-you-re-calling-it-good.png
 ---
 

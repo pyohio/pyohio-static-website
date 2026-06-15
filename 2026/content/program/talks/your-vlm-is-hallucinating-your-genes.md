@@ -11,6 +11,10 @@ speakers:
     slug: ethan-hill
     code: 7WDJH8
     avatar: /2026/img/speakers/ethan-hill.webp
+start: '2026-07-25T10:15:00-04:00'
+end: '2026-07-25T10:45:00-04:00'
+room: Ballroom B
+slot_label: Saturday at 10:15 AM
 og_image: https://www.pyohio.org/2026/img/og/talks/your-vlm-is-hallucinating-your-genes.png
 ---
 

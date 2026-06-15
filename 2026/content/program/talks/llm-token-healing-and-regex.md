@@ -11,6 +11,10 @@ speakers:
     slug: abraham-owodunni
     code: URUUMZ
     avatar: /2026/img/speakers/abraham-owodunni.webp
+start: '2026-07-26T14:00:00-04:00'
+end: '2026-07-26T14:30:00-04:00'
+room: Ballroom C
+slot_label: Sunday at 2:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/llm-token-healing-and-regex.png
 ---
 

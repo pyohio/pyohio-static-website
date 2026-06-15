@@ -11,6 +11,10 @@ speakers:
     slug: rodrigo-silva-ferreira
     code: VTFXQW
     avatar: /2026/img/speakers/rodrigo-silva-ferreira.webp
+start: '2026-07-25T14:15:00-04:00'
+end: '2026-07-25T14:45:00-04:00'
+room: Ballroom C
+slot_label: Saturday at 2:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/in-defense-of-thoughtful-testing.png
 ---
 

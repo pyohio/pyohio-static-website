@@ -11,6 +11,10 @@ speakers:
     slug: cliff-jenkins
     code: CYDAQ9
     avatar: /2026/img/speakers/cliff-jenkins.webp
+start: '2026-07-26T13:15:00-04:00'
+end: '2026-07-26T13:45:00-04:00'
+room: Ballroom D
+slot_label: Sunday at 1:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/python-on-cubesatsim.png
 ---
 

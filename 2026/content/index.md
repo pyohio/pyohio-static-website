@@ -13,6 +13,7 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 
 <div class="flex flex-wrap gap-3 my-6 not-prose">
 <a href="/2026/attend/registration/" class="btn btn-secondary">:lucide-ticket: Register Now</a>
+<a href="/2026/program/schedule/" class="btn btn-secondary">:lucide-calendar-days: Schedule</a>
 <a href="/2026/attend/shirts/" class="btn btn-secondary">:lucide-shirt: Order Shirts</a>
 <a href="/2026/about/newsletter/" class="btn btn-secondary">:lucide-mail: Get Newsletter</a>
 </div>
@@ -26,12 +27,12 @@ PyOhio is FREE to attend thanks to the generous support of our [sponsors](/2026/
 <p>Co-hosted <strong>Black Python Devs Leadership Summit</strong>, a single-day workshop for Python community leaders. Separate free registration required.</p>
 </a>
 
-<a href="/2026/program/" class="feature-card">
+<a href="/2026/program/schedule/&#35;saturday" class="feature-card">
 <h3>Saturday, July 25</h3>
 <p>Keynote, a full day of talks, Open Spaces, and Lightning Talks.</p>
 </a>
 
-<a href="/2026/program/" class="feature-card">
+<a href="/2026/program/schedule/&#35;sunday" class="feature-card">
 <h3>Sunday, July 26</h3>
 <p>Keynote, talks, and Open Spaces.</p>
 </a>

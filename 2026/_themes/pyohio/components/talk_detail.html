@@ -1,5 +1,10 @@
 <div class="not-prose mb-6 text-base-content/70">
     <span class="badge badge-soft badge-primary">{{ page.frontmatter.get('type', 'Talk') }}</span>
+    {% set slot_label = page.frontmatter.get('slot_label') %}
+    {% set room = page.frontmatter.get('room') %}
+    {% if slot_label %}
+    <div class="mt-2">{{ slot_label }}{% if room %} in {{ room }}{% endif %}</div>
+    {% endif %}
 </div>
 
 {{ page.html | safe }}

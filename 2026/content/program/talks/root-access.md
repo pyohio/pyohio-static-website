@@ -11,6 +11,10 @@ speakers:
     slug: bianca-ploss
     code: GHHXRS
     avatar: /2026/img/speakers/bianca-ploss.webp
+start: '2026-07-26T12:30:00-04:00'
+end: '2026-07-26T13:00:00-04:00'
+room: Ballroom D
+slot_label: Sunday at 12:30 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/root-access.png
 ---
 

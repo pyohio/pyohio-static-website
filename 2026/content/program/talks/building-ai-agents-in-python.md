@@ -11,6 +11,10 @@ speakers:
     slug: morgan-willis
     code: E3HTS9
     avatar: /2026/img/speakers/morgan-willis.webp
+start: '2026-07-26T13:15:00-04:00'
+end: '2026-07-26T13:45:00-04:00'
+room: Ballroom B
+slot_label: Sunday at 1:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/building-ai-agents-in-python.png
 ---
 

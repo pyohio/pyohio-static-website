@@ -72,6 +72,13 @@ class PretalxClient:
         click.echo(f"Got {len(results)} submissions", err=True)
         return results
 
+    def get_slots(self) -> list[dict]:
+        """Return all scheduled slots (talks and breaks) with rooms expanded."""
+        click.echo("Getting schedule slots...", err=True)
+        results = self._get_all_pages(f"{self.base_url}/slots/?expand=room")
+        click.echo(f"Got {len(results)} slots", err=True)
+        return results
+
     def get_speaker(self, code: str) -> dict:
         response = httpx.get(
             f"{self.base_url}/speakers/{code}/",

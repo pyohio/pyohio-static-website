@@ -11,6 +11,10 @@ speakers:
     slug: jamal-hansen
     code: RMSFVE
     avatar: /2026/img/speakers/jamal-hansen.webp
+start: '2026-07-25T15:00:00-04:00'
+end: '2026-07-25T15:30:00-04:00'
+room: Ballroom C
+slot_label: Saturday at 3:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/go-hybrid-find-the-results-like-can-t.png
 ---
 

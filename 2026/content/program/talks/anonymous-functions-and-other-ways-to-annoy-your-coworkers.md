@@ -11,6 +11,10 @@ speakers:
     slug: joe-kaufeld
     code: 7C7YVW
     avatar: /2026/img/speakers/joe-kaufeld.webp
+start: '2026-07-26T13:15:00-04:00'
+end: '2026-07-26T13:45:00-04:00'
+room: Ballroom C
+slot_label: Sunday at 1:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/anonymous-functions-and-other-ways-to-annoy-your-coworkers.png
 ---
 
