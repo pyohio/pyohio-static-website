@@ -33,12 +33,6 @@ talks:
     speakers:
       - name: Morgan Willis
         slug: morgan-willis
-  - slug: color-me-pythonic
-    title: 'Color Me Pythonic: Extracting Dominant Colors from Images with PIL and K-Means'
-    type: 30 Minute Talk
-    speakers:
-      - name: Veronica k McNeece
-        slug: veronica-k-mcneece
   - slug: djangonaut-space
     title: 'Djangonaut Space: Mentoring Contributors, Empowering Leaders'
     type: 30 Minute Talk

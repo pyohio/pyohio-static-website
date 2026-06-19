@@ -102,9 +102,6 @@ speakers:
   - name: Tim Schilling
     slug: tim-schilling
     avatar: /2026/img/speakers/tim-schilling.webp
-  - name: Veronica k McNeece
-    slug: veronica-k-mcneece
-    avatar: /2026/img/speakers/veronica-k-mcneece.webp
 ---
 
 The PyOhio 2026 speaker lineup will be announced closer to the event. [Subscribe to our newsletter](https://newsletter.pyohio.org/) to be notified when speakers are announced.
