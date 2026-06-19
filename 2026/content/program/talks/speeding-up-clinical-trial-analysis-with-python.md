@@ -11,10 +11,10 @@ speakers:
     slug: james-austrow
     code: FMUA37
     avatar: /2026/img/speakers/james-austrow.webp
-start: '2026-07-26T12:30:00-04:00'
-end: '2026-07-26T13:00:00-04:00'
-room: Ballroom B
-slot_label: Sunday at 12:30 PM
+start: '2026-07-26T14:00:00-04:00'
+end: '2026-07-26T14:30:00-04:00'
+room: Ballroom D
+slot_label: Sunday at 2:00 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/speeding-up-clinical-trial-analysis-with-python.png
 ---
 

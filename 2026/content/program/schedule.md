@@ -161,12 +161,10 @@ schedule:
           - title: 'The LangGraph Trap: Why Your Agentic Python App Will Fail in Production'
             slug: the-langgraph-trap
             speakers: Kamal Singh Bisht
-          - title: Speeding Up Clinical Trial Analysis with Python
-            slug: speeding-up-clinical-trial-analysis-with-python
-            speakers: James Austrow
           - title: 'Beyond Vibe Coding: A Spec-Driven AI Workflow for Serious Development'
             slug: beyond-vibe-coding
             speakers: Benjamin Patch
+          - 
       - time: 1:00 PM
         kind: break
         title: Break
@@ -189,9 +187,9 @@ schedule:
       - time: 2:00 PM
         kind: talks
         cells:
-          - title: 'Color Me Pythonic: Extracting Dominant Colors from Images with PIL and K-Means'
-            slug: color-me-pythonic
-            speakers: Veronica k McNeece
+          - title: Speeding Up Clinical Trial Analysis with Python
+            slug: speeding-up-clinical-trial-analysis-with-python
+            speakers: James Austrow
           - title: 'LLM Token Healing and Regex: Free Gains You Leave on the Table'
             slug: llm-token-healing-and-regex
             speakers: Abraham Owodunni
