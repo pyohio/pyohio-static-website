@@ -98,9 +98,7 @@ schedule:
           - title: 'In Defense of Thoughtful Testing: Rethinking Quality in the Age of AI-Generated Code'
             slug: in-defense-of-thoughtful-testing
             speakers: Rodrigo Silva Ferreira
-          - title: Don’t Write Polars Code with a Pandas Accent
-            slug: dont-write-polars-code-with-a-pandas-accent
-            speakers: Joram Mutenge
+          - 
           - 
       - time: 2:45 PM
         kind: break

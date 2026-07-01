@@ -69,9 +69,6 @@ speakers:
   - name: Joe Kaufeld
     slug: joe-kaufeld
     avatar: /2026/img/speakers/joe-kaufeld.webp
-  - name: Joram Mutenge
-    slug: joram-mutenge
-    avatar: /2026/img/speakers/joram-mutenge.webp
   - name: Kamal Singh Bisht
     slug: kamal-singh-bisht
     avatar: /2026/img/speakers/kamal-singh-bisht.webp

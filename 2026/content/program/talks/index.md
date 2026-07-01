@@ -49,12 +49,6 @@ talks:
         slug: benedek-kaibas
       - name: Gregory M. Kapfhammer
         slug: gregory-m-kapfhammer
-  - slug: dont-write-polars-code-with-a-pandas-accent
-    title: Don’t Write Polars Code with a Pandas Accent
-    type: 30 Minute Talk
-    speakers:
-      - name: Joram Mutenge
-        slug: joram-mutenge
   - slug: failed-experiments-in-vibe-coding
     title: Failed Experiments in Vibe Coding
     type: 30 Minute Talk
