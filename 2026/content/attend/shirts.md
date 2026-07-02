@@ -5,9 +5,6 @@ nav_order: 2
 
 # PyOhio 2026 Shirts
 
-> [!info]
-> The pre-sale for shirts to pick up at PyOhio is closed. You can still order t-shirts through the event, to be shipped directly to you a couple weeks after.
-
 *Support PyOhio with a shirt purchase!*
 
 Since PyOhio registration is free, we make our shirts optional and use the sale as a fundraiser.
