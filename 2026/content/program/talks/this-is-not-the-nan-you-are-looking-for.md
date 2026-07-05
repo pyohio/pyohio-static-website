@@ -11,10 +11,10 @@ speakers:
     slug: dan-shernicoff
     code: W9M3TF
     avatar: /2026/img/speakers/dan-shernicoff.webp
-start: '2026-07-25T11:45:00-04:00'
-end: '2026-07-25T12:15:00-04:00'
-room: Ballroom A
-slot_label: Saturday at 11:45 AM
+start: '2026-07-25T14:15:00-04:00'
+end: '2026-07-25T14:45:00-04:00'
+room: Ballroom B
+slot_label: Saturday at 2:15 PM
 og_image: https://www.pyohio.org/2026/img/og/talks/this-is-not-the-nan-you-are-looking-for.png
 ---
 
