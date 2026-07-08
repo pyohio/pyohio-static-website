@@ -22,6 +22,10 @@ avatar: /2026/img/speakers/rodrigo-silva-ferreira.webp
 og_image: https://www.pyohio.org/2026/img/og/speakers/rodrigo-silva-ferreira.png
 ---
 
-Rodrigo Silva Ferreira is a QA Engineer at *Posit PBC*, where he contributes to the quality and usability of open-source tools that empower data scientists working in *R* and *Python*. He focuses on both manual and automated testing strategies to ensure reliability, performance, and an excellent user experience.
+Rodrigo Silva Ferreira is a developer tooling and AI practitioner with a background in scientific computing and QA engineering. He is passionate about helping developers and data scientists spend less time fighting infrastructure and more time building. To do so, he aims to help create intuitive, trustworthy tools, workflows, and product experiences designed around real user needs.
 
-Rodrigo holds a BSc. in Chemistry with minors in Applied Math and Arabic from NYU Abu Dhabi and a MSc. in Analytical Chemistry from the University of Pittsburgh. Multilingual and globally minded, he enjoys working at the intersection of data, science, and technology — especially when it means building tools that help people better understand and navigate the world through its increasingly complex data.
+His work spans developer tooling, software quality, interactive computing, technical communication, and open-source collaboration. He has contributed to projects across the Python ecosystem, collaborated with engineering, product, and developer communities, and shared his work through technical writing and conference talks.
+
+Rodrigo is particularly interested in how AI is reshaping software development. He believes the next generation of developer tools will be defined not only by increasingly capable models, but also by thoughtful testing, product design, reproducible workflows, and developer experiences that help people move from experimentation to production with confidence.
+
+This is Rodrigo's third time speaking at PyOhio, and he's excited to be back!

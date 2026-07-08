@@ -83,9 +83,7 @@ schedule:
           - title: My Model Works Locally. Why Is Production Lying to Me?
             slug: my-model-works-locally
             speakers: Dinky Mishra
-          - title: This Is Not the NaN You Are Looking For
-            slug: this-is-not-the-nan-you-are-looking-for
-            speakers: Dan Shernicoff
+          - 
       - time: 12:15 PM
         kind: break
         title: Lunch Break
@@ -98,7 +96,9 @@ schedule:
           - title: 'In Defense of Thoughtful Testing: Rethinking Quality in the Age of AI-Generated Code'
             slug: in-defense-of-thoughtful-testing
             speakers: Rodrigo Silva Ferreira
-          - 
+          - title: This Is Not the NaN You Are Looking For
+            slug: this-is-not-the-nan-you-are-looking-for
+            speakers: Dan Shernicoff
           - 
       - time: 2:45 PM
         kind: break
