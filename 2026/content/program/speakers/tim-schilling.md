@@ -20,7 +20,7 @@ talks:
         avatar: /2026/img/speakers/rachell-calhoun.webp
   - code: Q8TUKB
     slug: 10-dazzling-joyful-astounding-nifty-glorious-outstanding-in
-    title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django
+    title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding Features in Django
     type: 30 Minute Talk
     speakers:
       - name: Tim Schilling

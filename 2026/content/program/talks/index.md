@@ -4,7 +4,7 @@ page_type: talks_listing
 unlisted: true
 talks:
   - slug: 10-dazzling-joyful-astounding-nifty-glorious-outstanding-in
-    title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django
+    title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding Features in Django
     type: 30 Minute Talk
     speakers:
       - name: Tim Schilling

@@ -56,7 +56,7 @@ schedule:
       - time: 11:00 AM
         kind: talks
         cells:
-          - title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django
+          - title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding Features in Django
             slug: 10-dazzling-joyful-astounding-nifty-glorious-outstanding-in
             speakers: Tim Schilling
           - title: Failed Experiments in Vibe Coding
