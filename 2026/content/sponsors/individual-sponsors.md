@@ -4,6 +4,7 @@ nav_order: 3
 sponsors:
   - Jeff Epler
   - Albert Sweigart
+  - Rose H.
   - joshuag
   - Mike McCaffrey
   - tylerdave
