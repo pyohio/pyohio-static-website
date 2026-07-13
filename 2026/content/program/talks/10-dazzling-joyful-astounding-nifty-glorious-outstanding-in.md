@@ -1,11 +1,11 @@
 ---
-title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django
+title: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding Features in Django
 page_type: talk
 code: Q8TUKB
 duration: 30
 type: 30 Minute Talk
 qna: true
-qna_channel: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding features in Django
+qna_channel: 10 Dazzling, Joyful, Astounding, Nifty, Glorious, Outstanding Features in Django
 speakers:
   - name: Tim Schilling
     slug: tim-schilling
