@@ -14,9 +14,15 @@ sponsors:
   - Dan Shernicoff
   - 😺 Mike Pirnat’s cats
   - Anurag Saxena
+  - Cliff Jenkins
+  - Andrew Kubera
   - Barbara Shaurette
   - Derek Zoladz
   - David Alexander
+  - Eric Matthes
+  - Scott Windsor
+  - Rodrigo Silva Ferreira
+  - Alex Knill
   - Eddie Cosma
   - Anonymous
   - Carol Willing
