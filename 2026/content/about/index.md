@@ -7,3 +7,15 @@ title: About PyOhio
 Founded in 2008, PyOhio is a free annual Python programming language community conference based in Ohio. Content ranges from beginner to advanced and is intended to be relevant to all types of Python users: students, software professionals, scientists, hobbyists, and anyone looking to learn more.
 
 The 19th annual PyOhio will be held July 25–26, 2026 in Cleveland, OH.
+
+## Organizers
+
+- **Conference Chair:** Kattni
+- **Conference Co-Chair:** Alex Knill
+- **Program Chair:** Anurag Saxena
+- **Program Co-Chair:** Derek Arnold
+- **Communications Chair:** JR Rickerson
+- **Volunteer Chair:** Laura Hanna
+- **Sponsorship:** Alex Knill
+- **Web & Tech:** Dave Forgac
+- **Founding Chair Emeritus:** Catherine Devlin
