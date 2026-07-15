@@ -1,0 +1,44 @@
+{# Open Spaces grid: per-day tables of time rows x room columns.
+   Data comes from the `open_spaces:` frontmatter. Each row has a `time`
+   and a `cells` list aligned to `rooms`; a cell is either a mapping
+   (with an optional `note`) for an open space or null for an empty slot. #}
+{% set open_spaces = page.frontmatter.get('open_spaces') or [] %}
+
+{{ page.html | safe }}
+
+{% if open_spaces %}
+<div class="not-prose mt-8 space-y-12">
+    {% for day in open_spaces %}
+    <section id="{{ day.day.split(',')[0] | lower }}" class="scroll-mt-24">
+        <h2 class="text-2xl font-extrabold text-primary mb-4">{{ day.day }}</h2>
+        <div class="overflow-x-auto rounded-box border border-base-300">
+            <table class="min-w-full border-separate border-spacing-0 text-sm">
+                <thead>
+                    <tr>
+                        <th scope="col" class="sticky left-0 z-20 bg-primary text-primary-content font-bold p-2 text-left">Start</th>
+                        {% for room in day.rooms %}
+                        <th scope="col" class="bg-primary text-primary-content font-bold p-2 text-center min-w-[11rem] border-l border-primary-content/20">{{ room }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in day.rows %}
+                    <tr>
+                        <th scope="row" class="sticky left-0 z-10 bg-base-300 text-base-content font-bold text-center p-2 whitespace-nowrap border-t border-base-300">{{ row.time }}</th>
+                        {% for cell in row.cells %}
+                        <td class="align-top p-2 border-t border-l border-base-300 {{ 'bg-base-100' if cell is not none else 'bg-base-200/50' }}">
+                            {% if cell is not none %}
+                            <span class="font-semibold">Open Space</span>
+                            {% if cell.note %}<div class="text-xs text-base-content/70 mt-1">{{ cell.note }}</div>{% endif %}
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    {% endfor %}
+</div>
+{% endif %}

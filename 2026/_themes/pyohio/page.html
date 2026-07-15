@@ -59,6 +59,8 @@
             {% include "components/keynoters_listing.html" %}
         {%- elif _page_type == 'schedule_grid' -%}
             {% include "components/schedule_grid.html" %}
+        {%- elif _page_type == 'open_spaces_grid' -%}
+            {% include "components/open_spaces_grid.html" %}
         {%- elif page.frontmatter.get('sponsors') is not none and _sponsor_marker in page.html -%}
             {%- set _parts = page.html.split(_sponsor_marker, 1) -%}
             {{ _parts[0] | safe }}
