@@ -7,26 +7,29 @@ sponsors:
   - Rose H.
   - joshuag
   - Mike McCaffrey
+  - Anonymous
   - tylerdave
   - CF+AB
   - Kate Ambush
+  - Andrew Kubera
   - Anonymous
   - Curtis Oneal
   - Dan Shernicoff
   - 😺 Mike Pirnat’s cats
   - Anurag Saxena
   - Cliff Jenkins
-  - Andrew Kubera
-  - Barbara Shaurette
-  - Derek Zoladz
-  - David Alexander
   - Eric Matthes
   - Scott Windsor
   - Rodrigo Silva Ferreira
   - Alex Knill
+  - Brian Costlow
+  - Barbara Shaurette
+  - Derek Zoladz
+  - David Alexander
   - Eddie Cosma
   - Anonymous
   - Carol Willing
+  - Justin Beaudry
 ---
 
 Thank you to our generous individual supporters who help make PyOhio free for everyone to attend.
