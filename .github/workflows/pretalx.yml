@@ -61,11 +61,14 @@ jobs:
       - name: Generate OG images
         run: pyohio og generate
 
+      - name: Generate title slides
+        run: pyohio slides generate
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: Update data and OG images from PreTalx
-          title: Update data and OG images from PreTalx
+          commit-message: Update data, OG images, and title slides from PreTalx
+          title: Update data, OG images, and title slides from PreTalx
           author: PyOhio Automation <noreply@pyohio.org>
           committer: PyOhio Automation <noreply@pyohio.org>
           body: |
@@ -74,6 +77,7 @@ jobs:
             - Talk + speaker frontmatter under `2026/content/program/`
             - Cached speaker avatars under `2026/_static/img/speakers/`
             - Per-page OpenGraph cards under `2026/_static/img/og/`
+            - Talk title slides under `2026/_static/img/title-slides/`
 
             Review changes to ensure they're appropriate to publish, then merge. If something is wrong, fix the source in PreTalx and re-run this workflow.
           labels: |

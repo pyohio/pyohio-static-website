@@ -42,3 +42,11 @@ og-preview SLUG *ARGS:
 # Crop existing OG cards to 630x630 squares for social media (local-only)
 og-square *ARGS:
     uv run --project pyohio-cli pyohio og square {{ARGS}}
+
+# Generate 1920x1080 title slides for talks
+slides-generate *ARGS:
+    uv run --project pyohio-cli pyohio slides generate {{ARGS}}
+
+# Render a single talk title slide to _slide-templates/_preview.html
+slides-preview SLUG *ARGS:
+    uv run --project pyohio-cli pyohio slides preview {{SLUG}} {{ARGS}}

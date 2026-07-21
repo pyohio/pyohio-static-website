@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    /* 1920×1080 title slide, purple background. Title fills the left,
+       speaker avatars + names sit in a fixed column on the right. */
+    .slide-frame {
+        width: 1920px;
+        height: 1080px;
+        background: #4A3078;
+        color: #ffffff;
+        padding: 96px 112px;
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-row {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        flex-shrink: 0;
+        padding-bottom: 36px;
+        border-bottom: 6px solid #6FBF3A;
+    }
+    .brand-row img {
+        width: 104px;
+        height: 104px;
+    }
+    .brand-row .label {
+        font-weight: 800;
+        font-size: 60px;
+        letter-spacing: -1px;
+    }
+    .body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 96px;
+        min-height: 0;
+    }
+    .title-col {
+        flex: 1;
+        min-width: 0;
+    }
+    .eyebrow {
+        font-weight: 800;
+        font-size: 44px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #6FBF3A;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-weight: 800;
+        font-size: 104px;
+        line-height: 1.08;
+        letter-spacing: -2px;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .title.long  { font-size: 84px; }
+    .title.xlong { font-size: 64px; }
+    .speaker-col {
+        width: 560px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .avatars {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+    }
+    .avatar {
+        width: 232px;
+        height: 232px;
+        border-radius: 24px;
+        border: 8px solid #6FBF3A;
+        object-fit: cover;
+        background: #ddd;
+    }
+    .avatars.multi .avatar {
+        width: 200px;
+        height: 200px;
+    }
+    .more-chip {
+        width: 200px;
+        height: 200px;
+        border-radius: 24px;
+        border: 8px solid #6FBF3A;
+        background: rgba(111, 191, 58, 0.18);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 56px;
+    }
+    .names {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="slide-frame">
+    <div class="brand-row">
+        <img src="{{ logo_path }}" alt="">
+        <div class="label">{{ brand_label }}</div>
+    </div>
+
+    <div class="body">
+        <div class="title-col">
+            {% if eyebrow %}<div class="eyebrow">{{ eyebrow }}</div>{% endif %}
+            {% set tlen = title|length %}
+            {% set tcls = 'xlong' if tlen > 80 else ('long' if tlen > 50 else '') %}
+            <div class="title {{ tcls }}">{{ title }}</div>
+        </div>
+
+        <div class="speaker-col">
+            <div class="avatars {{ 'multi' if speakers|length > 1 else '' }}">
+                {% for s in speakers[:3] %}
+                <img class="avatar" src="{{ s.avatar }}" alt="">
+                {% endfor %}
+                {% if speakers|length > 3 %}
+                <div class="more-chip">+{{ speakers|length - 3 }}</div>
+                {% endif %}
+            </div>
+            <div class="names">{{ names }}</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
