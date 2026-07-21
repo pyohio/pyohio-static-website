@@ -69,25 +69,11 @@ def _build_talk_context(
     ]
     real_avatar_fs = [p for p in speaker_avatar_fs if p != no_profile]
 
-    # Keynote talks carry a placeholder title ("Keynote"); promote the
-    # speaker name to the title and label it with an eyebrow, so the slide
-    # reads as a keynote rather than showing a useless one-word title.
-    is_keynote = str(fm.get("type", "")).lower() == "keynote"
-    if is_keynote and speakers_fm:
-        eyebrow = "Keynote"
-        title = _join_names([s.get("name", "") for s in speakers_fm])
-        names = ""
-    else:
-        eyebrow = None
-        title = str(fm.get("title") or md_path.stem)
-        names = _join_names([s.get("name", "") for s in speakers_fm])
-
     ctx = {
-        "title": title,
-        "eyebrow": eyebrow,
+        "title": str(fm.get("title") or md_path.stem),
         "brand_label": BRAND_LABEL,
         "speakers": speaker_ctx,
-        "names": names,
+        "names": _join_names([s.get("name", "") for s in speakers_fm]),
         "logo_path": _file_url(logo_path),
         "wordmark_path": _file_url(wordmark_path),
     }

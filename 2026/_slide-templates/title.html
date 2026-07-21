@@ -43,8 +43,9 @@
         letter-spacing: -1px;
     }
     .brand-row .wordmark {
-        height: 132px;
+        height: 198px;
         width: auto;
+        filter: drop-shadow(0 2px 8px rgba(200, 200, 210, 0.5));
     }
     .body {
         flex: 1;
@@ -56,14 +57,6 @@
     .title-col {
         flex: 1;
         min-width: 0;
-    }
-    .eyebrow {
-        font-weight: 800;
-        font-size: 44px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #6FBF3A;
-        margin-bottom: 20px;
     }
     .title {
         font-weight: 800;
@@ -135,7 +128,6 @@
 
     <div class="body">
         <div class="title-col">
-            {% if eyebrow %}<div class="eyebrow">{{ eyebrow }}</div>{% endif %}
             {% set tlen = title|length %}
             {% set tcls = 'xlong' if tlen > 80 else ('long' if tlen > 50 else '') %}
             <div class="title {{ tcls }}">{{ title }}</div>
