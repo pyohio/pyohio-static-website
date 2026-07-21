@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    /* 1920×1080 solid-purple video-production frame. The canvas is left open
+       so slide capture + speaker headshot are composited on top in the editor;
+       only the PyOhio 2026 branding is baked into the bottom-right corner. */
+    .slide-frame {
+        width: 1920px;
+        height: 1080px;
+        background: #4A3078;
+        position: relative;
+    }
+    .brand {
+        position: absolute;
+        right: 88px;
+        bottom: 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    .brand .logo {
+        width: 132px;
+        height: 132px;
+        align-self: center;
+    }
+    .brand .wordmark {
+        height: 220px;
+        width: auto;
+        filter: drop-shadow(0 2px 8px rgba(200, 200, 210, 0.5));
+    }
+    .brand .label {
+        font-weight: 800;
+        font-size: 56px;
+        color: #ffffff;
+        letter-spacing: -1px;
+    }
+</style>
+</head>
+<body>
+<div class="slide-frame">
+    <div class="brand">
+        <img class="logo" src="{{ logo_path }}" alt="">
+        <div class="label">{{ brand_label }}</div>
+        <img class="wordmark" src="{{ wordmark_path }}" alt="">
+    </div>
+</div>
+</body>
+</html>

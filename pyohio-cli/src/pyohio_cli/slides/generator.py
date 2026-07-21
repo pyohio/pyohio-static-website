@@ -181,3 +181,34 @@ def preview(
 
     click.echo(f"Rendered title slide preview for {slug!r}", err=True)
     return html_path, png_path
+
+
+def frame(
+    *,
+    templates_dir: Path,
+    output_path: Path,
+    static_dir: Path,
+) -> None:
+    """Render the solid-purple video-production frame (branding only).
+
+    The output is an empty purple canvas with the PyOhio 2026 wordmark + text
+    baked into the bottom-right corner; slide capture and speaker headshot are
+    composited on top later in a video editor.
+    """
+    logo_path, wordmark_path, _ = _resolve_assets(static_dir)
+    env = _jinja_env(templates_dir)
+
+    ctx = {
+        "brand_label": BRAND_LABEL,
+        "logo_path": _file_url(logo_path),
+        "wordmark_path": _file_url(wordmark_path),
+    }
+
+    with tempfile.TemporaryDirectory() as tmpdir_str:
+        html_path = Path(tmpdir_str) / "video-frame.html"
+        _render_html(env, "video-frame.html", ctx, html_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with SlideRenderer() as r:
+            r.render(html_path, output_path)
+
+    click.echo(f"Rendered video frame to {output_path}", err=True)

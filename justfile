@@ -50,3 +50,7 @@ slides-generate *ARGS:
 # Render a single talk title slide to _slide-templates/_preview.html
 slides-preview SLUG *ARGS:
     uv run --project pyohio-cli pyohio slides preview {{SLUG}} {{ARGS}}
+
+# Render the solid-purple video-production frame (branding only)
+slides-frame *ARGS:
+    uv run --project pyohio-cli pyohio slides frame {{ARGS}}
