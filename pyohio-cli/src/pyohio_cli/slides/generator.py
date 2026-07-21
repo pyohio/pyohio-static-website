@@ -32,15 +32,18 @@ from pyohio_cli.slides.renderer import SlideRenderer
 BRAND_LABEL = "PyOhio 2026"
 
 
-def _resolve_assets(static_dir: Path) -> tuple[Path, Path]:
-    """Return (logo_path, no_profile) or raise if a required asset is missing."""
-    logo_path = static_dir / "img" / "pyohio-square-accent.png"
+def _resolve_assets(static_dir: Path) -> tuple[Path, Path, Path]:
+    """Return (logo_path, wordmark_path, no_profile) or raise if any is missing."""
+    logo_path = static_dir / "img" / "logo-white-sq.png"
+    wordmark_path = static_dir / "img" / "pyohio-2026-transparent.png"
     no_profile = static_dir / "img" / "speakers" / "no-profile.png"
     if not logo_path.exists():
         raise click.UsageError(f"Logo not found at {logo_path}")
+    if not wordmark_path.exists():
+        raise click.UsageError(f"Wordmark logo not found at {wordmark_path}")
     if not no_profile.exists():
         raise click.UsageError(f"Placeholder avatar not found at {no_profile}")
-    return logo_path, no_profile
+    return logo_path, wordmark_path, no_profile
 
 
 def _build_talk_context(
@@ -49,6 +52,7 @@ def _build_talk_context(
     static_dir: Path,
     no_profile: Path,
     logo_path: Path,
+    wordmark_path: Path,
 ) -> tuple[dict, list[Path]]:
     fm = read_frontmatter(md_path)
     speakers_fm = fm.get("speakers") or []
@@ -56,10 +60,14 @@ def _build_talk_context(
         _resolve_avatar_fs(s.get("avatar"), static_dir, no_profile)
         for s in speakers_fm
     ]
+    # Speakers whose avatar falls back to the placeholder get no image;
+    # their name still appears in the names line.
     speaker_ctx = [
         {"name": s.get("name", ""), "avatar": _file_url(p)}
         for s, p in zip(speakers_fm, speaker_avatar_fs)
+        if p != no_profile
     ]
+    real_avatar_fs = [p for p in speaker_avatar_fs if p != no_profile]
 
     # Keynote talks carry a placeholder title ("Keynote"); promote the
     # speaker name to the title and label it with an eyebrow, so the slide
@@ -81,8 +89,9 @@ def _build_talk_context(
         "speakers": speaker_ctx,
         "names": names,
         "logo_path": _file_url(logo_path),
+        "wordmark_path": _file_url(wordmark_path),
     }
-    assets = [logo_path, *speaker_avatar_fs]
+    assets = [logo_path, wordmark_path, *real_avatar_fs]
     return ctx, assets
 
 
@@ -97,7 +106,7 @@ def generate(
     talks_dir = content_dir / "program" / "talks"
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    logo_path, no_profile = _resolve_assets(static_dir)
+    logo_path, wordmark_path, no_profile = _resolve_assets(static_dir)
     env = _jinja_env(templates_dir)
 
     manifest_path = output_dir / MANIFEST_NAME
@@ -121,6 +130,7 @@ def generate(
                 static_dir=static_dir,
                 no_profile=no_profile,
                 logo_path=logo_path,
+                wordmark_path=wordmark_path,
             )
 
             html = template.render(**ctx)
@@ -162,7 +172,7 @@ def preview(
     if not talks_md.exists():
         raise click.UsageError(f"No talk found with slug '{slug}'. Checked {talks_md}.")
 
-    logo_path, no_profile = _resolve_assets(static_dir)
+    logo_path, wordmark_path, no_profile = _resolve_assets(static_dir)
     env = _jinja_env(templates_dir)
 
     ctx, _ = _build_talk_context(
@@ -170,6 +180,7 @@ def preview(
         static_dir=static_dir,
         no_profile=no_profile,
         logo_path=logo_path,
+        wordmark_path=wordmark_path,
     )
 
     output_dir.mkdir(parents=True, exist_ok=True)
