@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    /* 1920×1080 title slide, purple background. Title fills the left,
+       speaker avatars + names sit in a fixed column on the right. */
+    .slide-frame {
+        width: 1920px;
+        height: 1080px;
+        background: #4A3078;
+        color: #ffffff;
+        padding: 96px 112px;
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+        padding-bottom: 36px;
+        border-bottom: 6px solid #6FBF3A;
+    }
+    .brand-left {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+    .brand-left .logo {
+        width: 104px;
+        height: 104px;
+    }
+    .brand-left .label {
+        font-weight: 800;
+        font-size: 60px;
+        letter-spacing: -1px;
+    }
+    .brand-row .wordmark {
+        height: 198px;
+        width: auto;
+        filter: drop-shadow(0 2px 8px rgba(200, 200, 210, 0.5));
+    }
+    .body {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        gap: 96px;
+        min-height: 0;
+        padding-top: 90px;
+    }
+    .title-col {
+        flex: 1;
+        min-width: 0;
+    }
+    .title {
+        font-weight: 800;
+        font-size: 104px;
+        line-height: 1.08;
+        letter-spacing: -2px;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .title.long  { font-size: 84px; }
+    .title.xlong { font-size: 64px; }
+    .speaker-col {
+        width: 620px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+        /* The wordmark logo has ~23px of transparent padding on its right at
+           this render scale; inset the speakers to match its visible edge. */
+        padding-right: 23px;
+    }
+    .avatars {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28px;
+    }
+    .avatar {
+        width: 360px;
+        height: 360px;
+        border-radius: 24px;
+        border: 8px solid #6FBF3A;
+        object-fit: cover;
+        background: #ddd;
+    }
+    .avatars.multi .avatar {
+        width: 240px;
+        height: 240px;
+    }
+    .more-chip {
+        width: 240px;
+        height: 240px;
+        border-radius: 24px;
+        border: 8px solid #6FBF3A;
+        background: rgba(111, 191, 58, 0.18);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 56px;
+    }
+    .names {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: right;
+        /* Align the name to the photo's right edge, inside the 8px avatar border. */
+        padding-right: 8px;
+    }
+</style>
+</head>
+<body>
+<div class="slide-frame">
+    <div class="brand-row">
+        <div class="brand-left">
+            <img class="logo" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/logo-white-sq.png" alt="">
+            <div class="label">PyOhio 2026</div>
+        </div>
+        <img class="wordmark" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/pyohio-2026-transparent.png" alt="">
+    </div>
+
+    <div class="body">
+        <div class="title-col">
+            
+            
+            <div class="title xlong">Don&#39;t Blame the Type Checker: Finding Who Is Right When Python Type Checkers Disagree</div>
+        </div>
+
+        <div class="speaker-col">
+            <div class="avatars multi">
+                
+                <img class="avatar" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/speakers/benedek-kaibas.webp" alt="">
+                
+                <img class="avatar" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/speakers/gregory-m-kapfhammer.webp" alt="">
+                
+                
+            </div>
+            <div class="names">Benedek Kaibas &amp; Gregory M. Kapfhammer</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
