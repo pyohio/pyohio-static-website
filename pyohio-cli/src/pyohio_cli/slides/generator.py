@@ -20,7 +20,6 @@ from pyohio_cli.og.generator import (
     _compute_input_hash,
     _file_url,
     _jinja_env,
-    _join_names,
     _load_manifest,
     _prune_orphans,
     _render_html,
@@ -30,6 +29,24 @@ from pyohio_cli.og.generator import (
 from pyohio_cli.slides.renderer import SlideRenderer
 
 BRAND_LABEL = "PyOhio 2026"
+NBSP = " "
+
+
+def _join_names_wrapping(names: list[str]) -> str:
+    """Join speaker names so the line only wraps around the separators.
+
+    Intra-name spaces become non-breaking, so a two-speaker line breaks at the
+    " & " (keeping each full name intact) rather than mid-name.
+    """
+    parts = [n.strip() for n in names if n and n.strip()]
+    if not parts:
+        return ""
+    protected = [n.replace(" ", NBSP) for n in parts]
+    if len(protected) == 1:
+        return protected[0]
+    if len(protected) == 2:
+        return f"{protected[0]} & {protected[1]}"
+    return ", ".join(protected)
 
 
 def _resolve_assets(static_dir: Path) -> tuple[Path, Path, Path]:
@@ -73,7 +90,7 @@ def _build_talk_context(
         "title": str(fm.get("title") or md_path.stem),
         "brand_label": BRAND_LABEL,
         "speakers": speaker_ctx,
-        "names": _join_names([s.get("name", "") for s in speakers_fm]),
+        "names": _join_names_wrapping([s.get("name", "") for s in speakers_fm]),
         "logo_path": _file_url(logo_path),
         "wordmark_path": _file_url(wordmark_path),
     }
