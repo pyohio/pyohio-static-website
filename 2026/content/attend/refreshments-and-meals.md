@@ -20,6 +20,7 @@ There are many places to find food in the area but here are some organizer recom
 - **[Sittoo's](https://www.yelp.com/biz/sittoos-pita-and-salads-cleveland-2)** (~0.4 mi / ~8 min walk): Lebanese dine-in and take-out
 - **[Superior Pho](https://www.yelp.com/biz/superior-pho-cleveland)** (~0.8 mi / ~16 min walk): Vietnamese, great for a quick lunch
 - **[Ha Ahn](https://www.yelp.com/biz/ha-ahn-korean-restaurant-cleveland-3)** (~0.8 mi / ~16 min walk): Korean and sushi. Sunday hours vary, call ahead
+- **[Alpha Ramen](https://www.yelp.com/biz/alpha-ramen-cleveland)** (~0.9 mi / ~18 min walk): Japanese ramen in AsiaTown
 - **[Masthead](https://www.yelp.com/biz/masthead-brewing-cleveland)** (~1 mi / ~18 min walk): Brewery with pizzas and sandwiches. Great for larger groups because of picnic table seating and individual payment at order time
 - **[Southern Tier Brewery](https://www.yelp.com/biz/southern-tier-brewery-cleveland-cleveland-3)** (~1 mi / ~18 min walk): Craft beer and pub fare
 - **[Pho Thang Cafe](https://www.yelp.com/biz/pho-thang-cafe-cleveland-3)** (~1 mi / ~18 min walk): Vietnamese pho and rice dishes
@@ -27,6 +28,7 @@ There are many places to find food in the area but here are some organizer recom
 - **[LJ Shanghai](https://www.yelp.com/biz/lj-shanghai-cleveland)** (~1 mi / ~20 min walk): Shanghainese known for soup dumplings. Cash only
 - **[Cordelia](https://www.yelp.com/biz/cordelia-cleveland)** (~1 mi / ~20 min walk): Upscale New American. Saturday dinner; Sunday brunch only
 - **[Mabel's BBQ](https://www.yelp.com/biz/mabels-bbq-cleveland)** (~1.1 mi / ~20 min walk): Cleveland-style barbecue on E. 4th Street
+- **[Otani Noodle](https://www.yelp.com/biz/otani-noodle-downtown-cleveland)** (~1.1 mi / ~22 min walk): Fast-casual Japanese ramen and rice bowls
 - **[Noble Beast Brewing](https://www.yelp.com/biz/noble-beast-brewing-cleveland-4)** (~1.1 mi / ~22 min walk): Brewpub and a PyOhio organizer favorite
 
 ## Coffee
