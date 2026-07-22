@@ -27,6 +27,7 @@ There are many places to find food in the area but here are some organizer recom
 - **[LJ Shanghai](https://www.yelp.com/biz/lj-shanghai-cleveland)** (~1 mi / ~20 min walk): Shanghainese known for soup dumplings. Cash only
 - **[Cordelia](https://www.yelp.com/biz/cordelia-cleveland)** (~1 mi / ~20 min walk): Upscale New American. Saturday dinner; Sunday brunch only
 - **[Mabel's BBQ](https://www.yelp.com/biz/mabels-bbq-cleveland)** (~1.1 mi / ~20 min walk): Cleveland-style barbecue on E. 4th Street
+- **[Otani Noodle](https://www.yelp.com/biz/otani-noodle-downtown-cleveland)** (~1.1 mi / ~22 min walk): Fast-casual Japanese ramen and rice bowls
 - **[Noble Beast Brewing](https://www.yelp.com/biz/noble-beast-brewing-cleveland-4)** (~1.1 mi / ~22 min walk): Brewpub and a PyOhio organizer favorite
 
 ## Coffee
