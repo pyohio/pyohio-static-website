@@ -76,17 +76,20 @@
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         gap: 40px;
+        /* The wordmark logo has ~23px of transparent padding on its right at
+           this render scale; inset the speakers to match its visible edge. */
+        padding-right: 23px;
     }
     .avatars {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 28px;
     }
     .avatar {
-        width: 280px;
-        height: 280px;
+        width: 360px;
+        height: 360px;
         border-radius: 24px;
         border: 8px solid #6FBF3A;
         object-fit: cover;
@@ -113,7 +116,9 @@
         font-size: 48px;
         font-weight: 700;
         line-height: 1.2;
-        text-align: center;
+        text-align: right;
+        /* Align the name to the photo's right edge, inside the 8px avatar border. */
+        padding-right: 8px;
     }
 </style>
 </head>
@@ -131,19 +136,17 @@
         <div class="title-col">
             
             
-            <div class="title long">Djangonaut Space: Mentoring Contributors, Empowering Leaders</div>
+            <div class="title long">Atoms to AI: Building a Quantum Capacitor Surrogate with Python and GNNs</div>
         </div>
 
         <div class="speaker-col">
-            <div class="avatars multi">
+            <div class="avatars ">
                 
-                <img class="avatar" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/speakers/tim-schilling.webp" alt="">
-                
-                <img class="avatar" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/speakers/rachell-calhoun.webp" alt="">
+                <img class="avatar" src="file:///Users/daveforgac/checkouts/pyohio/static-website/2026/_static/img/speakers/terry-howald.webp" alt="">
                 
                 
             </div>
-            <div class="names">Tim Schilling &amp; Rachell Calhoun</div>
+            <div class="names">Terry Howald</div>
         </div>
     </div>
 </div>
