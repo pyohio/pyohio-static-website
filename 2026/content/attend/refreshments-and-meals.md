@@ -20,6 +20,7 @@ There are many places to find food in the area but here are some organizer recom
 - **[Sittoo's](https://www.yelp.com/biz/sittoos-pita-and-salads-cleveland-2)** (~0.4 mi / ~8 min walk): Lebanese dine-in and take-out
 - **[Superior Pho](https://www.yelp.com/biz/superior-pho-cleveland)** (~0.8 mi / ~16 min walk): Vietnamese, great for a quick lunch
 - **[Ha Ahn](https://www.yelp.com/biz/ha-ahn-korean-restaurant-cleveland-3)** (~0.8 mi / ~16 min walk): Korean and sushi. Sunday hours vary, call ahead
+- **[Alpha Ramen](https://www.yelp.com/biz/alpha-ramen-cleveland)** (~0.9 mi / ~18 min walk): Japanese ramen in AsiaTown
 - **[Masthead](https://www.yelp.com/biz/masthead-brewing-cleveland)** (~1 mi / ~18 min walk): Brewery with pizzas and sandwiches. Great for larger groups because of picnic table seating and individual payment at order time
 - **[Southern Tier Brewery](https://www.yelp.com/biz/southern-tier-brewery-cleveland-cleveland-3)** (~1 mi / ~18 min walk): Craft beer and pub fare
 - **[Pho Thang Cafe](https://www.yelp.com/biz/pho-thang-cafe-cleveland-3)** (~1 mi / ~18 min walk): Vietnamese pho and rice dishes
