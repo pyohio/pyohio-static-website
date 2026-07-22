@@ -18,19 +18,22 @@
         background: #4A3078;
         position: relative;
     }
+    /* Footprint matches where the video service composites the speaker
+       headshot (a ~495px-wide box ~20px from the right edge), so the
+       branding sits centered directly beneath it. */
     .brand {
         position: absolute;
-        right: 88px;
-        bottom: 72px;
+        right: 20px;
+        bottom: 132px;
+        width: 495px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         gap: 20px;
     }
     .brand .logo {
         width: 132px;
         height: 132px;
-        align-self: center;
     }
     .brand .wordmark {
         height: 220px;
