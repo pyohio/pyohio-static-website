@@ -11,6 +11,13 @@ name = "pyohio"
 search = true
 show_build_info = false
 
+# Expose the schedule page's frontmatter to other templates (the hidden
+# room-signs page reads it) without changing how schedule.md itself renders.
+[[collections]]
+name = "schedule_data"
+source = "program/schedule.md"
+nav = false
+
 [hooks]
 # Emit program/speakers/speakers.csv into the build output for the comms team.
 # Runs under plain python3 (stdlib only) so it works in the Netlify build,

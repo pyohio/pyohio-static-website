@@ -1,0 +1,159 @@
+{# Printable per-room schedule signs. One sign per room per day, each on its
+   own printed page. Data is read from the schedule page's frontmatter via the
+   `schedule_data` collection so there is a single source of truth.
+
+   Each sign lists, in time order: that room's talks, the shared breaks, and any
+   plenary sessions held in that room (welcome, keynotes, lightning talks). End
+   times are derived from the start of the following schedule row. #}
+{% set _sched_entries = collections.get('schedule_data', []) %}
+{% set schedule = (_sched_entries[0].frontmatter.get('schedule') if _sched_entries else []) or [] %}
+
+<style>
+  body { background: #fff; color: #111; }
+  #main-content { padding: 0; }
+
+  @page { size: Letter; margin: 0.45in; }
+
+  .room-signs {
+    font-family: "Nunito", "Open Sans", sans-serif;
+    color: #1a1a1a;
+    max-width: 7.6in;
+    margin: 0 auto;
+  }
+
+  .room-sign {
+    padding: 0.25in 0.3in;
+    page-break-after: always;
+    break-after: page;
+  }
+  .room-sign:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .room-sign__room {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0 0 0.1rem;
+    color: #4A3078;
+  }
+  .room-sign__day {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: #3F7D24;
+  }
+
+  .room-sign__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .room-sign__table th {
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #4A3078;
+    border-bottom: 3px solid #4A3078;
+    padding: 0.25rem 0.5rem;
+  }
+  .room-sign__table td {
+    padding: 0.15rem 0.5rem;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+  }
+
+  .room-sign__time {
+    width: 30%;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+  .room-sign__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .room-sign__speakers {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 0.1rem;
+  }
+
+  .room-sign__row--break td {
+    background: #f2f0f6;
+  }
+  .room-sign__row--break .room-sign__title {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #555;
+  }
+  .room-sign__row--break .room-sign__time {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .room-sign__row--plenary .room-sign__title {
+    color: #4A3078;
+  }
+</style>
+
+{% if schedule %}
+<div class="room-signs">
+  {% for day in schedule %}
+    {% set rows = day.rows %}
+    {% for room in day.rooms %}
+      {% set room_idx = loop.index0 %}
+      <section class="room-sign">
+        <h1 class="room-sign__room">{{ room }}</h1>
+        <div class="room-sign__day">{{ day.day }}</div>
+        <table class="room-sign__table">
+          <thead>
+            <tr>
+              <th class="room-sign__time">Time</th>
+              <th>Session</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in rows %}
+              {% set end = rows[loop.index].time if not loop.last else none %}
+              {% if row.kind == 'break' %}
+                <tr class="room-sign__row--break">
+                  <td class="room-sign__time">{{ row.time }}{% if end %} – {{ end }}{% endif %}</td>
+                  <td><div class="room-sign__title">{{ row.title }}</div></td>
+                </tr>
+              {% elif row.kind == 'plenary' and row.room == room %}
+                <tr class="room-sign__row--plenary">
+                  <td class="room-sign__time">{{ row.time }}{% if end %} – {{ end }}{% endif %}</td>
+                  <td>
+                    <div class="room-sign__title">{{ row.title }}</div>
+                    {% if row.speakers %}<div class="room-sign__speakers">{{ row.speakers }}</div>{% endif %}
+                  </td>
+                </tr>
+              {% elif row.kind == 'talks' %}
+                {% set cell = row.cells[room_idx] if (row.cells and row.cells|length > room_idx) else none %}
+                {% if cell %}
+                <tr class="room-sign__row--talk">
+                  <td class="room-sign__time">{{ row.time }}{% if end %} – {{ end }}{% endif %}</td>
+                  <td>
+                    <div class="room-sign__title">{{ cell.title }}</div>
+                    {% if cell.speakers %}<div class="room-sign__speakers">{{ cell.speakers }}</div>{% endif %}
+                  </td>
+                </tr>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+    {% endfor %}
+  {% endfor %}
+</div>
+{% else %}
+<p>No schedule data available.</p>
+{% endif %}
