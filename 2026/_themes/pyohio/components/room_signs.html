@@ -121,7 +121,7 @@
       {# Ballroom A converts to an Open Spaces room. Find its first Open Spaces
          slot for the day and add a note; if it has no talks, it is Open Spaces
          all day. #}
-      {% set note = namespace(text=none) %}
+      {% set note = namespace(line1=none) %}
       {% if room == 'Ballroom A' %}
         {% for os_day in open_spaces if os_day.day == day.day %}
           {% if 'Ballroom A' in os_day.rooms %}
@@ -134,15 +134,15 @@
             {% endfor %}
             {% if os.start %}
               {% if ns.items %}
-                {% set note.text = 'Open Spaces begins at ' ~ (os.start | upper) ~ '. Sign up on the board outside Room 313.' %}
+                {% set note.line1 = 'Ballroom A is open for Open Spaces at ' ~ (os.start | upper) ~ '.' %}
               {% else %}
-                {% set note.text = 'Open Spaces all day. Sign up on the board outside Room 313.' %}
+                {% set note.line1 = 'Ballroom A is open for Open Spaces all day.' %}
               {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}
-      {% if ns.items or note.text %}
+      {% if ns.items or note.line1 %}
       <section class="room-sign">
         <h1 class="room-sign__room">{{ room }}</h1>
         <div class="room-sign__day">{{ day.day }}</div>
@@ -167,7 +167,7 @@
           </tbody>
         </table>
         {% endif %}
-        {% if note.text %}<div class="room-sign__note">{{ note.text }}</div>{% endif %}
+        {% if note.line1 %}<div class="room-sign__note">{{ note.line1 }}<br>Sign up on the board outside Room 313.</div>{% endif %}
       </section>
       {% endif %}
     {% endfor %}
