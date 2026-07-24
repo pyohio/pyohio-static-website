@@ -8,6 +8,8 @@
    from the start of the following schedule row. #}
 {% set _sched_entries = collections.get('schedule_data', []) %}
 {% set schedule = (_sched_entries[0].frontmatter.get('schedule') if _sched_entries else []) or [] %}
+{% set _os_entries = collections.get('open_spaces_data', []) %}
+{% set open_spaces = (_os_entries[0].frontmatter.get('open_spaces') if _os_entries else []) or [] %}
 
 <style>
   body { background: #fff; color: #000; }
@@ -85,6 +87,16 @@
     color: #333;
     margin-top: 0.15rem;
   }
+
+  .room-sign__note {
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
 </style>
 
 {% if schedule %}
@@ -106,10 +118,35 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      {% if ns.items %}
+      {# Ballroom A converts to an Open Spaces room. Find its first Open Spaces
+         slot for the day and add a note; if it has no talks, it is Open Spaces
+         all day. #}
+      {% set note = namespace(text=none) %}
+      {% if room == 'Ballroom A' %}
+        {% for os_day in open_spaces if os_day.day == day.day %}
+          {% if 'Ballroom A' in os_day.rooms %}
+            {% set a_idx = os_day.rooms.index('Ballroom A') %}
+            {% set os = namespace(start=none) %}
+            {% for osr in os_day.rows %}
+              {% if os.start is none and osr.cells and osr.cells|length > a_idx and osr.cells[a_idx] is not none %}
+                {% set os.start = osr.time %}
+              {% endif %}
+            {% endfor %}
+            {% if os.start %}
+              {% if ns.items %}
+                {% set note.text = 'Open Spaces begins at ' ~ (os.start | upper) ~ '. Sign up on the board outside Room 313.' %}
+              {% else %}
+                {% set note.text = 'Open Spaces all day. Sign up on the board outside Room 313.' %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if ns.items or note.text %}
       <section class="room-sign">
         <h1 class="room-sign__room">{{ room }}</h1>
         <div class="room-sign__day">{{ day.day }}</div>
+        {% if ns.items %}
         <table class="room-sign__table">
           <thead>
             <tr>
@@ -129,6 +166,8 @@
             {% endfor %}
           </tbody>
         </table>
+        {% endif %}
+        {% if note.text %}<div class="room-sign__note">{{ note.text }}</div>{% endif %}
       </section>
       {% endif %}
     {% endfor %}
