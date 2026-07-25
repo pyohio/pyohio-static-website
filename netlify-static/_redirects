@@ -24,7 +24,7 @@ https://pyohio.netlify.com/* https://www.pyohio.org/:splat 301!
 /lightning-talks /2026/program/lightning-talks 302
 /prospectus /2026/sponsors/prospectus 302
 /register /2026/attend/registration 302
-/schedule /2026/program/schedule 302
+/schedule /2026/program/schedule/#sunday 302
 /sprints /2026 302
 /support /2026/support 302
 /volunteer /2026/attend/volunteer 302
