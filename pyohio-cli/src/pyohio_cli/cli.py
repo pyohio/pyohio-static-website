@@ -1,6 +1,7 @@
 import click
 
 from pyohio_cli.csv_export.cli import csv
+from pyohio_cli.lightning import lightning
 from pyohio_cli.og import og
 from pyohio_cli.pretalx import pretalx
 from pyohio_cli.slides import slides
@@ -17,6 +18,7 @@ cli.add_command(pretalx)
 cli.add_command(og)
 cli.add_command(slides)
 cli.add_command(csv)
+cli.add_command(lightning)
 
 
 if __name__ == "__main__":
