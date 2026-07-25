@@ -45,10 +45,10 @@ open_spaces:
 
 Open Spaces are self-organized meetups that take place in dedicated rooms during the conference. Topics are defined and discussion is facilitated by attendees rather than conference organizers.
 
-Anyone can participate in an Open Space and anyone can host one! A sign-up board will be posted near registration. Be sure to take a look at the topics posted or post your own!
+Anyone can participate in an Open Space and anyone can host one! A sign-up board will be posted outside Room 313. Be sure to take a look at the topics posted or post your own!
 
 ## Schedule
 
-Open Spaces run as 45-minute meetups in **Room 313**, alongside the talk track and through the breaks. A second room, **Ballroom A**, opens after the Saturday lunch break and runs all day Sunday. Sign up on the board near Registration to claim a slot or add your topic.
+Open Spaces run as 45-minute meetups in **Room 313**, alongside the talk track and through the breaks. A second room, **Ballroom A**, opens after the Saturday lunch break and runs all day Sunday. Sign up on the board outside Room 313 to claim a slot or add your topic.
 
 See the [full conference schedule](/2026/program/schedule/) for the talk track running alongside Open Spaces.

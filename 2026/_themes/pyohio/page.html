@@ -59,6 +59,10 @@
             {% include "components/keynoters_listing.html" %}
         {%- elif _page_type == 'schedule_grid' -%}
             {% include "components/schedule_grid.html" %}
+        {%- elif _page_type == 'room_signs' -%}
+            {% include "components/room_signs.html" %}
+        {%- elif _page_type == 'schedule_print' -%}
+            {% include "components/schedule_print.html" %}
         {%- elif _page_type == 'open_spaces_grid' -%}
             {% include "components/open_spaces_grid.html" %}
         {%- elif page.frontmatter.get('sponsors') is not none and _sponsor_marker in page.html -%}

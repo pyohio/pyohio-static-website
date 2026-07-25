@@ -1,0 +1,178 @@
+{# Printable per-room schedule signs. One sign per room per day, each on its
+   own printed page. Data is read from the schedule page's frontmatter via the
+   `schedule_data` collection so there is a single source of truth.
+
+   Each sign lists, in time order, the sessions held in that room: its talks and
+   any plenary sessions (welcome, keynotes, lightning talks, closing). Breaks are
+   omitted, and a room/day with no sessions gets no sign. End times are derived
+   from the start of the following schedule row. #}
+{% set _sched_entries = collections.get('schedule_data', []) %}
+{% set schedule = (_sched_entries[0].frontmatter.get('schedule') if _sched_entries else []) or [] %}
+{% set _os_entries = collections.get('open_spaces_data', []) %}
+{% set open_spaces = (_os_entries[0].frontmatter.get('open_spaces') if _os_entries else []) or [] %}
+
+<style>
+  body { background: #fff; color: #000; }
+  #main-content { padding: 0; }
+
+  @page { size: Letter; margin: 0.5in; }
+
+  .room-signs {
+    font-family: "Nunito", "Open Sans", sans-serif;
+    color: #000;
+    max-width: 7.5in;
+    margin: 0 auto;
+  }
+
+  .room-sign {
+    padding: 0;
+    page-break-after: always;
+    break-after: page;
+  }
+  .room-sign:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .room-sign__room {
+    text-align: center;
+    font-size: 4.25rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0 0 0.25rem;
+    color: #000;
+  }
+  .room-sign__day {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    color: #000;
+  }
+
+  .room-sign__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .room-sign__table th {
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #000;
+    border-bottom: 3px solid #000;
+    padding: 0.3rem 0.5rem;
+  }
+  .room-sign__table td {
+    padding: 0.4rem 0.5rem;
+    border-bottom: 1px solid #999;
+    vertical-align: top;
+  }
+
+  .room-sign__time {
+    width: 30%;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .room-sign__title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #000;
+  }
+  .room-sign__speakers {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0.15rem;
+  }
+
+  .room-sign__note {
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+</style>
+
+{% if schedule %}
+<div class="room-signs">
+  {% for day in schedule %}
+    {% set rows = day.rows %}
+    {% for room in day.rooms %}
+      {% set room_idx = loop.index0 %}
+      {# Collect this room's sessions for the day: talks + plenaries, no breaks. #}
+      {% set ns = namespace(items=[]) %}
+      {% for row in rows %}
+        {% set end = rows[loop.index].time if not loop.last else none %}
+        {% if row.kind == 'plenary' and row.room == room %}
+          {% set ns.items = ns.items + [{'time': row.time, 'end': end, 'title': row.title, 'speakers': row.get('speakers')}] %}
+        {% elif row.kind == 'talks' %}
+          {% set cell = row.cells[room_idx] if (row.cells and row.cells|length > room_idx) else none %}
+          {% if cell %}
+            {% set ns.items = ns.items + [{'time': row.time, 'end': end, 'title': cell.title, 'speakers': cell.get('speakers')}] %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {# Ballroom A converts to an Open Spaces room. Find its first Open Spaces
+         slot for the day and add a note; if it has no talks, it is Open Spaces
+         all day. #}
+      {% set note = namespace(line1=none) %}
+      {% if room == 'Ballroom A' %}
+        {% for os_day in open_spaces if os_day.day == day.day %}
+          {% if 'Ballroom A' in os_day.rooms %}
+            {% set a_idx = os_day.rooms.index('Ballroom A') %}
+            {% set os = namespace(start=none) %}
+            {% for osr in os_day.rows %}
+              {% if os.start is none and osr.cells and osr.cells|length > a_idx and osr.cells[a_idx] is not none %}
+                {% set os.start = osr.time %}
+              {% endif %}
+            {% endfor %}
+            {% if os.start %}
+              {% if ns.items %}
+                {% set note.line1 = 'Ballroom A is open for Open Spaces at ' ~ (os.start | upper) ~ '.' %}
+              {% else %}
+                {% set note.line1 = 'Ballroom A is open for Open Spaces all day.' %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if ns.items or note.line1 %}
+      <section class="room-sign">
+        <h1 class="room-sign__room">{{ room }}</h1>
+        <div class="room-sign__day">{{ day.day }}</div>
+        {% if ns.items %}
+        <table class="room-sign__table">
+          <thead>
+            <tr>
+              <th class="room-sign__time">Time</th>
+              <th>Session</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in ns.items %}
+            <tr>
+              <td class="room-sign__time">{{ item.time }}{% if item.end %} – {{ item.end }}{% endif %}</td>
+              <td>
+                <div class="room-sign__title">{{ item.title }}</div>
+                {% if item.speakers %}<div class="room-sign__speakers">{{ item.speakers }}</div>{% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% endif %}
+        {% if note.line1 %}<div class="room-sign__note">{{ note.line1 }}<br>Sign up on the board outside Room 313.</div>{% endif %}
+      </section>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>
+{% else %}
+<p>No schedule data available.</p>
+{% endif %}

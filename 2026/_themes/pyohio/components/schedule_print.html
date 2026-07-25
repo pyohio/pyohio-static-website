@@ -1,0 +1,132 @@
+{# Printable schedule grid: one day per landscape Letter page, time rows ×
+   room columns, matching the on-site schedule layout. Data comes from the
+   schedule page's frontmatter via the `schedule_data` collection. No site
+   chrome, sized to fit each day on a single page. #}
+{% set _sched_entries = collections.get('schedule_data', []) %}
+{% set schedule = (_sched_entries[0].frontmatter.get('schedule') if _sched_entries else []) or [] %}
+
+<style>
+  body { background: #fff; color: #000; }
+  #main-content { padding: 0; }
+
+  @page { size: Letter landscape; margin: 0.4in; }
+
+  .sched-print {
+    font-family: "Nunito", "Open Sans", sans-serif;
+    color: #000;
+  }
+
+  .sched-print__day {
+    page-break-after: always;
+    break-after: page;
+  }
+  .sched-print__day:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .sched-print__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 0.4rem;
+    color: #000;
+  }
+
+  .sched-print__table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  .sched-print__table th,
+  .sched-print__table td {
+    border: 1px solid #999;
+    padding: 0.2rem 0.35rem;
+    vertical-align: top;
+    font-size: 0.82rem;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+    color: #000; /* override .prose heading color leaking onto <th> cells */
+  }
+  .sched-print__table thead th {
+    background: #000;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .sched-print__table thead th:first-child { text-align: left; }
+
+  .sched-print__time {
+    width: 8%;
+    font-weight: 700;
+    white-space: nowrap;
+    background: #eee;
+  }
+
+  .sched-print__title-text { font-weight: 700; }
+  .sched-print__speakers {
+    font-size: 0.72rem;
+    color: #333;
+    margin-top: 0.05rem;
+  }
+
+  .sched-print__empty { background: #f6f6f6; }
+  .sched-print__break {
+    background: #eee;
+    font-weight: 700;
+    font-style: italic;
+  }
+</style>
+
+{% if schedule %}
+<div class="sched-print">
+  {% for day in schedule %}
+  <section class="sched-print__day">
+    <h1 class="sched-print__title">{{ day.day }}</h1>
+    <table class="sched-print__table">
+      <colgroup>
+        <col class="sched-print__time">
+        {% for room in day.rooms %}<col style="width: {{ (92 / (day.rooms|length)) }}%">{% endfor %}
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Time</th>
+          {% for room in day.rooms %}<th>{{ room }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in day.rows %}
+        <tr>
+          <th scope="row" class="sched-print__time">{{ row.time }}</th>
+          {% if row.kind == 'talks' %}
+            {% for cell in row.cells %}
+            <td class="{{ '' if cell else 'sched-print__empty' }}">
+              {% if cell %}
+              <div class="sched-print__title-text">{{ cell.title }}</div>
+              {% if cell.speakers %}<div class="sched-print__speakers">{{ cell.speakers }}</div>{% endif %}
+              {% endif %}
+            </td>
+            {% endfor %}
+          {% elif row.kind == 'plenary' %}
+            {% set idx = day.rooms.index(row.room) if row.room in day.rooms else 0 %}
+            {% if idx > 0 %}<td colspan="{{ idx }}" class="sched-print__empty"></td>{% endif %}
+            <td>
+              <div class="sched-print__title-text">{{ row.title }}</div>
+              {% if row.speakers %}<div class="sched-print__speakers">{{ row.speakers }}</div>{% endif %}
+            </td>
+            {% set rest = (day.rooms | length) - idx - 1 %}
+            {% if rest > 0 %}<td colspan="{{ rest }}" class="sched-print__empty"></td>{% endif %}
+          {% else %}{# break #}
+            <td colspan="{{ day.rooms | length }}" class="sched-print__break">{{ row.title }}</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endfor %}
+</div>
+{% else %}
+<p>No schedule data available.</p>
+{% endif %}
