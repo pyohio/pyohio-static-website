@@ -14,8 +14,14 @@
 } %}
 <div class="not-prose mt-8 space-y-12">
     {% if pre_conference %}
-    <section id="{{ pre_conference.day.split(',')[0] | lower }}" class="scroll-mt-24">
-        <h2 class="text-2xl font-extrabold text-primary mb-4">{{ pre_conference.day }}</h2>
+    {% set pre_id = pre_conference.day.split(',')[0] | lower %}
+    <section id="{{ pre_id }}" class="scroll-mt-24">
+        <h2 class="text-2xl font-extrabold text-primary mb-4">
+            <a href="#{{ pre_id }}" class="group inline-flex items-center gap-2 [&_svg]:h-5 [&_svg]:w-5" aria-label="Link to {{ pre_conference.day }}">
+                {{ pre_conference.day }}
+                <span class="text-primary/40 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition-opacity" aria-hidden="true">{{ icon("lucide:link") }}</span>
+            </a>
+        </h2>
         <div class="overflow-x-auto rounded-box border border-base-300">
             <table class="min-w-full border-separate border-spacing-0 text-sm">
                 <tbody>
@@ -31,8 +37,14 @@
     </section>
     {% endif %}
     {% for day in schedule %}
-    <section id="{{ day.day.split(',')[0] | lower }}" class="scroll-mt-24">
-        <h2 class="text-2xl font-extrabold text-primary mb-4">{{ day.day }}</h2>
+    {% set day_id = day.day.split(',')[0] | lower %}
+    <section id="{{ day_id }}" class="scroll-mt-24">
+        <h2 class="text-2xl font-extrabold text-primary mb-4">
+            <a href="#{{ day_id }}" class="group inline-flex items-center gap-2 [&_svg]:h-5 [&_svg]:w-5" aria-label="Link to {{ day.day }}">
+                {{ day.day }}
+                <span class="text-primary/40 opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition-opacity" aria-hidden="true">{{ icon("lucide:link") }}</span>
+            </a>
+        </h2>
         <div class="overflow-x-auto rounded-box border border-base-300">
             <table class="min-w-full border-separate border-spacing-0 text-sm">
                 <thead>
