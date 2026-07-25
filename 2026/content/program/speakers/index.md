@@ -9,9 +9,6 @@ speakers:
   - name: Al Sweigart
     slug: al-sweigart
     avatar: /2026/img/speakers/al-sweigart.webp
-  - name: Andrew Plassard
-    slug: andrew-plassard
-    avatar:
   - name: Benedek Kaibas
     slug: benedek-kaibas
     avatar: /2026/img/speakers/benedek-kaibas.webp

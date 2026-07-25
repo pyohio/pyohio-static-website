@@ -191,9 +191,7 @@ schedule:
           - title: 'LLM Token Healing and Regex: Free Gains You Leave on the Table'
             slug: llm-token-healing-and-regex
             speakers: Abraham Owodunni
-          - title: Your AI Pipeline Is Burning Money and You're Calling It ‟Good Enough”
-            slug: your-ai-pipeline-is-burning-money-and-you-re-calling-it-good
-            speakers: Andrew Plassard
+          - 
           - 
       - time: 2:30 PM
         kind: break

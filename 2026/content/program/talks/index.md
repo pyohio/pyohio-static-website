@@ -159,12 +159,6 @@ talks:
     speakers:
       - name: Krishna Mridha
         slug: krishna-mridha
-  - slug: your-ai-pipeline-is-burning-money-and-you-re-calling-it-good
-    title: Your AI Pipeline Is Burning Money and You're Calling It ‟Good Enough”
-    type: 30 Minute Talk
-    speakers:
-      - name: Andrew Plassard
-        slug: andrew-plassard
   - slug: your-data-is-too-sensitive-for-an-api
     title: 'Your Data Is Too Sensitive for an API: Fine-Tuning an Open-Source LLM for Production Document Parsing'
     type: 30 Minute Talk

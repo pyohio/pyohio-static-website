@@ -1,7 +1,6 @@
 {
   "speakers/abraham-owodunni.png": "e1121cb421a925b3ecfe8eb2e510cbe5e93b36ad5d6b0eeb799212c735e2d0f3",
   "speakers/al-sweigart.png": "2cd992b1362feefaa62a0123637c67dd2f440427f24dd2a91070de8b47a0992d",
-  "speakers/andrew-plassard.png": "077f605777fcc88ebddbf68aec567dd2279f2fb47d00bff02602bb86be8a0a33",
   "speakers/benedek-kaibas.png": "3bad3e09524416ebff8c0ebf8db3dff8e3864324363fe68c0d84a9d242b75b25",
   "speakers/benjamin-patch.png": "e011dceabd0f2c808348cc7458912c5aa6a836c7692b507451b567b0596f6f47",
   "speakers/bianca-ploss.png": "71df91f50779a358b2d2357fb7e0b818ce3c307bc181e33e8553fb960958381f",
@@ -60,7 +59,6 @@
   "talks/this-is-not-the-nan-you-are-looking-for.png": "c8d3012ace0799882f76e6a91b781e0a4d5a21ed4050fb05d91604a7185ba74f",
   "talks/what-if-voyager-launched-in-2026-and-ran-python.png": "9f8f1a07b51f1483b48178d1a68cc64490dc8196d614b69da93529a2ee5aaf60",
   "talks/why-your-ai-model-lies.png": "33bf6c7fef032a24ee260fcb3b6a9922ef27995d740cc13b04be143a138a0a87",
-  "talks/your-ai-pipeline-is-burning-money-and-you-re-calling-it-good.png": "5985fc1b45cce2cf22566c6d19c35a32f01fa98229c82beed8aec4347bcf7db3",
   "talks/your-data-is-too-sensitive-for-an-api.png": "7879a390ddf8970c3f9f8f725e77eccbc4ca75ae8aa2227d8f45b50597c8047f",
   "talks/your-vlm-is-hallucinating-your-genes.png": "64a2a3e94640e9fbdb75fc211b168c5a0cee002512380a2cbb3907f475d3c65d"
 }
