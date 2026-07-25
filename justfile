@@ -54,3 +54,7 @@ slides-preview SLUG *ARGS:
 # Render the solid-purple video-production frame (branding only)
 slides-frame *ARGS:
     uv run --project pyohio-cli pyohio slides frame {{ARGS}}
+
+# Populate the lightning-talks page from a text file (title-cased, randomized)
+lightning-populate *ARGS:
+    uv run --project pyohio-cli pyohio lightning populate {{ARGS}}

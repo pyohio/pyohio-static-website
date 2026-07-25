@@ -1,0 +1,31 @@
+{# Lightning talks page: the markdown body with the accepted-talks list spliced
+   in at the `<!-- talks -->` marker, so the sign-up process falls below it. The
+   `lightning_talks:` frontmatter is written by `pyohio lightning populate`
+   (title-cased, randomized). Formatted to match the 2025 site: a numbered list
+   with the title in bold and the speaker below. #}
+{% set talks = page.frontmatter.get('lightning_talks') or [] %}
+
+{% set talks_html %}
+{% if talks %}
+<h2>Talks</h2>
+<ol class="list-decimal ml-6">
+    {% for talk in talks %}
+    <li class="mb-4">
+        <strong class="text-lg">{{ talk.title }}</strong><br>
+        <span class="text-sm">by {{ talk.speaker }}</span>
+    </li>
+    {% endfor %}
+</ol>
+{% endif %}
+{% endset %}
+
+{% set marker = '<!-- talks -->' %}
+{% if marker in page.html %}
+    {% set parts = page.html.split(marker, 1) %}
+    {{ parts[0] | safe }}
+    {{ talks_html | safe }}
+    {{ parts[1] | safe }}
+{% else %}
+    {{ page.html | safe }}
+    {{ talks_html | safe }}
+{% endif %}

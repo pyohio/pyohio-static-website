@@ -36,6 +36,8 @@ __pycache__/
 
 # Local-only working files
 keynoters.txt
+# Lightning-talk submissions: contains speaker email addresses; keep local
+lightning-talks.txt
 plans/
 
 # PreTalx avatar cache (contents are regenerated on each fetch)
