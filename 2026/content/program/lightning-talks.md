@@ -34,6 +34,8 @@ Lightning Talks are quick 5-minute (hard limit!) talks on any topics of interest
 
 Lightning Talks are **Saturday at 4:30 PM**.
 
+<!-- talks -->
+
 ## Sign-up Process
 
 - A sign-up board will be posted near registration
