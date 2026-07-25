@@ -11,8 +11,8 @@ name = "pyohio"
 search = true
 show_build_info = false
 
-# Expose the schedule and open-spaces page frontmatter to other templates (the
-# hidden room-signs page reads both) without changing how those pages render.
+# Expose page frontmatter to other templates (the hidden print pages read these)
+# without changing how the source pages themselves render.
 [[collections]]
 name = "schedule_data"
 source = "program/schedule.md"
@@ -21,6 +21,11 @@ nav = false
 [[collections]]
 name = "open_spaces_data"
 source = "program/open-spaces.md"
+nav = false
+
+[[collections]]
+name = "lightning_talks_data"
+source = "program/lightning-talks.md"
 nav = false
 
 [hooks]
