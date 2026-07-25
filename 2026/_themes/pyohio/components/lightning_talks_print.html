@@ -1,0 +1,70 @@
+{# Printable lightning-talks list: a single landscape Letter page, black & white,
+   no page heading. Two balanced columns keep the list on one page. Data comes
+   from the lightning-talks page frontmatter via the `lightning_talks_data`
+   collection, so it stays in sync (order included). #}
+{% set _lt_entries = collections.get('lightning_talks_data', []) %}
+{% set talks = (_lt_entries[0].frontmatter.get('lightning_talks') if _lt_entries else []) or [] %}
+
+<style>
+  body { background: #fff; color: #000; }
+  #main-content { padding: 0; }
+
+  @page { size: Letter landscape; margin: 0.5in; }
+
+  .lt-print {
+    font-family: "Nunito", "Open Sans", sans-serif;
+    color: #000;
+  }
+
+  .lt-print__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: lt;
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+
+  .lt-print__item {
+    counter-increment: lt;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    position: relative;
+    padding-left: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .lt-print__item::before {
+    content: counter(lt) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    font-size: 1.35rem;
+  }
+
+  .lt-print__title {
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1.15;
+  }
+  .lt-print__speaker {
+    font-size: 1.05rem;
+    color: #222;
+    margin-top: 0.1rem;
+  }
+</style>
+
+{% if talks %}
+<div class="lt-print">
+  <ol class="lt-print__list">
+    {% for talk in talks %}
+    <li class="lt-print__item">
+      <div class="lt-print__title">{{ talk.title }}</div>
+      <div class="lt-print__speaker">{{ talk.speaker }}</div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% else %}
+<p>No lightning talks available.</p>
+{% endif %}
