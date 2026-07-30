@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PyOhio//Save the Date 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:pyohio-2027-save-the-date@pyohio.org
+DTSTAMP:20260730T000000Z
+DTSTART;VALUE=DATE:20270724
+DTEND;VALUE=DATE:20270726
+SUMMARY:PyOhio 2027
+LOCATION:Cleveland State University Student Center\, Cleveland\, OH
+DESCRIPTION:PyOhio 2027 is July 24-25 at the Cleveland State University Stu
+ dent Center in Cleveland, OH. Details: https://www.pyohio.org/2027/
+URL:https://www.pyohio.org/2027/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PyOhio 2027 is about a month away. Time to register! https://ww
+ w.pyohio.org/2027/
+TRIGGER:-P30D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
